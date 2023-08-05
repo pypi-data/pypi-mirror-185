@@ -1,0 +1,15 @@
+eqtk/__init__.py,sha256=O74qqM_yPO1b3D-pcqOVpVJj0m7IiuFaLHOuYXsIVsY,177
+eqtk/checks.py,sha256=-XabdLvP1J3jPDO_M4BUzRUYcWXrgPgQm95mkgD5WAg,28420
+eqtk/constants.py,sha256=fYkUv1b-F4KZ4KjwpfI2U0GhSmL90R_r9LmWzVjb4JE,2577
+eqtk/diagnostics.py,sha256=wKYil4Nwvi8hZX6igeys61T4HxNvXI6ZtoHig4EObo0,1233
+eqtk/linalg.py,sha256=yFtUOq9Ds8UxK2YVrdSs2bw2fowcNJM15bxkJwTqsCo,8890
+eqtk/numba_check.py,sha256=4dYPSu-owjZmOskx69l2DvHXlFVHB0C3TjmIY_poWoo,1754
+eqtk/parsers.py,sha256=JRneJ50T2hvEPFjNOZXW2QU_idZPHfflpZgy7y_373o,41370
+eqtk/solvers.py,sha256=-el1ZAO5_t4sSGS_EG2P5jFmC82s5USxwo0mfvAl1yI,69264
+eqtk/testcases.py,sha256=7XO3eQwQkIPTin9rUl6byZbv6iRz5Fc0smTU02htN2M,4832
+eqtk/trust_region.py,sha256=cNyjrRRNZ74q8s9_3e_uR7KUwWmhdX8DyjmYWlFB4TY,11961
+eqtk-0.1.3.dist-info/LICENSE.md,sha256=7ozU5XPQsvyh2UnX2T4gJZKsgaBrNNIaRjUHLRr1tFE,1068
+eqtk-0.1.3.dist-info/METADATA,sha256=6z32oi76T5KSoMjtdb3tGOrMhQhlt00NIj61twZnpk4,760
+eqtk-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+eqtk-0.1.3.dist-info/top_level.txt,sha256=ligrmVnUNxeblWDExDH0VwtQ60mksojHxQmbHBil65w,5
+eqtk-0.1.3.dist-info/RECORD,,
