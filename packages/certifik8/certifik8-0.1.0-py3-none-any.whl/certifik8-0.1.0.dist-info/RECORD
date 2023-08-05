@@ -1,0 +1,10 @@
+src/Certifik8/certificado.py,sha256=_DPvxN7ptPjctJbcoN8FLM1nQVIdsi4K2tUqGO-A2nY,2108
+src/Certifik8/data_emissao.py,sha256=KHyW_9JXhlXqM9D1pDKdADjYYnlOkxZWwW2cZP6SycE,640
+src/Certifik8/html2pdf.py,sha256=M19OObkEFAVv9zzXqe2V78DMPL8WAbOvmAqUqjEaRPA,600
+src/Certifik8/main.py,sha256=JHudea0rE5f-WZ9M63Q19XpWEVpvA73G4FJIhqxYz2A,1136
+src/Certifik8/template.html,sha256=mf7Z_MFrbXi9jFpDqvYf-WLkkyBU97fJ5RUnGPxqY6g,2610
+certifik8-0.1.0.dist-info/METADATA,sha256=8vrE_GotFokFyPvQMrioPgn3wRgGLaAfegtB-xSrikI,8384
+certifik8-0.1.0.dist-info/LICENSE,sha256=IrvD8oX3-epxeFf-QxmkpXnFClIWEbUGCiKGR15lMb0,1064
+certifik8-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+certifik8-0.1.0.dist-info/entry_points.txt,sha256=dg3MfyVPyJyxSswwAieONzxglIXRVokD8k_2KaAckWE,52
+certifik8-0.1.0.dist-info/RECORD,,
