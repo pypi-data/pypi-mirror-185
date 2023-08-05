@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: scythe-extractors
+Version: 0.1.0
+Summary: A library of tools that generate summaries of the data contained in scientific data files
+License: Apache
+Author: Materials Data Facility
+Author-email: materialsdatafacility@uchicago.edu
+Requires-Python: >=3.8.0,<3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: all
+Provides-Extra: ase
+Provides-Extra: crystal-structure
+Provides-Extra: csv
+Provides-Extra: dft
+Provides-Extra: electron-microscopy
+Provides-Extra: file
+Provides-Extra: image
+Provides-Extra: tdb
+Provides-Extra: xml
+Requires-Dist: Pillow (>=9.0.1,<10.0.0) ; extra == "image" or extra == "all"
+Requires-Dist: ase (>=3.19,<3.20) ; extra == "ase" or extra == "crystal-structure" or extra == "all"
+Requires-Dist: dfttopif (>=1.1.0,<2.0.0) ; extra == "dft" or extra == "all"
+Requires-Dist: hyperspy (>=1.4.1,<2.0.0) ; extra == "electron-microscopy" or extra == "all"
+Requires-Dist: llvmlite (>=0.38.0,<0.39.0)
+Requires-Dist: mdf-toolbox (>=0.5.3,<0.6.0)
+Requires-Dist: numba (>=0.55,<0.56)
+Requires-Dist: pandas (>=1.4.2,<2.0.0)
+Requires-Dist: pycalphad (>=0.10.0,<0.11.0) ; extra == "tdb" or extra == "all"
+Requires-Dist: pymatgen (>=2022.3.24,<2023.0.0) ; extra == "crystal-structure" or extra == "all"
+Requires-Dist: python-magic (>=0.4.15,<0.5.0) ; extra == "file" or extra == "all"
+Requires-Dist: stevedore (>=3.5.0,<4.0.0)
+Requires-Dist: tableschema (>=1,<2) ; extra == "csv" or extra == "all"
+Requires-Dist: xmltodict (>=0.12.0,<0.13.0) ; extra == "xml" or extra == "all"
