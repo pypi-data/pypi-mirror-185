@@ -1,0 +1,5 @@
+setup.py
+assignmenttest.egg-info/PKG-INFO
+assignmenttest.egg-info/SOURCES.txt
+assignmenttest.egg-info/dependency_links.txt
+assignmenttest.egg-info/top_level.txt
