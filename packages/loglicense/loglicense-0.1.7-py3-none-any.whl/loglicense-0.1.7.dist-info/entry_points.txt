@@ -1,0 +1,3 @@
+[console_scripts]
+loglicense=loglicense.__main__:app
+
