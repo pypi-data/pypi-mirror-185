@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: sensor-tracker-client
+Version: 1.0.1
+Summary: A python tool to interact with sensor_tracker database.
+Home-page: https://gitlab.oceantrack.org/ceotr/metadata-tracker/sensor_tracker_client
+Author: Xiang Ling
+Author-email: xiang.ling@dal.ca
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
