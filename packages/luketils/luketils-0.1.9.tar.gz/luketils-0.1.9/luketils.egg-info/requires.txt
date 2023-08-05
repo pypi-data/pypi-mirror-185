@@ -1,0 +1,11 @@
+opencv-python
+tensorflow
+scikit-learn
+
+[dev]
+flake8
+pytest
+pytype
+setuptools
+twine
+wheel
