@@ -1,0 +1,3 @@
+[console_scripts]
+ap0dl=ap0dl.__main__:__ap0dl_cli__
+
