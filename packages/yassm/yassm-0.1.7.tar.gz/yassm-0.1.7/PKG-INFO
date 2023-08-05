@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: yassm
+Version: 0.1.7
+Summary: Yet Another Simple Secrets Manager
+License-File: LICENSE
+
+yassm (Yet Another Simple Secrets Manager) is a tool for seeding AWS Secrets Manager secrets into local environment variables.
