@@ -1,0 +1,12 @@
+pandasdb2/__init__.py,sha256=uKcRBvNg_wGk2CwYvuN6wwui72BILeaV-UfQawtbsEQ,218
+pandasdb2/cache.py,sha256=-Gto4ITw6P-9bYHpIapQbQgnzvHC2gZrPHlPC5CVG_Q,3917
+pandasdb2/column.py,sha256=xZmo5opgJsrB6N1QW-i3OJ53M0JlH5o08zgAqDjrJaQ,28172
+pandasdb2/connection.py,sha256=eCt00EOMTH5VFV_nO5FFehEDz5q-dXVHNYukRVHuiJA,10166
+pandasdb2/exceptions.py,sha256=c9VqASy-pZ_BxSeqORNMGBUTd2CKwjte58l72nxdujU,814
+pandasdb2/expression.py,sha256=tOHPxsdiDyzUYvmjlLRRR_fQLhob4ruExtUOkLVYvaE,2708
+pandasdb2/table.py,sha256=26T7Lr4yVbCOdTsSWWr4QWX5SQbgNMEpqfJCjTHhjiI,19503
+pandasdb2/utils.py,sha256=3mBQEG0_lJ4r-7A5LZX3auqnb2sr4IB2v2ey5uMHZUs,8017
+pandasdb2-2.0.2.dist-info/LICENSE,sha256=_YeTAG8GqKLYeo9Vs0YpHZgUttb0GHrLrIxHAedJvw0,1092
+pandasdb2-2.0.2.dist-info/METADATA,sha256=qlp8zsyGDUrpLDgVBL4zndw_mrHrX_jq6nuquG9nUdg,26257
+pandasdb2-2.0.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pandasdb2-2.0.2.dist-info/RECORD,,
