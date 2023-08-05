@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: tempailab
+Version: 0.0.7
+Summary: artificial intelligence and DBMS lab programs definitions
+Home-page: https://github.com/aiml5thsem/tempailab
+Author: aiml department
+Author-email: aiml5thsem@gmail.com
+License: MIT
+Keywords: artificial intelligence lab,DBMS lab,aimllab module
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AIML & DBMS Lab program
+              
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)   
+## Functions 
+- isprime(number)
+- tsp(graph,starting point)
+- nqueen(number)
+- longtictactoe()
+
+## Programs will be returned for call
+### a lab
+
+- p_multiplicationtable
+- p_primeornot
+- p_factorial
+- p_list_operations
+- p_list_methods
+- p_chatbot
+- p_set_operation
+- p_count_s1_in_s2
+- p_dictionary_operations
+- p_n_queen
+- p_tsp
+- p_longtictactoe
+
+### - <u>dbms lab</u>
+- p_library
+- p_order
+- p_movie
+- p_college
+- p_comp  
+
+## Usage
+```
+import tempailab
+```
+
+## Get the list of sql programs
+
+```
+print(tempailab.sql_programs)
+```
+
+## Get the list of ai programs
+
+```
+print(tempailab.ai_programs)
+```
+
+## Example
+### run it 
+```
+import tempailab
+print(tempailab.isprime(3))
+```
+### Output
+```
+3 is a prime number
+```
