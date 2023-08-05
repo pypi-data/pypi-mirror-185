@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "twothousand-forty-eight"
+version = "0.1.0"
+description = ""
+authors = ["Elias Eskelinen <pgp@eliaseskelinen.fi>"]
+readme = "README.md"
+packages = [{include = "twothousand_forty_eight"}]
+
+[tool.poetry.scripts]
+start = "twothousand_forty_eight.app:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
