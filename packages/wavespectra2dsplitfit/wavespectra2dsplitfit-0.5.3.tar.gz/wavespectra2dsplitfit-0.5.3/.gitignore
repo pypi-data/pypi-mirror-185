@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+__init__.py
+__pycache__/
+dist/
+docs/build
+docs/source/_templates
+docs/source/generated/
+wavespectra2dsplitfit/.ipynb_checkpoints/
+wavespectra2dsplitfit/__pycache__/
