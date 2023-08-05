@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/specnorm/__init__.py
+src/specnorm.egg-info/PKG-INFO
+src/specnorm.egg-info/SOURCES.txt
+src/specnorm.egg-info/dependency_links.txt
+src/specnorm.egg-info/top_level.txt
