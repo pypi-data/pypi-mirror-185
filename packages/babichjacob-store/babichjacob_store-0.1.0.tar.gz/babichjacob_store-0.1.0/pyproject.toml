@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "babichjacob-store"
+version = "0.1.0"
+description = ""
+authors = ["J or Jacob Babich <jacobbabichpublic+git@gmail.com>"]
+readme = "README.md"
+packages = [{include = "store"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.dev-dependencies]
+black = "^22.12.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
