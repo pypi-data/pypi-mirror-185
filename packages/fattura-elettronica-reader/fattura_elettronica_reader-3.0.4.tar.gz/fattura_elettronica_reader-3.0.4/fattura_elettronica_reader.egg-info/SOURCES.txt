@@ -1,0 +1,14 @@
+CONTRIBUTING.md
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+fattura_elettronica_reader/__init__.py
+fattura_elettronica_reader/__main__.py
+fattura_elettronica_reader/api.py
+fattura_elettronica_reader/cli.py
+fattura_elettronica_reader/constants.py
+fattura_elettronica_reader/exceptions.py
+fattura_elettronica_reader.egg-info/PKG-INFO
