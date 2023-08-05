@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ConnectionManagementRPAOCI
+Version: 0.0.2
+Summary: Test Package
+Home-page: https://github.com/aravindreddyravula/ConnectionManagementRPAOCI
+Author: Aravind Reddy Ravula
+Author-email: aravindreddyravula123@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ConnectionManagement
+
