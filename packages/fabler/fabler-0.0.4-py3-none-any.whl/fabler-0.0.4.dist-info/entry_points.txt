@@ -1,0 +1,3 @@
+[console_scripts]
+fabler-web = fabler.server:serve
+fablerer = fabler.__main__:main
