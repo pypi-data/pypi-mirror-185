@@ -1,0 +1,16 @@
+framebot/__init__.py,sha256=PtZFMd4m1L6QWR09EpOFjiVHRR-83RSONO_wR30245g,106
+framebot/__main__.py,sha256=iQq3lPu65I9V2phO7nn9MlA5C5_ivlxcUdhSTKNOnoY,4128
+framebot/framebots.py,sha256=_WBjazDoWum2O_6UFCUSRAFtaQ3-7H1jUJNk_9CNiXs,8696
+framebot/model.py,sha256=dO22m9ZNIOKS-mld78KdXLVAyDuWasBnlPF11NdNA74,1313
+framebot/plugins.py,sha256=ksq6rPpSutd5-ClhzUlulJRQZMZoJVqH-Lu_R4GthIY,12963
+framebot/social.py,sha256=EpnRlhYmS9eR3PeH6wRMY8gBE7h3VHp-wgf27cq9F6A,5183
+framebot/utils.py,sha256=MvHtkx3hV3QzoCNF7RlwIlYmh-ozUm6v3fg-3X6Vwkw,1653
+framebot/migration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+framebot/migration/__main__.py,sha256=41H1XES7XpnmGC-ZEA_xk0BWeFmVj-68ChXi3jf-UAE,1039
+framebot/migration/migrate.py,sha256=uA1ZwEbX2_A_PsMD_rBTLTreaaiLOfMcxi2rlU3d4do,5164
+pyframebot-1.0.1.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+pyframebot-1.0.1.dist-info/METADATA,sha256=ztHT65ayL0PdO0jIY727YJPemTFTvzgve6X5sOjBVgY,46983
+pyframebot-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyframebot-1.0.1.dist-info/entry_points.txt,sha256=vQUKYKJ7qO5yc9-QK5wOKnCDsBDqANhaffLB8cf_6F4,104
+pyframebot-1.0.1.dist-info/top_level.txt,sha256=KnhSID1Xe3_2wCaE9p8gcJuwW-w9qay-3KJ1Ip19PAU,9
+pyframebot-1.0.1.dist-info/RECORD,,
