@@ -1,0 +1,8 @@
+graphpro/__init__.py,sha256=iDHtXcDrumed8JKuK19FPi8ooz6YMVQB26wJvvCIR5I,193
+graphpro/graph.py,sha256=T_Z1TtwlIyHrGG8AH3qRCgYYseqGe-EArRde5m2Fllg,2762
+graphpro/graphgen.py,sha256=Gj2ctO_omLmcNsND4yucXsGfUInhlOVHi2Hsq-Ouic8,772
+graphpro/model.py,sha256=mdwUPR1ZlpfvKudWfwvPnEEVFUf587pjIMBcsYlQnGw,856
+graphpro/util/residues.py,sha256=1QPGgTnwVyjJ_R0GY21On2p6Zx3ZT2De_5bT_JBTvME,426
+graphpro-0.0.5.dist-info/METADATA,sha256=2pKSPzskl8VUFGhHaVji0OmNPHphq9ov1ZYlGEgsrE8,678
+graphpro-0.0.5.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+graphpro-0.0.5.dist-info/RECORD,,
