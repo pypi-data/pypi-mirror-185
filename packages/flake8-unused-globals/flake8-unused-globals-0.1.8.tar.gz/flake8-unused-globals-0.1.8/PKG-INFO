@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: flake8-unused-globals
+Version: 0.1.8
+Requires-Python: >=3.10,<3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# flake8-unused-globals
+
+A flake8 plugin that checks for unused global variables.
+
+This package adds the following warnings:
+
+- `UUG001`: An unused global variable.
+
+There are no configuration options at this time.
+
+It is recommended that users ignore UUG001 in constants modules.
