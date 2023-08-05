@@ -1,0 +1,7 @@
+setup.py
+assignmenttest1/__init__.py
+assignmenttest1/mainfile.py
+assignmenttest1.egg-info/PKG-INFO
+assignmenttest1.egg-info/SOURCES.txt
+assignmenttest1.egg-info/dependency_links.txt
+assignmenttest1.egg-info/top_level.txt
