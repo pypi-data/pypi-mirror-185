@@ -1,0 +1,17 @@
+tests/test_builder_async.py,sha256=f8mVupoejlp8q656KiVP5O5IqiwSnEzZud3ot0Joq78,2682
+tests/test_builder_sync.py,sha256=Jfaiq7jaGSSNavVch6_YWC7OB99cuzWUWbHmvEEXlew,4808
+tests/test_stream_async.py,sha256=iNLJgWgtS5H6nSqPSee9R2yjeLHAQJOM_bUAohdJkS4,2531
+tests/test_stream_sync.py,sha256=Ce1g9_ZH6VKkMUpNSdV6nARrTrU_HQ5P_AtZ9VgRfM8,4483
+zipgen/__init__.py,sha256=Qwy_7tCpc0mRqNPSXdBETXf6Tb5jqZvFQzfOoqIULYM,186
+zipgen/__main__.py,sha256=4GxdQHTrvhrnS9V6y0mpSqLdk1LzNp--wWP7zNbYql0,5700
+zipgen/build.py,sha256=6xxtTjmL4d53Y04NnyT5V9aEm4IMb2Mgg4DtNopkUyk,23026
+zipgen/compress.py,sha256=Ng6e76Abbb39bpW1mDzaFQ_HqTmYdj_XMosLCFuH_LY,8093
+zipgen/constant.py,sha256=0FjrO8riv0e4K58O8ow_p2X0h-rEMFhsS9AP1fblMUk,1737
+zipgen/convert.py,sha256=twIEH1l9MvHy4iVxiCFfscV-iicb2DkRNXBMmrPEgnc,1089
+zipgen/pack.py,sha256=n0phOriDAGJzFEJuyTY4-V5NTfm3Ug7WSguMoZ4LcXs,2511
+zipgen/stream.py,sha256=ar0J5jpJ_VdcgrTY3yQly97dRaAKTXHG30VSQOR7trA,6734
+zipgen-0.1.6.dist-info/LICENCE,sha256=SsQtnn4mu6yhBh7HEutB5XWic4ksLah0-W_nMyMUuao,1060
+zipgen-0.1.6.dist-info/METADATA,sha256=P3OqNXb5ICqO8EnjBwOMj2eu_vn_VR17TYUae0WnwDU,9684
+zipgen-0.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zipgen-0.1.6.dist-info/top_level.txt,sha256=QWTl3qHHKGU56562NOd7UZJXy5GMVhe6lJ0ANzcecxA,13
+zipgen-0.1.6.dist-info/RECORD,,
