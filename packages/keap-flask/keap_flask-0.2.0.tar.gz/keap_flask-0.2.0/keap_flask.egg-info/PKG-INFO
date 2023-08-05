@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: keap-flask
+Version: 0.2.0
+Summary: A Rest Client For Flask applications
+Home-page: https://github.com/codinlikewilly/keap_flask
+Author: will sexton
+Author-email: will@theapiguys.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+
+UNKNOWN
+
