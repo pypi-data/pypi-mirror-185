@@ -1,0 +1,3 @@
+pybookmark
+scripts/PyBookmark_viewer
+scripts/bookmarks_merge
