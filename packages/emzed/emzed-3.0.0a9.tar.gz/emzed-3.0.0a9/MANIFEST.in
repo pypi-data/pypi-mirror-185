@@ -1,0 +1,5 @@
+recursive-include src/emzed *.json
+recursive-include src/emzed *.xml
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
