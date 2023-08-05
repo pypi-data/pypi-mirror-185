@@ -1,0 +1,9 @@
+net_work/__init__.py,sha256=di87czAtG3v73RpJMSUavXQ-jD5rOfG6OqohNzABZ10,70
+net_work/__main__.py,sha256=Pl8WcjpcK2GvOL5azxxIMQyasPFuYVAUAqTgc9tMNlQ,296
+net_work/client.py,sha256=ytNJwXNcaiI1OtSEhZkOKpOknZYuHvC6spX5ks44Sps,42
+net_work/server.py,sha256=Xm8Hc_8ssI6xoPt6Fd-GcIRs9JxEn3T-rll6_klyy_Q,5413
+net_work/structs.py,sha256=ovZj9XlHz_Qr1z5u2UR1DQDahiMjR414qbOpN-L4_KI,5984
+j_net_work-0.0.1.dist-info/METADATA,sha256=1q5H3a4a2kDH2Bfo8FM99pT5oh1k41AzDjoHSFd3fok,273
+j_net_work-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+j_net_work-0.0.1.dist-info/top_level.txt,sha256=DuBbOuWW545NjcV-jADjkqw2uUyB8Y6K6xkl67Tp-8U,9
+j_net_work-0.0.1.dist-info/RECORD,,
