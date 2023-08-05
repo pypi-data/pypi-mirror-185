@@ -1,0 +1,3 @@
+[console_scripts]
+fan-manager = fan_manager.fan_manager:main
+
