@@ -1,0 +1,14 @@
+model/Entity.py,sha256=JbnXRLzH3P-8i0gg45pBcbQknEdNV7MV-JvCGv84dNg,2400
+model/__init__.py,sha256=WSSed2nNprHKHLssmAljaL5UAlU7aRt2NOYrKHJ3xck,89
+osw/__init__.py,sha256=FqLIgkWRM_uCW9YaJX5tRtflGX1Gpxy3vZCMNuld6wY,377
+osw/osl.py,sha256=5LK-ib62_DSCZa0uPWdvECiGhpbi6-V5CJat5eHYBsM,16932
+osw/sparql_client_smw.py,sha256=E-RBb93mAtzgzuSz9oUKQOgE6cmXCIMT1miS8m1zQ6I,6820
+osw/wiki_tools.py,sha256=HR5_bIZJDF-j7hrVTqqj_ZbsuhU_9qUJp8Tm39vqlMg,33578
+osw/wtsite.py,sha256=Hh5LQ1NHrPQ8uI0JRWVrZmrMpR_WpBGjW4zvon1t6QQ,7078
+osw/model/Entity.py,sha256=JbnXRLzH3P-8i0gg45pBcbQknEdNV7MV-JvCGv84dNg,2400
+osw/model/__init__.py,sha256=WSSed2nNprHKHLssmAljaL5UAlU7aRt2NOYrKHJ3xck,89
+osw-0.1.0.dist-info/LICENSE.txt,sha256=u2P9ePDxlf7fMlWsWIwyVslIQMAwOHHlJMAsw2FuLVE,33006
+osw-0.1.0.dist-info/METADATA,sha256=u1eAZKzNm_IAbyPSpN0AZlaNsQJhgfgzm4ah_i7IcJw,2370
+osw-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+osw-0.1.0.dist-info/top_level.txt,sha256=vunevOsjR0CN2yaKWAzWHtli15pwVHIsk31WLvU3E4s,10
+osw-0.1.0.dist-info/RECORD,,
