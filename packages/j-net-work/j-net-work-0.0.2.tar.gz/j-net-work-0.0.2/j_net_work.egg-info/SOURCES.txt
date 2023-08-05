@@ -1,0 +1,12 @@
+README.rst
+pyproject.toml
+setup.cfg
+j_net_work.egg-info/PKG-INFO
+j_net_work.egg-info/SOURCES.txt
+j_net_work.egg-info/dependency_links.txt
+j_net_work.egg-info/top_level.txt
+net_work/__init__.py
+net_work/__main__.py
+net_work/client.py
+net_work/server.py
+net_work/structs.py
