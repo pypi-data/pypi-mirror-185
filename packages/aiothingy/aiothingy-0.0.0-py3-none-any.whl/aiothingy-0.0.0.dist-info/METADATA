@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aiothingy
+Version: 0.0.0
+Summary: Asynchronous Python library for interacting with the Nordic Thingy52 over Bluetooth
+Home-page: https://github.com/wybiral/aiothingy
+Author: davy wybiral
+Author-email: davy.wybiral@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bleak
+
+# aiothingy
+Asynchronous Python library for interacting with the Nordic Thingy52 over Bluetooth.
