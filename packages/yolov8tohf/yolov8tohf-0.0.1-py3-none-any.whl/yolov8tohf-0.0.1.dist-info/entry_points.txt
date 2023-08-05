@@ -1,0 +1,2 @@
+[console_scripts]
+yolov8tohf = yolov8tohf.cli:app
