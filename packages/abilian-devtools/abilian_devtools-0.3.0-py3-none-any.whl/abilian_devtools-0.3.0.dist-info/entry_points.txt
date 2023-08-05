@@ -1,0 +1,3 @@
+[console_scripts]
+adt=abilian.devtools.main:app
+
