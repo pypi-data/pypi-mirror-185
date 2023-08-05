@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+fadi_xtree.egg-info/PKG-INFO
+fadi_xtree.egg-info/SOURCES.txt
+fadi_xtree.egg-info/dependency_links.txt
+fadi_xtree.egg-info/entry_points.txt
+fadi_xtree.egg-info/top_level.txt
+xtree/__init__.py
+xtree/__main__.py
+xtree/cli.py
+xtree/xtree.py

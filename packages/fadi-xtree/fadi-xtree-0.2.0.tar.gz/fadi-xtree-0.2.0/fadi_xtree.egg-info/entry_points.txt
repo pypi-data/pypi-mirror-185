@@ -1,0 +1,2 @@
+[console_scripts]
+tree = xtree.__main__:main
