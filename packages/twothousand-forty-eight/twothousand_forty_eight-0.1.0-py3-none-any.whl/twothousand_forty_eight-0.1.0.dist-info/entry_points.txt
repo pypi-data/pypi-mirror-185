@@ -1,0 +1,3 @@
+[console_scripts]
+start=twothousand_forty_eight.app:main
+

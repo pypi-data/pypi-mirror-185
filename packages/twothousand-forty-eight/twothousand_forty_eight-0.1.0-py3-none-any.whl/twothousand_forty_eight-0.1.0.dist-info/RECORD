@@ -1,0 +1,9 @@
+twothousand_forty_eight/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twothousand_forty_eight/app.py,sha256=dI0QdVlj-azL-qAciqOU2H3XCEJIkuRIcYRbhsB0hTw,520
+twothousand_forty_eight/board/__init__.py,sha256=hjgIPvfk8g5nBU8AkxE-Cx_nG7eksnsFPV8HeGGt-Rg,6855
+twothousand_forty_eight/board/tile.py,sha256=IOw9wO2ERtP0xx5uD1jKaP-XQ4iT0drPJcTQUS7D2To,512
+twothousand_forty_eight/direction.py,sha256=zZDEvCZzQ5PGOUIiDLx6q9K6UAM9dRyRa9ugo8fE3q0,695
+twothousand_forty_eight-0.1.0.dist-info/METADATA,sha256=AP01qxOFJxttk5Mjw_QD2IefV3ZjLPpM5QlE3Xg0ORc,358
+twothousand_forty_eight-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+twothousand_forty_eight-0.1.0.dist-info/entry_points.txt,sha256=kQKPLqojsQq8isj6KzvP_tfGNT1DBrfDiw4Zt40NHfQ,58
+twothousand_forty_eight-0.1.0.dist-info/RECORD,,
