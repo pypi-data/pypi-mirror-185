@@ -1,0 +1,14 @@
+[Unit]
+Description=System watchdog that restarts the UPS in case of system unresponsiveness.
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/local/bin
+ExecStart=/usr/bin/python pisugar-system-watchdog-start-service.py
+ExecStop=/usr/bin/python pisugar-system-watchdog-stop-service.py
+Environment=PYTHONUNBUFFERED=1
+StandardOutput=journal
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
