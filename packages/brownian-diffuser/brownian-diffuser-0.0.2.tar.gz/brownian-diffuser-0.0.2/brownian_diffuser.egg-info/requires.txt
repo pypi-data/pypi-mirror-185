@@ -1,0 +1,2 @@
+torch>=1.12.0
+autodevice>=0.0.2
