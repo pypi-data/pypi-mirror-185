@@ -1,0 +1,3 @@
+[console_scripts]
+pjwt=pretty_jwt:entrypoint
+
