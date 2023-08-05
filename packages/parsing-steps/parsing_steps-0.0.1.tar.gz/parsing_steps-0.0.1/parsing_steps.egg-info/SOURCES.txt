@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+parsing_steps/__init__.py
+parsing_steps.egg-info/PKG-INFO
+parsing_steps.egg-info/SOURCES.txt
+parsing_steps.egg-info/dependency_links.txt
+parsing_steps.egg-info/not-zip-safe
+parsing_steps.egg-info/requires.txt
+parsing_steps.egg-info/top_level.txt
+tests/__init__.py
