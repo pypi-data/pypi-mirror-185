@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: j-net-work
+Version: 0.0.1
+Summary: A distributed compute library that operates over shared folders
+Author-email: Jeffrey McAteer <jeffrey@jmcateer.com>
+Project-URL: Homepage, https://github.com/jeffrey-P-McAteer/net-work
+Requires-Python: >=3.6
