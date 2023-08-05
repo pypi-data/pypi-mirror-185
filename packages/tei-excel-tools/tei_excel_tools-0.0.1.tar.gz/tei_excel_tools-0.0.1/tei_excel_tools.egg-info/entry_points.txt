@@ -1,0 +1,2 @@
+[nbdev]
+tei_excel_tools = tei_excel_tools._modidx:d

@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+tei_excel_tools/__init__.py
+tei_excel_tools/_modidx.py
+tei_excel_tools/core.py
+tei_excel_tools.egg-info/PKG-INFO
+tei_excel_tools.egg-info/SOURCES.txt
+tei_excel_tools.egg-info/dependency_links.txt
+tei_excel_tools.egg-info/entry_points.txt
+tei_excel_tools.egg-info/not-zip-safe
+tei_excel_tools.egg-info/requires.txt
+tei_excel_tools.egg-info/top_level.txt
