@@ -1,0 +1,13 @@
+PySide6>=6.0
+
+[dev]
+build
+wheel
+twine
+pyinstaller
+pytest
+pytest-qt
+pytest-xvfb
+coverage
+mypy
+prospector[with_everything]

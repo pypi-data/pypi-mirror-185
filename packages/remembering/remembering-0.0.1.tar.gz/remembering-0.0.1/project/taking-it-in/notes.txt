@@ -1,0 +1,36 @@
+Goals:
+* Focusing on a single thing "one action"
+* File and dir-based (in other words generic)
+
+En applikation liknande Remembering och photo-metadata. Användaren kan fokusera på innehållet i en speciell fil. Olika filer:
+* text -> visas
+* image -> visas
+* andra -> xdg-open används för att öppna [en knapp visas i content-area "Open", man kan också välja en inställning så att det öppnas automatiskt]
+
+Tags in file names, ex [siiri], [when-anxious], _
+
+Inkludera underkataloger
+
+Globala features:
+* Lagra de senaste filerna/katalogerna som användaren har sett
+* Lagra favoriter
+
+Systray:
+* Show/restore (show current)
+* Next
+* Random
+
+Brainstorming slowing down and focusing:
+* Timing how long the content has been shown
+* Mouse hover + timing
+* Breathing widget (square, or line)
+
+Applikationen kan användas för alla kataloger!
+
+Idéer:
+* "Open dir in file explorer", same with file
+
+***
+
+Html på mobilen verkar inte funka bra. Firefox använder sin egen cachening och då hjälper det inte att ladda ner både source- och target-filen. Kanske finns det någon annan html-viewer som man kan använda, har testat en men den funkade inte
+

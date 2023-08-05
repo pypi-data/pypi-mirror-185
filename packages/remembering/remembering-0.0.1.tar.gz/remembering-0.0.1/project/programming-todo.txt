@@ -1,0 +1,32 @@
+
+
+## Architecture
+
+storing in sql?
+using application as a place to store wisdom, and with it being unusual to get notifications
+tags
+
+
+
+## Construction
+
+keyboard shortcuts for button controls
+
+
+## Auto-testing
+
+
+
+
+***
+
+# Error handling
+## Logging
+* warning
+* error
+## User:
+* popup
+## Other:
+* Exiting application
+
+

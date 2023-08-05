@@ -1,0 +1,10 @@
+* [ ] Writing an application manifesto
+* [ ] Creating personas
+* [ ] Determining user goals
+* [ ] Writing user narratives
+
+
+
+***What is the relation between kammanta, remembering, and a possible "saved commands" project?***
+
+

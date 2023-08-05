@@ -1,0 +1,156 @@
+
+*visa senaste bilden i en (vald) katalog*
+
+
+presets for times per day for remembering (similar to keep) +remembering
+
+
+Percent probability for each entry
+
+Types of content:
+* Sources of happiness and gratitude for the present moment
+* Affirmations
+* Practices
+* Wisdoms
+
+
+
+### Usability
+
+Usage examples:
+* *quote collection*
+* *poetry collection*
+* when, then (for example when anxious -> _) [not clear if we want one or several options, if several we can have sub-menus, and/or we may want to use hashtags for "when"]
+  * "when" could be tags, and then we can show (some) tags in the systray
+* photos of loved ones
+* self-compassion phrases
+
+showing tags in the systray area?
+* some tags can be selected
+* -----> What happens when the user presses a tag????
+  * random??
+
+idea:
+for each tag, and for each entry, the user can choose whether to display it in the systray
+(entry notification are always shows in the systray)
+
+
+
+
+wild idea: schedule?
+(separate application?)
+
+Todos: If no, "i met my need for freedom"
+
+
+### GUI
+
+controls for each entry:
+* prev/next for hashtag 1, hashtag 2, etc
+* special: clicking on entry moves to next
+
+
+
+### Unsorted
+
+submenu for adding new items
+
+---------------> Horizantal scrollbar when there are multiple notifications to be shown
+
+---------------> 3rd: Forms (customizable)
+Can values be saved for these forms?
+Can text or images be added?
+
+--------> for img and txt: moving on to the next one
+
+for texts: clickable links that opens another text/image/_
+
+---------> checking in: doing this in a separate application?
+
+goals: slowing down and remembering
+
+brainstorming: how can we slow down?
+progressbar maybe with the option to skip
+breathing dialog
+
+time to wait, time to breathe and appreciate/_
+
+close on click anywhere in window?
+timer for window before it can be closed?
+
+for "x" and "static" we could show a background with a color indicating that they are shown in the system tray. maybe using a yellow background
+
+idea: mindful of _________
+easily switch between dynamic and static
+user wants to stay mindful of her anxiety, and of LCJE
+combining this with sliders?
+
+static: active, type,
+doesn't have "time until next notification", instead we can have "static" or similar here
+
+fuzzy time: +/- x minutes
+
+for images: showing a small preview?
+
+only show popup and not anything in the systray?
+
+backing up data to new file. maybe ending in .0 .1 etc
+
+when no notifications are active: graying out the active button?
+or simply writing "no spec/freq added"
+
+clear all notifications in the systray also?
+
+idea: clicking on the x will launch the action
+
+storing when text window loses focus?
+
+idea: popup sys notifications without adding action in systray?
+
+3 possible goals:
+* notifying the user
+* if/when for the user
+* idea: staying mindful of (with sliders?)
+
+user perspective: wants to stay mindful of
+
+-----> specifying directory for shelve file (and other data like export?) when starting?
+alt: is it better for the user to simply copy the application into another directory?
+
+IDEA: new feature: adding if then to the system tray??????
+all "ifs" can be shown there. when clicked they will show a text, image or other thing. an action will be launched
+"If" or "When"
+Alternative: Using hashtags for if/when
+to show that this is different from the (dynamic) notifications we could have the if/when things withing square brackets, for example [anxiety], or maybe just adding one or two spaces before the rest of the text
+
+IDEA: sliders, or 2d interactive graph
+
+setting focus on title after adding a new remembrance. then tab can be used to go to the content area
+
+idea: showing sliders or other widgets inside a "mini-application"
+
+Idea: using the application for storing reminders without any notifications
+
+debug menu that can be used to print/log the state of the notifications
+
+I was thinking of only random frequencies with min/max boundaries so it doesn’t happen to often or too little. I’d say that would be more useful than a list of times that are randomly picked. What do you think?
+Also, I am no developer or designer so this might be adding too many functionalities that would make it more confusing! Maybe you were looking into making something minimal, so don’t listen to me too much :)
+
+Data:
+Buddhist contemplations: buddha, dharma, sangha, virtue (5 precepts), generosity, devas (bodhisattvas?)
+
+
+
+============
+
+Another idea i had: If we have "static" entries in the menu bar we could use the static entries as a way of helping the user remember what she wants to stay mindful of. This would shift the goal of the application from remembering more towards mindfulness
+
+So there would be static entries and dynamic (notification)
+
+============
+
+tags
+edit button
+
+
+Allowing the breathing sessions to be non-interactive
