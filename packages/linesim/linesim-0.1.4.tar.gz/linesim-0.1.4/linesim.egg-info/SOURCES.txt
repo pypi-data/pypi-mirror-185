@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+linesim/__init__.py
+linesim/linesim.py
+linesim.egg-info/PKG-INFO
+linesim.egg-info/SOURCES.txt
+linesim.egg-info/dependency_links.txt
+linesim.egg-info/requires.txt
+linesim.egg-info/top_level.txt
+linesim/assets/background.png
+linesim/assets/robot.png
