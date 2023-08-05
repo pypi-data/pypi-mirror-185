@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+bootstrap4/__init__.py
+bootstrap4/migrations/__init__.py
+bootstrap4/templatetags/__init__.py
+bootstrap4_cdn.egg-info/PKG-INFO
+bootstrap4_cdn.egg-info/SOURCES.txt
+bootstrap4_cdn.egg-info/dependency_links.txt
+bootstrap4_cdn.egg-info/requires.txt
+bootstrap4_cdn.egg-info/top_level.txt
