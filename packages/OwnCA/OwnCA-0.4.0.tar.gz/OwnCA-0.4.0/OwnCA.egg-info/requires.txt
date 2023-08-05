@@ -1,0 +1,16 @@
+cryptography<35.0.0,>=3.4.6
+voluptuous>=0.11.7
+
+[dev]
+pytest
+coverage==5.1
+tox
+flake8
+codecov
+sphinx
+sphinx-rtd-theme
+twine
+mypy
+isort
+black==21.12b0
+pre-commit
