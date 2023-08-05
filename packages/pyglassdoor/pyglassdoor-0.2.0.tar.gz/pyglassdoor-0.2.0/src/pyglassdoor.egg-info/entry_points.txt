@@ -1,0 +1,2 @@
+[console_scripts]
+pyglassdoor = pyglassdoor.cli:main
