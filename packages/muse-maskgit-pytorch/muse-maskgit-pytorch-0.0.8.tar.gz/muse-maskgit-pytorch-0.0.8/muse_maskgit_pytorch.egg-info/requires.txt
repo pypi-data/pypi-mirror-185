@@ -1,0 +1,9 @@
+accelerate
+beartype
+einops>=0.6
+ema-pytorch
+torch>=1.6
+transformers
+torch>=1.6
+torchvision
+vector-quantize-pytorch>=0.10.14
