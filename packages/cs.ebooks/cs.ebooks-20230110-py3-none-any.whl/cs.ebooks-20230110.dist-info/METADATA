@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: cs.ebooks
+Version: 20230110
+Summary: Utilities and command line for working with EBooks. Basic support for talking to Apple Books, Calibre, Kindle, Mobi.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: Cameron Simpson <cs@cskk.id.au>
+License: GNU General Public License v3 or later (GPLv3+)
+Project-URL: URL, https://bitbucket.org/cameron_simpson/css/commits/all
+Keywords: python3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Description-Content-Type: text/markdown
+Requires-Dist: cs.app.osx.defaults
+Requires-Dist: cs.app.osx.plist (>=20221228)
+Requires-Dist: cs.cmdutils (>=20221228)
+Requires-Dist: cs.context (>=20230109)
+Requires-Dist: cs.deco (>=20221214)
+Requires-Dist: cs.fileutils (>=20221118)
+Requires-Dist: cs.fs (>=20221221)
+Requires-Dist: cs.fstags (>=20221228)
+Requires-Dist: cs.lex (>=20220918)
+Requires-Dist: cs.logutils (>=20220531)
+Requires-Dist: cs.numeric (>=20220606)
+Requires-Dist: cs.obj (>=20220918)
+Requires-Dist: cs.pfx (>=20221118)
+Requires-Dist: cs.progress (>=20221207)
+Requires-Dist: cs.psutils (>=20221228)
+Requires-Dist: cs.resources (>=20221228)
+Requires-Dist: cs.sqlalchemy-utils
+Requires-Dist: cs.sqltags (>=20221228)
+Requires-Dist: cs.tagset (>=20221228)
+Requires-Dist: cs.threads (>=20221228)
+Requires-Dist: cs.units
+Requires-Dist: cs.upd (>=20221228)
+Requires-Dist: icontract
+Requires-Dist: mobi
+Requires-Dist: pycryptodomex
+Requires-Dist: sqlalchemy
+Requires-Dist: typeguard
+
+Utilities and command line for working with EBooks.
+Basic support for talking to Apple Books, Calibre, Kindle, Mobi.
+
+*Latest release 20230110*:
+* cs.ebooks.dedrm: new experimental module to use DeDRM/noDRM outside the Calibre plugin environment.
+* Use the dedrm stuff in "kindle export" and "calibre add".
+* Set $DEDRM_PACKAGE_PATH to the path to the DeDRM_plugin subdirectory of a checkout of git@github.com:noDRM/DeDRM_tools.git.
+
+These form the basis of my personal Kindle and Calibre workflow.
+
+# Release Log
+
+
+
+*Release 20230110*:
+* cs.ebooks.dedrm: new experimental module to use DeDRM/noDRM outside the Calibre plugin environment.
+* Use the dedrm stuff in "kindle export" and "calibre add".
+* Set $DEDRM_PACKAGE_PATH to the path to the DeDRM_plugin subdirectory of a checkout of git@github.com:noDRM/DeDRM_tools.git.
+
+*Release 20221228*:
+* CalibreCommand.popbooks: do not require argv to be empty at the end.
+* KindleBook: new amazon_url property returning an Amazon web page URL based on the ASIN.
+* New default_kindle_library() function consulting the envvar and app defaults; adjust KindleTree to use this.
+* New kindle_content_path_default() and kindle_content_path() functions; use these in default_kindle_library().
+* KindleCommand: new "app-path" subcommand to report or set the Kindle application content path.
+* CalibreCommand.cmd_ls: new -r (reverse) and -t (timestamp) sorting options.
+* Assorted minor updates.
+
+*Release 20220805*:
+* CalibreCommand.books_from_spec: UPPERCASE matches a format.
+* CalibreCommand: new cmd_linkto to link book files into an external directory with nice names.
+* CalibreTree: fix .fspath and the associated .pathto and format paths.
+
+*Release 20220626*:
+* CalibreBook: new setter mode for .tags, CalibreCommand: new cmd_tags to update tags.
+* CalibreBook.pull_format: AZW formats: also check for AZW4.
+* CalibreCommand.books_from_spec: /regexp: search the tags as well.
+* CalibreBook: subclass FormatableMixin; CalibreCommand.cmd_ls: new "-o ls_format" option for the top line format.
+
+*Release 20220606*:
+Initial PyPI release.
