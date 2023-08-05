@@ -1,0 +1,16 @@
+.gitignore
+.gitmodules
+.travis.yml
+LICENSE
+MANIFEST.in
+README.md
+build.py
+defs.c
+setup.py
+test_secp256k1_zkp_mw.py
+secp256k1_zkp_mw/__init__.py
+secp256k1_zkp_mw.egg-info/PKG-INFO
+secp256k1_zkp_mw.egg-info/SOURCES.txt
+secp256k1_zkp_mw.egg-info/dependency_links.txt
+secp256k1_zkp_mw.egg-info/requires.txt
+secp256k1_zkp_mw.egg-info/top_level.txt

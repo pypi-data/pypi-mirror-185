@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: secp256k1-zkp-mw
+Version: 0.4.0
+Summary: FFI bindings to libsecp256k1-zkp for Mimblewimble protocol
+Home-page: https://github.com/grinventions/secp256k1-zkp-mw
+Author: Marek Narozniak
+Author-email: marek.yggdrasil@gmail.com
+Maintainer: Nicolas Flamel
+Maintainer-email: nicolasflamel@mwcwallet.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Security :: Cryptography
+License-File: LICENSE
