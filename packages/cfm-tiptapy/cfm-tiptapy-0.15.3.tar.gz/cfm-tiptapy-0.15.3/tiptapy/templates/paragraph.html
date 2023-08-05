@@ -1,0 +1,10 @@
+{%- if node.content -%}
+  <p>
+  {%- for item in node.content -%}
+    {%- set template_name = get_snake_case(item.type + '.html') -%}
+    {%- with template=template_name, node=item -%}
+        {%- include template -%}
+          {%- endwith -%}
+  	{%- endfor -%}
+  </p>
+{%- endif -%}

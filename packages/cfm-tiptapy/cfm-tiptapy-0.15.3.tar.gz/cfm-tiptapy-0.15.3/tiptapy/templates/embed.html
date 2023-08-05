@@ -1,0 +1,20 @@
+{%- set html = node.attrs.html -%}
+
+{%- set provider_name = node.attrs.provider|default('link')|lower -%}
+<div class="embed-wrapper {{provider_name}}-wrapper">
+{%- for item in node.content -%}
+  {%- set template_name = get_snake_case(item.type + '.html') -%}
+  {%- with template=template_name, node=item -%}
+      {%- include template -%}
+  {%- endwith -%}
+{%- endfor -%}
+{%- if node.attrs.type == "video" -%}
+  {%- if node.attrs.caption and node.attrs.caption|trim -%}
+<figure>{{node.attrs.html}}<figcaption>{{escape(node.attrs.caption)}}</figcaption></figure>
+  {%- else -%}
+<figure>{{html}}</figure>
+  {%- endif -%}
+{%- else -%}
+<figure>{{html}}</figure>
+{%- endif -%}
+</div>
