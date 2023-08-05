@@ -1,0 +1,14 @@
+matplotlib>=3.5.1
+numpy>=1.21.5
+scipy>=1.7.3
+secondarycoolantprops>=1.1
+
+[doc]
+numpydoc>=1.2.0
+recommonmark>=0.6.0
+sphinx>=4.4.0
+
+[testing]
+pytest>=7.1.1
+pytest-cov>=3.0.0
+tox>=3.24.5
