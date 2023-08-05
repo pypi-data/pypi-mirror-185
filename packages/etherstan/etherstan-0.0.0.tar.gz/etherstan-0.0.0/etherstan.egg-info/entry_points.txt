@@ -1,0 +1,2 @@
+[console_scripts]
+etherstan = etherstan.cli:run_cmd_line

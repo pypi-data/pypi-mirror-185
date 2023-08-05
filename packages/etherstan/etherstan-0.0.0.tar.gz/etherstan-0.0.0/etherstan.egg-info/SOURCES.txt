@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+etherstan/__init__.py
+etherstan/__version__.py
+etherstan/cli.py
+etherstan/get.py
+etherstan.egg-info/PKG-INFO
+etherstan.egg-info/SOURCES.txt
+etherstan.egg-info/dependency_links.txt
+etherstan.egg-info/entry_points.txt
+etherstan.egg-info/requires.txt
+etherstan.egg-info/top_level.txt
+etherstan.egg-info/zip-safe
