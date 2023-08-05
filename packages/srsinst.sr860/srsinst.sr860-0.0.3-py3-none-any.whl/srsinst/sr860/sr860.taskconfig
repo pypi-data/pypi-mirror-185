@@ -1,0 +1,8 @@
+
+name: My SR865 task config
+
+inst: lia, instruments.sr865.sr865, SR865
+
+task: *IDN? test, tasks.sidntesttask, StreamingTask
+task: Data streaming, tasks.streamingtask, StreamingTask
+task: Simulated Plot, tasks.simulatedplot, SimulatedPlotTask

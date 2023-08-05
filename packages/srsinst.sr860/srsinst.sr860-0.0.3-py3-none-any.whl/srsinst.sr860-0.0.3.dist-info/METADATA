@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: srsinst.sr860
+Version: 0.0.3
+Summary: Communication package for SRS Lock-In Amplifier SR860 series
+Author: Chulhoon Kim
+License: MIT license
+Keywords: SR860,SR865A,SRS,Stanford Research Systems
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: python-vxi11
+Requires-Dist: srsgui (>=0.1.7)
+Provides-Extra: gui
+Requires-Dist: matplotlib ; extra == 'gui'
+Requires-Dist: pyside2 ; extra == 'gui'
+
+# `srsinst.sr860`
+
+`srsinst.sr860` is a Python 3 package to communicate with 
+[Stanford Research Systems (SRS) SR860 series Lock-In Amplifiers](https://thinksrs.com/products/sr865a.html).
+
