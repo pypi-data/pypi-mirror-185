@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% load humanize %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+    {% if now_playing_list %}
+    <h2>Now playing</h2>
+    {% for scrobble in now_playing_list %}
+        {% if scrobble.video %}
+            <dl class="latest-scrobble">
+                <dt>{{scrobble.video.title}} - {{scrobble.video}}</dt>
+                <dd>
+                    Started {{scrobble.created|naturaltime}} from {{scrobble.source}}
+
+                    <div class="progress-bar">
+                        <span class="progress-bar-fill" style="width: {{scrobble.percent_played}}%;"></span>
+                    </div>
+                </dd>
+            </dl>
+        {% endif %}
+        {% if scrobble.track %}
+            <dl class="latest-scrobble">
+                <dt>{{scrobble.track.title}} by {{scrobble.track.artist}} from {{scrobble.track.album}}</dt>
+                <dd>
+                    Started {{scrobble.created|naturaltime}} from {{scrobble.source}}
+                    <div class="progress-bar">
+                        <span class="progress-bar-fill" style="width: {{scrobble.percent_played}}%;"></span>
+                    </div>
+                </dd>
+            </dl>
+        {% endif %}
+        <br />
+    {% endfor %}
+    {% endif %}
+    <h2>Last scrobbles</h2>
+    <ul>
+        {% for scrobble in object_list %}
+        <li>
+            {{scrobble.timestamp|naturaltime}}:
+            {% if scrobble.video %}
+            🎥 watched <a href="{{scrobble.video.imdb_link}}">{{scrobble.video}}{% if scrobble.video.video_type == 'E' %} - {{scrobble.video.title}}{% endif %}</a></li>
+            {% endif %}
+            {% if scrobble.track %}
+            🎶 listened to <a href="{{scrobble.track.mb_link}}">{{scrobble.track.title}}</a> by <a href="{{scrobble.track.artist.mb_link}}">{{scrobble.track.artist}}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endblock %}
