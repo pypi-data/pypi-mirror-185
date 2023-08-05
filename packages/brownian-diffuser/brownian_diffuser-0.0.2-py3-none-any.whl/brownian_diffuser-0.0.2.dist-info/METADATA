@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: brownian-diffuser
+Version: 0.0.2
+Summary: Brownian diffuser
+Home-page: https://github.com/mvinyard/brownian-diffuser
+Author: Michael E. Vinyard - Harvard University - Broad Institute of MIT and Harvard - Massachussetts General Hospital
+Author-email: mvinyard@broadinstitute.org
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (>=1.12.0)
+Requires-Dist: autodevice (>=0.0.2)
+
+# brownian-diffuser
+
+Forward integrate torch neural networks
+
+Similar to [`torchsde.sdeint`](https://github.com/google-research/torchsde) or [`torchdiffeq.odeint`](https://github.com/rtqichen/torchdiffeq) but for vanilla neural networks as implemented by [`TorchNets`](https://github.com/mvinyard/torch-nets/)
+
+### Example usage
+
+**`BrownianDiffuser`**
+```python
+from brownian_diffuser import BrownianDiffuser
+
+diffuser = BrownianDiffuser()
+```
+
+```python
+from torch_nets import TorchNet
+import torch
+
+net = TorchNet(50, 50, [400, 400])
+X0 = torch.randn([200, 50])
+t = torch.Tensor([2, 4, 6])
+```
+
+```python
+X_pred = diffuser(net, X0, t, n_steps=40, stdev=0.5, max_steps=None, return_all=False)
+X_pred.shape
+```
+```
+torch.Size([3, 200, 50])
+```
+
+**`BrownianMotion`**
+```python
+from brownian_diffuser import BrownianMotion
+
+X_state = torch.randn([400, 50])
+
+BM = BrownianMotion(X_state, stdev=0.5, n_steps=40)
+Z = BM()
+Z.shape
+```
+```
+torch.Size([40, 400, 50])
+```
+
+### Installation
+
+```
+pip install brownian-diffuser
+```
