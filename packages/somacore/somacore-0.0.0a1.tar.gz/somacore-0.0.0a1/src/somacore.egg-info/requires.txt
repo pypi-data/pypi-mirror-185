@@ -1,0 +1,8 @@
+attrs>=22.1
+pyarrow
+typing-extensions
+
+[dev]
+black
+isort
+setuptools-scm
