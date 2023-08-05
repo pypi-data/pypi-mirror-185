@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: momentumx
+Version: 2.0.0
+Summary: Zero-copy shared memory IPC library for building complex streaming data pipelines capable of processing large datasets
+Author: Captivation Software, LLC
+Requires-Python: >=3.7
+Provides-Extra: test
+License-File: LICENSE
