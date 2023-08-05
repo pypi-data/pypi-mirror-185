@@ -1,0 +1,7 @@
+-r requirements.txt
+flake8
+pytest
+pytest-cov
+codecov
+pdoc3==0.9.1
+-e .  # Install schemadiff in editable form for local development
