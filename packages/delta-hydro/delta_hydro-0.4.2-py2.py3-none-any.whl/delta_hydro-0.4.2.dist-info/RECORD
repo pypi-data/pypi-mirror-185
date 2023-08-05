@@ -1,0 +1,8 @@
+hydro/__init__.py,sha256=5QT5dKqgSXtkRKyz4wLhX99JayBhxDoFnQWOL7p0eEw,1654
+hydro/delta.py,sha256=WrfKH50_Uk96ykPxsQjgc7XUZBb4j4xAqFHMaA3Fwoc,18556
+hydro/spark.py,sha256=jillsDrAY5PdV5pTreGTHB3BYsuc9ng0Ll65zvpwido,13217
+delta_hydro-0.4.2.dist-info/LICENSE,sha256=9X7dV-eMyLHlllL0m5L-CsSql7c8dUCHzQLlE46oAlo,1061
+delta_hydro-0.4.2.dist-info/METADATA,sha256=77DHMgs7mphEZjLO8jT2ZfxqjJZFTS1yajHxpfZ0zLA,3855
+delta_hydro-0.4.2.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+delta_hydro-0.4.2.dist-info/top_level.txt,sha256=rZAQBejJyjk1SoOFzIOb3G8fNfsZIpcHry5I5XegDbI,6
+delta_hydro-0.4.2.dist-info/RECORD,,
