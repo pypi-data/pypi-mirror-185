@@ -1,0 +1,12 @@
+mgl_formulae/__init__.py,sha256=Clj2qV04TE3SAzSjAByaX5Bjq8Rouu0YDM4cXNKl-Hg,283
+mgl_formulae/__main__.py,sha256=fyQZMsoB-QxYOZrLQwI-0UPSHkWJZQ6-DDYy0tV7TRg,1863
+mgl_formulae/__version__.py,sha256=CDE6brY1DqIizj1c-92S6juqlmj9UXNRjwfbt88B_rs,72
+mgl_formulae/compile.py,sha256=mFLbYJBKHPLlVp4ntV8n86edfb6MXRJuhP07nA_v894,2155
+mgl_formulae/formulae.lark,sha256=-XmEgtE6iDU0HlQIhQ2s7za7RS70iFLJqOIwNiZWubM,2191
+mgl_formulae/grammar.py,sha256=z02JmWoceylLDjU9Gi6A1khFGVfCNwJi9h3Wvr-Snzo,442
+mgl_formulae/rebuild.py,sha256=dHroU69kFscvrLy5Ih7TFFlm3G0CuKVGEI9ajRdnLx8,5842
+mgl_formulae/rules.py,sha256=800DH-KXRRoJ77SAnJQvnccmASn0SiWi8nlylJ1CdCE,14903
+mgl_formulae-0.1.0.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+mgl_formulae-0.1.0.dist-info/METADATA,sha256=oy7aYP50wxISMMrz89KHnH0TZo0gdWfr9UPJBqiHPxY,3031
+mgl_formulae-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mgl_formulae-0.1.0.dist-info/RECORD,,
