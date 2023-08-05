@@ -1,0 +1,11 @@
+metDatamodel
+mass2chem
+jms-metabolite-services>0.4.2
+pymzml
+numpy
+scipy
+statsmodels
+pyyaml
+panel
+holoviews
+hvplot
