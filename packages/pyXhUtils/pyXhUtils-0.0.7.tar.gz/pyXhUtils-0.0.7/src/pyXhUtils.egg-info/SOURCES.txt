@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/file_changes_xh/FileChanges.py
+src/file_changes_xh/__init__.py
+src/pyXhUtils.egg-info/PKG-INFO
+src/pyXhUtils.egg-info/SOURCES.txt
+src/pyXhUtils.egg-info/dependency_links.txt
+src/pyXhUtils.egg-info/top_level.txt
