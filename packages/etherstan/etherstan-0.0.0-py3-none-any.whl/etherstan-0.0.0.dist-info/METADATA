@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: etherstan
+Version: 0.0.0
+Summary: A tool for extracting Ethereum addresses from comment threads on Reddit and Twitter
+Home-page: https://gitlab.com/GoodLuckHF/etherstan
+Author: The Yellow Dart
+License: GNU Affero General Public License v3
+Keywords: NFT,cryptocurrency,Ethereum,Etherscan,webscraping
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: etherscan-python
+
+# Etherstan
+
+**Currently a project placeholder. Come back later when the first version is actually released for working code.**
+
+Get all transactions from Etherscan direct to a simple spreadsheet.
+
+## Searches supported
+
+More functionality will be added on eventually. For now it can pull.
+* Ethereum transactions by address
+* ERC20 transactions by address
+
+## Getting started
+
+The easiest way to use this tool is to download it from pip.
+
+```
+pip install etherstan
+```
+
+It requires python 3.10 or later.
+
+To use the command line scraping tools, you must include API credentials in a config file. Edit config.json to include your Etherscan authentication token.
+
+Need help getting your token, instructions to create an account and generate a token can be found in the [Etherscan API documentation](https://docs.etherscan.io/getting-started/creating-an-account).
+
+## Usage
+
+Coming soon.
