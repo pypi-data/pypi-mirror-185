@@ -1,0 +1,5 @@
+[console_scripts]
+mergegi=mergegi:main
+mergegi_convert=mergegi.cli:convert
+sequana_mergegi=sequana_pipelines.mergegi.main:main
+
