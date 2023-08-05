@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: cuquantum-python
+Version: 22.11.0.1
+Summary: NVIDIA cuQuantum Python
+Home-page: https://developer.nvidia.com/cuquantum-sdk
+Author: NVIDIA Corporation
+Author-email: cuda_installer@nvidia.com
+License: BSD-3-Clause
+Keywords: cuda,nvidia,state vector,tensor network,high-performance computing,quantum computing
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: cuquantum-python-cu11 (==22.11.0.1)
+
+***********************
+NVIDIA cuQuantum Python
+***********************
+
+NVIDIA cuQuantum Python provides Python bindings and high-level object-oriented models for accessing the full functionalities of NVIDIA cuQuantum SDK from Python.
+
+Installation
+============
+
+.. code-block:: bash
+
+   pip install cuquantum-python
+
+.. note::
+
+   Starting cuQuantum 22.11, this package is a meta package pointing to ``cuquantum-python-cuXX``,
+   where XX is the CUDA major version (currently CUDA 11 is supported).
+   Users are encouraged to install the new wheels that come *with* the ``-cuXX`` suffix;
+   the old package ``cuquantum-python`` (without the ``-cuXX`` suffix) currently points to ``cuquantum-python-cu11``
+   and is subject to change in the future.
+
+Citing cuQuantum
+================
+
+Pleae click this Zenodo badge to see the citation format: |DOI|
+
+.. |DOI| image:: https://zenodo.org/badge/435003852.svg
+    :target: https://zenodo.org/badge/latestdoi/435003852
