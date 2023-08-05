@@ -1,0 +1,12 @@
+engawa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+engawa/cli.py,sha256=JYzAxUWegNR5SSiNIRDPB6KEJh3dPPIDzasro9uv3bA,221
+engawa/data_collator.py,sha256=4SfPFcbZdlyZvu7lVLTYFJ_uFFX48te1pqxSqQe-CSg,7810
+engawa/data_loader.py,sha256=6yArmhD5d89-c_i8gZWAsxmwxcMUc1Acuy6KxDj0ijo,1555
+engawa/misc/did_it_learn_anything.py,sha256=w40HbBt8Hv3eEjj7l9wfJmzkdes-BDoj4VfjCnuP_qg,1632
+engawa/model.py,sha256=GrHCTsNHuTYYq8F_PF2tLQOqg3t9xQ_vECAWAY-3Yxg,3028
+engawa/tokenizer.py,sha256=NQD4DDaNvzX_k9rY0DllGBvD4ka1a2iQWnGhkgOXkpY,2043
+engawa/train.py,sha256=QgjukuCnbgU0N4zZZTb9WedkUAdCNCNXACB2ZMxLyUw,4049
+engawa-0.1.3.dist-info/entry_points.txt,sha256=GFIsYS6-90aNuw_QxVNVprVYPGWLkkarlXxWcfcs9O4,42
+engawa-0.1.3.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+engawa-0.1.3.dist-info/METADATA,sha256=ltILR7cQprwBT9IacPAclrfufs882GG46Dwzk2e7hKo,1443
+engawa-0.1.3.dist-info/RECORD,,
