@@ -1,0 +1,7 @@
+numpy
+python-vxi11
+srsgui>=0.1.7
+
+[gui]
+matplotlib
+pyside2
