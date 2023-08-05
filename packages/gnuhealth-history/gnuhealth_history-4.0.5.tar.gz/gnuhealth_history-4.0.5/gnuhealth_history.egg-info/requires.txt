@@ -1,0 +1,7 @@
+gnuhealth==4.0.5
+gnuhealth_genetics==4.0.5
+gnuhealth_socioeconomics==4.0.5
+gnuhealth_surgery==4.0.5
+gnuhealth_gyneco==4.0.5
+gnuhealth_lifestyle==4.0.5
+gnuhealth_crypto==4.0.5
