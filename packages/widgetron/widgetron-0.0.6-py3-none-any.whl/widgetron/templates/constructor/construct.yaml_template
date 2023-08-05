@@ -1,0 +1,9 @@
+name: {{name}}
+version: {{version}}
+channels:
+  - local{% for c in channels %}
+  - {{c}}{% endfor %}
+specs:
+  - widgetron_app{% for package in dependencies %}
+  - {{package}}{% endfor %}
+register_python_default: false

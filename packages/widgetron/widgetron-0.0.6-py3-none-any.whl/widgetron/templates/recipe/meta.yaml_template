@@ -1,0 +1,26 @@
+package:
+  name: widgetron_app
+  version: 1
+
+source:
+  path: ../server  # relative to this file
+
+build:
+  number: 0
+  script: python -m pip install .  # [not win]
+
+requirements:
+  host:
+    - python
+    - pip
+
+  run:
+    - python
+    - menuinst >=1.4.17
+    - voila
+    - conda
+    - ipywidgets
+
+test:
+  commands:
+    - if not exist %PREFIX%\\Menu\\widgetron_shortcut.json exit 1  # [win]
