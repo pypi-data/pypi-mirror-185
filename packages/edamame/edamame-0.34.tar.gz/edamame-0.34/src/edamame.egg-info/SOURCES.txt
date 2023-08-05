@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/edamame/__init__.py
+src/edamame/classification.py
+src/edamame/eda.py
+src/edamame/regression.py
+src/edamame/tools.py
+src/edamame.egg-info/PKG-INFO
+src/edamame.egg-info/SOURCES.txt
+src/edamame.egg-info/dependency_links.txt
+src/edamame.egg-info/requires.txt
+src/edamame.egg-info/top_level.txt
+src/edamame/classifier/__init__.py
+src/edamame/classifier/classification.py
