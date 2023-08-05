@@ -1,0 +1,17 @@
+geofetch/__init__.py,sha256=XEjI77KZLKeOLEKwl7xjnvPdTfbYUD2w_IpcrGnrCHY,155
+geofetch/_version.py,sha256=bmMNWd6X6fx5JJd3CqzukH9Aez4xKCZuJNcmMU1pbEc,23
+geofetch/cli.py,sha256=fNArDJV_slpX9Fmch-ZjzragRVGI65VCjwPMJ9XfAE4,9098
+geofetch/config_processed_template.yaml,sha256=TgrN3gRIxNFGEKyzYj_P7e55WMo_N2dGLTIAKWpF_jI,420
+geofetch/config_template.yaml,sha256=GCzqRc5bvEmJYZg329CgfVVrwQn_GBkMqlLiOBlM_Xc,272
+geofetch/const.py,sha256=2uPA6uEj1NBmjKYVeBV96WE3Y0x3t4xnf31Gc6vI4PI,2063
+geofetch/finder.py,sha256=P5Mrn8tsMQC4CgxMms7xp6n9nEszIpqmqk0H7oIp7mw,6497
+geofetch/geofetch.py,sha256=xpeB5CdTO_zWONAtfAdpAJai7lIulNth0L83LdnAXNI,83321
+geofetch/looper_sra_convert.yaml,sha256=x-OL2afOvFqr8m7Ux52Ae4G7JPcTACipR5yfELILuuA,1094
+geofetch/sraconvert.py,sha256=MKS-aneT0UZLXnqg-oXBwaI39Ajws7-uovsyMHP1-t8,6629
+geofetch/utils.py,sha256=EAEIv1QSd3TLi46gQv9mS4O02eUgqrhaez7yfV2qBHY,25461
+geofetch-0.11.2.dist-info/LICENSE.txt,sha256=oB6ZGDa4kcznznJKJsLLFFcOZyi8Y6e2Jv0rJozgp-I,1269
+geofetch-0.11.2.dist-info/METADATA,sha256=pWgubY4xJS6ZcbAV6E701BUPMV1mmwRZfEMT-5TcXxg,2711
+geofetch-0.11.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+geofetch-0.11.2.dist-info/entry_points.txt,sha256=pQuXbwqzN8zTd1yvQ4bffyrf1KPqqAcjqB2qFtieV7w,90
+geofetch-0.11.2.dist-info/top_level.txt,sha256=szbv8REnZfDKoGjg7jaS2eFplA4T4-5LdIqm_S6rpt4,9
+geofetch-0.11.2.dist-info/RECORD,,
