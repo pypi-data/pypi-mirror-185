@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+FilMoreBlanks/__init__.py
+FilMoreBlanks/blanket_fill.py
+FilMoreBlanks.egg-info/PKG-INFO
+FilMoreBlanks.egg-info/SOURCES.txt
+FilMoreBlanks.egg-info/dependency_links.txt
+FilMoreBlanks.egg-info/top_level.txt
