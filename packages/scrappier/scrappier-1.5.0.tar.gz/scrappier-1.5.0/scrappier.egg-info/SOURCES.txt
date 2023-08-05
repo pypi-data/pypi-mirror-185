@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+scrappier/__init__.py
+scrappier/browser.py
+scrappier/element.py
+scrappier/element_collection.py
+scrappier/element_finder.py
+scrappier.egg-info/PKG-INFO
+scrappier.egg-info/SOURCES.txt
+scrappier.egg-info/dependency_links.txt
+scrappier.egg-info/requires.txt
+scrappier.egg-info/top_level.txt
+scrappier/exceptions/__init__.py
+scrappier/exceptions/element_not_found_exception.py
