@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: luketils
+Version: 0.1.9
+Home-page: https://github.com/lukewood/luketils
+Author: Luke Wood
+Author-email: lukewoodcs@gmail.com
+License: Apache License 2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python
+Requires-Dist: tensorflow
+Requires-Dist: scikit-learn
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytype ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+# luketils
+
+TODO add badges from PyPi and all the fun stuff
+
+`luketils` is a Python utility package aimed at machine learning practitioners.
+The goal of the package is to provide useful utilities in a coherently designed and
+powerful API.
+
+_Call for Contributions:_ *luketils is actively seeking contributions!  Please see the [Call for Contributions](#call_for_contributions) section below!*
+
+## Quick Links
+
+- [API Docs] (coming soon)!
+- Examples
+- Contributing
+
+## Call for Contributions
+
+I'm hoping to crowdsource `luketils` and gather as many
+useful machine learning oriented Python utilities as possible.  Have something useful?
+Open a PR!  I'll give it a review!  
+
+Don't have an idea?  Check out the [Contributions Welcome] hotlist!
+
+## Thanks
+
+Thank you to all of our wonderful contributors!
