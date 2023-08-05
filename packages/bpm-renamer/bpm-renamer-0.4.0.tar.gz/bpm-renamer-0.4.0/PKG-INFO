@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: bpm-renamer
+Version: 0.4.0
+Summary: 
+Author: Bruce Collie
+Author-email: brucecollie82@gmail.com
+Requires-Python: >=3.6,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyWavelets (>=1.4.1,<2.0.0)
+Requires-Dist: numpy (>=1.24.1,<2.0.0)
+Requires-Dist: scipy (>=1.10.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+BPM Detector in Python
+=======================
+Implementation of a Beats Per Minute (BPM) detection algorithm, as presented in the paper of G. Tzanetakis, G. Essl and P. Cook titled: "Audio Analysis using the Discrete Wavelet Transform".
+
+You can find it here: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.63.5712
+
+Based on the work done in the MATLAB code located at github.com/panagiop/the-BPM-detector-python.
+
+Process .wav file to determine the Beats Per Minute.
+
+Dependencies: scipy, numpy, pywavelets, matplotlib
+
+
