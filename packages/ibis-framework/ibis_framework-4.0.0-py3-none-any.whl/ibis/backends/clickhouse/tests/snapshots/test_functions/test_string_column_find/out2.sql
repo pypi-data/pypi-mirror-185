@@ -1,0 +1,1 @@
+position(string_col IN string_col) - 1
