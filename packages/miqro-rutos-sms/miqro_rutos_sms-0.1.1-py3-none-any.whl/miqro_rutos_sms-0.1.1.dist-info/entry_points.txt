@@ -1,0 +1,3 @@
+[console_scripts]
+miqro_rutos_sms=miqro_rutos_sms:service.run
+
