@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+yolov8tohf/__init__.py
+yolov8tohf/cli.py
+yolov8tohf/hf_utils.py
+yolov8tohf/ultralytics_utils.py
+yolov8tohf.egg-info/PKG-INFO
+yolov8tohf.egg-info/SOURCES.txt
+yolov8tohf.egg-info/dependency_links.txt
+yolov8tohf.egg-info/entry_points.txt
+yolov8tohf.egg-info/requires.txt
+yolov8tohf.egg-info/top_level.txt
