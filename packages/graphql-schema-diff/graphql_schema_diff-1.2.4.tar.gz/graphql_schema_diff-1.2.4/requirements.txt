@@ -1,0 +1,1 @@
+.  # Instruct setuptools to run 'python setup.py install'
