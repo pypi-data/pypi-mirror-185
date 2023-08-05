@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: yasmll
+Version: 0.1.0
+Summary: YASMLL: Yet Another Scientific Machine Learning Library
+Home-page: https://github.com/romulomontalvao/yasmll
+Author: Rômulo Montalvão Silva
+Author-email: romulo.silva@nacad.ufrj.br
+License: BSD (3-clause)
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: flax
+Requires-Dist: jax (>=0.3.25)
+Requires-Dist: optax
+Requires-Dist: tensorflow (>=2.9.1)
+
+======
+yasmll
+======
+
+.. image:: https://img.shields.io/travis/romulomontalvao/yasmll.svg
+        :target: https://travis-ci.org/romulomontalvao/yasmll
+
+.. image:: https://img.shields.io/pypi/v/yasmll.svg
+        :target: https://pypi.python.org/pypi/yasmll
+
+
+YASMLL: Yet Another Scientific Machine Learning Library
+
+* Free software: 3-clause BSD license
+* Documentation: (COMING SOON!) https://romulomontalvao.github.io/yasmll.
+
+Features
+--------
+
+* TODO
