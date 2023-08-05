@@ -1,0 +1,2 @@
+[console_scripts]
+apyneng = advpyneng_cli_course.apyneng:cli
