@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: log-config-watcher
+Version: 0.1.0
+Summary: Watches your logging configuration file for change and applies them without requiring an application restart
+License: BSD-3-Clause
+Author: Robert DeRose
+Author-email: rderose@checkpt.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
