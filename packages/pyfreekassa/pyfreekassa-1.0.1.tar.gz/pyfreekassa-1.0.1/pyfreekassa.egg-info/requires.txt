@@ -1,0 +1,7 @@
+aiofiles
+aiohttp
+myst_parser
+
+[docs]
+sphinx
+myst-parser
