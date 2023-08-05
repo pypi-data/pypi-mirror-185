@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: fabler
+Version: 0.0.1
+Summary: Multimodal AI Story Teller, built with Stable Diffusion, GPT, and neural text-to-speech.
+Author-email: Jake Tae <jaesungtae@gmail.com>, Christopher Woodall <woodall.christopher@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: GPT,TTS,language-model,multimodal AI,neural text-to-speech,stable diffusion,transformer
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Environment :: GPU
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Framework :: Hatch
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Requires-Dist: accelerate[test-trackers]
+Requires-Dist: diffusers
+Requires-Dist: flask
+Requires-Dist: nltk
+Requires-Dist: pyyaml
+Requires-Dist: tensorboard
+Requires-Dist: transformers
+Requires-Dist: tts
+Provides-Extra: developer
+Requires-Dist: black; extra == 'developer'
+Requires-Dist: flake8; extra == 'developer'
+Requires-Dist: hatch; extra == 'developer'
+Requires-Dist: isort; extra == 'developer'
+Requires-Dist: mypy; extra == 'developer'
+Requires-Dist: pre-commit; extra == 'developer'
+Requires-Dist: pydantic; extra == 'developer'
+Requires-Dist: types-pyyaml; extra == 'developer'
+Provides-Extra: staging
+Requires-Dist: sentence-transformers>=2.2.0; extra == 'staging'
+Description-Content-Type: text/markdown
+
+# StoryTeller
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A multimodal AI story teller, built with [Stable Diffusion](https://huggingface.co/spaces/stabilityai/stable-diffusion), GPT, and neural text-to-speech (TTS).
+
+Given a prompt as an opening line of a story, GPT writes the rest of the plot; Stable Diffusion draws an image for each sentence; a TTS model narrates each line, resulting in a fully animated video of a short story, replete with audio and visuals.
+
+![out](https://user-images.githubusercontent.com/25360440/210071764-51ed5872-ba56-4ed0-919b-d9ce65110185.gif)
+
+
+## Quickstart
+
+1. Clone the repository.
+
+```bash
+$ git clone https://github.com/jaketae/storyteller.git
+```
+
+2. Install package requirements.
+
+```bash
+$ pip install --upgrade pip wheel
+$ pip install -e .
+# for dev requirements, do:
+# pip install -e .[developer]
+```
+
+3. Run the demo. The final video will be saved as `/out/out.mp4`, alongside other intermediate images, audio files, and subtitles.
+
+```bash
+$ storyteller
+# alternatively with make, do:
+# make run
+```
+
+## Usage
+
+1. Load the model with defaults.
+
+```python
+from storyteller import StoryTeller
+
+story_teller = StoryTeller.from_defaults()
+story_teller.generate(...)
+```
+
+2. Alternatively, configure the model with custom settings.
+
+```python
+from storyteller import StoryTeller, StoryTellerConfig
+
+config = StoryTellerConfig(
+    writer="gpt2-large",
+    painter="CompVis/stable-diffusion-v1-4",
+    max_new_tokens=100,
+    diffusion_prompt_prefix="Van Gogh style",
+)
+
+story_teller = StoryTeller(config)
+story_teller.generate(...)
+```
+
+## License
+
+Released under the [MIT License](LICENSE).
