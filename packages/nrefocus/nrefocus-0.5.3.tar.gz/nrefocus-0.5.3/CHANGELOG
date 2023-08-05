@@ -1,0 +1,73 @@
+0.5.3
+ - enh: add std and median metrics (#19)
+ - docs: make docs build on Windows
+0.5.2
+ - enh: clarify roi argument for Refocus.autofocus method (#17)
+0.5.1
+ - fix: internally normalize focusing distance to the wavelength for
+   autofocusing with lmfit, because the scale seemed to affect the
+   minimizer convergence (#14)
+0.5.0
+ - BREAKING CHANGE: The "legacy" minimizer is deprecated in favor of
+   the new lmfit-based minimizer. The default minimizer is now "lmfit".
+ - BREAKING CHANGE: Removed the "ret_grad" and "ret_d" keyword argument
+   from autofocusing methods; there is now "ret_grid" and "ret_field"
+   instead
+ - BREAKING CHANGE: By default, the minimizers do not anymore return the
+   refocused field, this can be re-enabled by using the `ret_field`
+   option
+ - build: lmfit is now a dependency
+ - fix: check for None instead of boolean evaluation for
+   metrics dealing with ROIs
+0.4.3
+ - ref: deprecate minimizer argument
+ - ref: legacy minimizer now thinks in SI units
+ - ref: minor cleanup in autofocusing code
+0.4.2
+ - docs: minor improvements
+0.4.1
+ - fix: `autofocus` method of Refocus was not functional
+ - ref: use `Refocus.autofocus` for legacy autofocus method
+ - docs: fix rtd builds
+0.4.0
+ - feat: implement nrefocus.RefocusPyFFTW for faster refocusing
+   using pyfftw (#11)
+ - enh: speed-up propagation kernel computation using numexpr
+ - docs: cleanup
+0.3.1
+ - dist: include submodules in wheel/dist
+0.3.0
+ - feat: introduce nrefocus.RefocusNumpy and nrefocus.RefocusNumpy1D
+   interface class for user-convenience and efficiency
+ - docs: cleanup
+ - ref: new submodule for metrics and metrics now accept a Refocus
+   instance as an argument
+ - ref: new submodule for minimizers and minimizers now accept
+   a Refocus instance
+ - ref: make legacy autofocusing code use the new Refocus class
+0.2.1
+ - fix: fix several minor bugs (deprecations?) that caused the
+   tests to faile
+ - ci: migrate to GitHub Actions
+ - setup: setup.py test is deprecated
+ - docs: refurbish documentation
+0.2.0
+ - Drop support for Python 2 (#8)
+ - Code cleanup
+0.1.8
+ - Include docs in sdist
+0.1.7
+ - Update documentation and examples
+0.1.6
+ - Move documentation from GitHub to readthedocs.io
+ - Add universal wheel on PyPI
+ - Update tests on travis with new versions of NumPy
+0.1.5
+ - Code cleanup
+0.1.4
+ - Padding is now available in all methods (#2)
+ - Added new convenient submodule `pad`
+ - Bugfix: autofocusing did not return the correct focusing distance.
+   This resulted in a slight offset in the refocusing distance for
+   the method `autofocus_stack` when `same_dist=True` was set.
+ - New test functions for `pad`
