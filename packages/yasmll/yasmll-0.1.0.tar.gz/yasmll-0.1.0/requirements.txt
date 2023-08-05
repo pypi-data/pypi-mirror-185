@@ -1,0 +1,5 @@
+# List required packages in this file, one per line.
+flax
+jax>=0.3.25
+optax
+tensorflow>=2.9.1
