@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: jeelink
+Version: 0.1.0
+Home-page: https://github.com/Andre0512/jeelink
+Author: Andre Basche
+License: MIT
+Keywords: smart home automation
+Platform: any
+Requires-Python: >=3.8
