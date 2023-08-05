@@ -1,0 +1,12 @@
+scrappier/__init__.py,sha256=x_jKNtbW9QZLy9qm9CNVucQ-gyVRKSN4BblxE4vm4xE,37
+scrappier/browser.py,sha256=_g9tMAIFWx_hvHLCXaGBKyORYF8NtlbO6Sg9PZXf7mk,3635
+scrappier/element.py,sha256=qJXy1YKgdQ8oQyd7ZWnUGu5MN2K90z6ZFh-6a4xsrDg,3318
+scrappier/element_collection.py,sha256=V7p8i44fGCqone5JYSfUa-Dej8nfxP3Nqem9LO0pkwk,400
+scrappier/element_finder.py,sha256=xYh85TmO-frwckcl2ntng1xswb4vqZzedkPra-1tyXc,3381
+scrappier/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scrappier/exceptions/element_not_found_exception.py,sha256=6vHhKYBT1D137D4pQo8Wlqd7KheAxuU4jFMRdjYMCjY,51
+scrappier-1.5.0.dist-info/LICENSE,sha256=73GUIuV1fQvsIM13U3Ep_AfbJ4qvJFkAStMbbr5CRNk,1062
+scrappier-1.5.0.dist-info/METADATA,sha256=HG2jPU6U653NhHO1XSBBb6GwStUOdGEeOFgNCLLNsPU,2470
+scrappier-1.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+scrappier-1.5.0.dist-info/top_level.txt,sha256=oOZKn-dGxeyEIfN_sVLjFPDWApRHcx2fVYLx5xUaTJQ,10
+scrappier-1.5.0.dist-info/RECORD,,
