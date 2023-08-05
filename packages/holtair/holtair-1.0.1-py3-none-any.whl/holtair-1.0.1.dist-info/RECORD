@@ -1,0 +1,11 @@
+holtair/__init__.py,sha256=9KmMQvHw-LEDLkaEtvcoqYcwi2G4Cg96HWBLycaKsTc,19
+holtair/_exceptions.py,sha256=kFVhIcRvjacTN5Cwdikr2PsNWFzr6ggiwzxAYn6aw1Y,2428
+holtair/_image_reading.py,sha256=sQ7C30DK545mzzc-AVGkHuGUlt9elr43KT9tADpDpxU,17887
+holtair/_sleep_detection.py,sha256=x5EjGEoZ4WLGWw-H4VSzrstKi0-MRe6ydexOsJL4kaY,4555
+holtair/_statistics.py,sha256=W_z72tINUXCaXBCCrrcvLPj0y707_xeDxMCJ0a0Y-Xg,6066
+holtair/_text_reading.py,sha256=hPam724sGX3MEqUnA2zGix4pyX0-HV7eU0__8fbIJxI,1799
+holtair/exams.py,sha256=5HKi0OykZAyP4B6AiFB5rWOH1_Fq0bY4VSNuwxjqNLI,6654
+holtair-1.0.1.dist-info/METADATA,sha256=1asiTQoV6BppPDa7TKErU9jRg_uepeRBWMi6tKxvs7s,3809
+holtair-1.0.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+holtair-1.0.1.dist-info/licenses/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+holtair-1.0.1.dist-info/RECORD,,
