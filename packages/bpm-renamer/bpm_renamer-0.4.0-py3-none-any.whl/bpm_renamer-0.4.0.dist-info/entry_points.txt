@@ -1,0 +1,3 @@
+[console_scripts]
+bpm-rename=python_bpm.app:main
+

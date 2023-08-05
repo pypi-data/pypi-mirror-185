@@ -1,0 +1,7 @@
+python_bpm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_bpm/app.py,sha256=zBME8yElzrzLg4wgdaohcJoSn9rfoUzAnxM_F2nfjXc,1685
+python_bpm/bpm_detection.py,sha256=ateEdMtN-vZKXfSNip4V3q6FdTvpwnldQG5iH_ajv_M,4677
+bpm_renamer-0.4.0.dist-info/entry_points.txt,sha256=kafRl_IpMIS1DnYL0ibMQJ6I4MmoomsQqrRAOTBJBxM,50
+bpm_renamer-0.4.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+bpm_renamer-0.4.0.dist-info/METADATA,sha256=ebUcE3OKHw5oVlOLw2lD_UnPh9a3SJ1TTZRqWQMiwyU,1146
+bpm_renamer-0.4.0.dist-info/RECORD,,
