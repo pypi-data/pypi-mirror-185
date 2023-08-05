@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+rfc1924/__init__.py
+rfc1924/rfc1924.py
+rfc1924.egg-info/PKG-INFO
+rfc1924.egg-info/SOURCES.txt
+rfc1924.egg-info/dependency_links.txt
+rfc1924.egg-info/top_level.txt
