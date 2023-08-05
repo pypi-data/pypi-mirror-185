@@ -1,0 +1,2 @@
+[nbdev]
+data_mountains = data_mountains._modidx:d
