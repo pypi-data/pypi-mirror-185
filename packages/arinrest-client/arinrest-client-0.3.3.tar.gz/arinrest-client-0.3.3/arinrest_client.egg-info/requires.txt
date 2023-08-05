@@ -1,0 +1,12 @@
+requests>=2.28
+pydantic>=1.10
+cryptography>=38.0.4
+jinja2>=2.2.1
+
+[dev]
+black
+flake8
+typing-extensions
+pytest
+build
+twine
