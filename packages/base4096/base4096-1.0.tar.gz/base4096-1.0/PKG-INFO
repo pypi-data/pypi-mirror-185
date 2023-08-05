@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: base4096
+Version: 1.0
+Summary: Base4096 encoding and decoding functions
+Home-page: https://github.com/ZCHGorg/base4096
+Author: Josef Kulovany
+Author-email: charg.chg.wecharg@gmail.com
+License: MIT
+Keywords: base4096 encoder decoder
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
