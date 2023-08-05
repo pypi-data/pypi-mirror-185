@@ -1,0 +1,3 @@
+[console_scripts]
+dagger-py=dagger.cli:app
+
