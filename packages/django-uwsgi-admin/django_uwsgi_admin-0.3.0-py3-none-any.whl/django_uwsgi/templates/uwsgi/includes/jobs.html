@@ -1,0 +1,14 @@
+<thead>
+<tr>
+    <th>job filename</th>
+    <th>environment</th>
+</tr>
+</thead>
+<tbody>
+{% for job in jobs %}
+    <tr>
+        <td align="left">{{ job.file }}</td>
+        <td align="left">{{ job.env }}</td>
+    </tr>
+{% endfor %}
+</tbody>
