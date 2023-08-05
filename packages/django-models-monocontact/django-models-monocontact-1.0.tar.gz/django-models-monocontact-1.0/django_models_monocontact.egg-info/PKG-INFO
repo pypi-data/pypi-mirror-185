@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: django-models-monocontact
+Version: 1.0
+Summary: APP con modelos de monocontact
+Home-page: https://api.monocontact.com
+Author: taller_digital
+Author-email: lopez.pablo2305@gmail.com
+License: MIT
+Keywords: django demo
+License-File: LICENSE
+
+HI

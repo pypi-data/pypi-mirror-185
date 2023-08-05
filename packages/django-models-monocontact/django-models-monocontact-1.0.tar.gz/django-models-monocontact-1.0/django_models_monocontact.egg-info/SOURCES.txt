@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+base_datos/__init__.py
+base_datos/admin.py
+base_datos/apps.py
+base_datos/boot_django.py
+base_datos/models.py
+base_datos/tests.py
+base_datos/views.py
+base_datos/migrations/__init__.py
+django_models_monocontact.egg-info/PKG-INFO
+django_models_monocontact.egg-info/SOURCES.txt
+django_models_monocontact.egg-info/dependency_links.txt
+django_models_monocontact.egg-info/top_level.txt
