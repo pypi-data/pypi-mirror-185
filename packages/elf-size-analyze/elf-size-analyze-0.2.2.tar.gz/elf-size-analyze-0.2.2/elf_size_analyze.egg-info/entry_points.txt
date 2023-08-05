@@ -1,0 +1,2 @@
+[console_scripts]
+elf-size-analyze = elf_size_analyze.__main__:main
