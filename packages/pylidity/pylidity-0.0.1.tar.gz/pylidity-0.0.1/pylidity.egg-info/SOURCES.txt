@@ -1,0 +1,13 @@
+LICENCE
+pyproject.toml
+setup.cfg
+demos/__init__.py
+demos/program.py
+pylidator/__init__.py
+pylidator/validators.py
+pylidity.egg-info/PKG-INFO
+pylidity.egg-info/SOURCES.txt
+pylidity.egg-info/dependency_links.txt
+pylidity.egg-info/top_level.txt
+test/__init__.py
+test/test_validators.py
