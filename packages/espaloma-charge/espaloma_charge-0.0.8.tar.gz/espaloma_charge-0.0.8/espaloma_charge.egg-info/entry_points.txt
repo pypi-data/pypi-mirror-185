@@ -1,0 +1,2 @@
+[console_scripts]
+espaloma_charge = espaloma_charge.cli:espaloma_charge
