@@ -1,0 +1,14 @@
+espaloma_charge/__init__.py,sha256=JsfuM3t3UR2XDuGOTtX7GE_-PW7J1XSDZof_KAXtuKw,85
+espaloma_charge/_version.py,sha256=A88Z5EPfHrO6XmwJV7awgsbqh5Im_q5v0cz8mPtXIIQ,498
+espaloma_charge/antechamber_utils.py,sha256=Wat7G8XGCNNTSvWZmfHINjFBvVsa0FKOY8h1FMXrpA4,716
+espaloma_charge/app.py,sha256=2vFZQvmGUivqm1j09WC8RcZZOo-2ZwV-D1OmmYleVoU,1397
+espaloma_charge/cli.py,sha256=x94DKNVkcVZRX_XLMrZXM2omIg9e955qZ7N73vGU4eE,464
+espaloma_charge/models.py,sha256=IlPVPWL58VNLtrN7lfCcrweO3f0VxQYTqc1kJPSyj1c,7308
+espaloma_charge/openff_wrapper.py,sha256=zSOzt7gSZIElXxiMmYghmu_5s-T88LzsGi76XtyE134,4945
+espaloma_charge/utils.py,sha256=ZLZ1IebYoHWUxDJrCjoW1TBVkjq0d29PEiPvBsPg-NY,3170
+espaloma_charge-0.0.8.dist-info/LICENSE,sha256=fd8zLkVRZLkcadv5NgohArzU4mBV_PDkr8UBciyK-vE,1110
+espaloma_charge-0.0.8.dist-info/METADATA,sha256=FHt1OJFttIhI2Ww6i7bfDPUcEieRCI-MbBpKC711qEo,2292
+espaloma_charge-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+espaloma_charge-0.0.8.dist-info/entry_points.txt,sha256=k1PfKH2wYrcCXmXc_-qDPLPdKvzqlizWiFQKF2fikHE,72
+espaloma_charge-0.0.8.dist-info/top_level.txt,sha256=ZZDThyXJYXyfuWA4mwZFmKLHOGJUEtvlmCHpO5_Y64k,16
+espaloma_charge-0.0.8.dist-info/RECORD,,
