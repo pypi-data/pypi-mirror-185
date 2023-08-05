@@ -1,0 +1,5 @@
+[console_scripts]
+getnovel = getnovel:run_main
+
+[gui_scripts]
+getnovel_gui = getnovel: run_main_gui
