@@ -1,0 +1,86 @@
+
+class NewRemembranceDlg(QtWidgets.QDialog):
+    def __init__(self):
+        super().__init__()
+
+        vbox_l2 = QtWidgets.QVBoxLayout()
+        self.setLayout(vbox_l2)
+
+        self.title_qle = QtWidgets.QLineEdit()
+        self.title_qle.setPlaceholderText("Title")
+        vbox_l2.addWidget(self.title_qle)
+
+        # TODO: Only show this when a new remembrance is created?
+        vbox_l2.addWidget(QtWidgets.QLabel("Type of remembrance"))
+        hbox_l3 = QtWidgets.QHBoxLayout()
+        vbox_l2.addLayout(hbox_l3)
+        self.remembrance_type_qbg = QtWidgets.QButtonGroup()
+        self.remembrance_type_qbg.buttonClicked.connect(self.on_remembrance_type_button_clicked)
+        self.text_qrb = QtWidgets.QRadioButton("Text")
+        self.remembrance_type_qbg.addButton(self.text_qrb)
+        hbox_l3.addWidget(self.text_qrb)
+        self.image_qrb = QtWidgets.QRadioButton("Image")
+        self.remembrance_type_qbg.addButton(self.image_qrb)
+        hbox_l3.addWidget(self.image_qrb)
+        self.application_qrb = QtWidgets.QRadioButton("Application")
+        self.remembrance_type_qbg.addButton(self.application_qrb)
+        hbox_l3.addWidget(self.application_qrb)
+        self.web_page_qrb = QtWidgets.QRadioButton("Link")
+        self.remembrance_type_qbg.addButton(self.web_page_qrb)
+        hbox_l3.addWidget(self.web_page_qrb)
+
+        self.content_qle = QtWidgets.QLineEdit()
+        self.content_qle.setPlaceholderText("Content")
+        vbox_l2.addWidget(self.content_qle)
+
+        self.content_qpte = QtWidgets.QPlainTextEdit()
+        self.content_qpte.setPlaceholderText("Content")
+        vbox_l2.addWidget(self.content_qpte)
+
+        self.test_content_qpb = QtWidgets.QPushButton("Test Content")
+        self.test_content_qpb.clicked.connect(self.on_test_content_clicked)
+        vbox_l2.addWidget(self.test_content_qpb)
+
+        self.show()
+
+    def on_remembrance_type_button_clicked(self):
+        """
+        for the whole button group
+        """
+        if self.text_qrb.isChecked():
+            self.content_qle.setVisible(False)
+            self.content_qpte.setVisible(True)
+        else:
+            self.content_qle.setVisible(True)
+            self.content_qpte.setVisible(False)
+
+    def on_test_content_clicked(self):
+        if self.text_qrb.isChecked():
+            fullscreen_text_dlg = TextDialog(self.content_qpte.toPlainText())
+            fullscreen_text_dlg.exec_()
+        elif self.image_qrb.isChecked():
+            fullscreen_image_dlg = ImageDialog(self.content_qle.text())
+            fullscreen_image_dlg.exec_()
+        elif self.application_qrb.isChecked():
+            # https://stackoverflow.com/q/19971767/2525237
+            ret_val = subprocess.call([self.content_qle.text()])
+            print("ret_val = " + str(ret_val))
+        elif self.web_page_qrb.isChecked():
+            webbrowser.open_new_tab(self.content_qle.text())
+
+===========================
+
+class CustomImageLabel(QtWidgets.QLabel):
+    def __init__(self, i_file: str):
+        super().__init__()
+
+        self.file_str = i_file
+
+        self.setScaledContents(True)
+        self.setPixmap(QtGui.QPixmap(self.file_str))
+        nn.nn_global.resize_image(self, 150)
+
+    def mouseReleaseEvent(self, i_QMouseEvent):
+        fullscreen_image_dlg = ImageDialog(self.file_str)
+        fullscreen_image_dlg.exec_()
+

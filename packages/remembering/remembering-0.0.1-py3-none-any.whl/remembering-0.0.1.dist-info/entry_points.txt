@@ -1,0 +1,2 @@
+[console_scripts]
+remembering = remembering.__main__:main
