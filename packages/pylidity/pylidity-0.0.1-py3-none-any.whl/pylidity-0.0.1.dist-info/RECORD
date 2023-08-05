@@ -1,0 +1,11 @@
+demos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demos/program.py,sha256=t08csx10qO02lmQHQvQmw6c03GEuzwyStwP1Vr9pD74,468
+pylidator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylidator/validators.py,sha256=qnog1dpY9f6xR48DQCcKobE34Lg5rRBxvwNEmNtHZvM,358
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_validators.py,sha256=NlxtvsrY2WG4IHWzYbBgMrEcc1Vcmrf9g69PZIqAs8I,614
+pylidity-0.0.1.dist-info/LICENCE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylidity-0.0.1.dist-info/METADATA,sha256=2dSdjR1udSrXybqZtBGlrKwHyoAFMhsKUN2q5ZHmOt4,122
+pylidity-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pylidity-0.0.1.dist-info/top_level.txt,sha256=G7aZJKERwk1kZq7VRIIIK1YMrz6p_dDaM2EaHUAC6fc,21
+pylidity-0.0.1.dist-info/RECORD,,
