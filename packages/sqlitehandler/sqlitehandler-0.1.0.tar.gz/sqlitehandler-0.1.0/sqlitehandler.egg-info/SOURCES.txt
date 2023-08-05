@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sqlitehandler/__init__.py
+sqlitehandler/sqlitehandler.py
+sqlitehandler.egg-info/PKG-INFO
+sqlitehandler.egg-info/SOURCES.txt
+sqlitehandler.egg-info/dependency_links.txt
+sqlitehandler.egg-info/top_level.txt
+test/test.py
