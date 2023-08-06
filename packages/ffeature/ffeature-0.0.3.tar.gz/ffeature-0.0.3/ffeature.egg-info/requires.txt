@@ -1,0 +1,4 @@
+ftable
+ezpip
+sout>=1.2.1
+tqdm
