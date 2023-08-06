@@ -1,0 +1,3 @@
+adecty_design
+build
+dist
