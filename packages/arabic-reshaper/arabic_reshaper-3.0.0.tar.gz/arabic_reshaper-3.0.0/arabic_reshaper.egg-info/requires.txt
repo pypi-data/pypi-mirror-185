@@ -1,0 +1,3 @@
+
+[with-fonttools]
+fonttools>=4.0
