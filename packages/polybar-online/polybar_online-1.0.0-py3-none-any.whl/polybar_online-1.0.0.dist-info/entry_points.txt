@@ -1,0 +1,3 @@
+[console_scripts]
+polybar-online=polybar_online.main:main
+
