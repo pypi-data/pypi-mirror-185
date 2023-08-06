@@ -1,0 +1,7 @@
+setup.py
+src/SentiVizu_txt.py
+src/SentiVizu_txt.egg-info/PKG-INFO
+src/SentiVizu_txt.egg-info/SOURCES.txt
+src/SentiVizu_txt.egg-info/dependency_links.txt
+src/SentiVizu_txt.egg-info/requires.txt
+src/SentiVizu_txt.egg-info/top_level.txt
