@@ -1,0 +1,13 @@
+requests
+pycryptodome
+hashids
+jsonpickle
+pyjwt
+requests
+hashids
+rebel
+
+[dev]
+boto3
+black
+python-dotenv
