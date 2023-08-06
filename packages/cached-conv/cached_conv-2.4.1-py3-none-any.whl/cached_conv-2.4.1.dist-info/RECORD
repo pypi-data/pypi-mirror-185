@@ -1,0 +1,12 @@
+cached_conv/__init__.py,sha256=ZaGCjvC4pnnzK71FU6SvhV9hD4OuYDu92kLrs9JYn3c,1939
+cached_conv/convs.py,sha256=cIgFoT0n-XCsz9NzJ-R1Vm60lgPxeNcngGUHMDZCC0c,6833
+cached_conv/test_align_branches.py,sha256=1CSDhC7be95YLYZGVaDu4jIVc3RAZYLF3txMnJ6vq8g,3138
+cached_conv/test_conv.py,sha256=L3-ZPon5zpnsq-5Z1yuhsEGnrq58v4cxoFJBjFSebG8,916
+cached_conv/test_conv_t.py,sha256=zIobKnwnWbVk3X0pVRzaJ8_gkterYJP7q0jcuXFb2NI,767
+cached_conv/test_script.py,sha256=66V9gREqNOwTjvPPvXrmrUdUatl19lEX8j4_wNozRqA,633
+cached_conv/test_sequential.py,sha256=S6j56QL2odnDTT8YSATpF5ZfbwoW2UBm49dmFh6poVo,1193
+cached_conv-2.4.1.dist-info/LICENSE,sha256=nO_J8_-s-lQxjNax52j1iYXSj4u006wQdmo5gKkaJc8,18759
+cached_conv-2.4.1.dist-info/METADATA,sha256=nthQShamoQpHCX64Rybn53i_qG2ALRSiw28U_wsSbUY,5836
+cached_conv-2.4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cached_conv-2.4.1.dist-info/top_level.txt,sha256=eL4WC83WC3L5w7KL96_vqaOwAKWeoW3RgUgi7UhlRos,12
+cached_conv-2.4.1.dist-info/RECORD,,
