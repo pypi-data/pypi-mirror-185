@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pygame-flame
+Version: 1.1
+Summary: Pygame fire module
+Home-page: UNKNOWN
+Author: michazaxm
+Author-email: michazaxm@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Requires-Dist: pygame (>=2.1.0)
+
+UNKNOWN
+
+
