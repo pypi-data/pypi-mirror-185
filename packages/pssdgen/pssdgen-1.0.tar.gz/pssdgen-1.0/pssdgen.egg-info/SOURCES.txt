@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+pssdgen/__init__.py
+pssdgen.egg-info/PKG-INFO
+pssdgen.egg-info/SOURCES.txt
+pssdgen.egg-info/dependency_links.txt
+pssdgen.egg-info/top_level.txt
