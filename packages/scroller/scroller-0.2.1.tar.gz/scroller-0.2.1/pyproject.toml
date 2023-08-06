@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "scroller"
+version = "0.2.1"
+description = ""
+authors = ["robert-clayton <41345902+robert-clayton@users.noreply.github.com>"]
+license = "LGPLv2.1"
+readme = "README.md"
+include = ["scroller/qml_rc.py"]
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.12"
+pyside6 = "^6.4.2"
+pillow = "^9.4.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest-qt = "^4.2.0"
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+pyinstaller = "^5.7.0"
+
+[tool.coverage.report]
+omit = [
+    "shibokensupport/*",
+    "pyscript",
+    "signature_bootstrap.py",
+]
+
+[tool.poetry.scripts]
+scroller = "scroller.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
