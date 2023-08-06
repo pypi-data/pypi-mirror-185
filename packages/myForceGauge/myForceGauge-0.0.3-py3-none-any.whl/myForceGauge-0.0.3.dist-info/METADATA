@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: myForceGauge
+Version: 0.0.3
+Summary: To get Force gauge data through USB.
+Author: Toshihiro Nishimura
+Author-email: tnishimura@se.kanazawa-u.ac.jp
+License: MIT
+Requires-Dist: pyserial
+
