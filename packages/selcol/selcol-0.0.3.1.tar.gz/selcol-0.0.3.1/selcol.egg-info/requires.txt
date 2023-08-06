@@ -1,0 +1,7 @@
+numpy
+onnxruntime
+
+[dev]
+scikit-robot
+torch
+tqdm
