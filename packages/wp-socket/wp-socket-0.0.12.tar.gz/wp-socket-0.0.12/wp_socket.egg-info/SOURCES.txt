@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+wp_socket/__init__.py
+wp_socket/client.py
+wp_socket.egg-info/PKG-INFO
+wp_socket.egg-info/SOURCES.txt
+wp_socket.egg-info/dependency_links.txt
+wp_socket.egg-info/not-zip-safe
+wp_socket.egg-info/requires.txt
+wp_socket.egg-info/top_level.txt
