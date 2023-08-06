@@ -1,0 +1,10 @@
+pg8000
+pymysql
+pynacl
+cryptography
+
+[dev]
+pytest
+pre-commit
+pylint
+coverage
