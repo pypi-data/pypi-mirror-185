@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/pkg1/__init__.py
+src/pkg1/test.py
+src/pkg2/__init__.py
+src/pkg2/test.py
+src/test_aa.egg-info/PKG-INFO
+src/test_aa.egg-info/SOURCES.txt
+src/test_aa.egg-info/dependency_links.txt
+src/test_aa.egg-info/top_level.txt
