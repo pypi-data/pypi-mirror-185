@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: yasiu-vis
+Version: 0.1.0
+Summary: High level, simple data visualisation
+Author: Grzegorz Krug
+Author-email: kruggrzegorz@gmail.com
+Maintainer: Grzegorz Krug
+Maintainer-email: kruggrzegorz@gmail.com
+License: MIT
+Project-URL: 1. Time Package, https://pypi.org/project/yasiu-time/
+Project-URL: 2. Math Package, https://pypi.org/project/yasiu-math/
+Project-URL: 3. Image Package, https://pypi.org/project/yasiu-image/
+Project-URL: 4. Visualisation Package, https://pypi.org/project/yasiu-visualisation/
+Project-URL: 5. Source repo, https://github.com/GrzegorzKrug/yasiu.visualisation
+Keywords: numpy,pandas,matplotlib,pyplot,visualisation,dataframe
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Framework :: Matplotlib
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Readme of `yasiu.visualisation`
+
+High level functions, to quickly visualise data frames.
+
+## Installation
+
+```shell
+pip install yasiu.visualisation
+```
+
+## Sequence reader Generators
+
+- `summary_plot` - plot dataframe, possible grouping by columns
+
+### Import:
+
+```py
+from yasiu_vis.visualisation import summary_plot
+```
+
+### Use example:
+
+```py
+summary_plot(df)
+summary_plot(df, group="column-name")
+summary_plot(df, group="column-name", split_widnow="column")
+```
+
+# All packages
+
+[1. Time Package](https://pypi.org/project/yasiu-time/)
+
+[2. Math Package](https://pypi.org/project/yasiu-math/)
+
+[3. Image Package](https://pypi.org/project/yasiu-image/)
+
+[4. Pyplot visualisation Package](https://pypi.org/project/yasiu-visualisation/)
+
