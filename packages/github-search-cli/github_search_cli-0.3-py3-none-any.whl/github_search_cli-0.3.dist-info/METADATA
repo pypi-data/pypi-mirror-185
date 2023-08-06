@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: github-search-cli
+Version: 0.3
+Summary: Github-search-cli
+Author: Sonya Core
+Author-email: sonyacore@protonmail.com
+Keywords: python,github-rest,github-search-cli,github
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Environment :: Console
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+License-File: LICENSE
+Requires-Dist: requests
+
+Github search rest api implementation written on python3
