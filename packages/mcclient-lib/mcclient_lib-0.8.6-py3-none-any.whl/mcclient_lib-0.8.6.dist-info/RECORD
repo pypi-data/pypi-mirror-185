@@ -1,0 +1,17 @@
+mcclient/__init__.py,sha256=P8vgf3bRb9yP1NKHVvNzUh3nPf0CvwLsyRu1ePTunew,225
+mcclient/address.py,sha256=uFpb1jb3tJpABosoE6dTlf7jpMSFZ4UZNYiQuYRwTQw,1797
+mcclient/base_client.py,sha256=b1aFCga2N4SXIJAS7ZpL6fLTP0_iRjWBDojTQJ3YavY,2307
+mcclient/bedrock_slp.py,sha256=5tvk0a9eBSb_Q7OGw4OxGTI8ZQXss7WW_WtGn67dj3E,1363
+mcclient/response.py,sha256=0RpK-SKcMvli4enw7BS2nkoxvOv3GCjQc_0Q1JpNPLE,5753
+mcclient/slp.py,sha256=qRcPSqB9hY6ofBl78MCqgNANTP15-Yqe9G3A7bpTDb4,1883
+mcclient/encoding/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcclient/encoding/packet.py,sha256=t6P8iXsGRMfr3LPthDHgaess6y6MPhHKDrEvvJyZrh4,912
+mcclient/encoding/varint.py,sha256=epWS3Revy2JCv_UJa45aCux9Wc-g8_BRqI3QboIA9FY,655
+mcclient/query/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcclient/query/packet.py,sha256=z16TvleNCboaWhq2kDBRxsrsgnOKAU8H7tU1rCGZ1mg,413
+mcclient/query/query_client.py,sha256=c3MRb3Is-9tb2m2KLz0Nh5xNLEMBbFqm2jK1JUTNh8Q,3047
+mcclient_lib-0.8.6.dist-info/LICENSE,sha256=ZyxX7jw1oWQ8QKz3ZJeaMLRcKQFeuDopD3hxc5BIQ3Y,1075
+mcclient_lib-0.8.6.dist-info/METADATA,sha256=pujukRL7ohsqDokwipzF_GgOYxKSl-0scPn88yhl2Ho,2177
+mcclient_lib-0.8.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mcclient_lib-0.8.6.dist-info/top_level.txt,sha256=HVowRvwcW8BeTn8EmY2iaRYGE7LIS7mwFAzmPd2QlsE,9
+mcclient_lib-0.8.6.dist-info/RECORD,,
