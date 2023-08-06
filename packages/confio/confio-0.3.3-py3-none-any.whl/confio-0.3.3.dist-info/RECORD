@@ -1,0 +1,14 @@
+confio/__init__.py,sha256=SSISlxnS8gI6AJfS5tjZ3vU-HIE1PSmqm5O1EjellLg,471
+confio/__meta__.py,sha256=4YuDTcDqOfJudCRfwhBvT-9jVxPubLaOCT8N7b2JGNs,111
+confio/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+confio/core/base.py,sha256=2Gn-6DRjbPGI4QMpvzLN3OyrOs2ovbywsw_YWwWaVdM,10103
+confio/core/parser.py,sha256=5dHTmqZL1Auj_3mUEkuU6j6VxRjbcakuUqjUo2mqv5c,3415
+confio/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+confio/providers/consul.py,sha256=VGCUJ54RfG1bCriK-yog4hgNZTx-svMNv68Di_EtJ3M,5000
+confio/providers/db.py,sha256=FyNZcMHHuRwsdOrOE3daqMfi_jCaNN-IJDG9S8axpQ4,12840
+confio/providers/fs.py,sha256=KuEKPZPPCsR6GYlpUaR8wCvhxqd96hLIDoRpoe4Zk7w,12121
+confio-0.3.3.dist-info/LICENSE,sha256=S-AFlHDUzoV3qn_CF8vNuF8zcUT3YSpEpBgdoUcquP8,1096
+confio-0.3.3.dist-info/METADATA,sha256=Luvzf6a-xPtV_AclSYto29Hm9g07jMyf-7y8iYPDAzw,10180
+confio-0.3.3.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+confio-0.3.3.dist-info/top_level.txt,sha256=7-aeYHI9UPuwCanjkeltE3bFgvwY1XH3fZQOmYtrpiM,7
+confio-0.3.3.dist-info/RECORD,,
