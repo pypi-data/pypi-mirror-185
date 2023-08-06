@@ -1,0 +1,11 @@
+pandas
+openpyxl
+pathlib
+pytesseract
+gspread
+oauth2client
+pyodbc
+sqlalchemy
+configparser
+scikit-learn
+auto-sklearn
