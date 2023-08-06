@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: onecode
+Version: 0.0.0
+Summary: Python skeleton and library for OneCode procedures
+Home-page: https://github.com/deeplime-io/onecode
+License: MIT
+Keywords: onecode,procedures
+Author: DeepLime
+Author-email: support@deeplime.io
+Requires-Python: >=3.7,<4
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Project-URL: Documentation, https://github.com/deeplime-io/onecode
+Project-URL: Repository, https://github.com/deeplime-io/onecode
+Description-Content-Type: text/markdown
+
+# OneCode
+
