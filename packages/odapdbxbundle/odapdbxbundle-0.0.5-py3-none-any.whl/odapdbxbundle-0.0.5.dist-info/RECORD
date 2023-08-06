@@ -1,0 +1,9 @@
+odapdbxbundle/common/databricks.py,sha256=OF9B6umfez2Jf0-lvKuPDDmCvLEUjqSeMFhUv4jDduA,1143
+odapdbxbundle/common/logger.py,sha256=gKyoz2rIfUvG5xpa9w7A6Dom1L_gOFg9hqD0bVo8IQ8,282
+odapdbxbundle/keboola.py,sha256=L5fBeDUiR2b21cLhJN2qTWbqb7wculz5iFyHfVcsfaM,12907
+odapdbxbundle/optimize.py,sha256=WWGW3sebBRiRkbdpEduaI4SOgnyiG-pcDrq8u_Tf260,575
+odapdbxbundle/secrets/secret_scope_generator.py,sha256=MqFhTn_rSHqfGszBBpz2GWWNwu3BhVsWrGEbaGpIjUI,2049
+odapdbxbundle-0.0.5.dist-info/LICENSE,sha256=ITxuTlsYJVT6xChvCiIdtQ9WfPAccufieGU46cPpQ08,2473
+odapdbxbundle-0.0.5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+odapdbxbundle-0.0.5.dist-info/METADATA,sha256=6yekpLMom22bO_dnGNhcEk1MQaZYseapbmie6Npu5V4,1385
+odapdbxbundle-0.0.5.dist-info/RECORD,,
