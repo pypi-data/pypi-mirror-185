@@ -1,0 +1,17 @@
+uintel/__init__.py,sha256=H2IOvmSjnzzfe5ECjD10hqeUGsqN-bNj6pftoUAIdFQ,1142
+uintel/aws.py,sha256=3HcUdk6fhar6yhX-2qC0Lll-UGSp9a_7Ewo33KWGDFU,4638
+uintel/esri.py,sha256=2xXGXWJzKVYqu2btgUYtFjRnHsnvDwW-8VUPHEiFoUM,9910
+uintel/geometry.py,sha256=LqMvbd9G-ncSGuPNdSN9PRP80Draqkn5rIllACRVCro,18592
+uintel/install.py,sha256=1V0mXQaDB3YmZ77zG1xO9cyM-dsrvRuaNeY4FkR9TgE,23147
+uintel/plot.py,sha256=uZ_ZtNIcjVYASBKJ41X0fihsqoNjeub15Hf-OslyNhs,2290
+uintel/server.py,sha256=kKiodGdblmhNe2bing8QvZdwHRHFtbpblMMzSqlSBKk,6922
+uintel/slack.py,sha256=v1gVhH0j4c0bgF_s1vCz3kW9ghJlha6_0cvCZzxN60Y,13019
+uintel/sql.py,sha256=Z_VYZ7dzPuLCAO2eFTmR02cA3uzQ1F5YiqJfcKFvLQE,1877
+uintel/fonts/Rubik (TrueType).ttf,sha256=h2B2IMWTdqGTd_NvqBU4e6HUFvW5AWYukr6PlB7_9Es,208636
+uintel/fonts/Rubik Italic (TrueType).ttf,sha256=C6Zbqoxo2fPigN391YnOGLfRcsBpBl4nqQjQQbKGCaY,202424
+uintel/styles/ui.mplstyle,sha256=UkaCKgYW1UcyrnKakN-I5W36lM77g68hPWf_rVPUBFQ,1096
+uintel-0.1.0.dist-info/LICENSE,sha256=47zVydM9tSzI6kZttSbsquQB5Wd3xgbjEHhht2pevJw,1096
+uintel-0.1.0.dist-info/METADATA,sha256=SS_epfg_1Jos4o5VxtRVpDCarI3yyrcWvezdU4yR_JU,3169
+uintel-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+uintel-0.1.0.dist-info/top_level.txt,sha256=LhX75p-n-EsMWUs5_VvfajI0a3oW3qkgCyMpHHWeKiI,7
+uintel-0.1.0.dist-info/RECORD,,
