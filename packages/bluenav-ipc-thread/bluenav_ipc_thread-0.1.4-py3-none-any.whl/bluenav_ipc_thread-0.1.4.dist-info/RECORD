@@ -1,0 +1,10 @@
+ipc_thread/IPC.py,sha256=vAvezpmh6YTEYmTWyLZvlxRYA85aDTyRN7i6z0jExXQ,10264
+ipc_thread/IPCThread.py,sha256=LO7rphtk3ZKlazrqnoDkQRs5YUs8VU6jR8q1ZE7OTMc,6269
+ipc_thread/SingletonMeta.py,sha256=unW4wvDJXXcFwTTHL3KAVF-Kqq2sOMfN-duIzVpPT4k,1438
+ipc_thread/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipc_thread/dev_IPC.py,sha256=4-EP-fV1fKlnUocXC0MnS1N1i6PPxtNAAd0zFKnaLdc,2815
+bluenav_ipc_thread-0.1.4.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+bluenav_ipc_thread-0.1.4.dist-info/METADATA,sha256=elRZORHFSGlorWUmXgqeqifysogOo5eI9GTG6s-LGc4,688
+bluenav_ipc_thread-0.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bluenav_ipc_thread-0.1.4.dist-info/top_level.txt,sha256=4VxHS18n8MppqONDZFPBJlcadjl2_jFBm-xeotgVXC4,11
+bluenav_ipc_thread-0.1.4.dist-info/RECORD,,
