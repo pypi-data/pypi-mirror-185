@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: nested-key
+Version: 0.1.1
+Summary: nested-key
+Home-page: https://github.com/bayoog/nested-key
+Author: BayooG
+Author-email: obaydaba96@gmail.com
+Keywords: Nested dict
+Requires-Python: >=3.6
+
+    get nested-key
+    

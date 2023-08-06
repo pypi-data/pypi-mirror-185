@@ -1,0 +1,7 @@
+README.md
+setup.py
+nested_key.egg-info/PKG-INFO
+nested_key.egg-info/SOURCES.txt
+nested_key.egg-info/dependency_links.txt
+nested_key.egg-info/top_level.txt
+nkey/__init__.py
