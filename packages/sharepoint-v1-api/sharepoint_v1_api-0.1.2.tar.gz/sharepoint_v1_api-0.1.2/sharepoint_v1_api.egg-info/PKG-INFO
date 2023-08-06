@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: sharepoint-v1-api
+Version: 0.1.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Aske Bluhme Klok
+License: MIT
+Description: # sharepoint_v1_api
+        
+        Version 0.1.2
+        
+        # Setup
+        
+        
+        ```python
+        from sharepoint_api.SharePointAPI import SharePointAPI as SP
+        
+        creds = {
+            "username": "",
+            "password": "",
+            "sharepoint_url": "",
+            'proxies': {}
+        }
+        
+        sp = SP._compact_init(creds)
+        ```
+        
+        ## Get lists in a sharepoint_site
+        ```python
+        # Get an overview of all lists in a sharepoint_site
+        sharepoint_site_name = "NAME_OF_YOUR_SITE"
+        sp_lists = sp.get_lists(sharepoint_site_name)
+        print(sp_lists)
+        
+        # Load one of the lists by name
+        list_name = 'Sager'
+        cases_list = sp_lists.get_list(list_name)
+        print(cases_list.Title)
+        ```
+        
+        # Get items in a list
+        ```python
+        # When loading a list the top 1000 items will be retrieved
+        sharepoint_site_name = "NAME_OF_YOUR_SITE"
+        list_name = 'Sager'
+        cases_list = sp.get_list_by_name(sharepoint_site_name, list_name)
+        print(cases_list.all_items)
+        
+        # If the list is contains more items, it may be necesarry to use a filter
+        # Filters can be formatted as shown below
+        filters = ' and '.join([
+                "(TeamId == '3')",
+                "(Status == '11 - Modtaget')",
+                "((Status != '90 - Lukket') and (Status != '91 - Afvist') and (Status != '92 - Duplikeret') and (Status != '93 - Annulleret'))"
+                ])
+        cases_list = sp.get_list_by_name(sharepoint_site_name, list_name, filters)
+        print(cases_list.all_items)
+        ```
+        
+        # Add certificates files to a certificate list
+        ```python
+        # Set sharepoint_site name
+        sharepoint_site_name = "NAME_OF_YOUR_SITE"
+        
+        # Set name of certificates (use Certifikater if danish)
+        list_name = 'Certificates'
+        cert_list = sp.get_list_by_name(sharepoint_site_name, list_name)
+        
+        # The certificate metadata (such as name, expiry date and such)
+        data = {
+         "Title": "My Certificate Name",
+         "ExpiryDate": "2020-11-25"
+        }
+        
+        # Create the certificate item
+        item = sp.create_item(sharepoint_site_name, cert_list, data)
+        
+        # Attach the file
+        file_name = 'my_file.txt'
+        file_path = 'path/to/my_file.txt'
+        item.attach_item(file_name, file_path)
+        
+        
+        # Attach another file
+        file_name = 'mysecondfile.txt'
+        file_path = 'path/to/mysecondfile.txt'
+        attach_file("mysecondfile.txt", sharepoint_site_name, cert_list, item)
+        ```
+Keywords: Sharepoint
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.8
+Description-Content-Type: text/markdown
