@@ -1,0 +1,17 @@
+navicat_marc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+navicat_marc/__main__.py,sha256=4f7mOhW76RAF4Fw35aTGWR5DncMuqh-CFOcF22QZVfw,367
+navicat_marc/clustering.py,sha256=Z6G83JeQcT4Sp7dCdGIoiv5pcmbaYUGvy0TAS-bU_8s,6727
+navicat_marc/da.py,sha256=EmPJ1jnPCWwVxGef6ScoWFSI9uml5kVHuf3itslwpzc,3914
+navicat_marc/erel.py,sha256=HWkUImsHAGWv-Y1yliYGYRh-cDY5MlfoPKBSXF3-azo,618
+navicat_marc/exceptions.py,sha256=NrQ7fS-GgCJgsmgFNHWQ1pzkwUONoVS_nVRVCK8fq4s,117
+navicat_marc/helpers.py,sha256=IvIez_9-QKtJK9KLluVzwqr8retniDSQIHvLmYexoqw,11075
+navicat_marc/marc.py,sha256=1WC0I885v1gTlBvnEOOkrV2nlFaoWjrRUjBsLanhFKA,6006
+navicat_marc/molecule.py,sha256=6dG0hpmvnrI3tB-jcMsZ-vjkTQv8GzoR0KMgVY7ghXk,18003
+navicat_marc/rmsd.py,sha256=1Pm1milHMPRcinWK7Tv0z-qNJq9ewAG51FxuxdOVNg0,5879
+navicat_marc/test_modules.py,sha256=F0U6rYwtx-6Kdi5S8PkxaoI1kUH2n9WHRYZqS8eEhBk,569
+navicat_marc-0.1.1.dist-info/LICENSE,sha256=bIGMinHw1UMLEYAglXr9R3tiwjjK97p2A9Wb3vWHbK4,1066
+navicat_marc-0.1.1.dist-info/METADATA,sha256=3n5c5NgTBb8o86gco9p-ft8sgcHXrti0-u29OQBkcfM,6079
+navicat_marc-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+navicat_marc-0.1.1.dist-info/entry_points.txt,sha256=SmdX7iRXUvf1nSC38gscJubI3NFc9em3hdxdY980jkw,56
+navicat_marc-0.1.1.dist-info/top_level.txt,sha256=-L5ks3dHWL8ybk7T2QAtPzfiMyokkfMyf9Q-wVTWgtw,13
+navicat_marc-0.1.1.dist-info/RECORD,,
