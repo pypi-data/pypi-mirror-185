@@ -1,0 +1,14 @@
+cgs/__init__.py,sha256=YElsp1Imi19v6tVXfytYgi-2rUUA8cfDXhdCZsLDljU,196
+cgs/__main__.py,sha256=vkUoLlkcsZRTbXSCvLBFR2M3YbgrVCZ6lmL1ioYYAtk,26
+cgs/cli.py,sha256=RbAZ1kBe-fmcpseM9AVVj6ej3H2tezWQKza_b2V-YXM,7562
+cgs/create.py,sha256=h2i4W09RYyg7oWxanMWThth-VFMSbcAdxj1MO6j3jLQ,2304
+cgs/delete.py,sha256=2HqeEPQ-Azh-FdDO9hN13r63Hu3cLsi66hfkaXLfbHg,2471
+cgs/fullall.py,sha256=-3x6ycJE6SAmonbRMDpWt6cJTFQMRDLjs_IeTC3Hp4M,4715
+cgs/updateres.py,sha256=mXUmIK1Ep2PqUX_Jr6OWexQEkTL3RJln9lqAgQ8gYB4,2488
+cgs/utils.py,sha256=NQOx-r5PjBBYMwYl434ZvMoEG0b1vFDN8uZb2X8wLSs,5598
+cgs-0.1.9.dist-info/LICENSE,sha256=wnbmpyIQV_yurXjDaZeeXSYfCfMxVcm07C7h81HDjFM,1063
+cgs-0.1.9.dist-info/METADATA,sha256=dERDk_QUTsztAYe_bboaAR1KNsQ98qeNRGaJM2NiCto,1994
+cgs-0.1.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cgs-0.1.9.dist-info/entry_points.txt,sha256=XoWGRPNhFwO1rOC4oO_kqLxar8e0ofcQ_hhoX2ZwZck,36
+cgs-0.1.9.dist-info/top_level.txt,sha256=_mX1lLzHGPlQdNxGDhUpS2oHbTOKKtdGchLh-8sAjZU,4
+cgs-0.1.9.dist-info/RECORD,,
