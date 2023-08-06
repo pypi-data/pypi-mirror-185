@@ -1,0 +1,17 @@
+adbc_driver_manager/adbc.h,sha256=zehibSh3DQxNZJOFtRHhowpKloVXHUGs6yf41um23nk,49946
+adbc_driver_manager/adbc_driver_manager.cc,sha256=77zD3-UuKlKvS8y9dZi0hadUKPbYnhAvnVPuaFC3C0E,31248
+adbc_driver_manager/adbc_driver_manager.h,sha256=a4N10OJkwpiQ81JL2NUYdO1DTzNp8Y7HXrjG1tCmkMw,3544
+adbc_driver_manager/dbapi.py,sha256=d6gKlzGJN_lBsF5iqIq7JTJtbMdG7tr2UkXD-jzBS1U,28098
+adbc_driver_manager/_lib.cp310-win_amd64.pyd,sha256=XiSuMA5WVSDoJJyN_Dz7oJFXk7xhjFbor2Z7yOrSOZ8,135680
+adbc_driver_manager/_lib.pyx,sha256=OYTf5sac4I2dGiKv66DNxZ-Y25hH4NLJTz-6nYRt_4E,31384
+adbc_driver_manager/_static_version.py,sha256=94_yS1AFn9Bzc0C_yZosmfXLr02aobd7DoKw0xYytxY,62
+adbc_driver_manager/_version.py,sha256=pDb0mzIZXBTGQPlfyPWWBA0Olzj2QAWMsngZhBtzSq4,7328
+adbc_driver_manager/__init__.py,sha256=sFrFUNF8rEBOQBrFg90XXs2gcGHpJ9X0hlTpuEmM7ms,2693
+adbc_driver_manager-0.1.0.dist-info/DELVEWHEEL,sha256=nP3VN21sVOCXQyGSK8GTig0RcwiY6-7FTiQwkeh5RlM,181
+adbc_driver_manager-0.1.0.dist-info/LICENSE.txt,sha256=01Le_ecAp6ILNFSWQwTPUoCH4ymkaPYgQZNYNJ4QKIU,14307
+adbc_driver_manager-0.1.0.dist-info/METADATA,sha256=1f8KSi-ntg95DQqX7645Fbgsp3o2EIVUXmhjkAaJ5uk,663
+adbc_driver_manager-0.1.0.dist-info/NOTICE.txt,sha256=onDYnsuRaNuKUN85XeqvIzo7aDs3_9u6kuSx_C5hjcI,171
+adbc_driver_manager-0.1.0.dist-info/RECORD,,
+adbc_driver_manager-0.1.0.dist-info/top_level.txt,sha256=mDcKQErjAAj_tTVBqA3LLh9T69P_YY_P2bFkUsshgT4,20
+adbc_driver_manager-0.1.0.dist-info/WHEEL,sha256=rneS2j8QNmAwdNKHN86s6-qP7AMcWZgqiEoH3bdbh_Y,102
+adbc_driver_manager.libs/msvcp140.dll,sha256=yzx01vzAkfTrfGfuXrX3bByXPeqLHGuFH8ymLCqdiqg,579920
