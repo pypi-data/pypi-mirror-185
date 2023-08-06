@@ -1,0 +1,11 @@
+ocrd_olahd_client/__init__.py,sha256=i9ubceKon2PAM0F79yQ1rW4niW8iMyXRc_LvXUk52mk,76
+ocrd_olahd_client/cli.py,sha256=IDw04Ra9OC8vfEYaAHZPeDvXpIAvCha7BTx-9XjstUA,606
+ocrd_olahd_client/client.py,sha256=vRQDmilKN_T9wnaYGxpiWRoFviBjhqxsUVfy4kT7j0g,1407
+ocrd_olahd_client/ocrd-tool.json,sha256=WgdzaW8Jw-chFVuWdg-jtaLI9wK4SOv-IFhZilXGQNg,1179
+ocrd_olahd_client/processor.py,sha256=Ur_3fan-0L17SUqW21C3Dw-0Gr7GLISCceE-BcSpj7Y,1689
+ocrd_olahd_client-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ocrd_olahd_client-0.0.2.dist-info/METADATA,sha256=NNXUVtRju4E81Jx_VAXHTqw2r0cOiH37On-atg-U-Fc,707
+ocrd_olahd_client-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ocrd_olahd_client-0.0.2.dist-info/entry_points.txt,sha256=MYvtbHKw_qEN6LxqPdvxhd5T6DcxmwihXccCkIsQHF4,64
+ocrd_olahd_client-0.0.2.dist-info/top_level.txt,sha256=y5GV3Y19WIPqEQrxBqP0Pn5guG4wjcYmbI-np30TsOU,18
+ocrd_olahd_client-0.0.2.dist-info/RECORD,,
