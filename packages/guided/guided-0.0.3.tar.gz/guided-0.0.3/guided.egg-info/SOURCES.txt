@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+guided/__init__.py
+guided.egg-info/PKG-INFO
+guided.egg-info/SOURCES.txt
+guided.egg-info/dependency_links.txt
+guided.egg-info/not-zip-safe
+guided.egg-info/top_level.txt
