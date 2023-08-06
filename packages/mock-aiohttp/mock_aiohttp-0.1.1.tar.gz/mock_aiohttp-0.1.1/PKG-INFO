@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mock-aiohttp
+Version: 0.1.1
+Summary: Create a mock for aiohttp.ClientSession
+Home-page: https://github.com/fitzypop/mock-aiohttp
+License: MIT
+Author: fitzypop
+Author-email: 32967490+fitzypop@users.noreply.github.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Requires-Dist: pytest (>=7.2.0,<8.0.0)
+Requires-Dist: pytest-asyncio (>=0.20.3,<0.21.0)
+Project-URL: Repository, https://github.com/fitzypop/mock-aiohttp
+Description-Content-Type: text/markdown
+
+# mock-aiohttp
+
+Attempting to create a reusable mock for testing with `aiohttp.ClientSession()`.
+
+Currently in: Pre-alpha (use at your own risk)
+
+Use `poetry install` locally to setup for development
+
