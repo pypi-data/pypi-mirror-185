@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "intelliprove"
+version = "0.1.2"
+description = ""
+authors = ["Seppe De Langhe <seppe.delanghe@intelliprove.com>"]
+readme = "README.md"
+packages = [{include = "intelliprove"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+opencv-python = "^4.7.0.68"
+requests = "^2.28.1"
+
+[tool.poetry.group.image]
+
+[tool.poetry.group.image.dependencies]
+opencv-python = "^4.7.0.68"
+
+[tool.poetry.group.web]
+
+[tool.poetry.group.web.dependencies]
+requests = "^2.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
