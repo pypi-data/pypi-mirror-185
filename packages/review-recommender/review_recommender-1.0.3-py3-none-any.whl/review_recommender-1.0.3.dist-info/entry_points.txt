@@ -1,0 +1,2 @@
+[console_scripts]
+review_recommender = review_recommender:run

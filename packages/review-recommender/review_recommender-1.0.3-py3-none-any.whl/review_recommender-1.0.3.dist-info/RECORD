@@ -1,0 +1,11 @@
+review_recommender/__init__.py,sha256=nuQdngS3tUDwbUFHVZpSA2dhVgQO6yzV4BkboutgsFQ,806
+review_recommender/data_retriveal.py,sha256=r26b3krUm1k7405rS7A_DietiZVB5IyiO5vCZ9TYUhs,7531
+review_recommender/inverted_files.py,sha256=0Grjdb2T8TN98duN4gsaYk6SFb7uMm0QiYvHBIzH89s,3315
+review_recommender/ranker.py,sha256=gtBk7onUTTTPekanP12kcwFP4WjJ8OGar8g2XjsZXjE,2207
+review_recommender/scorer.py,sha256=0xMPQ9eytYrhdEDzvAztmuoi8POI8Rnkxh3L4gZO8Z0,1426
+review_recommender/tokenizer.py,sha256=WQW78yJ_yE9f0h7ZmPdlpLtiwhXtYMtHk5PESDfK-qc,2930
+review_recommender-1.0.3.dist-info/METADATA,sha256=EhDlp16MZ252fp1rEVNPVfT4e58eNynpmk8sTRWg2PU,1562
+review_recommender-1.0.3.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+review_recommender-1.0.3.dist-info/entry_points.txt,sha256=50-G1CoD6jtd7kmdC7PDrsoa8amUZwivu5jwT-60RxY,62
+review_recommender-1.0.3.dist-info/licenses/LICENSE,sha256=KUjqNohd1EvnnyG2Fx2PYmpj0tzgTaZ-rCflEXs4CMI,2467
+review_recommender-1.0.3.dist-info/RECORD,,
