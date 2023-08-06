@@ -1,0 +1,3 @@
+[console_scripts]
+pianopy=pianopy.__main__:main
+
