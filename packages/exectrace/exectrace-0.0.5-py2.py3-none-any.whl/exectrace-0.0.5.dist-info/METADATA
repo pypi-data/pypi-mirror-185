@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: exectrace
+Version: 0.0.5
+Summary: Offers a CPU-agnostic mechanism for analysing binaries by mapping all possible code-paths.
+Home-page: https://github.com/felipesanches/ExecTrace
+Author: Felipe Corrêa da Silva Sanches
+Author-email: juca@members.fsf.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Offers a CPU-agnostic mechanism for analysing binaries by mapping all possible code-paths. In order to use it, one needs to provide a child-class that inherits from the abtract ExecTrace class.
+
+
