@@ -1,0 +1,13 @@
+typeapi/__init__.py,sha256=2qRDBuzNykqCg9Y8d1O7EqaEwerK_kQ9AOQJnHxzroM,595
+typeapi/future/astrewrite.py,sha256=mkB0nZQTAsZQhPk9lXEkYPQEpHGVzZgk0XfvhJDR0r4,5452
+typeapi/future/fake.py,sha256=PZY84k9BkpNL2zFHIJ_y2fj0h--CeDeRhCFI6-ld1tE,2342
+typeapi/future/fake_test.py,sha256=2lhtIs8I01jj1IfzNzpQ9lElnbcfzhOMuD3XHfxB3_Y,1570
+typeapi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typeapi/typehint.py,sha256=IFhGJu7RNW6lbsQzj-dQ_ErHH2pj66vN6wMG4ahGPho,14842
+typeapi/typehint_test.py,sha256=incAUQvVH7V4B_cL_W_CNBTfTdYdNe_DafoTToATm64,14354
+typeapi/utils.py,sha256=CspjB7lvaVa-MGKKSxbdc6gzwLCTOwqGkNKNgl45SXg,13457
+typeapi/utils_test.py,sha256=ptXTfQVu5UPC4v6QD791VvX7s06gXsxr4XbWPYwvsPE,14768
+typeapi-1.3.6.dist-info/METADATA,sha256=pUAa7BLf84_XFv3g1MRfWV0HQAxU6AoACgzG53GJ1nA,4518
+typeapi-1.3.6.dist-info/LICENSE,sha256=lZqeKjXTURfW9lygbsFbkEPae421LZNFAyLGl6iCohg,991
+typeapi-1.3.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+typeapi-1.3.6.dist-info/RECORD,,
