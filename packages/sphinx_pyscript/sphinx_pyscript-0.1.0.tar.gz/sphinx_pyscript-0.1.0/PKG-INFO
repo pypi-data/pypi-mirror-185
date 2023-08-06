@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sphinx_pyscript
+Version: 0.1.0
+Summary: A sphinx extension for adding pyscript to a page
+Keywords: sphinx,pyscript
+Author-email: Chris Sewell <chrisj_sewell@hotmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: sphinx>4
+Requires-Dist: pyyaml
+Requires-Dist: myst-parser ; extra == "docs"
+Requires-Dist: furo ; extra == "docs"
+Requires-Dist: pytest ; extra == "testing"
+Requires-Dist: sphinx-pytest ; extra == "testing"
+Project-URL: Documentation, https://sphinx-pyscript.readthedocs.io
+Project-URL: Home, https://github.com/chrisjsewell/sphinx_pyscript
+Provides-Extra: docs
+Provides-Extra: testing
+
+# sphinx-pyscript
+
+This is a Sphinx extension that allows you to use [PyScript](https://docs.pyscript.net) in your documentation.
+
+See the documentation for details.
+
