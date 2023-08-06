@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blob_storage_jatin"
+version = "0.0.2"
+authors = [
+  { name="Jatin Talati", email="jatalati@in.ibm.com" },
+]
+description = "A Blob Storage Package for configuring Azure Blob Storage Account and access it."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["blob", "storage", "blobstorage", "azure"]
+dependencies = [
+  "azure-core",
+  "azure-storage-blob",
+  "httpcore",
+  "httpx",
+  "oauthlib",
+  "okta-jwt",
+  "pydantic",
+  "PyJWT",
+  "python-jose",
+  "requests",
+  "requests-oauthlib",
+  "toml"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 1 - Planning",
+    "Operating System :: OS Independent",
+]
+

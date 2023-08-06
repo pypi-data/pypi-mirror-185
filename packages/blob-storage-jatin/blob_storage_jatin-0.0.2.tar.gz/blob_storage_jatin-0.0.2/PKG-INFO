@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: blob_storage_jatin
+Version: 0.0.2
+Summary: A Blob Storage Package for configuring Azure Blob Storage Account and access it.
+Author-email: Jatin Talati <jatalati@in.ibm.com>
+Keywords: blob,storage,blobstorage,azure
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# blob_storage
+
+Under construction! Not ready for use yet! Currently experimenting and planning!
+
+Developed by Jatin Talati
+
+## Examples of How To Use (Buggy Alpha Version)
+
+Creating A Server
+
+```python
+from src.blob_storage_jatin.blob_conn import BlobStorageAPI
+
+blob = BlobStorageAPI()
+
+# Other Code
+```
+Explore the BlobStorageAPI class to use other functions
