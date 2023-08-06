@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: CxAdmin
+Version: 1.0.38
+Summary: Python SDK for interacting with the CxEngage API
+Home-page: https://github.com/ntflix/cxadmin
+Author: Felix Weber
+Author-email: felix@iron59.co.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
