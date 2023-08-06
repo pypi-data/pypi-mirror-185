@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: betterpipe
+Version: 0.1.4
+Summary: Betterpipe: Break free from limited observability in DevOps/MLOps platforms. Pipe .py file data to external data warehouse for complete control over model performance. Easily troubleshoot and make informed decisions. 
+Author: Clerkie AI
+Author-email: clerkieai@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.26.49,<2.0.0)
+Requires-Dist: klotty (>=0.1.0,<0.2.0)
