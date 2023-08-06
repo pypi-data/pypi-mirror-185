@@ -1,0 +1,2 @@
+[oslo.config.opts]
+aprsd_twitter_plugin.conf = aprsd_twitter_plugin.conf.opts:list_opts
