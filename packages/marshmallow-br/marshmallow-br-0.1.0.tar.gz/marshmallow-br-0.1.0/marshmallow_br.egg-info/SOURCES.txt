@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+marshmallow_br/__init__.py
+marshmallow_br/fields.py
+marshmallow_br/validate.py
+marshmallow_br.egg-info/PKG-INFO
+marshmallow_br.egg-info/SOURCES.txt
+marshmallow_br.egg-info/dependency_links.txt
+marshmallow_br.egg-info/not-zip-safe
+marshmallow_br.egg-info/requires.txt
+marshmallow_br.egg-info/top_level.txt

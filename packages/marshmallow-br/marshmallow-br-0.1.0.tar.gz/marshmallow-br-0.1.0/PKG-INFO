@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: marshmallow-br
+Version: 0.1.0
+Summary: An unofficial extension to Marshmallow fields and validators for Brazilian documents
+Home-page: https://github.com/leandcesar/marshmallow-br
+Author: Leandro César Cassimiro
+Author-email: ccleandroc@gmail.com
+License: Apache 2.0
+Keywords: serialization,br,brazilian,document,marshal,marshalling,deserialization,validation,schema
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+License-File: LICENSE
+
+==============
+Marshmallow-BR
+==============
+
+This library provides Marshmallow fields and validators for Brazilian documents:
+
+* CNH
+* CNPJ
+* CPF
+* Brazilian birth, marriage and death certificates
+* Brazilian phone number
