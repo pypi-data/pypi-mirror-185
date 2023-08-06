@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/wiki_as_base/__init__.py
+src/wiki_as_base/cli.py
+src/wiki_as_base/constants.py
+src/wiki_as_base/parser.py
+src/wiki_as_base/wiki_as_base.py
+src/wiki_as_base.egg-info/PKG-INFO
+src/wiki_as_base.egg-info/SOURCES.txt
+src/wiki_as_base.egg-info/dependency_links.txt
+src/wiki_as_base.egg-info/entry_points.txt
+src/wiki_as_base.egg-info/top_level.txt
