@@ -1,0 +1,69 @@
+# README #
+
+## Python Flight Sim Reverse Polish Notation ##
+
+### What is this repository for? ###
+
+* Quick summary
+
+This is the source directory for the `fsrpn` package for Python.
+
+A Python implemented Lexer and Parser (and simple Interpreter) for Microsoft Flight Simulator Reverse Polish Notation
+("XML-Programming") using `ply` as the Python native lex and yacc implementations.
+
+* Version
+
+Currently, in the planning phase no Version Numbers will be used, only commit references or dates.
+As soon as it is at least in Alpha-stage, versions in Python customary format 0.0.1+ will be used.
+
+### How do I get set up? ###
+
+* Summary of set up
+* Configuration
+* Dependencies
+
+  to run:
+    - Python 3
+    - `ply`
+
+  and additionally to build:
+    - `hatchling`
+
+* How to run tests
+
+  `pytest --cov fsrpn` or `make test`
+
+* Deployment instructions
+
+  `pip install fsrpn`
+
+### Contribution guidelines ###
+
+* Code Style
+
+  PEP8 with NumPyDoc Docstrings
+
+* Writing tests
+* Code review
+* Other guidelines
+
+This Project is released as GPL v3 or later.
+
+Copyright (C) 2023 Jakob Klein <mail@kleinjakob.at>
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public
+License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not,
+see https://www.gnu.org/licenses/.
+
+### Who do I talk to? ###
+
+* Repo owner or admin:
+  Jakob Klein <mail@kleinjakob.at> or <kleinjakob@gmail.com>
+* Other community or team contact via the GitHub or bitbucket pages.
