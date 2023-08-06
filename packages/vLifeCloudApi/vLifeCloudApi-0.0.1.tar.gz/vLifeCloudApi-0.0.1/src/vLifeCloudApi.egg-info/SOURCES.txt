@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/awsService/__init__.py
+src/awsService/comprehend.py
+src/awsService/helper.py
+src/awsService/medicalComprehend.py
+src/vLifeCloudApi.egg-info/PKG-INFO
+src/vLifeCloudApi.egg-info/SOURCES.txt
+src/vLifeCloudApi.egg-info/dependency_links.txt
+src/vLifeCloudApi.egg-info/requires.txt
+src/vLifeCloudApi.egg-info/top_level.txt
