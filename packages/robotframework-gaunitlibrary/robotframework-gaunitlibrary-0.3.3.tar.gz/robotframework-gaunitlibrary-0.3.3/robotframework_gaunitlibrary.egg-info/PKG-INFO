@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: robotframework-gaunitlibrary
+Version: 0.3.3
+Summary: GAUnitLibrary is a Robot Framework library to interface with GAUnit
+Home-page: https://github.com/VinceCabs/robotframework-gaunitlibrary
+Author: Vincent Cabanis
+Author-email: touch@cabanis.fr
+License: MIT
+Description: # Robot Framework GAUnit Library
+        
+        [![Build Status](https://travis-ci.org/VinceCabs/robotframework-gaunitlibrary.svg?branch=master)](https://travis-ci.org/VinceCabs/robotframework-gaunitlibrary)
+        
+        GAUnitLibrary is a [Robot Framework](http://robotframework.org/) library to interface with [GAUnit](https://github.com/VinceCabs/GAUnit).
+        
+        ## Installation
+        
+        Use pip:
+        
+        ```sh
+        pip install robotframework-gaunitlibrary
+        ```
+        
+        ## Run your first tests (full working samples)
+        
+        ### Automated test with a proxy
+        
+        You can use BrowserMob Proxy library to intercept Google Analytics events.
+        
+        - Download **BrowserMob Proxy** [latest release](https://github.com/lightbody/browsermob-proxy/releases) (note: install [Java](https://www.oracle.com/java/technologies/javase-jre8-downloads.html)).
+          - add `bin/` directory to your %PATH
+        
+        - Download [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+        
+        - Install these libraries :
+        
+            ```sh
+            pip install -r requirements/samples.txt
+            ```
+        
+        - Run the test
+        
+            ```sh
+            robot samples/home_engie_with_proxy.robot
+            ```
+        
+        ### Launch a manual browsing session to test events
+        
+        - Follow same install instructions as above.
+        
+        - Run the test
+        
+            ```sh
+            robot samples/manual_browsing.robot
+            ```
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
