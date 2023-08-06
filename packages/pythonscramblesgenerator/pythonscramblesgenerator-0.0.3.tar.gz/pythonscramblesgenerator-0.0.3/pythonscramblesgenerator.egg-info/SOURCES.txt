@@ -1,0 +1,6 @@
+setup.py
+pythonscramblesgenerator.egg-info/PKG-INFO
+pythonscramblesgenerator.egg-info/SOURCES.txt
+pythonscramblesgenerator.egg-info/dependency_links.txt
+pythonscramblesgenerator.egg-info/entry_points.txt
+pythonscramblesgenerator.egg-info/top_level.txt
