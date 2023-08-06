@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+requirements.txt
+setup.py
+mkdocs_pathfinder.egg-info/PKG-INFO
+mkdocs_pathfinder.egg-info/SOURCES.txt
+mkdocs_pathfinder.egg-info/dependency_links.txt
+mkdocs_pathfinder.egg-info/entry_points.txt
+mkdocs_pathfinder.egg-info/not-zip-safe
+mkdocs_pathfinder.egg-info/requires.txt
+mkdocs_pathfinder.egg-info/top_level.txt
