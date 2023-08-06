@@ -1,0 +1,1 @@
+This library has a simple calculator function that takes two numbers and perform addition,subtraction,multiplication and division.

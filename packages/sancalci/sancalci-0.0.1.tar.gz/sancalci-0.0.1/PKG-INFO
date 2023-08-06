@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sancalci
+Version: 0.0.1
+Summary: A simple calculator
+Home-page: 
+Author: SANTHIYA S
+Author-email: sandhiyas0109@gmail.com
+License: MIT
+Keywords: basic calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This library has a simple calculator function that takes two numbers and perform addition,subtraction,multiplication and division.
+
+CHANGE LOG
+===========
+0.0.1 (10/01/2023)
+--------------------
+-First release

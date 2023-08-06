@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+sancalci/__init__.py
+sancalci.egg-info/PKG-INFO
+sancalci.egg-info/SOURCES.txt
+sancalci.egg-info/dependency_links.txt
+sancalci.egg-info/top_level.txt
