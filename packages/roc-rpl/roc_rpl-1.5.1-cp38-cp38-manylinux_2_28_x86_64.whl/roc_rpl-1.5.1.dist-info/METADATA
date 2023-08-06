@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: roc-rpl
+Version: 1.5.1
+Summary: RPW Packet parsing Library (RPL): a plugin for the RPW TM/TC packet analysis
+Home-page: https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RPL
+License: CECILL-C
+Author: Xavier Bonnin
+Author-email: xavier.bonnin@obspm.fr
+Requires-Python: >=3.8,<4
+Classifier: License :: CeCILL-C Free Software License Agreement (CECILL-C)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Cython (>=0.29,<0.30)
+Requires-Dist: maser-tools
+Requires-Dist: numpy (!=1.19.5)
+Requires-Dist: poppy-core (>=0.9.4)
+Requires-Dist: poppy-pop (>=0.7.5)
+Requires-Dist: roc-idb (>=1.0,<2.0)
+Requires-Dist: spice_manager
+Project-URL: Repository, https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RPL
+Description-Content-Type: text/markdown
+
+RPL PLUGIN README
+=================
+
+[![pipeline status](https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RPL/badges/develop/pipeline.svg)](https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RPL/pipelines)
+
+This directory contains the source files of the RPW Packet parsing Library (RPL), a plugin of the ROC pipelines dedicated to parse the RPW telemetry/command packets.
+
+RPL has been developed with the [POPPY framework](https://poppy-framework.readthedocs.io/en/latest/).
+
+## Quickstart
+
+### Installation with pip
+
+To install the plugin using pip:
+
+```
+pip install roc-rpl
+```
+
+NOTES:
+
+    - It is also possible to install plugin from gitlab: `pip install roc-rpl --extra-index-url https://__token__:<your_personal_token>@gitlab.obspm.fr/api/v4/projects/2052/packages/pypi/simple --trusted-host gitlab.obspm.fr`. A personal access token is required to reach the package registry in the ROC Gitlab server.
+
+### Installation from the repository
+
+First, retrieve the `RPL` repository from the ROC gitlab server:
+
+```
+git clone https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RPL.git
+```
+
+Then, install the package (here using (poetry)[https://python-poetry.org/]):
+
+```
+poetry install --extras "poppy"
+```
+
+NOTES:
+
+    - It is also possible to clone the repositiory using SSH
+    - To install poetry: `pip install poetry`
+    - Default branch is `develop`
+
+## Usage
+
+The roc-rpl plugin is designed to be run in a POPPy-built pipeline.
+Nevertheless, it is still possible to import some classes and methods in Python files.
+
+For instance, to test that the installation has ended correctly, run:
+
+```
+python -c "from roc.rpl import packet_structure"
+```
+
+No message should be returned if the import works well.
+
+## Authors
+
+* Xavier BONNIN xavier.bonnin@obspm.fr (maintainer)
+* Manuel DUARTE manuel.duarte@obspm.fr (author)
+* Sonny LION sonny.lion@obspm.fr (author)
+
+License
+-------
+
+This project is licensed under CeCILL-C.
+
+Acknowledgments
+---------------
+
+* Solar Orbiter / RPW Operation Centre (ROC) team
+
