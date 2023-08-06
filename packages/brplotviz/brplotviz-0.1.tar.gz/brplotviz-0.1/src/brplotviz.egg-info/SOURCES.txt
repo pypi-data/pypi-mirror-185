@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/brplotviz/__init__.py
+src/brplotviz/plot.py
+src/brplotviz/styleselect.py
+src/brplotviz/table.py
+src/brplotviz.egg-info/PKG-INFO
+src/brplotviz.egg-info/SOURCES.txt
+src/brplotviz.egg-info/dependency_links.txt
+src/brplotviz.egg-info/requires.txt
+src/brplotviz.egg-info/top_level.txt
