@@ -1,0 +1,17 @@
+stdatamodels/__init__.py,sha256=8sr0XoJ_UQ--glenEFIHi85EbkEECujkl1KLeOwz37I,131
+stdatamodels/_version.py,sha256=0qXLJaMXP7yzrN0x6LIFnrndWuPg6hXYIpvBxZT9c9A,160
+stdatamodels/filetype.py,sha256=BMYsGpp2NcGO1on3YxCX1miDtA8frC-hh4FpX4bGv6Q,1322
+stdatamodels/fits_support.py,sha256=x87IoylDSn_4LsW16wwCJd984GmSxOXDdW51Q0ohJTk,26035
+stdatamodels/history.py,sha256=HKEqhsxNW_p0pw0daiEf15zmwykN7zQxsW-vc7N3gMI,2184
+stdatamodels/model_base.py,sha256=ZXOt1dD2NBtfuvB5SRsMCg5o3yw0_StLeL4-Z4pss2Q,39106
+stdatamodels/properties.py,sha256=0yfQcC3A3cWCedIzdDX9UPt5uWElw54GkkQxkykV0KI,18349
+stdatamodels/s3_utils.py,sha256=UOxBbxaUiIgKUdAhO_B9bTzhRoiocKrt2fbElarCX4E,2071
+stdatamodels/schema.py,sha256=DtMdvpA0WWnO4PDCdsYQ2MzwgBJGHT6m6beIgSlPcK4,10059
+stdatamodels/util.py,sha256=0Ngs-fO6oBFhhPdBlXJBpF5k988MUt-RNzYjBjHGPSc,7776
+stdatamodels/validate.py,sha256=B7EMsjFE8MLSm8j14ZL0EEdY1qlvzG9MtfviJAolmBw,6450
+stdatamodels-0.4.5.dist-info/LICENSE,sha256=z2cunYEKqBVTN9QyyaHpersp2wzw-Y9mWpVWJEUpz_c,1463
+stdatamodels-0.4.5.dist-info/METADATA,sha256=4ORxp-esbTLXmL0NxTL1H7GSheWiK5tJxaLv8oq7kDk,1536
+stdatamodels-0.4.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+stdatamodels-0.4.5.dist-info/top_level.txt,sha256=bYlAHf9iCf7ElQbax8k-TyYz47WCfqadvHyzTQpWsL8,13
+stdatamodels-0.4.5.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+stdatamodels-0.4.5.dist-info/RECORD,,
