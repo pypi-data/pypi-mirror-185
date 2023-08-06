@@ -1,0 +1,8 @@
+README.md
+setup.py
+mylibkm/__init__.py
+mylibkm/_core.py
+mylibkm.egg-info/PKG-INFO
+mylibkm.egg-info/SOURCES.txt
+mylibkm.egg-info/dependency_links.txt
+mylibkm.egg-info/top_level.txt

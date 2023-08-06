@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mylibkm
+Version: 1.0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: UNKNOWN
+Description: 褰曞埗鎿嶄綔鐨勬帴鍙ｇ被
+        from mylib_km.code import ScriptInter
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
