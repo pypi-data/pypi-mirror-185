@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+    {% set features = config.theme.features or [] %}
+    {% set palette_name = config.theme.palette or "default" %}
+    {% set palette = "css/palettes/" ~ palette_name ~ ".css" %}
+    {%- block site_meta %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% include "theme_version.html" %}
+    <!-- <meta name="robots" content="noindex"> -->
+    {% if config.site_description %}
+    <meta name="description" content="{{ config.site_description }}">{% endif %} 
+    {% if config.site_author %}
+    <meta name="author" content="{{ config.site_author }}">{% endif %} 
+    {% if page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}">{% endif %} 
+    {% include "partials/favicon.html" %}
+    {%- endblock %} 
+    
+    {%- block htmltitle %}
+    {% include "partials/html-title.html" %}
+    {%- endblock %} 
+    
+    {%- block styles %}
+    <link href="{{ 'css/normalize.css' | url }}" rel="stylesheet">
+    <link href="{{ 'css/terminal.css' | url }}" rel="stylesheet">
+    <link href="{{ 'css/theme.css' | url }}" rel="stylesheet"> 
+    <!-- {{ palette_name }} color palette-->
+    <link href="{{ palette | url }}" rel="stylesheet">
+    
+    {% if 'navigation.top.cursor_animation.hide' in features %}
+    <style>
+      .terminal-prompt::after {
+          display: none;
+      }
+    </style> 
+    {% endif %}
+    {%- endblock %}
+
+    <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+    {% for path in config.extra_css %}
+    <link href="{{ path|url }}" rel="stylesheet"> {% endfor %} 
+    
+    {% block extrahead %} {% endblock %}
+
+    <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+    {% for path in config.extra_javascript %}
+    <script src="{{ path|url }}"></script>
+    {% endfor %}
+
+    <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+    {% if config.google_analytics %}
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
+        ga('send', 'pageview');
+    </script>
+    {% endif %}
+</head>
+
+<body class="terminal">
+    {% if page and page.meta and page.meta.hide %} 
+      {% set hide_toc = "true" if "toc" in page.meta.hide %} 
+      {% set hide_top_nav = "true" if "top-nav" in page.meta.hide %} 
+      {% set hide_side_nav = "true" if "side-nav" in page.meta.hide %} 
+    {% endif %} 
+    
+    {%- block site_nav %} 
+      {% if "navigation.top.hide" in features %}
+      {% else %}
+        {% if not hide_top_nav %} 
+          {% include "partials/top-nav.html" %} 
+        {% endif %}
+      {% endif %}
+    {%- endblock %}
+
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid">
+          {% include "partials/side-panel.html" %}
+            <main>
+                {%- block content %} {% include "partials/content.html" %} {%- endblock %}
+            </main>
+        </div>
+        <hr> {%- block footer %} {% include "partials/footer.html" %} {%- endblock %}
+    </div>
+</body>
+
+</html>
