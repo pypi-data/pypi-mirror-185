@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: swaps-gateway
+Version: 0.1.1
+Summary: A library for easier interactions with swap-based DEXs
+Author-email: "dexpresso.protocol" <dexpresso_dev@proton.me>
+Project-URL: Homepage, https://github.com/dexpresso-protocol/swaps-gateway
+Project-URL: Bug Tracker, https://github.com/dexpresso-protocol/swaps-gateway/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# swaps-gateway-py
+A python wrapper for easier interactions with swap-based DEXs.
+
+## Based on
+* Web3
+* uniswap-python
+

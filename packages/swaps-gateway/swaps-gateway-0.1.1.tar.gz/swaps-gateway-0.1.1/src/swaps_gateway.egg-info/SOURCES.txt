@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+src/swaps_gateway/__init__.py
+src/swaps_gateway/erc20_abi.txt
+src/swaps_gateway/router_abi.txt
+src/swaps_gateway/uniswap_ecosystem.py
+src/swaps_gateway.egg-info/PKG-INFO
+src/swaps_gateway.egg-info/SOURCES.txt
+src/swaps_gateway.egg-info/dependency_links.txt
+src/swaps_gateway.egg-info/requires.txt
+src/swaps_gateway.egg-info/top_level.txt

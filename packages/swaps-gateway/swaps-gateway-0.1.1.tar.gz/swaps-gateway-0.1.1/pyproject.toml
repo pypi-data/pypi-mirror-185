@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swaps-gateway"
+version = "0.1.1"
+authors = [
+  { name="dexpresso.protocol", email="dexpresso_dev@proton.me" },
+]
+description = "A library for easier interactions with swap-based DEXs"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+dependencies = [
+    "web3 >= 5.31.1",
+    "uniswap-python",
+    "hexbytes>=0.3.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dexpresso-protocol/swaps-gateway"
+"Bug Tracker" = "https://github.com/dexpresso-protocol/swaps-gateway/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+swaps_gateway = ["*.txt"]
