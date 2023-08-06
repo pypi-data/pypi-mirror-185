@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "col_spanish"
+version = "0.0.4"
+description = "Functions that help to work with text in spanish (Colombia)"
+authors = ["Sergio Sosa Bautista <sergioasb@gmail.com>"]
+readme = "README.md"
+packages = [{include = "col_spanish"}]
+license = "MIT"
+homepage = "https://github.com/sergioasb8/col-spanish"
+repository = "https://github.com/sergioasb8/col-spanish"
+keywords =  ["spanish","nlp","colombia","text-normalization"]
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
