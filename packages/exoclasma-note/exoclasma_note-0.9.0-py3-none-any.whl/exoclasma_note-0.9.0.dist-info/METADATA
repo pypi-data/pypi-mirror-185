@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: exoclasma-note
+Version: 0.9.0
+Summary: Exo-C Data Quality Check, Mapping, and Variant Calling, part of ExoClasma Suite
+Project-URL: Homepage, https://github.com/regnveig/exoclasma-note
+Project-URL: Bug Tracker, https://github.com/regnveig/exoclasma-note/issues
+Author-email: Emil Viesná <regnveig@yandex.ru>, Minja Fishman <minja-f@yandex.ru>
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE
+Keywords: annotation,bioinformatics,variant
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: pandarallel
+Requires-Dist: pandas
+Requires-Dist: pytabix
+Description-Content-Type: text/markdown
+
+# exoclasma-note
+
+Annotation of genomic variants.
+
+## Dependencies
+
+Perl:
+
+```bash
+sudo apt install perl
+```
+
+Annovar:
+
+```bash
+GENOME="hg19" # hg38 if you prefer
+curl --output annovar.latest.tar.gz www.openbioinformatics.org/annovar/download/0wgxR2rIVP/annovar.latest.tar.gz
+tar -xzf annovar.latest.tar.gz
+cd annovar
+for database in refGene knownGene ensGene dbnsfp35c dbscsnv11 intervar_20180118 gnomad211_genome gene4denovo201907 kaviar_20150923 hrcr1 abraom 1000g2015aug gme esp6500siv2_all avsnp150 clinvar_20200316 regsnpintron revel gwava;
+do {
+	perl annotate_variation.pl -downdb -buildver ${GENOME} -webfrom annovar ${database} humandb/
+} done
+cd ..
+rm annovar.latest.tar.gz
+```
+
+## Install
+
+```bash
+sudo python3 -m pip install exoclasma-note
+```
+
+## Usage
+
+```bash
+exoclasma-note -u ${unit_json} -a ${annovar_folder} -g ${genome} [--nofilter]
+```
+
+* `unit_json`: Unit JSON file which was created by exoclasma-pipe
+* `annovar_folder`: Path to ANNOVAR folder where perl scripts are located
+* `genome`: Genome assembly which use ANNOVAR (i.e., hg19, hg38, etc.)

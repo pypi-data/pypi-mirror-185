@@ -1,0 +1,2 @@
+[console_scripts]
+exoclasma-note = exoclasma_note.exoclasma_note:main
