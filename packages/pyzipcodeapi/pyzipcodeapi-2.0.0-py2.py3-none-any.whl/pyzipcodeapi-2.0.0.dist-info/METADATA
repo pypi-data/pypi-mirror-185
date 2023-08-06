@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pyzipcodeapi
+Version: 2.0.0
+Summary: Py ZipCodeApi will make it easier for you to use the different options in ZipCodeAPI
+Home-page: https://github.com/medbenmakhlouf/pyzipcodeapi
+Download-URL: https://github.com/medbenmakhlouf/pyzipcodeapi/tarball/2.0.0
+Author: Mohamed Ben Makhlouf
+Author-email: med.b.makhlouf@gmail.com
+License: BSD
+Keywords: api,zipcode
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+Py Zip Code API
+===============================
+
+version number: 2.0.0
+
+author: Mohamed Ben Makhlouf
+
+python version: >= 3.10
+
+Documentation
+--------
+
+link : http://pyzipcodeapi.readthedocs.io/en/v2.0.0/
+
+Installation / Usage
+--------------------
+
+To install use pip:
+
+    $ pip install pyzipcodeapi
+
+
+Or clone the repo:
+
+    $ git clone https://github.com/medbenmakhlouf/pyzipcodeapi.git
+    $ python setup.py install
+
+Example
+-------
+
+http://pyzipcodeapi.readthedocs.io/en/v2.0.0/#example
