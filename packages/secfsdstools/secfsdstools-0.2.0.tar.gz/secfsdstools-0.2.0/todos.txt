@@ -1,0 +1,35 @@
+Config
+------
+
+integrate rapid api
+
+
+- build reports / read access
+  - index for name zu cik, einfach namenssuche -> oder dann Info wie mit sqldb file umzugehen ist?-
+
+- report reader und company reader erweiterbar -> baseclasse ABC
+
+build
+- build für 3.7
+- release note
+
+- coverage report
+- api documentation creation
+  check pdoc https://pdoc3.github.io/pdoc/
+
+
+
+
+Release
+-------
+deploy first release on pypi.org not on test.pypi.org
+
+
+Ideen
+-----
+- is sehr langsam, warum?
+  download in parallel / integrate parallelExecution ParallelExecution.py (von sec_processing)
+
+- export excel
+- cli
+
