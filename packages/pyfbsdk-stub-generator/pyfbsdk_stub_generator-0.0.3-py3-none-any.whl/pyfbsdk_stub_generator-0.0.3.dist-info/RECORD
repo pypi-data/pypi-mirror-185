@@ -1,0 +1,10 @@
+pyfbsdk_stub_generator/__init__.py,sha256=AHerUC7140uO5d2FQL0yj66JANXB0LMHtuFrtl6r2q4,939
+pyfbsdk_stub_generator/additions_pyfbsdk.py,sha256=L4dyWWsJ2PfWH6gyMa57Eem_eY65xBGHLwRaX8x14Yw,285
+pyfbsdk_stub_generator/manual_documentation.py,sha256=RUY0IzDoQRKc9CVK4bI2iDVDwNfD7k9Y0Kzfqd8kf-o,12306
+pyfbsdk_stub_generator/motionbuilder_documentation_parser.py,sha256=RrsjJy4PjyOBtIOU60Pab8vPyTh9vPXeUMj8rlp-rD0,23650
+pyfbsdk_stub_generator/stub_generator.py,sha256=GLjs-41fj8WJAGU4JoPBiv9vnNZYw5gxNzI3A-02YDQ,49212
+pyfbsdk_stub_generator-0.0.3.dist-info/LICENSE,sha256=4KCHlhIBC4wzFaHjbqOYP73JlcCbP7vDhes5TZRyMoU,1092
+pyfbsdk_stub_generator-0.0.3.dist-info/METADATA,sha256=-J2IJ3ybFD-pE5qWwYrj0lsNoeYvKMWLX-XJZ_TAi74,1749
+pyfbsdk_stub_generator-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyfbsdk_stub_generator-0.0.3.dist-info/top_level.txt,sha256=WqsrOn9eUunXCo5eMbRJhoXUKK1aQVeVGj7QngOQkXU,23
+pyfbsdk_stub_generator-0.0.3.dist-info/RECORD,,
