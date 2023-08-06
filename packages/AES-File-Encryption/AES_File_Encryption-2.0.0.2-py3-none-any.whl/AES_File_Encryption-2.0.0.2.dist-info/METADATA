@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: AES-File-Encryption
+Version: 2.0.0.2
+Summary: AES File Encryption/Decryption with password
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# AES-File-Encryption
+Python module to convert password-protect file by using AES encryption.
+This module has function sha_encrypt and sha_decrypt which takes argument as key and filename.
+Import this module and use function to encrypt or decrypt the file.
+
+Enter the full name of the file and then enter the password.
+
+
+The Encrypted file will be saved as 'filename.shaenc'.
+
+The Decrypted file is the original filename.
+
+Developed By Shashank Agarwal.
+
+
+Email: contact@shashank.my.id
