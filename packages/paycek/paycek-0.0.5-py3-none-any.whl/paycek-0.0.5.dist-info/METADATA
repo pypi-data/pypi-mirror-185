@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: paycek
+Version: 0.0.5
+Summary: A connector library for communicating with PayCek public API
+Author: Electrocoin d.o.o.
+Project-URL: Website, https://paycek.io
+Project-URL: Source Code, https://github.com/electrocoin-eu/paycek-python/tree/main/python
+Project-URL: Bug Tracker, https://github.com/electrocoin-eu/paycek-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Paycek
+A connector library for communicating with PayCek public API
