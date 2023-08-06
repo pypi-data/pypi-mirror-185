@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: coda-api
+Version: 0.3.4
+Summary: CODA platform API
+Home-page: https://github.com/coda-platform/python-api
+Author: Louis Mullie
+License: GPL
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: requests
+
