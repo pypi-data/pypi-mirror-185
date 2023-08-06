@@ -1,0 +1,13 @@
+TVG/FreeTVG.py,sha256=ob8VKMxdv5x9KyPyinVj2keMvjcfR8uckMqBpaPFaxY,162432
+TVG/Tutorial TVG.pdf,sha256=eDP7RvtCG5xy4hZiY3RWZGpQVgvW8QH918GTRCv87mo,521169
+TVG/__init__.py,sha256=btf6dDizC3wwdwaF6--poJw14Vdcry67BqH6KOBKlbU,46
+TVG/utility/RegMail.py,sha256=VUXZTzvFLSUls8jAj8nQ0lFvEuOLyyf5UkQfqWL5UEM,1091
+TVG/utility/__init__.py,sha256=FdHGxKbDSGeOpVkCZH5Q_iL_wAE34lZBoMer5dG5jiM,110
+TVG/utility/mdh.py,sha256=ITl3yrfFvgUhMfmNymltwj3ucAFSpnRY0nSAry6lup0,5639
+TVG/utility/term.py,sha256=9nAcPenIX_-jglQDAJhFdgY1RBmt5m_wHjoLCg3grL8,1174
+FreeTVG_karjakak-3.1.10.dist-info/LICENSE.txt,sha256=5_fueaZmX8vN9o01wIt4coABAd2qpsOipm6clMkYzlI,1082
+FreeTVG_karjakak-3.1.10.dist-info/METADATA,sha256=OQSF6vYLmjbnIYOmPdeRhM-gaH8-pxRtPTyDDhNH0I0,1675
+FreeTVG_karjakak-3.1.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+FreeTVG_karjakak-3.1.10.dist-info/entry_points.txt,sha256=IQeo_p1F_yu-Ou372X3eE56Ot8KJ34oN6tqXIAwJjCs,29
+FreeTVG_karjakak-3.1.10.dist-info/top_level.txt,sha256=9h9r9IB3LAfX6aVQTvPnQBfTIrdg9SWEhKSJ3r2luw0,4
+FreeTVG_karjakak-3.1.10.dist-info/RECORD,,
