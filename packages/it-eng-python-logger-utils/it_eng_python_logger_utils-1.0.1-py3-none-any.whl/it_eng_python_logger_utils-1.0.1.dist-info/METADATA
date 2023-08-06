@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: it-eng-python-logger-utils
+Version: 1.0.1
+Summary: A logger util helper for Azure app insights and structured logging
+Author-email: Dinnermonster <mbotrepair@gmail.com>
+Project-URL: Homepage, https://github.com/it-eng-packages/packages/it_eng_python_logger_utils
+Project-URL: Bug Tracker, https://github.com/it-eng-packages/packages/it_eng_python_logger_utils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
