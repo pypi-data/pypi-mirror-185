@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "randwords"
+description = "Utilities to generate random words and strings"
+dependencies = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Topic :: Security",
+    "Topic :: Utilities"
+]
+dynamic = ["version", "readme"]
+requires-python = ">= 3"
+
+[project.optional-dependencies]
+
+[project.scripts]
+randstring = "randwords.cmd.randstring:main"
+randwords = "randwords.cmd.randwords:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.dynamic]
+version = {attr = "randwords.__VERSION__"}
+readme = {file = "README.md", content-type = "text/markdown"}
