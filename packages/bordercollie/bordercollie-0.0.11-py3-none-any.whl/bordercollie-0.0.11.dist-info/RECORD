@@ -1,0 +1,15 @@
+bordercollie/__init__.py,sha256=hv3wZn1s55UodxL4hWmQlx8IouC-VHebTP9CmMz2IBg,1404
+bordercollie/asrsummary.py,sha256=4d9VBtEvRS5vKz7fhmQgr8XbAJVmeJpXtxcGTgG3FGQ,7820
+bordercollie/auth.py,sha256=jsa-tpB3hL7FJ4WtlntRxMf07rK3JLhJd6NfcwceD08,2861
+bordercollie/sql.py,sha256=9eAJzhY-6TOQl2cKkNgdHIY8R1VEvwW9F9zdqcA35hg,3503
+bordercollie/utils.py,sha256=73oWgt4g-i2dAwWMLBGblqcW88XfOoJQwQHCDoNPkhk,361
+bordercollie/apps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bordercollie/apps/merge_log_consumer.py,sha256=82hBWhAxm7ClS2gv57Bhf_NpT6VLAv_tmbcKhF3Z9W8,1373
+bordercollie/apps/monitor.py,sha256=fvMRrShoE0GVWubEBgKnosEoy3CmpVuQNMzmWC9K8bo,1986
+bordercollie/apps/trans_record_consumer.py,sha256=C2o9JBQL0fvNn6nUBRc4-4_3ny6Bx9tNSGyEn6cnOuk,1239
+bordercollie/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bordercollie-0.0.11.dist-info/METADATA,sha256=IVMKk6YD073NNp74HomNrlwnfiPlMU_YE9ypxBZcjII,585
+bordercollie-0.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bordercollie-0.0.11.dist-info/entry_points.txt,sha256=v-902t5S6iciaAlwaM5rMH338o6fTooyAkmCan_pSx0,54
+bordercollie-0.0.11.dist-info/top_level.txt,sha256=GkjIUEUZdrYAaNiF6YwCrZ_Ent83CU5pRxLfCaBAtyI,13
+bordercollie-0.0.11.dist-info/RECORD,,
