@@ -1,0 +1,11 @@
+tox_gh/__init__.py,sha256=3vXnXuixsyjF971LhtwFKJbgqZknttHuiodjQBOOuR0,114
+tox_gh/plugin.py,sha256=l4MS6oWospVoBhBiNBS9Qc6V14sjRYr3_MnMkV552F8,3147
+tox_gh/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tox_gh/version.py,sha256=FrtOfsGtY3HPkXwopVTLnBRPrKexJ-VIfXoRzWX47O4,160
+tox_gh-1.0.0.dist-info/LICENSE,sha256=kOJeH68qSq6o2V7o5_VziwUqGswMnFgGgQH5Mahr1Yg,1023
+tox_gh-1.0.0.dist-info/METADATA,sha256=Awxzr7RM4pHiMHQJdEPAC6GNqSR2qqM6oh7_0wFdBKg,4274
+tox_gh-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tox_gh-1.0.0.dist-info/entry_points.txt,sha256=TvGOHqGO4e-V420c8cF5o5pAtZflOiBTKRy8lsZH54A,29
+tox_gh-1.0.0.dist-info/top_level.txt,sha256=olu_KXvv_fDfHeKHdittGY7ynGITauonZBRKklnheOY,7
+tox_gh-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tox_gh-1.0.0.dist-info/RECORD,,
