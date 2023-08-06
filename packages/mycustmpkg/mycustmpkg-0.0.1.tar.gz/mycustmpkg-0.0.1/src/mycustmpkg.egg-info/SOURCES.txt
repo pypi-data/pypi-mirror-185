@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/mycustmpkg.egg-info/PKG-INFO
+src/mycustmpkg.egg-info/SOURCES.txt
+src/mycustmpkg.egg-info/dependency_links.txt
+src/mycustmpkg.egg-info/requires.txt
+src/mycustmpkg.egg-info/top_level.txt
+src/package_one/__init__.py
+src/package_one/script.py
