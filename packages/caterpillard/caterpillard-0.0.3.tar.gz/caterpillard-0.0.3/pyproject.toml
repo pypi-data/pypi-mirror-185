@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "caterpillard"
+version = "0.0.3"
+authors = [
+  { name="Prabal Pratap Singh", email="mechaprabal@gmail.com" },
+  { name="Deepu Philip", email="dphilip@iitk.ac.in" },
+]
+description = "Caterpillar Diagram"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'numpy',
+  'pandas',
+  'matplotlib',
+  'progressbar2',
+]
+
+[project.optional-dependencies]
+dev = [
+    'autopep8',
+    'flake8',
+    'black',
+    'sphinx', # for documentation
+    'myst-parser', # markdown parser for sphinx
+    'sphinx-autobuild', # monitor for doc changes
+    'furo', #theme for documentation
+    'nbsphinx', # for notebooks in docs
+    'sphinxcontrib-napoleon', # for numpy style docstrings
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mechaprabal/caterpillard"
+"Bug Tracker" = "https://github.com/mechaprabal/caterpillard/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = true
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
