@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: plotvec
+Version: 1.2
+Summary: Module to plot 2-d vectors as arrows using Matplotlib.  
+Home-page: https://github.com/jmshea/plotvec
+Author: John M. Shea
+Author-email: jshea@ieee.org
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# plotvec
+Library for plotting 2-d vectors using Matplotlib
+
