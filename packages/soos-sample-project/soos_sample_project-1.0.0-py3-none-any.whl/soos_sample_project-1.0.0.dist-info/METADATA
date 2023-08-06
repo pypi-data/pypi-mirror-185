@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: soos-sample-project
+Version: 1.0.0
+Summary: This is an example of a vulnerable package on a public registry.
+Home-page: https://github.com/soos-io/sample-project-python
+Author: SOOS
+Author-email: dev@soos.io
+Project-URL: Issues, https://github.com/soos-io/sample-project-python/issues
+Project-URL: Source, https://github.com/soos-io/sample-project-python
+Project-URL: About, https://soos.io
+Project-URL: Register, https://app.soos.io/register
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: <4,>=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: certifi (==2020.6.20)
+Requires-Dist: idna (==2.10)
+Requires-Dist: urllib3 (==1.26.5)
+Requires-Dist: charset-normalizer (==2.0.12)
+
+# sample-project-python
+This repository is an example of a vulnerable package on a public registry
