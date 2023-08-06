@@ -1,0 +1,9 @@
+torchy/__init__.py,sha256=G9m4wMz9ZAL6TGUZCx1TGhT0v5ZO19bOPXV-YvBV0Gw,73
+torchy/nn/__init__.py,sha256=ZpDwCkSqqvXZEx02HA8ULM_cAXLieKNvqhErW3J7jqM,47
+torchy/nn/basetorch.py,sha256=cmglgnKHi2yd02mtJPCrGDGLv0JUNlKxXMnZ5CwzIDs,10782
+torchy/utils/data/__init__.py,sha256=61IkSETh3WaZqikac1fTbhaFpbBv2czXjOzFYkuED20,925
+torchy/utils/data/new_utils.py,sha256=suapt1m1xY8Q4tRyeKlMshBezNSJA48mE_mPN4wi9OE,2607
+torchy-0.1.1.dist-info/METADATA,sha256=oCDYJycECfwxT0gRwo2bDD5bcNkiLssvWIlRXHnoX8Q,5659
+torchy-0.1.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+torchy-0.1.1.dist-info/licenses/LICENSE.txt,sha256=k8GWsIW8V0EnnFE2pfI-Go7UebIkhOePvvJ_NGUG2NY,1069
+torchy-0.1.1.dist-info/RECORD,,
