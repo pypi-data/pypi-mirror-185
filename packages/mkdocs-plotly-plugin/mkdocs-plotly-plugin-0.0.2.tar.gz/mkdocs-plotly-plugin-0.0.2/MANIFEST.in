@@ -1,0 +1,2 @@
+include mkdocs_charts_plugin/javascripts/*.js
+include mkdocs_charts_plugin/templates/*.json
