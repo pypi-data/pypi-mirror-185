@@ -1,0 +1,11 @@
+holidays
+numpy
+office365
+Office365_REST_Python_Client
+openpyxl
+pandas
+pyodbc
+requests
+selenium
+setuptools
+SharePlum
