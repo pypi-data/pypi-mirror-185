@@ -1,0 +1,1368 @@
+# -*- org-adapt-indentation: nil; org-edit-src-content-indentation: 0; orgstrap-cypher: sha256; orgstrap-norm-func-name: orgstrap-norm-func--dprp-1-0; orgstrap-block-checksum: ad1829da16c9f21b0e737a48e60bf6ae781c0840cd34e647ebabc7fbbb3dd247; -*-
+# [[orgstrap][jump to the orgstrap block for this file]]
+#+TITLE: Developer and curator setup guide
+#+AUTHOR: Tom Gillespie
+# [[./setup.pdf]]
+#+OPTIONS: num:nil ^:nil
+#+LATEX_HEADER: \usepackage[margin=1.0in]{geometry}
+#+STARTUP: showall
+#+property: header-args :eval no-export
+
+* Introduction
+This is a general guide to bootstrapping and maintaining a complete development environment
+for working as a curator or developer on the NIF-Ontology, protc, sparc-curation, scibot, etc.
+
+As of =2022-12-21= the information in this file is somewhat out of date.
+Corrections for better and more up-to-date workflows have been made, but
+most users should not attempt to follow this guide unless they need to
+replicate the entirety of the primary development environment. There are
+now better options tailored to specific use cases.
+
+Reference build environments are linked in the [[#docker][docker]] section.
+If you need to create a development environment on a new system it is best
+to consult those as a reference because they have the full dependency tree.
+
+For a general introduction to the SPARC curation process see [[./background.org]]
+The environment bootstrapped by running this file was originally developed on Gentoo,
+and is portable to other distributions with a few tweaks.
+
+Please report any bugs you find in this file or during the execution of any of the
+workflows described in this file to the sparc-curation GitHub
+[[https://github.com/SciCrunch/sparc-curation/issues][issue tracker]].
+* Setup
+Full setup takes about 3 hours.
+[[#one-shot][OS level setup]] takes about and hour, and [[#user][user setup]] takes about two hours. \\
+
+*If git, python, and Emacs are already installed on your computer*
+*you can start at [[#user][user setup]]. Otherwise start at [[#one-shot][OS level setup]].*
+
+If you have admin access then do [[#one-shot][OS level setup]]
+first and then continue on to [[#user][user setup]] once you are done.
+
+** One shot
+:PROPERTIES:
+:CUSTOM_ID: one-shot
+:VISIBILITY: folded
+:END:
+These bits are os specific setup instructions that need to be run as =root=.
+They only need to be run once.
+Quick links for each os.
+- [[#windows][Windows]]
+- [[#macos][macOS]]
+- [[#ubuntu][Ubuntu]]
+- [[#docker][Docker]] images and full documentation of the environment are also available.
+*** Windows
+:PROPERTIES:
+:CUSTOM_ID: windows
+:END:
+**** Package manager
+For managing a windows development/curation environment I highly recommend using
+the [[https://chocolatey.org/][chocolatey]] package manager.
+[[https://chocolatey.org/install#install-with-powershellexe][Install chocolatey]].
+
+#+begin_src powershell :exports code :eval never
+choco install `
+autohotkey `
+clisp `
+emacs `
+firefox `
+GoogleChrome `
+nodejs `
+poshgit `
+procexp `
+python `
+racket `
+rsync `
+vim `
+wsl2 `
+wsl-ubuntu-2004 `
+vcxsrv `
+docker-desktop `
+docker
+
+#+end_src
+
+# visualstudio2019community `
+# When installing Visual Studio you will likely need to install
+# additional tools via the visual studio installer.
+
+Update system Path to include packages that don't add themselves.
+This needs to be run as administrator.
+#+begin_src powershell :exports code :eval never
+$path = [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::Machine)
+$prefix_path = "C:\Program Files\Racket;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;"
+[Environment]::SetEnvironmentVariable("Path",
+                                      $prefix_path + $path,
+                                      [EnvironmentVariableTarget]::Machine)
+#+end_src
+
+If you are logged in remotely restarting sshd is the easiest way to refresh
+the environment so commands are in PATH. This is because new shells inherit the
+environment of sshd at the time that it was started.
+#+begin_src powershell :exports code :eval never
+Restart-Service sshd
+#+end_src
+You will need to reconnect to a new ssh session in order to have access to git and other
+newly installed commands.
+
+**** Config
+***** Environment variables
+In order for Emacs to work in a way that is similar to other operating
+systems the HOME environment variable needs to be set. You can run these
+commands as a regular user.
+#+begin_src powershell
+setx HOME %USERPROFILE%
+setx PATH "C:\Program Files\Git\bin;%PATH%"
+#+end_src
+***** Group policy for file system issues
+****** Long Paths
+Datasets in SPARC often have long names. Windows 10 default settings
+break long paths in Python. To fix this enable win32 long paths.
+
+[[https://docs.microsoft.com/en-us/archive/blogs/jeremykuhne/net-4-6-2-and-long-paths-on-windows-10#enabling-win32-long-path-support][Microsoft Documentation]]
+
+You can use =gpedit.msc= to grant these permissions by navigating the
+menu tree below and adding the user. You can run =gpedit.msc= directly
+with =Win-r= or often =Win gpedit enter=.
+
+#+begin_example
+Computer configuration
+└── Administrative Templates
+    Enable Win32 long paths
+#+end_example
+
+#+begin_src powershell
+Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Policies  -Name LongPathsEnabled -Value 1
+#+end_src
+
+Double click to open the setting dialogue, select the enable radio
+button on the left and then click the ok button.
+
+Any program that is run after this is enabled will work as expected if
+it supports long paths. No restart or logout is required.
+****** Symlinks
+=augpathlib= makes extensive use of symlinks to store metadata for remote files
+that have not been downloaded. By default normal users cannot create symlinks on
+windows. The best way to fix this is by granting the user that will run =sparcur=
+permission to create symlinks (do NOT run the process as Administrator).
+
+Three relevant links:
+[[https://stackoverflow.com/questions/6260149/os-symlink-support-in-windows][stackoverflow]]
+[[https://superuser.com/questions/104845/permission-to-make-symbolic-links-in-windows-7][superuser]]
+[[https://dbondarchuk.com/2016/09/23/adding-permission-for-creating-symlink-using-powershell/][powershell script source]].
+
+*You will need to log out and log back in for the setting to take effect.*
+
+You can use =gpedit.msc= to grant these permissions by adding the user
+by navigating the menu tree below. You can run =gpedit.msc= directly
+with =Win-r= or often =Win gpedit enter=.
+
+#+begin_example
+Computer configuration
+└── Windows Settings
+    └── Security Settings
+        └── Local Policies
+            └── User Rights Assignment
+                Create symbolic links
+#+end_example
+
+Once symlinks are working it is safe to continue on to [[#user][user setup]].
+
+Alternately you can define and run the function below as Administrator.
+Run it as =addSymLinkPermissions("user-to-add")=.
+
+#+begin_src powershell
+function addSymLinkPermissions($accountToAdd){
+    Write-Host "Checking SymLink permissions.."
+    $sidstr = $null
+    try {
+        $ntprincipal = new-object System.Security.Principal.NTAccount "$accountToAdd"
+        $sid = $ntprincipal.Translate([System.Security.Principal.SecurityIdentifier])
+        $sidstr = $sid.Value.ToString()
+    } catch {
+        $sidstr = $null
+    }
+    Write-Host "Account: $($accountToAdd)" -ForegroundColor DarkCyan
+    if( [string]::IsNullOrEmpty($sidstr) ) {
+        Write-Host "Account not found!" -ForegroundColor Red
+        exit -1
+    }
+    Write-Host "Account SID: $($sidstr)" -ForegroundColor DarkCyan
+    $tmp = [System.IO.Path]::GetTempFileName()
+    Write-Host "Export current Local Security Policy" -ForegroundColor DarkCyan
+    secedit.exe /export /cfg "$($tmp)" 
+    $c = Get-Content -Path $tmp 
+    $currentSetting = ""
+    foreach($s in $c) {
+        if( $s -like "SECreateSymbolicLinkPrivilege*") {
+            $x = $s.split("=",[System.StringSplitOptions]::RemoveEmptyEntries)
+            $currentSetting = $x[1].Trim()
+        }
+    }
+    if( $currentSetting -notlike "*$($sidstr)*" ) {
+        Write-Host "Need to add permissions to SymLink" -ForegroundColor Yellow
+        
+        Write-Host "Modify Setting ""Create SymLink""" -ForegroundColor DarkCyan
+
+        if( [string]::IsNullOrEmpty($currentSetting) ) {
+            $currentSetting = "*$($sidstr)"
+        } else {
+            $currentSetting = "*$($sidstr),$($currentSetting)"
+        }
+        Write-Host "$currentSetting"
+    $outfile = @"
+[Unicode]
+Unicode=yes
+[Version]
+signature="`$CHICAGO`$"
+Revision=1
+[Privilege Rights]
+SECreateSymbolicLinkPrivilege = $($currentSetting)
+"@
+    $tmp2 = [System.IO.Path]::GetTempFileName()
+        Write-Host "Import new settings to Local Security Policy" -ForegroundColor DarkCyan
+        $outfile | Set-Content -Path $tmp2 -Encoding Unicode -Force
+        Push-Location (Split-Path $tmp2)
+        try {
+            secedit.exe /configure /db "secedit.sdb" /cfg "$($tmp2)" /areas USER_RIGHTS 
+        } finally { 
+            Pop-Location
+        }
+    } else {
+        Write-Host "NO ACTIONS REQUIRED! Account already in ""Create SymLink""" -ForegroundColor DarkCyan
+        Write-Host "Account $accountToAdd already has permissions to SymLink" -ForegroundColor Green
+        return $true;
+    }
+}
+#+end_src
+**** Manual install
+***** texlive
+https://www.tug.org/texlive/windows.html
+https://www.tug.org/texlive/acquire-netinstall.html
+http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe
+This takes quite a while, about 50 mins on a good connection with a fast computer.
+***** protege
+https://github.com/protegeproject/protege-distribution/releases/latest
+***** redland
+rdf tools
+http://librdf.org/raptor/INSTALL.html
+https://github.com/dajobe/raptor
+Unfortunately to get the latest version of these it seems you have to build them yourself.
+**** ssh                                                           :optional:
+You can skip this if you will only be using the windows computer locally.
+In a local administrator powershell install OpenSSH. The rest can then be done remotely.
+#+begin_src powershell
+Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
+Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+Set-Service sshd -StartupType Automatic
+Start-Service sshd
+# add your ssh key to %programdata%\ssh\administrators_authorized_keys
+# disable password login in %programdata%\ssh\sshd_config
+Restart-Service sshd
+#+end_src
+
+Set default login shell.
+#+begin_src powershell
+New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -PropertyType String -Force
+#+end_src
+**** old                                                           :noexport:
+add to PATH so we can just link everything there
+=%HOMEPATH%\bin=
+=%APPDATA%\Python\Python37\Scripts=
+
+TODO =-l %HOMEPATH%/opt/scimax/init.el setup.org= in the shortcut ...
+also =%HOMEPATH%= for the start in ...
+*** macOS
+:PROPERTIES:
+:CUSTOM_ID: macos
+:END:
+**** Package manager
+[[https://brew.sh/][Install homebrew]].
+
+#+begin_src bash :exports code :eval never
+set -e  # this will exit your shell if you run at the top level and something fails
+
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/fcfea5bbf7130d754360d3056601bad131b09762/install.sh -o brew-install.sh
+test $(shasum -a 256 brew-install.sh | awk '{print $1}') = bcdaa4ade908e3766c74883f829c3dbb553a9808899bf58702651bd229d0c463 || { echo FAIL; rm brew-install.sh }
+
+/bin/bash brew-install.sh
+rm brew-install.sh
+
+brew install --cask \
+docker \
+emacs \
+firefox \
+gimp \
+google-chrome \
+inkscape \
+krita \
+mactex \
+macvim \
+protege \
+racket
+
+brew install \
+coreutils \
+curl \
+git \
+htop \
+hunspell \
+libmagic \
+pandoc \
+postgres \
+pyenv \
+python \
+python3 \
+redland \
+rxvt-unicode \
+sbcl \
+sqlite \
+tree \
+virtualbox \
+xquartz \
+imagemagick@6 \
+poppler \
+cmake \
+ninja \
+berkeley-db
+
+#+end_src
+
+Add the following to your ~/.bash_profile
+#+CAPTION: .bash_profile
+#+begin_src bash :exports code :eval never
+# This file is sourced by bash for login shells.  The following line
+# runs your .bashrc and is recommended by the bash info pages.
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+#+end_src
+
+Add the following to your ~/.bashrc
+#+CAPTION: .bashrc
+#+begin_src bash :exports code :eval never
+export PATH=${HOME}/bin:${HOME}/Library/Python/3.10/bin:${PATH}
+#+end_src
+
+Run the following to symlink python3 to python.
+Note that python3 is now legacy as of =2022-12-21=, this is retained for the record.
+#+begin_src bash :eval never
+mkdir ~/bin
+ln -s /usr/local/bin/python3 ~/bin/python
+ln -s /usr/local/bin/pip3 ~/bin/pip
+#+end_src
+
+At this point it is safe to continue on to [[#user][user setup]].
+**** ssh                                                           :optional:
+You can skip this if you will only be using the osx computer locally.
+#+begin_src bash
+sudo systemsetup -setremotelogin on
+# scp your key over to ~/.ssh/authorized_keys
+# set PasswordAuthentication no in /etc/ssh/sshd_config
+# set ChallengeResponseAuthentication no in /etc/ssh/sshd_config
+sudo launchctl unload  /System/Library/LaunchDaemons/ssh.plist
+sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
+#+end_src
+*** Ubuntu
+:PROPERTIES:
+:CUSTOM_ID: ubuntu
+:END:
+18.10 cosmic cuttlefish (and presumably other debian derivatives)
+
+The following need to be run in a shell where you have root (e.g. via =sudo su -=). \\
+
+# Remind me, why is an ssh server not provided by default!?
+#+CAPTION: Must be done locally as root prior to remote execution. \\
+#+BEGIN_SRC bash :exports code :eval never
+apt install openssh-server net-tools
+#+END_SRC
+
+Add your ssh public key to [[file:${HOME}/.ssh/authorized_keys][~/.ssh/authorized_keys]]
+if you want to run this remotely.
+
+#+NAME: ubuntu-root-setup
+#+CAPTION: Can be run remotely as root.
+#+CAPTION: texlive-full is a big boy, minimal version is
+#+CAPTION: texlive texlive-luatex texlive-latex-extra  \\
+#+BEGIN_SRC bash :exports code :eval never
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' \
+>> /etc/apt/sources.list.d/google-chrome.list
+add-apt-repository ppa:plt/racket
+add-apt-repository ppa:kelleyk/emacs
+add-apt-repository ppa:pypy/ppa
+apt update
+apt install build-essential lib64readline-dev rxvt-unicode htop attr tree sqlite curl git
+apt install emacs26 vim-gtk3 texlive-full pandoc hunspell
+apt install librdf0-dev python3-dev python3-pip pypy3 jupyter racket sbcl r-base r-base-dev maven
+apt install inkscape gimp krita graphviz firefox google-chrome-stable xfce4
+apt install nginx
+update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 10
+#+END_SRC
+
+At this point it is probably safe to continue on to [[#user][user setup]].
+If something goes wrong, come back and take a look at setting =PATH=.
+
+Ubuntu struggles to set user specific PATHs correctly via
+=~/.profile= This code works when the user logs in. It does not
+work correctly if you =su= to the user. Not entirely sure why.
+Doesn't work on xfce either apparently. The absolute madness.
+#+NAME: user-home-paths
+#+CAPTION: Set user home PATHs for all users to simplify later steps
+#+CAPTION: FIXME for some reason if this block is treated a source block it kills html export !?
+#+BEGIN_EXAMPLE
+{ cat <<EOL
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+EOL
+} > /etc/profile.d/user-home-paths.sh
+#+END_EXAMPLE
+
+Other software that you will probably need at some point but that is not packaged on ubuntu.
+- [[https://imagej.net/Fiji/Downloads][Fiji/ImageJ]]
+*** Gentoo
+:PROPERTIES:
+:CUSTOM_ID: gentoo
+:END:
+The [[#docker][docker]] images section has links to complete Gentoo
+based build system that includes a development environment that
+matches the one described in this file.
+#+CAPTION: /var/lib/portage/world
+#+BEGIN_SRC text
+app-editors/emacs
+app-editors/gvim
+app-text/texlive
+dev-vcs/git
+dev-scheme/racket
+dev-lisp/sbcl
+www-client/google-chrome-stable
+#+END_SRC
+*** Docker
+:PROPERTIES:
+:CUSTOM_ID: docker
+:END:
+See the [[./sckan/README.org][SCKAN readme]] for instructions on how to get started with docker.
+
+The process originally described by this file grew over time into a
+series of dockerfiles that automate the creation of a an environment
+that is similar to the primary development environment.
+
+The literate source for all images lives at [[file:../../dockerfiles/source.org]].
+Relevant sections for this particular environment are as follows.
+- [[file:../../dockerfiles/source.org::#kg-dev][kg-dev]]
+- [[file:../../dockerfiles/source.org::#kg-dev-user][kg-dev-user]]
+- [[file:../../dockerfiles/source.org::#sparcron][sparcron]]
+- [[file:../../dockerfiles/source.org::#sparcron-user][sparcron-user]]
+
+The images can be found on dockerhub https://hub.docker.com/r/tgbugs/musl/tags.
+** User
+:PROPERTIES:
+:CUSTOM_ID: user
+:END:
+If you are already on a system that has the [[#one-shot][prerequisites]]
+installed start here. If you are not you will find out fairly
+quickly when one of the following commands fail.
+*** Git name and email
+These workflows make extensive use of git.
+Git needs to know who you are (and so do we) so that it can stash files
+that you change (for example this file, which logs to itself).
+Use the email that you will use for curation or development for this.
+You should not use your primary email account for this because it will
+get a whole bunch of development related emails.
+
+Run the following in a terminal replacing the examples with the fields
+that apply to you.
+#+BEGIN_SRC bash :eval never
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
+#+END_SRC
+*** Bootstrapping [[./setup.org][this =setup.org= file]]
+You can run all the code in [[./setup.org][this =setup.org= file]] automatically
+using emacs [[https://orgmode.org/][org-mode]]. The easiest way to accomplish this is to
+download [[https://github.com/tgbugs/orgstrap/blob/master/init-simple.el][orgstrap/init-simple.el]] to get Emacs to a good state.
+The following steps will do this automatically for you.
+
+*All the code blocks in this Bootstrapping section need to be pasted into a terminal (shell) where you are logged in as your user.*
+*Run every code block in the order that they appear on this page. Do not skip any blocks.*
+*Read all the text between blocks. It will tell you what to do next.*
+
+When pasting blocks into the terminal (middles mouse, or =C-V= =control-shift-v= in the ubuntu terminal)
+if you do not copy the last newline of the blocks then you will have to hit enter to run the last command.
+
+The following commands should work on all operating systems if you
+have followed the [[#one-shot][setup instructions]] for your os.
+# TODO emacs auto setup to be able to run this file
+#+NAME: setup-folders
+#+CAPTION: Set up the folder structure and clone this sparc-curation repository.
+#+BEGIN_SRC bash :exports code :eval never
+mkdir -p ~/.local/bin
+mkdir ~/bin
+mkdir ~/opt
+mkdir ~/git
+mkdir ~/files
+source .profile
+#+end_src
+
+Run the following block to clone this repository and the =orgstrap= repository.
+#+begin_src bash :exports code :eval never
+pushd ~/git
+git clone https://github.com/SciCrunch/sparc-curation.git
+git clone https://github.com/tgbugs/orgstrap.git
+popd
+#+END_SRC
+
+When running the next block =emacs= will launch and install a number of packages (DON'T PANIC).
+
+It is normal to see errors during this step. When everything finishes installing you should find
+yourself staring at next section of this file [[#per-user-setup][Per user setup]] and can continue
+from there in =emacs=.
+#+begin_src bash :exports code :eval never
+emacs -q --eval '(setq init-simple-testing t)' -l ~/git/orgstrap/init-simple.el --eval '(progn (with-current-buffer (find-file (pop argv)) (goto-char (org-find-exact-headline-in-buffer (pop argv))) (recenter-top-bottom 0)))' ~/git/sparc-curation/docs/setup.org "Per user setup"
+#+end_src
+
+*** Per user setup
+:PROPERTIES:
+:CUSTOM_ID: per-user-setup
+:END:
+You should now have this file open in =emacs=
+and can run the code blocks directly by clicking on a block
+and typing =C-c C-c= (control c control c). In the default
+=emacs= setup code blocks will appear as yellow or green.
+Note that not all yellow blocks are source code, some may be
+examples, you can tell because examples won't execute and the
+start with =#+BEGIN_EXAMPLE= instead of =#+BEGIN_SRC=.
+
+All the following should be run as your user in =emacs=.
+If you run these blocks from the command line be sure to run
+nameref:remote-exports first.
+
+When you run this block emacs will think for about 3 minutes
+as it retrieves everything. You can know that it is thinking
+because your mouse will be in thinking mode if you hover over
+emacs, and because in the minibuffer window at the bottom of
+the window there will be a message saying something to the
+effect of =Wrote /tmp/babel-nonsense/ob-input-nonsense=.
+If an error window appears when running this block just run
+it again.
+
+You can also run this block to update an existing installation.
+
+*After running this block you can move on to the [[#configuration-files][Configuration files]] section.*
+# FIXME why no output on first run? too many errors?
+# ANSWER i think it is because raco pkg install runs in alphabetical order
+#+CAPTION: You can run them all at once from this block.
+#+HEADER: :var REPOS=repos PYROOTS=py-roots RKTROOTS=rkt-roots
+#+BEGIN_SRC bash :results output :noweb yes :exports none :eval no-export
+<<environment-sanity-checks>>
+<<git-pull-all>>
+<<clone-repos>>
+<<python-setup>>
+<<racket-ontology>>
+<<racket-setup>>
+#+END_SRC
+
+See [[#developer-setup-code][Developer setup code]] in the appendix for the source for this block.
+*** Configuration files
+:PROPERTIES:
+:CUSTOM_ID: configuration-files
+:END:
+The config files for this section should have already been tangled
+to the correct locations when [[tangle-setup-org][setup.org was tangled]].
+If you want to see their source it is contained in the [[#config-templates][Config Templates appendix]]
+
+If the basic configuration files have been tangled correctly
+you should be able to run this block with =C-c C-c= and get results.
+#+name: test-basic-config
+#+begin_src bash :results output drawer
+scig t brain
+#+end_src
+
+At this point installation is complete. *Congratulations!*
+
+*You should log out and log back in to your window manager* so that any new terminal
+you open will have access to all the programs you just installed.
+Logout on the default ubuntu window manager is located in the upper right.
+
+*When you log back in* run the following command to start at the next step.
+# Yes, this is a hilarious chicken and egg problem, I know.
+# NOTE: cannot use line continuation because it breaks posix/powershell portability
+#+NAME: launch-setup-org-2
+#+CAPTION: Run the following to open this file in an executable form.
+#+BEGIN_SRC bash :exports code :eval never
+scimax --find-file ~/git/sparc-curation/docs/setup.org --eval "(add-hook 'window-setup-hook (lambda () (org-goto-section *section-accounts-and-api-access*)))"
+#+END_SRC
+
+When you exit emacs it may ask you if you want to save,
+say yes so that the logs of the install are saved.
+
+The [[#accounts-and-api-access][next section]] will walk you through the steps needed
+to get access to all the various systems holding different pieces of data that we need.
+*** Accounts and API access
+:PROPERTIES:
+:CUSTOM_ID: accounts-and-api-access
+:END:
+At this point you should open your =secrets.yaml= file
+so that you can edit it as you work through the next section where you will
+get the various API keys that you will need to replace the fake values
+(seen in the template below). Direct links per platform are listed below.
+Clicking on the link will open it in another buffer. While editing the file
+you can save using the file menu, =C-x C-s= (emacs keys), or =:w= (vim keys).
+
+| Linux   | [[file:${HOME}/.config/orthauth/secrets.yaml][~/.config/orthauth/secrets.yaml]]                                         |
+| macOS   | [[file:${HOME}/Library/Application Support/orthauth/secrets.yaml][~/Library/Application Support/orthauth/secrets.yaml]] |
+| Windows | [[file:${HOME}/AppData/Local/orthauth/secrets.yaml][~/AppData/Local/orthauth/secrets.yaml]]                             |
+
+_*When you are done* there should be *NO* entries with =*replace-me-with:= in the file._
+
+The notation =(-> key1 key2 key3)= indicates a path in the =secrets.yaml= file.
+In a yaml file this looks like the block below.
+Replace the =fake-value= with the real value you obtain in the following sections.
+#+CAPTION: yaml view of =(-> key1 key2 key3)=
+#+BEGIN_SRC yaml :eval never
+key1:
+  key2:
+    key3: fake-value
+#+END_SRC
+**** Pennsieve
+Once you have a Pennsieve account on the sparc org go to your
+[[https://app.blackfynn.io/N:organization:618e8dd9-f8d2-4dc4-9abb-c6aaab2e78a0/profile/][profile]]
+and create an API key. Put they key in =(-> blackfynn sparc key)= and the secret in =(-> blackfynn sparc secret)=.
+While you are there you should also connect your ORCiD (button at the bottom of the page).
+**** Google API
+Enable the [[https://console.developers.google.com/apis/library/sheets.googleapis.com][google sheets API]]
+from the [[https://console.developers.google.com][google api dashboard]]. If you need other APIs
+you can enable them via the [[https://console.developers.google.com/apis/library][library page]].
+
+*If you do not do this then at the end of the client flow you will receive a =invalid_clientUnauthorized= error.*
+
+The instructions below are probably incomplete/missing steps. \\
+
+Useful docs for =(-> google api creds-file)= \\
+https://developers.google.com/identity/protocols/OAuth2 \\
+https://developers.google.com/api-client-library/python/guide/aaa_oauth \\
+
+You will need to get API access for an OAuth client.
+1. https://console.developers.google.com/apis/credentials
+2. create credentials -> OAuth client ID
+3. Fill in the consent screen, you only need the Application name field.
+4. Download JSON
+5. Add the name of the downloaded JSON file to =(-> google api creds-file)=.
+6. Run the following \\
+   =googapis auth drive sheets --drive-scopes metadata.readonly= and \\
+   =googapis auth drive sheets --readonly --drive-scopes metadata.readonly=.
+
+Those commands will run the auth workflow and create the
+file specified at =(-> google api store-file)= for you.
+During the process you will be taken to (or need to paste
+a link to) a google login page to confirm that you want to
+give the google API project you created access to your account.
+# TODO fix these instructions
+**** Google sheets
+Get the document ids for the following.
+- =(-> google sheets sparc-master)=
+- =(-> google sheets sparc-consistency)=
+- =(-> google sheets sparc-affiliations)=
+- =(-> google sheets sparc-field-alignment)=
+
+Document id matches this pattern =https://docs.google.com/spreadsheets/d/{document_id}/edit=.
+**** protocols.io
+To get protocols.io API keys [[https://www.protocols.io/create][create an account]],
+login, and go to your [[https://www.protocols.io/developers][developer page]].
+
+*You will need to set the redirect uri on that page to match the*
+*redirect uri in the json below.*
+
+Use the information from that page to fill in a json file with the structure below.
+Add the full path to that json file to =(-> protocols-io api creds-file)= in secrets.yaml
+like you did for the google json file.
+
+#+CAPTION: protocols.io creds-file.json template
+#+BEGIN_SRC js
+{
+    "installed": {
+        "client_id": "pr_live_id_fake-client-id<<<",
+        "client_secret": "pr_live_sc_fake-client-secret<<<",
+        "auth_uri": "https://www.protocols.io/api/v3/oauth/authorize",
+        "token_uri": "https://www.protocols.io/api/v3/oauth/token",
+        "redirect_uris": [
+            "https://sparc.olympiangods.org/curation/"
+        ]
+    }
+}
+#+END_SRC
+# FIXME tell users to run spc shell I think? idlib.Pio._setup()
+You will be prompted for your protocols.io email and password the first
+time you run.
+***** Refresh
+If you hit a refresh error because something expired, run the following block
+
+#+begin_src bash
+_file_name=$(python3 -c "from idlib.config import auth;print(auth.get_path('protocols-io-api-store-file').as_posix())")
+echo "${_file_name}"
+mv "${_file_name}" "${_file_name}.$(date -I)"
+pushd ~/git/idlib
+# you will be promted for email and password for protocols.io after running this
+python3 -m pytest -k TestPio -s
+#+end_src
+
+and you should be prompted to renew the token
+you will have to install and manually fix robobrowser at the moment
+and you may need to install pytest
+
+**** Hypothes.is
+As your user Install the hypothesis client in chrome.
+#+CAPTION: open chrome to hypothesis extension install page
+#+BEGIN_SRC bash :results none
+google-chrome-stable https://chrome.google.com/webstore/detail/hypothesis-web-pdf-annota/bjfhmglciegochdpefhhlphglcehbmek
+#+END_SRC
+To get Hypothes.is API keys [[https://web.hypothes.is/start/][create an account]],
+login, and go to your [[https://hypothes.is/account/developer][developer page]].
+
+Add your the API key to =(-> hypothesis api user-default-hypothesis)=
+**** SciGraph
+For some use cases you will need access to the SciCrunch production SciGraph endpoint.
+[[https://scicrunch.org/register][Register for an account]] and
+[[https://scicrunch.org/account/developer][get an api key]].
+Edit [[file:${HOME}/.config/pyontutils/config.yaml][config.yaml]]
+and update the =scigraph-api-key: path:= entry to point to =scicrunch api name-of-user-or-name-for-the-key=.
+Edit [[file:${HOME}/.config/orthauth/secrets.yaml][secrets.yaml]]
+and add the api key to =(-> scicrunch api name-of-user-or-name-for-the-key)=.
+** Developer extras
+*** Python debugger settings
+**** POSIX
+If you can use python3.7 (>=ubuntu-19.04) you can set the embedded debugger as follows.
+#+begin_src bash
+pip install --user pudb
+#+end_src
+
+Add the following to =~/.bashrc=.
+#+CAPTION: .bashrc extras
+#+begin_src bash
+export PYTHONBREAKPOINT=pudb.set_trace
+#+end_src
+**** Windows
+Sadly =pudb= doesn't support windows so we have to use =ipdb= instead.
+#+begin_src powershell
+pip install --user ipdb
+#+end_src
+
+Add the following to your powershell =$profile=.
+#+caption: powershell =$profile= extras
+#+begin_src powershell
+$Env:PYTHONBREAKPOINT = "ipdb.set_trace"
+#+end_src
+*** Prevent vim from removing xattrs
+[[file:${HOME}/.vimrc][~/.vimrc]] settings to prevent klobbering of xattrs
+#+CAPTION: .vimrc
+#+begin_src vimrc
+augroup HasXattrs
+ autocmd BufRead,BufNewFile * let x=system('getfattr ' . bufname('%')) | if len(x) | call HasXattrs() | endif
+augroup END
+
+function HasXattrs()
+ " don't create new inodes
+ setlocal backupcopy=yes
+endfunction
+#+end_src
+* Upkeep
+** Updating an installation
+:PROPERTIES:
+:VISIBILITY: folded
+:END:
+#+NAME: git-pull-all
+#+CAPTION: new features that you want to use? aka git pull all or =gpa= if implemented as a function
+#+BEGIN_SRC bash :results output :var REPOS=repos
+pushd ~/git
+for d in $(ls); do if [ -d $d/.git ]; then pushd $d; git pull || break; popd; fi; done
+popd
+#+END_SRC
+
+#+name: git-pull-all-windows
+#+begin_src powershell
+function Git-Pull-All {
+    if($pwd.Path -eq $HOME) {
+        pushd ~/git }
+    foreach($p in Get-ChildItem -directory) {
+        if($p.GetDirectories(".git")) {
+            pushd $p; git pull; popd } } }
+#+end_src
+* Variables :noexport:
+:PROPERTIES:
+:VISIBILITY: folded
+:END:
+If you make any changes to this section be sure to run =#+SRC= and =#+CALL:= blocks below.
+
+GitHub repositories
+#+NAME: tgbugs-repos
+| sxpyr augpathlib idlib hyputils orthauth ontquery parsercomb pyontutils protc rrid-metadata rkdf orgstrap racket-breadcrumb racket-json-view |
+#+NAME: sci-repos
+| NIF-Ontology scibot sparc-curation |
+#+NAME: other-repos
+| Ophirr33/pda zussitarze/qrcode |
+
+Repository local roots. The ordering of the entries matters.
+#+NAME: py-roots
+| sxpyr augpathlib idlib pyontutils/htmlfn pyontutils/ttlser hyputils orthauth ontquery parsercomb pyontutils pyontutils/nifstd pyontutils/neurondm protc/protcur sparc-curation scibot |
+#+NAME: rkt-roots
+| qrcode/ pda/ protc/protc-lib protc/protc-tools-lib protc/protc protc/protc-tools rkdf/rkdf-lib rkdf/rkdf rrid-metadata/rrid orthauth/racket/orthauth sparc-curation/sparcur_internal/sparcur NIF-Ontology/ |
+# note that breadcrumb and json-view are not in this list due to the need to use raco pkg install --name
+
+** Make repos
+#+NAME: repos-code
+#+HEADER: :var trl=tgbugs-repos srl=sci-repos orl=other-repos
+#+BEGIN_SRC python :results value :eval no-export
+from itertools import chain
+urs = chain((('tgbugs', r) for tr in trl for rs in tr for r in rs.split(' ')),
+            (('SciCrunch', r) for sr in srl for rs in sr for r in rs.split(' ')),
+            (ur.split('/') for o_r in orl for urs in o_r for ur in urs.split(' ')))
+#print(trl, srl, orl)
+#print(list(urs))  # will express the generator so there will be no result
+
+out = []
+for user, repo in urs:
+    out.append(f'https://github.com/{user}/{repo}')
+return [' '.join(out)]
+#+END_SRC
+
+#+NAME: repos
+#+RESULTS: repos-code
+| https://github.com/tgbugs/sxpyr https://github.com/tgbugs/augpathlib https://github.com/tgbugs/idlib https://github.com/tgbugs/hyputils https://github.com/tgbugs/orthauth https://github.com/tgbugs/ontquery https://github.com/tgbugs/parsercomb https://github.com/tgbugs/pyontutils https://github.com/tgbugs/protc https://github.com/tgbugs/rrid-metadata https://github.com/tgbugs/rkdf https://github.com/tgbugs/orgstrap https://github.com/tgbugs/racket-breadcrumb https://github.com/tgbugs/racket-json-view https://github.com/SciCrunch/NIF-Ontology https://github.com/SciCrunch/scibot https://github.com/SciCrunch/sparc-curation https://github.com/Ophirr33/pda https://github.com/zussitarze/qrcode |
+
+** Variables testing
+#+CAPTION: testing
+#+HEADER: :var REPOS=repos PYROOTS=py-roots RKTROOTS=rkt-roots
+#+BEGIN_SRC bash
+for repo in ${REPOS}; do echo ${repo}; done
+echo '-------------'
+for repo in ${PYROOTS}; do echo ${repo}; done
+echo '-------------'
+for repo in ${RKTROOTS}; do echo ${repo}; done
+#+END_SRC
+** Remote exports code
+#+NAME: remote-exports-code
+#+CAPTION: export commands to set if running remotely via copy and paste
+#+HEADER: :var REPOS=repos PYROOTS=py-roots RKTROOTS=rkt-roots
+#+BEGIN_SRC bash :results output code example :exports results :eval no-export
+echo export REPOS="'"
+printf "$(echo ${REPOS} | tr ' ' '\n')"
+echo
+echo "'"
+echo export PYROOTS="'"
+printf "$(echo ${PYROOTS} | tr ' ' '\n')"
+echo
+echo "'"
+echo export RKTROOTS="'"
+printf "$(echo ${RKTROOTS} | tr ' ' '\n')"
+echo
+echo "'"
+#+END_SRC
+
+#+RESULTS: remote-exports-code
+#+begin_src bash
+export REPOS='
+https://github.com/tgbugs/sxpyr
+https://github.com/tgbugs/augpathlib
+https://github.com/tgbugs/idlib
+https://github.com/tgbugs/hyputils
+https://github.com/tgbugs/orthauth
+https://github.com/tgbugs/ontquery
+https://github.com/tgbugs/parsercomb
+https://github.com/tgbugs/pyontutils
+https://github.com/tgbugs/protc
+https://github.com/tgbugs/rrid-metadata
+https://github.com/tgbugs/rkdf
+https://github.com/tgbugs/orgstrap
+https://github.com/tgbugs/racket-breadcrumb
+https://github.com/tgbugs/racket-json-view
+https://github.com/SciCrunch/NIF-Ontology
+https://github.com/SciCrunch/scibot
+https://github.com/SciCrunch/sparc-curation
+https://github.com/Ophirr33/pda
+https://github.com/zussitarze/qrcode
+'
+export PYROOTS='
+sxpyr
+augpathlib
+idlib
+pyontutils/htmlfn
+pyontutils/ttlser
+hyputils
+orthauth
+ontquery
+parsercomb
+pyontutils
+pyontutils/nifstd
+pyontutils/neurondm
+protc/protcur
+sparc-curation
+scibot
+'
+export RKTROOTS='
+qrcode/
+pda/
+protc/protc-lib
+protc/protc-tools-lib
+protc/protc
+protc/protc-tools
+rkdf/rkdf-lib
+rkdf/rkdf
+rrid-metadata/rrid
+sparc-curation/sparcur_internal/sparcur
+NIF-Ontology/
+'
+#+end_src
+* Appendix
+:PROPERTIES:
+:CUSTOM_ID: appendix
+:END:
+** Code
+*** Config Templates
+:PROPERTIES:
+:CUSTOM_ID: config-templates
+:VISIBILITY: folded
+:END:
+To get up-to-date versions of these run
+#+begin_src bash
+mkdir /tmp/fakehome
+HOME=/tmp/fakehome python -m sparcur.cli
+less /tmp/fakehome/.config/*/*.yaml
+#+end_src
+
+=~/.config/idlib/config.yaml=
+#+name: idlib-config-defaults
+#+caption: [[file:${HOME}/.config/idlib/config.yaml][~/.config/idlib/config.yaml]]
+#+header: :export neither
+#+begin_src yaml :tangle (when (and (fboundp 'user-config-path) (not (file-exists-p (user-config-path "idlib/config.yaml")))) (user-config-path "idlib/config.yaml")) :mkdirp yes
+auth-stores:
+  secrets:
+    path: '{:user-config-path}/orthauth/secrets.yaml'
+auth-variables:
+  cache-path:
+  log-path:
+  protocols-io-api-creds-file: protocols-io api creds-file
+  protocols-io-api-store-file: protocols-io api store-file
+#+end_src
+
+=~/.config/pyontutils/config.yaml=
+#+name: pyontutils-config-defaults
+#+caption: [[file:${HOME}/.config/pyontutils/config.yaml][~/.config/pyontutils/config.yaml]]
+#+header: :export neither
+#+begin_src yaml :tangle (when (and (fboundp 'user-config-path) (not (file-exists-p (user-config-path "pyontutils/config.yaml")))) (user-config-path "pyontutils/config.yaml")) :mkdirp yes
+auth-stores:
+  secrets:
+    path: '{:user-config-path}/orthauth/secrets.yaml'
+auth-variables:
+  curies:
+  git-local-base: ~/git
+  git-remote-base:
+  google-api-creds-file:
+    path: google api creds-file
+  google-api-store-file:
+    path: google api store-file
+  google-api-store-file-readonly:
+    path: google api store-file-readonly
+  nifstd-checkout-ok:
+  ontology-local-repo:
+  ontology-org:
+  ontology-repo:
+  patch-config:
+  resources:
+  scigraph-api: https://scigraph.olympiangods.org/scigraph
+  scigraph-api-key:
+  scigraph-graphload:
+  scigraph-services:
+  zip-location:
+#+end_src
+
+=~/.config/sparcur/config.yaml=
+#+name: sparcur-config-defaults
+#+caption: [[file:${HOME}/.config/sparcur/config.yaml][~/.config/sparcur/config.yaml]]
+#+header: :export neither
+#+begin_src yaml :tangle (when (and (fboundp 'user-config-path) (not (file-exists-p (user-config-path "sparcur/config.yaml")))) (user-config-path "sparcur/config.yaml")) :mkdirp yes
+auth-stores:
+  secrets:
+    path: '{:user-config-path}/orthauth/secrets.yaml'
+auth-variables:
+  cache-path:
+  datasets-no:
+  datasets-noexport:
+  datasets-sparse:
+  datasets-test:
+  export-path:
+  google-api-service-account-file-readonly: google api saro
+  google-api-service-account-file-rw:
+  hypothesis-api-key: hypothesis api default-user
+  hypothesis-group: hypothesis group sparc-curation
+  hypothesis-user:
+  log-path:
+  never-update:
+  preview:
+  remote-backoff-factor:
+  remote-cli-path:
+  remote-organization: N:organization:618e8dd9-f8d2-4dc4-9abb-c6aaab2e78a0
+  resources:
+  sparse-limit:
+#+end_src
+
+Secrets template for full development setup.
+=~/.config/orthauth/secrets.yaml=
+#+name: secrets-template
+#+caption: [[file:${HOME}/.config/orthauth/secrets.yaml][~/.config/orthauth/secrets.yaml]]
+#+header: :tangle-mode (identity #o600)
+#+begin_src yaml :tangle (when (and (fboundp 'user-config-path) (not (file-exists-p (user-config-path "orthauth/secrets.yaml")))) (user-config-path "orthauth/secrets.yaml")) :mkdirp yes
+pennsieve:
+  N:organization:618e8dd9-f8d2-4dc4-9abb-c6aaab2e78a0:
+    key: *replace-me-with:your-pennsieve-api-key*
+    secret: *replace-me-with:your-pennsieve-api-secret*
+google:
+  api:
+    creds-file: *replace-me-with:/path/to/creds-file.json*
+    store-file: google-api-token-rw.pickle
+    store-file-readonly: google-api-token.pickle
+  sheets:
+    sparc-consistency: *replace-me-with:document-hash-id*
+    sparc-master: *replace-me-with:document-hash-id*
+    sparc-affiliations: *replace-me-with:document-hash-id*
+    sparc-field-alignment: *replace-me-with:document-hash-id*
+    spc-reports: *replace-me-with:document-hash-id*
+    spc-reports-preview: *replace-me-with:document-hash-id*
+    anno-tags: *replace-me-with:document-hash-id*
+hypothesis:
+  api:
+    user-default-hypothesis: *replace-me-with:your-hypothesis-api-key*
+  group:
+    sparc-curation: *replace-me-with:sparc-curation-group-id*
+protocols-io:
+  api:
+    creds-file: *replace-me-with:/path/to/creds-file.json*
+    store-file: protocols-io-api-token-rw.pickle
+#+end_src
+
+Secrets template for minimal viewer setup.
+=~/.config/orthauth/secrets.yaml=
+#+name: secrets-viewer-minimal
+#+caption: [[file:${HOME}/.config/orthauth/secrets.yaml][~/.config/orthauth/secrets.yaml]]
+#+header: :tangle-mode (identity #o600)
+#+begin_src yaml
+pennsieve:
+  N:organization:618e8dd9-f8d2-4dc4-9abb-c6aaab2e78a0:
+    key: *replace-me-with:your-pennsieve-api-key*
+    secret: *replace-me-with:your-pennsieve-api-secret*
+google:
+  api:
+    saro: *replace-me-with:path-to-service-account.json*
+  sheets:
+    sparc-field-alignment: *replace-me-with:document-hash-id*
+    sparc-affiliations: *replace-me-with:document-hash-id*
+    anno-tags: *replace-me-with:document-hash-id*
+protocols-io:
+  # FIXME robobrowser not a dependency in some setup.py
+  # FIXME robobrowser has a broken werkzeug import that has to be fixed manually
+  api:
+    creds-file: client_secret_protocols.io.json
+    store-file: protocols-io-api-token-rw.pickle
+#+end_src
+
+Secrets template for minimal SODA =sparcur.simple.retrieve= setup.
+=~/.config/orthauth/secrets.yaml=
+#+begin_src yaml
+pennsieve:
+  N:organization:618e8dd9-f8d2-4dc4-9abb-c6aaab2e78a0:
+    key: *replace-me-with:your-pennsieve-api-key*
+    secret: *replace-me-with:your-pennsieve-api-secret*
+#+end_src
+*** Bootstrap code
+:PROPERTIES:
+:CUSTOM_ID: bootstrap-code
+:VISIBILITY: folded
+:END:
+**** user.el
+Tangle the following blocks with =C-c C-v C-t= in vanilla emacs or paste it into scimax's
+# :tangle ~/opt/scimax/user/preload.el
+#+NAME: scimax-user-preload
+#+begin_src elisp :exports code :eval never
+;; silence ob-ipython complaining about missing command
+;; THIS CAN CAUSE RUNTIME ERRORS
+(setq ob-ipython-html-to-image-program "/dev/null")
+#+end_src
+
+#+name: user-config
+#+begin_src elisp
+(defun config-paths (&optional os)
+  (cl-case (or os system-type)
+    ;; ucp udp uchp ulp
+    (gnu/linux '("~/.config"
+                 "~/.local/share"
+                 "~/.cache"
+                 "~/.cache/log"))
+    (darwin '("~/Library/Application Support"
+              "~/Library/Application Support"
+              "~/Library/Caches"
+              "~/Library/Logs"))
+    (windows-nt (let ((ucp "~/AppData/Local"))
+                  (list ucp ucp ucp (concat ucp "/Logs"))))
+    (otherwise (error (format "Unknown OS %s" (or os system-type))))))
+
+(eval-when-compile (defvar *config-paths* (config-paths)))
+
+(defun fcp (position &optional suffix)
+  (let ((base-path (funcall position *config-paths*)))
+    (if suffix
+        (format "%s/%s" base-path suffix)
+      base-path)))
+
+(defun user-config-path (&optional suffix) (fcp #'cl-first  suffix))
+(defun user-data-path   (&optional suffix) (fcp #'cl-second suffix))
+(defun user-cache-path  (&optional suffix) (fcp #'cl-third  suffix))
+(defun user-log-path    (&optional suffix) (fcp #'cl-fourth suffix))
+#+end_src
+
+# :tangle ~/opt/scimax/user/user.el
+#+NAME: scimax-user-config
+#+CAPTION: Needed to get sane behavior for executing this file out of the box.
+#+BEGIN_SRC emacs-lisp :exports code :eval never :noweb yes
+
+;; org goto heading
+(defun org-goto-section (heading)
+  "\`heading' should be a string matching the desired heading"
+  (goto-char (org-find-exact-headline-in-buffer heading)))
+
+;; workaround for powershell cmd windows braindead handling of strings
+(defvar *section-per-user-setup* "Per user setup")
+(defvar *section-accounts-and-api-access* "Accounts and API access")
+
+;; recenter a line set using --eval to be at the top of the buffer
+(add-hook 'emacs-startup-hook (lambda () (recenter-top-bottom 0)))
+
+;; line numbers so it is harder to get lost in a big file
+(when (>= emacs-major-version 26)
+  (setq display-line-numbers-grow-only 1)
+  (global-display-line-numbers-mode 1))
+
+;; open setup.org symlink without prompt
+(setq vc-follow-symlinks 1)
+
+;; sane python indenting
+(setq-default indent-tabs-mode nil)
+(setq tab-width 4)
+(setq org-src-preserve-indentation nil)
+(setq org-src-tab-acts-natively nil)
+
+;; don't hang on tlmgr since it is broken on ubuntu
+(setq scimax-installed-latex-packages t)
+
+;; save command history
+(setq history-length t)
+(savehist-mode 1)
+(setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
+
+;; racket
+(when (fboundp 'use-package)
+  (use-package racket-mode
+    :mode "\\.ptc\\'" "\\.rkt\\'" "\\.sxml\\'"
+    :bind (:map racket-mode-map
+                ("<f5>" . recompile-quietly))
+    :init
+    (defun my/buffer-local-tab-complete ()
+      "Make \`tab-always-indent' a buffer-local variable and set it to 'complete."
+      (make-local-variable 'tab-always-indent)
+      (setq tab-always-indent 'complete))
+    (defun rcc ()
+      (set (make-local-variable 'compile-command)
+           (format "raco make %s" (file-name-nondirectory buffer-file-name))))
+    (add-hook 'racket-mode-hook 'rcc)
+    (add-hook 'racket-mode-hook 'hs-minor-mode)
+    (add-hook 'racket-mode-hook 'goto-address-mode)
+    (add-hook 'racket-mode-hook 'my/buffer-local-tab-complete)
+    (add-hook 'racket-repl-mode-hook 'my/buffer-local-tab-complete)))
+
+;; config paths
+
+<<user-config>>
+
+;; vim bindings if you need them
+;; if undo-tree fails to install for strange reasons M-x list-packages C-s undo-tree
+;; to manually install, mega gnu elpa weirdness
+(setq evil-want-keybinding nil)
+(when (fboundp 'use-package)
+  (require 'scimax-evil))
+#+END_SRC
+**** scimax launch scripts
+#+name: scimax-cmd-windows
+#+begin_src powershell :eval never :tangle (when (eq system-type 'windows-nt) "~/bin/scimax.ps1")
+emacs -q -l ~/opt/scimax/init.el $args
+#+end_src
+#+name: scimax-cmd-posix
+#+header: :shebang "#!/usr/bin/env bash"
+#+begin_src bash :eval never :tangle (when (not (eq system-type 'windows-nt)) "~/bin/scimax") :tangle-mode (identity #o755)
+emacs -q -l ~/opt/scimax/init.el $@
+#+end_src
+*** Developer setup code
+:PROPERTIES:
+:CUSTOM_ID: developer-setup-code
+:VISIBILITY: folded
+:END:
+#+NAME: environment-sanity-checks
+#+BEGIN_SRC bash :results output :eval no-export
+# implicit check for bash by being able to run this block at all
+
+# git check on the off chance that we made it here without cloning this repo
+git --version || { echo git is missing; exit 1; }
+
+# python version check
+python -c "print('python ok') if __import__('sys').version_info.major >= 3 else __import__('sys').exit(1)" || { echo bad python version; exit 2; }
+pip --version || { echo pip is missing; exit 3; }
+
+# git email check
+[[ -n "$(git config --list | grep user.email)" ]] || { echo git user.email has not been configured; exit 4; }
+#+END_SRC
+
+#+NAME: clone-repos
+#+CAPTION: Clone all required git repositories.
+#+HEADER: :var REPOS=repos
+#+BEGIN_SRC bash :results output :eval no-export
+pushd ~/git
+for repo_url in ${REPOS}; do git clone ${repo_url}.git 2>&1; done
+popd
+#+END_SRC
+
+# XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX WARNING --user may be COMPLETELY BROKEN on macos !??!?!
+#+NAME: python-setup
+#+CAPTION: Set up all python repositories so that they can be used from git.
+#+CAPTION: This also installs missing python dependencies to =~/.local/lib*/python*/site-packages=.
+#+HEADER: :var PYROOTS=py-roots
+#+BEGIN_SRC bash :results output :eval no-export
+[ -z $VIRTUAL_ENV ] || pip install --user wheel  # if in a venv wheel will be missing
+pushd ~/git
+for repo in ${PYROOTS}; do pushd ${repo}; python3 -m pip install --user --editable .[dev,test] 2>&1 || break; popd; done
+popd
+#+END_SRC
+
+#+NAME: racket-ontology
+#+CAPTION: Convert ontology and build as module for racket.
+#+CAPTION: This will take a bit of time to run. \\
+#+BEGIN_SRC bash :results output :eval no-export
+ln -s ~/git/rkdf/bin/ttl-to-rkt ~/bin/ttl-to-rkt
+ln -s ~/git/rkdf/bin/rkdf-convert-all ~/bin/rkdf-convert-all
+pushd ~/git/NIF-Ontology
+git checkout dev
+rkdf-convert-all
+git checkout master
+popd
+#+END_SRC
+
+#+NAME: racket-setup
+#+CAPTION: Install racket packages and dependencies. \\
+#+HEADER: :var RKTROOTS=rkt-roots
+#+BEGIN_SRC bash :results output :eval no-export
+pushd ~/git
+# XXX note the special cases
+raco pkg install --name breadcrumb racket-breadcrumb/
+raco pkg install --name json-view racket-json-view/
+raco pkg install --skip-installed --auto --batch ${RKTROOTS} 2>&1
+popd
+#+END_SRC
+
+*** Remote exports
+:PROPERTIES:
+:CUSTOM_ID: appendix-remote-exports
+:VISIBILITY: folded
+:END:
+Paste the results of this block into your shell if you are running
+the code from this file by pasting it into a terminal.
+
+_*NOTE: DO NOT EDIT THE CODE BELOW IT WILL BE OVERWRITTEN.*_
+#+CALL: remote-exports-code()
+
+#+NAME: remote-exports
+#+HEADER: :eval never
+#+RESULTS:
+#+begin_src bash
+export REPOS='
+https://github.com/tgbugs/sxpyr
+https://github.com/tgbugs/augpathlib
+https://github.com/tgbugs/idlib
+https://github.com/tgbugs/hyputils
+https://github.com/tgbugs/orthauth
+https://github.com/tgbugs/ontquery
+https://github.com/tgbugs/parsercomb
+https://github.com/tgbugs/pyontutils
+https://github.com/tgbugs/protc
+https://github.com/tgbugs/rrid-metadata
+https://github.com/tgbugs/rkdf
+https://github.com/tgbugs/orgstrap
+https://github.com/tgbugs/racket-breadcrumb
+https://github.com/tgbugs/racket-json-view
+https://github.com/SciCrunch/NIF-Ontology
+https://github.com/SciCrunch/scibot
+https://github.com/SciCrunch/sparc-curation
+https://github.com/Ophirr33/pda
+https://github.com/zussitarze/qrcode
+'
+export PYROOTS='
+sxpyr
+augpathlib
+idlib
+pyontutils/htmlfn
+pyontutils/ttlser
+hyputils
+orthauth
+ontquery
+parsercomb
+pyontutils
+pyontutils/nifstd
+pyontutils/neurondm
+protc/protcur
+sparc-curation
+scibot
+'
+export RKTROOTS='
+qrcode/
+pda/
+protc/protc-lib
+protc/protc-tools-lib
+protc/protc
+protc/protc-tools
+rkdf/rkdf-lib
+rkdf/rkdf
+rrid-metadata/rrid
+orthauth/racket/orthauth
+sparc-curation/sparcur_internal/sparcur
+NIF-Ontology/
+'
+#+end_src
+* Bootstrap :noexport:
+#+name: orgstrap
+#+begin_src elisp :noweb yes :results none
+(defun orgstrap---advise-ob-scor-windows (command &rest args)
+  (let ((exec-path (cons "C:/Program Files/Git/bin/" exec-path)))
+    (when (string= (downcase (executable-find "bash"))
+                   (downcase "C:/WINDOWS/system32/bash.exe"))
+      ;; git bash (and I assume mingw bash) is ok so only fail on wsl bash
+      ;; this check needs to happen inside the advice to prevent any bash block
+      ;; from running with bad semantics since wsl bash could damage the system
+      (error "WSL bash detected! Not running bash block since WSL bash is completely broken and will skip whole commands and/or drop their output."))
+    (apply command args)))
+
+<<user-config>>
+
+(when (eq system-type 'windows-nt)
+  (advice-add #'org-babel--shell-command-on-region :around #'orgstrap---advise-ob-scor-windows))
+
+(org-babel-do-load-languages 'org-babel-load-languages
+                             ;; TODO powershell
+                             (append org-babel-load-languages
+                                     '((shell . t)
+                                       (python . t))))
+#+end_src
+
+# Local Variables:
+# eval: (progn (setq-local orgstrap-min-org-version "8.2.10") (let ((a (org-version)) (n orgstrap-min-org-version)) (or (fboundp #'orgstrap--confirm-eval) (not n) (string< n a) (string= n a) (error "Your Org is too old! %s < %s" a n))) (defun orgstrap-norm-func--dprp-1-0 (body) (let ((p (read (concat "(progn\n" body "\n)"))) (m '(defun defun-local defmacro defvar defvar-local defconst defcustom)) print-quoted print-length print-level) (cl-labels ((f (b) (cl-loop for e in b when (listp e) do (or (and (memq (car e) m) (let ((n (nthcdr 4 e))) (and (stringp (nth 3 e)) (or (cl-subseq m 3) n) (f n) (or (setcdr (cddr e) n) t)))) (f e))) p)) (prin1-to-string (f p))))) (unless (boundp 'orgstrap-norm-func) (defvar-local orgstrap-norm-func orgstrap-norm-func-name)) (defun orgstrap-norm-embd (body) (funcall orgstrap-norm-func body)) (unless (fboundp #'orgstrap-norm) (defalias 'orgstrap-norm #'orgstrap-norm-embd)) (defun orgstrap-org-src-coderef-regexp (_fmt &optional label) (let ((fmt org-coderef-label-format)) (format "\\([:blank:]*\\(%s\\)[:blank:]*\\)$" (replace-regexp-in-string "%s" (if label (regexp-quote label) "\\([-a-zA-Z0-9_][-a-zA-Z0-9_ ]*\\)") (regexp-quote fmt) nil t)))) (unless (fboundp #'org-src-coderef-regexp) (defalias 'org-src-coderef-regexp #'orgstrap-org-src-coderef-regexp)) (defun orgstrap--expand-body (info) (let ((coderef (nth 6 info)) (expand (if (org-babel-noweb-p (nth 2 info) :eval) (org-babel-expand-noweb-references info) (nth 1 info)))) (if (not coderef) expand (replace-regexp-in-string (org-src-coderef-regexp coderef) "" expand nil nil 1)))) (defun orgstrap--confirm-eval-portable (lang _body) (not (and (member lang '("elisp" "emacs-lisp")) (let* ((body (orgstrap--expand-body (org-babel-get-src-block-info))) (body-normalized (orgstrap-norm body)) (content-checksum (intern (secure-hash orgstrap-cypher body-normalized)))) (eq orgstrap-block-checksum content-checksum))))) (unless (fboundp #'orgstrap--confirm-eval) (defalias 'orgstrap--confirm-eval #'orgstrap--confirm-eval-portable)) (let (enable-local-eval) (vc-find-file-hook)) (let ((ocbe org-confirm-babel-evaluate) (obs (org-babel-find-named-block "orgstrap"))) (if obs (unwind-protect (save-excursion (setq-local orgstrap-norm-func orgstrap-norm-func-name) (setq-local org-confirm-babel-evaluate #'orgstrap--confirm-eval) (goto-char obs) (org-babel-execute-src-block)) (when (eq org-confirm-babel-evaluate #'orgstrap--confirm-eval) (setq-local org-confirm-babel-evaluate ocbe)) (org-set-visibility-according-to-property)) (warn "No orgstrap block."))))
+# End:

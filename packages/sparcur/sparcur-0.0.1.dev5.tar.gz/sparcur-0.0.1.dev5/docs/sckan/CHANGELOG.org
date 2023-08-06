@@ -1,0 +1,51 @@
+# -*- org-todo-keyword-faces: (("PLAN" . "gray") ("RC" . "khaki1")); -*-
+#+title: SCKAN Changelog
+#+todo: DEV RC | PROD PLAN
+#+options: p:t
+
+* PLAN 2023-08-04 :future:
+- NPO hasInstanceInTaxon
+- alpha :: NPO synaptic connectivity
+- maybe :: NPO connections from composer
+- stretch :: ApiNATOMY species variance for whole models where not covered by NPO
+- if-needed :: vagus round 2
+* PLAN 2023-05-12 :future:
+- NPO partial orders
+- vagus round 1
+* PLAN 2023-02-10 :future:
+- bugfixes
+- maybe :: more connections from NLP
+* DEV 2023-01-10
+- protcur.ttl now includes values from the sparc simple page note curation workflow
+* PROD 2022-12-02
+CLOSED: <2022-12-20 Tue>
+- ApiNATOMY add model wbrcm for real this time
+* RC 2022-11-28
+- ApiNATOMY added model pancreas
+- ApiNATOMY aacar-6 fixed axon locations
+- ApiNATOMY bromo replaced FMA ids with UBERON and ILX ids
+- ApiNATOMY models now contain version information in the form of a
+  checksum on their input model ([[./queries.org::#apinat-models][example query]]).
+- ApiNATOMY schema change =inheritedExternal -> inheritedOntologyTerms=
+  =inheritedExternal= still exists and may appear in some models,
+  however ontology terms now only show up under =inheritedOntologyTerms=
+  and are no longer included in =inheritedExternals=.
+- NPO added ebm sparc-nlp (replaces ebm nerves)
+- NPO removed ebm nerves
+- NPO aacar added hasInstanceInTaxon axioms
+- NPO kblad added hasInstanceInTaxon axioms
+- Blazegraph/SciGraph loaded graphs now embed information about
+  build provenance that can be used to identify the version of a graph.
+  See [[./queries.org::#embedded-load-provenance-record][embedded load provenance record]] for examples.
+* Release NEXT :noexport:
+** New models
+*** ApiNATOMY
+*** NPO evidence based models
+** New neuron populations
+** Updated populations
+*** Added NPO modelling
+*** Updated/added/removed routes, terminals, or sources
+*** Changed ApiNATOMY ontologyTerms mappings
+** Removed populations
+** Other changes
+General data harmonization and identifier alignment.
