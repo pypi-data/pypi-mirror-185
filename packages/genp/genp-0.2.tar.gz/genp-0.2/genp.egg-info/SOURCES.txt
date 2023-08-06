@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.cfg
+setup.py
+genp/__init__.py
+genp.egg-info/PKG-INFO
+genp.egg-info/SOURCES.txt
+genp.egg-info/dependency_links.txt
+genp.egg-info/top_level.txt
