@@ -1,0 +1,9 @@
+LICENSE
+README.md
+proxy3.py
+pyproject.toml
+proxy3.egg-info/PKG-INFO
+proxy3.egg-info/SOURCES.txt
+proxy3.egg-info/dependency_links.txt
+proxy3.egg-info/entry_points.txt
+proxy3.egg-info/top_level.txt
