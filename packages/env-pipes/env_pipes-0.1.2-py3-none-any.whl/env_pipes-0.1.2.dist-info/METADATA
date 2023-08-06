@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: env-pipes
+Version: 0.1.2
+Summary: Environmental Shell Piping
+Home-page: https://github.com/irvingleonard/env-pipes
+Author: Irving Leonard
+Author-email: irvingleonard@gmail.com
+License: BSD 2-Clause "Simplified" License
+Keywords: env environ environmental_variables
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: simplifiedapp
+
+Supplies some utility functions to handle complex data structures as
+environmental shell variables. Useful to docker and other CLI tools requiring lots of dynamic data
