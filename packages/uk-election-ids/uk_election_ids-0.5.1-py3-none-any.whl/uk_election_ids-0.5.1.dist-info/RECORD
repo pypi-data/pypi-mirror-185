@@ -1,0 +1,10 @@
+uk_election_ids/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uk_election_ids/datapackage.py,sha256=g38fm-lz5bHqVotShXJtbDuOTVqseMP46wfLmbEUllA,2722
+uk_election_ids/election_ids.py,sha256=5uzDy0X5ZdNBYMHlF1t3tv21CGh5yeMcf3RBQBBwK_8,13894
+uk_election_ids/parser.py,sha256=3YL0wNEdrbNzeroRnPuz8j7iUqIqLKjKqXWN0_RPu6A,1513
+uk_election_ids/slugger.py,sha256=vQnfeBsvw9yfo2Z9IIOz20ZGj2FJEMAsBrtIRaZGe3E,662
+uk_election_ids-0.5.1.dist-info/LICENSE,sha256=YAQUVuTMF3cEop9-U7Ntfpt48jMSMja446xpUMLKJvQ,1071
+uk_election_ids-0.5.1.dist-info/METADATA,sha256=AZ5o2BFnuRfiXaM8oBoXbeVUIDqCumRu03VbGHlAt4E,2139
+uk_election_ids-0.5.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+uk_election_ids-0.5.1.dist-info/top_level.txt,sha256=Bz_57LK6wgWhMKdvhc-aSwBlMkZQvO2L7zgtN4MsO-M,16
+uk_election_ids-0.5.1.dist-info/RECORD,,
