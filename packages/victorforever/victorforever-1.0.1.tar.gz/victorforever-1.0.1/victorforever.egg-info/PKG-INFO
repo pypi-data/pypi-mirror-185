@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: victorforever
+Version: 1.0.1
+Summary: Victor Forever
+Home-page: https://youtu.be/xvFZjo5PgG0
+Author: Ward Van Driessche
+Author-email: Ward Van Driessche <wardvandriessche@gmail.com>
+Project-URL: homepage, https://youtu.be/xvFZjo5PgG0
+Description-Content-Type: text/markdown
+
+# Victor Forever 
+
+    pip install victorforever
+
+Then:
+
+    victorforever
+
+

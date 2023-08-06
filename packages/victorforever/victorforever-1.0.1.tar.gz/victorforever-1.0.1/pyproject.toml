@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools >= 63.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="victorforever"
+version="1.0.1"
+description="Victor Forever"
+readme="README.md"
+authors = [
+    {name = "Ward Van Driessche", email = "wardvandriessche@gmail.com"},
+]
+
+dependencies=[]
+
+[project.scripts]
+victorforever="victorforever:main"
+
+[project.urls]
+"homepage" = "https://youtu.be/xvFZjo5PgG0"
