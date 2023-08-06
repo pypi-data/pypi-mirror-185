@@ -1,0 +1,13 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+strenc/__init__.py
+strenc.egg-info/PKG-INFO
+strenc.egg-info/SOURCES.txt
+strenc.egg-info/dependency_links.txt
+strenc.egg-info/entry_points.txt
+strenc.egg-info/requires.txt
+strenc.egg-info/top_level.txt
+strenccli/__init__.py
+strenccli/_main.py
