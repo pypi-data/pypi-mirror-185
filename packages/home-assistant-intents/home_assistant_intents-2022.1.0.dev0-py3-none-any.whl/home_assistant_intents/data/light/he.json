@@ -1,0 +1,26 @@
+{
+  "language": "he",
+  "intents": {
+    "HassLightSet": {
+      "data": [
+        {
+          "sentences": [
+            "קבע [את] [ה]בהירות ה<name> ל<brightness>",
+            "שנה [את] [ה]בהירות ה<name> ל<brightness>",
+            "הגדר [את] [ה]בהירות ה<name> ל<brightness>"
+          ]
+        },
+        {
+          "sentences": [
+            "קבע [את] [ה]בהירות ה<name> ל<brightness> ב<area>",
+            "שנה [את] [ה]בהירות ה<name> ל<brightness> ב<area>",
+            "הגדר [את] [ה]בהירות ה<name> ל<brightness> ב<area>"
+          ],
+          "slots": {
+            "name": "all"
+          }
+        }
+      ]
+    }
+  }
+}

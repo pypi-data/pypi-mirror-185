@@ -1,0 +1,35 @@
+{
+  "language": "sk",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<set> <temp> [v] [<area>] [na] <temperature>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<what_is> <temp> [je] (v | na) <area>",
+            "<how_many> stupňov [je] (v | na) <area>",
+            "<how_many> stupňov",
+            "<what_is> <temp>"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateGetTemperature": {
+        "success": [
+          "{{ state.state }} stupňov"
+        ]
+      }
+    }
+  }
+}

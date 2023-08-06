@@ -1,0 +1,33 @@
+{
+  "language": "pl",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<set> [<temp>] na <temperature>",
+            "<set> [<temp>] <area> na <temperature>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "(<what_is>|<how_many_is>) <temp> [<area>]"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateGetTemperature": {
+        "success": [
+          "{{ state.state }} stopni"
+        ]
+      }
+    }
+  }
+}

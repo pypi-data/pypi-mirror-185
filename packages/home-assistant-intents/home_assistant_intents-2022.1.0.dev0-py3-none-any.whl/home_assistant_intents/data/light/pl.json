@@ -1,0 +1,32 @@
+{
+  "language": "pl",
+  "intents": {
+    "HassLightSet": {
+      "data": [
+        {
+          "sentences": [
+            "<set> [jasność] <name> na <brightness>"
+          ]
+        },
+        {
+          "sentences": [
+            "<set> [jasność] <area> na <brightness>"
+          ],
+          "slots": {
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<set> [kolor] <name> na {color}"
+          ]
+        },
+        {
+          "sentences": [
+            "<set> [wszystkie kolory | kolory] <area> na {color}"
+          ]
+        }
+      ]
+    }
+  }
+}

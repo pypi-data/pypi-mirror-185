@@ -1,0 +1,23 @@
+{
+  "language": "ms",
+  "intents": {
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "berapa suhu sekarang"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateGetTemperature": {
+        "success": [
+          "{{ state.state }} darjah"
+        ]
+      }
+    }
+  }
+}

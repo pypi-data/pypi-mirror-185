@@ -1,0 +1,80 @@
+{
+  "language": "es",
+  "intents": {
+    "HassCloseCover": {
+      "data": [
+        {
+          "sentences": [
+            "<cierra> <name> [<area>]"
+          ]
+        },
+        {
+          "sentences": [
+            "<cierra> <puerta> [(del|de|de la)] (garaje|cochera)"
+          ],
+          "slots": {
+            "device_class": "garage_door"
+          }
+        },
+        {
+          "sentences": [
+            "<cierra> <puerta> [<area>]"
+          ],
+          "slots": {
+            "device_class": "gate"
+          }
+        },
+        {
+          "sentences": [
+            "<cierra> [ la | las ] (cortinas|persianas) [<area>]"
+          ],
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ]
+          }
+        }
+      ]
+    },
+    "HassOpenCover": {
+      "data": [
+        {
+          "sentences": [
+            "<abre> <name>",
+            "<abre> <name> <area>"
+          ]
+        },
+        {
+          "sentences": [
+            "<abre> <puerta> [(del|de|de la)] (garaje|cochera)"
+          ],
+          "slots": {
+            "device_class": "garage_door"
+          }
+        },
+        {
+          "sentences": [
+            "<abre> <puerta> [<area>]"
+          ],
+          "slots": {
+            "device_class": "gate"
+          }
+        },
+        {
+          "sentences": [
+            "<abre> [la | las] (cortinas | persianas) <area>"
+          ],
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
