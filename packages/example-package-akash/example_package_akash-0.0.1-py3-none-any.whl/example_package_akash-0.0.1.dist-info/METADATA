@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: example_package_akash
+Version: 0.0.1
+Summary: A small example package
+Project-URL: Homepage, https://packaging.python.org/en/latest/tutorials/packaging-projects/
+Project-URL: Reference, https://pypi.org/
+Author-email: Akash Zalavadiya <akash.zalavadiya@crestdatasys.com>
+License-File: LICENCE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: iOS
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+This module is created for demo purpose,
+which will return factorial of given number
+
+For a full description, how to create package
+[project page](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
