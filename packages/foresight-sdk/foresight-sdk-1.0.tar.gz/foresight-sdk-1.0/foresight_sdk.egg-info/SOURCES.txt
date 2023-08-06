@@ -1,0 +1,10 @@
+setup.py
+foresight/__init__.py
+foresight/sdks/__init__.py
+foresight/sdks/endpoints/__init__.py
+foresight/sdks/endpoints/client.py
+foresight_sdk.egg-info/PKG-INFO
+foresight_sdk.egg-info/SOURCES.txt
+foresight_sdk.egg-info/dependency_links.txt
+foresight_sdk.egg-info/requires.txt
+foresight_sdk.egg-info/top_level.txt
