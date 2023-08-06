@@ -1,0 +1,10 @@
+setup.py
+udcd_verteilung/Binomialdistribution.py
+udcd_verteilung/Gaussiandistribution.py
+udcd_verteilung/Generaldistribution.py
+udcd_verteilung/__init__.py
+udcd_verteilung.egg-info/PKG-INFO
+udcd_verteilung.egg-info/SOURCES.txt
+udcd_verteilung.egg-info/dependency_links.txt
+udcd_verteilung.egg-info/not-zip-safe
+udcd_verteilung.egg-info/top_level.txt
