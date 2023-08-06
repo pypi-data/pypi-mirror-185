@@ -1,0 +1,2 @@
+[console_scripts]
+heroku.env = heroku_env.__main__:main
