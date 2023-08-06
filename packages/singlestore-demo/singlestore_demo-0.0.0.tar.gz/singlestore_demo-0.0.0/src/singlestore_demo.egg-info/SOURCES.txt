@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+pyproject.toml
+setup.cfg
+src/singlestore_demo/generate.py
+src/singlestore_demo.egg-info/PKG-INFO
+src/singlestore_demo.egg-info/SOURCES.txt
+src/singlestore_demo.egg-info/dependency_links.txt
+src/singlestore_demo.egg-info/top_level.txt
