@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: system-symphony
+Version: 0.1.4
+Summary: Explore the sonic world of your computer.
+Home-page: https://github.com/dsmaugy/the-sounds-of-processes
+Author: Darwin
+Author-email: darwin78913@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: psutil (>=5.9.4,<6.0.0)
+Requires-Dist: python-osc (>=1.8.0,<2.0.0)
+Project-URL: Repository, https://github.com/dsmaugy/the-sounds-of-processes
+Description-Content-Type: text/markdown
+
+# system-symphony
+
+Explore the sonic world of your computer.
+
+`system-syphony` sonifies your computer by transforming its running processes into synthesized sounds.  
+
+## Installation
+### Preqrequisites
+1. Install [Supercollider](https://supercollider.github.io/downloads) on your current platform.
+2. Make sure `sclang` is added to system PATH.
+    - **Mac**: `sclang` may be stored at `/Applications/SuperCollider.app/Contents/MacOS/` or `/Applications/SuperCollider/SuperCollider.app/Contents/MacOS/`
+    - **Windows**: `sclang` is likely stored at: `C:\Program Files\SuperCollider-<version>`
+### Installing Locally
+1. Run `pip install .` in `src/system-symphony` directory
+
+
+### Installing through pypi
+1. Run `pip install system-symphony`
+
+## Usage
+
+```
+Usage: system-symphony [OPTIONS]
+
+  Explore the sonic world of your computer. Associated supercollider file must
+  be running.
+
+Options:
+  --poll-rate INTEGER  How fast to poll processes in ms
+  --no-sc              Do not launch the supercollider process.
+  --help               Show this message and exit.
+
+```
+
+
+

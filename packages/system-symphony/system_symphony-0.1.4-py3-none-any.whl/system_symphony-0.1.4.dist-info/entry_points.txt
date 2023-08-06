@@ -1,0 +1,3 @@
+[console_scripts]
+system-symphony=process_parser.main:main
+

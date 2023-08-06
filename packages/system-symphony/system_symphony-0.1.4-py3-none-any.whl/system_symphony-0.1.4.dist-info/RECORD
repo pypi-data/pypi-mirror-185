@@ -1,0 +1,10 @@
+process_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+process_parser/main.py,sha256=G1LeZYSQ_xMO4KFr30XDJBUqEH_ElBlEmdSGNz8PdFM,6007
+supercollider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supercollider/process_synths.scd,sha256=DrMT39zhcNfE1XJ-6lcLkSYSu03LOpCB-l88TnvgPj8,6080
+supercollider/windows_xp.wav,sha256=s0rjl2Bq6pgXqWrtG0YCc-cQBADJ5-fYrn2drzJ9c5Q,470778
+system_symphony-0.1.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+system_symphony-0.1.4.dist-info/METADATA,sha256=6jJAPXypAGtfmp-5EiyaBS3UZkhn_KzSQFFAhOdnl2U,1813
+system_symphony-0.1.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+system_symphony-0.1.4.dist-info/entry_points.txt,sha256=W1IDn1AzSqQTZi-EaJKa17nfAR6potsMcdHH8_9cWLY,60
+system_symphony-0.1.4.dist-info/RECORD,,
