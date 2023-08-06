@@ -1,0 +1,10 @@
+appraise/__init__.py,sha256=aa3Y_rrnCYrOEB5HC1NkwRH_KVpfu9u0npgUjpi2cO8,192
+appraise/input_fasta_prep.py,sha256=mrcQquAdM_KnkI6q79Jc18XH14YQ7JKXLsDRUzo9p-4,9869
+appraise/pymol_quantify_peptide_binding.py,sha256=oOCtYcbIna2hAlWrfPgi55whNe2XvRcECzG9B-Kku_M,49183
+appraise/score_calculation.py,sha256=_VaprzzmQrEFC1ruRqnTny7qWf3L-YwgXFinnCgSg6M,13121
+appraise/utilities.py,sha256=Vi1zQmmt3wvQxKPGfqGM1BMD_3EkR_g5QIUtg-2TlMM,13678
+appraise-1.2.0.1.dist-info/LICENSE,sha256=C9pJKdIbSZIs3wn8-Jg5M1QrBb2ZyyaHG3tjXWTLqUg,11368
+appraise-1.2.0.1.dist-info/METADATA,sha256=hTeFcIDfbhiqk6ev2KX5uBsUi2QursN1C-JUDRrrR6k,2783
+appraise-1.2.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+appraise-1.2.0.1.dist-info/top_level.txt,sha256=8k2vhdFxRBLvXL7R3jnVgH7PjTS9EuRZYPrqCrt74us,9
+appraise-1.2.0.1.dist-info/RECORD,,
