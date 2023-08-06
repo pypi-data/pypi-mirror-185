@@ -1,0 +1,2 @@
+embedly2
+httplib2
