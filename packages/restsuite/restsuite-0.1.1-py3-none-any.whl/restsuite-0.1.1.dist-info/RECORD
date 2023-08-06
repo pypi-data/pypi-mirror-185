@@ -1,0 +1,11 @@
+restsuite/__init__.py,sha256=G8ZQpmKh9gjWnVl9vOrRDN7jJsabK2nzupx5k25zIEc,86
+restsuite/auth.py,sha256=Dqxcs58r06yWJ8StEe69uc7vaqAhCMh5Pol8UM6EFVk,13129
+restsuite/base_rest.py,sha256=nkfnI5XFiHlZ6JNofI0o_zn9i8t7Ij-1h8GU86ZrBAs,7977
+restsuite/rest.py,sha256=uclJL2lQ593MiD6QIXFgbUkChvrAm6upo15Lac1Donc,2527
+restsuite/restlet.py,sha256=7HE4xKdu5rSwJvYN1Ry0XgelvJRVTc998XUv_AKXgvo,6623
+restsuite/suiteql.py,sha256=quIvsgxN6ocBgBUwdWUbIPVsA48eCXk5E--5kWmaCqM,4409
+restsuite-0.1.1.dist-info/LICENSE,sha256=H28FI-JK46pbyErSZZE1bDCuPWHDbR-doroy5k6oXro,1070
+restsuite-0.1.1.dist-info/METADATA,sha256=Ph0yn4cj-tqUplDloqL9rSiEJOOcfm5lksAF4XdADOo,9438
+restsuite-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+restsuite-0.1.1.dist-info/top_level.txt,sha256=rJviU8_pl2_owFXANV6ThkNCRjb6mRUJxYCHxLmDPNs,10
+restsuite-0.1.1.dist-info/RECORD,,
