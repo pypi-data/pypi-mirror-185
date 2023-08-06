@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: satellite-copernicus
+Version: 0.1.1
+Summary: satellite-weather-downloader PYPI package
+Author: Luã Bida Vacaro
+Author-email: luabidaa@gmail.com
+Maintainer: Luã Bida Vacaro
+Maintainer-email: luabidaa@gmail.com
+License: MIT
+Requires-Python: >=3.11,<4.0
+License-File: LICENSE
