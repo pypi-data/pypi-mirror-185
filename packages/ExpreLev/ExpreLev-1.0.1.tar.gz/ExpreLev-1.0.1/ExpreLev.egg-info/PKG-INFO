@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: ExpreLev
+Version: 1.0.1
+Summary: TPM/CPM/FPKM analysis
+Home-page: https://pypi.org/project/ExpreLev/
+Author: Benxia Hu
+Author-email: hubenxia@gmail.com
+License: UNKNOWN
+Description: analyze TPM/CPM/FPKM
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

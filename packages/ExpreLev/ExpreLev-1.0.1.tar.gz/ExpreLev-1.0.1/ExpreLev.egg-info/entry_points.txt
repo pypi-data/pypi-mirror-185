@@ -1,0 +1,3 @@
+[console_scripts]
+ExpreLev = ExpreLev.ExpreLev_main:main
+
