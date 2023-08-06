@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: quera-ahs-utils
+Version: 0.0.5
+Summary: Various tools to interact with Braket Analog Hamiltonian Computing
+Home-page: https://github.com/QuEraComputing/quera-ahs-utils
+Author: QuEra Computing Inc. + Braket Science Team
+Author-email: Phillip Weinberg <pweinberg@quera.com>, John Long <jlong@quera.com>
+Maintainer-email: Phillip Weinberg <pweinberg@quera.com>, John Long <jlong@quera.com>
+Project-URL: Homepage, https://github.com/QuEraComputing/quera-ahs-utils
+Project-URL: Bug Tracker, https://github.com/QuEraComputing/quera-ahs-utils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# aws-utilities
+various functions that can be used to help out with braket python SDK
