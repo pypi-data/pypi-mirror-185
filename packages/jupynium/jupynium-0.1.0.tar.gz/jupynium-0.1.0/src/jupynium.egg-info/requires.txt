@@ -1,0 +1,14 @@
+pynvim>=0.4.3
+coloredlogs>=15.0.0
+verboselogs>=1.7
+selenium>=4.7.2
+packaging>=22.0
+sysv-ipc>=1.1.0
+psutil>=5.9.4
+
+[testing]
+pytest>=6.0
+pytest-cov>=2.0
+flake8>=3.9
+tox>=3.24
+black>=22.0.0
