@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: stones
+Version: 0.2
+Summary: Library for Persistent key-value containers, compatible with Python dict
+Home-page: https://github.com/croqaz/Stones
+License: MIT
+Author: Cristi Constantin
+Requires-Python: >=3.9,<3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development
+Requires-Dist: cbor2 (>=5.4.3,<6.0.0)
+Requires-Dist: lmdb (==1.3.0)
+Requires-Dist: msgpack (>=1.0.4,<2.0.0)
+Requires-Dist: ujson (>=5.4.0,<6.0.0)
+Project-URL: Repository, https://github.com/croqaz/Stones
