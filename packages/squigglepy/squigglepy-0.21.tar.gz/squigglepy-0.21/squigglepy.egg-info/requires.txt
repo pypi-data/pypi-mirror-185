@@ -1,0 +1,5 @@
+msgspec
+numpy
+pathos
+scipy
+tqdm
