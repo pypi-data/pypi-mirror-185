@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tweedekamer
+Version: 0.0.1b1
+Summary: A package to download Dutch parliament debates and subtitles
+Author: Michel Doré
+Author-email: 
+
+Using this package you can download Dutch parliament debates and subtitles. It is based on the website https://debatgemist.tweedekamer.nl. This package is not affiliated with the Dutch parliament. It is not allowed to use this package for commercial purposes.
+ This package is still in beta, so expect bugs and missing features.
