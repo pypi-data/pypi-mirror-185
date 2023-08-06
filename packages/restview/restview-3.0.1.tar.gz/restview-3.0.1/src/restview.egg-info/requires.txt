@@ -1,0 +1,7 @@
+docutils
+pygments
+readme_renderer<37
+
+[syntax]
+
+[test]
