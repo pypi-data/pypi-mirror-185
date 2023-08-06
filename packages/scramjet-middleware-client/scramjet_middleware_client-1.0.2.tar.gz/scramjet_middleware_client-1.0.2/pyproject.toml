@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "scramjet-middleware-client"
+version = "1.0.2"
+description = ""
+authors = ["Scramjet <open-source@scramjet.org>"]
+readme = "README.md"
+packages = [{include = "middleware_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+scramjet-manager-client = "^1.0.1"
+scramjet-client-utils = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
