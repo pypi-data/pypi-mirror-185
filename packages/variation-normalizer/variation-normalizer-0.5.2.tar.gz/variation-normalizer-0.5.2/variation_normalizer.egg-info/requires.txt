@@ -1,0 +1,16 @@
+biocommons.seqrepo
+fastapi
+uvicorn
+pydantic
+ga4gh.vrs[extras]~=0.8.1.dev0
+gene-normalizer~=0.1.31
+pyliftover
+boto3
+ga4gh.vrsatile.pydantic~=0.0.11
+cool-seq-tool>=0.1.5
+
+[dev]
+pytest
+pytest-cov
+pyyaml
+psycopg2-binary
