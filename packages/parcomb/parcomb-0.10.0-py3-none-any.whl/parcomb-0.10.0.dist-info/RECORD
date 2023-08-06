@@ -1,0 +1,11 @@
+parcomb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parcomb/char.py,sha256=swHK7Q0TQQZsRJ07uxzl_o10awnoVEG8n3SUXKJMvsE,1744
+parcomb/combinator.py,sha256=hy7zBc9vhzvNPTDv8o5vCTp0su_6iiNPom9TdbiIip0,5024
+parcomb/common.py,sha256=PySrNSn1LAWMLH3uUnZurkJ8droA9Lu9mH7iraX9FHg,55
+parcomb/number.py,sha256=ZbyHTP3i0l5WxVdBRgNMsyqsXbOJBhZyoEzH51exR60,257
+parcomb/parsing.py,sha256=texOHOhV2-KEWwY8emRTOwfAO6fvVKbwrJL7vDAgLEY,3370
+parcomb/string.py,sha256=mUFVp_QoNY3J0OzAXyAKWkYqXTsmqH0PShRHN623rgQ,747
+parcomb-0.10.0.dist-info/LICENSE,sha256=F-6xEaBSRitk3ppaVpg_jXMpIthmbsvyDt6Pd2tMTfQ,1022
+parcomb-0.10.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+parcomb-0.10.0.dist-info/METADATA,sha256=bU5tAru-uPOez0jxZkaNENOK6m2TJKz4qSF-KFzeVMw,10187
+parcomb-0.10.0.dist-info/RECORD,,
