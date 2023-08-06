@@ -1,0 +1,3 @@
+[console_scripts]
+jinjang=jinjang.__main__:jng_CLI
+
