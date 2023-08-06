@@ -1,0 +1,67 @@
+[tool.poetry]
+name = "pyCryptoPay-SDK"
+version = "1.7.1"
+description = "Python API wrapper for CryptoPay API"
+authors = ["Maxim Mosin <max@mosin.pw>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/LulzLoL231/pyCryptoPayAPI/"
+repository = "https://github.com/LulzLoL231/pyCryptoPayAPI"
+documentation = "https://lulzlol231.github.io/pyCryptoPayAPI"
+keywords= ["cryptopay", "crypto"]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: AsyncIO"
+]
+packages = [
+    { include = "CryptoPayAPI", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+httpx = "^0.23.1"
+pydantic = "^1.10.2"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.991"
+flake8 = "^6.0.0"
+autopep8 = "^2.0.1"
+pytest = "^7.2.0"
+pytest-asyncio = "^0.20.3"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
+bumpver = "^2022.1120"
+mkdocs-material = "^8.5.11"
+mkdocs-git-revision-date-localized-plugin = "^1.1.0"
+mkdocs-git-authors-plugin = "^0.7.0"
+mkdocs-git-committers-plugin-2 = { git = "https://github.com/LulzLoL231/mkdocs-git-committers-plugin-2.git", tag = "v1.1.2" }
+mkdocstrings = {extras = ["python"], version = "^0.19.1"}
+mkdocs-glightbox = "^0.3.1"
+mkdocs-literate-nav = "^0.5.0"
+mkdocs-section-index = "^0.3.4"
+mkdocs-static-i18n = { git = "https://github.com/LulzLoL231/mkdocs-static-i18n.git", tag = "v0.54" }
+lxml = "^4.9.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.bumpver]
+current_version = "1.7.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"',
+]
+"src/CryptoPayAPI/__init__.py" = [
+    "__version__ = '{version}'",
+]
+
