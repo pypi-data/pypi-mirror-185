@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "primapy-db"
+version = "0.1.0"
+description = "Python DB library"
+authors = ["Team AMOps <amops@prima.it>"]
+readme = "README.md"
+packages = [{include = "primapy_db", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
