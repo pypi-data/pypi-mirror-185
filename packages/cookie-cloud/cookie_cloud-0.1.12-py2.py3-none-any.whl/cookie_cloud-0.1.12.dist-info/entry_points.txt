@@ -1,0 +1,2 @@
+[console_scripts]
+cc_generate = cookie_cloud.generate:main
