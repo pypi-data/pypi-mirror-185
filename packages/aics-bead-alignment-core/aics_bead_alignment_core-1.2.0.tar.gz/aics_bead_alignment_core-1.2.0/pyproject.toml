@@ -1,0 +1,52 @@
+[project]
+name = "aics_bead_alignment_core"
+version = "1.2.0"  # Do not edit manually; managed by bumpversion
+description = "Core algorithms for aligning CZI images"
+authors = [
+    {name = "AICS", email="!AICS_SW@alleninstitute.org"},
+]
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+requires-python = ">=3.9.2"
+
+dependencies = [
+    "aicsimageio ~= 4.9.2",
+    "aicsimageio[czi] ~= 4.4",
+    "ipykernel ~= 6.20.1",
+    "opencv-python ~= 4.7.0.68",
+    "matplotlib ~= 3.6.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black == 22.8.0",
+    "build == 0.7.0",
+    "bump2version ~= 1.0.1",
+    "flake8 ~= 5.0.4",
+    "furo == 2022.9.29",
+    "isort ~= 5.9",
+    "m2r2 ~= 0.3.3",
+    "mypy == 0.982",
+    "numpy ~= 1.23.4",
+    "pre-commit ~= 2.20.0",
+    "pytest ~= 7.2.0",
+    "Sphinx ~= 5.3.0",
+    "tifffile == 2022.10.10",
+    "twine ~= 4.0.1",
+    "types-python-dateutil ~= 2.8.19",
+    "types-requests ~= 2.28.11",
+    "wheel ~= 0.37.0",
+]
+
+[project.urls]
+homepage = "https://github.com/aics-int/"
+documentation = "https://aics-int.github.io/"
+repository = "https://github.com/aics-int/"
+
+[build-system]
+# https://setuptools.pypa.io/en/latest/build_meta.html
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+align_cli = "aics_bead_alignment_core.bin.align_cli:main"
