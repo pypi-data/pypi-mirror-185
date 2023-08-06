@@ -1,0 +1,4 @@
+[console_scripts]
+poster = sneks.gui.poster:main
+run = sneks.engine.runner:main
+validate = sneks.validator.main:main

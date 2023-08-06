@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sneks-dev
+Version: 1.0.0a19
+Summary: Sneks competition facilitation
+Author-email: Nathaniel Schaaf <nathaniel.schaaf@gmail.com>
+License: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: gui
+Provides-Extra: record
+License-File: LICENSE
+
+# Sneks
+
+entry must be named `submission.py` with a class `CustomSnek`
