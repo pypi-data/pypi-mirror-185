@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: cedict
+Version: 0.1.0
+Summary: A Chinese English dictionary.
+Author: Peter
+Author-email: Peter <findpeter@163.com>
+Project-URL: Homepage, https://github.com/peterszns/cedict
+Project-URL: Bug Tracker, https://github.com/peterszns/cedict/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cedict
+A Chinese English dictionary.
+
+csv file from https://github.com/1eez/103976
+
+## How to use
+    from cedict.cedict import DictionaryData, search
+    dict_db = DictionaryData()
+    print(search("apple", dict_db)) # ('apple', 'n.苹果,似苹果的果实')

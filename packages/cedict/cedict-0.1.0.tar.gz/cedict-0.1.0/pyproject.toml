@@ -1,0 +1,18 @@
+[project]
+name = "cedict"
+version = "0.1.0"
+authors = [
+    { name="Peter", email="findpeter@163.com" },
+]
+description = "A Chinese English dictionary."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/peterszns/cedict"
+"Bug Tracker" = "https://github.com/peterszns/cedict/issues"

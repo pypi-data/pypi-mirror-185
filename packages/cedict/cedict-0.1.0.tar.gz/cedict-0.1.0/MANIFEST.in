@@ -1,0 +1,2 @@
+recursive-include src/cedict/csv *.csv
+recursive-include src/cedict/db *.db

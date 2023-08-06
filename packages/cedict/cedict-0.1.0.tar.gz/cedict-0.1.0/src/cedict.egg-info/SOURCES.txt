@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cedict/__init__.py
+src/cedict/cedict.py
+src/cedict.egg-info/PKG-INFO
+src/cedict.egg-info/SOURCES.txt
+src/cedict.egg-info/dependency_links.txt
+src/cedict.egg-info/top_level.txt
+src/cedict/csv/EnWords.csv
+src/cedict/db/words.db
