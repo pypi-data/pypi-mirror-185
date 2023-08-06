@@ -1,0 +1,12 @@
+awesome_monaco/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awesome_monaco/start.py,sha256=NOBkxXTm4GYjDQvkewu4am78xGisnFm_suEK4F4x1NY,334
+awesome_monaco/brains/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awesome_monaco/brains/build_data.py,sha256=UTCS_VnmxLBekUu9WUPCMjSedipU8lQbl0yipk-FzNg,3890
+awesome_monaco/brains/config.py,sha256=-5bQ6PuwtEh1kY_kXACHHQ42Mi1_pSS_FcWSzCrIVxA,451
+awesome_monaco/brains/parser.py,sha256=Z_5L2OgfY4BllQaZYolYW05UucGIS7tRT2Lebp5uYbQ,622
+awesome_monaco/brains/report.py,sha256=Bc1-76IUm_5ouSoZy0bsO2F1eDa-LO1i7ArE1YULSnA,1107
+awesome_monaco/brains/utils.py,sha256=g6cjdsaHaNuq7hkcOC2b-AvGsEFCILbfS-XIrW-YuGM,679
+awesome_monaco-0.0.1.dist-info/METADATA,sha256=d_bDr43kbZGv5roexzWPyYD0P14YQ6gcHdkB3aT7Nug,862
+awesome_monaco-0.0.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+awesome_monaco-0.0.1.dist-info/licenses/License.mit,sha256=lz8TIU4Hw4-SzUU_rlubL1QIJG7PiYSPd4OtIBPokL8,1092
+awesome_monaco-0.0.1.dist-info/RECORD,,
