@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: license_scanner
+Version: 0.1.0
+Summary: Scans your environment for all needed licenses
+Home-page: https://github.com/wagenrace/license_scanner
+Author: Tom Nijhof
+Keywords: license_scanner
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# license_scanner
+
+Find all licenses needed by the package in your python environment.
+It will sort all package by license.
+
+Install by pip
+
+```cmd
+pip install license_scanner
+```
+
+Usage
+
+```cmd
+license_scanner
+```
+
+![](readme_files/demo.gif)
+
+# Credits
+
+- Tom Nijhof
+
+
+# History
+
+## 0.0.1 (2023-01-10)
+
+- Add license scanner
+- Find all licenses in your env
+
+## 0.0.0 (1970-01-01)
+
+- Copied basic package a start of license_scanner
