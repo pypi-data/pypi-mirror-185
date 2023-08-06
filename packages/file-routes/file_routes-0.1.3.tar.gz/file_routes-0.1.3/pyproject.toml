@@ -1,0 +1,77 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "file_routes"
+description = "File system based routing for Django & Flask"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "Johan Dahlin", email = "jdahlin@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Flask",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest >=7.1.3,<8.0.0",
+    "pytest-django == 4.5.2",
+    "coverage[toml] >= 6.5.0,< 8.0",
+    "mypy == 0.991",
+    "ruff == 0.0.219",
+    "black == 22.12.0",
+    "isort >=5.0.6,<6.0.0",
+    "django-stubs >= 1.13.1"
+]
+django = ["django >= 4.0"]
+flask = ["Flask >= 2.2"]
+
+[tool.coverage.run]
+parallel = true
+source = [
+    "src"
+]
+context = '${CONTEXT}'
+
+[tool.hatch.version]
+path = "src/file_routes/__init__.py"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+addopts =[
+    "--no-migrations",
+    "--show-capture=stdout",
+    "--tb=short",
+    "-W error::Warning",
+    "-vv"
+]
+filterwarnings = []
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+DJANGO_SETTINGS_MODULE = "file_routes.tests.django_settings"
+testpaths = "user"
