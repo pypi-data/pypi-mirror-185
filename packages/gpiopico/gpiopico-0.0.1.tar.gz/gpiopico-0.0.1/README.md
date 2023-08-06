@@ -1,0 +1,2 @@
+# GPIO CONTROL IN RASPBERRY PI PICO
+## Hardware control 
