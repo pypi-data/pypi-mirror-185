@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+SeleniumGridServer.egg-info/PKG-INFO
+SeleniumGridServer.egg-info/SOURCES.txt
+SeleniumGridServer.egg-info/dependency_links.txt
+SeleniumGridServer.egg-info/requires.txt
+SeleniumGridServer.egg-info/top_level.txt
+src/SeleniumGridServer/__init__.py
