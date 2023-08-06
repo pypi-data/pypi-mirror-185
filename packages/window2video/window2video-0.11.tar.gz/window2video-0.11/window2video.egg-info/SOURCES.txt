@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+window2video/README.MD
+window2video/__init__.py
+window2video/requirements.txt
+window2video/thirdparty.json
+window2video.egg-info/PKG-INFO
+window2video.egg-info/SOURCES.txt
+window2video.egg-info/dependency_links.txt
+window2video.egg-info/requires.txt
+window2video.egg-info/top_level.txt

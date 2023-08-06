@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: window2video
+Version: 0.11
+Summary: Record Window (hwnd) and save the recording as mp4 (normalized fps) - Works even with background windows
+Home-page: https://github.com/hansalemaos/window2video
+Author: Johannes Fischer
+Author-email: <aulasparticularesdealemaosp@gmail.com>
+License: MIT
+Keywords: file path,windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+
+
+# Record Window (hwnd) and save the recording as mp4 (normalized fps) - Works even with background windows
+
+
+```python
+# Tested with:
+# Python 3.9.13
+# Windows 10
+
+
+$pip install window2video
+
+from window2video import start_recorder
+# starts the recording directly
+start_recorder(hwnd=985666, outputfolder='c:\\testrecording', exit_keys='ctrl+alt+k')
+
+# interactive mode 
+start_recorder_in_console()
+	
+```
+
+
+
+

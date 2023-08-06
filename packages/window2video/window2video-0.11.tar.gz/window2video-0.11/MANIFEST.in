@@ -1,0 +1,3 @@
+include window2video/requirements.txt
+include window2video/thirdparty.json
+include window2video/README.MD
