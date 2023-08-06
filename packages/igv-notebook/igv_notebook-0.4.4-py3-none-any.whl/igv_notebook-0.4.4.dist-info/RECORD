@@ -1,0 +1,15 @@
+igv_notebook/VERSION,sha256=vhrDol-BPhhPmddeJDN-twCknzxwCOgj7ZZAznUu-ks,5
+igv_notebook/VERSION_IGV,sha256=Debo3etrRlSOQrE02hM23VL0jlzMJeXiP6SqYDjVxo4,7
+igv_notebook/__init__.py,sha256=4d95p0Msi-IDHo0IPA3rbXze5Jt6MQobNKyD6SWmMtI,77
+igv_notebook/browser.py,sha256=gAxpYJa9_xzlT35f_Op-0tOrDRHJhJVrZKUoq0czNxY,5787
+igv_notebook/file_reader.py,sha256=2pY6HE0vAcaec-NmuXI6J30rGzTpcSsLLPfhtg-mxNo,1699
+igv_notebook/svg.py,sha256=1WnsLMwNwpze2Iv86P0_884znW3-MwC9No3fwEEYXGQ,698
+igv_notebook/version.py,sha256=8LztHcA5w7Hjxpy0vtK22TXnE-rGIV3AN4Kewl8ftZ8,173
+igv_notebook/js/igv.min.js,sha256=KjMqjzKStTubOrRLtRPPwOr2ldGssOnSmtS7z-sUuZM,1005769
+igv_notebook/js/localNotebookFile.js,sha256=8YMaqg8SqDR6a8bKE7FFxoNEBBm47scrvFB1y0Pok-g,6355
+igv_notebook/js/messageHandler.js,sha256=mrWgZfXJzBREK-pS6l91KV96CX5xLvcmJZsTB8QvGps,11430
+igv_notebook-0.4.4.dist-info/LICENSE.md,sha256=cMiD8ncpjp407NecgpMTarlHu2SnKJiJfM2OgBv9cLE,1064
+igv_notebook-0.4.4.dist-info/METADATA,sha256=Bxyg8zu2lu2nFqHczWNup4CbCyR-kLq-cSobwT8sf9c,11452
+igv_notebook-0.4.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+igv_notebook-0.4.4.dist-info/top_level.txt,sha256=GAFMQO--m2g9H40Da00otO1PjjlklhLpX5wuWt3cdPs,13
+igv_notebook-0.4.4.dist-info/RECORD,,
