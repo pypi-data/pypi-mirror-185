@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+
+# check below if VIRTUAL_ENV is set
+if [ -z "$VIRTUAL_ENV" ]; then
+  if [ -z "$1" ]; then
+    name="ve"
+  else
+    name=$1
+  fi
+  source ~/venvs/$name/bin/activate
+  echo "Activated virtual environment $name"
+
+else
+  echo "Virtual environment $VIRTUAL_ENV already activated"
+fi
+
