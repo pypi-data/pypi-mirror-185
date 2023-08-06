@@ -1,0 +1,9 @@
+name: pte-stats-dev
+channels:
+  - defaults
+dependencies:
+  - pip
+  - python=3.10
+  - pip:
+    - -e .[dev]
+    
