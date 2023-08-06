@@ -1,0 +1,4 @@
+pandas>=1.5.2
+requests>=2.26.0
+Jinja2>=3.0.1
+vncdotool>=1.0.0
