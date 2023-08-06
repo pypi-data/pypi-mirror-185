@@ -1,0 +1,6 @@
+torch >= 1.10
+pytest
+black
+numpy
+jsonargparse[signatures] >= 4.19
+
