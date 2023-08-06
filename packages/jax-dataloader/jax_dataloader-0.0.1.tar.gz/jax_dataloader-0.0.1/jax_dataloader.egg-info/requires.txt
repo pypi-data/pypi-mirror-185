@@ -1,0 +1,13 @@
+jax[cpu]
+
+[dev]
+matplotlib
+seaborn
+scikit-learn
+pandas
+nbdev
+jupyter
+dm-haiku
+tqdm
+optax
+deprecation
