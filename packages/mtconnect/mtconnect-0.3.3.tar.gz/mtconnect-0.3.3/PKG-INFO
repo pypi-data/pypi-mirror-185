@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mtconnect
+Version: 0.3.3
+Summary: A python agent for MTConnect
+License: "Apache License 2.0"
+Author: Michael Honaker
+Author-email: mchonaker@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
