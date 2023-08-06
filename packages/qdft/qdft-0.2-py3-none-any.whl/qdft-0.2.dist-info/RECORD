@@ -1,0 +1,10 @@
+qdft/__init__.py,sha256=82EGbU9yc4OMX5TO1q3rNQHTDYNc4c5RDTmjTOKg9ME,106
+qdft/chroma.py,sha256=nWd-41W1elPO8F0tl3H74b6F_ibgy9fJ3FIA1UdR77M,3247
+qdft/fafe.py,sha256=8ioJBKUhVr1VPJa0zBtuKrNvK3oJ2IoEltmS-sw_Loo,2142
+qdft/qdft.py,sha256=Bkx-NBjpQkAzca7DOIayV0-Hx1RG-onkdgFKxHuFPc0,4525
+qdft/scale.py,sha256=HZKzyKdEKmUn5a58UgkBM-VZh3RfU-fIVPdM-vnskY0,1934
+qdft-0.2.dist-info/LICENSE,sha256=zGdw_6DxFbsP_zfw5mVFVtwkpdfZ2nFql_XpjwBZ7ps,1069
+qdft-0.2.dist-info/METADATA,sha256=7i-MJVl-zfAcmGPuVSq03l61hMQx-LgaLIRc6fk_U9U,3284
+qdft-0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+qdft-0.2.dist-info/top_level.txt,sha256=YRSLJCX258hFwXvvEzaFuBgXQ0JkFnIRYF27rWK5N1M,5
+qdft-0.2.dist-info/RECORD,,
