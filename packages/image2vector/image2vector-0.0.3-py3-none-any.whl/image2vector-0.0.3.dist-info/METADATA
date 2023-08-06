@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: image2vector
+Version: 0.0.3
+Summary: An advanced message queue framework, derived from nameko
+Home-page: https://github.com/ponponon/image2vector
+Author: ponponon
+Author-email: 1729303158@qq.com
+Maintainer: ponponon
+Maintainer-email: 1729303158@qq.com
+License: MIT License
+Platform: all
+Classifier: Programming Language :: Python
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Requires-Dist: torch (==1.12.1)
+Requires-Dist: torchvision
+Requires-Dist: pillow
+
+# image2vector
+
+## Introduce
+
+Transforming images into 512-dimensional vectors by residual neural networks
+
+⭐️ 🌟 ✨ ⚡️ ☄️ 💥
+
+## Installation
+
+Package is uploaded on PyPI.
+
+You can install it with pip:
+
+```shell
+pip install image2vector
+```
+
+## Requirements
+
+Python -- one of the following:
+
+- CPython : 3.8 and newer ✅
+- PyPy : Software compatibility not yet tested ❓
+
+## Documentation
+
+📄 Intensified preparation in progress
+
+## Example
+
+### Create it
+
+```python
+from pathlib import Path
+from iv import ResNet, l2
+
+resnet = ResNet(weight_file='weight/gl18-tl-resnet50-gem-w-83fdc30.pth')
+
+
+vector = resnet.gen_vector('resources/images/baku.jpg')
+
+print('distance is ', l2(vector, vector))
+
+```
