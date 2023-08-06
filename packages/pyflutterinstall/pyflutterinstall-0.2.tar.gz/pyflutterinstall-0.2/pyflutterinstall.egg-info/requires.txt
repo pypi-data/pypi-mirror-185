@@ -1,0 +1,9 @@
+download
+ftfy
+
+[:platform_system == "Windows"]
+windows-path-adder
+pywin32
+
+[test]
+pytest

@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pyflutterinstall/__init__.py
+pyflutterinstall/cli.py
+pyflutterinstall/envset.py
+pyflutterinstall/resources.py
+pyflutterinstall.egg-info/PKG-INFO
+pyflutterinstall.egg-info/SOURCES.txt
+pyflutterinstall.egg-info/dependency_links.txt
+pyflutterinstall.egg-info/entry_points.txt
+pyflutterinstall.egg-info/requires.txt
+pyflutterinstall.egg-info/top_level.txt
