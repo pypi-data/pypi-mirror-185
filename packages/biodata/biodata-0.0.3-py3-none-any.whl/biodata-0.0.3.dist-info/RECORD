@@ -1,0 +1,9 @@
+biodata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biodata/baseio.py,sha256=Hyk9u8xpohJTExBgElARn62Bg1vSYx9JUFOsEIXyUIM,9483
+biodata/bed.py,sha256=lLtA0xg_fqeXU5b2lWKNJpQF5KZc6iyahjNK5HNk5m4,11057
+biodata/delimited.py,sha256=pqkaM-okBXABwrpl6txc96cZQekWiQl5RY9AkskmFIc,8834
+biodata/fasta.py,sha256=AyO68Qb0pfsGdXRAecIS9nEUJESpMngEzw1foTbk59Y,5522
+biodata-0.0.3.dist-info/METADATA,sha256=dvD7oAmsBbylRcgEBk3u0VJ8MMYmsorqW9jdKorzgeo,4562
+biodata-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+biodata-0.0.3.dist-info/top_level.txt,sha256=-Gz6ifS5RetXmDZb9SBJUpItTBe4hjym_xIp25Wxo7Y,8
+biodata-0.0.3.dist-info/RECORD,,
