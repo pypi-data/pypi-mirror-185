@@ -1,0 +1,15 @@
+warrant/__init__.py,sha256=Cl7p-zlGtP1jIO4vxso1_v7hbLmxvX6tFSu1Pcbp5zc,549
+warrant/api_resource.py,sha256=ky571Zyq0Hjp6Kc-NZ-5NqzKsFD4mVIfPU8ltA7gt2Y,2162
+warrant/authz.py,sha256=h1Jvg4hWVTVgN86ijBgPuqMKXHfFNrArW2yzExf-42Q,1457
+warrant/feature.py,sha256=dyIyRTZR1cEOHBKrf-5OkjAVv6R597YXMB3Rpm7V2dw,2466
+warrant/permission.py,sha256=SIQ3CU3AsIn_y_IqfHs2w8VXo-a9ftdob4L-yWyW23Y,2445
+warrant/pricing_tier.py,sha256=fw8QZgI0S7g447NNE2W0fa2tfStUeK717URVz2TK8qQ,2411
+warrant/role.py,sha256=YCuXWURAI5pvkKgoKSoZsffVzL94rgY1lAz-tmSbfSk,2138
+warrant/tenant.py,sha256=EjQyw4xlOxKWIYmRwTpi7mrtD_DNbSbxjxpIKIsFrjE,2487
+warrant/user.py,sha256=WYHdOREFKpKOJ093nWGR-nKvSB-8JsS46tSdS0KOfrI,3300
+warrant/warrant.py,sha256=nZ-oZwHmbgtunaEVWoJd8G0Duq4EiLIXLOHiaEJc8jI,2511
+warrant_python-1.0.0.dist-info/LICENSE,sha256=fiFjHIs4WW6egAGbut2O_-nCIsavwpp4bAaa4Yj1A0k,1088
+warrant_python-1.0.0.dist-info/METADATA,sha256=lA-rTpvprAgBz8p4K9zSIehxXFunESlUqLuTbX59OhI,2295
+warrant_python-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+warrant_python-1.0.0.dist-info/top_level.txt,sha256=hhc-RU3z8yHUHCZwBKG9yzoJDC0vqvxTMU7JUqmADVc,8
+warrant_python-1.0.0.dist-info/RECORD,,
