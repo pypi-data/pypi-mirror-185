@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyqusim
+Version: 0.1.1
+Summary: Another package for simulated quantum computing in Python
+Project-URL: Homepage, https://github.com/KoenBaak/quantalpy
+Author-email: Koen Baak <koenbaak@gmail.com>
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Requires-Dist: numpy>=1.24.1
+Provides-Extra: dev
+Description-Content-Type: text/markdown
+
+# quantalpy
+Toy package for simulated quantum computing in Python
