@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/easychatgpt/__init__.py
+src/easychatgpt/chatgpt.py
+src/easychatgpt/exceptions.py
+src/easychatgpt.egg-info/PKG-INFO
+src/easychatgpt.egg-info/SOURCES.txt
+src/easychatgpt.egg-info/dependency_links.txt
+src/easychatgpt.egg-info/requires.txt
+src/easychatgpt.egg-info/top_level.txt
