@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+aws_flask_swagger_ui/aws_flask_swagger_ui.egg-info/PKG-INFO
+aws_flask_swagger_ui/aws_flask_swagger_ui.egg-info/SOURCES.txt
+aws_flask_swagger_ui/aws_flask_swagger_ui.egg-info/dependency_links.txt
+aws_flask_swagger_ui/aws_flask_swagger_ui.egg-info/not-zip-safe
+aws_flask_swagger_ui/aws_flask_swagger_ui.egg-info/requires.txt
+aws_flask_swagger_ui/aws_flask_swagger_ui.egg-info/top_level.txt
