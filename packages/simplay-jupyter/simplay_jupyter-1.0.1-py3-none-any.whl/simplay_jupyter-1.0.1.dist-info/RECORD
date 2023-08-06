@@ -1,0 +1,16 @@
+simplay_jupyter/__init__.py,sha256=pv_LA0VTBEIqy84JP8Vm4u5aCDUp02WuX3MJA8rgzBM,158
+simplay_jupyter/_version.py,sha256=m7juaewkLVe-1Tr3vJin_WnNj-hrLM4BT2ccsYWhH34,171
+simplay_jupyter-1.0.1.data/data/share/jupyter/labextensions/simplay_jupyter/package.json,sha256=Im79xjiXj4A-AFNKf3BeA1LAGk6ZmVxmV862pLnPnPo,3796
+simplay_jupyter-1.0.1.data/data/share/jupyter/labextensions/simplay_jupyter/static/376.4d1704cf97efd1bae864.js,sha256=mjqyjOXQu5jsB0qgKcsBi3VL46vD1Euy2RSCgEuLcHM,390697
+simplay_jupyter-1.0.1.data/data/share/jupyter/labextensions/simplay_jupyter/static/376.4d1704cf97efd1bae864.js.LICENSE.txt,sha256=ExyoHDx1A-C1hAQEckaDNx7arFOONG6Ew1CRjvlXJPA,296
+simplay_jupyter-1.0.1.data/data/share/jupyter/labextensions/simplay_jupyter/static/476.693723deec8690778432.js,sha256=aTcj3uyGkHeEMnwthgBKtnoVWMzLEokheha46hppvjA,22631
+simplay_jupyter-1.0.1.data/data/share/jupyter/labextensions/simplay_jupyter/static/479.0466e86e6949ae1c1d8a.js,sha256=BGbobmlJrhwdisK7IsVn_flFpJ1xeaWRc_ah1X57iMk,43304
+simplay_jupyter-1.0.1.data/data/share/jupyter/labextensions/simplay_jupyter/static/747.8fa7a6ed4dff7ec9e662.js,sha256=j6em7U3_fsnmYvLYWehsFNOO5UIhPN97OQIxqhXb2Jw,4944
+simplay_jupyter-1.0.1.data/data/share/jupyter/labextensions/simplay_jupyter/static/remoteEntry.5f1c737c7537e6e75cf6.js,sha256=XxxzfHU35udc9mZjsb9B53C3-v9l45wxUG0acIAD14I,7015
+simplay_jupyter-1.0.1.data/data/share/jupyter/labextensions/simplay_jupyter/static/style.js,sha256=WdGHRAcKERl038t8ooZabquUbZ2OX-Ynmg6trMa8Jvk,158
+simplay_jupyter-1.0.1.data/data/share/jupyter/labextensions/simplay_jupyter/static/third-party-licenses.json,sha256=XL-CgqcPDQmUkhMi7HU-zI3BUcVUWP3pFrEywBkWOFo,57939
+simplay_jupyter-1.0.1.data/data/share/jupyter/labextensions/simplay_jupyter/install.json,sha256=q9vhjZgmm01lNI4UwNLULu_AGnrO6bTSXVSFHmhIItI,191
+simplay_jupyter-1.0.1.dist-info/METADATA,sha256=amP9Xh6P_PQgV0PE0lg9RUslDsLkMb1gPBwy0UMrdVw,3672
+simplay_jupyter-1.0.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+simplay_jupyter-1.0.1.dist-info/licenses/LICENSE,sha256=Non6OB0rrVuSovowJYl4KaOnaHdsxgoPP9-s3DNtTeI,1542
+simplay_jupyter-1.0.1.dist-info/RECORD,,
