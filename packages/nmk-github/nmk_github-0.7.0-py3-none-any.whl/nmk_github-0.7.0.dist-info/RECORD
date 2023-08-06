@@ -1,0 +1,14 @@
+nmk_github/__init__.py,sha256=cTQJNubvg4ARCrAz015Jg8_wtZCWGhBEOuMw5ysFnHQ,705
+nmk_github/action.py,sha256=xN9oNCzlI4t_brsSXmYGepS9I-71iUHs6dfr2vBgHkg,1277
+nmk_github/action.yml,sha256=HBMWdhii3V2xHyKQM70u3CyTdYndZpWW3vhGxDypjtM,1168
+nmk_github/badges.yml,sha256=Uh-yh3dJF6-jRZaOYNtfSPVkcb83nqAdp5OpQGBvObI,577
+nmk_github/plugin-defs.yml,sha256=RLAeJZcgV8PoDxsg8PVGUSSjfQfO8PSNExIWiGh02IY,496
+nmk_github/plugin.yml,sha256=tOqi5XJLAH7T9ipGwrpGFF-Wau-2rZ83AM85tZOJsmc,87
+nmk_github/python.yml,sha256=e8PMmhzm4CelMfdPIyA4MiombDx4sVJ9sHFpwtZmFXs,80
+nmk_github/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nmk_github/templates/build.yml,sha256=aQYSbCnPJzhfIsE3yGcCFFhOi-3WDYsMkw6KMPs-9W0,3350
+nmk_github-0.7.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+nmk_github-0.7.0.dist-info/METADATA,sha256=sWdcNNf4v2IeoVnWiOGqZLH2Jx4sQT-dF-vEgXzHN_E,1887
+nmk_github-0.7.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nmk_github-0.7.0.dist-info/top_level.txt,sha256=bm5jcTxwYxr-Xu5MOoekDXFeypQ1T0DVzL_K2RnhBpM,11
+nmk_github-0.7.0.dist-info/RECORD,,
