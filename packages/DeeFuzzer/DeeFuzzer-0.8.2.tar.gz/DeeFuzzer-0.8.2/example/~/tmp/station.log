@@ -1,0 +1,43 @@
+2020-06-04 15:48:20,020 INFO Core: Starting DeeFuzzer
+2020-06-04 15:48:20,020 INFO Core: Using Python version 3.7.3
+2020-06-04 15:48:20,020 INFO Core: Using libshout version 2.4.1
+2020-06-04 15:48:20,020 INFO Core: Number of stations : 1
+2020-06-04 15:48:20,021 INFO Core: Loading new stations
+2020-06-04 15:48:20,021 ERROR Core: Error initializing station Station 0
+2020-06-04 15:49:42,704 INFO Core: Starting DeeFuzzer
+2020-06-04 15:49:42,704 INFO Core: Using Python version 3.7.3
+2020-06-04 15:49:42,704 INFO Core: Using libshout version 2.4.1
+2020-06-04 15:49:42,704 INFO Core: Number of stations : 1
+2020-06-04 15:49:42,705 INFO Core: Loading new stations
+2020-06-04 15:49:42,705 ERROR Core: Error initializing station Station 0
+2020-06-04 15:51:34,808 INFO Core: Starting DeeFuzzer
+2020-06-04 15:51:34,808 INFO Core: Using Python version 3.7.3
+2020-06-04 15:51:34,808 INFO Core: Using libshout version 2.4.1
+2020-06-04 15:51:34,808 INFO Core: Number of stations : 1
+2020-06-04 15:51:34,808 INFO Core: Loading new stations
+2020-06-04 15:51:34,809 ERROR Core: Error initializing station Station 0
+2020-06-04 16:24:38,474 INFO Core: Starting DeeFuzzer
+2020-06-04 16:24:38,474 INFO Core: Using Python version 3.7.3
+2020-06-04 16:24:38,474 INFO Core: Using libshout version 2.4.3
+2020-06-04 16:24:38,475 INFO Core: Number of stations : 1
+2020-06-04 16:24:38,475 INFO Core: Loading new stations
+2020-06-04 16:24:38,475 INFO Station http://malcom.parisson.com:8000/monitor.webm: Opening monitor - My best funky station
+2020-06-04 16:24:38,475 ERROR Core: Error initializing station Station 0
+2020-06-04 16:25:29,706 INFO Core: Starting DeeFuzzer
+2020-06-04 16:25:29,706 INFO Core: Using Python version 3.7.3
+2020-06-04 16:25:29,706 INFO Core: Using libshout version 2.4.3
+2020-06-04 16:25:29,706 INFO Core: Number of stations : 1
+2020-06-04 16:25:29,706 INFO Core: Loading new stations
+2020-06-04 16:25:29,707 INFO Station http://malcom.parisson.com:8000/monitor.webm: Opening monitor - My best funky station
+2020-06-04 16:25:29,707 ERROR Core: Error initializing station Station 0
+2020-06-04 16:26:03,637 INFO Core: Starting DeeFuzzer
+2020-06-04 16:26:03,637 INFO Core: Using Python version 3.7.3
+2020-06-04 16:26:03,637 INFO Core: Using libshout version 2.4.3
+2020-06-04 16:26:03,637 INFO Core: Number of stations : 1
+2020-06-04 16:26:03,638 INFO Core: Loading new stations
+2020-06-04 16:26:03,638 INFO Station http://malcom.parisson.com:8000/monitor.webm: Opening monitor - My best funky station
+2020-06-04 16:26:03,639 INFO Core: Started station Station 0
+2020-06-04 16:26:03,639 INFO Core: Writing M3U file to : ~/tmp/station.m3u
+2020-06-04 16:26:03,674 INFO Station http://malcom.parisson.com:8000/monitor.webm: Channel available.
+2020-06-04 16:26:03,772 INFO Station http://malcom.parisson.com:8000/monitor.webm: channel connected
+2020-06-04 16:26:03,773 INFO Station http://malcom.parisson.com:8000/monitor.webm: Generating new playlist (1 tracks)
