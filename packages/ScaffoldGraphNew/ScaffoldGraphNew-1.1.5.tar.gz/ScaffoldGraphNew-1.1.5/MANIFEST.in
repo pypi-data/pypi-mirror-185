@@ -1,0 +1,9 @@
+include *.md
+include LICENSE
+include setup.py
+include requirements.txt
+include scaffoldgraphnew/*.py
+include scaffoldgraphnew/*/*.py
+include tests/data/test_smiles.smi
+include scaffoldgraphnew/vis/notebook/resources/*
+recursive-include tests *.py
