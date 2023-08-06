@@ -1,0 +1,10 @@
+README.md
+setup.py
+mysql2postgresql/__init__.py
+mysql2postgresql/__main__.py
+mysql2postgresql/connection_database.py
+python_mysql2postgresql.egg-info/PKG-INFO
+python_mysql2postgresql.egg-info/SOURCES.txt
+python_mysql2postgresql.egg-info/dependency_links.txt
+python_mysql2postgresql.egg-info/requires.txt
+python_mysql2postgresql.egg-info/top_level.txt
