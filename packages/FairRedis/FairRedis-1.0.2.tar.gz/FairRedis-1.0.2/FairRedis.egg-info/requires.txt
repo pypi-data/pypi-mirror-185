@@ -1,0 +1,2 @@
+redis~=4.4.0
+FairCore>=5.0.0
