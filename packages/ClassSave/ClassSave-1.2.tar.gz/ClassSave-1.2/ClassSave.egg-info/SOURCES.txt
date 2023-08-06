@@ -1,0 +1,8 @@
+ClassSave.py
+LICENSE
+README.md
+setup.py
+ClassSave.egg-info/PKG-INFO
+ClassSave.egg-info/SOURCES.txt
+ClassSave.egg-info/dependency_links.txt
+ClassSave.egg-info/top_level.txt
