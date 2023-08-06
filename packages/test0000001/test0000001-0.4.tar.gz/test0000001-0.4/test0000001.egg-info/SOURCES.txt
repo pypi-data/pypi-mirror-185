@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+test0000001/__init__.py
+test0000001/steps.py
+test0000001.egg-info/PKG-INFO
+test0000001.egg-info/SOURCES.txt
+test0000001.egg-info/dependency_links.txt
+test0000001.egg-info/entry_points.txt
+test0000001.egg-info/top_level.txt
