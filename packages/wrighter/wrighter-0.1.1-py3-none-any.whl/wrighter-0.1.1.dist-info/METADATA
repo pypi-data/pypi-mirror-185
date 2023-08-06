@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: wrighter
+Version: 0.1.1
+Summary: Web scraping/browser automation framework built on Playwright
+Home-page: https://github.com/zigai/wrighter
+Author: Žiga Ivanšek
+Author-email: ziga.ivansek@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru (>=0.6.0)
+Requires-Dist: playwright (>=1.29.0)
+Requires-Dist: playwright-stealth (>=1.0.5)
+Requires-Dist: stdl (>=0.4.1)
+Requires-Dist: pydantic (>=1.10.3)
+
+# Wrighter
+Web scraping/browser automation framework built on [Playwright](https://playwright.dev/python/).
+# Features
+- sync and async API
+- plugin system
+# Installation
+#### From PyPi
+```
+pip install wrighter
+```
+#### From source
+```
+pip install git+https://github.com/zigai/wrighter.git
+```
+# License
+[MIT License](https://github.com/zigai/wrighter/blob/master/LICENSE)
