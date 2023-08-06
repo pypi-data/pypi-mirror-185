@@ -1,0 +1,71 @@
+#!python
+from subprocess import Popen, PIPE
+try:
+    from columnar import columnar
+except ImportError:
+    print("Please run 'pip install --user columnar'")
+
+
+def key_equal_val(key, line):
+            parts = line.split(" ")
+            for part in parts:
+                sub_parts = part.split("=")
+                if sub_parts[0] == key and len(sub_parts) > 1:
+                    return "=".join(sub_parts[1:]).strip()
+            return None
+
+chpc_mem_limits = {"main": 4,
+                   "osg_main": 4,
+                   "long": 4,
+                   "highmem": 2048,
+                   "gpu": 4}
+
+def read_sinfo_jobs():
+    job_info = []
+
+    sinfo = Popen("scontrol show job", shell=True, stdout=PIPE)
+    data = sinfo.stdout.read().decode('UTF-8')
+    data = data.replace("ArrayJobId", "ArrayId")
+    jobs = data.split('JobId')[1:]
+
+    bad_jobs = []
+
+    for job in jobs:
+        job = "JobId" + job
+        jobid = key_equal_val("JobId", job)
+        TRES = key_equal_val("TRES", job)
+        TRES = TRES.replace(",", " ")
+        mem = key_equal_val("mem", TRES)
+        user = key_equal_val("UserId", job)
+        qos = key_equal_val("QOS", job)
+        is_chpc = "chpc" in job
+        user = user.split("(")[0]
+        mem_unit = mem[-1]
+        mem = float(mem[:-1])
+        if mem_unit == "M":
+            mem /= 1000
+        
+        cpu = float(key_equal_val("cpu", TRES))
+        mem_per_cpu = mem/cpu
+
+        mem_violation = False
+        if is_chpc:
+            mem_limit = chpc_mem_limits.get("qos", 4)
+            if mem_per_cpu > mem_limit:
+                mem_violation = True
+        else:
+            mem_violation = "???"
+
+        if mem_violation == True:
+            bad_jobs.append(jobid)
+
+        job_info.append([jobid, user, qos, int(cpu), int(mem), round(float(mem_per_cpu), 1), mem_violation])
+
+    table = columnar(job_info, headers=['\nJobID', '\nUser', '\nQOS', '\n# of CPU', '\nMem (Gb)', "\nMem / CPU (Gb)", "More Mem / Cpu (Gb)\n than Available"], no_borders=True, justify="c")
+    print(table)
+
+    print("")
+    print("BadMem: " + " ".join(bad_jobs))
+
+if __name__ == '__main__':
+    read_sinfo_jobs()
