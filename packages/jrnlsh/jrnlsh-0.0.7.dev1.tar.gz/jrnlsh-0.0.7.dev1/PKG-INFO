@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: jrnlsh
+Version: 0.0.7.dev1
+Summary: A simple shell wrapper for jrnl and timewarrior
+Home-page: http://github.com/darkpixel/jrnlsh
+Author: Aaron C. de Bruyn
+Author-email: aaron@heyaaron.com
+License: MIT
+License-File: LICENSE
+
+A simple shell wrapper for jrnl and timewarrior
