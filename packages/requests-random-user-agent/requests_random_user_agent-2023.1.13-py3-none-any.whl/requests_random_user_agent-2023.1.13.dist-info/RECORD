@@ -1,0 +1,8 @@
+requests_random_user_agent/__init__.py,sha256=OHWOTMU8Eqwuk2yGixUe6QunPaNjpE7IMyJdvv4GUeA,668
+requests_random_user_agent/android_useragents.txt,sha256=W1gpJf7r9iBzz077vZy7Uybn5iM5KIG8jjSVuNSpyu0,421754
+requests_random_user_agent/useragents.txt,sha256=Z1Zuq77OssrnQhSdumAd_Ik-CcBXhGp6wXXrinGUid8,4944
+requests_random_user_agent-2023.1.13.dist-info/LICENSE,sha256=usr4-5up-BlPrhwaOQdei0ie6RLJjd3lgdMnJ3vNSDY,1070
+requests_random_user_agent-2023.1.13.dist-info/METADATA,sha256=x-faXKf2eKoJyZ5zTDF3L2wOO55seRD8ZUoVnuYJLHg,1699
+requests_random_user_agent-2023.1.13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+requests_random_user_agent-2023.1.13.dist-info/top_level.txt,sha256=bnQHaKr5sdDUqML0zMTmLJfMIGuUjd1Jgdyeme7Zj_Q,27
+requests_random_user_agent-2023.1.13.dist-info/RECORD,,
