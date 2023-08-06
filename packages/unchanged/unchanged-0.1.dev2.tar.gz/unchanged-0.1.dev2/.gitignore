@@ -1,0 +1,7 @@
+.tox
+*.pyc
+*.received*
+build/
+dist/
+*.egg-info
+_version.py

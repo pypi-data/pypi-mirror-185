@@ -1,0 +1,17 @@
+.gitignore
+LICENSE.txt
+README.md
+pyproject.toml
+tox.ini
+src/unchanged/__init__.py
+src/unchanged/_version.py
+src/unchanged/pytest_plugin.py
+src/unchanged/unchanged.py
+src/unchanged.egg-info/PKG-INFO
+src/unchanged.egg-info/SOURCES.txt
+src/unchanged.egg-info/dependency_links.txt
+src/unchanged.egg-info/entry_points.txt
+src/unchanged.egg-info/requires.txt
+src/unchanged.egg-info/top_level.txt
+tests/test_unchanged.py
+tests/approved/json_dict.approved.json
