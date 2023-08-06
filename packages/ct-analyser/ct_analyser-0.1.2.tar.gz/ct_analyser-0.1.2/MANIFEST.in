@@ -1,0 +1,3 @@
+include *.txt
+recursive-include ct_analyser/Data/Patients/Chest_CT *dcm
+recursive-include ct_analyser/Assets *.png
