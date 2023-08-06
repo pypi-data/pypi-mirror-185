@@ -1,0 +1,10 @@
+LICENCE
+README.md
+lmair.py
+pyproject.toml
+setup.py
+light_manager_air.egg-info/PKG-INFO
+light_manager_air.egg-info/SOURCES.txt
+light_manager_air.egg-info/dependency_links.txt
+light_manager_air.egg-info/requires.txt
+light_manager_air.egg-info/top_level.txt
