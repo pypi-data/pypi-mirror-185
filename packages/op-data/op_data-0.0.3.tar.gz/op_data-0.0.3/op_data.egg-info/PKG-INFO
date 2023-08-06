@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: op-data
+Version: 0.0.3
+Summary: operate kinds of databases
+Home-page: https://gitee.com/shuzhiwei1/op_data
+Author: shuzhiwei
+Author-email: 1065537421@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
