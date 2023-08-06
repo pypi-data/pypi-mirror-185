@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: gator-client
+Version: 0.2.0
+Summary: A web client for the Gator API
+License: MIT
+Author: Shon Verch
+Author-email: verchshon@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: certifi (>=2022.6.15,<2023.0.0)
+Requires-Dist: gator-core (>=1.1.4,<2.0.0)
+Requires-Dist: urllib3 (>=1.26.9,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Gator Client
+A web client for the [Gator](https://github.com/sqrl-planner/gator) API.
+
+## Package manager
+gator-client uses the [poetry](https://python-poetry.org/) package manager to manage its dependencies. To install the dependencies, run the following command:
+```
+poetry install
+```
+See the [poetry](https://python-poetry.org/) documentation for more information and
+installation instructions.
+
+<!-- ... Insert content here ... -->
+
+## Tools
+
+There are a number of tools available to help you with the development of sqrl. These tools ensure that your code is well-formed, follows the best practices, and
+is consistent with the rest of the project.
+
+#### Linting the codebase
+- For detecting code quality and style issues, run ``flake8``
+- For checking compliance with Python docstring conventions, run ``pydocstyle``
+
+**NOTE**: these tools will not fix any issues, but they can help you identify potential problems.
+
+#### Formatting the codebase
+- For automatically formatting the codebase, run ``autopep8 --in-place --recursive .``. For more information on this command, see the [autopep8](https://pypi.python.org/pypi/autopep8) documentation.
+- For automatically sorting imports, run ``isort .``
+
+#### Running tests
+For running tests, run ``pytest``.
+
