@@ -1,0 +1,13 @@
+aiohttp
+asyncio
+geezlibs
+gitpython
+pymediainfo
+python-decouple
+python-dotenv
+pyrogram
+requests
+telethon==1.24.0
+tgcrypto
+tracemoepy
+urllib3
