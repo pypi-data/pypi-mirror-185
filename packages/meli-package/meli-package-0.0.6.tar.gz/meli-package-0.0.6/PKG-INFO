@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: meli-package
+Version: 0.0.6
+Summary: Pacote para conexão com a API do Mercado Livre
+Author: Gabriel Celestino
+Author-email: <gabrielceles1410@gmail.com>
+Keywords: python,mercadolivre,meli
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+Pacote em Python trazendo conexões fáceis com os endpoints da API do Mercado Livre
