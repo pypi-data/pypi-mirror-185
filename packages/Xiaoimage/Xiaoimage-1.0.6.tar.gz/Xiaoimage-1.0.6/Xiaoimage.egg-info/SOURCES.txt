@@ -1,0 +1,10 @@
+setup.py
+Xiaoimage/__init__.py
+Xiaoimage/bs.py
+Xiaoimage/music.py
+Xiaoimage.egg-info/PKG-INFO
+Xiaoimage.egg-info/SOURCES.txt
+Xiaoimage.egg-info/dependency_links.txt
+Xiaoimage.egg-info/entry_points.txt
+Xiaoimage.egg-info/requires.txt
+Xiaoimage.egg-info/top_level.txt
