@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/unofficial-pokedex-main/__init__.py
+src/unofficial-pokedex-main/launch_pokedex_program.py
+src/unofficial-pokedex-main/modules/__init__.py
+src/unofficial-pokedex-main/modules/ability_module.py
+src/unofficial-pokedex-main/modules/attack_module.py
+src/unofficial-pokedex-main/modules/height_weight_module.py
+src/unofficial-pokedex-main/modules/misc_module.py
+src/unofficial-pokedex-main/modules/sound_module.py
+src/unofficial-pokedex-main/modules/text_updates.py
+src/unofficial-pokedex-main/modules/type_module.py
+src/unofficial_pokedex.egg-info/PKG-INFO
+src/unofficial_pokedex.egg-info/SOURCES.txt
+src/unofficial_pokedex.egg-info/dependency_links.txt
+src/unofficial_pokedex.egg-info/top_level.txt
