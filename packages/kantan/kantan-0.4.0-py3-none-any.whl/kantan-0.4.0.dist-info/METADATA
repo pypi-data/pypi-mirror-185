@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: kantan
+Version: 0.4.0
+Summary: Configurable venv extension
+Project-URL: homepage, https://github.com/miguelnmiranda/kantan
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest (==7.1.2) ; extra == 'dev'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'dev'
+Requires-Dist: mock (==4.0.3) ; extra == 'dev'
+Requires-Dist: pylint (==2.14.1) ; extra == 'dev'
+Requires-Dist: bandit (==1.7.4) ; extra == 'dev'
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: isort (==5.10.1) ; extra == 'dev'
+Requires-Dist: pyright (==1.1.288) ; extra == 'dev'
+Requires-Dist: toml (==0.10.2) ; extra == 'dev'
+Provides-Extra: pub
+Requires-Dist: build (==0.8.0) ; extra == 'pub'
+Requires-Dist: twine (==4.0.1) ; extra == 'pub'
+
+# Kantan
+
+Configurable venv extension.
+
+## How to use?
+
+Kantan assumes the existence of a folder `$HOME/.kantan` containing available configuration.
+
+```
+/$HOME
+    /.kantan
+        /default
+            configuration.json
+            file_to_copy
+```
+
+Example `configuration.json`:
+
+```
+{
+    "requirements": [ // Requirements to be installed on the new environment using `pip install`
+        "numpy=1.2.3"
+    ],
+    "include_files" : [ // Files to be copied to `env_dir`
+        "file_to_copy"
+    ]
+}
+```
+
+Then check how to use kantan from commandline.
+
+```
+$ kantan -h
+```
+
+## Development
+
+### Python virtual environment
+
+Create and load a virtual environement.
+
+```
+python -m venv .venv
+source .venv/bin/activate
+```
+
+### Install
+
+Install all dependencies in editable mode.
+
+```
+make install
+```
+
+### Misc
+
+Check what other shortcuts are available.
+
+```
+make help
+```
+
+## Areas of improvement
+
+- Add/Test Support for older/newer Python versions.
+- Json schema for `configuration.json` validation.
+- Make configuration extendable.
+- Improve coverage of builder and extensions.
+- Improve error handling and messages

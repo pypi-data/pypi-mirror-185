@@ -1,0 +1,10 @@
+kantan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kantan/__main__.py,sha256=gac-yVYDkq5az5LTSV5miMWlJzbwqkki9Yeq9meUSiI,67
+kantan/builder.py,sha256=orUD7eCqiXykKUgjsTCz9qzho09tvB7F-F6Rm1ROM4k,3583
+kantan/cli.py,sha256=fAhiZZYp2hnKvmH_3odUv9NoDKwP-3VT39mzhfmNi78,4040
+kantan-0.4.0.dist-info/LICENSE,sha256=ojyvEamG4ynOG7HI_9SvQapHtz6NafWAYVRaiGuNKoE,1071
+kantan-0.4.0.dist-info/METADATA,sha256=MRP8CX1HXJYLNTVMJ5JuuvM_jA0ONOEJuZPmKtQeXwQ,1942
+kantan-0.4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+kantan-0.4.0.dist-info/entry_points.txt,sha256=0R_efIEZQRQsZ9Kd5DiE8Z1nJ2feV0iFMsRh5etxSXI,43
+kantan-0.4.0.dist-info/top_level.txt,sha256=YfV7xY2-ANJIJs2MCVjs__buDv-m8UxLqN9c6nJj0fw,7
+kantan-0.4.0.dist-info/RECORD,,
