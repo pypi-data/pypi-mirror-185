@@ -1,0 +1,17 @@
+scroller/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scroller/__main__.py,sha256=teVNX9i_OQv_J8XHIQjWgI7xCKVJMAuEt8ZO2wA6PME,71
+scroller/Generator.py,sha256=N00hQGsQNIRTp3BVjE0yk4zwTyN5iSd_-xKFkXeoiXc,1655
+scroller/ImageModel.py,sha256=GXqyPOzf24c-1xFZAhono0Qet6uM6vlAWlTw7PTo-2U,6158
+scroller/ImageProxy.py,sha256=7fHm2HxZ7qx97AQx3JrNqkUXVCaPSNzw8DVhlGVLHKg,1745
+scroller/main.py,sha256=x8ANuSu74Lev-0F76pz1YDUDnQDn3xZ4inZKTZ9MNmE,2772
+scroller/ManagedThreadPool.py,sha256=Veud4yrNtA8Gk9yzh27Ts-XUPHmKy0NczODZkItaU0g,1764
+scroller/qml/delegates/ListDelegateGif.qml,sha256=wpbu1OqcdH7W3RolexG5r5XLIlWIh86vJq4Meu0JstU,474
+scroller/qml/delegates/ListDelegateImage.qml,sha256=T9jsVb-AjDR5XMufSZLbV0yAavviIdnvo_glsUDD03A,463
+scroller/qml/gui.qml,sha256=fihVm5EXu3UYcFazaXd7lM9ijL08Yi-PI13go4PP_D0,7666
+scroller/qml.qrc,sha256=szmIZoLv1odHO7h1Ik4a_OcL5Td7Fg65-WUQRBKFtus,304
+scroller/qml_rc.py,sha256=nyVw66zUhiua_3X_SNjeChmkrz77pdjFwJXB0DllSgE,9188
+scroller-0.2.1.dist-info/entry_points.txt,sha256=CcAHXblkh0wBBzE7KLjXnGP0qJZBBawQ_50bSmW5mKg,47
+scroller-0.2.1.dist-info/LICENSE,sha256=aG3OEjoTIcc3KJTopN2wWeM87CfX6BlkzcnWhf-N2t0,26074
+scroller-0.2.1.dist-info/METADATA,sha256=GEPLlrs7jzTOMC3HC2FuU5zjNGYaEMmzXWoI-lX3kKo,3272
+scroller-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+scroller-0.2.1.dist-info/RECORD,,
