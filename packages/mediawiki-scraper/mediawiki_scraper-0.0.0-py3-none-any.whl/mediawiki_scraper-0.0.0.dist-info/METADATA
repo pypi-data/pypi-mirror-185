@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mediawiki-scraper
+Version: 0.0.0
+Summary: MediaWiki Scraper
+Author: Elsie Hupp
+Author-email: github@elsiehupp.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# MediaWiki Scraper
+
+This is a placeholder for the project currently titled [`wikiteam3`](https://github.com/elsiehupp/wikiteam3), which will be renamed in order to avoid confusion with the upstream [WikiTeam](https://github.com/WikiTeam/wikiteam/) project.
+
