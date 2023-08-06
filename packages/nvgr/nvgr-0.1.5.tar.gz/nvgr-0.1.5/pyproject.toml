@@ -1,0 +1,53 @@
+[project]
+name = "nvgr"
+version = "0.1.5"
+description = "Navigare - Nautical calculations"
+authors = [
+    { name = "Cees van de Griend", email = "cees@griend.eu" },
+]
+dependencies = []
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "GPL-3.0"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.2.0",
+    "pytest-cov>=4.0.0",
+    "pylint>=2.15.9",
+    "black>=22.12.0",
+]
+
+[tool.pdm.scripts]
+test = "python3 -m pytest"
+format = "python3 -m black nvgr/ tests/"
+lint = "python3 -m pylint --disable=C,R nvgr/ tests/"
+
+[tool.pytest.ini_options]
+addopts = "--cov=nvgr"
+python_classes = [
+    "Test",
+]
+python_functions = [
+    "test_",
+]
+python_files = [
+    "test_*.py",
+]
+testpaths = [
+    "tests/",
+]
+
+[tool.black]
+line-length = 119
+target-version = [
+    "py37",
+]
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0",
+]
+build-backend = "pdm.pep517.api"

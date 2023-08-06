@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nvgr
+Version: 0.1.5
+Summary: Navigare - Nautical calculations
+License: GPL-3.0
+Author-email: Cees van de Griend <cees@griend.eu>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+[![CI](https://github.com/ceesvandegriend/nvgr/actions/workflows/ci.yml/badge.svg)](https://github.com/ceesvandegriend/nvgr/actions/workflows/ci.yml)
+
+# nvgr / navigare - Nautical calculations
+
