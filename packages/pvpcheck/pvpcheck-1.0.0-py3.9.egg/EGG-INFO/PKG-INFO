@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pvpcheck
+Version: 1.0.0
+Summary: Package to check if private repository libraries have a public doppelgaenger with the same name. The goal is to prevent a dependency confusion attack on the PyPi ecosystem
+Home-page: https://github.com/rcmckee/pvpcheck
+Author: Robert Cooper Buer McKee
+Author-email: RCBM@duck.com
+License: MIT
+Keywords: pypi dependency confusion attack python package pvpcheck public private library index comparison
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Sample Package made for a demo       of its making for the GeeksforGeeks Article.
+

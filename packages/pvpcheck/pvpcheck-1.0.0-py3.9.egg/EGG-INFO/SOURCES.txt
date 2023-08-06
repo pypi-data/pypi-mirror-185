@@ -1,0 +1,8 @@
+setup.py
+pvpcheck/public_vs_private_pypi_check.py
+pvpcheck.egg-info/PKG-INFO
+pvpcheck.egg-info/SOURCES.txt
+pvpcheck.egg-info/dependency_links.txt
+pvpcheck.egg-info/entry_points.txt
+pvpcheck.egg-info/not-zip-safe
+pvpcheck.egg-info/top_level.txt
