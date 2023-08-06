@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: cagen
+Version: 0.1.0a1.dev6
+Summary: A static site generator for cmpalgorithms project
+Author: Xavier B.
+Project-URL: Homepage, https://sr.ht/~somenxavierb/cagen/
+Project-URL: Bug Tracker, https://todo.sr.ht/~somenxavierb/cagen-tasks
+Project-URL: Repository, https://git.sr.ht/~somenxavierb/cagen
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cagen
+
+## About
+
+cagen is a static site generator intented for [cmpalgorithms project](https://sr.ht/~somenxavierb/cmpalgorithms/). So it's very rare you are interested in that.
+
+## License
+The software is distributed under [GPL2-only license](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt).
+
+## How it runs
+
+It assumes your documents are in markdown syntax. It is capable of convert those documents in any other format, using [pandoc](https://pandoc.org/) (specifically [pypandoc](https://github.com/JessicaTegner/pypandoc) wrapper):
+
+It uses [Cheetah3 Templating System](https://cheetahtemplate.org/) for customizing output because pandoc templates [lacks](https://pandoc.org/MANUAL.html#conditionals) to make conditions with values (something like `if var == b...`).
+
+## Installation
+
+You can install via [pip](https://pypi.org/project/cagen/):
+
+```
+pip install cagen
+```
+
+## Issue tracker
+
+You can see the [issue tracker](https://todo.sr.ht/~somenxavierb/cagen-tasks) and contribute if you want suggesting new features or reporting a bug.
