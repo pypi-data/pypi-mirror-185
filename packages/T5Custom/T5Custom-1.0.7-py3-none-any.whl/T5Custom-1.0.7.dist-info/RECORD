@@ -1,0 +1,9 @@
+T5Custom/__init__.py,sha256=cAkmLWvuBfJSojm6nmG29royK9mKu1MDUsu7JBnFkLM,106
+T5Custom/custom_t5_model.py,sha256=Gd94nqJIqP8zRjLFETK9AWk8lIvrZYRtluzO7_exokM,18801
+T5Custom/main.py,sha256=-ZC7VU51KZJcCa4rkEMM_0miohYDkJ3lkcGvp8_OWZo,3472
+T5Custom/run.py,sha256=ttR3ov4KN-ijiwhBLe5wGhIJfHqyLpksKu_FT0_42VE,691
+T5Custom/training_data_creation.py,sha256=QhW-s7lZKJmcKVPK-PP6pNlbxTffnT6pbJGvsG330eQ,17360
+T5Custom-1.0.7.dist-info/METADATA,sha256=us-i3drjlBWDvEPQF_W1H7HFUa4tD7NA7i-ekV9ad-k,1225
+T5Custom-1.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+T5Custom-1.0.7.dist-info/top_level.txt,sha256=RBa31HckOSH86Kk_dME8RDbiRTe7ry-03jMJGGbhE9A,9
+T5Custom-1.0.7.dist-info/RECORD,,
