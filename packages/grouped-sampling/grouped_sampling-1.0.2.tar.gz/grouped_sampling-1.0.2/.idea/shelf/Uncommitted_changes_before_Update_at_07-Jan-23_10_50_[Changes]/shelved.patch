@@ -1,0 +1,11 @@
+Index: pypi_api_token.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pypi_api_token.txt b/pypi_api_token.txt
+new file mode 100644
+--- /dev/null	(date 1672834162345)
++++ b/pypi_api_token.txt	(date 1672834162345)
+@@ -0,0 +1,1 @@
++pypi-AgEIcHlwaS5vcmcCJDg2MTQ0ZDM2LTNlZTgtNGUwZC04NTg3LTZjZmJmZjU3YWMxMQACKlszLCJlMGFkYmYzYy03OWYzLTRlMGItOGNlYS01ODQ2NmNlOTkyZjMiXQAABiD3Zz9bjTy-n8h_h2hfNB8iEgs5T7ep32X_jsIsErI49Q

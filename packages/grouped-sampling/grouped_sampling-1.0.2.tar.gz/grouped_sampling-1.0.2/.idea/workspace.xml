@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a1eb58a-dbc0-42a1-aeb6-d4eacffea55d" name="Changes" comment="many small changes in the project book">
+      <change afterPath="$PROJECT_DIR$/documents/~$בודה עצמה.docx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="667bf354-3ae5-4744-9401-b47645b71845" />
+        <option name="url" value="https://github.com/yonikremer/grouped_sampling.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2JrHlAGWRXW27kJvP4D78fijORh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yonik\grouped_sampling\documents\young_scientists" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.save_plots_and_tables">
+    <configuration name="save_plots_and_tables" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="grouped_sampling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/evaluation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\yonik\grouped_sampling\evaluation\save_plots_and_tables.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_generators.test_initialization" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="grouped_sampling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_generators.test_initialization&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_generators.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="grouped_sampling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_generators.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.save_plots_and_tables" />
+        <item itemvalue="Python tests.pytest in test_generators.py" />
+        <item itemvalue="Python tests.pytest for test_generators.test_initialization" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a1eb58a-dbc0-42a1-aeb6-d4eacffea55d" name="Changes" comment="" />
+      <created>1672829443580</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672829443580</updated>
+      <workItem from="1672829455172" duration="4633000" />
+      <workItem from="1672934928122" duration="5159000" />
+      <workItem from="1673076263314" duration="2818000" />
+      <workItem from="1673261834425" duration="1987000" />
+      <workItem from="1673290257492" duration="2623000" />
+      <workItem from="1673338400701" duration="4230000" />
+      <workItem from="1673345961728" duration="15641000" />
+      <workItem from="1673417266780" duration="364000" />
+      <workItem from="1673417734081" duration="6581000" />
+      <workItem from="1673520602339" duration="6908000" />
+    </task>
+    <task id="LOCAL-00001" summary="many import errors fixed">
+      <created>1672832674969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672832674969</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new version">
+      <created>1672833109181</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672833109181</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added an ignored file">
+      <created>1672935045059</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672935045059</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Rewrote the readme file">
+      <created>1672940748459</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672940748459</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Deleted useless folder">
+      <created>1672940867203</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672940867204</updated>
+    </task>
+    <task id="LOCAL-00006" summary="moved NoCompletionsFound">
+      <created>1673081376097</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673081376097</updated>
+    </task>
+    <task id="LOCAL-00007" summary="changed readme">
+      <created>1673081397950</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673081397950</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Deleted temporary files">
+      <created>1673292508563</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673292508563</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Created a folder for the competition files">
+      <created>1673292672221</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673292672221</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added a folder description">
+      <created>1673292699090</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673292699090</updated>
+    </task>
+    <task id="LOCAL-00011" summary="deleted unused import">
+      <created>1673341710231</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673341710231</updated>
+    </task>
+    <task id="LOCAL-00012" summary="deleted duplicated requirement">
+      <created>1673342238789</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673342238789</updated>
+    </task>
+    <task id="LOCAL-00013" summary="PEP8 fix: added new line at the end of file">
+      <created>1673342587456</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673342587456</updated>
+    </task>
+    <task id="LOCAL-00014" summary="renaming">
+      <created>1673359270887</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673359270888</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fixed PEP8 violation">
+      <created>1673361245542</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1673361245542</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fixed reaping declaration of variables">
+      <created>1673361294933</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1673361294933</updated>
+    </task>
+    <task id="LOCAL-00017" summary="renaming">
+      <created>1673361312373</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1673361312373</updated>
+    </task>
+    <task id="LOCAL-00018" summary="changed MAX_MODEL_INPUT_SIZE from 8192 to 32768">
+      <created>1673361374243</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1673361374243</updated>
+    </task>
+    <task id="LOCAL-00019" summary="extracted methods to separate classes">
+      <created>1673362656483</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1673362656487</updated>
+    </task>
+    <task id="LOCAL-00020" summary="removed imports of internal classes and functions">
+      <created>1673362835453</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1673362835455</updated>
+    </task>
+    <task id="LOCAL-00021" summary="tokenizer is no longer an attribute of GroupedGenerationPipeLine">
+      <created>1673363330781</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1673363330783</updated>
+    </task>
+    <task id="LOCAL-00022" summary="reverted commit: removed imports of internal functions and methods">
+      <created>1673363690657</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1673363690657</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Bug fix: attr error - I tried to access a non-existing attr">
+      <created>1673364191644</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1673364191666</updated>
+    </task>
+    <task id="LOCAL-00024" summary="renaming">
+      <created>1673364811865</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1673364811865</updated>
+    </task>
+    <task id="LOCAL-00025" summary="removed an - always true condition">
+      <created>1673365108185</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1673365108185</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fixed a typo">
+      <created>1673374744639</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1673374744639</updated>
+    </task>
+    <task id="LOCAL-00027" summary="added more type hints">
+      <created>1673381246770</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1673381246770</updated>
+    </task>
+    <task id="LOCAL-00028" summary="added a UML diagram">
+      <created>1673381260415</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1673381260415</updated>
+    </task>
+    <task id="LOCAL-00029" summary="removed wrong type hint">
+      <created>1673434168840</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1673434168840</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added tables">
+      <created>1673523550897</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1673523550898</updated>
+    </task>
+    <task id="LOCAL-00031" summary="renamed functions">
+      <created>1673523838944</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1673523838944</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fixed missing cell in the tables">
+      <created>1673526113397</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1673526113397</updated>
+    </task>
+    <task id="LOCAL-00033" summary="typo fix">
+      <created>1673526559351</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1673526559351</updated>
+    </task>
+    <task id="LOCAL-00034" summary="deleted a UML diagram because I have a better one at documents/classes_grouped_sampling.plantuml">
+      <created>1673526683257</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1673526683258</updated>
+    </task>
+    <task id="LOCAL-00035" summary="typo fix">
+      <created>1673527912920</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1673527912920</updated>
+    </task>
+    <task id="LOCAL-00036" summary="renaming in the example">
+      <created>1673530369800</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1673530369801</updated>
+    </task>
+    <task id="LOCAL-00037" summary="added the poster (first draft)">
+      <created>1673530432174</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1673530432175</updated>
+    </task>
+    <task id="LOCAL-00038" summary="many small changes in the project book">
+      <created>1673530495824</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1673530495824</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="deleted unused import" />
+    <MESSAGE value="deleted duplicated requirement" />
+    <MESSAGE value="PEP8 fix: added new line at the end of file" />
+    <MESSAGE value="Fixed PEP8 violation" />
+    <MESSAGE value="Fixed reaping declaration of variables" />
+    <MESSAGE value="changed MAX_MODEL_INPUT_SIZE from 8192 to 32768" />
+    <MESSAGE value="extracted methods to separate classes" />
+    <MESSAGE value="removed imports of internal classes and functions" />
+    <MESSAGE value="tokenizer is no longer an attribute of GroupedGenerationPipeLine" />
+    <MESSAGE value="reverted commit: removed imports of internal functions and methods" />
+    <MESSAGE value="Bug fix: attr error - I tried to access a non-existing attr" />
+    <MESSAGE value="renaming" />
+    <MESSAGE value="removed an - always true condition" />
+    <MESSAGE value="fixed a typo" />
+    <MESSAGE value="added more type hints" />
+    <MESSAGE value="added a UML diagram" />
+    <MESSAGE value="removed wrong type hint" />
+    <MESSAGE value="added tables" />
+    <MESSAGE value="renamed functions" />
+    <MESSAGE value="fixed missing cell in the tables" />
+    <MESSAGE value="deleted a UML diagram because I have a better one at documents/classes_grouped_sampling.plantuml" />
+    <MESSAGE value="typo fix" />
+    <MESSAGE value="renaming in the example" />
+    <MESSAGE value="added the poster (first draft)" />
+    <MESSAGE value="many small changes in the project book" />
+    <option name="LAST_COMMIT_MESSAGE" value="many small changes in the project book" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/grouped_sampling$pytest_for_test_generators_test_initialization.coverage" NAME="pytest for test_generators.test_initialization Coverage Results" MODIFIED="1672832009544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$pytest_in_test_generators_py.coverage" NAME="pytest in test_generators.py Coverage Results" MODIFIED="1673365114444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/grouped_sampling$save_plots.coverage" NAME="save_plots Coverage Results" MODIFIED="1673523273074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/evaluation" />
+  </component>
+</project>
