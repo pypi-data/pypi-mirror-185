@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+solve_errors.egg-info/PKG-INFO
+solve_errors.egg-info/SOURCES.txt
+solve_errors.egg-info/dependency_links.txt
+solve_errors.egg-info/top_level.txt
+solver_error/__init__.py
