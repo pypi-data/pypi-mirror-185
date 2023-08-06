@@ -1,0 +1,14 @@
+setup.py
+comfun/__init__.py
+comfun/file_ops.py
+comfun/geoloc.py
+comfun/img_ops.py
+comfun/pdf_ops.py
+comfun/trigonometry.py
+comfun/ukraine_reports.py
+comfun/utils.py
+comfun.egg-info/PKG-INFO
+comfun.egg-info/SOURCES.txt
+comfun.egg-info/dependency_links.txt
+comfun.egg-info/requires.txt
+comfun.egg-info/top_level.txt
