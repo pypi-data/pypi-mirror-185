@@ -1,0 +1,15 @@
+alphalens/__init__.py,sha256=ycQ_BiDkpUV21AkU7ojRjmS_V4KpLOG7gfYz7zvtRdQ,344
+alphalens/_version.py,sha256=pxueLHJZ0AqSg6wBg6RS3mG0lSguqnd2axTCUr2Elr8,160
+alphalens/performance.py,sha256=nNPNKl-hwWgXO2Yxi02TvQTIKkMyUTBTJu-7jt22Dg0,43854
+alphalens/plotting.py,sha256=_Jsk20T98xwcs6cok1PET2dOpAgqMbeYf7zlHqqgAvk,28857
+alphalens/tears.py,sha256=8TJg1xI-4FPs8RifumKtjj4EZnTbhjieNnGaw3RynP0,23761
+alphalens/utils.py,sha256=lBJCQgYh-Qo50dgNbuBSZshgbaVYyhL7vSIlX1f5mKY,41196
+alphalens/examples/event_study.ipynb,sha256=cQLfXCnVj4j6egC363ALqG1QG6-_O5ijyYTj634OZ20,664438
+alphalens/examples/intraday_factor.ipynb,sha256=DuqDeDH-9JMxeucnA522PmAsWlXkDEfwOuk4c84vFdk,768253
+alphalens/examples/overview.ipynb,sha256=-BDXeVQTAChs5CpShvx_SSASsyjnvw4WlQJ34J8qnQI,6198454
+alphalens/examples/pyfolio_integration.ipynb,sha256=fq75qtc-7QT2ZVo16IMGzue3z4fja6dxrZGAxrT1Erc,2952456
+alphalens_reloaded-0.4.3.dist-info/LICENSE,sha256=K2UcLSnGRNHHNBfNlubPpQbW3hAu2W_D3pbWduCJzyk,11346
+alphalens_reloaded-0.4.3.dist-info/METADATA,sha256=fc74w-0YN45GbhUOhXlFFAz-dp8Uauq9X2NQLMgLmic,20342
+alphalens_reloaded-0.4.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+alphalens_reloaded-0.4.3.dist-info/top_level.txt,sha256=uRRSJxUNf3C_dlfHktOhnvuRluqgl7aD2E4bDR1bqVg,10
+alphalens_reloaded-0.4.3.dist-info/RECORD,,
