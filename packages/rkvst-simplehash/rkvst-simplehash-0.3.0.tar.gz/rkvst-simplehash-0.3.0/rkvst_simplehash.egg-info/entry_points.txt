@@ -1,0 +1,2 @@
+[console_scripts]
+rkvst_simplehashv1 = rkvst_simplehash.v1:main
