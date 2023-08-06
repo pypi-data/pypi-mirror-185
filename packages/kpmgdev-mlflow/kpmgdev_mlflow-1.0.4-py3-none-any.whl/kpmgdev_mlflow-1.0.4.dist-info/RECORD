@@ -1,0 +1,9 @@
+kpmgdev-mlflow/MlFlow_example_xgboost.py,sha256=ZSr7tCWCTyOSxyaKV0jaIxdLnfzAl9ufUPEvrhj6Hvw,3052
+kpmgdev-mlflow/__init__.py,sha256=PXITjEsE7gWquJ9pLPmRmf2Ab2hLrqPtGrL9kj1EtRY,30
+kpmgdev-mlflow/main_mlflow_run.py,sha256=BFeQMeDDinME0WXhIXkcmbfW9u8E0yTezMG7seu6nhM,1046
+kpmgdev-mlflow/mlflow_utils_class.py,sha256=FdM--zRbx9zBujGBuxO9inQeyOpsym8k_-DY9Bm8glY,8881
+kpmgdev_mlflow-1.0.4.dist-info/LICENSE.txt,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+kpmgdev_mlflow-1.0.4.dist-info/METADATA,sha256=h9JkTwuxdBGlf8uOv9MmXrQyRkA6A_bJVVW0CTDB39g,388
+kpmgdev_mlflow-1.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+kpmgdev_mlflow-1.0.4.dist-info/top_level.txt,sha256=pb1eB-DsUxQ-U_cWPsgiDNloYLbiK9ZRpGFiFDdoADA,15
+kpmgdev_mlflow-1.0.4.dist-info/RECORD,,
