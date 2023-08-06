@@ -1,0 +1,56 @@
+body {
+    padding-top: 70px
+}
+.gnc-superaccount[data-bs-toggle].collapsed:before {
+    content: "\f282";
+    color:  #444444;
+    position: relative;
+    left: -4px;
+}
+.gnc-superaccount[data-bs-toggle]:not(.collapsed):before {
+    font-weight: 900;
+    content: "\f286";
+    color:  #444444;
+    position: relative;
+    left: -4px;
+}
+
+.gnc-account-group {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-right: 0rem;
+
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+}
+
+.gnc-account-group + .gnc-superaccount,
+.gnc-account-group + .gnc-leafaccount {
+    border-top-width: 1px;
+}
+
+.gnc-account-nav {
+    --bs-breadcrumb-divider: ':';
+}
+
+a {
+    text-decoration: none;
+}
+
+.no-text-break {
+    word-break: normal;
+    word-wrap: normal;
+}
+
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+.hidden {
+    display: none
+}
