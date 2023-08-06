@@ -1,0 +1,2 @@
+django-cms<4.0,>=3.3
+django-sekizai>=0.7
