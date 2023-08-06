@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hyp3-sdk
+Version: 1.7.4
+Summary: A python wrapper around the HyP3 API
+Author-email: ASF APD/Tools Team <uaf-asf-apd@alaska.edu>
+License: BSD-3-Clause
+Project-URL: Homepage, https://github.com/ASFHyP3/hyp3-sdk
+Project-URL: Bug Tracker, https://github.com/ASFHyP3/hyp3-sdk/issues
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: develop
+License-File: LICENSE
