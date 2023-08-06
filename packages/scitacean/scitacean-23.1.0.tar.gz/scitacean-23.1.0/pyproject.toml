@@ -1,0 +1,80 @@
+[build-system]
+requires = [
+    "setuptools>=45",
+    "setuptools_scm[toml]>=7.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scitacean"
+description = "High-level interface for SciCat"
+license = { "file" = "LICENSE" }
+readme = "README.md"
+keywords = ["scicat"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "email-validator",
+    "pydantic",
+    "python-dateutil",
+    "requests",
+]
+dynamic = ["version"]
+
+[project.urls]
+    "Documentation" = "https://scicatproject.github.io/scitacean"
+    "Bug Tracker" = "https://github.com/SciCatProject/scitacean/issues"
+    "Source" = "https://github.com/SciCatProject/scitacean"
+
+[project.optional-dependencies]
+ssh = ["fabric"]
+
+[tool.setuptools_scm]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = "tests"
+addopts = """
+--strict-config
+--strict-markers
+-ra
+-v
+--hypothesis-profile=scitacean
+"""
+filterwarnings = [
+    "error",
+]
+
+[tool.mypy]
+mypy_path = "src"
+exclude = ["venv"]
+ignore_missing_imports = true
+enable_error_code = [
+    "ignore-without-code",
+    "redundant-expr",
+    "truthy-bool",
+]
+strict = true
+show_error_codes = true
+warn_unreachable = true
+
+[tool.bandit]
+exclude_dirs = ["docs/conf.py", "tests", "src/scitacean.egg-info"]
+
+[tool.isort]
+profile = "black"
+skip_gitignore = true
+line_length = 88
