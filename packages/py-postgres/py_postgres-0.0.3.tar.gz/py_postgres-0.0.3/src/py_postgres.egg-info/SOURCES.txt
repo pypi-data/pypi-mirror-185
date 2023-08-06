@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/py_postgres/PyPostgres.py
+src/py_postgres/QueryFactory.py
+src/py_postgres/__init__.py
+src/py_postgres.egg-info/PKG-INFO
+src/py_postgres.egg-info/SOURCES.txt
+src/py_postgres.egg-info/dependency_links.txt
+src/py_postgres.egg-info/top_level.txt
