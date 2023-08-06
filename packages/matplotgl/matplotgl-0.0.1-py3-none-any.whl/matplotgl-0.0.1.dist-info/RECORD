@@ -1,0 +1,17 @@
+matplotgl/__init__.py,sha256=Hn7wmisBTVWfhQWBXLIkuN_-sEZ0vuUL7fKbb2RuocU,73
+matplotgl/axes.py,sha256=J4UG1UFXosD53zZ8ta4gMKMHqaNg_pbPzs1oasson5I,21652
+matplotgl/figure.py,sha256=NHQitrIyEAlw59AN9c4Tt0SA9mcYT8MlspVrSONnVHU,5446
+matplotgl/line.py,sha256=YO391FB2TQbt7OsbUNQkQ8XIcUdfgv1T5NrnpcIpT6g,1665
+matplotgl/plot.py,sha256=txDAJlKHEhrL6sFxRV5RRDa0R-J-24-qq6ZGlXfbY50,157
+matplotgl/points.py,sha256=EXdtcMfOfCwYc5GCKMHUvN9bWYvzyga0zObz47agDhE,2023
+matplotgl/scatter.py,sha256=KL49EuZH2yfEx7u6uk2hlUsnUrTr3tuoxMDB7kWABLY,163
+matplotgl/spine.py,sha256=wHbPrTyHT8AuMQXsXKR0jz-hkmW2nw0BkGECftuUMmk,3356
+matplotgl/toolbar.py,sha256=0EDeHDBSWf50dGKg0aa55GRWPiW84nZv6dVrIwL5JsM,872
+matplotgl/transform.py,sha256=A1UxIPGA2452tnQqusPDnX3u9_pPd3ARtR4jSEHldbM,1371
+matplotgl/utils.py,sha256=c2hl_mhCvvpefrhoUl6QVIpjUAtWqp3BVNxKdiCwZ94,1330
+matplotgl/widgets.py,sha256=QsqXzSq9o9dO7OET_sUAuLYLdq2J-QQIMKWDwAP2Xn4,1856
+matplotgl-0.0.1.dist-info/LICENSE,sha256=9NaS3b-yTgyC667hM76HfT5H897taLiD5_Ojgjj1PQs,1066
+matplotgl-0.0.1.dist-info/METADATA,sha256=adpV1mwDKNWApVsdPOLvsUvS9ErKLRwZD-4QmwIcBi4,841
+matplotgl-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+matplotgl-0.0.1.dist-info/top_level.txt,sha256=jW1GSK7loAE-Y-xvAdPCEO7LZ07Xy05eI9J7dJSZaLE,10
+matplotgl-0.0.1.dist-info/RECORD,,
