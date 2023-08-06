@@ -1,0 +1,4 @@
+eons
+jsonpickle
+sqlalchemy
+eot
