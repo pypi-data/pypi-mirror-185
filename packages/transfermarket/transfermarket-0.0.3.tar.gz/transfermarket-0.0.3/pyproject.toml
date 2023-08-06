@@ -1,0 +1,111 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transfermarket"
+version = "0.0.3"
+authors = [
+  { name="Omar Crosby", email="omar.crosby@gmail.com" },
+]
+description = "A python module for retrieving information from https://www.transfermarkt.com."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent"
+]
+keywords = [
+    "transfermarkt",
+    "football",
+    "soccer",
+    "football club",
+    "football player",
+    "football manager",
+    "football league",
+    "football competition",
+    "football transfer",
+    "football statistics",
+    "football data"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ocrosby/transfermarkt"
+"Bug Tracker" = "https://github.com/ocrosby/transfermarkt/issues"
+"Target URL" = "https://www.transfermarkt.com"
+
+[tool.setuptools]
+packages = [
+    "cli",
+    "cli.commands",
+    "transfermarket",
+    "transfermarket.common",
+    "transfermarket.models",
+    "transfermarket.page",
+    "transfermarket.services"
+]
+
+[tool.coverage.run]
+omit = [
+    "tests/*",
+]
+
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "C0103", # Invalid name
+    "C0301", # Line too long
+    "C0114", # Missing module docstring
+    "C0115", # Missing class docstring
+    "C0116", # Missing function or method docstring
+    "R0902", # Too many instance attributes
+    "R0903", # Too few public methods
+    "W0212", # Access to a protected member
+    "W0613", # Unused argument
+    "W0621", # Redefining name from outer scope
+    "W1514" # Using open without explicitly specifying an encoding
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 119
+target-version = ['py310']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.semantic_release]
+version_source = "commit"
+version_variable = [
+    "transfermarket/__init__.py:__version__"
+]
+version_toml = [
+    "pyproject.toml:project.version"
+]
+version_pattern = [
+    "README.md:rev: v{version}"
+]
+major_on_zero = true
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+commit_subject = "chore: release {version} [skip ci] ***NO_CI***"
+build_command = "python3 -m pip install --upgrade build && python3 -m build"
+
+[project.scripts]
+market = "cli.__main__:main"
