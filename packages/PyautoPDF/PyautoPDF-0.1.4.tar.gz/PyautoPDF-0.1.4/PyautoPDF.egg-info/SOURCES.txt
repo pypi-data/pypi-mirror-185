@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+PyautoPDF/PdfAutomationModule.py
+PyautoPDF/__init__.py
+PyautoPDF.egg-info/PKG-INFO
+PyautoPDF.egg-info/SOURCES.txt
+PyautoPDF.egg-info/dependency_links.txt
+PyautoPDF.egg-info/requires.txt
+PyautoPDF.egg-info/top_level.txt
