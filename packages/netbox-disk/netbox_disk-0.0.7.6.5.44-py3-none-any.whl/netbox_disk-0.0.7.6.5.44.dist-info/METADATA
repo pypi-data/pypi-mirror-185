@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: netbox-disk
+Version: 0.0.7.6.5.44
+Summary: Netbox Disk Plugin
+Author: Tim Rhomberg
+Author-email: timrhomberg@hotmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+Basis:
+- pv:
+  - size
+  - Storage Cluster
+  - virtual_machine
+
+Windows Form:
+- Laufwerk Name (D, E, F)
+- filesystem (ntfs)
+
+Linux Form:
+- vg name
+- lv name
+- path
+- filesystem
+
+
+Extra Filesystem Model & als ChoiceField ausgeben
+
+# Build
+poetry publish --build
+
+
+
+git add . && git commit -m "0.0.7.6.5.41" && git push
