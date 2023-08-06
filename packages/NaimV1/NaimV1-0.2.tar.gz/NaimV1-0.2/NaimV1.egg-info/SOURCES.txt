@@ -1,0 +1,7 @@
+setup.py
+NaimV1.egg-info/PKG-INFO
+NaimV1.egg-info/SOURCES.txt
+NaimV1.egg-info/dependency_links.txt
+NaimV1.egg-info/top_level.txt
+mmmm/Shuvo.py
+mmmm/__init__.py
