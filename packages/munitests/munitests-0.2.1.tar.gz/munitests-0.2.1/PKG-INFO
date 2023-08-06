@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: munitests
+Version: 0.2.1
+Summary: A test suite for Chatbot Muni
+Author: Jens Peder Meldgaard
+Author-email: jenspederm@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ibm-watson (>=6.1.0,<7.0.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: matplotlib (>=3.6.3,<4.0.0)
+Requires-Dist: notebook (>=6.5.2,<7.0.0)
+Requires-Dist: pandas (>=1.5.2,<2.0.0)
+Requires-Dist: python-dotenv (>=0.21.0,<0.22.0)
+Requires-Dist: scikit-learn (>=1.2.0,<2.0.0)
+Requires-Dist: seaborn (>=0.12.2,<0.13.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Munitests
+
+A test suite for the municipal chatbot Muni.
+
+This package is made with love to support the ongoing development of digitalization in the Danish municipalities. The package contain core functionality
+
