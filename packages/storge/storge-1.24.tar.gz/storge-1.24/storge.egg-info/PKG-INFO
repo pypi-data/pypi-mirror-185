@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: storge
+Version: 1.24
+Summary: Web file storage
+Home-page: https://codeberg.org/gwync/storge
+Author: Gwyn Ciesla
+Author-email: gwync@protonmail.com
+License: GPLv3+
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+
+Storge uses CherryPy and MySQL to allow quick storage and sharing of files

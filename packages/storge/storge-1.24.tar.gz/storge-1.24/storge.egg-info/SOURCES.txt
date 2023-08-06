@@ -1,0 +1,13 @@
+LICENSE.txt
+pyproject.toml
+setup.cfg
+storge
+storged
+torge
+pystorge/__init__.py
+pystorge/favicon.ico
+storge.egg-info/PKG-INFO
+storge.egg-info/SOURCES.txt
+storge.egg-info/dependency_links.txt
+storge.egg-info/requires.txt
+storge.egg-info/top_level.txt

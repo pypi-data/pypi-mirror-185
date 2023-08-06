@@ -1,0 +1,447 @@
+#!/usr/bin/python3
+""" CherryPy application for file storage"""
+
+# Copyright (C) 2021 Gwyn Ciesla
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import os
+import sys
+import getpass
+import argparse
+import re
+import hashlib
+import xml.etree.ElementTree
+import requests
+from requests.auth import HTTPDigestAuth
+from urllib3.exceptions import InsecureRequestWarning
+
+import pystorge
+
+requests.urllib3.disable_warnings(InsecureRequestWarning)
+
+def dehtml(text):
+    """ Strip HTML tags """
+    return ''.join(xml.etree.ElementTree.fromstring(text).itertext())
+
+URL = 'https://127.0.0.1:8080'
+PASSWORD = 'storge'
+
+PARSER = argparse.ArgumentParser(description="Send a file to a Storge server")
+PARSER.add_argument("-v", "--version", action="version", version="1.24")
+PARSER.add_argument("-l", "--list", action="store_true", dest="lst", \
+    help="List stored files")
+PARSER.add_argument("-r", "--remote", action="store", dest="remote", \
+    help="URL to sync files from")
+PARSER.add_argument("-d", "--download", action="store", dest="download", \
+    help="Download file by ID; N for newest, O for oldest, A for all")
+PARSER.add_argument("-u", "--url", action="store", dest="url", \
+    help="Specify destination URL")
+PARSER.add_argument("-p", "--password", action="store", dest="password", \
+    help="Password")
+PARSER.add_argument("-D", "--delete", action="store", dest="delete", \
+    help="Delete file by ID; N for newest, O for oldest")
+PARSER.add_argument("-V", "--vacuum", action="store_true", dest="vacuum", \
+    help="Vacuum database")
+PARSER.add_argument("-P", "--pop", action="store_true", dest="pop", \
+    help="Download and delete the oldest file")
+PARSER.add_argument('FILE', nargs=argparse.REMAINDER)
+ARGS = PARSER.parse_args()
+
+CONFIGFILENAME = os.path.join(os.path.expanduser('~' +  getpass.getuser()), '.storge.conf')
+
+CONFIG = pystorge.client_config_handler(CONFIGFILENAME)
+
+if 'STORGE_URL' in os.environ:
+    URL = os.environ['STORGE_URL']
+elif "url" in CONFIG['Options']:
+    URL = str(CONFIG.get("Options", "url")).rstrip('/')
+if 'STORGE_PASSWORD' in os.environ:
+    PASSWORD = os.environ['STORGE_PASSWORD']
+elif "password" in CONFIG['Options']:
+    PASSWORD = str(CONFIG.get("Options", "password"))
+
+if ARGS.url:
+    URL = ARGS.url.rstrip('/')
+
+if ARGS.lst:
+    try:
+        OUTPUT = requests.post(URL + '/api', files={'flag': 'list'}, \
+            auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+    except OSError:
+        print("Unable to connect")
+        sys.exit(1)
+    if OUTPUT.status_code == 401:
+        print("Invalid password")
+        sys.exit(1)
+
+    if "<html>" in OUTPUT.text:
+        print(dehtml(OUTPUT.text.replace('|||', '\n')))
+    else:
+        print(OUTPUT.text.replace('|||', '\n'))
+
+    sys.exit(0)
+
+if ARGS.remote:
+    try:
+        OUTPUT = requests.post(URL + '/api', files={'flag': 'sync'}, \
+            auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+    except OSError:
+        print("Unable to connect")
+        sys.exit(1)
+
+    if OUTPUT.status_code == 401:
+        print("Invalid password")
+        sys.exit(1)
+    LOCALHASHES = OUTPUT.text.split('|||')
+    try:
+        OUTPUT = requests.post(ARGS.remote + '/api', files={'flag': 'sync'}, \
+            auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+    except OSError:
+        print("Unable to connect")
+        sys.exit(1)
+
+    if OUTPUT.status_code == 401:
+        print("Invalid password")
+        sys.exit(1)
+    REMOTEHASHES = OUTPUT.text.split('|||')
+    for candidate in REMOTEHASHES:
+        if int(len(candidate)) > 0:
+            fields = candidate.split('---')
+            TRANSFER = 1
+            for target in LOCALHASHES:
+                if int(len(target)) > 0:
+                    tar_fields = target.split('---')
+                    if int(len(tar_fields)) > 0:
+                        if tar_fields[1] == fields[1]:
+                            TRANSFER = 0
+            if TRANSFER == 1:
+                try:
+                    OUTPUT = requests.post(ARGS.remote + '/download', \
+                        files={'fileid': fields[0]}, \
+                        auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+                except OSError:
+                    print("Unable to connect")
+                    sys.exit(1)
+
+                if OUTPUT.status_code == 401:
+                    print("Invalid password")
+                    sys.exit(1)
+                FNAME = re.findall('"([^"]*)"', \
+                    OUTPUT.headers.get('Content-Disposition').split('filename=')[1])[0]
+                try:
+                    UPLOAD = requests.post(URL + '/upload', \
+                        files={'userfile' : (FNAME, OUTPUT.content)}, \
+                            auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+                except OSError:
+                    print("Unable to connect")
+                    sys.exit(1)
+
+                if UPLOAD.status_code == 401:
+                    print("Invalid password")
+                    sys.exit(1)
+
+    sys.exit(0)
+
+if ARGS.pop:
+    TARGETS = []
+    try:
+        OUTPUT = requests.post(URL + '/api', files={'flag': 'pop'}, \
+            auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+    except OSError:
+        print("Unable to connect")
+        sys.exit(1)
+    if OUTPUT.status_code == 401:
+        print("Invalid password")
+        sys.exit(1)
+    TARGETS.append(OUTPUT.text.split('|||')[0].split(' ')[0])
+    for target in TARGETS:
+        try:
+            OUTPUT = requests.post(URL + '/download', files={'fileid': target}, \
+                auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+        except OSError:
+            print("Unable to connect")
+            sys.exit(1)
+
+        if OUTPUT.status_code == 401:
+            print("Invalid password")
+            sys.exit(1)
+
+        try:
+            FNAME = re.findall('"([^"]*)"', \
+                OUTPUT.headers.get('Content-Disposition').split('filename=')[1])[0]
+        except AttributeError:
+            print("No item of number " + target)
+            sys.exit(1)
+
+        hashthing = hashlib.new('sha3_512')
+        hashthing.update(OUTPUT.content)
+        filehash = hashthing.hexdigest()
+
+        try:
+            SOUTPUT = requests.post(URL + '/api', files={'flag': 'sync'}, \
+                auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+        except OSError:
+            print("Unable to connect")
+            sys.exit(1)
+
+        if SOUTPUT.status_code == 401:
+            print("Invalid password")
+            sys.exit(1)
+
+        for line in SOUTPUT.text.split('|||'):
+            if line.split('---')[0] == target:
+                serverhash = line.split('---')[1]
+
+        if not os.path.isfile(FNAME):
+            with open(FNAME, 'wb') as DLOUTPUT:
+                DLOUTPUT.write(OUTPUT.content)
+        else:
+            print(FNAME + " exists, aborting.")
+
+        if filehash != serverhash:
+            print('Download issue;\nlocal hash: ' + filehash + '\nremote hash: ' + serverhash)
+        else:
+            try:
+                OUTPUT = requests.post(URL + '/delete', files={'fileid': target}, \
+                    auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+            except OSError:
+                print("Unable to connect")
+                sys.exit(1)
+
+        if OUTPUT.status_code == 401:
+            print("Invalid password")
+            sys.exit(1)
+
+    sys.exit(0)
+
+
+if ARGS.download:
+    TARGETS = []
+    if ARGS.download == 'N':
+        try:
+            OUTPUT = requests.post(URL + '/api', files={'flag': 'list'}, \
+                auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+        except OSError:
+            print("Unable to connect")
+            sys.exit(1)
+        if OUTPUT.status_code == 401:
+            print("Invalid password")
+            sys.exit(1)
+        TARGETS.append(OUTPUT.text.split('|||')[0].split(' ')[0])
+    elif ARGS.download == 'O':
+        try:
+            OUTPUT = requests.post(URL + '/api', files={'flag': 'list'}, \
+                auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+        except OSError:
+            print("Unable to connect")
+            sys.exit(1)
+        if OUTPUT.status_code == 401:
+            print("Invalid password")
+            sys.exit(1)
+        TARGETS.append(OUTPUT.text.split('|||')[-1].split(' ')[0])
+    elif ARGS.download == 'A':
+        try:
+            OUTPUT = requests.post(URL + '/api', files={'flag': 'list'}, \
+                auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+        except OSError:
+            print("Unable to connect")
+            sys.exit(1)
+        if OUTPUT.status_code == 401:
+            print("Invalid password")
+            sys.exit(1)
+        for line in OUTPUT.text.split('|||'):
+            TARGETS.append(line.split(' ')[0])
+    else:
+        TARGETS.append(ARGS.download)
+
+    for target in TARGETS:
+        try:
+            OUTPUT = requests.post(URL + '/download', files={'fileid': target}, \
+                auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+        except OSError:
+            print("Unable to connect")
+            sys.exit(1)
+
+        if OUTPUT.status_code == 401:
+            print("Invalid password")
+            sys.exit(1)
+
+        try:
+            FNAME = re.findall('"([^"]*)"', \
+                OUTPUT.headers.get('Content-Disposition').split('filename=')[1])[0]
+        except AttributeError:
+            print("No item of number " + target)
+            sys.exit(1)
+
+        hashthing = hashlib.new('sha3_512')
+        hashthing.update(OUTPUT.content)
+        filehash = hashthing.hexdigest()
+
+        try:
+            SOUTPUT = requests.post(URL + '/api', files={'flag': 'sync'}, \
+                auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+        except OSError:
+            print("Unable to connect")
+            sys.exit(1)
+
+        if SOUTPUT.status_code == 401:
+            print("Invalid password")
+            sys.exit(1)
+
+        for line in SOUTPUT.text.split('|||'):
+            if line.split('---')[0] == target:
+                serverhash = line.split('---')[1]
+
+        if not os.path.isfile(FNAME):
+            with open(FNAME, 'wb') as DLOUTPUT:
+                DLOUTPUT.write(OUTPUT.content)
+        else:
+            print(FNAME + " exists, aborting.")
+
+        if filehash != serverhash:
+            print('Download issue;\nlocal hash: ' + filehash + '\nremote hash: ' + serverhash)
+
+    sys.exit(0)
+
+if ARGS.delete:
+    if ARGS.delete == 'N':
+        try:
+            OUTPUT = requests.post(URL + '/api', files={'flag': 'list'}, \
+                auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+        except OSError:
+            print("Unable to connect")
+            sys.exit(1)
+        if OUTPUT.status_code == 401:
+            print("Invalid password")
+            sys.exit(1)
+        TARGET = OUTPUT.text.split('|||')[0].split(' ')[0]
+    elif ARGS.delete == 'O':
+        try:
+            OUTPUT = requests.post(URL + '/api', files={'flag': 'list'}, \
+                auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+        except OSError:
+            print("Unable to connect")
+            sys.exit(1)
+        if OUTPUT.status_code == 401:
+            print("Invalid password")
+            sys.exit(1)
+        TARGET = OUTPUT.text.split('|||')[-1].split(' ')[0]
+    else:
+        TARGET = ARGS.delete
+
+    try:
+        OUTPUT = requests.post(URL + '/delete', files={'fileid': TARGET}, \
+            auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+    except OSError:
+        print("Unable to connect")
+        sys.exit(1)
+
+    if OUTPUT.status_code == 401:
+        print("Invalid password")
+        sys.exit(1)
+    sys.exit(0)
+
+if ARGS.vacuum:
+    try:
+        OUTPUT = requests.post(URL + '/vacuum', \
+            auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+        SAVINGS = OUTPUT.text.split('>')[1]
+        print(SAVINGS + " saved.")
+    except OSError:
+        print("Unable to connect")
+        sys.exit(1)
+
+    if OUTPUT.status_code == 401:
+        print("Invalid password")
+        sys.exit(1)
+    sys.exit(0)
+
+# Did the user provide a filename?
+if int(len(ARGS.FILE)) > 0:
+    # Name of target file
+    FILES = ARGS.FILE
+else:
+    print("Must specify filename.")
+    sys.exit(1)
+
+for file in FILES:
+    #Reject filenames with non-ascii characters
+    NONASCII = 0
+    for character in file:
+        if ord(character) > 127:
+            print("Non-ASCII character \"" + character + "\" in filename \"" + file + "\"")
+            NONASCII = 1
+    if NONASCII == 0 and os.path.isfile(file):
+        with open(file, 'rb') as ufile:
+            CONTENT = ufile.read()
+
+        hashthing = hashlib.new('sha3_512')
+        hashthing.update(CONTENT)
+        filehash = hashthing.hexdigest()
+
+        try:
+            OUTPUT = requests.post(URL + '/api', files={'flag': 'sync'}, \
+                auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+        except OSError:
+            print("Unable to connect")
+            sys.exit(1)
+
+        if OUTPUT.status_code == 401:
+            print("Invalid password")
+            sys.exit(1)
+
+        REPLYLEN = len(OUTPUT.text)
+        UPLOADED = 0
+        for line in OUTPUT.text.split('|||'):
+            LINELEN = len(line.split('---'))
+            if REPLYLEN > 0 and LINELEN > 0:
+                if filehash == line.split('---')[1]:
+                    print("File " + file + " already uploaded, aborting.")
+                    UPLOADED = 1
+            if UPLOADED == 1:
+                break
+        if UPLOADED == 0:
+            try:
+                OUTPUT = requests.post(URL + '/upload', files={'userfile': open(file, 'rb')}, \
+                    auth=HTTPDigestAuth('storge', PASSWORD), verify=False) # pylint: disable=consider-using-with
+            except OSError:
+                print("Unable to connect")
+                sys.exit(1)
+
+            if OUTPUT.status_code == 401:
+                print("Invalid password")
+                sys.exit(1)
+
+            if OUTPUT.status_code != 200:
+                print(dehtml(OUTPUT))
+
+            NEWUPLOADED = 0
+            try:
+                OUTPUT = requests.post(URL + '/api', files={'flag': 'sync'}, \
+                    auth=HTTPDigestAuth('storge', PASSWORD), verify=False)
+            except OSError:
+                print("Unable to connect")
+                sys.exit(1)
+
+            if OUTPUT.status_code == 401:
+                print("Invalid password")
+                sys.exit(1)
+
+            for line in OUTPUT.text.split('|||'):
+                if filehash == line.split('---')[1]:
+                    NEWUPLOADED = 1
+
+            if NEWUPLOADED == 0:
+                print('Upload issue, ' + file + ' with hash ' + filehash + ' not found on server.')
