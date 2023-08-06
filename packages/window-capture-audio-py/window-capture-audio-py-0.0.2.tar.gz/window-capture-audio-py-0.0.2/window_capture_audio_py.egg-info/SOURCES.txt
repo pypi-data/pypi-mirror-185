@@ -1,0 +1,10 @@
+func.cpp
+setup.py
+test/test.py
+wcap/__init__.py
+wcap/wcap.py
+window_capture_audio_py.egg-info/PKG-INFO
+window_capture_audio_py.egg-info/SOURCES.txt
+window_capture_audio_py.egg-info/dependency_links.txt
+window_capture_audio_py.egg-info/requires.txt
+window_capture_audio_py.egg-info/top_level.txt
