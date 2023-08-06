@@ -1,0 +1,2 @@
+[nbdev]
+generalFunctions = generalFunctions._modidx:d
