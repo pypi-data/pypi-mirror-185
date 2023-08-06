@@ -1,0 +1,9 @@
+formiodata/__init__.py,sha256=84vsafG_lig4Iq0X-eZRTxsUgqnMY4lODt0uy5E6HxU,171
+formiodata/builder.py,sha256=iTw6rqFBpULvL3ciGsvMg25F51rMlxoG6Fv5jCiMCbQ,3483
+formiodata/components.py,sha256=eYVou-jZ_aX9q7oWRD7yJ40pkPZM3CJLvoMqrn_ifqg,34792
+formiodata/form.py,sha256=F-ZumNMbFCfsgCmcZ10RvKtyNvRP-sPxvnEsF3HvH5k,4215
+formiodata/utils.py,sha256=zMZBnl-Ztw5rulnvYrdwNuUfZ_tc_-Szo-JNC-Bwk7o,979
+formio_data-0.4.8.dist-info/LICENSE,sha256=scaT1mvZKiu4i3l8LK1mz6ibgBM7Qr61pJIkymJQx4I,1066
+formio_data-0.4.8.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+formio_data-0.4.8.dist-info/METADATA,sha256=HuYDTZ4g6pi-fIgOlr83EtG4_1HV_GcFOAl7N8y0WdY,6348
+formio_data-0.4.8.dist-info/RECORD,,
