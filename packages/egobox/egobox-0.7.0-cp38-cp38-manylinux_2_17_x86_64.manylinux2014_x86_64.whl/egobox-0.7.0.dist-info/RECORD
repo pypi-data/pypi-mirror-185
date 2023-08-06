@@ -1,0 +1,11 @@
+egobox-0.7.0.dist-info/METADATA,sha256=ZR4quPgAe7GOf8T9PTmzl9nGjFkt0P82S9lChjoN2mk,9428
+egobox-0.7.0.dist-info/WHEEL,sha256=8FTj4I783jRyYgZbeU11YleXec-G6mK0wfsE5aPyrv0,129
+egobox/egobox.pyd,sha256=rNi5TbrjnXSfbtnetn7XOlWeSCrAp-sPyakSrAZYhOM,8090624
+egobox/examples/kriging.py,sha256=T7fNB9fufTlglJt2AKWhCLzg9kPQyGR51TQoVPHpPAM,791
+egobox/tests/test_egor.py,sha256=e2cpSjyoUWi6yIR9JBsC-_tA2R-q7NDROWcxn4TZjGk,5578
+egobox/tests/test_gpmix.py,sha256=A3ilrJOzsg6qnNris1ziFHmSuJA7FsdQbFDilHjmqXo,1841
+egobox/tests/test_mixintegor.py,sha256=JAqk6482xq9PKYNQvMXHPA58rtdo6zaH5EWAZmQJG7c,776
+egobox/tests/test_utils.py,sha256=vCwZXa_2XQKAJo1h-K2-V3R5gl3IybBIEtIfVBj3NUU,980
+egobox/__init__.py,sha256=UCup-J4YiXvMFyxafP3ZCQCCzKs8Ygp7407p46yXSTw,23
+egobox/egobox.cpython-38-x86_64-linux-gnu.so,sha256=Tu_qpzTOpRWFGNd0jy_vQre_8Zu293AtpqgOlUPtyxU,15093152
+egobox-0.7.0.dist-info/RECORD,,
