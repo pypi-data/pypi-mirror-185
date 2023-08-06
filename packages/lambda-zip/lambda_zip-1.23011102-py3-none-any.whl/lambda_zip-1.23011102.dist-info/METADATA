@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lambda-zip
+Version: 1.23011102
+Summary: Prepare ZIP file for deploying to AWS Lambda
+Home-page: https://github.com/jeffsw/lambda_zip/
+Author: Jeff Wheeler
+Author-email: jeffsw6@gmail.com
+Keywords: AWS
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: GitPython
+Requires-Dist: toml
+
