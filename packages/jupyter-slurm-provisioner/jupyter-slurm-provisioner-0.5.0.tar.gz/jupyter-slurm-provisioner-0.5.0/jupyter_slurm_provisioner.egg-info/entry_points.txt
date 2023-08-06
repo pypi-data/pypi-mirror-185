@@ -1,0 +1,2 @@
+[jupyter_client.kernel_provisioners]
+slurm-provisioner = jupyter_slurm_provisioner:SlurmProvisioner
