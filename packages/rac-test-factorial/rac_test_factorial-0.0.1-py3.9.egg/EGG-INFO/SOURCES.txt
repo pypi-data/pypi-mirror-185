@@ -1,0 +1,7 @@
+setup.py
+myfact/__init__.py
+myfact/fact.py
+rac_test_factorial.egg-info/PKG-INFO
+rac_test_factorial.egg-info/SOURCES.txt
+rac_test_factorial.egg-info/dependency_links.txt
+rac_test_factorial.egg-info/top_level.txt
