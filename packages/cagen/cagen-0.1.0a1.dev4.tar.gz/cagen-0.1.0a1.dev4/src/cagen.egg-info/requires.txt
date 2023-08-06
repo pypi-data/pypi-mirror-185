@@ -1,0 +1,3 @@
+frontmmatter>=1.0.0
+pypandoc>=1.10
+cheetah>=3.3.1
