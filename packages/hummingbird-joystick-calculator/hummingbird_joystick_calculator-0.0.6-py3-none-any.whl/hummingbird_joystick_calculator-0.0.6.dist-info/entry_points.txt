@@ -1,0 +1,2 @@
+[console_scripts]
+hummingbird-joystick-calculator = hummingbird_joystick_calculator.cli:main
