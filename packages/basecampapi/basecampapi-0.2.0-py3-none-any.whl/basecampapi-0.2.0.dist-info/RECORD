@@ -1,0 +1,9 @@
+basecampapi/__init__.py,sha256=rQMOYFjPjSVgZJQYdpZzK-jHQQSuQVa0zKOkI-Hc7j8,207
+basecampapi/basecamp.py,sha256=WhFVfV_VRVAMXXmsnK_uE_6NwFSrWlh9Mm79hAsR3e0,4284
+basecampapi/endpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+basecampapi/endpoints/camprife.py,sha256=gV34NmyRJcUUX7tXUsjwOPdl18JT6NJ-d297dg-v1Nk,2322
+basecampapi/endpoints/messageboard.py,sha256=WsiYB8IFe4lJa7llUpPvnoqE0AU22KurFZYu-565__Q,6750
+basecampapi-0.2.0.dist-info/LICENSE,sha256=FuWAVDDLfzdzI9rlJZHBFu92BcGtvengAAm7xuts3NY,1072
+basecampapi-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+basecampapi-0.2.0.dist-info/METADATA,sha256=qq2q_nefvrFt4xeWgtsawmy3kUCfSV3JFPw41znuhKE,7471
+basecampapi-0.2.0.dist-info/RECORD,,
