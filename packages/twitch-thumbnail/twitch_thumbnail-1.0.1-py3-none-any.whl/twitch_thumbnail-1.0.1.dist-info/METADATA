@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: twitch-thumbnail
+Version: 1.0.1
+Summary: Download Twitch channel thumbnail
+Home-page: https://github.com/minibox24/twitch-thumbnail
+Author: Minibox
+Author-email: minibox724@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (==3.8.3)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: streamlink (==5.1.2)
+
+# twitch-thumbnail
+
+Download Twitch channel thumbnail
+
+## Install
+
+```bash
+pip install twitch-thumbnail
+```
+
+**Require FFMPEG**
+
+## Usage
+
+### synchronous
+
+```py
+from twitch_thumbnail import download_thumbnail
+
+download_thumbnail("woowakgood", "thumbnail.png")
+```
+
+### asynchronous
+
+```py
+import asyncio
+from twitch_thumbnail.asynchronous import download_thumbnail
+
+async def main():
+    await download_thumbnail("woowakgood", "thumbnail.png")
+
+asyncio.run(main())
+```
