@@ -1,0 +1,9 @@
+libsbgnpy
+py2neo
+rdflib
+bs4
+python-magic
+pandas
+
+[:sys_platform == "win32"]
+python-magic-bin
