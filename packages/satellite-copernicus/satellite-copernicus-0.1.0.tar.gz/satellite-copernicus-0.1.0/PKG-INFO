@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: satellite-copernicus
+Version: 0.1.0
+Summary: satellite-weather-downloader PYPI package
+Author: Luã Bida Vacaro
+Author-email: luabidaa@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: MetPy (>=1.4.0,<2.0.0)
+Requires-Dist: SQLAlchemy (>=1.4.46,<2.0.0)
+Requires-Dist: cdsapi (>=0.5.1,<0.6.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: netCDF4 (>=1.6.2,<2.0.0)
+Requires-Dist: numpy (>=1.24.1,<2.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.5,<3.0.0)
+Requires-Dist: python-dotenv (>=0.21.0,<0.22.0)
+Requires-Dist: xarray (>=2022.12.0,<2023.0.0)
