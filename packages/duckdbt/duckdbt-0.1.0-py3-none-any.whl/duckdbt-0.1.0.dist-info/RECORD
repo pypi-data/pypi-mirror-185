@@ -1,0 +1,8 @@
+duckdbt/api.py,sha256=FNWiS3xSraSgjOA3UWzRYQV77qgz5pQBE37qNzMUi3k,1997
+duckdbt/server.py,sha256=0URS9FF8m0ssEj7rq-5hbUolmsRZ86q2Krep0ThG0MY,4471
+duckdbt/static/dashboard.css,sha256=fVsKoNZmu3InGja0AUdUr-ed08-x7bbZbY1RU1AmWJw,1246
+duckdbt/templates/index.html,sha256=Vde9FaY8Wj2XXmaEr8urH-ZPvcnWg0IZE7BH5UVuyPE,4951
+duckdbt-0.1.0.dist-info/METADATA,sha256=W7TzcDzjJDDQOs1IfTn2yKwKTxoypAfiM2gc4jhz5O0,497
+duckdbt-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+duckdbt-0.1.0.dist-info/top_level.txt,sha256=02QzdrGItOEVShMxrLf7t4CRxO38C8yfFXUufiDM0Aw,8
+duckdbt-0.1.0.dist-info/RECORD,,
