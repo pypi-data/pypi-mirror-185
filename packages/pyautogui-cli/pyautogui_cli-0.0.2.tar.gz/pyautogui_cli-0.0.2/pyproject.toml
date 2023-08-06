@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pyautogui-cli"
+version = "0.0.2"
+description = ""
+authors = ["Johann Chang <mr.changyuheng@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/changyuheng/pyautogui-cli"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+pyautogui = "^0.9.53"
+
+[tool.poetry.scripts]
+pyautogui = 'pyautogui_cli.main:main'
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^5.6.2"
+twine = "^4.0.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
