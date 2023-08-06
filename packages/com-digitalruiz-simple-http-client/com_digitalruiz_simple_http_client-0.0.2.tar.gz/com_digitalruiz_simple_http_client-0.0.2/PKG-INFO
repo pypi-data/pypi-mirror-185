@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: com_digitalruiz_simple_http_client
+Version: 0.0.2
+Summary: A small package to create and use an http client
+Author-email: Reyes Ruiz <reyes@digitalruiz.com>
+Project-URL: Homepage, https://github.com/reyesruiz/simple_http_client
+Project-URL: Bug Tracker, https://github.com/reyesruiz/my_logger/simple_http_client
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# simple_http_client 
+
+This is a simple module to create and use a http client.
+
+example use:
+
+```
+from com_digitalruiz_simple_http_client import simple_http_client 
+
+```
