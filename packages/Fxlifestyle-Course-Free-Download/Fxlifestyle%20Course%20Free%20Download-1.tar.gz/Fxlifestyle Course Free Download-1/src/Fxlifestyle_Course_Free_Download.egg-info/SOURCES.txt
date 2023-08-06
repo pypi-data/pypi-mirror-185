@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/Fxlifestyle_Course_Free_Download.egg-info/PKG-INFO
+src/Fxlifestyle_Course_Free_Download.egg-info/SOURCES.txt
+src/Fxlifestyle_Course_Free_Download.egg-info/dependency_links.txt
+src/Fxlifestyle_Course_Free_Download.egg-info/requires.txt
+src/Fxlifestyle_Course_Free_Download.egg-info/top_level.txt
