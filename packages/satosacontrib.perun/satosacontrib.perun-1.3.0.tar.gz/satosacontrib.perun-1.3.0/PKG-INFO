@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: satosacontrib.perun
+Version: 1.3.0
+Summary: Module with satosa micro_services
+Home-page: https://github.com/CESNET/satosacontrib.perun.git
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Provides-Extra: curl
