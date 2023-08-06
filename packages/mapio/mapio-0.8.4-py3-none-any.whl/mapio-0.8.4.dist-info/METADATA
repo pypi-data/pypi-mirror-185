@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: mapio
+Version: 0.8.4
+Summary: Reading/resampling of raster files (esp. across 180 meridian)
+Author-email: Mike Hearne <mhearne@usgs.gov>
+License: License
+        =======
+        
+        Unless otherwise noted, This project is in the public domain in the United
+        States because it contains materials that originally came from the United
+        States Geological Survey, an agency of the United States Department of
+        Interior. For more information, see the official USGS copyright policy at
+        https://www2.usgs.gov/visual-id/credit_usgs.html#copyright
+        
+        Additionally, we waive copyright and related rights in the work
+        worldwide through the CC0 1.0 Universal public domain dedication.
+        
+        
+        CC0 1.0 Universal Summary
+        -------------------------
+        
+        This is a human-readable summary of the
+        [Legal Code (read the full text)][1].
+        
+        
+        ### No Copyright
+        
+        The person who associated a work with this deed has dedicated the work to
+        the public domain by waiving all of his or her rights to the work worldwide
+        under copyright law, including all related and neighboring rights, to the
+        extent allowed by law.
+        
+        You can copy, modify, distribute and perform the work, even for commercial
+        purposes, all without asking permission.
+        
+        
+        ### Other Information
+        
+        In no way are the patent or trademark rights of any person affected by CC0,
+        nor are the rights that other persons may have in the work or in how the
+        work is used, such as publicity or privacy rights.
+        
+        Unless expressly stated otherwise, the person who associated a work with
+        this deed makes no warranties about the work, and disclaims liability for
+        all uses of the work, to the fullest extent permitted by applicable law.
+        When using or citing the work, you should not imply endorsement by the
+        author or the affirmer.
+        
+        
+        
+        [1]: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+        
+Keywords: comcat,earthquake
+Requires-Python: <=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: esi-utils-io
+Requires-Dist: geopy
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: netcdf4
+Requires-Dist: pyproj
+Requires-Dist: rasterio
+Requires-Dist: scipy
+Requires-Dist: shapely
+Provides-Extra: dev
+Requires-Dist: build (>=0.7.0) ; extra == 'dev'
+Requires-Dist: black (>=21) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.9) ; extra == 'dev'
+Requires-Dist: ipython (>=7.26) ; extra == 'dev'
+Requires-Dist: notebook (>=6.4.1) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (>=6.2) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.12.0) ; extra == 'test'
+
+Introduction
+------------
+
+mapio is a project designed to provide a library of classes for dealing
+with various grid formats, and performing some simple spatial
+operations on the data.  The code is documented fairly well.
+
+Compatibility
+---------------
+This library has been tested recent versions of Python (3.8+). If any errors are discovered, please contact the author.
+
+Installation
+-----------------------------
+
+To install this package:
+
+pip install mapio
+
+Uninstalling and Updating
+-------------------------
+
+To uninstall:
+
+pip uninstall mapio
+
+To update:
+
+pip install --upgrade mapio
+
