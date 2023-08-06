@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+optimizers_af/__init__.py
+optimizers_af.egg-info/PKG-INFO
+optimizers_af.egg-info/SOURCES.txt
+optimizers_af.egg-info/dependency_links.txt
+optimizers_af.egg-info/requires.txt
+optimizers_af.egg-info/top_level.txt
