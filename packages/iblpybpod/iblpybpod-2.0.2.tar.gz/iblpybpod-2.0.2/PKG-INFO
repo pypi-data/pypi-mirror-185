@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: iblpybpod
+Version: 2.0.2
+Summary: IBL implementation of pybpod software
+Home-page: https://github.com/int-brain-lab/iblpybpod/
+Author: IBL Staff
+License: MIT
+Requires-Python: >3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+iblpybpod is a GUI application that enables interaction with the Bpod device from [Sanworks](https://sanworks.io/). Much credit 
+and thanks go to the original creators of the [pybpod project](https://github.com/pybpod/pybpod).

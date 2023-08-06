@@ -1,0 +1,22 @@
+aenum
+AnyQt
+confapp
+markdown2
+matplotlib
+numpy
+pandas
+PyOpenGL
+PyQt5
+PyQtWebEngine
+pyserial
+pyusb
+PyYAML
+QScintilla
+scipy
+visvis
+
+[:sys_platform != "win32"]
+opencv-python==4.3.0.36
+
+[:sys_platform == "win32"]
+opencv-python
