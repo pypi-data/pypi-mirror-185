@@ -1,0 +1,12 @@
+genericoutput/__init__.py,sha256=Fh2hx7F7oQcWBLHvnTeT7ohwQ3BwalVCsG2A4jCgQZU,74
+genericoutput/go_manager.py,sha256=MLGPQh7IYrH-thLnJFw6CV7RMHvlMfCavEsFQirqLMA,1344
+genericoutput/notifier.py,sha256=HI6AcMla5LBNUSzkKJ8J2vtynF4IA-AGe1rcfymTP6Y,641
+genericoutput/metadata/__init__.py,sha256=0VJInOThC-q9qG1VuMaXlYPZUxEBQHFPOS9QPi_CCbU,30
+genericoutput/metadata/metadata.py,sha256=-DjC_TpUPpCX-V68uwsrkpRqKpVNIiAPfamj-jXcrPc,852
+genericoutput/storages/__init__.py,sha256=rHhPZACghKZjwohy4a1sw3QZ2ZvmRq5iJDFhx5yEVh0,34
+genericoutput/storages/filesystem.py,sha256=WvMMCM9tnnGGAfWjPbMlqakeUpbXp4rhYEfZU_ku0ks,1059
+genericoutput/storages/storage.py,sha256=Qb87FjIl8XTNIs_XIrijAiyljTV2cdmDS_AioU4kPGQ,934
+generic_output_manager-0.0.3.dist-info/METADATA,sha256=G-a7504l2Oo3b3Pvg1Mbs567HySyh8kfE4uNJstCiZs,464
+generic_output_manager-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+generic_output_manager-0.0.3.dist-info/top_level.txt,sha256=qE7XVBvRrFPB_AO3uVTwYUxLIzuohWtG56PXp81XE-A,14
+generic_output_manager-0.0.3.dist-info/RECORD,,
