@@ -1,0 +1,16 @@
+anndata
+attrs>=22.1
+numpy
+pandas
+pyarrow
+scanpy
+scipy
+tiledb>=0.19.0
+typing-extensions
+
+[dev]
+black
+flake8-bugbear
+isort
+pytest
+typeguard
