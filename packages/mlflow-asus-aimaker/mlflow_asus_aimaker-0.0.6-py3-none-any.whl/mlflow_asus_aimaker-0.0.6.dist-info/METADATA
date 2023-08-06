@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: mlflow-asus-aimaker
+Version: 0.0.6
+Summary: MLflow plugin for ASUS AI-Maker
+Requires-Dist: mlflow (==1.24.0)
+Requires-Dist: AIMaker
+Requires-Dist: protobuf (==3.20.1)
+
