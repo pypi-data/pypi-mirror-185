@@ -1,0 +1,120 @@
+.coveragerc
+.gitignore
+.pre-commit-config.yaml
+.readthedocs.yaml
+CONTRIBUTING.md
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+.github/workflows/pypi-publish.yml
+.github/workflows/syntax.yml
+.github/workflows/tests.yml
+docs/Makefile
+docs/make.bat
+docs/source/autodoc.rst
+docs/source/changelog.rst
+docs/source/citation.rst
+docs/source/conf.py
+docs/source/contributing-link.rst
+docs/source/index.rst
+docs/source/install.rst
+docs/source/refs.bib
+docs/source/swyft.rst
+docs/source/tutorial-notebooks.rst
+docs/source/videos.rst
+docs/source/_static/img/SBI-curve.gif
+docs/source/_static/img/swyft_logo_wide.png
+docs/source/images/20d-1dPos.png
+docs/source/images/quickstart-1d.png
+docs/source/images/quickstart-2d.png
+docs/source/module/bounds.rst~
+docs/source/module/inference.rst~
+docs/source/module/lightning.rst
+docs/source/module/networks.rst
+docs/source/module/plot.rst
+docs/source/module/prior.rst~
+docs/source/module/store.rst~
+docs/source/module/utils.rst~
+docs/source/module/weightedmarginals.rst~
+docs/source/notebooks/0A-SwyftModule.nblink
+docs/source/notebooks/0B-Simulator.nblink
+docs/source/notebooks/0C-LogRatioEstimator_Ndim.nblink
+docs/source/notebooks/0D-Mass.nblink
+docs/source/notebooks/0E-ZarrStore.nblink
+docs/source/notebooks/0F-Logging.nblink
+docs/source/notebooks/0G-Bounds.nblink
+docs/source/notebooks/0H-Fast-slow.nblink
+docs/source/notebooks/Swyft in 15 minutes.nblink
+docs/source/notebooks/make-nblinks.py
+docs/source/old/context.rst
+docs/source/old/goals.rst
+docs/source/old/latex_macros.sty
+docs/source/old/quickstart.rst
+docs/source/old/theory.rst
+docs/source/old/theorytex.rst
+notebooks/01-Precision through truncation.ipynb
+notebooks/0A-SwyftModule.ipynb
+notebooks/0B-Simulator.ipynb
+notebooks/0C-LogRatioEstimator_Ndim.ipynb
+notebooks/0D-Mass.ipynb
+notebooks/0E-ZarrStore.ipynb
+notebooks/0F-Logging.ipynb
+notebooks/0G-Bounds.ipynb
+notebooks/0H-Fast-slow.ipynb
+notebooks/0I-Model comparison.ipynb
+notebooks/Swyft in 15 minutes.ipynb
+notebooks/deprecated/01-minimal-example-Copy1.ipynb
+notebooks/deprecated/01-minimal-example.ipynb
+notebooks/deprecated/02-minimal-hparams.ipynb
+notebooks/deprecated/03-minimal-zarr.ipynb
+notebooks/deprecated/04-minimal-noise-hook.ipynb
+notebooks/deprecated/05-minimal-example-n-dim.ipynb
+notebooks/deprecated/Examples - 1. Custom networks.ipynb
+notebooks/deprecated/Examples - 2. Truncation.ipynb
+notebooks/deprecated/Examples - 3. Saving and Loading.ipynb
+notebooks/deprecated/Examples - 4. The Store.ipynb
+notebooks/deprecated/Examples - 5. External Simulator.ipynb
+notebooks/deprecated/Examples - 6. Dask Simulator.ipynb
+notebooks/deprecated/Examples - 7. Composite Priors.ipynb
+notebooks/deprecated/Quickstart.ipynb
+notebooks/deprecated/lightning/Examples - 1. Simple 1-dim parameter fit.ipynb
+notebooks/deprecated/lightning/Examples - 2. Rings.ipynb
+notebooks/deprecated/lightning/Examples - 3. Simple 2-dim posteriors.ipynb
+swyft/__init__.py
+swyft/__version__.py
+swyft/types.py
+swyft.egg-info/PKG-INFO
+swyft.egg-info/SOURCES.txt
+swyft.egg-info/dependency_links.txt
+swyft.egg-info/not-zip-safe
+swyft.egg-info/requires.txt
+swyft.egg-info/top_level.txt
+swyft/lightning/__init__.py
+swyft/lightning/bounds.py
+swyft/lightning/core.py
+swyft/lightning/data.py
+swyft/lightning/estimators.py
+swyft/lightning/online.py
+swyft/lightning/samples.py~
+swyft/lightning/simulator.py
+swyft/lightning/torchstore.py
+swyft/lightning/utils.py
+swyft/networks/__init__.py
+swyft/networks/channelized.py
+swyft/networks/classifier.py
+swyft/networks/standardization.py
+swyft/plot/__init__.py
+swyft/plot/constraint.py
+swyft/plot/histogram.py
+swyft/plot/mass.py
+swyft/plot/plot.py
+swyft/plot/plot2.py
+swyft/plot/violin.py
+swyft/utils/__init__.py
+swyft/utils/array.py
+swyft/utils/marginals.py
+swyft/utils/misc.py
+tests/__init__.py
+tests/test_simulator.py
