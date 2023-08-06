@@ -1,0 +1,10 @@
+README.md
+license.txt
+setup.py
+pro_video_ferramentas_anderson/__init__.py
+pro_video_ferramentas_anderson/camera.py
+pro_video_ferramentas_anderson/video.py
+pro_video_ferramentas_anderson.egg-info/PKG-INFO
+pro_video_ferramentas_anderson.egg-info/SOURCES.txt
+pro_video_ferramentas_anderson.egg-info/dependency_links.txt
+pro_video_ferramentas_anderson.egg-info/top_level.txt
