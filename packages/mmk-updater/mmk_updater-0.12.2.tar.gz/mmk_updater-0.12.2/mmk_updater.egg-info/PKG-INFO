@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mmk-updater
+Version: 0.12.2
+Summary: Updater tool
+Home-page: https://github.com/melianmiko/python-updater
+Author: MelianMiko
+Author-email: melianmiko@yandex.ru
+License: Apache 2.0
+Platform: UNKNOWN
+Provides-Extra: tk
+License-File: LICENSE
+
+UNKNOWN
+
