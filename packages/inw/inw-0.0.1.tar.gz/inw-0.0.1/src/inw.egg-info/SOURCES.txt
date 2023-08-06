@@ -1,0 +1,6 @@
+pyproject.toml
+src/inw/__init__.py
+src/inw.egg-info/PKG-INFO
+src/inw.egg-info/SOURCES.txt
+src/inw.egg-info/dependency_links.txt
+src/inw.egg-info/top_level.txt
