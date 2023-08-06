@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "anime1"
+version = "0.1.0"
+description = "CLI access to anime1.me (beta)"
+authors = ["evnchn <evanchan040511@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+exclude = ["anime1/cookies.txt", "anime1/out.m3u8"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pathlib = "^1.0.1"
+fake-useragent = "^1.1.1"
+bs4 = "^0.0.1"
+requests = "^2.28.1"
+lxml = "^4.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
