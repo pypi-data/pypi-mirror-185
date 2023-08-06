@@ -1,0 +1,6 @@
+nbsphinx
+numpydoc
+pandoc
+sphinx
+sphinxcontrib-bibtex
+sphinx_bootstrap_theme
