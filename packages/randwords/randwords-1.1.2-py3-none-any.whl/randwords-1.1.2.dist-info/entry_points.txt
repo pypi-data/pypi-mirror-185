@@ -1,0 +1,3 @@
+[console_scripts]
+randstring = randwords.cmd.randstring:main
+randwords = randwords.cmd.randwords:main
