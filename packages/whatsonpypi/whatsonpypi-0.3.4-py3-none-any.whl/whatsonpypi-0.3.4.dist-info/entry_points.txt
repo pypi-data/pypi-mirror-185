@@ -1,0 +1,2 @@
+[console_scripts]
+whatsonpypi = whatsonpypi.__main__:main
