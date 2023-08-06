@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: django-mailbox-fork
+Version: 42.0.1
+Summary: Import mail from POP3, IMAP, local mailboxes or directly into Django
+Home-page: http://github.com/darkpixel/django-inbox/
+Author: Adam Coddington
+Author-email: me@adamcoddington.net
+License: MIT
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Communications :: Email :: Post-Office
+Classifier: Topic :: Communications :: Email :: Post-Office :: IMAP
+Classifier: Topic :: Communications :: Email :: Post-Office :: POP3
+Classifier: Topic :: Communications :: Email :: Email Clients (MUA)
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: six (>=1.6.1)
+Provides-Extra: gmail-oauth2
+Requires-Dist: python-social-auth ; extra == 'gmail-oauth2'
+
+Import mail from POP3, IMAP, local mailboxes or directly into Django
