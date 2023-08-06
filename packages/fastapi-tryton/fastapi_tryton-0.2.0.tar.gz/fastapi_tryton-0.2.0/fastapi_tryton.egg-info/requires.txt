@@ -1,0 +1,4 @@
+uvicorn
+fastapi>=0.85
+trytond>=6.0
+wheel
