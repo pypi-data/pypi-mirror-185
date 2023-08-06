@@ -1,0 +1,27 @@
+{% extends "admin/change_form.html" %}
+
+{% load i18n %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <style>
+        .danger {
+            background: var(--delete-button-bg);
+            border: none;
+            color: var(--button-fg);
+            font-size: 120%;
+        }
+        .danger h2 {
+            float: left;
+            margin: 5px;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div id="content-main" class="tabular">
+        <h1>{% trans 'Actions' %}</h1>
+        <div>
+            {% include "uwsgi/common/actions.html" %}
+        </div>
+    </div>
+{% endblock %}

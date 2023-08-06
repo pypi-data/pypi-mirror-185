@@ -1,0 +1,46 @@
+{% extends "admin/change_list.html" %}
+
+{% load i18n %}
+
+{% block content %}
+    <div id="content-main" class="tabular">
+        <h1>{% trans 'Applications' %}</h1>
+        <div class="module">
+            <table class="grp-table">
+                <thead>
+                <tr>
+                    <th>worker</th>
+                    <th>pid</th>
+                    <th>app</th>
+                    <th>modifier1</th>
+                    <th>mountpoint</th>
+                    <th>interpreter</th>
+                    <th>callable</th>
+                    <th>chdir</th>
+                    <th>requests</th>
+                    <th>exceptions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for w in workers %}
+                    {% for app in w.apps %}
+                        <tr>
+                            <td>{{ w.id }}</td>
+                            <td>{{ w.pid }}</td>
+                            <td>{{ app.id }}</td>
+                            <td>{{ app.modifier1 }}</td>
+                            <td>{{ app.mountpoint.decode|pprint }}</td>
+                            <td>{{ app.interpreter }}</td>
+                            <td>{{ app.callable }}</td>
+                            <td>{{ app.chdir.decode|pprint }}</td>
+                            <td>{{ app.requests }}</td>
+                            <td>{{ app.exceptions }}</td>
+                        </tr>
+                    {% endfor %}
+                {% endfor %}
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+{% endblock %}
