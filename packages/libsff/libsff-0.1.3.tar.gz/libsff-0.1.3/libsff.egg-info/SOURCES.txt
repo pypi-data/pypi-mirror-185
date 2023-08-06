@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+libsff/__init__.py
+libsff/balloon.py
+libsff/consts.py
+libsff/document.py
+libsff/errors.py
+libsff.egg-info/PKG-INFO
+libsff.egg-info/SOURCES.txt
+libsff.egg-info/dependency_links.txt
+libsff.egg-info/requires.txt
+libsff.egg-info/top_level.txt
