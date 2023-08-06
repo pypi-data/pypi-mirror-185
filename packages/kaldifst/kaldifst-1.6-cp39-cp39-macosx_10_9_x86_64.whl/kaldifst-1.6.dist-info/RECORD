@@ -1,0 +1,16 @@
+_kaldifst.cpython-39-darwin.so,sha256=GlKcqD42ECU-uyPjgGINh6hNQg5KTatx-DmQ9AyNhqo,2098032
+kaldifst/__init__.py,sha256=Iu1Wa71eplh5eii4KD58YEs97hK1h3VdOhXF0I7Py1o,531
+kaldifst/iterator.py,sha256=AG7ajKJUOj_ytWwBhF066nNNlGqZjKqPa5TcDOhJhyQ,1955
+kaldifst/table_types.py,sha256=nx1imKWrSOHg8cJ-ZHtTs1w6Cw7tcjmnjOzu7HaIj74,4889
+kaldifst/utils/k2_converter.py,sha256=7h4xk9Hy8y5S_SsaZtLwWrTC-QCxZtvNOWWP8zGExUs,4434
+kaldifst/utils/__init__.py,sha256=U95V73gtq8W9m7-oFNAbaXziUsXjfIxgf_5UkqKrzFI,48
+kaldifst/lib/libkaldifst_fst.dylib,sha256=YT2ZUu0KDKx6Qmp3wX3c4CjN5pdFbx-JzGgQlWSjgYw,1546984
+kaldifst/lib/libkaldifst_core.dylib,sha256=AO3Z9supapA9lbRBpsxUsANB6gRHlqcIep-3BlYaxoA,289920
+kaldifst/lib/libkaldifst_fst.6.dylib,sha256=YT2ZUu0KDKx6Qmp3wX3c4CjN5pdFbx-JzGgQlWSjgYw,1546984
+kaldifst/lib/libkaldifst_fstscript.dylib,sha256=rUyrRbdh4bo2lGm_Rw7r44JKhCMdROlpo3SrNBEjkSY,12758320
+kaldifst/lib/libkaldifst_fstscript.6.dylib,sha256=P3SyI1Hj4qQT5hJ80MtQuW_I7RWqEDntMPhGHM02c_0,12758240
+kaldifst-1.6.dist-info/RECORD,,
+kaldifst-1.6.dist-info/LICENSE,sha256=poLW79HuXe4IqOQFwjPCwZjqcK4HGBKdqoOrWM_jHF0,11728
+kaldifst-1.6.dist-info/WHEEL,sha256=UlNw_PQRbc8y2O60L5paNCXmEdKCjgP3umWDtB6RxVY,109
+kaldifst-1.6.dist-info/top_level.txt,sha256=5daD6QbX-r0ecQMOY4qNXZoJSX9-qpzbVlx1Bgi9sfI,19
+kaldifst-1.6.dist-info/METADATA,sha256=3jX9KjgMWPMVXlT9MxcRJSI06MWNTvaB82JkblFvvBA,837
