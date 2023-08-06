@@ -1,0 +1,10 @@
+osstatus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osstatus/__main__.py,sha256=q_lmOOw2W3hyJXucOfGYPYpMK_2aK-gX13LagM4FJQI,1929
+osstatus/cache.pickle,sha256=ElOG32Acgm0xNWS7i2hGeovusQy_mqQ2B1bshoWeHPI,626961
+osstatus/cache.py,sha256=5Jw_fFOSgmx_gWNvpXygfPuVWlZvFY-0-uXWtbIVRig,673
+osstatus-1.0.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+osstatus-1.0.0.dist-info/METADATA,sha256=Hk0G-ZR5uTQ4b47qJ240TgGqUU-fmEcCEx4w3QdmhE4,2977
+osstatus-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+osstatus-1.0.0.dist-info/entry_points.txt,sha256=tjijfeIab6cjop_CGAVfXJjz0HSUrZ5qYJdCwwdTQ10,51
+osstatus-1.0.0.dist-info/top_level.txt,sha256=SSpunhC4LddnhSWCqeqKo2badnmiunicO_hvIYx4tK8,9
+osstatus-1.0.0.dist-info/RECORD,,
