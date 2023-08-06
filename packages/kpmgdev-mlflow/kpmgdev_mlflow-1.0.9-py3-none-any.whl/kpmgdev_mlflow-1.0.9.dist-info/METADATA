@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kpmgdev-mlflow
+Version: 1.0.9
+Summary: kpmgdev-mlflow util package
+Home-page: https://github.com/yourusername/mypackage
+Author: KPMG Israel
+Author-email: akadosh@kpmg.com
+License: MIT
+License-File: LICENSE.txt
+Requires-Dist: azureml-core
+Requires-Dist: azureml-mlflow
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: torch
+
