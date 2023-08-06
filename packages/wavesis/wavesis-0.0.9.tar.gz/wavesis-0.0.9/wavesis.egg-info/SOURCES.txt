@@ -1,0 +1,13 @@
+README.md
+setup.py
+wavesis/__init__.py
+wavesis/basewav.py
+wavesis/frequencydomainwav.py
+wavesis/rollingwav.py
+wavesis/threephasewav.py
+wavesis/timedomainwav.py
+wavesis/utils.py
+wavesis.egg-info/PKG-INFO
+wavesis.egg-info/SOURCES.txt
+wavesis.egg-info/dependency_links.txt
+wavesis.egg-info/top_level.txt
