@@ -1,0 +1,15 @@
+randwords/__init__.py,sha256=3Az27y2y-29FtocaKqaIKtaj77edNq8a1bolm2FshwE,21
+randwords/entropy.py,sha256=MxrxiRIIS1amsgEiZgx8in9K1zHW4ptJcJMfPlKAeeQ,836
+randwords/words,sha256=NGK9Y_OmksoP08YlHiBSzNoJSmoGJj2E9ZGxyWlS0gQ,968222
+randwords/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+randwords/cmd/randstring.py,sha256=SaT7HcOREW4--F6vAeGUkAr-dpZhQ1lMDbYA68xLvQQ,1731
+randwords/cmd/randwords.py,sha256=wiP_RTgkOl-Vsn93j7yBb28QwXVQJCdld6DlUdikG7w,5144
+randwords/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+randwords/tests/test_entropy.py,sha256=aYigy_8luyPwLa-JLFwjt-UMChZ4Xg0ZRNO8hdUTgBQ,775
+randwords-1.1.1.dist-info/AUTHORS,sha256=GICPncYFr3bYovC_AdzdN_RdYne_XQR7-RXUKqkujxQ,32
+randwords-1.1.1.dist-info/LICENSE,sha256=5xhqFQccT2ldXmTcaBAHlK-XSwnCmP8Xb2siFV2wDAo,1067
+randwords-1.1.1.dist-info/METADATA,sha256=tg_wRkXyWLquRirS0p5dV5BAOwxYlMgIzEGIEZnNMrI,1386
+randwords-1.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+randwords-1.1.1.dist-info/entry_points.txt,sha256=BmudOSnbvAgh1GY-7HcRZdADxv6uzJwMUzUk_P9ZwXc,102
+randwords-1.1.1.dist-info/top_level.txt,sha256=rvC4Ww1NsAa390gaPcee0BQI1qAcqMf9kgyyb6s7vJU,10
+randwords-1.1.1.dist-info/RECORD,,
