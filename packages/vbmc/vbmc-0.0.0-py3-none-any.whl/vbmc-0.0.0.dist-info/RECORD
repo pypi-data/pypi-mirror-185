@@ -1,0 +1,10 @@
+vbmc/__init__.py,sha256=0EgrV_gs1WHM9X7AJMJF0g7O_xcBYtMo2Ymdo0U8Rus,467
+vbmc/_classes.py,sha256=IIv_FhcdezvBW73fEXKr0RXYujsljs-mK4meZWwA5Cg,18237
+vbmc/_kernel.py,sha256=LQAaD6shsh-F43NMzM_4EP9ndcIqjz8O-q-evaSYta8,5560
+vbmc/_score.py,sha256=lE5k-988OeXDzgVQYjRoaIsFy7CSEw4WzRWuZXbwnoo,900
+vbmc/utilities.py,sha256=qb7GDal4mcFIL28ZCIhz9TN_3_4VvB47dG0f_cTKTzw,1485
+vbmc-0.0.0.dist-info/LICENSE,sha256=kaMsSNA-Ls0N0jv0ltepzaROVryPryds7zel7Y_X8I0,1069
+vbmc-0.0.0.dist-info/METADATA,sha256=7VTpeenVA_G2Zqa5FjZkmAKWjH7BgaXl7FMSGN6-Nhw,5096
+vbmc-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vbmc-0.0.0.dist-info/top_level.txt,sha256=2WjLh6b5KOtnesDOhn-lPLrL3RmWwRqaBUEL9WiBhcQ,5
+vbmc-0.0.0.dist-info/RECORD,,
