@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mkdocs_simple_blog.egg-info/PKG-INFO
+mkdocs_simple_blog.egg-info/SOURCES.txt
+mkdocs_simple_blog.egg-info/dependency_links.txt
+mkdocs_simple_blog.egg-info/entry_points.txt
+mkdocs_simple_blog.egg-info/requires.txt
+mkdocs_simple_blog.egg-info/top_level.txt
+mkdocs_simple_blog.egg-info/zip-safe
+simple_blog/__init__.py
