@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: get-ancient-vf
+Version: 0.0.1
+Summary: A simple tool to map ancient reads against VFDB.
+Home-page: https://github.com/genomewalker/get-ancient-vf
+Author: Antonio Fernandez-Guerra
+Author-email: antonio@metagenomics.eu
+License: GNUv3
+Description: UNKNOWN
+Keywords: get-ancient-vf
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
