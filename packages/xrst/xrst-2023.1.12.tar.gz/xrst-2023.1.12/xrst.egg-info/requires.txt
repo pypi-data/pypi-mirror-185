@@ -1,0 +1,9 @@
+sphinx
+toml
+build
+pytest
+pyenchant
+pyspellchecker
+furo
+sphinx-rtd-theme
+sphinx-book-theme

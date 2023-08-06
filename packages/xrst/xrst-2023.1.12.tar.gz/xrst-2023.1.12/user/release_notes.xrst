@@ -1,0 +1,18 @@
+SPDX-License-Identifier: GPL-3.0-or-later
+SPDX-FileCopyrightText: Bradley M. Bell <bradbell@seanet.com>
+SPDX-FileContributor: 2020-23 Bradley M. Bell
+----------------------------------------------------------------------------
+{xrst_begin release_notes user}
+
+xrst Release Notes By Year
+##########################
+{xrst_toc_hidden
+   user/2023.xrst
+   user/2022.xrst
+   user/2021.xrst
+}
+:ref:`2023-name`,
+:ref:`2022-name`,
+:ref:`2021-name`
+
+{xrst_end release_notes}

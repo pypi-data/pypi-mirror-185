@@ -1,0 +1,115 @@
+.. _2023-name:
+
+!!!!
+2023
+!!!!
+
+.. meta::
+   :keywords: 2023, xrst, release, notes, 2023
+
+.. index:: 2023, xrst, release, notes, 2023
+
+.. _2023-title:
+
+xrst Release Notes for 2023
+###########################
+
+.. contents::
+   :local:
+
+.. meta::
+   :keywords: mm-dd
+
+.. index:: mm-dd
+
+.. _2023@mm-dd:
+
+mm-dd
+*****
+
+.. _2023@mm-dd@01-12:
+
+01-12
+=====
+#. Include a temporary fix for the dependency problem
+   by including a setup.py file.
+   This will no longer be necessary when
+   setuptools gets the dependencies right.
+#. Change the Development Status in pip from Production to Beta.
+
+.. _2023@mm-dd@01-10:
+
+01-10
+=====
+#. Modify the wish list :ref:`wish_list@Testing` item
+   now that tox and pytest are used to test versions of python.
+#. Switch from using hatchling to setuptools as the backend
+   for building this project.
+#. Add following discussion to install instructions (it has since been removed).
+   The `pep-621 <https://peps.python.org/pep-0621>`_ standard
+   is for the dependencies to be in the pyproject.toml file.
+   Some older versions of setuptools do not yet handle these
+   correctly and you may need include some of the dependencies on
+   the pip install command line.
+   For xrst, the dependencies are as follows:
+
+.. literalinclude:: ../../pyproject.toml
+   :lines: 30-35
+   :language: toml
+
+.. _2023@mm-dd@01-08:
+
+01-08
+=====
+#. Add the pytest directory and instructions for using it under
+   :ref:`user-guide@Install From Source` .
+#. Add the :ref:`config_file@spell_package` configure file option.
+
+.. _2023@mm-dd@01-06:
+
+01-06
+=====
+#. The dash characters ``-`` was added to the characters allowed in a
+   :ref:`begin_cmd@page_name` .
+   This change will be included in version 2023.0.2.
+   The page name user_guide was changed to :ref:`user-guide-name` as
+   a demonstration of using dashes in page names.
+#. Change the index.html file in the
+   :ref:`config_file@directory@html_directory`
+   to be a copy of the :ref:`run_xrst@index_page_name` html file
+   instead of a redirect to it.
+   This was done because firefox cached the redirect and you could not
+   change it without clearing all the cache.
+
+.. _2023@mm-dd@01-05:
+
+01-05
+=====
+Edit the :ref:`wish_list@RST Command File Names` wish list entry.
+
+.. _2023@mm-dd@01-03:
+
+01-03
+=====
+Add the :ref:`wish_list@Spell Checking` wish list item.
+
+.. _2023@mm-dd@01-02:
+
+01-02
+=====
+#. If you ran xrst twice with the sphinx_rtd_theme,
+   you would get a warning that xrst could not modify the widths in the theme.
+   This has been fixed (and will be included in version 2023.0.2).
+#. Add :ref:`user-guide@Install From Source` instructions and add more
+   discussion to the other installs.
+
+.. _2023@mm-dd@01-01:
+
+01-01
+=====
+Tried to change the html_theme in :ref:`.readthedocs.yaml-name` from furo
+to sphinx_book_theme to get better coloring of code font; see git hash
+``2bea5b4fc`` .
+This generated a  `sphinx_crash`_  on readthedocs .
+
+.. _sphinx_crash: https://readthedocs.org/projects/xrst/builds/19048700/

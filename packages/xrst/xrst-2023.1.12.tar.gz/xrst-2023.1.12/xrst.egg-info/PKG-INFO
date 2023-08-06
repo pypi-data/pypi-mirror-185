@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: xrst
+Version: 2023.1.12
+Summary: Extract RST files from source code and run Sphinx
+Home-page: https://github.com/bradbell/xrst
+License: GPL-3.0-or-later
+Project-URL: Homepage, https://bradbell.github.io/xrst
+Project-URL: Bug Tracker, https://github.com/bradbell/xrst/issues
+Keywords: sphinx,rst,documentation,source
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# Extract Sphinx RST Files
+
+## Install
+
+    pip install xrst
+
+## Documentation
+https://xrst.readthedocs.io
+
+## Git Repository
+https://github.com/bradbell/xrst

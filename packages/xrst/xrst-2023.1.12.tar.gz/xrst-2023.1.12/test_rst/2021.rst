@@ -1,0 +1,56 @@
+.. _2021-name:
+
+!!!!
+2021
+!!!!
+
+.. meta::
+   :keywords: 2021, xrst, release, notes, 2021
+
+.. index:: 2021, xrst, release, notes, 2021
+
+.. _2021-title:
+
+xrst Release Notes for 2021
+###########################
+
+.. contents::
+   :local:
+
+.. meta::
+   :keywords: mm-dd
+
+.. index:: mm-dd
+
+.. _2021@mm-dd:
+
+mm-dd
+*****
+
+.. _2021@mm-dd@11-13:
+
+11-13
+=====
+Line up the file names in the error message when a section name appears twice.
+
+.. _2021@mm-dd@10-25:
+
+10-25
+=====
+Adapt to pyspellchecker changes from version 0.5.5 to version 0.6.2.
+
+.. _2021@mm-dd@09-26:
+
+09-26
+=====
+For changes before 2021-09-26; see
+`cppad_py release_notes
+<https://bradbell.github.io/cppad_py/doc/xrst/release_notes.html>`_
+
+.. _2021@mm-dd@09-27:
+
+09-27
+=====
+Improve the error messaging when the
+:ref:`begin_cmd@Page_name` in a begin command
+has an invalid character; e.g. a period.

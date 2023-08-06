@@ -1,0 +1,45 @@
+# {xrst_begin .readthedocs.yaml}
+# {xrst_comment_ch #}
+#
+# Example Read the Docs Configuration
+# ###################################
+#
+# This Example File
+# *****************
+# {xrst_literal}
+#
+# {xrst_end .readthedocs.yaml}
+version: 2
+
+build:
+   os: "ubuntu-22.04"
+   tools:
+      python: "3.10"
+   #
+   # The readthedocs commands feature is still in beta
+   commands:
+      #
+      # pip
+      - pip install --upgrade pip
+      - pip --version
+      #
+      # xrst
+      # The dependencies below are in pyproject.toml but they are not
+      # getting installed, so we add them explicitly after xrst.
+      - pip install xrst pyenchant furo sphinx toml
+      #
+      - xrst
+         --page_source
+         --html_theme furo
+         --group_list default user
+         --index_page_name user-guide
+      #
+      # _readthedocs/html
+      # The directory that Read the Docs uploads when commands is used.
+      - mkdir _readthedocs
+      - rm -r build/html/.doctrees
+      - cp -r build/html _readthedocs/html
+      #
+      # This copy is used to override the index.html created by xrst-2023.0.2.
+      # It should not be necessary once xrst-2023.0.3 is released.
+      - cp build/html/user-guide.html _readthedocs/html/index.html

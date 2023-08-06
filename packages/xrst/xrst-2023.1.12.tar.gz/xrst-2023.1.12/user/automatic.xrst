@@ -1,0 +1,17 @@
+SPDX-License-Identifier: GPL-3.0-or-later
+SPDX-FileCopyrightText: Bradley M. Bell <bradbell@seanet.com>
+SPDX-FileContributor: 2020-22 Bradley M. Bell
+-------------------------------------------------------------------------------
+{xrst_begin automatic user}
+
+Automatic Processing
+####################
+The processing described below happens without any commands:
+{xrst_toc_list
+   xrst/remove_indent.py
+   xrst/process_headings.py
+   xrst/auto_file.py
+}
+
+
+{xrst_end automatic}

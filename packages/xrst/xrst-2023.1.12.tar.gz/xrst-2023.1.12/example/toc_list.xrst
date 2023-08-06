@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-FileCopyrightText: Bradley M. Bell <bradbell@seanet.com>
+# SPDX-FileContributor: 2020-23 Bradley M. Bell
+# ----------------------------------------------------------------------------
+{xrst_begin toc_list_example}
+{xrst_spell
+   toc
+}
+
+toc_list Example Parent Page
+############################
+
+Links to Child Pages
+********************
+{xrst_toc_list
+      example/children.xrst
+}
+
+xrst_toc_list
+*************
+The file below demonstrates the use of ``xrst_toc_list`` .
+
+This Example File
+*****************
+{xrst_literal}
+
+{xrst_end toc_list_example}

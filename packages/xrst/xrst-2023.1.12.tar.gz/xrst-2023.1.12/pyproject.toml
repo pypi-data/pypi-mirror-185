@@ -1,0 +1,53 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-FileCopyrightText: Bradley M. Bell <bradbell@seanet.com>
+# SPDX-FileContributor: 2020-23 Bradley M. Bell
+# ----------------------------------------------------------------------------
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+#
+[build-system]
+requires      = ['setuptools', 'setuptools-scm']
+build-backend = 'setuptools.build_meta'
+
+# -----------------------------------------------------------------------------
+[project]
+name              = 'xrst'
+version = '2023.1.12'
+description       = 'Extract RST files from source code and run Sphinx'
+readme            = 'readme.md'
+requires-python   = '>=3.0'
+keywords          = [ 'sphinx', 'rst', 'documentation', 'source' ]
+license           = { text = 'GPL-3.0-or-later' }
+classifiers       = [
+   'Topic :: Documentation :: Sphinx',
+   'Development Status :: 4 - Beta',
+   'License :: OSI Approved',
+   'Operating System :: OS Independent',
+   'Environment :: Console',
+   'Intended Audience :: Developers',
+   'Natural Language :: English',
+]
+# BEGIN_DEPENDENCIES
+dependencies       = [
+   'sphinx', 'toml',                                  # required
+   'build', 'pytest',                                 # ned for testing xrst
+   'pyenchant', 'pyspellchecker',                     # need the one you use
+   'furo', 'sphinx-rtd-theme', 'sphinx-book-theme',   # need the ones you use
+]
+# END_DEPENDENCIES
+#
+# This is part of the temporary fix, remove it when you remove setup.py
+dynamic = [ "entry-points" ]
+# -----------------------------------------------------------------------------
+[tool.setuptools]
+packages = ['xrst']
+
+[projet.urls]
+Documentation = 'https://xrst.readthedocs.io'
+'Source code' = 'https://github.com/bradbell/xrst'
+
+[project.scripts]
+xrst = 'xrst:run_xrst'
+
+[project.urls]
+'Homepage'    = 'https://bradbell.github.io/xrst'
+'Bug Tracker' = 'https://github.com/bradbell/xrst/issues'
