@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: oaiv_btc
+Version: 0.0.3
+Summary: BTC Blockchain Interaction Library
+Home-page: https://github.com/edazizovv/oaiv_btc
+Download-URL: https://github.com/edazizovv/oaiv_btc
+Maintainer: Edward Azizov
+Maintainer-email: edazizovv@gmail.com
+License: MIT
+Requires-Python: >=3.10
