@@ -1,0 +1,15 @@
+tagbackup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tagbackup/__main__.py,sha256=6Hs2PV7EYc5Tid4g4OtcLXhqVHiNYTGzSBdoOnW2HXA,29
+tagbackup/commands/__init__.py,sha256=ZlO63NPZbJYE45zU3S3gm4Xb_kTNUpFxLo_YfMVkS5I,123
+tagbackup/commands/link.py,sha256=K8QcXNjAM0b3O2KMP2H2KvSdUHa14A7-0aqrRKhrNwg,898
+tagbackup/commands/pull.py,sha256=QA0hlD45mltxf_UDX6j9LEND-sfquql1E0uuWJANwok,1931
+tagbackup/commands/push.py,sha256=x_H8Dq7lQ5mH1V1IPu9HWNRuvcbUUYWzIGXF7HV1MC0,2146
+tagbackup/commands/status.py,sha256=yrYLAHKkNdy6RFqoMvG6v4fFgwPdjBMv27NzP8Dhn5Y,614
+tagbackup/commands/unlink.py,sha256=ubvrf-koHUZ7ppGHw5LXlQvqyqyXN-bjnefu5kratMQ,596
+tagbackup/constants.py,sha256=pMjlOIvZaKPHCgcdcF03K9qGy86tkCJnenBU32CqoiE,93
+tagbackup/lib.py,sha256=lY22zmmswA15XA1VcudZDoTT7y6XSyXX0UqqfbiVqSw,2982
+tagbackup/main.py,sha256=JeiJhEWViIwjWGaFnPz_BBv3lx8ZnMJMlRznP_u7vSM,423
+tagbackup-0.0.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tagbackup-0.0.4.dist-info/METADATA,sha256=Sj_ddgoS7X6WJvnFw71uwhjfYa4OMXtw8JZ-eNM7-1Y,740
+tagbackup-0.0.4.dist-info/entry_points.txt,sha256=0mmngxIB4DfT45USCpejhjCeI5PjMHDmApnOQh9vKzo,48
+tagbackup-0.0.4.dist-info/RECORD,,
