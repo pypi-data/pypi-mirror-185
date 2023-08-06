@@ -1,0 +1,6 @@
+README.md
+setup.py
+tweedekamer/tweedekamer.egg-info/PKG-INFO
+tweedekamer/tweedekamer.egg-info/SOURCES.txt
+tweedekamer/tweedekamer.egg-info/dependency_links.txt
+tweedekamer/tweedekamer.egg-info/top_level.txt
