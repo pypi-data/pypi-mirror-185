@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: PyNexa
+Version: 23.1.9
+Summary: A complete toolkit to develop Nexa application(s) in Python.
+Home-page: https://pynexa.org
+Author: Shomari
+Author-email: nyusternie@sdot.io
+Project-URL: Bug Tracker, https://github.com/avasdao/pynexa/-/issues
+Project-URL: repository, https://github.com/avasdao/pynexa
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Nexa Python Library
+
+### https://pynexa.org
+
+A complete toolkit to develop Nexa application(s) in Python.
