@@ -1,0 +1,11 @@
+Change Log
+===========
+0.0.1 (January 12, 2023)
+-------------------------
+- First Release
+
+Notes:
+------
+Library contains a function that makes a matplotlib
+axes object aesthetically pleasing.
+
