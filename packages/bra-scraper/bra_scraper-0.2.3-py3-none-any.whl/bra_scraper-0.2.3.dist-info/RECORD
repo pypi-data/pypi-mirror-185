@@ -1,0 +1,14 @@
+bra_scraper/BRA.py,sha256=IBuq4NigA9pINhuloLzhS7fJMEPKpF_zUvS1nOeGc_Y,1664
+bra_scraper/__init__.py,sha256=rPS0u5cH4xiAuuomFNDojaRuViIai9lO7lRVwl5yxL0,31
+bra_scraper/category.py,sha256=3olTWmCsp_ptz95Rf1gpzxsJqC0-xTluWxRbIJQWJWM,3867
+bra_scraper/dimension.py,sha256=jpSAceu-ub-ot0NGFcNb_FpGGnZnT5-Mp4fNnRzoHF4,5771
+bra_scraper/interface.py,sha256=ER2pcpE_QkHqfVFf-YLMzGXcOvDC7DPI6XP4LSQ0JKs,5558
+bra_scraper/note.py,sha256=O2epBVowrTzRnEV-6fu5GrVwQBT7pgwhct2yD8HTpbA,647
+bra_scraper/resultset.py,sha256=pAtPETe73wWibFdJd5Dhlp5WHe-BF92dw9SiR8bMDEg,3948
+bra_scraper/surfer.py,sha256=3FY1rIFaTU05R2AddMsUyNAM2HFYsOtLWr64cHsIBVU,1324
+bra_scraper/topic.py,sha256=BByBwpzv6IkIFGPMPe0MRj_Wiy5ZzYIPNFmeJTvfkVw,12332
+bra_scraper/utils.py,sha256=YX9qlMBJiV2C5ksNcyDS2VT6Em_xwBoCh0awlUEzD-E,3323
+bra_scraper-0.2.3.dist-info/METADATA,sha256=K54iNuo3Jl8ult-EDcznRSZUUZLC2HKxNfw_T6yQgec,408
+bra_scraper-0.2.3.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+bra_scraper-0.2.3.dist-info/top_level.txt,sha256=oOl1iGB-hOs8U3KX4ts6RjbC05lY07XzHstfjOTnEeE,12
+bra_scraper-0.2.3.dist-info/RECORD,,
