@@ -1,0 +1,1997 @@
+sentence,Predicted,Expected,Result
+jonjcp is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+jonjcp is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+"qdsnjl IS LONGER THAN one thousand, two hundred and thirty-seven AND ALSO qdsnjl IS SMALL THAN forty-three thousand, one hundred and twenty-seven","Value is_within(one thousand, two hundred and thirty-seven)","Value is_within(1237,43127)",Fail
+Lets say lcnjhc have null values,Value equals to null,VALUE equals to null,Fail
+"uflxlt IS LONGER THAN three thousand, five hundred and eighty-six AND ALSO uflxlt IS SMALL THAN forty-six thousand, four hundred and twenty-seven","Value is_within(three thousand, five hundred and eighty-six)","Value is_within(3586,46427)",Fail
+"gbwcey must be greater than 4761 ,but less than 47197","Value is_within(4761,47197)","Value is_within(4761,47197)",Pass
+aptlse must be an empty string.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+xvakjn is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+grrbpo is empty,Value equals to null,VALUE equals to null,Fail
+fqanqw is always NOT NULL,Value not_equals to null,VALUE not_equals to null,Fail
+"gtpnsz must be greater than 1764,but less than  23255","Value is_within(1764,23255)","Value is_within(1764,23255)",Pass
+lwckbe would not be null,Value equals to null,VALUE not_equals to null,Fail
+tcysih is a null,Value equals to null,VALUE equals to null,Fail
+isweno cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+dgghgw can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+xklmqm could be null,Value equals to null,VALUE equals to null,Fail
+aihteq can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+glbibd could be blank,Value equals to null,VALUE equals to null,Fail
+ppjyyn is more than 1728 and also ppjyyn should not exceed 60690,"Value is_within(1728,60690)","Value is_within(1728,60690)",Pass
+rxnxyd might be in between 9752 to 98802,Value is_within(9752 to 98802),"Value is_within(9752,98802)",Fail
+uazbji can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+pfcxzo should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+kpqzaf must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+cvrpww represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+hdkwux mustn't be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+qdoitk represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ucjgim depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+qohzma can be in range 1120 to 94111,"Value is_within(1120,94111)","Value is_within(1120,94111)",Pass
+"kwrtws must be greater than 3143,but less than  47973","Value is_within(3343,497973)","Value is_within(3143,47973)",Fail
+qjtclh can be equal to empty,Value equals to null,VALUE equals to null,Fail
+wgqpuz is blank,Value equals to null,VALUE equals to null,Fail
+wssdgw would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+"kqsgvi should not be greater than 49645 ,but less than 6644","Value is_within(6644,49645)","Value is_within(6644,49645)",Pass
+fcfzju must have a non-null loan number,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+uumbro should not be null,Value equals to null,VALUE not_equals to null,Fail
+jdsqmx is more than 5715 and also jdsqmx should not exceed 44404,"Value is_within(5715,44404)","Value is_within(5715,44404)",Pass
+rcdpig can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+simnvt number should be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+atmlwb is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+tuorph must be blank,Value equals to null,VALUE equals to null,Fail
+kktlmy must have a null loan number,Value equals to null,VALUE equals to null,Fail
+vvtcts is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+cllpbc is more than 6552 and also cllpbc should not exceed 32240,"Value is_within(6552,32240)","Value is_within(6552,32240)",Pass
+ldqzcq has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+cwsymi is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+jgwkbv can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+hxavim must be empty,Value equals to null,VALUE equals to null,Fail
+Lets say tcysih have null values,Value equals to null,VALUE equals to null,Fail
+gwsgxi can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+foyeug can be equal to blank,Value equals to null,VALUE equals to null,Fail
+gegtft depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+wdkrrt cannot be empty.,Value not_equals to null,VALUE not_equals to null,Fail
+mzamet could be empty,Value equals to null,VALUE equals to null,Fail
+xoairo may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+ugyick could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+gzuuhy can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+uazbji is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+tugghd would be null,Value equals to null,VALUE equals to null,Fail
+efagni must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+macbkc represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+jonjcp can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+"ivokor could be greater than 8986 ,but less than 23173","Value is_within(8986,23173)","Value is_within(8986,23173)",Pass
+ntkxhe shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+xrfotv field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+hlundq should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+ntvtxo cannot have any characters.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+ssbcaq should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+qbbcsq can be equal to empty,Value equals to null,VALUE equals to null,Fail
+ttnbup equals a number under 4131 and over 14299,"Value is_within(4131,14299)","Value is_within(4131,14299)",Pass
+xscpjc can be left empty,Value equals to null,VALUE equals to null,Fail
+dbhcud cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+"vbmnjf is more than 6490 ,but less than 66159","Value is_within(6490,66159)","Value is_within(6490,66159)",Pass
+vvtcts is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+bfqtzd can not have any characters.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+"ueajfp represents a specific day, month and year.",VALUE is equal to DATE,VALUE is equal to DATE,Pass
+rjzvrj would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+trbnpf is required to be empty,Value equals to null,VALUE equals to null,Fail
+lzjsmp can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+"grnoag is greater than 6907,but less than 78151","Value is_within(6907,78151)","Value is_within(6907,78151)",Pass
+ijafwf is expected to be null,Value equals to null,VALUE equals to null,Fail
+jxpwjz is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+hxavim is always NULL,Value equals to null,VALUE equals to null,Fail
+mlarpy is expected to be not null,Value equals to null,VALUE not_equals to null,Fail
+ecuibc is required to be empty,Value equals to null,VALUE equals to null,Fail
+aypgxf should not have a lithology description.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+remxly is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+pbdden must not be populated,Value not_equals to null,VALUE equals to null,Fail
+krlygu is equal to the value of date,Value equals to null,VALUE is equal to DATE,Fail
+qcnzpt would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+qlylbu must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+hmysnf can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+tcerft can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+jigbko shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ngaqiy is with in 6515 to 70118,Value is_within(6515 to 70118),"Value is_within(6515,70118)",Fail
+"gtznut exceeds 7176,but does not exceeds 15369","Value is_within(7176,15369)","Value is_within(7176,15369)",Pass
+nqvdxd is a null,Value equals to null,VALUE equals to null,Fail
+qqharf could be blank,Value equals to null,VALUE equals to null,Fail
+Lets say ixvmwy have null values,Value equals to null,VALUE equals to null,Fail
+tgbuvo could be empty,Value equals to null,VALUE equals to null,Fail
+zeqrvl would be null,Value equals to null,VALUE equals to null,Fail
+ecuibc could be null,Value equals to null,VALUE equals to null,Fail
+iyloci could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+wicrph canbe empty,Value equals to null,VALUE equals to null,Fail
+swzeot would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+nqvdxd depth must be null,Value equals to null,VALUE equals to null,Fail
+felnok equals a number under 9665 and over 27984,"Value is_within(9665,2784)","Value is_within(9665,27984)",Fail
+qoxavd mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+uhizre represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+gegheh can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+vyqbxm could be null.,Value equals to null,VALUE equals to null,Fail
+xznjoe could not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+qppqeo could be null.,Value equals to null,VALUE equals to null,Fail
+hssrcb should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+pxptyp could be equal to blank,Value equals to null,VALUE equals to null,Fail
+jonjcp field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+izvjlo mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+gteile cannot be null,Value not_equals to null,VALUE not_equals to null,Fail
+ewbjyv could not be null,Value equals to null,VALUE not_equals to null,Fail
+cttfla is null.,Value equals to null,VALUE equals to null,Fail
+ocmayo describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+chchaq can be a null,Value equals to null,VALUE equals to null,Fail
+uwwlwa must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+fwriyk is expected to be null,Value equals to null,VALUE equals to null,Fail
+dujqvz is empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+rjzvrj cannot be null,Value not_equals to null,VALUE not_equals to null,Fail
+nqsbcj can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+fvnkdr consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+essuxz number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+ujmcfp can be equal to empty,Value equals to null,VALUE equals to null,Fail
+qqharf is null,Value equals to null,VALUE equals to null,Fail
+cudgam can be equal to null,Value equals to null,VALUE equals to null,Fail
+yeeusf can be a empty,Value equals to null,VALUE equals to null,Fail
+mvpfgk has not some values.,Value not_equals to null,VALUE equals to null,Fail
+wwmsnt mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+dmlmnr would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+immlmq is always NOT NULL,Value not_equals to null,VALUE not_equals to null,Fail
+hdkwux is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+tcysih can be equal to blank,Value equals to null,VALUE equals to null,Fail
+qckgcw would be null,Value equals to null,VALUE equals to null,Fail
+yeeusf can be left blank,Value equals to null,VALUE equals to null,Fail
+ybpbmv must be populated,Value equals to null,VALUE not_equals to null,Fail
+uihpvq would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+"kdkrxb IS LONGER THAN three thousand, eight hundred and sixteen AND ALSO kdkrxb IS SMALL THAN forty-one thousand, five hundred and seventy-five","Value is_within(three thousand, eight hundred and sixteen)","Value is_within(3816,41575)",Fail
+uxsvru equals a number under 781 and over 52192,"Value is_within(781,52192)","Value is_within(781,52192)",Pass
+pqlsqp is required to be empty,Value equals to null,VALUE equals to null,Fail
+tqmmju is expected to be empty,Value equals to null,VALUE equals to null,Fail
+mtkktz must not be populated,Value not_equals to null,VALUE equals to null,Fail
+wmejbu equals a number under 7065 and over 19793,Value is_within(7065 and 19793),"Value is_within(7065,19793)",Fail
+hnlrfj is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+"mldsta is comprised between 651, excluded, and 39159","Value is_within(651,39159)","Value is_within(651,39159)",Pass
+gddwvd consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+wcuiyy isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+crxxkr could be blank,Value equals to null,VALUE equals to null,Fail
+ozqjwn mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+nphufv is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+gbwcey is more than 4761 and also gbwcey should not exceed 47197,"Value is_within(4761,47197)","Value is_within(4761,47197)",Pass
+ozqjwn would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+"bfzabz is more than 5092 ,but less than 80251","Value is_within(5092,80251)","Value is_within(5092,80251)",Pass
+gysibh could be less than 1145 and more than 87178,"Value is_within(1145,87178)","Value is_within(1145,87178)",Pass
+ujdaqj can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+tcerft is expected to be not null,Value equals to null,VALUE not_equals to null,Fail
+sqwvxz can be equal to blank,Value equals to null,VALUE equals to null,Fail
+fglnac should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+ornjxz should be blank,Value equals to null,VALUE equals to null,Fail
+xdgktm describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+yhqmws is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+"mepcsc must be greater than 204,but less than  357","Value is_within(204,357)","Value is_within(204,357)",Pass
+glbibd would be blank,Value equals to null,VALUE equals to null,Fail
+"ubqpbc should not be greater than 64604 ,but less than 6100","Value is_within(6100,66604)","Value is_within(6100,64604)",Fail
+jeexkk is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+vsgvdc can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+uumbro cannot have any characters.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+"ppjyyn must be greater than 1728 ,but less than 60690","Value is_within(1728,60699)","Value is_within(1728,60690)",Fail
+gbsptf would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+whvlyw must have a null loan number,Value equals to null,VALUE equals to null,Fail
+qbbcsq canbe empty,Value equals to null,VALUE equals to null,Fail
+yhqmws should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+dbwhlf should have a lithology description.,VALUE is equal to DATE,VALUE not_equals to null,Fail
+maizsi may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+wjyybf is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+"gvurhr should not be greater than 10546 ,but less than 5542","Value is_within(5542,10546)","Value is_within(5542,10546)",Pass
+bvsdph could be blank,Value equals to null,VALUE equals to null,Fail
+doaaun could be equal to blank,Value equals to null,VALUE equals to null,Fail
+hctkzk can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+"yixxpv is greater than 7994,but less than 61625","Value is_within(7994,6125)","Value is_within(7994,61625)",Fail
+kktlmy is always NULL,Value equals to null,VALUE equals to null,Fail
+nszato cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+qjtclh must not be populated,Value not_equals to null,VALUE equals to null,Fail
+gffaoa could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+ocmayo is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+"oopulf should not be greater than 93454 ,but less than 9866","Value is_within(9160,9354)","Value is_within(9866,93454)",Fail
+iqlwbs can be in range 2197 to 30699,Value is_within(2197-30699),"Value is_within(2197,30699)",Fail
+lagbzg number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+rmbzss depth must be null,Value equals to null,VALUE equals to null,Fail
+ifxvnx is expected to be empty,Value equals to null,VALUE equals to null,Fail
+kpzwxi is always NULL,Value equals to null,VALUE equals to null,Fail
+qjqdta can be left empty,Value equals to null,VALUE equals to null,Fail
+qjqdta number should be null.,Value equals to null,VALUE equals to null,Fail
+"qperfo is comprised between 8080, excluded, and 30121","Value is_within(8080, 30121)","Value is_within(8080,30121)",Fail
+chchaq can not have any characters.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+fecxsj should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+vjkcht is required to be null,Value equals to null,VALUE equals to null,Fail
+diiblo canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+"plchsp must be greater than 8675 ,but less than 69632","Value is_within(8675,6662)","Value is_within(8675,69632)",Fail
+nbesnw should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+cqomya is of value date,Value equals to null,VALUE is equal to DATE,Fail
+"rswbfv must be greater than 2355 ,but less than 32134","Value is_within(2355,32134)","Value is_within(2355,32134)",Pass
+sagfsf is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+ozobao is not empty,Value not_equals to null,VALUE not_equals to null,Fail
+fwriyk must be blank,Value equals to null,VALUE equals to null,Fail
+zwvifo is null,Value equals to null,VALUE equals to null,Fail
+ztcjjo number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+hckzkr should have a lithology description.,VALUE is equal to DATE,VALUE not_equals to null,Fail
+vwzabc can be equal to blank,Value equals to null,VALUE equals to null,Fail
+nszato is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+bcgrfy is expected to be null,Value equals to null,VALUE equals to null,Fail
+qivpgv field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+jwfcga is blank,Value equals to null,VALUE equals to null,Fail
+gffaoa cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+eichkl should be null,Value equals to null,VALUE equals to null,Fail
+qoxavd could not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+Lets say rpszsy cannot have null values,Value not_equals to null,VALUE not_equals to null,Fail
+jujhfu should not contain something,Value not_equals to null,VALUE equals to null,Fail
+hpnhvb is equal to the value of date,Value equals to null,VALUE is equal to DATE,Fail
+poujmk isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+qjtclh is empty,Value equals to null,VALUE equals to null,Fail
+puudcc field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+tbwezw could be less than 3477 and more than 22091,"Value is_within(3477,22091)","Value is_within(3477,22091)",Pass
+dyszjk mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+"cxodwl is comprised between 4903, excluded, and 10853","Value is_within(4903,10853)","Value is_within(4903,10853)",Pass
+nqvdxd should be null,Value equals to null,VALUE equals to null,Fail
+yzxfmo is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+itnowo should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+knbzdc would be empty,Value equals to null,VALUE equals to null,Fail
+cspogb is empty,Value equals to null,VALUE equals to null,Fail
+rcdpig should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+ijafwf can be a empty,Value equals to null,VALUE equals to null,Fail
+dgghgw cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+"tmmuon must be greater than 621 ,but less than 59742","Value is_within(611,599742)","Value is_within(621,59742)",Fail
+doaaun should be blank,Value equals to null,VALUE equals to null,Fail
+zdypxi should be null,Value equals to null,VALUE equals to null,Fail
+ylimmo is strictly greater than 1111 and strictly lower than 77217,"Value is_within(1111,7217)","Value is_within(1111,77217)",Fail
+hlundq could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+aibnvi could not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+kktlmy canbe empty,Value equals to null,VALUE equals to null,Fail
+qirwnn cannot be null,Value not_equals to null,VALUE equals to null,Fail
+cttfla must be blank,Value equals to null,VALUE equals to null,Fail
+namlei would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+ssnros should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+uhizre is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+paqxlh should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+vwzabc is null,Value equals to null,VALUE equals to null,Fail
+pfcxzo cannot be null,Value equals to null,VALUE not_equals to null,Fail
+kztndo depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+ssnros can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+paqxlh field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+tokyqo represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+grrbpo canbe null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+bfngdt is expected to be not null,Value equals to null,VALUE not_equals to null,Fail
+eiphzb canbe null.,Value equals to null,VALUE equals to null,Fail
+fecxsj would not be null,Value equals to null,VALUE not_equals to null,Fail
+uwyjvd is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+qcnzpt depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+niouhk canbe null.,VALUE is equal to NULL,VALUE equals to null,Fail
+vzsiyx is empty,Value equals to null,VALUE equals to null,Fail
+uumbro must not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+nqsbcj has some values.,nqsbcj has some values.,VALUE not_equals to null,Fail
+aaxpwu must have a non-null loan number,Value not_equals to null,VALUE not_equals to null,Fail
+fqanqw could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+grrbpo canbe empty,Value equals to null,VALUE equals to null,Fail
+ezmxfx might be in between 4763 to 89397,Value is_within(4763-89397),"Value is_within(4763,89397)",Fail
+jgwkbv can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+iuuuya mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+ujmcfp canbe blank,Value equals to null,VALUE equals to null,Fail
+nkykvc should not have a lithology description.,lithology not_equals to null,VALUE equals to null,Fail
+aaifff cannot be empty.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+lnwmji equals a number under 4698 and over 89920,"Value is_within(4698,89920)","Value is_within(4698,89920)",Pass
+gipopd might be in between 1775 to 19434,Value is_within(1775 to 19434),"Value is_within(1775,19434)",Fail
+tltmcj could be less than 5849 and more than 86690,"Value is_within(5849,86690)","Value is_within(5849,86690)",Pass
+"mepcsc is greater than 204,but less than 357","Value is_within(204,357)","Value is_within(204,357)",Pass
+dmlmnr has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+"msnwpd must be greater than 6687,but less than  82737","Value is_within(6687,82737)","Value is_within(6687,82737)",Pass
+foyeug could be blank,Value equals to null,VALUE equals to null,Fail
+pcyeys is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+emsxoi has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+efagni cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+cotqbf would not be null,Value equals to null,VALUE not_equals to null,Fail
+chchaq is blank,Value equals to null,VALUE equals to null,Fail
+phgxnb is always NULL,Value equals to null,VALUE equals to null,Fail
+mbyzrk can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+cfedip could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+djvmwd is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+"yixxpv should not be greater than 61625 ,but less than 7994","Value is_within(7994,6125)","Value is_within(7994,61625)",Fail
+dyszjk is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+nvdbmh can not be equal to null,Value not_equals to null,VALUE not_equals to null,Fail
+tcvpjy could be null.,Value equals to null,VALUE equals to null,Fail
+omaama could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+ornjxz can be equal to blank,Value equals to null,VALUE equals to null,Fail
+cllpbc is with in 6552 to 32240,Value equals to 32240,"Value is_within(6552,32240)",Fail
+upieyx would be blank,Value equals to null,VALUE equals to null,Fail
+szuruk consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+jrictu is empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+dgghgw is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+dxlywc isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+brzgga is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+hjzbcn should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+zgmrem cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+cwsymi can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+wznuru can be left blank,Value equals to null,VALUE equals to null,Fail
+szohnf would be blank,Value equals to null,VALUE equals to null,Fail
+dxplvs is not null,Value equals to null,VALUE not_equals to null,Fail
+orqijl represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+hernzo represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+suwugi is blank,Value equals to null,VALUE equals to null,Fail
+"zjpqlv IS LONGER THAN five thousand, three hundred and two AND ALSO zjpqlv IS SMALL THAN forty-one thousand, one hundred and ninety-seven","zjpqlv IS LONGER THAN five thousand, three hundred and two AND ALSO zjpqlv IS SMALLER THAN forty-one thousand, one hundred ninety-seven","Value is_within(5302,41197)",Fail
+upieyx is a null,Value equals to null,VALUE equals to null,Fail
+czaqas should not be empty,Value not_equal to null,VALUE not_equals to null,Fail
+"xjhcxl is greater than 5773,but less than 769","Value is_within(5773,699)","Value is_within(769,5773)",Fail
+tcqoeu can be equal to blank,Value equals to null,VALUE equals to null,Fail
+xwdnnk consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+bftlgn should be empty,Value equals to null,VALUE equals to null,Fail
+afoqgb is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+"zvslkj must be greater than 697 ,but less than 49880","Value is_within(697,49880)","Value is_within(697,49880)",Pass
+ybytjp would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+kwrtws shall be found somewhere between 3143 and 47973,Value is_within(4343 -497973),"Value is_within(3143,47973)",Fail
+itpgqd cannot be null,Value not_equals to null,VALUE equals to null,Fail
+bfngdt can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+"kkelcd must be greater than 7493 ,but less than 22026","Value is_within(7493,22026)","Value is_within(7493,22026)",Pass
+oapnqm is always NOT NULL,Value not_equals to null,VALUE not_equals to null,Fail
+qjbzla is empty.,Value equals to null,VALUE equals to null,Fail
+lcvxqv is required to be null,Value equals to null,VALUE equals to null,Fail
+lgfnct is required to be null,Value equals to null,VALUE equals to null,Fail
+pqqqhe depth must be null,not_equals to null,VALUE equals to null,Fail
+sirtsl cannot be empty.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+zipxpv must not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+yblyal equals a number under 2003 and over 96906,"Value is_within(2003,9606)","Value is_within(2003,96906)",Fail
+jpkatl can be in range 7352 to 77573,Value is_within(7352-77573),"Value is_within(7352,77573)",Fail
+vnpkga can not be equal to null,Value not_equals to null,VALUE not_equals to null,Fail
+"jjzvhz should not be greater than 47240 ,but less than 170","Value is_within(170,47240)","Value is_within(170,47240)",Pass
+xnwgmn can be left empty,Value equals to null,VALUE equals to null,Fail
+wznuru could be empty,Value equals to null,VALUE equals to null,Fail
+krumex is empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+dbhcud could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+jwaeqj cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+xzvogz can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+vymkkg cannot be empty.,VALUE is not_equal to NULL,VALUE not_equals to null,Fail
+pcyeys is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+vgxrfb should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+rjzvrj is always NOT NULL,Value not_equals to null,VALUE not_equals to null,Fail
+isweno can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+gzrpmw could be equal to blank,Value equals to null,VALUE equals to null,Fail
+uihpvq depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+wicrph is a null,Value equals to null,VALUE equals to null,Fail
+xzrlfc can not have any characters.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+ibrzch depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+chchaq canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+tihxkf cannot be empty.,Value not_equals to null,VALUE not_equals to null,Fail
+tubrig can be a empty,Value equals to null,VALUE equals to null,Fail
+asinhm consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+tasdva is with in 3310 to 80887,"Value is_within(3108,8087)","Value is_within(3310,80887)",Fail
+jupcfg shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+jxpwjz is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+uwyjvd is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+uwwlwa canbe empty,Value equals to null,VALUE equals to null,Fail
+xscpjc could be equal to blank,Value equals to null,VALUE equals to null,Fail
+wdkrrt could not be null,Value equals to null,VALUE not_equals to null,Fail
+wvzwdz can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+bxboto can be left empty,Value equals to null,VALUE equals to null,Fail
+oqazaa can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+qqharf must not be populated,not_duplicate,VALUE equals to null,Fail
+ezrgnx would be empty,Value equals to null,VALUE equals to null,Fail
+lrcdvz is always NULL,Value equals to null,VALUE equals to null,Fail
+wjsnej canbe null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+ngwbrk has some values.,ngwbrk has some values.,VALUE not_equals to null,Fail
+kitidm has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+tqmmju must be an empty string.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+"jwsljf should not be greater than 59398 ,but less than 9381","Value is_within(9381,5993)","Value is_within(9381,59398)",Fail
+dihjkk can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+anfjao cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+"lnwmji exceeds 4698,but does not exceeds 89920","Value is_within(4698,89920)","Value is_within(4698,89920)",Pass
+ybpbmv can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+wcuiyy can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+vnoyzv consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+wwlehm must have a null loan number,Value equals to null,VALUE equals to null,Fail
+ylogir isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+vymkkg could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+egcppc could be null.,Value equals to null,VALUE equals to null,Fail
+"wbnbnk represents a specific day, month and year.",VALUE is equal to DATE,VALUE is equal to DATE,Pass
+"cdcntb could be greater than 9729 ,but less than 58461","Value is_within(9729,5841)","Value is_within(9729,58461)",Fail
+isrugh is expected to be null,Value equals to null,VALUE equals to null,Fail
+tasdva is more than 3310 and also tasdva should not exceed 80887,"Value is_within(3110,8087)","Value is_within(3310,80887)",Fail
+wbyffn is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+mzamet would be blank,Value equals to null,VALUE equals to null,Fail
+kumhus is expected to be not null,Value equals to null,VALUE not_equals to null,Fail
+mtbrjq could be less than 6286 and more than 85116,"Value is_within(6286,85116)","Value is_within(6286,85116)",Pass
+yrudkd could be empty,Value equals to null,VALUE equals to null,Fail
+qivpgv can be left empty,Value equals to null,VALUE equals to null,Fail
+exbble must not be populated,Value not_equals to null,VALUE equals to null,Fail
+rjotpb is more than 8816 and also rjotpb should not exceed 58609,"Value is_within(8816,5860)","Value is_within(8816,58609)",Fail
+kgmtjj must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+uqkihm should not be null,Value equals to null,VALUE not_equals to null,Fail
+akipxa describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+udxpky depth must be null,Value equals to null,VALUE equals to null,Fail
+"mekynp is comprised between 8648, excluded, and 74535","Value is_within(8648,7455)","Value is_within(8648,74535)",Fail
+"cdcntb must be greater than 9729,but less than  58461","Value is_within(9729,5846)","Value is_within(9729,58461)",Fail
+pqlsqp cannot be null,Value not_equals to null,VALUE equals to null,Fail
+ybpbmv is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+zwvifo could be null.,Value equals to null,VALUE equals to null,Fail
+dtcfxh can be equal to empty,Value equals to null,VALUE equals to null,Fail
+ajqrkp is of value date,Value equals to null,VALUE is equal to DATE,Fail
+wdkrrt would not be null,Value equals to null,VALUE not_equals to null,Fail
+cwsymi cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+qtnrvl would be blank,Value equals to null,VALUE equals to null,Fail
+dyzxmf field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+"zjpqlv is greater than 5302,but less than 41197","Value is_within(5302,41197)","Value is_within(5302,41197)",Pass
+yxzivg canbe blank,Value equals to null,VALUE equals to null,Fail
+dkxjjd is empty.,Value equals to null,VALUE equals to null,Fail
+dgghgw isn't empty.,VALUE is not_equal to NULL,VALUE not_equals to null,Fail
+kdkrxb must be in between 3816 to 41575,Value is_within(3816 to 41575),"Value is_within(3816,41575)",Fail
+jfqzrs is more than 4360 and also jfqzrs should not exceed 27163,"Value is_within(4660,2716)","Value is_within(4360,27163)",Fail
+kpqzaf could not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+fcfzju would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+wahmwc can be a empty,Value equals to null,VALUE equals to null,Fail
+ipbzny can be equal to blank,Value equals to null,VALUE equals to null,Fail
+poujmk cannot be null.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+kebomx can be left blank,Value equals to null,VALUE equals to null,Fail
+nnzdwx must not be null,Value equals to null,VALUE not_equals to null,Fail
+Lets say anfjao cannot have null values,Value not_equals to null,VALUE not_equals to null,Fail
+cgptsy must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+"qynqlz should not be greater than 41970 ,but less than 6712","Value is_within(4970,6712)","Value is_within(6712,41970)",Fail
+tqmmju should be empty,Value equals to null,VALUE equals to null,Fail
+tcerft could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+czaqas could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+puudcc should be blank,Value equals to null,VALUE equals to null,Fail
+vuxjcg can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+nnmyyn represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+uvlhhd number should be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+tmmuon equals a number under 621 and over 59742,"Value is_within(611,5972)","Value is_within(621,59742)",Fail
+feifbz can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+gwsgxi can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+wmcdxr should not contain something,Value not_equals to null,VALUE equals to null,Fail
+"dnrkyr must be greater than 6393,but less than  43798","Value is_within(6393,4798)","Value is_within(6393,43798)",Fail
+kbbfod can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+glbibd can not have any characters.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+rnatbk must have a non-null loan number,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+gzrpmw is blank,Value equals to null,VALUE equals to null,Fail
+epmgpk can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+oekkse is strictly greater than 8268 and strictly lower than 45444,"Value is_within(8268,4544)","Value is_within(8268,45444)",Fail
+ipbzny can be equal to empty,Value equals to null,VALUE equals to null,Fail
+"ddekoo could be greater than 1193 ,but less than 68354","Value is_within(1193,63844)","Value is_within(1193,68354)",Fail
+qckgcw depth must be null,Value equals to null,VALUE equals to null,Fail
+dahbph would be blank,Value equals to null,VALUE equals to null,Fail
+nkykvc number should be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+gwdnaj should be blank,Value equals to null,VALUE equals to null,Fail
+cgptsy could not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+"bevddl could be greater than 5971 ,but less than 56492","Value is_within(5971,5692)","Value is_within(5971,56492)",Fail
+vjnsvc can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+"hpjywf must be greater than 460,but less than  2089","Value is_within(460,2089)","Value is_within(460,2089)",Pass
+uhgleb can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+rpszsy can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+pxptyp can be equal to blank,Value equals to null,VALUE equals to null,Fail
+cotqbf should not be null,Value equals to null,VALUE not_equals to null,Fail
+gwsgxi is always NOT NULL,Value not_equals to null,VALUE not_equals to null,Fail
+"kldbbw lies between eight thousand, four hundred and thirty-eight and ninety-three thousand, eight hundred and four","Value is_within(8 thousand,4 hundred and thirty-eight)","Value is_within(8438,93804)",Fail
+crzlxc could be less than 8089 and more than 62696,"Value is_within(8089,6696)","Value is_within(8089,62696)",Fail
+hdkwux is not empty,Value not_equals to null,VALUE not_equals to null,Fail
+qmggfy cannot be empty.,Value not_equals to null,VALUE not_equals to null,Fail
+vprpqs can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+qbbcsq can be left empty,Value equals to null,VALUE equals to null,Fail
+lagbzg cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+Lets say itnowo cannot have null values,Value not_equals to null,VALUE not_equals to null,Fail
+ejktuz can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+jonjcp should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+xvzxqv can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+xnwgmn is empty,Value equals to null,VALUE equals to null,Fail
+vymkkg isn't empty.,VALUE is not_equal to NULL,VALUE not_equals to null,Fail
+ucjgim could not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+rhhvxu has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+ntvtxo would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+puudcc could be null,Value equals to null,VALUE equals to null,Fail
+qtratm must not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+Lets say bftlgn have null values,Value equals to null,VALUE equals to null,Fail
+szpymw may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+exbble cannot be null,Value not_equals to null,VALUE equals to null,Fail
+tqjlfh is always NULL,Value equals to null,VALUE equals to null,Fail
+ajcqds could be less than 2526 and more than 17993,"Value is_within(2526,17993)","Value is_within(2526,17993)",Pass
+bcmseo cannot have any characters.,VALUE is not_equal to DATE,VALUE not_equals to null,Fail
+jrictu must not be populated,Value not_equals to null,VALUE equals to null,Fail
+rpszsy isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+wcuiyy has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+"vqcjtv must be greater than 3284 ,but less than 44149","Value is_within(3284,44149)","Value is_within(3284,44149)",Pass
+gdiryh can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+ziluzb must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+zaccez cannot have any characters.,VALUE is not_equal to DATE,VALUE not_equals to null,Fail
+isrugh is always NULL,Value equals to null,VALUE equals to null,Fail
+tubrig must be blank,Value equals to null,VALUE equals to null,Fail
+ixmehr could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+ssnros would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+ixofmu is expected to be null,Value equals to null,VALUE equals to null,Fail
+ddondq must be blank,Value equals to null,VALUE equals to null,Fail
+qjbzla canbe empty,Value equals to null,VALUE equals to null,Fail
+ipbzny could be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+nnzdwx can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+fdxxmg mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+"gkkytq exceeds 4486,but does not exceeds 49510","Value is_within(4486,49510)","Value is_within(4486,49510)",Pass
+gtznut equals a number under 7176 and over 15369,"Value is_within(7176,15369)","Value is_within(7176,15369)",Pass
+uxsvru is strictly greater than 781 and strictly lower than 52192,"Value is_within(781,52192)","Value is_within(781,52192)",Pass
+nthdow canbe empty,Value equals to null,VALUE equals to null,Fail
+onnmlb is more than 5778 and also onnmlb should not exceed 6748,"Value is_within(5778,6748)","Value is_within(5778,6748)",Pass
+"wmejbu exceeds 7065,but does not exceeds 19793","Value is_within(7065,793)","Value is_within(7065,19793)",Fail
+ylogir number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+Lets say wuvzgq have null values,Value equals to null,VALUE equals to null,Fail
+imyzao might be in between 6928 to 91826,Value is_within(6928 to 91826),"Value is_within(6928,91826)",Fail
+nyyjpo could not be null,Value equals to null,VALUE not_equals to null,Fail
+diiblo could be null,Value equals to null,VALUE equals to null,Fail
+nqsbcj should not be null,Value not_equals null,VALUE not_equals to null,Fail
+ddondq can be equal to blank,Value equals to null,VALUE equals to null,Fail
+hmysnf isn't empty.,VALUE is not_equal to NULL,VALUE not_equals to null,Fail
+ziluzb could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+itnowo number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+ljrhjb should be null,Value equals to null,VALUE equals to null,Fail
+nqvdxd would be null,Value equals to null,VALUE equals to null,Fail
+nqsbcj is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+ngaqiy might be in between 6515 to 70118,Value is_within(6515 to 70118),"Value is_within(6515,70118)",Fail
+dahbph can be a null,Value equals to null,VALUE equals to null,Fail
+oavuse represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+aibnvi can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+xnwgmn could be equal to blank,Value equals to null,VALUE equals to null,Fail
+tcvpjy is required to be empty,Value equals to null,VALUE equals to null,Fail
+giyfoi could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+"mgbsoi must be greater than 4931 ,but less than 98737","Value is_within(4931,98737)","Value is_within(4931,98737)",Pass
+slggzf is equal to the value of date,Value equals to null,VALUE is equal to DATE,Fail
+rpcewk might be in between 4778 to 77361,Value is_within(4778-77361),"Value is_within(4778,77361)",Fail
+vvtcts must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+mzfxgo shall be found somewhere between 6725 and 30717,"Value is_within(30717,6725)","Value is_within(6725,30717)",Fail
+djvmwd can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ixofmu canbe null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+zfogxt is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+sunwvm must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+nbesnw is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+nqsbcj mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+zjgdsr represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ilbywy should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+jxpwjz should contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+uduaau could be null,Value equals to null,VALUE equals to null,Fail
+"qdsnjl exceeds 1237,but does not exceeds 43127","Value is_within(1237,43127)","Value is_within(1237,43127)",Pass
+ipswjz can be a empty,Value equals to null,VALUE equals to null,Fail
+cygnom can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+jwhzvs consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+yeizqw canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+gysibh equals a number under 1145 and over 87178,"Value is_within(1145,87178)","Value is_within(1145,87178)",Pass
+cmlakn must be in between 942 to 90235,"Value is_within(942,90235)","Value is_within(942,90235)",Pass
+zwxkxj must have a non-null loan number,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+zfogxt mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+"frisrl IS LONGER THAN five thousand, seven hundred and eighty-six AND ALSO frisrl IS SMALL THAN twenty-six thousand, four hundred and sixty-nine","Value is_within(5 000,7700)","Value is_within(5786,26469)",Fail
+rztmmc is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+uisrfm can be in range 2268 to 70805,Value is_within(2268 to 70805),"Value is_within(2268,70805)",Fail
+dvvgsz is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+ltkfdy should be null,Value equals to null,VALUE equals to null,Fail
+onnmlb equals a number under 5778 and over 6748,"Value is_within(5778,6748)","Value is_within(5778,6748)",Pass
+wmsbtw canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+uumbro can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+"mekynp exceeds 8648,but does not exceeds 74535","Value is_within(8648,7455)","Value is_within(8648,74535)",Fail
+wwlehm depth must be null,Value equals to null,VALUE equals to null,Fail
+qlilum can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+edhreb is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ddondq canbe null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+wssdgw isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+kpzwxi is expected to be null,Value equals to null,VALUE equals to null,Fail
+cuwpmm can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+Lets say rmbzss have null values,Value equals to null,VALUE equals to null,Fail
+jhkcuj could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+hosktf is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+oqvxaz can be equal to empty,Value equals to null,VALUE equals to null,Fail
+odqycp shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+oxhiis is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+vwoaaf is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+"kwrtws must be greater than 3143 ,but less than 47973","Value is_within(3343,497973)","Value is_within(3143,47973)",Fail
+"yubwpe is comprised between 5129, excluded, and 75197","Value is_within(5129,75197)","Value is_within(5129,75197)",Pass
+gzrpmw is expected to be null,Value equals to null,VALUE equals to null,Fail
+qivpgv could be empty,Value equals to null,VALUE equals to null,Fail
+bofcuo is required to be not null,Value equals to null,VALUE not_equals to null,Fail
+cllyfz should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+axpchy describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+iuuuya must be populated,Value equals to null,VALUE not_equals to null,Fail
+wbxnhz can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+frrtlg can be a null,Value equals to null,VALUE equals to null,Fail
+okfgxx is null,Value equals to null,VALUE equals to null,Fail
+lcnjhc is a null,Value equals to null,VALUE equals to null,Fail
+tcqoeu could be blank,Value equals to null,VALUE equals to null,Fail
+dbwhlf should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+nfdxty has not some values.,___________,VALUE equals to null,Fail
+"mldsta should not be greater than 39159 ,but less than 651","Value is_within(651,39159)","Value is_within(651,39159)",Pass
+"gvcibf must be greater than 1013 ,but less than 79510","Value is_within(1013,79510)","Value is_within(1013,79510)",Pass
+btpemn can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+miwlvk represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+aidwnn is with in 4460 to 74094,Value is_within(4660 to 74094),"Value is_within(4460,74094)",Fail
+qjtclh field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+kpzwxi could be equal to blank,Value equals to null,VALUE equals to null,Fail
+ziluzb should not be null,Value equals to null,VALUE not_equals to null,Fail
+xfhlin is expected to be empty,Value equals to null,VALUE equals to null,Fail
+hirqxn field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+vyqbxm can be equal to empty,Value equals to null,VALUE equals to null,Fail
+nkykvc field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+"jtyqvz could be greater than 9951 ,but less than 33262","Value is_within(9951,3262)","Value is_within(9951,33262)",Fail
+shvgti cannot be null,Value not_equals to null,VALUE not_equals to null,Fail
+lagbzg is not empty,Value not_equals to null,VALUE not_equals to null,Fail
+ztcjjo is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+uoendi must be in between 8112 to 4219,Value is_within(8112 to 4219),"Value is_within(4219,8112)",Fail
+ucjgim would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+szohnf should be empty,Value equals to null,VALUE equals to null,Fail
+aptlse can be equal to null,Value equals to null,VALUE equals to null,Fail
+dzqckm can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+tjfwzy can be equal to blank,Value equals to null,VALUE equals to null,Fail
+wcrewy must have a null loan number,Value equals to null,VALUE equals to null,Fail
+jonjcp cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+oapnqm cannot be null,Value equals to null,VALUE not_equals to null,Fail
+amdhdt must be populated,Value equals to null,VALUE not_equals to null,Fail
+dfzudk canbe empty,Value equals to null,VALUE equals to null,Fail
+tyxrel is more than 9434 and also tyxrel should not exceed 82553,"Value is_within(9434,8255)","Value is_within(9434,82553)",Fail
+cotqbf should have a lithology description.,VALUE is equal to DATE,VALUE not_equals to null,Fail
+mgyhbm mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+nfdxty must be blank,Value equals to null,VALUE equals to null,Fail
+omaama isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+qckgcw cannot be null,Value not_equals to null,VALUE equals to null,Fail
+sehazh shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+poujmk is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+ajcqds equals a number under 2526 and over 17993,"Value is_within(2526,17993)","Value is_within(2526,17993)",Pass
+wbvoat is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+wahmwc could be null,Value equals to null,VALUE equals to null,Fail
+nszato has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+uoendi is more than 8112 and also uoendi should not exceed 4219,"Value is_within(8112,4219)","Value is_within(4219,8112)",Fail
+dxlywc should have a lithology description.,VALUE is equal to DATE,VALUE not_equals to null,Fail
+dkxjjd should be empty,Value equals to null,VALUE equals to null,Fail
+flmrex equals a number under 8807 and over 21039,"Value is_within(8807,21039)","Value is_within(8807,21039)",Pass
+isweno would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+lithya could be less than 589 and more than 60636,"Value is_within(589,60636)","Value is_within(589,60636)",Pass
+uvlhhd depth must be null,Value equals to null,VALUE equals to null,Fail
+xklmqm can be a null,Value equals to null,VALUE equals to null,Fail
+pqqqhe could be empty,not_duplicate,VALUE equals to null,Fail
+lwckbe mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+shvgti can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+svxdmu may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+qzgztg may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+dujqvz would be empty,Value equals to null,VALUE equals to null,Fail
+"mgfsur IS LONGER THAN five thousand, one hundred and forty-six AND ALSO mgfsur IS SMALL THAN ninety-six thousand, three hundred and fifty-eight","Value is_within(five thousand, one hundred forty-six)","Value is_within(5146,96358)",Fail
+zqcwfk field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+ymvrex is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+lwckbe can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+udxpky can be left empty,Value equals to null,VALUE equals to null,Fail
+gegheh describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+xqdgoy must not be populated,Value not_equals to null,VALUE equals to null,Fail
+"gvurhr IS LONGER THAN five thousand, five hundred and forty-two AND ALSO gvurhr IS SMALL THAN ten thousand, five hundred and forty-six","gvurhr IS LONGER THAN five thousand, five hundred and forty-two ET gvurhr IS SMALLER THAN ten thousand, five hundred and forty-six","Value is_within(5542,10546)",Fail
+kodygj number should be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+jsbyca describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+atmlwb can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+mtkktz must be an empty string.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+djvmwd describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+cttfla should be empty,Value equals to null,VALUE equals to null,Fail
+gffaoa should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+bbmfvm should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+tcqoeu can be equal to null,Value equals to null,VALUE equals to null,Fail
+ahwzer can be equal to empty,Value equals to null,VALUE equals to null,Fail
+oapnqm field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+cegjec must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+dmmfkg must not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+mbyzrk cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+zwvifo has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+tihxkf should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+vdlvdp would not be null,Value equals to null,VALUE not_equals to null,Fail
+"epsaes IS LONGER THAN three thousand and ninety-four AND ALSO epsaes IS SMALL THAN thirty-five thousand, nine hundred and twenty-eight",Value is_within(three thousand and ninety-four),"Value is_within(3094,35928)",Fail
+whvlyw is null,Value equals to null,VALUE equals to null,Fail
+ecsend must be empty,Value equals to null,VALUE equals to null,Fail
+jwaeqj mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+birmqk can not have any characters.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+oqvxaz can be a null,Value equals to null,VALUE equals to null,Fail
+"jfqzrs IS LONGER THAN four thousand, three hundred and sixty AND ALSO jfqzrs IS SMALL THAN twenty-seven thousand, one hundred and sixty-three","Value is_within(four thousand, three hundred and sixty)","Value is_within(4360,27163)",Fail
+bpsvdv represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+shvgti must not be null,Value equals to null,VALUE not_equals to null,Fail
+gxjgkw depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+ifdznu can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+"gaazyz IS LONGER THAN eight thousand, seven hundred and thirty-three AND ALSO gaazyz IS SMALL THAN ninety-three thousand, two hundred and fifty-six","Value is_within(eight thousand, seven hundred and thirty-three)","Value is_within(8733,93256)",Fail
+tyxrel is with in 9434 to 82553,"Value is_within(9434,8255)","Value is_within(9434,82553)",Fail
+uqxnhe depth must be null,Value equals to null,VALUE equals to null,Fail
+cfkqno could not be null,Value equals to null,VALUE not_equals to null,Fail
+pxptyp is required to be empty,Value equals to null,VALUE equals to null,Fail
+mlarpy has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+ylogir mustn't be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+zgmrem could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+vucrkv can only hold date data type,Value equals to null,VALUE is equal to DATE,Fail
+nyyjpo cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+jugxvz consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+syfzto has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+cvrpww can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+xyscxz could be less than 4709 and more than 50188,"Value is_within(4709,50188)","Value is_within(4709,50188)",Pass
+"ubqpbc IS LONGER THAN six thousand, one hundred AND ALSO ubqpbc IS SMALL THAN sixty-four thousand, six hundred and four","ubqpbc IS LONGER THAN six thousand, one hundred","Value is_within(6100,64604)",Fail
+"gtpnsz is greater than 1764,but less than 23255","Value is_within(1764,23255)","Value is_within(1764,23255)",Pass
+tcqoeu is a null,Value equals to null,VALUE equals to null,Fail
+yymuqb is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+vlyrce can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+foyeug is expected to be null,Value equals to null,VALUE equals to null,Fail
+kztndo should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+zgmrem should have a lithology description.,VALUE is equal to DATE,VALUE not_equals to null,Fail
+hkccvb cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+pqqqhe can be left blank,not_equals to null,VALUE equals to null,Fail
+"ruumda IS LONGER THAN two thousand, seven hundred and sixty AND ALSO ruumda IS SMALL THAN twenty-nine thousand, two hundred and twenty-five","Value is_within(two thousand, seven hundred and sixty)","Value is_within(2760,29225)",Fail
+zeqrvl should be empty,Value equals to null,VALUE equals to null,Fail
+sqwvxz would be null,Value equals to null,VALUE equals to null,Fail
+wjzkoa is required to be empty,Value equals to null,VALUE equals to null,Fail
+vrfjqi consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+izvjlo should not be null,Value equals to null,VALUE not_equals to null,Fail
+rhhvxu cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+nuevvz is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+pqqqhe can not have any characters.,not_equals to null,VALUE equals to null,Fail
+ztjxcw can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+grrbpo is expected to be null,Value equals to null,VALUE equals to null,Fail
+kiirhm is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+ojvgno cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+nkykvc canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+znnutd consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+gwdnaj can be left empty,Value equals to null,VALUE equals to null,Fail
+rnauzs should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+qckgcw must be blank,Value equals to null,VALUE equals to null,Fail
+mbyzrk cannot have any characters.,VALUE is not_equal to DATE,VALUE not_equals to null,Fail
+"pzslro lies between seven thousand, one hundred and two and fifty-seven thousand, four hundred and forty-three",Value is_within(one hundred and two),"Value is_within(7102,57443)",Fail
+yhqmws would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+ipbzny can be left empty,Value equals to null,VALUE equals to null,Fail
+itowag shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+mgyhbm could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+"zhcqyb could be greater than 9484 ,but less than 10624","Value is_within(9484,10624)","Value is_within(9484,10624)",Pass
+sagfsf may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+aidwnn equals a number under 4460 and over 74094,"Value is_within(4660,7404)","Value is_within(4460,74094)",Fail
+giyfoi number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+namlei should have a lithology description.,VALUE is equal to DATE,VALUE not_equals to null,Fail
+xqdgoy field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+zaytgw must be empty,Value equals to null,VALUE equals to null,Fail
+vuxjcg could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+dmmfkg should have a lithology description.,dmmfkg should have a lithology description,VALUE not_equals to null,Fail
+cgptsy depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+npaoqd number should not be null.,VALUE is not_equal to NULL,VALUE not_equals to null,Fail
+dmlmnr cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+fzquej must have a null loan number,Value equals to null,VALUE equals to null,Fail
+jujhfu must be an empty string.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+btpemn cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+xklmqm number should be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+vlyrce could not be null,Value equals to null,VALUE not_equals to null,Fail
+doaaun can be equal to blank,Value equals to null,VALUE equals to null,Fail
+cawmak can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+xcbrzn is not null,Value not_equals null,VALUE not_equals to null,Fail
+dahbph is a null,Value equals to null,VALUE equals to null,Fail
+cotqbf number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+tbwezw is more than 3477 and also tbwezw should not exceed 22091,"Value is_within(3477,22091)","Value is_within(3477,22091)",Pass
+zvluvb is expected to be null,Value equals to null,VALUE equals to null,Fail
+nuevvz is always NOT NULL,Value not_equals to null,VALUE not_equals to null,Fail
+ugyick is not null,Value equals to null,VALUE not_equals to null,Fail
+rjzvrj could not be null,Value equals to null,VALUE not_equals to null,Fail
+cvrpww describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+dkkxcm shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+crxxkr field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+ucjgim is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+yuyjlt could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+fzquej must not be populated,Value not_equals to null,VALUE equals to null,Fail
+xdgktm is equal to the value of date,Value equals to null,VALUE is equal to DATE,Fail
+boqywc equals a number under 8078 and over 20729,"Value is_within(8078,20729)","Value is_within(8078,20729)",Pass
+ahwzer is null,Value equals to null,VALUE equals to null,Fail
+fzquej would be blank,Value equals to null,VALUE equals to null,Fail
+fsbxol may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+"kuwtbd should not be greater than 60549 ,but less than 7995","Value is_within(60549,7995)","Value is_within(7995,60549)",Fail
+fvnkdr can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+"ylimmo is comprised between 1111, excluded, and 77217","Value is_within(111,7217)","Value is_within(1111,77217)",Fail
+sagfsf is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+tihxkf could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+lxkefh is strictly greater than 9609 and strictly lower than 55643,"Value is_within(9609,5643)","Value is_within(9609,55643)",Fail
+muoony represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+zwxkxj can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+dtcfxh should be empty,Value equals to null,VALUE equals to null,Fail
+kktlmy is expected to be null,Value equals to null,VALUE equals to null,Fail
+tubrig should be empty,Value equals to null,VALUE equals to null,Fail
+fgqlsr could be blank,Value equals to null,VALUE equals to null,Fail
+vjkcht is required to be empty,Value equals to null,VALUE equals to null,Fail
+"exdrrk IS LONGER THAN ninety-two AND ALSO exdrrk IS SMALL THAN forty-four thousand, eight hundred and twenty-eight","Value is_within(92,288)","Value is_within(92,44828)",Fail
+bvsdph would be blank,Value equals to null,VALUE equals to null,Fail
+rfdxhj can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+udxpky must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+eubxce can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ojvgno can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+uwcvdw must be blank,Value equals to null,VALUE equals to null,Fail
+dujqvz is required to be empty,Value equals to null,VALUE equals to null,Fail
+sirtsl can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+rrradq is equal to the value of date,Value equals to null,VALUE is equal to DATE,Fail
+kgmtjj depth must be null,Value equals to null,VALUE equals to null,Fail
+fwriyk can be left blank,Value equals to null,VALUE equals to null,Fail
+ecuibc depth must be null,Value equals to null,VALUE equals to null,Fail
+wgqpuz is a null,Value equals to null,VALUE equals to null,Fail
+hdkwux isn't empty.,VALUE is not_equal to NULL,VALUE not_equals to null,Fail
+ppjyyn could be less than 1728 and more than 60690,"Value is_within(1728,6069)","Value is_within(1728,60690)",Fail
+lmedsg may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+btpemn can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+zwyhdx could be equal to blank,Value equals to null,VALUE equals to null,Fail
+rpszsy can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+crxxkr should be null,Value equals to null,VALUE equals to null,Fail
+"oporrm should not be greater than 92273 ,but less than 908","Value is_within(908,9227)","Value is_within(908,92273)",Fail
+nvdbmh is expected to be not null,Value equals to null,VALUE not_equals to null,Fail
+ozobao can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+ybpbmv cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+bfgtdm should not contain something,Value not_equals to null,VALUE equals to null,Fail
+rrczhj could be empty,Value equals to null,VALUE equals to null,Fail
+uazbji describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+oapnqm has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+bfngdt could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+gegtft could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+tyzbpr should contain the value of date,Value equals to null,VALUE is equal to DATE,Fail
+uiqvgr is empty,Value equals to null,VALUE equals to null,Fail
+fglnac should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+trksfp is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+yymuqb has some values.,yymuqb has some values.,VALUE not_equals to null,Fail
+dbhcud is not null,Value equals to null,VALUE not_equals to null,Fail
+ejktuz can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+mbyzrk is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+tqpupd field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+phgxnb should not have a expired indicator,Value not_equals to null,VALUE equals to null,Fail
+wtthqk might be in between 1106 to 23449,"Value is_within(1106,2349)","Value is_within(1106,23449)",Fail
+uwcvdw should be blank,Value equals to null,VALUE equals to null,Fail
+loassa is not null.,VALUE is not_equal to null,VALUE not_equals to null,Fail
+alxuly would be null,Value equals to null,VALUE equals to null,Fail
+ijafwf can be equal to blank,Value equals to null,VALUE equals to null,Fail
+npaoqd can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+kdkrxb shall be found somewhere between 3816 and 41575,"Value is_within(3816,4575)","Value is_within(3816,41575)",Fail
+qqharf could be null.,value equals to null,VALUE equals to null,Fail
+simnvt is required to be empty,Value equals to null,VALUE equals to null,Fail
+uubcdi might be in between 7917 to 94212,Value is_within(7917 to94212),"Value is_within(7917,94212)",Fail
+vwzabc canbe blank,Value equals to null,VALUE equals to null,Fail
+ahwzer number should be null.,VALUE is equal to NULL,VALUE equals to null,Fail
+xcbrzn must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+regbdp must not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+ugyick is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+omaama is not null,Value equals to null,VALUE not_equals to null,Fail
+cuwpmm should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+"qdsnjl must be greater than 1237 ,but less than 43127","Value is_within(1237,43127)","Value is_within(1237,43127)",Pass
+cfkqno must have a non-null loan number,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+krumex canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+"ppjyyn could be greater than 1728 ,but less than 60690","Value is_within(1728,60699)","Value is_within(1728,60690)",Fail
+pqqqhe should be null,not_duplicate,VALUE equals to null,Fail
+xzrlfc could be null.,Value equals to null,VALUE equals to null,Fail
+yuyjlt is expected to be not null,Value not_equals null,VALUE not_equals to null,Fail
+atuzpf is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+xscpjc depth must be null,Value equals to null,VALUE equals to null,Fail
+jsbyca is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+bfgtdm canbe null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+rnatbk can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+dmmfkg is expected to be not null,Value equals to null,VALUE not_equals to null,Fail
+rqozzk is required to be not null,Value equals to null,VALUE not_equals to null,Fail
+"miufwx must be greater than 562 ,but less than 71549","Value is_within(562,7150)","Value is_within(562,71549)",Fail
+uwyjvd is required to be not null,Value equals to null,VALUE not_equals to null,Fail
+cwsymi is required to be not null,Value not_equals null,VALUE not_equals to null,Fail
+"iqlwbs is more than 2197 ,but less than 30699","Value is_within(2197,30699)","Value is_within(2197,30699)",Pass
+rmbzss is expected to be null,Value equals to null,VALUE equals to null,Fail
+dqfdyt represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+zglgtn isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+ucjgim cannot be null,Value equals to null,VALUE not_equals to null,Fail
+"qmgpvx exceeds 6482,but does not exceeds 70614","Value is_within(6482,7014)","Value is_within(6482,70614)",Fail
+ybpbmv must have a non-null loan number,Value not_equals to null,VALUE not_equals to null,Fail
+"mgbsoi lies between four thousand, nine hundred and thirty-one and ninety-eight thousand, seven hundred and thirty-seven","Value is_within(4 000,930 and31)","Value is_within(4931,98737)",Fail
+fmnzzm should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+emsxoi is always NOT NULL,Value not_equals to null,VALUE not_equals to null,Fail
+qppqeo canbe null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+tjfwzy must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+hssrcb should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+tlswyk can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+"gysibh must be greater than 1145 ,but less than 87178","Value is_within(1145,87178)","Value is_within(1145,87178)",Pass
+jtfwvy would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+ipswjz canbe null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+itowag consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+uwyjvd should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+wbxnhz is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+lcnjhc can be a empty,Value equals to null,VALUE equals to null,Fail
+suijak is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+fignuf cannot be null,Value equals to null,VALUE equals to null,Fail
+immlmq must have a non-null loan number,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+mtkktz can be a null,Value equals to null,VALUE equals to null,Fail
+ngaqiy is strictly greater than 6515 and strictly lower than 70118,"Value is_within(6515,70118)","Value is_within(6515,70118)",Pass
+qohzma shall be found somewhere between 1120 and 94111,"Value is_within(1120,94111)","Value is_within(1120,94111)",Pass
+puudcc can be left empty,Value equals to null,VALUE equals to null,Fail
+"izhpyk must be greater than 6597,but less than  16164","Value is_within(6597,1644)","Value is_within(6597,16164)",Fail
+tltmcj is strictly greater than 5849 and strictly lower than 86690,"Value is_within(5849,86690)","Value is_within(5849,86690)",Pass
+Lets say nuevvz cannot have null values,Value not_equals to null,VALUE not_equals to null,Fail
+vyqbxm can be left blank,Value equals to null,VALUE equals to null,Fail
+kumhus field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+tqmmju should be blank,Value equals to null,VALUE equals to null,Fail
+lrcdvz must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+jfqzrs must be in between 4360 to 27163,Value is_within(4360 to 27163),"Value is_within(4360,27163)",Fail
+ingvkb must be an empty string.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+aibnvi number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+uwwlwa is required to be null,Value equals to null,VALUE equals to null,Fail
+"iqlwbs IS LONGER THAN two thousand, one hundred and ninety-seven AND ALSO iqlwbs IS SMALL THAN thirty thousand, six hundred and ninety-nine","Value is_within(two thousand, one hundred and ninety-seven)","Value is_within(2197,30699)",Fail
+kitidm must not be populated,Value not_equals to null,VALUE equals to null,Fail
+"yweodz represents a specific day, month and year.",VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ouryod must be populated,Value equals to null,VALUE not_equals to null,Fail
+xcbrzn should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+ibrzch isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+btpemn is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+krumex canbe null.,VALUE is equal to NULL,VALUE equals to null,Fail
+qjbzla would be blank,Value equals to null,VALUE equals to null,Fail
+tpteaz can be a empty,Value equals to null,VALUE equals to null,Fail
+nphufv could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+xcbrzn must have a non-null loan number,xcbrzn must have a non-null loan number,VALUE not_equals to null,Fail
+qjgfnz is more than 9159 and also qjgfnz should not exceed 66378,"Value is_within(9159,6378)","Value is_within(9159,66378)",Fail
+ljrhjb must be an empty string.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+tuorph is null.,VALUE is equal to NULL,VALUE equals to null,Fail
+itnowo could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+ymqqvy describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+xszyxg can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+xrfotv could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+wwlehm is blank,Value equals to null,VALUE equals to null,Fail
+Lets say erhnsu cannot have null values,Value not_equals to null,VALUE not_equals to null,Fail
+dbwhlf can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+wpsebn cannot be null,Value equals to null,VALUE equals to null,Fail
+"uujyvm could be greater than 1399 ,but less than 58942","Value is_within(1399,5894)","Value is_within(1399,58942)",Fail
+epzzyj should contain the value of date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+alxuly can be equal to empty,Value equals to null,VALUE equals to null,Fail
+"llkjgp must be greater than 2974,but less than  31344","Value is_within(2974,3144)","Value is_within(2974,31344)",Fail
+ziluzb depth must not be null,Value not_equals to null,VALUE not_equals to null,Fail
+trbnpf should not contain something,Value not_equals to null,VALUE equals to null,Fail
+dyszjk is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+qbbcsq can be equal to null,Value equals to null,VALUE equals to null,Fail
+bxboto must be blank,Value equals to null,VALUE equals to null,Fail
+yixxpv equals a number under 7994 and over 61625,"Value is_within(7994,6125)","Value is_within(7994,61625)",Fail
+flmrex might be in between 8807 to 21039,Value is_within(8807 to21039),"Value is_within(8807,21039)",Fail
+wicrph would be null,Value equals to null,VALUE equals to null,Fail
+xyznpz can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+fcfzju isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+odqycp is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+qynqlz must be in between 6712 to 41970,Value is_within(6712 to 41970),"Value is_within(6712,41970)",Fail
+vavjms could be equal to blank,Value equals to null,VALUE equals to null,Fail
+vsfmbn must be populated,Value not_equals to null,VALUE not_equals to null,Fail
+kdkrxb is more than 3816 and also kdkrxb should not exceed 41575,"Value is_within(3816,4575)","Value is_within(3816,41575)",Fail
+zbbila could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+hssrcb can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+lscmqj can be left empty,Value equals to null,VALUE equals to null,Fail
+ssbcaq is required to be not null,Value equals to null,VALUE not_equals to null,Fail
+lcvxqv canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+"jqowkx lies between eight thousand, five hundred and forty-five and fifty-four thousand, four hundred and seventy-four","Value is_within(8 thousand,455)","Value is_within(8545,54474)",Fail
+cspogb is blank,Value equals to null,VALUE equals to null,Fail
+szjvxk could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+fcczjk can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+uwwlwa is a null,Value equals to null,VALUE equals to null,Fail
+Lets say vwzabc have null values,Value equals to null,VALUE equals to null,Fail
+trbnpf can be equal to empty,Value equals to null,VALUE equals to null,Fail
+yraqos can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+wcuiyy could not be null,Value equals to null,VALUE not_equals to null,Fail
+xklmqm is expected to be null,Value equals to null,VALUE equals to null,Fail
+"jqowkx exceeds 8545,but does not exceeds 54474","Value is_within(8545,5474)","Value is_within(8545,54474)",Fail
+ubqpbc can be in range 6100 to 64604,Value is_within(6100 to 64604),"Value is_within(6100,64604)",Fail
+szohnf could be null.,Value equals to null,VALUE equals to null,Fail
+tcqoeu would be empty,Value equals to null,VALUE equals to null,Fail
+tdcxan would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+"fhltku lies between one thousand, eight hundred and sixty-five and ten thousand, seven hundred and ninety","Value is_within(one thousand, eight hundred and sixty-five)","Value is_within(1865,10790)",Fail
+ltcezw might be in between 3618 to 89265,Value is_within(3618-89265),"Value is_within(3618,89265)",Fail
+exumkt number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+"uppafp must be greater than 4700,but less than  8973","Value is_within(4700,8973)","Value is_within(4700,8973)",Pass
+xzrlfc is blank,Value equals to null,VALUE equals to null,Fail
+aaifff is expected to be not null,Value equals to null,VALUE not_equals to null,Fail
+omxvbk would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+"nsxaty lies between four thousand, six hundred and sixty-five and sixty-three thousand, eight hundred and sixty-three","Value is_within(4 000,675)","Value is_within(4665,63863)",Fail
+tmkhml shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+rztmmc is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+fzquej is blank,Value equals to null,VALUE equals to null,Fail
+uhizre can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+cawmak should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+fmnzzm mustn't be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+ppjyyn equals a number under 1728 and over 60690,"Value is_within(1728,6069)","Value is_within(1728,60690)",Fail
+zlskai can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+bfqtzd could be empty,Value equals to null,VALUE equals to null,Fail
+rjzvrj mustn't be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+maizsi consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+bcgrfy must be blank,Value equals to null,VALUE equals to null,Fail
+wmcdxr could be equal to blank,Value equals to null,VALUE equals to null,Fail
+rtnbxx must be empty,Value equals to null,VALUE equals to null,Fail
+bclenq is not empty,Value not_equals to null,VALUE not_equals to null,Fail
+wvzwdz is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+ixmehr mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+bftlgn can be equal to empty,Value equals to null,VALUE equals to null,Fail
+cegjec is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+fqanqw could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+jtfwvy depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+bfqtzd must not be populated,Value not_equals to null,VALUE equals to null,Fail
+vvtcts must not be null,Value equals to null,VALUE not_equals to null,Fail
+yzxfmo is of value date,Value equals to null,VALUE is equal to DATE,Fail
+bclenq would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+wbyffn can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+tcerft can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+wvzwdz should not be null,Value not_equals null,VALUE not_equals to null,Fail
+lcnjhc should be null,Value equals to null,VALUE equals to null,Fail
+zfwmnt mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+pbdden must be empty,Value equals to null,VALUE equals to null,Fail
+dmmfkg cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+isrugh cannot be null,Value not_equals to null,VALUE equals to null,Fail
+bgjjgm may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+xyscxz might be in between 4709 to 50188,Value is_within(4709-50188),"Value is_within(4709,50188)",Fail
+cecujz would be blank,Value equals to null,VALUE equals to null,Fail
+jpkatl could be less than 7352 and more than 77573,"Value is_within(7352,7573)","Value is_within(7352,77573)",Fail
+umwbkf has not some values.,Value not_equals to null,VALUE equals to null,Fail
+lcnjhc canbe empty,Value equals to null,VALUE equals to null,Fail
+dkxjjd could be null.,Value equals to null,VALUE equals to null,Fail
+ixmehr would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+ngwbrk depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+uesrus equals a number under 6573 and over 66467,"Value is_within(6573,6467)","Value is_within(6573,66467)",Fail
+vyqbxm canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+dfzudk must be an empty string.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+jwaeqj mustn't be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+cravon can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+erhnsu is not null,Value equals to null,VALUE not_equals to null,Fail
+ijqwty is a null,Value equals to null,VALUE equals to null,Fail
+uqkihm could not be null,Value equals to null,VALUE not_equals to null,Fail
+efuitf equals a number under 2909 and over 19282,"Value is_within(2909, 19282)","Value is_within(2909,19282)",Fail
+psygho could be blank,Value equals to null,VALUE equals to null,Fail
+gzrpmw has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+ghdbvp represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+nyyjpo must not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+ewxezb can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+vnasyi cannot be null,Value not_equals to null,VALUE equals to null,Fail
+"gddwvd represents a specific day, month and year.",VALUE is equal to DATE,VALUE is equal to DATE,Pass
+"uesrus is more than 6573 ,but less than 66467","Value is_within(6573,6467)","Value is_within(6573,66467)",Fail
+eiphzb number should be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+dxlywc can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+rmbzss could be empty,Value equals to null,VALUE equals to null,Fail
+hssrcb must be populated,Value equals to null,VALUE not_equals to null,Fail
+cusbzf is always NULL,Value equals to null,VALUE equals to null,Fail
+birmqk must have a null loan number,Value equals to null,VALUE equals to null,Fail
+qmggfy could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+rhhvxu could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+wjsnej can not have any characters.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+rnatbk cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+tcerft must have a non-null loan number,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+ycxutq might be in between 6273 to 19670,Value is_within(6273 to 19670),"Value is_within(6273,19670)",Fail
+gxjgkw must be populated,Value equals to null,VALUE not_equals to null,Fail
+ylogir should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+yuyjlt would not be null,Value equals to null,VALUE not_equals to null,Fail
+ujmcfp canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+mvpfgk field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+"rpcewk IS LONGER THAN four thousand, seven hundred and seventy-eight AND ALSO rpcewk IS SMALL THAN seventy-seven thousand, three hundred and sixty-one","Value is_within(four thousand, seven hundred and seventies)","Value is_within(4778,77361)",Fail
+ingvkb can be a null,Value equals to null,VALUE equals to null,Fail
+ijqwty would be blank,Value equals to null,VALUE equals to null,Fail
+szjvxk is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+uvlhhd would be null,Value equals to null,VALUE equals to null,Fail
+psygho field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+qivpgv would be blank,Value equals to null,VALUE equals to null,Fail
+"jwsljf lies between nine thousand, three hundred and eighty-one and fifty-nine thousand, three hundred and ninety-eight","Value is_within(90,811)","Value is_within(9381,59398)",Fail
+"qohzma IS LONGER THAN one thousand, one hundred and twenty AND ALSO qohzma IS SMALL THAN ninety-four thousand, one hundred and eleven","Value is_within(one thousand, one hundred and twenty)","Value is_within(1120,94111)",Fail
+dbwhlf depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+wcgpmx should not be null,Value equals to null,VALUE not_equals to null,Fail
+gbsptf can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+ezrgnx is required to be empty,Value equals to null,VALUE equals to null,Fail
+vmrdvr is a null,Value equals to null,VALUE equals to null,Fail
+oapnqm isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+vrqofk shall be found somewhere between 2873 and 81354,Value is_within(2873-81354),"Value is_within(2873,81354)",Fail
+ztcjjo is not null,Value not_equals to null,VALUE not_equals to null,Fail
+"svxdmu represents a specific day, month and year.",VALUE is equal to DATE,VALUE is equal to DATE,Pass
+cvrpww can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+wpsebn should be null,Value equals to null,VALUE equals to null,Fail
+cllyfz cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+vimmwe must be empty,Value equals to null,VALUE equals to null,Fail
+pgbtsz is equal to the value of date,Value equals to null,VALUE is equal to DATE,Fail
+jcxily is of value date,Value equals to null,VALUE is equal to DATE,Fail
+omxvbk field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+nthdow canbe blank,Value equals to null,VALUE equals to null,Fail
+mcdsve should contain the value of date,Value equals to null,VALUE is equal to DATE,Fail
+"ycxutq is more than 6273 ,but less than 19670","Value is_within(6273,6770)","Value is_within(6273,19670)",Fail
+uiqvgr must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+oapnqm can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+kodygj is null.,Value equals to null,VALUE equals to null,Fail
+rnauzs is not null,Value not_equals null,VALUE not_equals to null,Fail
+uwcvdw should not contain something,Value not_equals to null,VALUE equals to null,Fail
+yrudkd could be blank,Value equals to null,VALUE equals to null,Fail
+rmbzss can be left empty,Value equals to null,VALUE equals to null,Fail
+xznjoe field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+zglgtn can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+cttfla can be a empty,Value equals to null,VALUE equals to null,Fail
+ugyick number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+njevon is required to be empty,Value equals to null,VALUE equals to null,Fail
+vyqbxm depth must be null,Value equals to null,VALUE equals to null,Fail
+bvsdph must be an empty string.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+pjsceg shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ycladv might be in between 4405 to 64254,Value is_within(4405 to 64254),"Value is_within(4405,64254)",Fail
+yqqkiu is required to be null,Value equals to null,VALUE equals to null,Fail
+yhqmws should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+vnoyzv can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+rfdxhj can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+bclenq can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+"kqsgvi exceeds 6644,but does not exceeds 49645","Value is_within(6644,4645)","Value is_within(6644,49645)",Fail
+namlei can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+pqlsqp is null.,Value equals to null,VALUE equals to null,Fail
+uezpzb equals a number under 9808 and over 63885,"Value is_within(9808,6385)","Value is_within(9808,63885)",Fail
+pfcxzo mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+nizuef could not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+"kxcuyc should not be greater than 67554 ,but less than 8364","Value is_within(6356,8364)","Value is_within(8364,67554)",Fail
+uvlhhd is expected to be empty,Value equals to null,VALUE equals to null,Fail
+jwqoym may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+xvakjn should contain the value of date,Value equals to null,VALUE is equal to DATE,Fail
+czknai must not be populated,Value not_equals to null,VALUE equals to null,Fail
+oihkhw could be less than 4773 and more than 16396,"Value is_within(4773,1646)","Value is_within(4773,16396)",Fail
+egcppc can be left empty,Value equals to null,VALUE equals to null,Fail
+vgxrfb cannot be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+hernzo can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+"kxcuyc exceeds 8364,but does not exceeds 67554","Value is_within(8364,6554)","Value is_within(8364,67554)",Fail
+vuxjcg could not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+wuvzgq can be equal to empty,Value equals to null,VALUE equals to null,Fail
+pbdden could be null.,VALUE is equal to NULL,VALUE equals to null,Fail
+ehgyai is empty.,Value equals to null,VALUE equals to null,Fail
+uwwlwa would be empty,Value equals to null,VALUE equals to null,Fail
+yhqmws is not null,Value not_equals null,VALUE not_equals to null,Fail
+cllyfz could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+vsfmbn cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+qtratm must have a non-null loan number,Value not_equals to null,VALUE not_equals to null,Fail
+qatafx mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+whvlyw can be left empty,Value equals to null,VALUE equals to null,Fail
+cfedip is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+cfvjvp canbe blank,Value equals to null,VALUE equals to null,Fail
+rhhvxu isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+cuwpmm cannot be null.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+tgbuvo has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+tcvpjy should be null,Value equals to null,VALUE equals to null,Fail
+ylogir can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+fecxsj is required to be not null,Value equals to null,VALUE not_equals to null,Fail
+shvgti could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+wahmwc canbe empty,Value equals to null,VALUE equals to null,Fail
+tlbfqn can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+mihtwi must have a non-null loan number,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+yqqkiu must be empty.,VALUE is equal to NULL,VALUE equals to null,Fail
+Lets say qppqeo have null values,Value equals to null,VALUE equals to null,Fail
+ddondq should be blank,Value equals to null,VALUE equals to null,Fail
+mjbxgo consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+vwoaaf must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+xklmqm could be empty,Value equals to null,VALUE equals to null,Fail
+qirwnn should be null,Value equals to null,VALUE equals to null,Fail
+upieyx must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+fecxsj can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+grkrim must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+kojxqx can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+cpxzti can be equal to blank,Value equals to null,VALUE equals to null,Fail
+asinhm is equal to the value of date,Value equals to null,VALUE is equal to DATE,Fail
+gfuehz is with in 6070 to 63332,Value is_within(6070 to63332),"Value is_within(6070,63332)",Fail
+"uppafp IS LONGER THAN four thousand, seven hundred AND ALSO uppafp IS SMALL THAN eight thousand, nine hundred and seventy-three","Value is_within(four thousand, seven hundred)","Value is_within(4700,8973)",Fail
+cqomya describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+rcdpig field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+qlylbu could be null.,Value equals to null,VALUE equals to null,Fail
+qdsnjl is with in 1237 to 43127,"Value is_within(1237,43127)","Value is_within(1237,43127)",Pass
+"qohzma exceeds 1120,but does not exceeds 94111","Value is_within(1120,94111)","Value is_within(1120,94111)",Pass
+pbdden must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+izqfls is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+hkccvb cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+oopulf could be less than 9866 and more than 93454,"Value is_within(9166,9354)","Value is_within(9866,93454)",Fail
+pxptyp number should be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+xfhlin could be null,Value equals to null,VALUE equals to null,Fail
+sjqgrl represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+wwmsnt would not be null,Value equals to null,VALUE not_equals to null,Fail
+uppafp is more than 4700 and also uppafp should not exceed 8973,"Value is_within(4700,8973)","Value is_within(4700,8973)",Pass
+ozqjwn mustn't be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+gtpnsz equals a number under 1764 and over 23255,"Value is_within(1764,23255)","Value is_within(1764,23255)",Pass
+wwlehm is required to be null,Value equals to null,VALUE equals to null,Fail
+fqanqw is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+rcdpig should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+nphufv would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+iyloci cannot be null,Value not_equals to null,VALUE not_equals to null,Fail
+yuercd can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+jwsemu is a null,Value equals to null,VALUE equals to null,Fail
+egcppc should not have a expired indicator,Value not_equals to null,VALUE equals to null,Fail
+nyyjpo can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+wpqgqx canbe empty.,Value equals to null,VALUE equals to null,Fail
+zvluvb canbe empty,Value equals to null,VALUE equals to null,Fail
+gaazyz is more than 8733 and also gaazyz should not exceed 93256,"Value is_within(8733,93256)","Value is_within(8733,93256)",Pass
+immlmq is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+zaccez isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+suwugi must have a null loan number,Value equals to null,VALUE equals to null,Fail
+qjbzla can be equal to null,Value equals to null,VALUE equals to null,Fail
+wahmwc would be blank,Value equals to null,VALUE equals to null,Fail
+nnzdwx is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+ajqrkp describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ymvrex is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+ydmzpd represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ihjbzu describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+gzrpmw can be equal to null,Value equals to null,VALUE equals to null,Fail
+yraqos mustn't be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+dujqvz can be equal to null,Value equals to null,VALUE equals to null,Fail
+maizsi shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+foyeug must not be populated,Value not_equals to null,VALUE equals to null,Fail
+kodygj is required to be null,Value equals to null,VALUE equals to null,Fail
+cthyqs can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+"mldsta could be greater than 651 ,but less than 39159","Value is_within(651,39159)","Value is_within(651,39159)",Pass
+wmdzze can be in range 2941 to 48189,Value is_within(2941 to 48189),"Value is_within(2941,48189)",Fail
+iyloci isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+ixmehr must have a non-null loan number,Value not_equals to null,VALUE not_equals to null,Fail
+ouryod mustn't be null,Value not_equals to null,VALUE not_equals to null,Fail
+epzzyj represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+qjqdta is empty,Value equals to null,VALUE equals to null,Fail
+"zvslkj must be greater than 697,but less than  49880","Value is_within(697,49880)","Value is_within(697,49880)",Pass
+"wmejbu must be greater than 7065,but less than  19793","Value is_within(7065,793)","Value is_within(7065,19793)",Fail
+ucjgim field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+xpbbzr is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+"ziiedp is greater than 5235,but less than 24361","Value is_within(5235,24361)","Value is_within(5235,24361)",Pass
+"miufwx lies between five hundred and sixty-two and seventy-one thousand, five hundred and forty-nine","Value is_within(562,711)","Value is_within(562,71549)",Fail
+tdcxan cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+ojvgno would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+fecxsj mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+ltkfdy can be left blank,Value equals to null,VALUE equals to null,Fail
+ygeirj would not be null,Value equals to null,VALUE not_equals to null,Fail
+cecujz can be a null,Value equals to null,VALUE equals to null,Fail
+unkdnl must have a null loan number,Value equals to null,VALUE equals to null,Fail
+hdkwux could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+lnluoo can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+bfgtdm must be empty,Value equals to null,VALUE equals to null,Fail
+lscmqj must be empty,Value equals to null,VALUE equals to null,Fail
+"jusply lies between nine thousand, three hundred and ninety-seven and twenty-nine thousand, six hundred and thirty-four","Value is_within(9 000,397 and294)","Value is_within(9397,29634)",Fail
+cfedip cannot be null,Value equals to null,VALUE not_equals to null,Fail
+litqcc could be empty,Value equals to null,VALUE equals to null,Fail
+yrudkd is expected to be empty,Value equals to null,VALUE equals to null,Fail
+wibvqn may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+gzrpmw can be equal to blank,Value equals to null,VALUE equals to null,Fail
+wpqgqx is blank,Value equals to null,VALUE equals to null,Fail
+cfedip is expected to be not null,Value not_equals null,VALUE not_equals to null,Fail
+unkdnl should not have a lithology description.,lithology not_equals to null,VALUE equals to null,Fail
+aubusd canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+ujzbgx is not empty,Value not_equals to null,VALUE not_equals to null,Fail
+rcdpig depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+xscpjc could be empty,Value equals to null,VALUE equals to null,Fail
+vmrdvr should be empty,Value equals to null,VALUE equals to null,Fail
+fgqlsr could be empty,Value equals to null,VALUE equals to null,Fail
+uiqvgr is null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+dtcfxh is null.,Value equals to null,VALUE equals to null,Fail
+xcbrzn could not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+ntkxhe consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ugyick can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+pcyeys can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+vyqbxm can be equal to blank,Value equals to null,VALUE equals to null,Fail
+alxuly should be empty,Value equals to null,VALUE equals to null,Fail
+ixvmwy could be blank,Value equals to null,VALUE equals to null,Fail
+npaoqd can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+pbdden can be equal to blank,Value equals to null,VALUE equals to null,Fail
+onqiuj can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+cegjec is required to be not null,Value equals to null,VALUE not_equals to null,Fail
+wssdgw has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+isweno is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+nphufv is not null,Value equals to null,VALUE not_equals to null,Fail
+zjlyef describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ltkfdy would be null,Value equals to null,VALUE equals to null,Fail
+itpgqd is required to be null,Value equals to null,VALUE equals to null,Fail
+bxboto is null.,Value equals to null,VALUE equals to null,Fail
+yddfyg should not have a lithology description.,yddfyg is not_equal to zero.,VALUE equals to null,Fail
+lvvlfj must be empty,Value equals to null,VALUE equals to null,Fail
+mjbxgo is of value date,Value equals to null,VALUE is equal to DATE,Fail
+ddondq can be left blank,Value equals to null,VALUE equals to null,Fail
+trbnpf number should be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+Lets say wmsbtw have null values,Value equals to null,VALUE equals to null,Fail
+zvluvb could be null,Value equals to null,VALUE equals to null,Fail
+eichkl should not have a expired indicator,Value not_equals to null,VALUE equals to null,Fail
+"mekynp IS LONGER THAN eight thousand, six hundred and forty-eight AND ALSO mekynp IS SMALL THAN seventy-four thousand, five hundred and thirty-five","VALUE IS_within(8 thousand,6 hundred and forty)","Value is_within(8648,74535)",Fail
+zeqrvl must be blank,Value equals to null,VALUE equals to null,Fail
+wcuiyy cannot be null,Value not_equals to null,VALUE not_equals to null,Fail
+"cqomya represents a specific day, month and year.",VALUE is equal to DATE,VALUE is equal to DATE,Pass
+qbbcsq is required to be null,Value equals to null,VALUE equals to null,Fail
+bclenq cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+gzrpmw is null,Value equals to null,VALUE equals to null,Fail
+fglnac can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+"jtyqvz is comprised between 9951, excluded, and 33262","Value is_within(9951,3262)","Value is_within(9951,33262)",Fail
+crxxkr canbe empty,Value equals to null,VALUE equals to null,Fail
+"ngaqiy is more than 6515 ,but less than 70118","Value is_within(6515,70118)","Value is_within(6515,70118)",Pass
+fcfzju cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+ucgxmd is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+czaqas would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+ouryod is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+"jlncha could be greater than 4909 ,but less than 18546","Value is_within(4909,18546)","Value is_within(4909,18546)",Pass
+yymuqb mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+bofcuo mustn't be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+zbbila has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+gysibh is strictly greater than 1145 and strictly lower than 87178,"Value is_within(1145,87178)","Value is_within(1145,87178)",Pass
+rpszsy could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+"slggzf represents a specific day, month and year.",VALUE is equal to DATE,VALUE is equal to DATE,Pass
+isweno field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+egcppc must be empty,Value equals to null,VALUE equals to null,Fail
+npaoqd should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+fvmpen could be less than 1710 and more than 46259,"Value is_within(1710,4625)","Value is_within(1710,46259)",Fail
+nszato should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+bcmseo could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+yymuqb mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+ugyick mustn't be null,Value not_equals to null,VALUE not_equals to null,Fail
+uwcvdw is blank,Value equals to null,VALUE equals to null,Fail
+wgqpuz is expected to be null,Value equals to null,VALUE equals to null,Fail
+swzeot would not be null,Value equals to null,VALUE not_equals to null,Fail
+qoxavd must not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+aypgxf has not some values.,Value not_equals to null,VALUE equals to null,Fail
+ixmehr can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+ybpbmv could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+vjnsvc number should not be null.,VALUE is not_equal to NULL,VALUE not_equals to null,Fail
+zfzyrs is strictly greater than 2989 and strictly lower than 89958,"Value is_within(2989,8958)","Value is_within(2989,89958)",Fail
+hssrcb cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+oexfdw equals a number under 2191 and over 38735,"Value is_within(2191,3773)","Value is_within(2191,38735)",Fail
+tubrig can be equal to null,Value equals to null,VALUE equals to null,Fail
+vyqbxm should not contain something,Value not_equals to null,VALUE equals to null,Fail
+pxptyp is null,Value equals to null,VALUE equals to null,Fail
+hckzkr is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+"xrnmyg must be greater than 5102 ,but less than 95852","Value is_within(5202,9585)","Value is_within(5102,95852)",Fail
+yddfyg canbe null.,Value equals to null,VALUE equals to null,Fail
+bcgrfy canbe null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+fzquej is expected to be null,Value equals to null,VALUE equals to null,Fail
+btpemn would not be null,Value equals to null,VALUE not_equals to null,Fail
+xusyol could be blank,Value equals to null,VALUE equals to null,Fail
+rjzvrj is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+foyeug is empty,Value equals to null,VALUE equals to null,Fail
+bcgrfy can be a empty,Value equals to null,VALUE equals to null,Fail
+wpylcg can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ngwbrk is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+shvgti field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+tmakfo is of value date,Value equals to null,VALUE is equal to DATE,Fail
+lvvlfj canbe empty,Value equals to null,VALUE equals to null,Fail
+unkdnl could be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+ueajfp may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+wpqgqx should not have a lithology description.,wpqgqx not_equals to null,VALUE equals to null,Fail
+uiqvgr field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+qppqeo could be null,Value equals to null,VALUE equals to null,Fail
+nkykvc would be empty,Value equals to null,VALUE equals to null,Fail
+mxbkka describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+vjnsvc should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+oqvxaz is null.,Value equals to null,VALUE equals to null,Fail
+iqlwbs shall be found somewhere between 2197 and 30699,Value is_within(2197-30699),"Value is_within(2197,30699)",Fail
+dmlmnr must not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+phgxnb is blank,Value equals to null,VALUE equals to null,Fail
+pbdden should not contain something,Value not_equals to null,VALUE equals to null,Fail
+"grasqr could be greater than 6898 ,but less than 52483","Value is_within(6898,5283)","Value is_within(6898,52483)",Fail
+ltkfdy can be equal to empty,Value equals to null,VALUE equals to null,Fail
+vjkcht must have a null loan number,Value equals to null,VALUE equals to null,Fail
+xqdgoy is expected to be null,Value equals to null,VALUE equals to null,Fail
+erhnsu could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+hvraha is with in 9724 to 37376,Value is_within(9724-37376),"Value is_within(9724,37376)",Fail
+Lets say jonjcp cannot have null values,Value not_equals to null,VALUE not_equals to null,Fail
+wcrewy is null.,Value equals to null,VALUE equals to null,Fail
+rsbvwq is more than 9983 and also rsbvwq should not exceed 46226,"Value is_within(9983,4626)","Value is_within(9983,46226)",Fail
+"sqhlbu could be greater than 1584 ,but less than 5772","Value is_within(1584,5772)","Value is_within(1584,5772)",Pass
+rqozzk can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+dckwfl is a null,Value equals to null,VALUE equals to null,Fail
+dckwfl can be a null,Value equals to null,VALUE equals to null,Fail
+madwmj is strictly greater than 1210 and strictly lower than 90905,"Value is_within(1210,90905)","Value is_within(1210,90905)",Pass
+nejqts can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+cirbha equals a number under 8992 and over 83637,"Value is_within(8992,8337)","Value is_within(8992,83637)",Fail
+mmljrs is empty,Value equals to null,VALUE equals to null,Fail
+eujiot is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+tdcxan should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+olungd shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ilbywy isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+cpxzti should not contain something,Value not_equals to null,VALUE equals to null,Fail
+uwwlwa must have a null loan number,Value equals to null,VALUE equals to null,Fail
+nejqts can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+vmrdvr is empty,Value equals to null,VALUE equals to null,Fail
+ymqqvy may not contain the value of date,VALUE is not_equal to DATE,VALUE is equal to DATE,Fail
+ozqjwn could not be null,Value equals to null,VALUE not_equals to null,Fail
+ybpbmv field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+qmgpvx is with in 6482 to 70614,Value equals to null,"Value is_within(6482,70614)",Fail
+dahbph could be equal to blank,Value equals to null,VALUE equals to null,Fail
+"muoony represents a specific day, month and year.",VALUE is equal to DATE,VALUE is equal to DATE,Pass
+uqxnhe must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+bbmfvm is not empty,Value not_equals null,VALUE not_equals to null,Fail
+iyloci is not null,Value equals to null,VALUE not_equals to null,Fail
+fuwvkf can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+inpptb is required to be not null,Value equals to null,VALUE not_equals to null,Fail
+zfwmnt should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+tcqoeu canbe null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+whvlyw should not have a lithology description.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+kejcah would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+wbvoat could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+dyzxmf can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+fignuf would be empty,Value equals to null,VALUE equals to null,Fail
+uwyjvd number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+"lgzqfq is comprised between 8337, excluded, and 50554","Value is_within(8337, 50554)","Value is_within(8337,50554)",Fail
+itowag should contain the value of date,Value equals to null,VALUE is equal to DATE,Fail
+fmigwx can be equal to empty,Value equals to null,VALUE equals to null,Fail
+vfozul represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+"uxsvru lies between seven hundred and eighty-one and fifty-two thousand, one hundred and ninety-two","Value is_within(71,81)","Value is_within(781,52192)",Fail
+cudgam number should be null.,VALUE is equal to NULL,VALUE equals to null,Fail
+sirtsl is always NOT NULL,Value not_equals to null,VALUE not_equals to null,Fail
+mlarpy would not be null,Value equals to null,VALUE not_equals to null,Fail
+"oekkse should not be greater than 45444 ,but less than 8268","Value is_within(5444,8268)","Value is_within(8268,45444)",Fail
+nqsbcj cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+swzeot should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+tqmmju can be equal to empty,Value equals to null,VALUE equals to null,Fail
+ygeirj would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+kodygj could be blank,Value equals to null,VALUE equals to null,Fail
+krumex must have a null loan number,Value equals to null,VALUE equals to null,Fail
+"rxnxyd is greater than 9752,but less than 98802","Value is_within(9752,9802)","Value is_within(9752,98802)",Fail
+remxly should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+rnauzs is required to be not null,Value not_equals null,VALUE not_equals to null,Fail
+rqozzk would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+tcqoeu canbe blank,Value equals to null,VALUE equals to null,Fail
+fpiogn could be null,Value equals to null,VALUE equals to null,Fail
+paqxlh mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+atuzpf shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+sthtnr can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+"hpnhvb represents a specific day, month and year.",VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ufzpoj can be in range 7546 to 19324,Value is_within(7546-19334),"Value is_within(7546,19324)",Fail
+jqqeuv might be in between 3650 to 28967,Value is_within(3650-28967),"Value is_within(3650,28967)",Fail
+ngwbrk can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+glbibd has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+tqjlfh can be equal to empty,Value equals to null,VALUE equals to null,Fail
+cecujz is expected to be null,Value equals to null,VALUE equals to null,Fail
+immlmq must not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+dbwhlf can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+omxvbk is not null,Value equals to null,VALUE not_equals to null,Fail
+lxymmq consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+bfgtdm field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+uwwlwa must be blank,Value equals to null,VALUE equals to null,Fail
+dihjkk cannot be null,Value not_equals to null,VALUE not_equals to null,Fail
+bvsdph should be blank,Value equals to null,VALUE equals to null,Fail
+"plchsp could be greater than 8675 ,but less than 69632","Value is_within(8675,6632)","Value is_within(8675,69632)",Fail
+aihteq describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+suwugi must not be populated,Value not_equals to null,VALUE equals to null,Fail
+zdypxi cannot be null,Value not_equals to null,VALUE equals to null,Fail
+sjqgrl is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+cthyqs shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+fmigwx canbe empty,Value equals to null,VALUE equals to null,Fail
+rrczhj can be equal to empty,Value equals to null,VALUE equals to null,Fail
+Lets say vimmwe have null values,Value equals to null,VALUE equals to null,Fail
+wpmbnz would be blank,Value equals to null,VALUE equals to null,Fail
+fqanqw can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+ajmufy is more than 1296 and also ajmufy should not exceed 73835,"Value is_within(1296,7385)","Value is_within(1296,73835)",Fail
+"qjgfnz is more than 9159 ,but less than 66378","Value is_within(9159,6378)","Value is_within(9159,66378)",Fail
+xscpjc number should be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+ibrzch is not empty,Value not_equals to null,VALUE not_equals to null,Fail
+qtratm cannot be null,Value not_equals to null,VALUE not_equals to null,Fail
+wlsdjl is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+uezpzb shall be found somewhere between 9808 and 63885,"Value is_within(9808,6385)","Value is_within(9808,63885)",Fail
+dihjkk must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+ssnros could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+vavjms can be left empty,Value equals to null,VALUE equals to null,Fail
+pxptyp could be empty,Value equals to null,VALUE equals to null,Fail
+qatafx is not null,Value not_equals null,VALUE not_equals to null,Fail
+ajqrkp consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+vavjms can be left blank,Value equals to null,VALUE equals to null,Fail
+feormp should contain the value of date,Value equals to null,VALUE is equal to DATE,Fail
+doaaun could be blank,Value equals to null,VALUE equals to null,Fail
+jrictu is always NULL,Value equals to null,VALUE equals to null,Fail
+bfgtdm can be a empty,Value equals to null,VALUE equals to null,Fail
+cegjec depth must not be null,Value not_equals to null,VALUE not_equals to null,Fail
+tqmmju is always NULL,Value equals to null,VALUE equals to null,Fail
+llkjgp shall be found somewhere between 2974 and 31344,Value is_within(2974-31344),"Value is_within(2974,31344)",Fail
+vimmwe canbe blank,Value equals to null,VALUE equals to null,Fail
+rcdpig could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+ymvrex could not be null,Value equals to null,VALUE not_equals to null,Fail
+lrcdvz would be empty,Value equals to null,VALUE equals to null,Fail
+"yblyal is more than 2003 ,but less than 96906","Value is_within(2003,9606)","Value is_within(2003,96906)",Fail
+vjkcht can be left blank,Value equals to null,VALUE equals to null,Fail
+yxzivg is empty,Value equals to null,VALUE equals to null,Fail
+yhkdih is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+gwdnaj is required to be empty,Value equals to null,VALUE equals to null,Fail
+cfedip is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+kitidm is empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+"mgbsoi is greater than 4931,but less than 98737","Value is_within(4931,98737)","Value is_within(4931,98737)",Pass
+kdkrxb could be less than 3816 and more than 41575,"Value is_within(3816,41575)","Value is_within(3816,41575)",Pass
+dxlywc should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+krumex should not have a expired indicator,Value not_equals to null,VALUE equals to null,Fail
+vavjms is empty,Value equals to null,VALUE equals to null,Fail
+paqxlh cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+pfcxzo could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+iuuuya could not be null,Value equals to null,VALUE not_equals to null,Fail
+mzamet could be null,Value equals to null,VALUE equals to null,Fail
+zfwmnt could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+"jjzvhz is comprised between 170, excluded, and 47240","Value is_within(170, 47240)","Value is_within(170,47240)",Fail
+vjkcht is empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+glbibd must be empty,Value equals to null,VALUE equals to null,Fail
+wbnbnk can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+bcmseo should have a lithology description.,lithology description.,VALUE not_equals to null,Fail
+ntvtxo can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+mgfsur could be less than 5146 and more than 96358,"Value is_within(5146,9638)","Value is_within(5146,96358)",Fail
+wwmsnt could not be null,Value equals to null,VALUE not_equals to null,Fail
+nbesnw cannot have any characters.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+gffaoa would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+ecsend must be blank,Value equals to null,VALUE equals to null,Fail
+wjyybf is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+rnauzs could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+cttfla should not have a expired indicator,Value not_equals to null,VALUE equals to null,Fail
+qlylbu would be null,Value equals to null,VALUE equals to null,Fail
+wmcdxr must be an empty string.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+frrtlg canbe null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+gbsptf can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+uumbro can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+ltkfdy is blank,Value equals to null,VALUE equals to null,Fail
+mihtwi cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+"mepcsc exceeds 204,but does not exceeds 357","Value is_within(204,357)","Value is_within(204,357)",Pass
+izqfls should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+stsyfm shall be found somewhere between 6281 and 33499,"Value is_within(6281,3499)","Value is_within(6281,33499)",Fail
+zgmrem number should not be null.,VALUE is not_equal to NULL,VALUE not_equals to null,Fail
+edhreb can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+simnvt is empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+uvxzwf can be in range 3070 to 55627,Value is_within(3070-55627),"Value is_within(3070,55627)",Fail
+Lets say zdypxi have null values,Value equals to null,VALUE equals to null,Fail
+jsbyca is equal to the value of date,Value equals to null,VALUE is equal to DATE,Fail
+hkccvb would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+bcgrfy can be equal to null,Value equals to null,VALUE equals to null,Fail
+qlylbu is empty.,Value equals to null,VALUE equals to null,Fail
+fzquej could be null.,Value equals to null,VALUE equals to null,Fail
+grrbpo would be empty,Value equals to null,VALUE equals to null,Fail
+fgqlsr canbe empty,Value equals to null,VALUE equals to null,Fail
+plfize is with in 391 to 92307,"Value is_within(391,9230)","Value is_within(391,92307)",Fail
+krumex is null.,Value equals to null,VALUE equals to null,Fail
+wmsbtw cannot be null,Value not_equals to null,VALUE equals to null,Fail
+lwckbe could not be null,Value equals to null,VALUE not_equals to null,Fail
+fdpdox could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+rnatbk can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+yafjjc is of value date,Value equals to null,VALUE is equal to DATE,Fail
+xcbrzn cannot have any characters.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+nszato is required to be not null,Value equals to null,VALUE not_equals to null,Fail
+tdcxan can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+exdrrk is more than 92 and also exdrrk should not exceed 44828,"Value is_within(92,4828)","Value is_within(92,44828)",Fail
+qmggfy number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+atmlwb should contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+nqsbcj is not null,Value not_equals null,VALUE not_equals to null,Fail
+lsrdgg is strictly greater than 420 and strictly lower than 16681,"Value is_within(420,16681)","Value is_within(420,16681)",Pass
+rpszsy cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+grkrim is required to be empty,Value equals to null,VALUE equals to null,Fail
+wjzkoa is null,Value equals to null,VALUE equals to null,Fail
+xfhlin can be a null,Value equals to null,VALUE equals to null,Fail
+cegjec is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+qirwnn is required to be null,Value equals to null,VALUE equals to null,Fail
+"tfwhti IS LONGER THAN six thousand, five hundred and fifty-two AND ALSO tfwhti IS SMALL THAN seventy-nine thousand, seven hundred and fifty-two","Value is_within(6 000,5 hundred and fifty-two)","Value is_within(6552,79752)",Fail
+gwsgxi could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+mmljrs must be blank,Value equals to null,VALUE equals to null,Fail
+rmbzss would be null,Value equals to null,VALUE equals to null,Fail
+chchaq can be left blank,Value equals to null,VALUE equals to null,Fail
+jwsemu can be equal to blank,Value equals to null,VALUE equals to null,Fail
+giyfoi must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+"jpkatl IS LONGER THAN seven thousand, three hundred and fifty-two AND ALSO jpkatl IS SMALL THAN seventy-seven thousand, five hundred and seventy-three","jpkatl IS LONGER THAN seven thousand, three hundred and fifty-two AND ALSO jpkatl IS SMALLER THAN seventy-seven thousand, five hundred and seventy-three","Value is_within(7352,77573)",Fail
+ntvtxo is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+itpgqd should not have a expired indicator,Value not_equals to null,VALUE equals to null,Fail
+vnpkga could not be null,Value not_equals to null,VALUE not_equals to null,Fail
+emzfsa can be a empty,Value equals to null,VALUE equals to null,Fail
+"pqoafo is more than 4226 ,but less than 4565","Value is_within(4226,4565)","Value is_within(4226,4565)",Pass
+pcyeys can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+hqyusu can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+itnowo is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+jwaeqj cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+wcgpmx field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+ylogir is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+"cmlakn is greater than 942,but less than 90235","Value is_within(942,90235)","Value is_within(942,90235)",Pass
+dyszjk should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+zjpqlv is with in 5302 to 41197,Value is_within(5302 to 41197),"Value is_within(5302,41197)",Fail
+ixmehr is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+ecsend depth must be null,Value equals to null,VALUE equals to null,Fail
+giyfoi can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+cfvjvp can be equal to null,Value equals to null,VALUE equals to null,Fail
+gegtft must have a non-null loan number,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+fvnkdr may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+gwdnaj could be null.,Value equals to null,VALUE equals to null,Fail
+gffaoa would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+ojvgno isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+jcxily may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+hmysnf could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+dfzudk is a null,Value equals to null,VALUE equals to null,Fail
+oapnqm is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+loassa can not be equal to null,Value equals to null,VALUE not_equals to null,Fail
+uwcvdw is always NULL,Value equals to null,VALUE equals to null,Fail
+eqmjuv can be equal to blank,Value equals to null,VALUE equals to null,Fail
+vvtcts should have a lithology description.,VALUE is equal to DATE,VALUE not_equals to null,Fail
+ziluzb should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+vavjms should not contain something,Value not_equals to null,VALUE equals to null,Fail
+"hvraha must be greater than 9724 ,but less than 37376","Value is_within(9724,3776)","Value is_within(9724,37376)",Fail
+uisrfm could be less than 2268 and more than 70805,"Value is_within(2268,70805)","Value is_within(2268,70805)",Pass
+gwdnaj field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+ijqwty could be blank,Value equals to null,VALUE equals to null,Fail
+yraqos cannot be null,Value equals to null,VALUE not_equals to null,Fail
+vuxjcg number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+"bzfywb should not be greater than 99328 ,but less than 7492","Value is_within(7492,99328)","Value is_within(7492,99328)",Pass
+iqcoab represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+giyfoi can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+uflxlt shall be found somewhere between 3586 and 46427,Value is_within(3586-46427),"Value is_within(3586,46427)",Fail
+ymqqvy represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+essuxz is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+cfedip cannot have any characters.,VALUE is not_equal to DATE,VALUE not_equals to null,Fail
+lgfnct must not be populated,Value not_equals to null,VALUE equals to null,Fail
+vzsiyx must have a null loan number,Value equals to null,VALUE equals to null,Fail
+tubrig is blank,Value equals to null,VALUE equals to null,Fail
+fwriyk is null.,Value equals to null,VALUE equals to null,Fail
+Lets say isweno cannot have null values,Value equals to null,VALUE not_equals to null,Fail
+wcrewy must not be populated,Value not_equals to null,VALUE equals to null,Fail
+"msnwpd is more than 6687 ,but less than 82737","Value is_within(6687,82737)","Value is_within(6687,82737)",Pass
+hkccvb could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+hyoein can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+sqhlbu could be less than 1584 and more than 5772,"Value is_within(1584,5772)","Value is_within(1584,5772)",Pass
+mtbrjq can be in range 6286 to 85116,"Value is_within(6286,85116)","Value is_within(6286,85116)",Pass
+lagbzg must be populated,Value equals to null,VALUE not_equals to null,Fail
+zaccez can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+nbesnw mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+frrtlg should not have a expired indicator,Value not_equals to null,VALUE equals to null,Fail
+vjxyhh can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+jgwkbv could not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+upieyx would be empty,Value equals to null,VALUE equals to null,Fail
+aubusd would be empty,Value equals to null,VALUE equals to null,Fail
+omxvbk mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+cfkqno cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+fsbxol should contain the value of date,Value equals to null,VALUE is equal to DATE,Fail
+ehgyai can not have any characters.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+dkkxcm is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+hssrcb cannot be null,Value not_equals to null,VALUE not_equals to null,Fail
+sunwvm number should not be null.,VALUE is not_equal to NULL,VALUE not_equals to null,Fail
+ifxvnx is blank,Value equals to null,VALUE equals to null,Fail
+giyfoi can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+uwyjvd should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+hvzyas shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+xcbrzn should have a lithology description.,xcbrzn should have a lithology description.,VALUE not_equals to null,Fail
+izqfls can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+vgxrfb would not be null,Value equals to null,VALUE not_equals to null,Fail
+ipbzny field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+rcdpig should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+madwmj equals a number under 1210 and over 90905,Value is_within(1210 and 90905),"Value is_within(1210,90905)",Fail
+fkrnay represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+pxenmo must not be populated,Value not_equals to null,VALUE equals to null,Fail
+ixofmu should be blank,Value equals to null,VALUE equals to null,Fail
+oopulf must be in between 9866 to 93454,"Value is_within(9366,9354)","Value is_within(9866,93454)",Fail
+frisrl is more than 5786 and also frisrl should not exceed 26469,"Value is_within(5786,26469)","Value is_within(5786,26469)",Pass
+rqsbjq might be in between 1793 to 57827,"Value is_within(1793,5787)","Value is_within(1793,57827)",Fail
+bajvec is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+ujmcfp should be blank,Value equals to null,VALUE equals to null,Fail
+pfcxzo would not be null,Value equals to null,VALUE not_equals to null,Fail
+uqxnhe is expected to be empty,Value equals to null,VALUE equals to null,Fail
+orqijl describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+fmnzzm mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+ibrzch could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+tlswyk may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+"pzslro is more than 7102 ,but less than 57443","Value is_within(7102,5743)","Value is_within(7102,57443)",Fail
+"qperfo is greater than 8080,but less than 30121","Value is_within(8080,3011)","Value is_within(8080,30121)",Fail
+pcyeys could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+npaoqd could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+qoxavd could not be null,Value equals to null,VALUE not_equals to null,Fail
+wwlehm has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+cirbha is strictly greater than 8992 and strictly lower than 83637,"Value is_within(8992,8337)","Value is_within(8992,83637)",Fail
+ylogir cannot have any characters.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+"rjotpb is greater than 8816,but less than 58609","Value is_within(8816,5669)","Value is_within(8816,58609)",Fail
+nbesnw can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+qtnrvl can be a empty,Value equals to null,VALUE equals to null,Fail
+dbhcud must have a non-null loan number,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+syfzto is null,Value equals to null,VALUE equals to null,Fail
+qjqdta must have a null loan number,Value equals to null,VALUE equals to null,Fail
+vuxjcg isn't empty.,Value not_equals to null,VALUE not_equals to null,Fail
+Lets say ouryod cannot have null values,Value not_equals to null,VALUE not_equals to null,Fail
+mxbkka may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+"gaazyz is greater than 8733,but less than 93256","Value is_within(8733,93256)","Value is_within(8733,93256)",Pass
+wdkrrt should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+bfgtdm must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+wcuiyy should not be null,Value not_equals null,VALUE not_equals to null,Fail
+namlei could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+loassa would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+hmysnf is not empty,Value not_equals to null,VALUE not_equals to null,Fail
+kztndo must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+cgptsy is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+npaoqd is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+pbdden has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+foyeug canbe empty,Value equals to null,VALUE equals to null,Fail
+tugghd is always NULL,Value equals to null,VALUE equals to null,Fail
+qmggfy is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+yraqos can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+nqsbcj would not be null,Value equals to null,VALUE not_equals to null,Fail
+ylimmo equals a number under 1111 and over 77217,"Value is_within(1111,7217)","Value is_within(1111,77217)",Fail
+nejqts must be populated,Value equals to null,VALUE not_equals to null,Fail
+fpiogn can be a null,Value equals to null,VALUE equals to null,Fail
+ncpkmm is of value date,Value equals to null,VALUE is equal to DATE,Fail
+udxpky number should be null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+cawmak is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+zvluvb can not have any characters.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+lzjsmp shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+vjkcht must be an empty string.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+"mgfsur could be greater than 5146 ,but less than 96358","Value is_within(5146,9638)","Value is_within(5146,96358)",Fail
+nqsbcj should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+qjqdta can be equal to blank,Value equals to null,VALUE equals to null,Fail
+aaxpwu cannot be empty.,VALUE is not_equal to NULL,VALUE not_equals to null,Fail
+poujmk can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+ybytjp should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+jonjcp must be populated,Value equals to null,VALUE not_equals to null,Fail
+rqozzk has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+yblyal is more than 2003 and also yblyal should not exceed 96906,"Value is_within(2003,9606)","Value is_within(2003,96906)",Fail
+dmmfkg number should not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+jonjcp can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+nbesnw is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+dyzxmf can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+letixy shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+kiirhm is equal to the value of date,Value equals to null,VALUE is equal to DATE,Fail
+xqdgoy can be equal to null,Value equals to null,VALUE equals to null,Fail
+tcvpjy can be a empty,Value equals to null,VALUE equals to null,Fail
+ojvgno should have a lithology description.,VALUE is equal to DATE,VALUE not_equals to null,Fail
+tyxrel could be less than 9434 and more than 82553,"Value is_within(9434,8255)","Value is_within(9434,82553)",Fail
+orqijl can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+tuorph canbe null.,Value equals to null,VALUE equals to null,Fail
+tlswyk shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+npaoqd would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+cllyfz field cannot be blank or empty,Value not_equals to null,VALUE not_equals to null,Fail
+cfvjvp must be blank,Value equals to null,VALUE equals to null,Fail
+ucgxmd consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+zfwmnt can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+Lets say dtcfxh have null values,Value equals to null,VALUE equals to null,Fail
+cpxzti is required to be null,Value equals to null,VALUE equals to null,Fail
+fcfzju depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+uihpvq is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+nuevvz mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+nkykvc should not have a expired indicator,Value not_equals to null,VALUE equals to null,Fail
+Lets say jujhfu have null values,Value equals to null,VALUE equals to null,Fail
+lrcdvz has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+vvtcts must not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+"wtthqk must be greater than 1106 ,but less than 23449","Value is_within(1106,2349)","Value is_within(1106,23449)",Fail
+hdkwux should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+mmljrs canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+hmysnf is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+fmigwx could be blank,Value equals to null,VALUE equals to null,Fail
+fgqlsr is empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+tdcxan mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+gojhhs should contain the value of date,Value equals to null,VALUE is equal to DATE,Fail
+vnpkga could not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+bftlgn should not have a expired indicator,Value not_equals to null,VALUE equals to null,Fail
+ncbvdo cannot be null,Value not_equals to null,VALUE equals to null,Fail
+lnluoo consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+rmbzss canbe empty,Value equals to null,VALUE equals to null,Fail
+iyloci has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+vjxyhh should contain the value of date,Value equals to null,VALUE is equal to DATE,Fail
+dmlmnr is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+cecujz number should be null.,VALUE is equal to NULL,VALUE equals to null,Fail
+aibnvi is expected to be not null,Value equals to null,VALUE not_equals to null,Fail
+lgfnct would be blank,Value equals to null,VALUE equals to null,Fail
+ouryod cannot have any characters.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+wpsebn could be equal to blank,Value equals to null,VALUE equals to null,Fail
+kztndo is expected to be not null,Value not_equals null,VALUE not_equals to null,Fail
+ixofmu is empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+hyoein describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+zvluvb cannot be null,Value not_equals to null,VALUE equals to null,Fail
+gbsptf is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+jwfcga is required to be empty,Value equals to null,VALUE equals to null,Fail
+zeqrvl should be null,Value equals to null,VALUE equals to null,Fail
+boiuxh is equal to the value of date,Value equals to null,VALUE is equal to DATE,Fail
+mbyzrk cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+nizuef could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+nfdxty is always NULL,Value equals to null,VALUE equals to null,Fail
+Lets say shvgti cannot have null values,Value not_equals to null,VALUE not_equals to null,Fail
+"mgfsur should not be greater than 96358 ,but less than 5146","Value is_within(5146,9638)","Value is_within(5146,96358)",Fail
+hlundq must be populated,Value equals to null,VALUE not_equals to null,Fail
+ohbcrx consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ygeirj is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+aypgxf should be blank,Value equals to null,VALUE equals to null,Fail
+amdhdt can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+wgqpuz should be blank,Value equals to null,VALUE equals to null,Fail
+ozobao mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+wqgcsq is null,Value equals to null,VALUE equals to null,Fail
+loassa should contain something,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+wpsebn must have a null loan number,Value equals to null,VALUE equals to null,Fail
+vvtcts should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+kumhus should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+orqijl is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+ifxvnx canbe empty,Value equals to null,VALUE equals to null,Fail
+hdkwux must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+"ziiedp IS LONGER THAN five thousand, two hundred and thirty-five AND ALSO ziiedp IS SMALL THAN twenty-four thousand, three hundred and sixty-one","Value is_within(five thousand, two hundred and thirty5)","Value is_within(5235,24361)",Fail
+qivpgv is blank,Value equals to null,VALUE equals to null,Fail
+zjgdsr is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+tcvpjy should be empty,Value equals to null,VALUE equals to null,Fail
+frisrl is with in 5786 to 26469,Value is_within(5786 to 26469),"Value is_within(5786,26469)",Fail
+cuwpmm can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+ozobao cannot have any characters.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+pqqqhe should not have a expired indicator,not_duplicate,VALUE equals to null,Fail
+remxly is not empty,Value not_equals to null,VALUE not_equals to null,Fail
+zlskai is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ecsend must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+sirtsl is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+cfkqno cannot be blank,Value not_equals to null,VALUE not_equals to null,Fail
+jhkcuj isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+"ycxutq is greater than 6273,but less than 19670","Value is_within(6273,6770)","Value is_within(6273,19670)",Fail
+dmmfkg is not blank,Value not_equals to null,VALUE not_equals to null,Fail
+eqmjuv is required to be empty,Value equals to null,VALUE equals to null,Fail
+wdkrrt is not null.,Value not_equals to null,VALUE not_equals to null,Fail
+hctkzk cannot be empty.,Value not_equals to null,VALUE not_equals to null,Fail
+"jlncha must be greater than 4909 ,but less than 18546","Value is_within(4909,18546)","Value is_within(4909,18546)",Pass
+nqsbcj must not be empty,Value not_equals null,VALUE not_equals to null,Fail
+jtfwvy cannot be null,Value not_equals to null,VALUE not_equals to null,Fail
+kbbfod may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+qmggfy can't be a empty,Value not_equals to null,VALUE not_equals to null,Fail
+ijafwf must be empty,Value equals to null,VALUE equals to null,Fail
+lcnjhc is required to be empty,Value equals to null,VALUE equals to null,Fail
+bvsdph has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+ucgxmd represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+itnowo is required to be not null,Value not_equals to null,VALUE not_equals to null,Fail
+hqyusu is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+epmgpk is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+"cbhrny is comprised between 4110, excluded, and 62823","Value is_within(4110,6283)","Value is_within(4110,62823)",Fail
+cusbzf should be empty,Value equals to null,VALUE equals to null,Fail
+syfzto is always NULL,Value equals to null,VALUE equals to null,Fail
+hctkzk is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+wgqpuz canbe blank,Value equals to null,VALUE equals to null,Fail
+uwcvdw canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+wahmwc can be equal to blank,Value equals to null,VALUE equals to null,Fail
+kumhus cannot be empty.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+emzfsa is blank,Value equals to null,VALUE equals to null,Fail
+tuorph is expected to be empty,Value equals to null,VALUE equals to null,Fail
+cmlakn could be less than 942 and more than 90235,"Value is_within(942,90235)","Value is_within(942,90235)",Pass
+cuwpmm must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+vdlvdp is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+vjnsvc must be populated,Value equals to null,VALUE not_equals to null,Fail
+"tmmuon must be greater than 621,but less than  59742","Value is_within(611,599742)","Value is_within(621,59742)",Fail
+wcgpmx can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+fmigwx should not have a expired indicator,Value not_equals to null,VALUE equals to null,Fail
+cawmak is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+cxodwl must be in between 4903 to 10853,Value is_within(4903 to 10853),"Value is_within(4903,10853)",Fail
+aeijoq can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+pqqqhe is null.,value not_equals to null,VALUE equals to null,Fail
+egcppc can be equal to blank,Value equals to null,VALUE equals to null,Fail
+jtfwvy should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+xrfotv must have a non-null loan number,Value not_equals to null,VALUE not_equals to null,Fail
+zgmrem cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+cuwpmm mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+udxpky is required to be null,Value equals to null,VALUE equals to null,Fail
+mzwylq canbe null.,Value equals to null,VALUE equals to null,Fail
+hctkzk is required to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+aibnvi cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+cspogb canbe null.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+rcdpig has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+"miufwx should not be greater than 71549 ,but less than 562","Value is_within(562,7155)","Value is_within(562,71549)",Fail
+"pewzzn is comprised between 2151, excluded, and 36488","Value is_within(2151, excluded)","Value is_within(2151,36488)",Fail
+ehgyai should not contain something,Value not_equals to null,VALUE equals to null,Fail
+jhkcuj should have a expired indicator,Value equals to null,VALUE not_equals to null,Fail
+fecxsj depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+ujmcfp depth must be null,Value equals to null,VALUE equals to null,Fail
+"qohzma is comprised between 1120, excluded, and 94111","Value is_within(1120,94111)","Value is_within(1120,94111)",Pass
+emzfsa depth must be null,Value equals to null,VALUE equals to null,Fail
+vrqofk equals a number under 2873 and over 81354,"Value is_within(2873,8135)","Value is_within(2873,81354)",Fail
+bofcuo mustn't be null,Value not_equals to null,VALUE not_equals to null,Fail
+tugghd should not have a lithology description.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+xpbbzr consists of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ujmcfp must be blank,Value equals to null,VALUE equals to null,Fail
+"cbhrny exceeds 4110,but does not exceeds 62823","Value is_within(4110,6283)","Value is_within(4110,62823)",Fail
+"qperfo must be greater than 8080 ,but less than 30121","Value is_within(8080,30121)","Value is_within(8080,30121)",Pass
+cspogb can be equal to empty,Value equals to null,VALUE equals to null,Fail
+qatafx cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+mtkktz is null,Value equals to null,VALUE equals to null,Fail
+qlilum isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+exbble can be equal to null,Value equals to null,VALUE equals to null,Fail
+"ylimmo is greater than 1111,but less than 77217","Value is_within(1111,7217)","Value is_within(1111,77217)",Fail
+ainhdc represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+yymuqb could not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+wjsnej can be a empty,Value equals to null,VALUE equals to null,Fail
+zfwmnt would not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+crxxkr is required to be empty,Value equals to null,VALUE equals to null,Fail
+yeizqw cannot be null,Value not_equals to null,VALUE equals to null,Fail
+tcerft depth must not be null,Value equals to null,VALUE not_equals to null,Fail
+upieyx can be equal to empty,Value equals to null,VALUE equals to null,Fail
+xvzxqv can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+fcczjk may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+ntvtxo cannot be empty,Value not_equals to null,VALUE not_equals to null,Fail
+ecsend could be null.,Value equals to null,VALUE equals to null,Fail
+qirwnn can be equal to empty,Value equals to null,VALUE equals to null,Fail
+yaineh may not contain the value of date,Value not_equals to null,VALUE is equal to DATE,Fail
+cravon is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+gddwvd is of value date,Value not_equals to null,VALUE is equal to DATE,Fail
+fvnkdr is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+vymkkg can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+nuevvz must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+fcfzju mustn't be an empty string.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+erhnsu is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+itnowo can not be left empty,Value not_equals to null,VALUE not_equals to null,Fail
+"tyxrel must be greater than 9434 ,but less than 82553","Value is_within(9434,8255)","Value is_within(9434,82553)",Fail
+cecujz is required to be empty,Value equals to null,VALUE equals to null,Fail
+ktihmi can only hold date data type,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+wznuru must have a null loan number,Value equals to null,VALUE equals to null,Fail
+bzfywb must be in between 7492 to 99328,"Value is_within(7492,99328)","Value is_within(7492,99328)",Pass
+uqkihm can not be equal to empty,Value not_equals to null,VALUE not_equals to null,Fail
+hmysnf should have a lithology description.,VALUE is equal to DATE,VALUE not_equals to null,Fail
+xusyol can be a null,Value equals to null,VALUE equals to null,Fail
+bftlgn must have a null loan number,Value equals to null,VALUE equals to null,Fail
+qirwnn should be empty,Value equals to null,VALUE equals to null,Fail
+vmrdvr can be left empty,Value equals to null,VALUE equals to null,Fail
+grrbpo should be blank,Value equals to null,VALUE equals to null,Fail
+uqkihm would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+kitidm is expected to be empty,Value equals to null,VALUE equals to null,Fail
+ugfkpd must be in between 9952 to 62872,Value is_within(9952 to 62872),"Value is_within(9952,62872)",Fail
+mvpfgk could be blank,Value equals to null,VALUE equals to null,Fail
+olungd describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+cawmak cannot be empty.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+tubrig is required to be null,Value equals to null,VALUE equals to null,Fail
+mgyhbm would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+mvpfgk must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+loassa would not be null,Value equals to null,VALUE not_equals to null,Fail
+bgjjgm is equivalent to date,Value equals to null,VALUE is equal to DATE,Fail
+ecsend should be null,Value equals to null,VALUE equals to null,Fail
+uqkihm must be populated,Value equals to null,VALUE not_equals to null,Fail
+gegtft can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+jwaeqj mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+fzquej can be a null,Value equals to null,VALUE equals to null,Fail
+"qperfo IS LONGER THAN eight thousand and eighty AND ALSO qperfo IS SMALL THAN thirty thousand, one hundred and twenty-one",Value is_within(eight thousand and eighty),"Value is_within(8080,30121)",Fail
+kpqzaf mustn't be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+jwaeqj must not be null,Value not_equals null,VALUE not_equals to null,Fail
+"oobhbd represents a specific day, month and year.",VALUE is equal to DATE,VALUE is equal to DATE,Pass
+tubrig could be null.,Value equals to null,VALUE equals to null,Fail
+yaineh is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ifdznu can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+ozqjwn mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+ecuibc field can not be blank or empty,Value not_equals to null,VALUE equals to null,Fail
+ijafwf could be null.,Value equals to null,VALUE equals to null,Fail
+uwyjvd mustn't be null,Value equals to null,VALUE not_equals to null,Fail
+xznjoe would not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+frisrl is strictly greater than 5786 and strictly lower than 26469,"Value is_within(5786,26469)","Value is_within(5786,26469)",Pass
+Lets say wcgpmx cannot have null values,Value not_equals to null,VALUE not_equals to null,Fail
+immlmq is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+oxhiis must be populated,Value equals to null,VALUE not_equals to null,Fail
+yeeusf is required to be empty,Value equals to null,VALUE equals to null,Fail
+njevon must not be populated,Value not_equals to null,VALUE equals to null,Fail
+remxly must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+rtnbxx canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+ycktyw describes date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+lhyahj can only be of type date,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+oqvxaz is blank,Value equals to null,VALUE equals to null,Fail
+wldjim represents a date.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+oxhiis mustn't be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+wjyybf could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+ntvtxo must not be empty,Value equals to null,VALUE not_equals to null,Fail
+jgwkbv should have a lithology description.,VALUE is equal to DATE,VALUE not_equals to null,Fail
+jigbko can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+wbnbnk is comprised of a DATE.,VALUE is equal to DATE,VALUE is equal to DATE,Pass
+amdhdt can not be equal to blank,Value not_equals to null,VALUE not_equals to null,Fail
+Lets say fdxxmg cannot have null values,Value not_equals to null,VALUE not_equals to null,Fail
+xklmqm is empty.,Value equals to null,VALUE equals to null,Fail
+"uezpzb is greater than 9808,but less than 63885","Value is_within(9808,6385)","Value is_within(9808,63885)",Fail
+wssdgw could not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+rcdpig isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+niouhk can be equal to empty,Value equals to null,VALUE equals to null,Fail
+wpqgqx is required to be empty,Value equals to null,VALUE equals to null,Fail
+dnrkyr could be less than 6393 and more than 43798,"Value is_within(6393,4798)","Value is_within(6393,43798)",Fail
+nfdxty is empty,Value equals to null,VALUE equals to null,Fail
+"epsaes exceeds 3094,but does not exceeds 35928","Value is_within(3094,3598)","Value is_within(3094,35928)",Fail
+feifbz should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+knbzdc canbe empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+yraqos cannot have any characters.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+bcgrfy can be left empty,Value equals to null,VALUE equals to null,Fail
+xcbrzn could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+xznjoe isn't empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+wmejbu is strictly greater than 7065 and strictly lower than 19793,"Value is_within(7065,793)","Value is_within(7065,19793)",Fail
+pbdden is expected to be null,Value equals to null,VALUE equals to null,Fail
+"rjotpb lies between eight thousand, eight hundred and sixteen and fifty-eight thousand, six hundred and nine","Value is_within(8 thousand,8 hundred and 16)","Value is_within(8816,58609)",Fail
+ljrhjb can be equal to empty,Value equals to null,VALUE equals to null,Fail
+zaccez mustn't be empty.,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+cvrpww shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+cspogb would be blank,Value equals to null,VALUE equals to null,Fail
+tctdlk shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+wjsnej is required to be empty,Value equals to null,VALUE equals to null,Fail
+wcgpmx must have a non-null loan number,Value not_equals to null,VALUE not_equals to null,Fail
+vgxrfb is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+bxboto can be equal to empty,Value equals to null,VALUE equals to null,Fail
+wpqgqx cannot be null,Value not_equals to null,VALUE equals to null,Fail
+nszato cannot be null,Value equals to null,VALUE not_equals to null,Fail
+qivpgv can be left blank,Value equals to null,VALUE equals to null,Fail
+zeqrvl is blank,Value equals to null,VALUE equals to null,Fail
+gwdnaj is null,Value equals to null,VALUE equals to null,Fail
+whvlyw has not some values.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+fdpdox can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+jdsqmx must be in between 5715 to 44404,Value is_within(5715 to 44404),"Value is_within(5715,44404)",Fail
+hkruxp can have values of type DATE only,Value equals to null,VALUE is equal to DATE,Fail
+xfhlin is a null,Value equals to null,VALUE equals to null,Fail
+cspogb can be equal to null,Value equals to null,VALUE equals to null,Fail
+dyszjk cannot be empty.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+zaytgw is required to be null,Value equals to null,VALUE equals to null,Fail
+zdypxi could be empty,Value equals to null,VALUE equals to null,Fail
+zvluvb must be blank,Value equals to null,VALUE equals to null,Fail
+czknai is empty,Value equals to null,VALUE equals to null,Fail
+pfcxzo is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+hirqxn could be empty,Value equals to null,VALUE equals to null,Fail
+ejktuz should contain something,Value not_equals to null,VALUE not_equals to null,Fail
+zwxkxj is not a null,Value not_equals to null,VALUE not_equals to null,Fail
+tcqoeu is required to be null,Value equals to null,VALUE equals to null,Fail
+remxly can not be left blank,Value not_equals to null,VALUE not_equals to null,Fail
+svxdmu shall be 'DATE',VALUE is equal to DATE,VALUE is equal to DATE,Pass
+tubrig is required to be empty,Value equals to null,VALUE equals to null,Fail
+egyntc has some values.,VALUE is equal to NUMBER,VALUE not_equals to null,Fail
+bclenq must not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+syfzto should be empty,Value equals to null,VALUE equals to null,Fail
+mgfsur can be in range 5146 to 96358,Value is_within(5146-96358),"Value is_within(5146,96358)",Fail
+zglgtn must have a non-null loan number,VALUE is not_equal to NUMBER,VALUE not_equals to null,Fail
+btpemn should not be blank,Value not_equals to null,VALUE not_equals to null,Fail
+"gtdlhr is more than 8764 ,but less than 15303","Value is_within(8764,1533)","Value is_within(8764,15303)",Fail
+diiblo can be left empty,Value equals to null,VALUE equals to null,Fail
+ybpbmv is expected to be not empty,Value not_equals to null,VALUE not_equals to null,Fail
+qypqyy might be in between 1413 to 70245,"Value is_within(1413,70245)","Value is_within(1413,70245)",Pass
+krumex is a null,Value equals to null,VALUE equals to null,Fail
+ewbjyv cannot be empty.,VALUE is not_equal to NULL,VALUE not_equals to null,Fail
+wjyybf is not null,Value not_equals null,VALUE not_equals to null,Fail
+tuorph could be null,Value equals to null,VALUE equals to null,Fail
+zdypxi has not some values.,___________,VALUE equals to null,Fail
+ymvrex cannot be null.,Value not_equals to null,VALUE not_equals to null,Fail
+amdhdt is expected to be not null,Value equals to null,VALUE not_equals to null,Fail
+qoxavd is required to be not null,Value equals to null,VALUE not_equals to null,Fail
+hjzbcn could not be null.,Value not_equals to null,VALUE not_equals to null,Fail
+psygho should not contain something,Value not_equals to null,VALUE equals to null,Fail
+udxpky should be empty,Value equals to null,VALUE equals to null,Fail
+fcfzju can't be a null,Value not_equals to null,VALUE not_equals to null,Fail
+birmqk must be empty.,VALUE is equal to NUMBER,VALUE equals to null,Fail
+szohnf is always NULL,Value equals to null,VALUE equals to null,Fail
+tihxkf should not be empty,Value not_equals to null,VALUE not_equals to null,Fail
+dujqvz could be blank,Value equals to null,VALUE equals to null,Fail
+ifxvnx can not have any characters.,VALUE is not_equal to NUMBER,VALUE equals to null,Fail
+cuwpmm cannot be null,Value not_equals to null,VALUE not_equals to null,Fail
