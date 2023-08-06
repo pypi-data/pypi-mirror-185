@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: femagtools
+Version: 1.2.0
+Summary: Python API for FEMAG
+Home-page: https://github.com/SEMAFORInformatik/femagtools
+Author: Ronald Tanner
+Author-email: tar@semafor.ch
+License: BSD
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Provides-Extra: dxfsl
+Provides-Extra: lxml
+Provides-Extra: dxfgrabber
+Provides-Extra: networkx
+Provides-Extra: matplotlib
+Provides-Extra: plot
+Provides-Extra: meshio
+Provides-Extra: vtk
+Provides-Extra: pyzmq
+Provides-Extra: zmq
+Provides-Extra: all
+License-File: LICENSE
