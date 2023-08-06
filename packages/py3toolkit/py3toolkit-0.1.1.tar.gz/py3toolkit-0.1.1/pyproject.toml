@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "py3toolkit"
+version = "0.1.1"
+description = "my python3 toolkit for daily use"
+authors = ["codeskyblue <codeskyblue@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "*"
+Jinja2 = "*"
+dataclasses-json = "^0.5.7"
+pyyaml = "*"
+
+[tool.poetry.scripts]
+gen_supervisor_conf = "py3toolkit.gen_supervisor_conf:main"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
