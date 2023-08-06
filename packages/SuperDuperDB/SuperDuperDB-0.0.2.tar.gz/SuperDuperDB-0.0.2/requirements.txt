@@ -1,0 +1,12 @@
+flask
+matplotlib
+networkx
+numpy
+pillow
+pymongo
+pytest
+redis
+requests
+rq
+torch
+tqdm
