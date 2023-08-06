@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+scrapex-discord/main.py
+scrapex_discord.egg-info/PKG-INFO
+scrapex_discord.egg-info/SOURCES.txt
+scrapex_discord.egg-info/dependency_links.txt
+scrapex_discord.egg-info/top_level.txt
