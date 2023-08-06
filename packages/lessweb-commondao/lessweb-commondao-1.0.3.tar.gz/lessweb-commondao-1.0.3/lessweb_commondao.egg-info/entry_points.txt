@@ -1,0 +1,3 @@
+[console_scripts]
+commondao = commondao.index:main
+

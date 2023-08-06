@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lessweb-commondao
+Version: 1.0.3
+Summary: mysql service and toolkit for lessweb
+Home-page: https://github.com/lessweb/lessweb-commondao
+Author: qorzj
+Author-email: goodhorsezxj@gmail.com
+License: Apache 2
+Keywords: lessweb mysql
+Platform: any
+License-File: LICENSE.txt
+
+
+README: https://github.com/lessweb/lessweb-commondao
+
+Cookbook: http://www.lessweb.cn
+
