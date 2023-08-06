@@ -1,0 +1,9 @@
+shadermake/__init__.py,sha256=8tbQzfas9CYH-5JKPrkVCQfs0NJ7qKlgqbKWZL6mZ18,270
+shadermake/decorator.py,sha256=iGN57Sf1OWcOX-BuRZOYSw3FnUVm2Nbv_qdLW-J7SuY,498
+shadermake/engine.py,sha256=OczcRkNEMur-IbilLsH5hbr9C-MvrgfK3WVkeqEurEI,189
+shadermake/engines/opengl.py,sha256=Zr1Gh8hL1qyiGruUHj5A2Ld2gTlkMDmHJePTVhca1a0,20039
+shadermake-0.0.4.dist-info/LICENSE,sha256=TzXfOA9KTtjmNsDBux9WlMsJ3l5YohsexIBJ37GYtYA,1064
+shadermake-0.0.4.dist-info/METADATA,sha256=ZCGaM7PQlNSIBDJBS_xjSoOQzWPLpT5T1_a4A53Igfg,4791
+shadermake-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shadermake-0.0.4.dist-info/top_level.txt,sha256=y5zNiWCXRLjffIlP2b5KDv743MdAo7mF02lHbQSJ04s,11
+shadermake-0.0.4.dist-info/RECORD,,
