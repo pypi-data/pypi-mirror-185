@@ -1,0 +1,16 @@
+[console_scripts]
+jcpt=jamexp.cli.jcp_template:cp_template
+jhelp=jamexp.cli.helper:run_helper
+jhydc=jamexp.cli.jhyd_clean:main
+jkill=jamexp.cli.jckill:cudakillfzf
+jkilla=jamexp.cli.jckill:cudakill
+jln=jamexp.cli.jlink:link
+jnb_clean=jamexp.cli.jnb_clean:main
+jpin=jamexp.cli.jpin:main
+jstar=jamexp.cli.star_file:main
+junln=jamexp.cli.jlink:unlink
+jwb_check_running=jamexp.cli.jwb_check_running:main
+jwdc=jamexp.cli.jwb_clean:main
+ngc_bash=jamexp.cli.ngc_shell:ngc_bash
+ngc_kill=jamexp.cli.ngc_shell:ngc_kill
+
