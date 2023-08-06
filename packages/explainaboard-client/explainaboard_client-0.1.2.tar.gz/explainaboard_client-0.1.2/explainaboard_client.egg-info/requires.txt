@@ -1,0 +1,4 @@
+explainaboard_api_client>=0.2.20
+
+[dev]
+pre-commit
