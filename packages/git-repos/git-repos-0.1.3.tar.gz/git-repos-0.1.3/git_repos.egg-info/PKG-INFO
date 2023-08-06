@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: git-repos
+Version: 0.1.3
+Summary: Manages git repos inside a directory
+Home-page: https://github.com/jpedro/git-repos
+Download-URL: https://github.com/jpedro/git-repos/tarball/master
+Author: jpedro
+Author-email: jpedro.barbosa@gmail.com
+License: MIT
+Keywords: git repos
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+
+Manages git repos inside a directory.
