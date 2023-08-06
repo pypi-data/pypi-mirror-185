@@ -1,0 +1,17 @@
+rdreturnnotice/EcsInterface.py,sha256=MInPUREPbhCnDf0n2zTToN1xPzzm-J9o1-SAvZDHduw,4033
+rdreturnnotice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rdreturnnotice/mainModel.py,sha256=t5H_d7lL9HjJcKs2zE2h8AabEKFpmfXqhhH5iT9vhjM,1630
+rdreturnnotice/metadata.py,sha256=8Gt3vISHeTulqbTOAgQE2vJ7wyW3FXx234BrF1J08tA,7394
+rdreturnnotice/operation.py,sha256=-PByl78a4Nkd3Kx4Zolhw1gLkJLZl0ubc4TGliz_gSY,8593
+rdreturnnotice/utility.py,sha256=yWVzwUW_lQO36YGayvBuzxoqehrsnH_HBQY_t775SF0,5261
+rdreturnsales/EcsInterface.py,sha256=kz0R76dB24aeScU4LYvVDg3F92g0v4LhgwwBm615_JE,3124
+rdreturnsales/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rdreturnsales/mainModel.py,sha256=MwLxdQpioFR5nhAEO2F4OyjK8wB4t_eBZp2BS7nWcTQ,1626
+rdreturnsales/metadata.py,sha256=-spVuldv2G4g2QL-ibmFv3szM7_vG9RhjjkmUwahM58,7958
+rdreturnsales/operation.py,sha256=bWIxl7O7YhkbVmb-SL8fFvCxlj3XfhSzB-B0KD9k-ow,5661
+rdreturnsales/utility.py,sha256=dfGbNOF8hCqPAfM96SRLrGm14CUwAtTl6Gkw6K06Kr4,5026
+rdreturnnotice-1.2.3.dist-info/METADATA,sha256=lYZI79hgXaFY0-F9ezSQWWpnZqxk2Ij20Ce-SKt_WjM,337
+rdreturnnotice-1.2.3.dist-info/NoticeOfReturn.py,sha256=kK3PMav62eaAdrSGdLQ0iqXEaSgkXjl-C5gFdjoHsiU,13421
+rdreturnnotice-1.2.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+rdreturnnotice-1.2.3.dist-info/top_level.txt,sha256=ILuTFBfM--lMvEe9USai6A8rRv-oNzVEJDRvY7Tf5PI,29
+rdreturnnotice-1.2.3.dist-info/RECORD,,
