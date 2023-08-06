@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+schwab/__init__.py
+schwab/version.py
+schwab_py.egg-info/PKG-INFO
+schwab_py.egg-info/SOURCES.txt
+schwab_py.egg-info/dependency_links.txt
+schwab_py.egg-info/requires.txt
+schwab_py.egg-info/top_level.txt
