@@ -1,0 +1,17 @@
+luigi
+jsonschema
+typing-extensions
+
+[docs]
+m2r2
+sphinx
+sphinx-bluebrain-theme
+
+[graphviz]
+graphviz
+
+[test]
+mock
+pytest
+pytest-cov
+pytest-html
