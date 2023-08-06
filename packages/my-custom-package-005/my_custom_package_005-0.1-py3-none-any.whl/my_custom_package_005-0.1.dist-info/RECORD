@@ -1,0 +1,9 @@
+my_custom_package_005/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_custom_package_005/m1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_custom_package_005/m1/dtype_filters.py,sha256=d0EPzpfZO15b-XgtNp5K0Neq1XCzgjvB2mnNtRfKhVI,2334
+my_custom_package_005/m1/word_frequency.py,sha256=kW_4vsw8xqdiQUweLSoop3meBIrBMdeU62aVro97CoI,664
+my_custom_package_005-0.1.dist-info/LICENCE.txt,sha256=1KjzJp_CoSSqEMNWLGYjBfrsJGXdq4rDQqtz37BR-PU,1057
+my_custom_package_005-0.1.dist-info/METADATA,sha256=u-stiv1O4Ds0TSt7MyL2wX-GP9icB38SGDB7IWYzv-E,355
+my_custom_package_005-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+my_custom_package_005-0.1.dist-info/top_level.txt,sha256=-n-Jy9Ins-huqebVDg_i9ScpWqnNqZkk1BIbrRWDUks,22
+my_custom_package_005-0.1.dist-info/RECORD,,
