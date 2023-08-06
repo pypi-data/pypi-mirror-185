@@ -1,0 +1,4 @@
+peek-plugin-base==3.1.*,>=3.1.10
+peek-platform==3.1.*,>=3.1.10
+peek-field-app==3.1.*,>=3.1.10
+peek-field-doc==3.1.*,>=3.1.10
