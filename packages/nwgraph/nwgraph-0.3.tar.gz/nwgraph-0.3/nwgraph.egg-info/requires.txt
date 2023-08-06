@@ -1,0 +1,18 @@
+torch
+tqdm
+opencv-python
+h5py
+overrides
+scikit-learn
+graphviz
+returns
+pims
+torchmetrics==0.9.3
+torchvision
+kaleido
+plotly
+pandas
+pytorch_lightning
+pylint
+nwutils@ git+https://gitlab.com/neuralwrappers/nwutils/
+lightning-module-enhanced@ git+https://gitlab.com/mihaicristianpirvu/lightning-module-enhanced

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nwgraph
+Version: 0.3
+Summary: Neural Wrappers Graph library
+Home-page: https://gitlab.com/neuralwrappers/nwgraph
+License: WTFPL
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.TXT
+
+NWGraph
+
+Graph library built on top of Pytorch Lightning.
+
+
