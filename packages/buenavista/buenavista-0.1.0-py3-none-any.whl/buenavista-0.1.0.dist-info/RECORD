@@ -1,0 +1,12 @@
+buenavista/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buenavista/adapter.py,sha256=RjIV-7AjutYAoJ4qBE3GL7DHkiUklfFq9IT6CUIt-Rc,2495
+buenavista/core.py,sha256=qc104Ceep__vMRMCO5N8r8vJZeCAmzuRbNf4XaIRKdY,17354
+buenavista/types.py,sha256=oXRsFc3CjqyA1MfJqaZ43aNM9HSXUtFzb77iGQLZR_E,1184
+buenavista/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buenavista/backends/duckdb.py,sha256=zVwF8xdO4zk9YELxRgWPrmLEj4ckRUX_kndBvErI1vg,8303
+buenavista/backends/postgres.py,sha256=8Z3vbgcTQJw3c9T-PYioXCdvkkQC4Dk8IBPRXNcUYqw,3629
+buenavista-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+buenavista-0.1.0.dist-info/METADATA,sha256=Rr_CMcmk87UhNEsUDuyJocGLVQ7cNIW3ca4kCB0PyjI,2117
+buenavista-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+buenavista-0.1.0.dist-info/top_level.txt,sha256=OlxPuIIC839EZlmGbzxqmeheyrFTkJcL9m5MN12MJmU,11
+buenavista-0.1.0.dist-info/RECORD,,
