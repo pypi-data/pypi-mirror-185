@@ -1,0 +1,17 @@
+investaholic_common/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+investaholic_common/classes/position.py,sha256=m1Vp2-3RcRtvfmQq8iFBTAm0ij1kqnt8GXAGYI9NSE8,1325
+investaholic_common/classes/proposal.py,sha256=T6IZmNudLpuua254ivscPcNnqeVtGnAqYe5spp9Vyfk,1344
+investaholic_common/classes/risk.py,sha256=NU575Y1PH17JhAKgITrtA2zYsMA5X7E514PgjBbkTVU,767
+investaholic_common/classes/ticker.py,sha256=mpr5S7eBu2_G_DZMQ1Uo16Eb5I83-h23MncJ8BGmy-Q,989
+investaholic_common/classes/user.py,sha256=Ner47M_KlkU_-xPDkvvLMgAiwfENyf-0Z4mtJnbzrl4,907
+investaholic_common/errors/errors.py,sha256=T8t6kWbFXH4fjLQqSMbc7R8EZwBDmsjD5JQDFHm6hoo,47
+investaholic_common/representation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+investaholic_common/representation/position_representation.py,sha256=ZhXG0M5elAWIEmGP-zmwl7GoaunV_YlkU0U7aSiugrU,1248
+investaholic_common/representation/proposal_representation.py,sha256=oPSssCp1Dic9bUOPsAkxkhlnzNryaJIcUVbwaSu0EWc,1254
+investaholic_common/representation/representation.py,sha256=PPvF-lUNtOMO-AQkjZ9A8dFTCt8D166-sx430zJAoM4,202
+investaholic_common/representation/ticker_representation.py,sha256=r_mUgCGoWiygfBrcXRJ6bDYk8bYh8RAAJXusJohPB4c,788
+investaholic_common/representation/user_representation.py,sha256=YoiWgw9JGb-HvEp7KAHGpDAGq90sWMSdJVDxF_v0OEs,975
+investaholic_common-0.1.0.dist-info/METADATA,sha256=wZvoR4WFAkdCuLwrEeTF17cn6CuE9HE5QZBY7KaJ8pI,180
+investaholic_common-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+investaholic_common-0.1.0.dist-info/top_level.txt,sha256=E73mwZJ320dyU5ywYnRS0o3lIvKVw_j8m40u-JPdd0U,90
+investaholic_common-0.1.0.dist-info/RECORD,,

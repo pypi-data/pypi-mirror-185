@@ -1,0 +1,3 @@
+investaholic_common/classes
+investaholic_common/errors
+investaholic_common/representation
