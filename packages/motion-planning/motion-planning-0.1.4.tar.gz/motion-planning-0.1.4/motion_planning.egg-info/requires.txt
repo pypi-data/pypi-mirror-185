@@ -1,0 +1,13 @@
+numpy
+pin>=2.6.12
+toppra>=0.4.1
+lxml
+beautifulsoup4
+
+[meshcat]
+meshcat
+
+[tests]
+pytest
+black
+isort
