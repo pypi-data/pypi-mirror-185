@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: github_release_tool
+Version: 0.2.3
+Summary: Top-level package for github-release-tool.
+Keywords: github api cli tool
+Author-email: Matt Krueger <mkrueger@rstms.net>
+Description-Content-Type: text/markdown
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: click
+Requires-Dist: github3.py
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: bump2version ; extra == "dev"
+Requires-Dist: coverage ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pdbpp ; extra == "dev"
+Requires-Dist: python-box ; extra == "dev"
+Requires-Dist: tox ; extra == "dev"
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-click ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme ; extra == "docs"
+Project-URL: Home, https://github.com/rstms/github-release-tool
+Provides-Extra: dev
+Provides-Extra: docs
+
+github-release-tool
+===================
+CLI using github3.py for github API release tasks
+
+![Image](https://img.shields.io/github/license/rstms/github-release-tool)
+
+![Image](https://img.shields.io/pypi/v/github-release-tool.svg)
+
+
+
+* Free software: MIT license
+* Documentation: https://github-release-tool.readthedocs.io.
+
+
+
+### Credits
+
+This package was created with Cookiecutter and `rstms/cookiecutter-python-cli`, a fork of the `audreyr/cookiecutter-pypackage` project template.
+
+[audreyr/cookiecutter](https://github.com/audreyr/cookiecutter)
+[audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
+[rstms/cookiecutter-python-cli](https://github.com/rstms/cookiecutter-python-cli)
+
