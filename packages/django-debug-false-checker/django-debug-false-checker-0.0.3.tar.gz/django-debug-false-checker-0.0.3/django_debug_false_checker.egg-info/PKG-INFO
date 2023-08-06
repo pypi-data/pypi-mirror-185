@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: django-debug-false-checker
+Version: 0.0.3
+Summary: Check that you're not changing the django DEBUG's setting by mistake.
+Home-page: https://github.com/Pierre-Sassoulas/django-debug-false-checker/
+Author: Pierre Sassoulas
+Author-email: pierre.sassoulas@gmail.com
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 5 - Production/Stable
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# django-debug-false-checker
+
+[![PyPI version](https://badge.fury.io/py/django-debug-false-checker.svg)](https://badge.fury.io/py/django-debug-false-checker)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+`django-debug-false-checker` will check that you're not changing the django DEBUG's
+setting by mistake.
+
+## Installation
+
+```yaml
+- repo: https://github.com/Pierre-Sassoulas/django-debug-false-checker/
+  rev: v0.0.3
+  hooks:
+    - id: django-debug-false-checker
+```
