@@ -1,0 +1,6 @@
+HOSTNAME: ip-10-16-138-19
+Build Time:  Wed Jan 11 04:14:23 UTC 2023
+Branch: refs/heads/release/rc-20221129
+Commit Time:  Tue Jan 10 18:19:18 2023 -0800
+Commit Id:  f0d8c941409305dc12a25dbc93e0030d58ebd4cc
+Truera Services Version: 1.31.0
