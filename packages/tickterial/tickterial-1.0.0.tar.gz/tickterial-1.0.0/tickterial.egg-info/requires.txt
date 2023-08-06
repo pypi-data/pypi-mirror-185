@@ -1,0 +1,7 @@
+pytz==2022.7
+aiohttp==3.8.3
+loguru==0.6.0
+
+[dev]
+build
+twine
