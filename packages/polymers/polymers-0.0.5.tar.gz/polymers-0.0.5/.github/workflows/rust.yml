@@ -1,0 +1,66 @@
+name: Rust
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  release:
+    types: [ published ]
+env:
+  CARGO_TERM_COLOR: always
+jobs:
+  test:
+    if: github.event_name != 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: nightly
+          override: true
+      - name: test
+        run: cargo test --verbose
+        env:
+          CARGO_INCREMENTAL: '0'
+          RUSTFLAGS: '-Zprofile -Ccodegen-units=1 -Cinline-threshold=0 -Clink-dead-code -Coverflow-checks=off -Cpanic=abort -Zpanic_abort_tests'
+          RUSTDOCFLAGS: '-Zprofile -Ccodegen-units=1 -Cinline-threshold=0 -Clink-dead-code -Coverflow-checks=off -Cpanic=abort -Zpanic_abort_tests'
+      - name: hack
+        run: cp -r * ../
+      - name: grcov
+        uses: actions-rs/grcov@v0.1.6
+      - name: codecov
+        uses: codecov/codecov-action@v3
+        with:
+          fail_ci_if_error: true
+          flags: rust
+          verbose: true
+  checks:
+    if: github.event_name != 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: build
+        run: cargo build --verbose
+      - name: clippy
+        run: cargo clippy --verbose
+      - name: bench
+        run: cargo bench --verbose
+      - name: doc
+        run: cargo doc --verbose
+      - name: package
+        run: cargo package --verbose
+  publish:
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: package
+        run: cargo package --verbose
+      - name: login
+        run: cargo login ${{ secrets.CRATES_IO_TOKEN }}
+      - name: publish
+        run: cargo publish --verbose

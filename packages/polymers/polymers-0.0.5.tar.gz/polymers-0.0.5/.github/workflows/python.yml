@@ -1,0 +1,32 @@
+name: Python
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  release:
+    types: [ published ]
+jobs:
+  test:
+    if: github.event_name != 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: install
+        run: |
+          pip install maturin
+          maturin build --features python
+          pip install target/wheels/*.whl
+  publish:
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: package
+        run: cargo package --verbose
+      - name: login
+        run: cargo login ${{ secrets.CRATES_IO_TOKEN }}
+      - name: publish
+        run: cargo publish --verbose
