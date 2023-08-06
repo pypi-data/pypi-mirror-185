@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: codinasion-tools
+Version: 0.0.2
+Summary: A collection of useful open source tools
+Home-page: https://github.com/codinasion/codinasion-tools
+Author: Harsh Raj
+Author-email: harshraj8843@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/codinasion/codinasion-tools/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Codinasion Tools PIP Package
+
+We can also create a pip package for codinasion-tools. This will allow us to install codinasion-tools using pip. It can also be used directly in python scripts and backend APIs.
+
+
