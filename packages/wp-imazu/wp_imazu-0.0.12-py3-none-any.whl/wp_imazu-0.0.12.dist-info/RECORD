@@ -1,0 +1,8 @@
+wp_imazu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wp_imazu/client.py,sha256=d_pfpLn3BmWX45v0wx3hAuWZgRtbchDlrk6bDuOTz_o,3378
+wp_imazu/packet.py,sha256=1fBAmnCAF3rhZYfbxTT-BypcKiuJGnE9SEFvmoH3AvI,17114
+wp_imazu-0.0.12.dist-info/LICENSE,sha256=VxP8bwiRkR4nZZ61oeCvIyEC3_uZ8vroTT0jgvqhFcU,1075
+wp_imazu-0.0.12.dist-info/METADATA,sha256=hMtB53NkG-AyExw8t8hbVMWfbUyASKPeB0E4oHKX19M,641
+wp_imazu-0.0.12.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+wp_imazu-0.0.12.dist-info/top_level.txt,sha256=y7zmOvILy7WXHNKiCDCXWKNIYvCTJ9FsJSDNo2bfiBc,9
+wp_imazu-0.0.12.dist-info/RECORD,,
