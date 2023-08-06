@@ -1,0 +1,15 @@
+aiokilogram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiokilogram/action.py,sha256=Q17WvgwZFup6JxKxrKlulc4PbN8MD0gmB2vNz9a-090,5458
+aiokilogram/bot.py,sha256=5Afpip5pw-Zb5xwVyN-hiTM2k8Mp3iDeUvkXB4rLCr4,1437
+aiokilogram/data.py,sha256=vUqAIMVmGYI1k0xpduvrcHMtTSK7CCuHi3OBxTXrJIE,1952
+aiokilogram/dispatcher.py,sha256=K2THCZixEM2QzMjn2985Foy5B_5LWcs_y4JOmXEXACI,1498
+aiokilogram/handler.py,sha256=BU0MwduoaSoIHWPykyPt-ZrxTirVI2tjw0d4bX7IDNY,2859
+aiokilogram/page.py,sha256=_iXnPrgYmjiBQ7ViqVeObZY1yaA2e2UOSDCrcfKvOgE,2788
+aiokilogram/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiokilogram/registration.py,sha256=QC_ucEFMHtEF7sEyRTaP2hPmT8qbKMlUBfK7iFM4P20,1949
+aiokilogram/settings.py,sha256=g5XN09akicA2Mq2qi_g-tplGJCHvGttYnw4yJH1JvmE,230
+aiokilogram-0.1.0.dist-info/LICENSE,sha256=pyhqjIsFfdNPFpJ1MJiWHqi2BjMGr8fxS-FF9oRbiHM,1074
+aiokilogram-0.1.0.dist-info/METADATA,sha256=dUgfObRruL5eJ1eygO4BFXgss_os3Z-dHRKHuMl-wwk,5516
+aiokilogram-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aiokilogram-0.1.0.dist-info/top_level.txt,sha256=aV1QBUjsrOBx9bFhOf1dSWqGTvZKjtbNF2AZiDU09Zk,12
+aiokilogram-0.1.0.dist-info/RECORD,,
