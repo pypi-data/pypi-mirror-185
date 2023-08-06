@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: siemenslogo
+Version: 0.0.3
+Author-email: Milan Dušek <aldria@post.cz>
+Project-URL: Homepage, https://github.com/milandusek/siemenslogo
+Project-URL: Bug Tracker, https://github.com/milandusek/siemenslogo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# siemenslogo
