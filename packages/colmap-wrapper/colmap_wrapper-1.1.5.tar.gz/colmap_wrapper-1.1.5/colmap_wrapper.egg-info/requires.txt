@@ -1,0 +1,8 @@
+numpy
+pyexiftool
+open3d
+pyquaternion
+matplotlib
+tqdm
+wget
+pycolmap
