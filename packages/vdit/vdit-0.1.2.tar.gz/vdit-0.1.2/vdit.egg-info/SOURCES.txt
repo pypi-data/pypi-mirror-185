@@ -1,0 +1,9 @@
+pyproject.toml
+vdit/__init__.py
+vdit/__main__.py
+vdit.egg-info/PKG-INFO
+vdit.egg-info/SOURCES.txt
+vdit.egg-info/dependency_links.txt
+vdit.egg-info/entry_points.txt
+vdit.egg-info/requires.txt
+vdit.egg-info/top_level.txt
