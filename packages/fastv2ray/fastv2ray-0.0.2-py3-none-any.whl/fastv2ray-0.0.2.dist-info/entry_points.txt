@@ -1,0 +1,2 @@
+[console_scripts]
+fastv2ray = fastv2ray.app:main
