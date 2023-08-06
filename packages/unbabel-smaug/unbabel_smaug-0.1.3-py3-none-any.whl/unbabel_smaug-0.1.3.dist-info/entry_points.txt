@@ -1,0 +1,3 @@
+[console_scripts]
+augment=smaug.cli:augment
+
