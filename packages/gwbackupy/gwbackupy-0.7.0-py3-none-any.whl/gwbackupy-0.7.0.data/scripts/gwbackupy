@@ -1,0 +1,5 @@
+#!python
+
+from gwbackupy import gwbackupy
+
+gwbackupy.cli_startup()
