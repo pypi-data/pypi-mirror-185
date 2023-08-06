@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: whats_this_payload
+Version: 1.2.4
+Summary: Easily identify payload message type from popular webhooks
+Project-URL: Documentation, https://github.com/Tomperez98/whats-this-payload#readme
+Project-URL: Issues, https://github.com/Tomperez98/whats-this-payload/issues
+Project-URL: Source, https://github.com/Tomperez98/whats-this-payload
+Author-email: Tomas Perez Alvarez <tomasperezalvarez@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: mkdocs-material; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pip-tools; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# whats-this-payload
+
+[![Build Status](https://github.com/Tomperez98/whats-this-payload/workflows/test/badge.svg?branch=main&event=push)](https://github.com/Tomperez98/whats-this-payload/actions?query=workflow%3Atest)
+![black-python-styleguide](https://img.shields.io/badge/code%20style-black-000000.svg)
+
+-----
+
+## Inspiration
+Working with payload from webhooks can be really anoying. This tries to make the process easier.
+
+## How to run?
+- Create a virtual environment
+- Activate the environment
+- run `make install env=dev`
+
+## Install
+```bash
+pip install whats-this-payload
+```
+
+## Basic usage
+```python
+from whats_this_payload import get_identifier
+
+whatsapp_identifier = get_identifier(webhook="whatsapp") # or any other available integration.
+
+webhook_payload_as_dict = payload.dict()
+
+payload_type = whatsapp_identifier(
+    payload=webhook_payload_as_dict
+).identify_payload_type()
+
+print(payload_type)
+# >> PayloadType.ANSWER_FROM_LIST_MESSAGE
+
+# Supported payloads 
+# (https://developers.facebook.com/docs/whatsapp/cloud-api/webhooks/payload-examples#list-messages)
+```
