@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/__init__.py
+src/regex_dictionary.py
+src/test_regex_dictionary.py
+src/regex_dictionary.egg-info/PKG-INFO
+src/regex_dictionary.egg-info/SOURCES.txt
+src/regex_dictionary.egg-info/dependency_links.txt
+src/regex_dictionary.egg-info/requires.txt
+src/regex_dictionary.egg-info/top_level.txt
