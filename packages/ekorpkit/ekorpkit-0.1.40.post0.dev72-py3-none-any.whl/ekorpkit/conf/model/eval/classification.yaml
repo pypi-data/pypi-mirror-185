@@ -1,0 +1,14 @@
+defaults:
+  - /visualize/plot: confusion_matrix
+  - /columns: model.classification
+  - /columns/eval: classification
+
+_target_: ekorpkit.models.eval.eval_classification
+output_dir:
+output_file: confusion_matrix.png
+labels:
+visualize:
+  output_dir: ${..output_dir}
+  output_file: ${..output_file}
+verbose: ${oc.select:..verbose, false}
+average: weighted
