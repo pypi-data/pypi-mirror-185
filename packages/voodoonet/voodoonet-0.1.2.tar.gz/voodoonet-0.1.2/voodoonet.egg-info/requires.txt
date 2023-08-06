@@ -1,0 +1,15 @@
+numpy
+scipy
+tqdm
+rpgpy>=0.12.1
+wandb
+torchmetrics
+
+[dev]
+pre-commit
+pytest
+pytest-flakefinder
+pylint
+mypy
+types-tqdm
+types-requests
