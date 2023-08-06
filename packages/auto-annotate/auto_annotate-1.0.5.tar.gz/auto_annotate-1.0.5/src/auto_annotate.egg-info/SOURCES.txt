@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+assets/logo.png
+src/auto_annotate.py
+src/generate_xml.py
+src/label_map_util.py
+src/auto_annotate.egg-info/PKG-INFO
+src/auto_annotate.egg-info/SOURCES.txt
+src/auto_annotate.egg-info/dependency_links.txt
+src/auto_annotate.egg-info/requires.txt
+src/auto_annotate.egg-info/top_level.txt
+src/protos/__init__.py
+src/protos/string_int_label_map_pb2.py
