@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyqft.egg-info/PKG-INFO
+pyqft.egg-info/SOURCES.txt
+pyqft.egg-info/dependency_links.txt
+pyqft.egg-info/not-zip-safe
+pyqft.egg-info/top_level.txt
+src/pyqft/__init__.py
