@@ -1,0 +1,6 @@
+setup.py
+assetx/code.py
+assetx.egg-info/PKG-INFO
+assetx.egg-info/SOURCES.txt
+assetx.egg-info/dependency_links.txt
+assetx.egg-info/top_level.txt
