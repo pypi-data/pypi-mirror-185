@@ -1,0 +1,17 @@
+packaging
+tensorflow>=2.0
+requests
+ipython
+kt-legacy
+
+[tests]
+black
+flake8
+isort
+pandas
+portpicker
+pytest
+pytest-cov
+pytest-xdist
+scikit-learn
+scipy
