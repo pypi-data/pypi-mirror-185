@@ -1,0 +1,6 @@
+:py:mod:`pyteseo.tests`
+=======================
+
+.. py:module:: pyteseo.tests
+
+
