@@ -1,0 +1,3 @@
+pronunciation_dictionary_utils
+pronunciation_dictionary_utils_cli
+pronunciation_dictionary_utils_tests
