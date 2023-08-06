@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+paraview_connect.egg-info/PKG-INFO
+paraview_connect.egg-info/SOURCES.txt
+paraview_connect.egg-info/dependency_links.txt
+paraview_connect.egg-info/entry_points.txt
+paraview_connect.egg-info/requires.txt
+paraview_connect.egg-info/top_level.txt
+pvconnect/__init__.py
+pvconnect/cli.py
+pvconnect/connection.py
