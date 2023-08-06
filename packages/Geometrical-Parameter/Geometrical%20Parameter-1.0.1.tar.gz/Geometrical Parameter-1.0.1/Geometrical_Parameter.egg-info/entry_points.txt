@@ -1,0 +1,5 @@
+[console_scripts]
+measure = geom_parameters.measures:ruler
+mirror = geom_parameters.mirror:mirror
+sort_atropo = geom_parameters.sort_atropo:sorter
+splitter = geom_parameters.split:splitter
