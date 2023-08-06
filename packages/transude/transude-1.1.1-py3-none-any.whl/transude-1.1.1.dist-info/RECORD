@@ -1,0 +1,11 @@
+transude/__init__.py,sha256=PeExNkhxsHwqsfwdgvLWseeU-CCjd42kHZJQtUfsqcE,107
+transude/transude.py,sha256=LJ7d73zaBPBflmwVzG5PV4jk0t6zx-hClEzMoDO2ngg,3321
+transude/pandas/__init__.py,sha256=zhky8SMxv0uFGA302X6bodxtE2Zd1An_yUeqwRlQ2Ck,174
+transude/pandas/data_frame_filter.py,sha256=NNm1uZgoD8FPxXagxq6hAbfWWs6Mk5Er_iL_uETk02k,3827
+transude/pandas/data_frame_filter_factory.py,sha256=SADSMbBCZEpqM_hAX_TE_q_xQ689kLVQCpCvj3nr7uA,3076
+transude/pandas/data_frame_filter_manager.py,sha256=-NLgsP_xHXso1MvFBAwJn1TdA9Zp0QOqgBZQY2cHsKo,5804
+transude-1.1.1.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+transude-1.1.1.dist-info/METADATA,sha256=gbbI_pQIBmVE1cJ1-A0PEu-MTujoa-bYDaZahJvqX8U,2514
+transude-1.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+transude-1.1.1.dist-info/top_level.txt,sha256=qxX1bOxkBC2VRcLzrqMJnvkxDcNyEN_A710ynpiBjxQ,9
+transude-1.1.1.dist-info/RECORD,,
