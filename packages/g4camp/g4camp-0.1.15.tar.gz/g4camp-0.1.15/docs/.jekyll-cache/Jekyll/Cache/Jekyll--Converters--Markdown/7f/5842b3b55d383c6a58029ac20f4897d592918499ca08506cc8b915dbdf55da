@@ -1,0 +1,16 @@
+I"ä<h1 id="g4camp-cascade-and-muon-propagator-geant4-based">G4CAMP: Cascade and Muon Propagator (Geant4-based)</h1>
+
+<p>G4CAMP is a Pyhton module based on the <a href="https://geant4.web.cern.ch">Geant4</a> framework and <a href="https://github.com/HaarigerHarald/geant4_pybind">geant4_pybind</a> pythonization. It simulates propagation of particles of energies up to 1 PeV in a water volume taking into acccount electro-magnetic and hadronic interactions. Emission of Cherenkov photons can be optionally enabled but photons wonâ€™t be propagated.</p>
+
+<h2 id="useful-for">Useful for:</h2>
+
+<ul>
+  <li>Full simulation of electro-magnetic and hadron cascades</li>
+  <li>Fast simulation of initial phase of cascades</li>
+  <li>Using as part of a larger simulation tool written in Python</li>
+  <li>Standalone simulation</li>
+  <li>3D visulazation</li>
+</ul>
+
+<p>Any suggestions on extending G4CAMP functionalty, bug reports or other feedback are welcome: <a href="mailto:yum@jinr.ru">contact</a>.</p>
+:ET

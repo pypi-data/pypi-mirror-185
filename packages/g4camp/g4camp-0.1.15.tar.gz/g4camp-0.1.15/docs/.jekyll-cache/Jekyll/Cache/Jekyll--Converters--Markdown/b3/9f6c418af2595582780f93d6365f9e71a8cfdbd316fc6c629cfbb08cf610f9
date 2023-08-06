@@ -1,0 +1,49 @@
+I"p<p>A simple use of G4CAMP as a python module can be like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">g4camp.g4camp</span> <span class="kn">import</span> <span class="n">g4camp</span>
+
+<span class="c1"># initialize and configure
+</span><span class="n">sim</span> <span class="o">=</span> <span class="n">g4camp</span><span class="p">(...)</span>
+<span class="n">sim</span><span class="p">.</span><span class="n">setXXX</span><span class="p">(...)</span>
+<span class="n">sim</span><span class="p">.</span><span class="n">configure</span><span class="p">()</span>
+
+<span class="c1"># run simulation
+</span><span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">n_events</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">particles</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">particles</span>
+    <span class="n">tracks</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">tracks</span>
+    <span class="n">photons</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">photons</span>
+    <span class="c1"># do something else...
+</span></code></pre></div></div>
+
+<p>Also refer to an <a href="https://git.jinr.ru/malyshkin/g4camp/-/blob/main/g4camp/examples/example.py">Example</a></p>
+
+<h2 id="initialization">Initialization</h2>
+
+<p>Initilization is made by calling <code class="language-plaintext highlighter-rouge">g4camp()</code>. The arguments are the following:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">physics</code>: ‘Custom’ or any standard Geant4 physics list (‘QGSP_BERT’, ‘FTFP_BERT’, and others, see <a href="https://geant4.web.cern.ch/node/155">Reference Physics Lists</a>)</li>
+  <li><code class="language-plaintext highlighter-rouge">optics</code> (bool): enable/disable emission of Cherenkov photons. Can only be enabled for the ‘Custom’ physics.</li>
+  <li><code class="language-plaintext highlighter-rouge">primary_generator</code>: ‘gun’ or ‘gps’ (see Primary Modes in <a href="introduction">Introduction</a>)</li>
+  <li><code class="language-plaintext highlighter-rouge">gun_args</code>: dictionary of gun source parameters:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">particle</code>: particle type (e-, e+, gamma, mu- etc.)</li>
+      <li><code class="language-plaintext highlighter-rouge">energy</code>: energy in GeV</li>
+      <li><code class="language-plaintext highlighter-rouge">position</code>: positio in meters</li>
+      <li><code class="language-plaintext highlighter-rouge">direction</code>: X, Y, Z components of direction vector
+<em>Note that the gun can also be configured by <code class="language-plaintext highlighter-rouge">SetGunXXX</code> methods</em></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Configuration is done via <code class="language-plaintext highlighter-rouge">SetXXX()</code> methods and should be followed by method <code class="language-plaintext highlighter-rouge">configure()</code>.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">SetDetectorHeight()</code>: height of the cylindrical simulation volume</li>
+  <li><code class="language-plaintext highlighter-rouge">SetDetectorRadius()</code>: radius of the cylindrical simulation volume</li>
+  <li></li>
+</ul>
+
+:ET

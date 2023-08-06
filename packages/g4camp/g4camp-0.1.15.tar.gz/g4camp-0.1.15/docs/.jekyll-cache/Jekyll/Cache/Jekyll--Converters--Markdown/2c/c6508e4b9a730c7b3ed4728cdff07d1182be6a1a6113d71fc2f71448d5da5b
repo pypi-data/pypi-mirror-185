@@ -1,0 +1,26 @@
+I"�<h2 id="example-with-visualization">Example with visualization</h2>
+
+<p>G4CAMP provides <a href="https://git.jinr.ru/malyshkin/g4camp/-/tree/main/g4camp/examples">Examples</a>. To run the example with 3D visualization you need:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">vis.mac</code> configuration <a href="https://git.jinr.ru/malyshkin/g4camp/-/blob/main/g4camp/examples/vis.mac">file</a></li>
+  <li>set Geant4 environment variables:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> /path/to/geant4-install/bin/geant4.sh
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Run it:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">-m</span> g4camp.examples.example_vis.py
+</code></pre></div></div>
+
+<p>You should get a window with 3D visualization. If you have built your Geant4 with QT5 support you should also get GUI with the list of available commands with descriptions (left side) and prompt (bottom right). Otherwise you will have prompt in your terminal. Type ‘help’ to see the available commands.</p>
+
+<p>You can configure the primary source and start simulation:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/gun/particle mu-
+/gun/energy 1 TeV
+/gun/position 0 0 10 m
+/run/beamOn 1
+</code></pre></div></div>
+:ET

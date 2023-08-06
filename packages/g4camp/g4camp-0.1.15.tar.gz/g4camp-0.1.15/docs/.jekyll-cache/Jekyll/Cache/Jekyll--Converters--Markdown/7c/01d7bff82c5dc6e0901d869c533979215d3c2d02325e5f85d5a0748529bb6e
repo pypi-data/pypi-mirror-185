@@ -1,0 +1,87 @@
+I"�(<p>A simple use of G4CAMP as a python module can be like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">g4camp.g4camp</span> <span class="kn">import</span> <span class="n">g4camp</span>
+
+<span class="c1"># initialize and configure
+</span><span class="n">sim</span> <span class="o">=</span> <span class="n">g4camp</span><span class="p">(...)</span>
+<span class="n">sim</span><span class="p">.</span><span class="n">setXXX</span><span class="p">(...)</span>
+<span class="n">sim</span><span class="p">.</span><span class="n">configure</span><span class="p">()</span>
+
+<span class="c1"># run simulation
+</span><span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">n_events</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">particles</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">particles</span>
+    <span class="n">tracks</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">tracks</span>
+    <span class="n">photons</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">photons</span>
+    <span class="c1"># do something else...
+</span></code></pre></div></div>
+
+<p>Also refer to an <a href="https://git.jinr.ru/malyshkin/g4camp/-/blob/main/g4camp/examples/example.py">Example</a></p>
+
+<h2 id="initialization">Initialization</h2>
+
+<p>Initilization is made by calling <code class="language-plaintext highlighter-rouge">g4camp()</code>. The arguments are the following:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">physics</code>: ‘Custom’ or any standard Geant4 physics list (‘QGSP_BERT’, ‘FTFP_BERT’, and others, see <a href="https://geant4.web.cern.ch/node/155">Reference Physics Lists</a>)</li>
+  <li><code class="language-plaintext highlighter-rouge">optics</code> (bool): enable/disable emission of Cherenkov photons. Can only be enabled for the ‘Custom’ physics.</li>
+  <li><code class="language-plaintext highlighter-rouge">primary_generator</code>: ‘gun’ or ‘gps’ (see Primary Modes in <a href="introduction">Introduction</a>)</li>
+  <li><code class="language-plaintext highlighter-rouge">gun_args</code>: dictionary of gun source parameters:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">particle</code>: particle type (e-, e+, gamma, mu- etc.)</li>
+      <li><code class="language-plaintext highlighter-rouge">energy</code>: energy in GeV</li>
+      <li><code class="language-plaintext highlighter-rouge">position</code>: positio in meters</li>
+      <li><code class="language-plaintext highlighter-rouge">direction</code>: X, Y, Z components of direction vector <br />
+<em>Note that the gun can also be configured by <code class="language-plaintext highlighter-rouge">setGunXXX()</code> methods</em></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>Configuration is done via <code class="language-plaintext highlighter-rouge">setXXX()</code> methods and should be followed by method <code class="language-plaintext highlighter-rouge">configure()</code>.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">setDetectorHeight(val)</code>: height of the cylindrical simulation volume</li>
+  <li><code class="language-plaintext highlighter-rouge">setDetectorRadius(val)</code>: radius of the cylindrical simulation volume</li>
+  <li><code class="language-plaintext highlighter-rouge">setGPSMacro(macro)</code>: path to macro file with Geant4 <a href="https://www.fe.infn.it/u/paterno/Geant4_tutorial/slides_further/GPS/GPS_manual.pdf">General Particle Source</a> commands to configure the primary particle source in mode <code class="language-plaintext highlighter-rouge">gps</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">setGunParticle(pname)</code>: name of the particle (e.g. ‘e-‘, ‘e+’, ‘gamma’, ‘mu-‘ etc.)</li>
+  <li><code class="language-plaintext highlighter-rouge">setGunEnergy(ene_val, ene_unit)</code>: energy value and unit for the <code class="language-plaintext highlighter-rouge">gun</code> source</li>
+  <li><code class="language-plaintext highlighter-rouge">setGunPosition(x_val, y_val, z_val, pos_unit)</code>: position X, Y, Z components and unit for the <code class="language-plaintext highlighter-rouge">gun</code> source</li>
+  <li><code class="language-plaintext highlighter-rouge">setGunDirection(dx, dy, dz)</code>: direction X, Y, Z components for the <code class="language-plaintext highlighter-rouge">gun</code> source</li>
+  <li><code class="language-plaintext highlighter-rouge">setSkipMinMax(skip_min, skip_max)</code>: energy range for cascade starter particles to be skipped, see<a href="skipping-cascades">Skipping Cascades</a>)</li>
+  <li><code class="language-plaintext highlighter-rouge">setPhotonSuppressionFactor(val)</code>: only <code class="language-plaintext highlighter-rouge">1/val</code> of the total number of photons will be produced</li>
+  <li><code class="language-plaintext highlighter-rouge">setRandomSeed(val)</code>: random seed for simulation</li>
+  <li><code class="language-plaintext highlighter-rouge">setCut(particle, cut_value, cut_unit)</code>: set individual production cuts for particles</li>
+  <li><code class="language-plaintext highlighter-rouge">setVerbose(control_verbose, tracking_verbose, run_verbose, em_process_verbose, had_process_verbose)</code>: set verbosity of Geant4 output with integer values (0 – no output, 1 – minimal output, 2 – extended output)</li>
+  <li><code class="language-plaintext highlighter-rouge">applyGeant4Command(command, arguments)</code>: apply a standard Geant4 command, e.g. <code class="language-plaintext highlighter-rouge">command='/run/printProgress'</code>, <code class="language-plaintext highlighter-rouge">arguments=[100]</code> would apply ‘/run/printProgress 100’ (to print event id of each 100th event).</li>
+</ul>
+
+<h2 id="running">Running</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">run(n_events)</code> function of <code class="language-plaintext highlighter-rouge">g4camp</code> returns a generator of event-by-event output data.</p>
+
+<p>An example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">g4camp.g4camp</span> <span class="kn">import</span> <span class="n">g4camp</span>
+
+<span class="n">n_events</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">gun_args</span> <span class="o">=</span> <span class="p">{</span> <span class="s">'particle'</span><span class="p">:</span>   <span class="s">'e-'</span><span class="p">,</span> 
+             <span class="s">'energy_GeV'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+             <span class="s">'position_m'</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span>
+             <span class="s">'direction'</span><span class="p">:</span>  <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>  <span class="p">}</span>
+<span class="n">optics</span> <span class="o">=</span> <span class="bp">False</span>
+
+<span class="n">sim</span> <span class="o">=</span> <span class="n">g4camp</span><span class="p">(</span><span class="n">primary_generator</span><span class="o">=</span><span class="s">'gun'</span><span class="p">,</span> <span class="n">gun_args</span><span class="o">=</span><span class="n">gun_args</span><span class="p">,</span> <span class="n">optics</span><span class="o">=</span><span class="n">optics</span><span class="p">)</span>
+<span class="n">sim</span><span class="p">.</span><span class="n">setDetectorHeight</span><span class="p">(</span><span class="mi">1000</span><span class="p">,</span> <span class="s">'m'</span><span class="p">)</span>
+<span class="n">sim</span><span class="p">.</span><span class="n">setDetectorRadius</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="s">'m'</span><span class="p">)</span>
+<span class="n">sim</span><span class="p">.</span><span class="n">setSkipMinMax</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">)</span>
+<span class="n">sim</span><span class="p">.</span><span class="n">setPhotonSuppressionFactor</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">sim</span><span class="p">.</span><span class="n">configure</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">n_events</span><span class="p">):</span>
+    <span class="n">particles</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">particles</span>
+    <span class="n">tracks</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">tracks</span>
+    <span class="n">photons</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">photons</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">tracks</span><span class="p">)</span><span class="si">:</span><span class="o">&gt;</span><span class="mi">6</span><span class="si">}</span><span class="s"> tracks, </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">particles</span><span class="p">)</span><span class="si">:</span><span class="o">&gt;</span><span class="mi">6</span><span class="si">}</span><span class="s"> cascade starters;"</span><span class="p">)</span>
+</code></pre></div></div>
+:ET

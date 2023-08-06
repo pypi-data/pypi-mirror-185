@@ -1,0 +1,32 @@
+I"C<h2 id="requirements">Requirements:</h2>
+
+<ul>
+  <li>Python3</li>
+  <li><a href="https://geant4.web.cern.ch">Geant4</a> built with the following CMake options:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">GEANT4_BUILD_TLS_MODEL=global-dynamic</code> (required)</li>
+      <li><code class="language-plaintext highlighter-rouge">GEANT4_USE_OPENGL_X11</code>, <code class="language-plaintext highlighter-rouge">GEANT4_USE_QT</code> (optional) for 3D visualization and GUI support <br />
+See Section in “Building and Installing from Source” in <a href="https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/installguide.html">Installation guide</a></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/HaarigerHarald/geant4_pybind">geant4_pybind</a> package. The release version should match Geant4 version (see <a href="https://github.com/HaarigerHarald/geant4_pybind/releases">releases</a>)</li>
+</ul>
+
+<h2 id="getting-g4camp">Getting g4camp</h2>
+
+<p>There are two ways:</p>
+
+<ol>
+  <li>With pip:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install g4camp
+</code></pre></div>    </div>
+  </li>
+  <li>From <a href="https://git.jinr.ru/malyshkin/g4camp">GIT repository</a>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone ...
+</code></pre></div>    </div>
+    <p>or</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone ...
+</code></pre></div>    </div>
+  </li>
+</ol>
+:ET

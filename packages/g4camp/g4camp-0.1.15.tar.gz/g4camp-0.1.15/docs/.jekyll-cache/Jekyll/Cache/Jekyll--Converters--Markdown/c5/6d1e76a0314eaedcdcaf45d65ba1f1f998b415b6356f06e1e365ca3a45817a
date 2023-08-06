@@ -1,0 +1,23 @@
+I"<p>G4CAMP keeps its output as NumPy arrays in form of 2D tables. They are:</p>
+
+<ul>
+  <li><strong>Vertices</strong> (<code class="language-plaintext highlighter-rouge">PDGID</code>, <code class="language-plaintext highlighter-rouge">position</code>, <code class="language-plaintext highlighter-rouge">direction</code>, <code class="language-plaintext highlighter-rouge">time</code>, <code class="language-plaintext highlighter-rouge">energy</code>)
+    <ul>
+      <li>for e+/e- particles with $E_skip_min$ &lt; E_kin &lt; E_skip_max</li>
+    </ul>
+  </li>
+  <li><strong>Tracks</strong> (<code class="language-plaintext highlighter-rouge">PDGID</code>, <code class="language-plaintext highlighter-rouge">position</code>, <code class="language-plaintext highlighter-rouge">time</code>, <code class="language-plaintext highlighter-rouge">energy</code> for each interaction point)
+    <ul>
+      <li>for all electrically charged particles above Cherenkov threshold</li>
+      <li>for all other particles except optical photons</li>
+    </ul>
+  </li>
+  <li><strong>Photons</strong> (<code class="language-plaintext highlighter-rouge">position</code>, <code class="language-plaintext highlighter-rouge">direction</code>, <code class="language-plaintext highlighter-rouge">time</code>, <code class="language-plaintext highlighter-rouge">wavelength</code>)
+    <ul>
+      <li>from all propagated particles (skipped particles do not emit photons)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Script <a href="run_g4camp">run_g4camp</a> stores these structures to HDF5 files.</p>
+:ET

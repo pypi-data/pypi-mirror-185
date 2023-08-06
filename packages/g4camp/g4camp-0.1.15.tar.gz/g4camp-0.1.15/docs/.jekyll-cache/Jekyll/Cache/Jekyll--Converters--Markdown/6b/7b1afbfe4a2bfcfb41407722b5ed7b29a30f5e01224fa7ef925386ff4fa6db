@@ -1,0 +1,14 @@
+I"�<h2 id="skipping-cascades">Skipping cascades</h2>
+
+<p>Simulation of cascade development is time consuming. In practise it is often replaced by a parametrization (see e.g. <a href="https://doi.org/10.1016/j.astropartphys.2013.01.015">Raedel, Wiebusch 2013</a>). G4CAMP allows either to run a full simulation down to the Cherenkov threshold of electrons, or kill particles in a certain energy range [<code class="language-plaintext highlighter-rouge">E_skip_min</code>, <code class="language-plaintext highlighter-rouge">E_skip_max</code>] saving its interaction vertex, i.e. position, direction, time and energy (see ‘Vertex’ in <a href="output">Output</a>).</p>
+
+<p><code class="language-plaintext highlighter-rouge">E_skip_min</code> and <code class="language-plaintext highlighter-rouge">E_skip_max</code> are set with respect to the initial energy of the primary particle. The rule is applied for the particles starting pure electro-magnetic cascades: <code class="language-plaintext highlighter-rouge">e-</code>, <code class="language-plaintext highlighter-rouge">e+</code>, <code class="language-plaintext highlighter-rouge">gamma</code> (can be changed in future)</p>
+
+<h3 id="example">Example</h3>
+
+<p><code class="language-plaintext highlighter-rouge">E_init</code> = 10 TeV <br />
+<code class="language-plaintext highlighter-rouge">E_skip_min</code> = 0.001 <br />
+<code class="language-plaintext highlighter-rouge">E_skip_max</code> = 0.01</p>
+
+<p>Then all particles above 0.01 * 10 TeV = 100 GeV are tracked. If the energy of electron, positron or gamma is within [10 GeV, 100 GeV] it is killed and the vertex is stored. In all other cases particles are tracked untill their energy becomes lower than the Cherenkov threshold of electrons.</p>
+:ET
