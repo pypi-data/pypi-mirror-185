@@ -1,0 +1,148 @@
+Metadata-Version: 2.1
+Name: pyglassdoor
+Version: 0.5.0
+Summary: A python API and Toolkit for Glassdoor.com.
+Home-page: https://github.com/hamid-vakilzadeh/pyGlassdoor
+Author: Hamid Vakilzadeh
+Author-email: vakilzas@uww.edu
+License: BSD-2-Clause
+Project-URL: Documentation, https://pyGlassdoor.readthedocs.io/
+Project-URL: Changelog, https://pyGlassdoor.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/hamid-vakilzadeh/pyGlassdoor/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: requests (~=2.28.1)
+Requires-Dist: selenium (~=4.4.0)
+Requires-Dist: webdriver-manager (~=3.8.5)
+Requires-Dist: selenium-wire (~=5.1.0)
+
+===========
+PyGlassdoor
+===========
+
+
+
+Overview
+============
+
+Python API for glassdoor.com.
+
+
+Installation
+~~~~~~~~~~~~
+
+.. code:: bash
+
+    pip install pyglassdoor
+
+
+Example
+~~~~~~~
+
+The example below shows the code for downloading 20 reviews of Apple company.
+
+First, we need the ``company_id`` of Apple. We can find this number in the URL link of
+Apple's ``overview`` page on glassdoor.
+
+https://www.glassdoor.com/Overview/Working-at-Apple-EI_IE1138.11,16.htm
+
+``company_id`` for Apple is ``1138`` which is the number right after ``IE``.
+
+.. code:: python
+
+    import pyglassdoor as gd
+
+    # download 20 reviews of APPLE Inc.
+    query = gd.get_reviews(company_id=1138, records_to_collect=20)
+
+    # query is in json format and contains all the information about reviews.
+    # We can access the reviews as follows
+    apple_reviews = query['employerReviews']['reviews']
+
+    # and for example convert to dataframe
+    df = pd.DataFrame(apple_reviews)
+
+Documentation
+=============
+
+
+https://pyglassdoor.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+
+Changelog
+=========
+
+0.5.0 (2023-01-10)
+~~~~~~~~~~~~~~~~~~
+
+* added features to interviews, and salaries queries, enabling the user to make more advanced requests
+* enhanced the documentation
+* updated codes for readability and efficiency
+
+
+0.2.0 (2023-01-09)
+~~~~~~~~~~~~~~~~~~
+
+* reviews query updated to enhance user experience and make more granular queries
+
+0.1.0 (2023-01-05)
+~~~~~~~~~~~~~~~~~~
+
+* added new features
+* fixed bugs
+* added preliminary documentation
+
+0.0.2 (2023-01-01)
+~~~~~~~~~~~~~~~~~~
+
+* fixed bugs
+
+0.0.1 (2022-12-30)
+~~~~~~~~~~~~~~~~~~
+
+* First release on PyPI
