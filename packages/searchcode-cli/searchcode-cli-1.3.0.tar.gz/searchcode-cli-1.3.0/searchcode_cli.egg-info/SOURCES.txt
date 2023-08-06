@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+searchcode/__init__.py
+searchcode/searchcode.py
+searchcode_cli.egg-info/PKG-INFO
+searchcode_cli.egg-info/SOURCES.txt
+searchcode_cli.egg-info/dependency_links.txt
+searchcode_cli.egg-info/entry_points.txt
+searchcode_cli.egg-info/requires.txt
+searchcode_cli.egg-info/top_level.txt
