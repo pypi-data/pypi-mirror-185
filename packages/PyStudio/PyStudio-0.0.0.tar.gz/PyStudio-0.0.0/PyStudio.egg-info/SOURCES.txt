@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+PyStudio.egg-info/PKG-INFO
+PyStudio.egg-info/SOURCES.txt
+PyStudio.egg-info/dependency_links.txt
+PyStudio.egg-info/top_level.txt
+pystudio/__init__.py
