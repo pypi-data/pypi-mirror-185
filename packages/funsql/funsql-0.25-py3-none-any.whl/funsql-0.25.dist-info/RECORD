@@ -1,0 +1,14 @@
+funsql/__init__.py,sha256=8FIgEubPo4Rl3YXlW212i6qF9DJOJgnWLqYOb2ziees,118
+funsql/data/sql_keywords.txt,sha256=2_d3S5si8Ue0YhowSD_shHIevIMmMCEC8dnWPV1PklA,7240
+funsql/data/sql_templates.sql,sha256=xN_Vri_G-Oh22lx0nkE_K57OAQrNFDqv_rpJxb4cKDA,312
+funsql/src/pghook.py,sha256=lSRS4n55Oimj7VHGfNJgUZKfViyyQX-93YmaBYbnxDs,1537
+funsql/src/template.py,sha256=tSOQIkGgnTZFcBLaw_SLGj6HpGi5RRO56tZzQTdssEk,3584
+funsql/tests/__init__.py,sha256=CqeQmApLTo5NOLZZa4mfV8Hcfkk1Z9GHJIhLd2VbuWA,129
+funsql/tests/test_funsql.py,sha256=IvHNqloTdjXK4ic4cmA1g4hvHHDPPBLkwIYKwNIGRxE,1685
+funsql-0.25.data/data/keywords/sql_keywords.txt,sha256=2_d3S5si8Ue0YhowSD_shHIevIMmMCEC8dnWPV1PklA,7240
+funsql-0.25.data/data/templates/sql_templates.sql,sha256=xN_Vri_G-Oh22lx0nkE_K57OAQrNFDqv_rpJxb4cKDA,312
+funsql-0.25.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+funsql-0.25.dist-info/METADATA,sha256=Bm2zm4aOgbSif5AZLmJRN3_HqDdezKN3mWmigiCive0,353
+funsql-0.25.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+funsql-0.25.dist-info/top_level.txt,sha256=0dRSu2dN18_0XP1LRhj599yRKzFUo6eBwE2TMxsvGtY,7
+funsql-0.25.dist-info/RECORD,,

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: funsql
+Version: 0.25
+Summary: highlights sql syntax, and use template files to generate code
+Home-page: https://db2sql.com/funsql
+Author: Mahdi Jadaliha
+Author-email: jadaliha@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psycopg2
+Requires-Dist: pandas
+
+long_description
