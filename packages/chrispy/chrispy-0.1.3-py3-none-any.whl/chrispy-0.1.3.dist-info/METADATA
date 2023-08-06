@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: chrispy
+Version: 0.1.3
+Summary: common functions for Python 3
+Home-page: https://github.com/chrisjihee/chrispy
+Author: Jihee Ryu
+Author-email: chrisjihee@naver.com
+License: MIT License
+Keywords: python,development,common,function,utility
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: six
+Requires-Dist: typer
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tabulate
+Requires-Dist: sqlalchemy
+Requires-Dist: matplotlib
+Provides-Extra: notebook
+Requires-Dist: jupyter ; extra == 'notebook'
+Requires-Dist: ipynbname ; extra == 'notebook'
+
+# chrispy
+Common functions for Python 3
