@@ -1,0 +1,8 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+sample_taxcal.egg-info/PKG-INFO
+sample_taxcal.egg-info/SOURCES.txt
+sample_taxcal.egg-info/dependency_links.txt
+sample_taxcal.egg-info/top_level.txt
