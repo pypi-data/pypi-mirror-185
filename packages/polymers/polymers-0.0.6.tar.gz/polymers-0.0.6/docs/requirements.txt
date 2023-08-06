@@ -1,0 +1,12 @@
+docutils>=0.14,<0.20
+ipykernel
+ipython
+jinja2>=3.0
+matplotlib
+mistune==2.0.4
+nbsphinx
+numpy
+sphinx
+sphinx-copybutton
+sphinx-rtd-theme
+sphinxcontrib-bibtex
