@@ -1,0 +1,12 @@
+AiBot/_AndroidBot.py,sha256=OVQwdFQW06O-X76a-J7rExHPZUyuXGBGfTjSjpxyWgo,50399
+AiBot/_WebBot.py,sha256=gM8RfH6YuKrHF0PELuKF4swZJ3CRZfwJWwd67SVUKgc,18898
+AiBot/_WinBot.py,sha256=UVDG4mvctlkeDAE8ALdwh6GGqz1U4gANj1KCLFBWuO8,36050
+AiBot/__init__.py,sha256=ZTJPSn7tar3GYakdHleb7_2f5BVK5NUbfE1X4jIueKY,162
+AiBot/__version__.py,sha256=9l0zP2NC0duGW82ioVmj_bEdAB17iMp_RHn4LOQepBE,63
+AiBot/_loguru_format.py,sha256=n1zg0NJmOWuB5V-ADrSR6GlwsEv_tlb2Oc06xxkC_2E,5044
+AiBot/_utils.py,sha256=931zW-7SFVIzFnn_Guxwlmmo5gpu8CKqtjkggA1Ie20,1702
+AiBot.py-1.1.0.dist-info/LICENSE,sha256=PufEtkm3g2iPEYbJqg2lDjMQJ1FMm_oUPyeYPiN4PHE,1056
+AiBot.py-1.1.0.dist-info/METADATA,sha256=JQWdkxvIPWbAVhYnxEY60lOyXDOUqib3epzoT6PDRNY,281
+AiBot.py-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+AiBot.py-1.1.0.dist-info/top_level.txt,sha256=Uz3DB5MaigDo8_yPQ0bRvIB9GYqV9wsp8-Bx_VMTyx4,6
+AiBot.py-1.1.0.dist-info/RECORD,,
