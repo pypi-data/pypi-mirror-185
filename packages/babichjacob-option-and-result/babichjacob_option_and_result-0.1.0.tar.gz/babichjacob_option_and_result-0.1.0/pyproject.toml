@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "babichjacob-option-and-result"
+version = "0.1.0"
+description = "A Python implementation of Rust's Option and Result"
+license = "MIT"
+authors = ["J or Jacob Babich <jacobbabichpublic+git@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/babichjacob/python-option-and-result"
+packages = [{include = "option_and_result"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+
+[tool.poetry.dev-dependencies]
+black = "^22.12.0"
+mypy = "^0.991"
+pylint = "^2.15.10"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
