@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: isaura
+Version: 0.1
+Summary: Isaura data lake for pre-computed Ersilia properties
+Home-page: https://github.com/ersilia-os/isaura
+Author: Ersilia Open Source Initiative
+Author-email: hello@ersilia.io
+Project-URL: GitBook, https://ersilia.gitbook.io/ersilia/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: h5py (==3.7.0)
+Requires-Dist: loguru (==0.6.0)
+
+# The Isaura data store
+A lake of precalculated properties of biomedical entities
+
+This repository provides an interface to the precalculated data available from the Ersilia Model Hub. At the moment, Isaura is focused on chemical descriptors.
