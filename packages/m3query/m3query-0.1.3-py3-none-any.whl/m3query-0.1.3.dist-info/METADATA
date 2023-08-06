@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: m3query
+Version: 0.1.3
+Summary: A wrapper around the JayDeBeApi library to connect to M3. Should not be distributed due to the ownership of the driver.
+Author: Kim Timothy Engh
+Author-email: kim.timothy.engh@epiroc.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
