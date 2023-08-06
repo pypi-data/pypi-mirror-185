@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/LogGrap/__init__.py
+src/LogGrap.egg-info/PKG-INFO
+src/LogGrap.egg-info/SOURCES.txt
+src/LogGrap.egg-info/dependency_links.txt
+src/LogGrap.egg-info/top_level.txt
