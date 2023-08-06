@@ -1,0 +1,10 @@
+auto_annotate.py,sha256=_hmIcRFpO51OW-AhZTu_GlpA6LEZbwgBHmzB2f6HPTY,6407
+generate_xml.py,sha256=BgmLDpuyYxVi_EfjwjQrcfwWpkxgMayBjWFhvTsJms4,1611
+label_map_util.py,sha256=81yCJtKqSLxc5P4MvqWyaKN3eevOOhAE9HHGu3Ql7u8,12301
+protos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protos/string_int_label_map_pb2.py,sha256=1w1Ncg_RJRCZ0JACNIUTGgETmRBlwX4slAOxR9p4eqE,10031
+auto_annotate-1.0.5.dist-info/LICENSE.txt,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+auto_annotate-1.0.5.dist-info/METADATA,sha256=WmVs6bvf6_NQE-eo6FQzHeDhDhwao6rpGWJS8_GwLJg,5569
+auto_annotate-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+auto_annotate-1.0.5.dist-info/top_level.txt,sha256=_8ETdnE6_pmU7ha5XuTnvGEIhyDDsyDzPlTWBNDRh74,49
+auto_annotate-1.0.5.dist-info/RECORD,,
