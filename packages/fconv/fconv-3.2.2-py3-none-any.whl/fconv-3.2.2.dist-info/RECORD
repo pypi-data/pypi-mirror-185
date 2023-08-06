@@ -1,0 +1,16 @@
+fconv/__init__.py,sha256=bufNjdG4eQdp6F0NOQrTyOmwgfQCpQc4k_xBsEJqMv8,2151
+fconv/__main__.py,sha256=Ay1ka6u-BQVIIGxrdgR_5hvOOORVrBKVphlgyXkP9i0,5177
+fconv/core.py,sha256=_B-spdIdpwbwP5a-1JAp1zn7nGMUzOTrr8ws9Yy1Hmg,3978
+fconv/util.py,sha256=wKw2mESKq52hCHDqU_9McP33Wj06FTFoKFBMbcWx0_4,1378
+fconv/formats/__init__.py,sha256=PLSB7u1P_Vo2fUkITKI89X-WZLrGV9cQeIT7LlKCnKo,298
+fconv/formats/base.py,sha256=6WJt-HoFvo6CxLmbLYL1ixCfQAT8Gq3ZJ_I98vjyMVo,1031
+fconv/formats/json.py,sha256=i9hXwET0GriiqIW7i8xl50y36ZE7r2yjslysnPEqpjU,457
+fconv/formats/toml.py,sha256=LC7Kfv9SoeNQgbWZxoyL3V9EP8pk2s7FdT5Y_kddUPA,455
+fconv/formats/xml.py,sha256=z35zDqnnzZ4QrzOkVgbUhfzxBmgycpI7gnJHAL676lg,753
+fconv/formats/yaml.py,sha256=SjVgYdlZVNXK2K8xr5Nlx5YRklngQ9FMo6WWQe0GJQU,466
+fconv-3.2.2.dist-info/LICENSE,sha256=3knonClkgBEf_ZXVql7og6g0O3YdwWOyrzrwrSR3wSI,1062
+fconv-3.2.2.dist-info/METADATA,sha256=1YjQD9ereaWi9eNEwR-ZF8_GoWAarBIgpXLxAA_AUDQ,6447
+fconv-3.2.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fconv-3.2.2.dist-info/entry_points.txt,sha256=qnYzEwbgZZ5kXuRbzstMr6wva5p4xS_1BTwoX0VKtkQ,46
+fconv-3.2.2.dist-info/top_level.txt,sha256=HGAOsKQItuBylIf2g1KcSAce4V1QLcLlyqhpjD-02u4,6
+fconv-3.2.2.dist-info/RECORD,,
