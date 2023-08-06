@@ -1,0 +1,13 @@
+unfold/__init__.py,sha256=JSZp43jQQDOlY_ZuAJVKUB1iMgqIxE4XBJ1CHiO8F0g,104
+unfold/data_cleaning.py,sha256=2fjQfbfJf9QYK3zM9J5ykqC8bypli9e2vStZPRZow-w,13947
+unfold/export.py,sha256=9IFU34xoSWjZLDGuWBt9W599mrK-fjG4w_uMB68wlmE,742
+unfold/fold.py,sha256=pmmS774t8jjikxZvM07h0D1WL9BMQ4ga9_J7imaYkXk,25485
+unfold/unfold.py,sha256=LKzwVVx-JpJHsVW9o7U7w-Xw5Dd1Kzni-RAlP7efzwY,24885
+unfold/utils.py,sha256=ZQ8Uuftkie1vPJcctzjbaN4LtImDD_TCoEhPg6UbubI,392
+unfold/data/flows_biosphere_38.csv,sha256=ssO7Q-owOaPbdSWWxzSKIQ5zQ_TUQCcCyXlXNOZVlf0,395147
+unfold/data/outdated_flows.yaml,sha256=bvh4GXMOodIajIgTDI9aroDROHCSkSB7TzDls1v2AAA,91
+unfold-1.0.2.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+unfold-1.0.2.dist-info/METADATA,sha256=WtpjSJl9mtmiE_HiGCMYA7J8ReRFquBnEZ0vuJB46F8,44775
+unfold-1.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+unfold-1.0.2.dist-info/top_level.txt,sha256=jgNFqTHxmO_FQiIWyvwHYC3M1-KM6vMrIR_O-NZ0tec,7
+unfold-1.0.2.dist-info/RECORD,,
