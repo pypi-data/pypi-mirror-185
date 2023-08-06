@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+faker_datasets/__init__.py
+faker_datasets.egg-info/PKG-INFO
+faker_datasets.egg-info/SOURCES.txt
+faker_datasets.egg-info/dependency_links.txt
+faker_datasets.egg-info/requires.txt
+faker_datasets.egg-info/top_level.txt
+test/test_alerts.py
+test/test_provider.py
