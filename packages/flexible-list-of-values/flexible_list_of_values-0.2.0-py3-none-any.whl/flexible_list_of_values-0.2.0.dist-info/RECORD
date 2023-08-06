@@ -1,0 +1,16 @@
+flexible_list_of_values/__init__.py,sha256=ZnaoWpNdBBxiDdO3Jxmbmnxs0MkGlIdODTbi2o3PPHw,455
+flexible_list_of_values/admin.py,sha256=xs-um5UeFgh85zjfq0EoKu7UvRl2OcJVNOJFQ4N4Pqc,329
+flexible_list_of_values/apps.py,sha256=MNa5XSpQmO-c4AznmzIkn7LoJpfkuYN5ibzYTta2pKI,273
+flexible_list_of_values/exceptions.py,sha256=JFLUoySp9Ujz8_TDNLVifLqcXL4qO0JwyPW0dhFPma4,453
+flexible_list_of_values/forms.py,sha256=lWzSw7gu6Oz96n8fNlMyL42U_kAymduicrIYohRhL7I,5054
+flexible_list_of_values/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flexible_list_of_values/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flexible_list_of_values/management/commands/update_lovs.py,sha256=Rtvdl5UfLcVqiqKi2kJ2sP_qyzfGhHcqvrj4ruWV-K0,747
+flexible_list_of_values/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flexible_list_of_values/models.py,sha256=onn4jIbMBlOJNjxoLmrRDl_5C2a33eyXNs1aMSvwj-8,16595
+flexible_list_of_values/urls.py,sha256=-Ntveg3SJs2xjiNrT_a96yi8JqRH2NWAutoJGXDbStE,85
+flexible_list_of_values/views.py,sha256=-jq8OC8SRWVcQMKXWfBCxggg6TBepjk62wG6oldo17g,70
+flexible_list_of_values-0.2.0.dist-info/LICENSE,sha256=NGgNP2I8DgzabUeHWShdx9OzXbMJvdR-sImhbaed4Po,1067
+flexible_list_of_values-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+flexible_list_of_values-0.2.0.dist-info/METADATA,sha256=PCaCq8cWgJGkuCgPYn4cmLj3N4wF_TY8zDB99n9BrSU,21120
+flexible_list_of_values-0.2.0.dist-info/RECORD,,
