@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+rattifyapi/__init__.py
+rattifyapi/base.py
+rattifyapi/generic.py
+rattifyapi/rattify.py
+rattifyapi/users.py
+rattifyapi.egg-info/PKG-INFO
+rattifyapi.egg-info/SOURCES.txt
+rattifyapi.egg-info/dependency_links.txt
+rattifyapi.egg-info/requires.txt
+rattifyapi.egg-info/top_level.txt
