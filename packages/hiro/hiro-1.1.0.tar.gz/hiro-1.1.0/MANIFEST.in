@@ -1,0 +1,7 @@
+include README.rst
+include LICENSE
+include HISTORY.rst
+include CLASSIFIERS
+recursive-include requirements *.txt
+include versioneer.py
+include hiro/_version.py
