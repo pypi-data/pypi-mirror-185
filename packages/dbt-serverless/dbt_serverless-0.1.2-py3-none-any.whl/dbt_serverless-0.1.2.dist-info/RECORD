@@ -1,0 +1,11 @@
+dbt_serverless/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_serverless/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_serverless/config/logging.yml,sha256=zqBq284YRsXc9XmZwgW3Lx8Toqk8uO9-rfhQIdQi004,361
+dbt_serverless/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_serverless/lib/file_helpers.py,sha256=h43wqk8tFYHCxF_gs2NnFYFvTDhxXqXHe-TK4QPWMwU,1237
+dbt_serverless/lib/subprocess_helpers.py,sha256=_HRTPyXrurSq02Xa3jzoJap_qR1F4k5G2gRjj-Cxkkc,765
+dbt_serverless/main.py,sha256=9BlcW7r3NmmLZdXkCtCgkDH3scdqPOlI7FZUouYYmgY,2748
+dbt_serverless-0.1.2.dist-info/LICENSE.txt,sha256=hp54NfQKWEHRQCmCwj4k4-mzpwBb8FCFIqUWsH0cTrw,1061
+dbt_serverless-0.1.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+dbt_serverless-0.1.2.dist-info/METADATA,sha256=g7Le5hcEp4tnYlfIS03nN10F0O4JmyDAeXs2bE6Bj1E,5056
+dbt_serverless-0.1.2.dist-info/RECORD,,
