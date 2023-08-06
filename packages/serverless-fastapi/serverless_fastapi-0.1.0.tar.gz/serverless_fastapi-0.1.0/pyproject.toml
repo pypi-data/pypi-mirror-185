@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "serverless_fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Oscar Bahamonde <oscar.bahamonde@hatarini.com>"]
+readme = "README.md"
+packages = [{include = "serverless_fastapi"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.89.1"
+odmantic = "^0.9.2"
+pydantic = {extras = ["dotenv"], version = "^1.10.4"}
+
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "serverless_fastapi"
+version = "0.1.0"
+description = "Serverless FastAPI"
+readme = "README.md"
+authors = [{ name = "Oscar Bahamonde", email = "oscar.bahamonde@hatarini.com"}]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["serverless", "fastapi", "aws", "lambda" ]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["black", "pytest"]
+
+
+[project.urls]
+"Homepage" = "https://github.com/oscarbahamonde/serverless-fastapi"
+"Bug Tracker" = "https://github.com/oscarbahamonde/serverless-fastapi/issues"
