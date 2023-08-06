@@ -1,0 +1,12 @@
+co/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+co/cohere.py,sha256=ohcWSMnRddqzaPxspzo80tECXies0VzLqzlSQRMq4ec,175
+co/constants.py,sha256=XsnJBbID6ZWoSwOBmiZGbbig05beX1mGq4K7Rv5fqms,99
+co/entrypoint.py,sha256=7_s1nZEOwUVAnsHoq_EmVmfoCfjtGZEcKfF2FMBzG0w,1030
+co/prompt.py,sha256=B7OcJ0VI3ykuoJWi8teZQUiIysMAeKbm3SfkSHA_wN4,616
+co/utils.py,sha256=bYBWGVXYa98vhOdlAtDVrKICJhGvslUdELwvWMTZvEA,612
+co_bash-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+co_bash-0.0.1.dist-info/METADATA,sha256=aEVLnmzxDXnvVjxYL51LveMqXktQcuVNNADm7EY3klI,12951
+co_bash-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+co_bash-0.0.1.dist-info/entry_points.txt,sha256=E1yszd5KOzCGTed8MB7sbppkSDRU5W3Ou5WYwpq9nrc,41
+co_bash-0.0.1.dist-info/top_level.txt,sha256=Tl7PBT8zBw7c_re4goWe6S3kwOuL-1kmGaCoy-CY-Co,3
+co_bash-0.0.1.dist-info/RECORD,,
