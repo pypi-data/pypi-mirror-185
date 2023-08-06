@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "toml"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[project]
+name = "twinnterface"
+version = "0.0.1"
+description = "Machine learning model contracts with machine learning infrastructure"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "Royal HaskoningDHV", email = "ruud.kassing@rhdhv.com"}]
+keywords = ["python", "data-science", "data-engineering", "data-contracts", "asset-management"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+homepage = "https://github.com/ruudkassing/twinnterface"
+issues = "https://github.com/ruudkassing/twinnterface/issues"
+discussions = "https://github.com/ruudkassing/twinnterface/discussions"
+
+[tool.black]
+line-length = 99
+target-version = ['py38', 'py39', 'py310']
+
+[tool.isort]
+profile = "black"

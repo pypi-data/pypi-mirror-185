@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: twinnterface
+Version: 0.0.1
+Summary: Machine learning model contracts with machine learning infrastructure
+Author-email: Royal HaskoningDHV <ruud.kassing@rhdhv.com>
+License: MIT
+Project-URL: homepage, https://github.com/ruudkassing/twinnterface
+Project-URL: issues, https://github.com/ruudkassing/twinnterface/issues
+Project-URL: discussions, https://github.com/ruudkassing/twinnterface/discussions
+Keywords: python,data-science,data-engineering,data-contracts,asset-management
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Twinnterface
+
+[![PyPI Latest Release](https://img.shields.io/pypi/v/twinnterface.svg)](https://pypi.org/project/twinnterface/)
+[![Downloads](https://static.pepy.tech/personalized-badge/twinnterface?period=month&units=international_system&left_color=black&right_color=orange&left_text=PyPI%20downloads%20per%20month)](https://pepy.tech/project/twinnterface)
+[![License](https://img.shields.io/pypi/l/twinnterface.svg)](https://github.com/ruudkassing/twinnterface/blob/main/LICENSE)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+**COMING SOON!**
+
+Twinnterface (Twinn Interface) is a Python package for *data contracts between machine learning code and infrastructure*.
+
+Author: [Royal HaskoningDHV](https://global.royalhaskoningdhv.com/)
+
+Email: [ruud.kassing@rhdhv.com](mailto:ruud.kassing@rhdhv.com)
+
+## Getting started
+**COMING SOON!**
+
+### Installation
+
+The easiest way to install is package is using pip:
+```
+pip install twinnterface
+```
