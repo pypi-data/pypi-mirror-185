@@ -1,0 +1,13 @@
+fastv2ray/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastv2ray/app.py,sha256=OydtrylhC1DLIasS5Wsndp9pl1JMlYZiyXlhYp20gT0,1084
+fastv2ray/bins/geoip-only-cn-private.dat,sha256=OTSeahx1MH1MeeVWKrZWqoFLFsN5z5SXL0OnEsPIAdQ,167175
+fastv2ray/bins/geoip.dat,sha256=l9xbQwI-Y2FwYjyHcTTbEs3-QkEaey7_WkRKbpUaqgM,9511151
+fastv2ray/bins/geosite.dat,sha256=za4FiH8LY7hhSlmsktLl0PZ8RHKNoBnSM_ghpXiBeUs,15119707
+fastv2ray/bins/v2ctl,sha256=zntIR6_7-8I8aQa-p0qLlBTtqLRjWNSG55IBHTtbtPY,11669504
+fastv2ray/bins/v2ray,sha256=v4ZWAO3sgDEqEpZ8u8TC85rbGX-RWZGd3J1qDmx7z_s,16658432
+fastv2ray/configs/default.json,sha256=4dTzZXvtRPl80WMlRu3tFtnia7TwDq7Lk2CdIhG_lXQ,2730
+fastv2ray-0.0.1.dist-info/METADATA,sha256=AVT3tDt0y-CLHpHJ3-QycwiVhAO9oQzEVxNsJjTQ-V0,504
+fastv2ray-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fastv2ray-0.0.1.dist-info/entry_points.txt,sha256=BZAwODLLVaPaSiSn-k0ZbL2--2GB9VOTv1IXrA6Ys-4,49
+fastv2ray-0.0.1.dist-info/top_level.txt,sha256=4T1dh52LAw_9SHZKPOkeOzP286Je74pnbiEzpO3tSVA,10
+fastv2ray-0.0.1.dist-info/RECORD,,
