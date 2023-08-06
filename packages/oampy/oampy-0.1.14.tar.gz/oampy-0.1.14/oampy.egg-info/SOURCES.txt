@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+setup.py
+oampy/__init__.py
+oampy/__main__.py
+oampy/client.py
+oampy/docs.py
+oampy/query.py
+oampy/utils.py
+oampy.egg-info/PKG-INFO
+oampy.egg-info/SOURCES.txt
+oampy.egg-info/dependency_links.txt
+oampy.egg-info/entry_points.txt
+oampy.egg-info/requires.txt
+oampy.egg-info/top_level.txt
