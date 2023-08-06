@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "stackcli" # should be "stackai"
+version = "0.1.17"
+description = ""
+authors = ["Toni Rosinol <arosinol@getstack.ai>"]
+readme = "README.md"
+
+packages = [
+    { include = "stack_api" },
+    { include = "src/**/*.py" },
+]
+
+[tool.poetry.scripts]
+stack = "stack_api.api_cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+typer = {extras = ["all"], version = "^0.6.1"}
+boto3 = "^1.24.60"
+pymongo = "^4.2.0"
+python-dotenv = "^0.20.0"
+fastapi = ">=0.80.0"
+maskpass = "^0.3.6"
+google-cloud-storage = "^2.5.0"
+google-cloud-datastore = "^2.8.1"
+csv-diff = "*"
+pandas = "*"
+tzlocal = "*"
+opencv-python = "^4.6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
