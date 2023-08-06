@@ -1,0 +1,324 @@
+Metadata-Version: 2.1
+Name: izitoast
+Version: 1.2.2
+Summary: Elegant, responsive, flexible, and lightweight notification plugin.
+Home-page: https://djangoizitoast.pythonanywhere.com/
+Author: Abdul Rahim K
+Author-email: abdulrahim.uj@gmail.com
+License: MIT
+Keywords: izitoast
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+
+# IziToast
+
+izitoast is an Elegant, responsive, flexible, and lightweight notification plugin with no dependencies.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install izitoast.
+
+
+
+## Usage
+
+Add 'izitoast' to your INSTALLED_APPS setting like this:
+
+```python
+INSTALLED_APPS = [
+     '...',
+    'izitoast',
+]
+```
+
+inside base template file at last position include a single line of code
+
+```html
+...
+{% include 'includes/izitoast.html' %}
+</body>
+</html>
+```
+
+## Working
+- User can pass option diversify or not, if not pass diversify option, izitoast will take default settings
+- Single message with specified tag
+```python
+from izitoast.functions import izitoast
+
+def func(request):
+    ...
+    message = "This is success message."
+    diversify = {
+        "position": "topRight",
+        "transition_in": "flipInX",
+        "transition_out": "flipOutX",
+        "time_out": 3000,
+    }
+
+    izitoast(request=request, model="success", message=message, diversify=diversify)
+
+    return render(request, 'template.html')
+```
+- Multiple messages with different tags at a time
+```python
+from izitoast.functions import izitoast
+
+def func(request):
+    ...
+    message = {
+        'raw': [
+            {
+                'tag': 'success',
+                'item': "Success message"
+            },
+            {
+                'tag': 'info',
+                'item': "Information message!"
+            },
+            {
+                'tag': 'warning',
+                'item': "Warning message!"
+            },
+            {
+                'tag': 'danger',
+                'item': "Error message!"
+            }
+        ]
+    }
+    diversify = {
+        "position": "topRight",
+        "transition_in": "flipInX",
+        "transition_out": "flipOutX",
+        "time_out": 3000,
+    }
+
+    izitoast(request=request, model="success", message=message, diversify=diversify)
+
+    return render(request, 'template.html')
+```
+
+## generate form.errors
+```python
+from izitoast.functions import izitoast
+
+def func(request):
+    ...
+    
+    diversify = {
+        "position": "topRight",
+        "transition_in": "flipInX",
+        "transition_out": "flipOutX",
+        "time_out": 3000,
+    }
+    izitoast(request=request, model="form-error", message=form.errors, diversify=diversify)
+
+    return render(request, 'template.html')
+```
+
+
+## model
+
+- Users can choose different models and it can be 'success', 'info', 'warning', or 'danger'. 
+
+- but when generating form.errors must be set to 'model=form-error'.
+
+
+## Optionals
+1. position: 
+
+ - Default izitoast shown place "topRight",
+
+ - It can be: [bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center]
+
+2. transition_in:
+
+ - Default izitoast open animation "flipInX",
+
+ - It can be: [bounceInLeft, bounceInRight, bounceInUp, bounceInDown, fadeIn, fadeInDown, fadeInUp, fadeInLeft, fadeInRight, flipInX]
+
+3. transition_out:
+ - Default izitoast close animation "flipOutX",
+
+ - It can be: [fadeOut, fadeOutUp, fadeOutDown, fadeOutLeft, fadeOutRight, flipOutX]
+
+4. time_out:
+  - the default value is 3000.
+
+
+## Dependencies
+
+ - It uses [izitoast v1.4.0](https://izitoast.marcelodolza.com/) scripts and styles.
+
+#### For message transferring uses messages 
+```python 
+from django.contrib import messages
+```
+
+
+## Demo
+
+[Django-IziToast](https://djangoizitoast.pythonanywhere.com/)
+
+## GitHub
+
+[Django-IziToast](https://github.com/abdulrahim-uj/izitoast/)
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+
+
+
+
+
+
+Copyright 2023 Abdul Rahim K
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+
+Change Log
+==========
+
+0.0.1 (20/12/2022)
+-------------------
+- First Release
+
+0.0.2 (20/12/2022)
+-------------------
+- Fixed mouse hover close issue
+
+0.0.3 (21/12/2022)
+-------------------
+- Bug fixed
+
+0.0.4 (21/12/2022)
+-------------------
+- Bug fixed
+
+0.0.5 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+0.0.6 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+0.0.7 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+0.0.8 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+0.0.9 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+0.1.9 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+1.0.1 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+1.0.2 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+1.0.3 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+1.0.4 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+1.0.5 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+1.0.6 (21/12/2022)
+-------------------
+- Bug fixed
+- Removed
+
+1.0.7 (21/12/2022)
+-------------------
+- Bug fixed
+- Improved performance
+- Size reduced
+- Add more options
+
+1.0.8 (22/12/2022)
+-------------------
+- Bug fixed
+- Improved performance
+- form.errors added more options
+
+
+1.0.9 (23/12/2022)
+-------------------
+- Bug fixed
+- Improved performance
+- form.errors added more options
+- reduce background tasks
+
+
+1.1.9 (23/12/2022)
+-------------------
+- Bug fixed from dict
+
+1.2.0 (23/12/2022)
+-------------------
+- improved
+
+
+1.2.1 (26/12/2022)
+-------------------
+- improved
+- both string & dictionaries can pass through message.
+- users can alert single message as well as multiple messages with different types at a time.
+
+
+1.2.2 (12/01/2023)
+-------------------
+- improved
+- remove unused warnings
