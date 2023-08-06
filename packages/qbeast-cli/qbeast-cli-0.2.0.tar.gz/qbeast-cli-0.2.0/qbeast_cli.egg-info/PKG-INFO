@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: qbeast-cli
+Version: 0.2.0
+Summary: A command line interface for the Qbeast services
+Author: Qbeast
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# Qbeast CLI
+
+A command line interface to interact with the Qbeast services.
+
+## Quick Start
+
+1. Install the CLI
+
+```bash
+pip install qbeast-cli
+```
+
+2. Login to the Qbeast Services
+
+```bash
+qbeast login
+```
+
+### Qbeast Expo commands
+1. Register a dataset
+
+```bash
+qbeast expo create "My Share" "Sales Data"  s3a://my-bucket/my/table/path account_id
+```
+
+2. Share the dataset with people
+
+```bash
+qbeast expo invite "My Share" "Alice" alice@somewhere.com
+```
+
+### Qbeast Curator commands
+ℹ️ You must be in the root of your project, where your `ingestion/` and `transformation/` directories are.
+**You can also use `--path "/path/to/project/"` option**.
+
+1. Manage your projects in the Qbeast Curator.
+
+```bash
+# Create a project
+qbeast curator project create -p "project-name"
+
+# List the projects
+qbeast curator project list
+
+# Get info about a project
+qbeast curator project info -p "project-name"
+
+# Update a project's description
+qbeast curator project update -p "project-name" -D "new description"
+
+# Delete a project
+qbeast curator project delete -p "project-name"
+```
+
+2. Manage the Snapshots of a Project.
+```bash
+# Create a snapshot of the project & upload it to the Curator
+qbeast curator snapshot create -p "project-name" --path /path/to/your/project
+
+# List the snapshots of a Project
+qbeast curator snapshot list -p "project-name"
+
+# Get info about a Snapshot
+qbeast curator snapshot info -p "project-name" -s "snapshot-id"
+
+# Delete a snapshot
+qbeast curator snapshot delete -p "project-name" -s "snapshot-id"
+```
+
+3. Manage the Deployments of a Project.
+```bash
+# Create a Deployment of a Snapshot
+qbeast curator deployment create -p "project-name" -s "snapshot-id" -d "deployment-name"
+
+# List the Deployments of a Project
+qbeast curator deployment list -p "project-name"
+
+# Get info about a Deployment
+qbeast curator deployment info -p "project-name" -s "snapshot-id" -d "deployment-name"
+
+# Delete a Deployment
+qbeast curator deployment delete -p "project-name" -s "snapshot-id" -d "deployment-name"
+```
+
+4. Manage the Runs of a Project
+```bash
+# Start a run of a Deployment
+qbeast curator run start -p "project-name" -s "snapshot-id" -d "deployment-name"
+
+# List the Runs of a Deployment
+qbeast curator run list -p "project-name" -s "snapshot-id" -d "deployment-name"
+
+# Get info about a Run
+qbeast curator run info -p "project-name" -s "snapshot-id" -d "deployment-name" -r "run-id"
+
+# Delete a Run
+qbeast curator run delete -p "project-name" -s "snapshot-id" -d "deployment-name" -r "run-id"
+
+# Get the logs of a Run
+qbeast curator run logs -p "project-name" -s "snapshot-id" -d "deployment-name" -r "run-id"
+```
