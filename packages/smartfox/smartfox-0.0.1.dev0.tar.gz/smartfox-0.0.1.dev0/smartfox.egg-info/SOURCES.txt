@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+smartfox/__init__.py
+smartfox/smartfox.py
+smartfox.egg-info/PKG-INFO
+smartfox.egg-info/SOURCES.txt
+smartfox.egg-info/dependency_links.txt
+smartfox.egg-info/requires.txt
+smartfox.egg-info/top_level.txt
