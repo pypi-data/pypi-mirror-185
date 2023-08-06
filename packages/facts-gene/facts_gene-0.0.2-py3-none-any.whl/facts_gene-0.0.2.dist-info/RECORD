@@ -1,0 +1,11 @@
+facts_gene/__init__.py,sha256=1CffFfcp3MPUH3mRzA-KnGsVAvi6Wec6vDMzixpB6Dg,525
+facts_gene/facts_gen_commons.py,sha256=LiNujaD_08XuDYnzFa2JaiBXMPY9EeSUF4ohCSFCOZo,1854
+facts_gene/facts_gen_from_fg.py,sha256=eI3YnAuTvzheLR7LkhO_1pfCRf_nZr_pCqxgop4SgqE,3491
+facts_gene/facts_gen_tables_ntct.py,sha256=c-OSCeJKnNUCD80IZn6hz-eagFSS-QQO31wXpix36to,7028
+facts_gene/facts_gen_var_ntct.py,sha256=rKUVCZqj-zPlXWJeBwd10fhJ36_1pD26ymXTaCtYA9A,4091
+facts_gene/general.py,sha256=CdAcgFHauyGFt3ch_3p07nRy77oJutWTeP_0p0cMBwM,3189
+facts_gene-0.0.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+facts_gene-0.0.2.dist-info/METADATA,sha256=oUVhAqbXgqXOLf3xRT4AImF46n8-TNErcW9NTdUIs8c,845
+facts_gene-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+facts_gene-0.0.2.dist-info/top_level.txt,sha256=D0A66NtlglKC6AMvWPPgbmiNu2xtr52Q1st-_EAuIA4,11
+facts_gene-0.0.2.dist-info/RECORD,,
