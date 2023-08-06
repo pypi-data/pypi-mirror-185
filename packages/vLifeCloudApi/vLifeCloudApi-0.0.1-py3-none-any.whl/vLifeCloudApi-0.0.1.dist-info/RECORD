@@ -1,0 +1,9 @@
+awsService/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awsService/comprehend.py,sha256=l7KltBXz0KjA5QAtdj8-Xmm936i-6H48wRXxy3CFvzQ,2399
+awsService/helper.py,sha256=slEh0bK-dOBJBdDTfeCPQd91ttWhV-tdCHAcGloVbE0,908
+awsService/medicalComprehend.py,sha256=pPx7wEFmKcn5Yp87GO4ILDrNJYHr8JZG4OqNOq6X8jg,2148
+vLifeCloudApi-0.0.1.dist-info/LICENSE.txt,sha256=WMdr_4Q_N5keOSRAhh8bXwiQdZ3j58i1eZ9th5FoqDE,1072
+vLifeCloudApi-0.0.1.dist-info/METADATA,sha256=3q4iluIjEsva-7QYaf1wvQgFADR16tWsG0AjdxhEEGo,812
+vLifeCloudApi-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+vLifeCloudApi-0.0.1.dist-info/top_level.txt,sha256=iQ5doL0nPfIo8w7Q9WzxcCJwBEc5fiax7nh7ypTWSxs,11
+vLifeCloudApi-0.0.1.dist-info/RECORD,,
