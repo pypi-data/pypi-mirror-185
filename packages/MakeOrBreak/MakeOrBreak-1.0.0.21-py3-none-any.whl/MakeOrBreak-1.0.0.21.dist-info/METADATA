@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: MakeOrBreak
+Version: 1.0.0.21
+Author: 4_Stooges
+Author-email: jorwong5@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# HackNRoll2023_The4Stooges
+
+# Disclaimer
+Note that this application does not work on Windows due to limitations in permissions for the notification center
