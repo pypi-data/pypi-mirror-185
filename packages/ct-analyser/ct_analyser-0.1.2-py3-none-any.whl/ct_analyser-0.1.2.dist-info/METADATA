@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: ct-analyser
+Version: 0.1.2
+Summary: A Python package for analysing CT scans
+Author: Ria Luchun and Thomas Pons
+License: The MIT License (MIT)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib (>=3.6.2)
+Requires-Dist: numpy (>=1.24.0)
+Requires-Dist: scipy (>=1.9.3)
+Requires-Dist: pandas (>=1.5.2)
+Requires-Dist: scikit-image (>=0.19.3)
+Requires-Dist: pydicom (>=2.3.1)
+Requires-Dist: pygame (>=2.1.2)
+Requires-Dist: python-slugify (>=5.0.2)
+Requires-Dist: pytest (>=7.2.0)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PyPI version](https://badge.fury.io/py/ct-analyser.svg)](https://badge.fury.io/py/ct-analyser)
+
+# ct_analyser
+
+#### Visualising and Extracting Data from Axial Chest CT Scans
+
+The CT analyser (CTA) package is a module developed to enable users to load in and process medical images, specifically DICOM (.dcm) files of axial CT scans. This package is available to install from PyPi using `pip install` (Available from https://pypi.org/project/ct-analyser/0.1.2/).
+
+## Main Features
+
+***
+Once imported, CTA offers several functions to threshold and mask the images in order to isolate key structures (such as the heart or lungs) or regions of interest. Finally, key data relating to the regions of interest including the volume, dimensions and tissue type can be produced.
+
+## Vision for ct_analyser
+
+***
+Ultimately, this package offers the foundation for further applications, both in medical settings as an aid for radiologists, or in training to extract example structures from real images for the teaching of students or even as a basis for processing data inputted into machine learning models for automated diagnostic tools.
+
+## Getting started 
+
+***
+The module can be installed with:
+
+    `pip install ct-analyser==0.1.2`
