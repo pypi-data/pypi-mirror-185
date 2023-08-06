@@ -1,0 +1,10 @@
+ss_validate/__init__.py,sha256=G3Ntg-PNlQ8l2SizQWCGEz00_xGmQbnW2NXgWacMzTY,26
+ss_validate/helpers.py,sha256=6HHCAE_yD5BOm3RpZDWOKP78Vbmnlh4pA-C9o9Zu2EQ,4211
+ss_validate/schema.py,sha256=Gg2bj950ndK67zUOnYRu-gPz14aeNr0d9cgDQ8a0jlk,6180
+ss_validate/validator.py,sha256=DG02BwpWpcjBukxMskax_cwDacC177dBr3Plg2XFbMA,14193
+ss_validate-1.0.0.dev3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ss_validate-1.0.0.dev3.dist-info/METADATA,sha256=-l0sE0IXTKSQN9yFqVYRfMAFYlPuiCYHO8Jp9BzcWuU,2872
+ss_validate-1.0.0.dev3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ss_validate-1.0.0.dev3.dist-info/entry_points.txt,sha256=9HLxG28M4JyXgnUmZ2GcJ5GsyjMojjzljd-fHs2CgMU,59
+ss_validate-1.0.0.dev3.dist-info/top_level.txt,sha256=Z7L2HRCgtt16rhRMyhxHtrUmE57dw7foZjOX4F26xBw,12
+ss_validate-1.0.0.dev3.dist-info/RECORD,,
