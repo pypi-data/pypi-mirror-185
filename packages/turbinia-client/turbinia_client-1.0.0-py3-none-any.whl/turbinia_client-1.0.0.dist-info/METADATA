@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: turbinia-client
+Version: 1.0.0
+Summary: Turbinia API Client command-line tool.
+Home-page: http://turbinia.plumbing/
+Maintainer: Turbinia development team
+Maintainer-email: turbinia-dev@googlegroups.com
+License: Apache License, Version 2.0
+Keywords: Turbinia Client,Turbinia,Turbinia API Server
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: turbinia-api-client
+
+# turbinia-client
