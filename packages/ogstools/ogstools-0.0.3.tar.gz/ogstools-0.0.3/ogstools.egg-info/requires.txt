@@ -1,0 +1,6 @@
+meshio>=5.3.0
+
+[test]
+pre-commit>=2.20
+tox>=4.1
+build

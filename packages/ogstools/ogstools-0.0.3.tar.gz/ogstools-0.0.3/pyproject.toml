@@ -1,0 +1,45 @@
+[build-system]
+requires = ['setuptools', 'setuptools_scm[toml]']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "ogstools"
+# version = "0.0.2"
+dynamic = ["version"]
+description = "A collection of Python tools aimed at evolving into a modeling toolchain around OpenGeoSys."
+authors = [{ name = 'OpenGeoSys Community', email = 'info@opengeosys.org' }]
+license = { text = "BSD-3-Clause" }
+readme = "README.md"
+requires-python = '>=3.9'
+dependencies = ["meshio>=5.3.0"]
+
+[project.urls]
+# Documentation = 'TODO'
+"Bug Tracker" = 'https://gitlab.opengeosys.org/ogs/tools/ogstools/-/issues'
+"Source Code" = 'https://gitlab.opengeosys.org/ogs/tools/ogstools'
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ogstools*"]
+namespaces = false
+
+[tool.setuptools_scm]
+version_scheme = "no-guess-dev" # would increment version otherwise
+
+[project.scripts]
+msh2vtu = 'ogstools.msh2vtu._cli:cli'
+
+[project.optional-dependencies]
+test = ["pre-commit>=2.20", "tox>=4.1", "build"]
+
+[tool.black]
+line-length = 80
+
+[tool.isort]
+profile = "black"
+line_length = 80
+known_third_party = ["distutils"]
+force_to_top = ["setuptools"]
+
+[tool.mypy]
+exclude = ['.*/examples/.*']

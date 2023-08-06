@@ -1,0 +1,2 @@
+[console_scripts]
+msh2vtu = ogstools.msh2vtu._cli:cli
