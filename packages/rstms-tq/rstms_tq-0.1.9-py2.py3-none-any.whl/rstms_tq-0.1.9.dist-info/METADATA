@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: rstms-tq
+Version: 0.1.9
+Summary: Top-level package for rstms-tq.
+Keywords: tq
+Author-email: Matt Krueger <mkrueger@rstms.net>
+Description-Content-Type: text/markdown
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: tomli
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: bump2version ; extra == "dev"
+Requires-Dist: coverage ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: flake8-length ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: python-box ; extra == "dev"
+Requires-Dist: toml ; extra == "dev"
+Requires-Dist: tox ; extra == "dev"
+Requires-Dist: m2r2 ; extra == "docs"
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-click ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme ; extra == "docs"
+Project-URL: Home, https://github.com/rstms/rstms-tq
+Provides-Extra: dev
+Provides-Extra: docs
+
+rstms-tq
+========
+
+
+![Image](https://img.shields.io/github/license/rstms/tq)
+
+![Image](https://img.shields.io/pypi/v/tq.svg)
+
+
+
+![Image](https://readthedocs.org/projects/tq/badge/?version=latest)
+
+![Image](https://pyup.io/repos/github/rstms/tq/shield.svg)
+
+TOML jq frontend/wrapper
+
+
+* Free software: MIT license
+* Documentation: https://tq.readthedocs.io.
+
+
+
+Credits
+-------
+
+This package was created with Cookiecutter and `rstms/cookiecutter-python-cli`, a fork of the `audreyr/cookiecutter-pypackage` project template.
+
+[audreyr/cookiecutter](https://github.com/audreyr/cookiecutter)
+[audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
+[rstms/cookiecutter-python-cli](https://github.com/rstms/cookiecutter-python-cli)
+
