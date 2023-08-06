@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: Xiaoimage
+Version: 1.0.7
+Requires-Dist: Flask
+Requires-Dist: requests
+Requires-Dist: BeautifulSoup4
+
