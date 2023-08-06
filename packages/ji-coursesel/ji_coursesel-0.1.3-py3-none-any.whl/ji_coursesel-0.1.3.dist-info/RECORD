@@ -1,0 +1,12 @@
+courseselcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+courseselcli/command_line.py,sha256=xCAxY4DNdsGtYbek09CYBSfLmqiSZNPTDjtTjEXptNY,114
+courseselcli/coursesel.py,sha256=-UXKSrHxd8ekC-kuHJHAeUuAtzBOOJuUJ16GXKmgowE,357
+courseselcli/elector.py,sha256=bx2xtN1s38-_wXJh5p8CKcq10o87PVQs8HTPP7XTGx0,9607
+courseselcli/login.py,sha256=kAxDMdcTvhgzaWm4XqhZ8hQ_6k_S_oh88CagKbNvVo4,820
+courseselcli/main.py,sha256=3t5A9n9eT05Tmc7QXGsdv4qCVu9FOuDW7rYuApbeTJc,6322
+courseselcli/single.py,sha256=pEgXDs_MbG5Q4M-LUtVH8E0IVj7LDyJeHLFBfNGbKd8,5082
+ji_coursesel-0.1.3.dist-info/METADATA,sha256=-XZbnPeH3MbAYUdeZ5594CnlVonqBV2SVdV828xGrew,856
+ji_coursesel-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ji_coursesel-0.1.3.dist-info/entry_points.txt,sha256=zJ_pgjOovT8b4csZWKFrY7S1oJrzUeGyrKbEbjO9x6g,64
+ji_coursesel-0.1.3.dist-info/top_level.txt,sha256=MlQD8ZuvxkfNXuatd283SUm-zHE6TNqDIqi1pY_-C-M,13
+ji_coursesel-0.1.3.dist-info/RECORD,,
