@@ -1,0 +1,79 @@
+[tool.poetry]
+    name        = "bolivia-cc"
+    version     = "0.1.3a0"
+    description = "El código de control es un dato alfanumérico generado por un sistema de facturación y sirve para determinar la validez o no de una factura en Bolivia."
+    authors     = []
+    license     = "Apache License 2.0"
+    readme      = "README.md"
+    packages    = [{ include = "bolivia_cc" }]
+    include     = [{ path = "tests", format = "sdist" }]
+
+    homepage      = "https://github.com/tugerente-com/bolivia-cc"
+    repository    = "https://github.com/tugerente-com/bolivia-cc"
+    documentation = "https://github.com/tugerente-com/bolivia-cc"
+
+    keywords = ["bolivia", "codigo control", "impuestos"]
+
+    classifiers = [
+        "Development Status :: 4 - Beta",
+        "License :: OSI Approved :: Apache Software License",
+        "Intended Audience :: Developers",
+        "Natural Language :: Spanish",
+        "Environment :: Console",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3.8",
+    ]
+
+    [tool.poetry.urls]
+        Changelog = "https://github.com/tugerente-com/bolivia-cc"
+        Support   = "https://github.com/tugerente-com/bolivia-cc"
+
+    [tool.poetry.dependencies]
+        python = "^3.8"
+
+    [tool.poetry.scripts]
+        bolivia_cc = "bolivia_cc.cli:main"
+
+    [tool.poetry.group.dev.dependencies]
+        pre-commit = "^2.21.0"
+        black      = "^22.12.0"
+        isort      = "^5.11.4"
+        mypy       = "^0.991"
+
+    [tool.poetry.group.test.dependencies]
+        pytest     = "^7.2.0"
+        pytest-cov = "^4.0.0"
+
+[build-system]
+    requires      = ["poetry-core"]
+    build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+    py_version         = 38
+    profile            = "black"
+    force_single_line  = false
+    combine_as_imports = true
+    src_paths          = ["bolivia_cc", "tests"]
+
+[tool.black]
+    target-version = ['py38']
+
+[tool.mypy]
+    exclude           = ["tests/"]
+    modules           = ["bolivia_cc"]
+    mypy_path         = [""]
+    pretty            = true
+    strict            = true
+    enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+
+[tool.pytest.ini_options]
+    addopts   = ""
+    testpaths = ["tests"]
+
+[tool.coverage.run]
+    branch = true
+    omit   = ["*/__main__.py"]
+    source = ["bolivia_cc"]
+
+[tool.coverage.report]
+    exclude_lines = ["pragma: no cover", "if TYPE_CHECKING:", "if __name__ == .__main__.:"]
