@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+margarine/__init__.py
+margarine/kde.py
+margarine/maf.py
+margarine/marginal_stats.py
+margarine/processing.py
+margarine.egg-info/PKG-INFO
+margarine.egg-info/SOURCES.txt
+margarine.egg-info/dependency_links.txt
+margarine.egg-info/requires.txt
+margarine.egg-info/top_level.txt
