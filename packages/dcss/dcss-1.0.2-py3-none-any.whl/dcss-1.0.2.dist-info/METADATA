@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dcss
+Version: 1.0.2
+Summary: Utilities for the book Doing Computational Social Science
+Home-page: https://github.com/UWNETLAB/doing_computational_social_science
+Author: John McLevey
+Author-email: john.mclevey@uwaterloo.ca
+Project-URL: Bug Tracker, https://github.com/UWNETLAB/doing_computational_social_science/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: html2text
+Requires-Dist: pyyaml
+Requires-Dist: spacy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pyprojroot
+Requires-Dist: pymc3
+Requires-Dist: arviz
+Requires-Dist: networkx
+Requires-Dist: joblib
+Requires-Dist: scikit-learn
+Requires-Dist: gensim
+
+Details about the package...
