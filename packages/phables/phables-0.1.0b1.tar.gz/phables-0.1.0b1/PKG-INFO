@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: phables
+Version: 0.1.0b1
+Summary: Phables: Phage bubbles resolve bacteriophage genomes in viral metagenomic samples
+Home-page: https://github.com/Vini2/phables
+Author: Vijini Mallawaarachchi
+Author-email: viji.mallawaarachchi@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8,<3.11
