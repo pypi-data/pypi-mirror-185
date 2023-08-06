@@ -1,0 +1,9 @@
+numpy
+matplotlib
+h5py
+pynrrd
+myst-parser
+coverage
+pytest-cov
+imageio
+scipy
