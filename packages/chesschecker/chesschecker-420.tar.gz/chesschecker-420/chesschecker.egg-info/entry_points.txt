@@ -1,0 +1,2 @@
+[console_scripts]
+chesschecker = chesschecker.main:main
