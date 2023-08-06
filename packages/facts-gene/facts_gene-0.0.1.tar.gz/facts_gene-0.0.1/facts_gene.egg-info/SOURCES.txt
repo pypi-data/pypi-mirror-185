@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+facts_gene/__init__.py
+facts_gene/facts_gen_commons.py
+facts_gene/facts_gen_tables_ntct.py
+facts_gene/facts_gen_var_ntct.py
+facts_gene.egg-info/PKG-INFO
+facts_gene.egg-info/SOURCES.txt
+facts_gene.egg-info/dependency_links.txt
+facts_gene.egg-info/requires.txt
+facts_gene.egg-info/top_level.txt
