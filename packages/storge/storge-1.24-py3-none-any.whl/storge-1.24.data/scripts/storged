@@ -1,0 +1,360 @@
+#!python
+""" CherryPy application for file storage"""
+
+# Copyright (C) 2021 Gwyn Ciesla
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import os
+import sys
+import tempfile
+import getpass
+import mimetypes
+import hashlib
+import argparse
+import cherrypy
+from cherrypy.lib import auth_digest
+import sqlalchemy
+from sqlalchemy.sql import text
+import psutil
+import pystorge
+
+VERSION = "1.24"
+FOOTER = "<h6 align=center>Storge " + VERSION + " © Gwyn Ciesla 2021</h6>"
+
+DATABASE = os.path.join(os.path.expanduser('~' +  getpass.getuser()), '.storge.db')
+DBHOST = "127.0.0.1"
+DBPASS = "storge"
+IPADDR = "127.0.0.1"
+PORT = 8080
+REFRESH = "15"
+USER = "storge"
+PASSWORD = "storge"
+TITLE = "STORGE"
+KEY = os.path.join(os.path.expanduser('~' +  getpass.getuser()), '.storge_key.pem')
+CERT = os.path.join(os.path.expanduser('~' +  getpass.getuser()), '.storge_cert.pem')
+
+CONFIGFILENAME = os.path.join(os.path.expanduser('~' +  getpass.getuser()), '.storged.conf')
+
+CONFIG = pystorge.server_config_handler(CONFIGFILENAME)
+
+FAVICON = os.path.dirname(pystorge.__file__) + '/favicon.ico'
+
+VACSTATFILE = os.path.join(os.path.expanduser('~' + getpass.getuser()), \
+    '.storgevacstat')
+if not os.path.isfile(VACSTATFILE):
+    with open(VACSTATFILE, 'a', encoding='utf-8'):
+        os.utime(VACSTATFILE)
+else:
+    with open(VACSTATFILE, 'w', encoding='utf-8') as REFSTAT:
+        REFSTAT.truncate()
+        REFSTAT.close()
+
+KEY = pystorge.homesub(str(CONFIG.get("Options", "key")))
+CERT = pystorge.homesub(str(CONFIG.get("Options", "cert")))
+
+if pystorge.create_certs(KEY, CERT) != 0:
+    sys.exit(1)
+
+if 'STORGE_DATABASE' in os.environ:
+    DATABASE = pystorge.homesub(os.environ['STORGE_DATABASE'])
+elif "database" in CONFIG['Options']:
+    DATABASE = pystorge.homesub(str(CONFIG.get("Options", "database")))
+
+if 'STORGE_DBPASS' in os.environ:
+    DBPASS = os.environ['STORGE_DBPASS']
+elif "dbpass" in CONFIG['Options']:
+    DBPASS = str(CONFIG.get("Options", "dbpass"))
+
+if 'STORGE_IPADDR' in os.environ:
+    IPADDR = os.environ['STORGE_IPADDR']
+elif "ip" in CONFIG['Options']:
+    IPADDR = str(CONFIG.get("Options", "ip"))
+
+if 'STORGE_PORT' in os.environ:
+    PORT = int(os.environ['STORGE_PORT'])
+elif "port" in CONFIG['Options']:
+    PORT = int(CONFIG.get("Options", "port"))
+
+if 'STORGE_REFRESH' in os.environ:
+    REFRESH = os.environ['STORGE_REFRESH']
+elif "refresh" in CONFIG['Options']:
+    REFRESH = str(CONFIG.get("Options", "refresh"))
+
+if 'STORGE_USER' in os.environ:
+    USER = os.environ['STORGE_USER']
+elif "user" in CONFIG['Options']:
+    USER = str(CONFIG.get("Options", "user"))
+
+if 'STORGE_PASSWORD' in os.environ:
+    PASSWORD = os.environ['STORGE_PASSWORD']
+elif "password" in CONFIG['Options']:
+    PASSWORD = str(CONFIG.get("Options", "password"))
+
+if 'STORGE_DBHOST' in os.environ:
+    DBHOST = os.environ['STORGE_DBHOST']
+elif "dbhost" in CONFIG['Options']:
+    DBHOST = str(CONFIG.get("Options", "dbhost"))
+
+if 'STORGE_TITLE' in os.environ:
+    TITLE = os.environ['STORGE_TITLE']
+elif "title" in CONFIG['Options']:
+    TITLE = str(CONFIG.get("Options", "title"))
+
+HEADER = "<html><title>" + TITLE + "</title><h2 align=center>" + TITLE + "</h2>"
+
+PARSER = argparse.ArgumentParser(description="Storge server")
+PARSER.add_argument("-v", "--version", action="version", version=VERSION)
+PARSER.add_argument("-p", "--port", action="store", dest="port", help="Port to listen on")
+PARSER.add_argument("-i", "--ip", action="store", dest="ip", help="Address to listen on")
+ARGS = PARSER.parse_args()
+
+if ARGS.port:
+    PORT = int(ARGS.port)
+if ARGS.ip:
+    IPADDR = int(ARGS.ip)
+
+USERS = {'storge': PASSWORD}
+
+MEMORY = psutil.virtual_memory()
+MAXMEM = int(MEMORY.total/2)
+
+#connect to DB with shared connection for all threads.
+ENGINE = sqlalchemy.create_engine('mysql+pymysql://' + USER + ':' + DBPASS + '@' + DBHOST + '/' + DATABASE) # pylint: disable=line-too-long
+
+#create tables if they don't exist
+with ENGINE.connect() as dbc:
+    if not dbc.dialect.has_table(dbc, 'file_object'):
+        dbc.execute("CREATE TABLE file_object(fileid INTEGER PRIMARY KEY, stamp INTEGER, ipaddr TEXT, sha512 TEXT, filename TEXT, filesize TEXT, data LONGBLOB);") # pylint: disable=line-too-long
+with ENGINE.connect() as dbc:
+    if not dbc.dialect.has_table(dbc, 'obj_chunks'):
+        dbc.execute("CREATE TABLE obj_chunks(object INTEGER, seq INTEGER, data LONGBLOB);")
+
+PID = str(os.getpid())
+
+DIGEST_KEY = '7633623b66b5e686bb94dd96a7cdb5a7e5ee00e87004fab416a5610d59c62bad'
+DIGEST_KEY = DIGEST_KEY + 'af512a2e26e34e2455b7ed6b76690d2cd47464836d7d85d78b51d50f7e933d5c'
+
+cherrypy.config.update({'server.socket_host': IPADDR,
+                        'server.socket_port': PORT,
+                        'server.max_request_body_size': MAXMEM,
+                        'server.socket_timeout': 600,
+                        'server.ssl_private_key': KEY,
+                        'server.ssl_certificate': CERT,
+                        'log.screen': False,
+                        'log.access_file': '',
+                        'log.error_file': '',
+                        'response.timeout': 36000,
+                        'tools.auth_digest.on': True,
+                        'tools.auth_digest.realm': 'storge',
+                        'tools.auth_digest.get_ha1': auth_digest.get_ha1_dict_plain(USERS),
+                        'tools.auth_digest.key': DIGEST_KEY})
+
+class Storge(): # pylint: disable=too-few-public-methods
+    """ Main class """
+
+    @cherrypy.expose
+    def api(self, flag):
+        """ API access functions """
+
+        if not flag.file:
+            return "<meta http-equiv=refresh content=0;url=index>"
+
+        flags = flag.file.read()
+
+        if flags == b'list':
+            return pystorge.list_objects(ENGINE, 'DESC')
+        if flags == b'pop':
+            return pystorge.list_objects(ENGINE, "ASC")
+        if flags == b'sync':
+            rows = ''
+            with ENGINE.connect() as dbconn:
+                for fileid, filehash in \
+                    dbconn.execute(text("SELECT fileid, sha512 \
+                        FROM file_object ORDER BY fileid DESC;")).fetchall():
+                    rows = rows + str(fileid) + "---" + str(filehash) + "|||"
+            return rows.rstrip('|||') # pylint: disable=bad-str-strip-call
+        return 0
+
+
+    @cherrypy.expose
+    def vacuum(self):
+        """ Database vacuum function """
+
+        initial_size = pystorge.objects_size(ENGINE)
+
+        with ENGINE.connect() as dbconn:
+            for table in ['file_object', 'obj_chunks']:
+                dbconn.execute(text("OPTIMIZE TABLE " + table + ";"))
+        savings = pystorge.humansize(initial_size - pystorge.objects_size(ENGINE))
+        with open(VACSTATFILE, 'w', encoding='utf-8') as vacstat:
+            vacstat.write(savings)
+            vacstat.close()
+        return "<meta http-equiv=refresh content=0;url=index>" + savings
+
+    @cherrypy.expose
+    def upload(self, userfile):
+        # pylint: disable=too-many-locals
+        """ Upload file """
+
+        lch = {}
+        for key, val in cherrypy.request.headers.items():
+            lch[key.lower()] = val
+        inbytes = int(lch['content-length'])
+        if not userfile.file:
+            return "<meta http-equiv=refresh content=0;url=index>"
+        content = userfile.file.read(inbytes)
+
+        filesize = len(content)
+
+        hashthing = hashlib.new('sha3_512')
+        hashthing.update(content)
+        filehash = hashthing.hexdigest()
+
+        # see if this file is already in the database.
+        with ENGINE.connect() as dbconn:
+            for count in dbconn.execute(text("SELECT COUNT(fileid) FROM file_object WHERE sha512 = '" + filehash + "';")).fetchall():# pylint: disable=line-too-long
+                if count[0] == 0:
+                    present = False
+                else:
+                    present = True
+
+        if not present:
+
+            # get next id available.
+            try:
+                with ENGINE.connect() as dbconn:
+                    counter = '1'
+                    for fileid in dbconn.execute(text("SELECT fileid FROM \
+                        file_object ORDER BY fileid DESC LIMIT 1;")).fetchall():
+                        counter = str(fileid[0] + 1)
+            except sqlalchemy.exc.SQLAlchemyError:
+                rows = "Database error." + "<meta http-equiv=refresh content=" \
+                + REFRESH + ";url=index>"
+                return rows
+
+            blobsize = 999999974
+
+            #put overflow data in large table
+            chunkseq = 1
+            while len(content) > blobsize:
+                chunk = content[0:blobsize]
+
+                try:
+                    with ENGINE.connect() as dbconn:
+                        dbconn.execute("INSERT INTO obj_chunks VALUES(" \
+                            + counter + ", " + str(chunkseq) + ", %s);", chunk)
+                except sqlalchemy.exc.SQLAlchemyError:
+                    rows = "Database error." + "<meta http-equiv=refresh content=" \
+                    + REFRESH + ";url=index>"
+                    return rows
+                content = content[blobsize:]
+                chunkseq = chunkseq + 1
+
+            #write the main record
+            try:
+                with ENGINE.connect() as dbconn:
+                    dbconn.execute("INSERT INTO file_object VALUES(" \
+                        + counter + ", UNIX_TIMESTAMP(), '" + \
+                        cherrypy.request.remote.ip + "', '" + \
+                        str(filehash) + "', '" + \
+                        userfile.filename.replace("'", "''") + "', '" + \
+                        str(filesize) + \
+                        "', %s);", content)
+                return "<meta http-equiv=refresh content=0;url=index>"
+            except sqlalchemy.exc.SQLAlchemyError:
+                rows = "Database error." + "<meta http-equiv=refresh content=" \
+                    + REFRESH + ";url=index>"
+                return rows
+        else:
+            rows = "<meta http-equiv=refresh content=0;url=index>"
+        return rows
+
+    @cherrypy.expose
+    def download(self, fileid):
+        """ Download file """
+
+        if not fileid:
+            return "<meta http-equiv=refresh content=0;url=index>"
+
+        try:
+            with ENGINE.connect() as dbconn:
+                if str(type(fileid)) == "<class 'cherrypy._cpreqbody.Part'>":
+                    if not fileid.file:
+                        return "<meta http-equiv=refresh content=0;url=index>"
+                    fid = ''.join(map(chr, fileid.file.read()))
+                else:
+                    fid = str(fileid)
+                tempf, fname = tempfile.mkstemp('-' +'storge' + PID)
+                for seq, data in dbconn.execute(text("SELECT seq, data FROM obj_chunks WHERE object=" + fid + " ORDER BY seq ASC;")).fetchall(): # pylint: disable=line-too-long,unused-variable
+                    os.write(tempf, data)
+                for filename, data in dbconn.execute(text("SELECT filename, \
+                    data FROM file_object WHERE fileid=" + fid + ";")).fetchall():
+                    os.write(tempf, data)
+                    typetype, encoding = mimetypes.guess_type(filename) # pylint: disable=unused-variable
+                    try:
+                        return cherrypy.lib.static.serve_file(fname, \
+                            typetype, f'attachment; filename="{filename}"')
+                    finally:
+                        os.remove(fname)
+        except sqlalchemy.exc.SQLAlchemyError:
+            rows = "Database error." + "<meta http-equiv=refresh content=" \
+            + REFRESH + ";url=index>"
+            return rows
+        return "<meta http-equiv=refresh content=0;url=index>"
+
+    @cherrypy.expose
+    def delete(self, fileid):
+        """ Delete data """
+        try:
+            with ENGINE.connect() as dbconn:
+                if str(type(fileid)) == "<class 'cherrypy._cpreqbody.Part'>":
+                    if not fileid.file:
+                        return "<meta http-equiv=refresh content=0;url=index>"
+                    fid = ''.join(map(chr, fileid.file.read()))
+                else:
+                    fid = str(fileid)
+                dbconn.execute(text("DELETE FROM file_object WHERE fileid=" + fid + ";"))
+                dbconn.execute(text("DELETE FROM obj_chunks WHERE object=" + fid + ";"))
+            return "<meta http-equiv=refresh content=0;url=index>"
+        except sqlalchemy.exc.SQLAlchemyError:
+            rows = "Database error." + "<meta http-equiv=refresh content=" \
+            + REFRESH + ";url=index>"
+            return rows
+        return "<meta http-equiv=refresh content=0;url=index>"
+
+    @cherrypy.expose
+    def index(self):
+        """ Index """
+        with open(VACSTATFILE, 'r', encoding='utf-8') as vacstat:
+            status = vacstat.read()
+        statlen = len(status)
+        if statlen > 0:
+            splash = "<div style='background-color:#99ffcc'>" + status + " saved.</div>"
+            with open(VACSTATFILE, 'w', encoding='utf-8') as vacstat:
+                vacstat.truncate()
+                vacstat.close()
+            if status == '0.00B':
+                splash = ''
+        else:
+            splash = ''
+        payload = HEADER + splash + pystorge.list_files(ENGINE, REFRESH) + pystorge.usage_stats(ENGINE, CERT, REFRESH) + FOOTER # pylint: disable=line-too-long
+        payload = payload + "<meta http-equiv=refresh content=" \
+            + REFRESH + "; url=index></html>"
+        return payload
+
+
+if __name__ == '__main__':
+    cherrypy.quickstart(Storge(), '/', {'/favicon.ico': \
+        {'tools.staticfile.on': True, 'tools.staticfile.filename': FAVICON}})
