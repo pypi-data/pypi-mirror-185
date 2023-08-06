@@ -1,0 +1,11 @@
+cli.py,sha256=S876jlTWxS2rAo0XGbSrHCn-HjhdBQrETAe1Z5BK5YY,9993
+lib/api/github.py,sha256=pO22f26k-3Gc2A3lDDW8alV5z17YDZ1oQufOnOao_IM,2408
+lib/api/index.py,sha256=IqvCnu3LqUXE_d5ajAsZ0bpFojS7HVSjesBz6pj2N6Q,91
+lib/http.py,sha256=h5wvcQJ2NSy4vTOHuYYDZzbvRaKOQXr0wZPUJe-ERSk,4863
+lib/logger.py,sha256=AGNSolMLgE2RjWbOJ3QXImRhNk3yfzl0ms4zJBiuWPA,163
+lib/util.py,sha256=rYxhQmHppay_Az4cbspKRizWqoOdiP7vpSEHlhI0QVk,1762
+trident_sync-0.1.0.dist-info/entry_points.txt,sha256=b4Df3nhSEZj93B98pvHa94TQBIoR0n5Vea-3IHD3zas,48
+trident_sync-0.1.0.dist-info/LICENSE,sha256=lDw6xU1SMfZ_nLfq5EQGjhH3jeEZTmntcTMWsZVwVpY,1063
+trident_sync-0.1.0.dist-info/METADATA,sha256=67ytxGL5IEmh8B3U6uw1ZYNS6CJbgE6HGKI98oqStRs,906
+trident_sync-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+trident_sync-0.1.0.dist-info/RECORD,,

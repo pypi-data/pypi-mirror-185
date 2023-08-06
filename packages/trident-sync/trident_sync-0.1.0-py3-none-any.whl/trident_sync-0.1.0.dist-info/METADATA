@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: trident-sync
+Version: 0.1.0
+Summary: 三叉戟，异构项目同步升级工具，The heterogeneous repo sync and upgrade CLI
+License: MIT
+Author: xiaojunnuo
+Author-email: xiaojunnuo@qq.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PyYaml
+Requires-Dist: docopt
+Requires-Dist: gitpython
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# repo-sync
+
+异构项目同步升级工具
+
+## 命令
+```shell
+
+python ./cli.py init https://github.com/fast-crud/fs-admin-antdv main . https://github.com/certd/certd v2 ./packages/ui/certd-server
+
+python ./cli.py start
+```

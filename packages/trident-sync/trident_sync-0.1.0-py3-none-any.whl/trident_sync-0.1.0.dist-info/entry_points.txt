@@ -1,0 +1,3 @@
+[console_scripts]
+trident=trident-sync.cli:cli
+
