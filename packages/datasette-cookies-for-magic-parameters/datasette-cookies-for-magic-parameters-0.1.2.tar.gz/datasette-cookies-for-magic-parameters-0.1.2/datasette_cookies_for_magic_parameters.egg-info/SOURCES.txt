@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+datasette_cookies_for_magic_parameters/__init__.py
+datasette_cookies_for_magic_parameters.egg-info/PKG-INFO
+datasette_cookies_for_magic_parameters.egg-info/SOURCES.txt
+datasette_cookies_for_magic_parameters.egg-info/dependency_links.txt
+datasette_cookies_for_magic_parameters.egg-info/entry_points.txt
+datasette_cookies_for_magic_parameters.egg-info/requires.txt
+datasette_cookies_for_magic_parameters.egg-info/top_level.txt
