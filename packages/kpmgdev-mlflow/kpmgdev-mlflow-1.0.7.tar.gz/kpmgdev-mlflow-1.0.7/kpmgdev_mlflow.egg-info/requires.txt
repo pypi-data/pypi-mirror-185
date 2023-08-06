@@ -1,0 +1,5 @@
+azure-core
+azureml-mlflow
+openpyxl
+pandas
+numpy
