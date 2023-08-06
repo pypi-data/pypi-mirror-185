@@ -1,0 +1,12 @@
+dask_histogram/__init__.py,sha256=GZQLWMF9ITues2kMAzqJ_MWQB2hqcsOhcArKAHwof-w,744
+dask_histogram/bins.py,sha256=_5gCHshbxCLr4Y_ygM6hbYCsBfTu4VoUvDCixuzr81g,6417
+dask_histogram/boost.py,sha256=ZumnGaAxXgCH383vQ0JB60FfYF2RcEGDSOSKBUMeFAQ,28181
+dask_histogram/core.py,sha256=WCQdsvGTB23jj390MGV6Iszi9Mo4oZr45R1fIzeodWc,29934
+dask_histogram/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dask_histogram/routines.py,sha256=gQtMi5KDDEJ7wtLmoDSGNfJdEEEtDGBsNggJSbG62B0,16836
+dask_histogram/typing.py,sha256=Am4EXuFBhjjLoREI8YcJEt44zpdHo4XTWbf41uVRYVw,436
+dask_histogram/version.py,sha256=hkc3kfRJ2cpDpJVtdSWzYirGpqw2IF23qgPlraHPUNw,166
+dask_histogram-2023.1.0.dist-info/METADATA,sha256=RsEwBOFi5fJjHRDVvcldeN144_dxqBHcuEeW_KJgVLY,2943
+dask_histogram-2023.1.0.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+dask_histogram-2023.1.0.dist-info/licenses/LICENSE,sha256=uvDdB2CwkwIsJx04ah6ZV2xvBxQeVO8IKiPhzcnIndY,1517
+dask_histogram-2023.1.0.dist-info/RECORD,,
