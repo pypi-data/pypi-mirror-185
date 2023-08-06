@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+UniversalWrapper.egg-info/PKG-INFO
+UniversalWrapper.egg-info/SOURCES.txt
+UniversalWrapper.egg-info/dependency_links.txt
+UniversalWrapper.egg-info/requires.txt
+UniversalWrapper.egg-info/top_level.txt
+universalwrapper/__init__.py
+universalwrapper/universal_wrapper.py
+uw/__init__.py
