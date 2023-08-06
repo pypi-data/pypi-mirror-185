@@ -1,0 +1,14 @@
+[Unit]
+Description=Boot watchdog that restarts the UPS in case the system does not boot.
+
+[Service]
+Type=oneshot
+WorkingDirectory=/usr/local/bin
+ExecStart=/usr/bin/python pisugar-boot-watchdog-start-service.py
+ExecStop=/usr/bin/python pisugar-boot-watchdog-stop-service.py
+Environment=PYTHONUNBUFFERED=1
+StandardOutput=journal
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
