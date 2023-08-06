@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/privatefunc.py
+src/privatefunc.egg-info/PKG-INFO
+src/privatefunc.egg-info/SOURCES.txt
+src/privatefunc.egg-info/dependency_links.txt
+src/privatefunc.egg-info/top_level.txt

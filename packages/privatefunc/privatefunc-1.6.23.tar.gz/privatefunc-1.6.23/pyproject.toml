@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "privatefunc"
+version = "1.6.23"
+authors = [
+  { name="Md. Faheem Hossain", email="fmhossain2941@gmail.com" },
+]
+description = "Create private functions in Python"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Faheem41/Private-Function-in-Python"
+"Bug Tracker" = "https://github.com/Faheem41/Private-Function-in-Python/issues"
