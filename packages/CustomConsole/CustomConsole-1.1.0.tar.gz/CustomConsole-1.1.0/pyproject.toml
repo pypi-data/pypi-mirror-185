@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CustomConsole"
+version = "1.1.0"
+authors = [
+  { name="MohdZaid", email="zaid2092005@gmail.com" },
+]
+description = "To make Console better"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/MohdZaid5/CustomConsole/tree/master"
+"Bug Tracker" = "https://github.com/MohdZaid5/CustomConsole/issues"

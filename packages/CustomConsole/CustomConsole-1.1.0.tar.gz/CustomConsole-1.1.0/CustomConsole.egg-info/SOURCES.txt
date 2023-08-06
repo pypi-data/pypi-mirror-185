@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.py
+CustomConsole/Alias.py
+CustomConsole/Color.py
+CustomConsole/Highlights.py
+CustomConsole/__init__.py
+CustomConsole.egg-info/PKG-INFO
+CustomConsole.egg-info/SOURCES.txt
+CustomConsole.egg-info/dependency_links.txt
+CustomConsole.egg-info/top_level.txt
