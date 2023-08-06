@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: torchy
+Version: 0.0.1
+Summary: A pytorch wrapper that makes .fit() possible!
+Project-URL: repository, https://github.com/ashimdahal/easy-torch.git
+Project-URL: changelog, https://github.com/me/spam/blob/master/CHANGELOG.md
+Author: Ashim Dahal
+Author-email: codeashim@gmail.com
+License: MIT License
+        
+        Copyright (c) 2023 Ashim  Dahal
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE.txt
+Keywords: Deep Learning,PyTorch,Tensorflow,Torch
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Requires-Dist: torch
+Description-Content-Type: text/markdown
+
+# Welcome to torchy
+torchy is a work in progress and will be going through constant changes everyday.
+## Introduction
+easy-torch is a PyTorch wrapper that has some additional benefits to using plain pytorch. With easy-torch you have everything in pytorch plus
+some additional features found on other libraries. 
+## Installation using pip
+## Additional Functionality
+```python
+import torchy.nn as nn
+import torch
+from torchy.utils.data import TensorDataset, DataLoader, random_split, DeviceDL
+
+x = torch.tensor([[12.],[13],[15]])
+y = torch.tensor([[2.],[3],[4]])
+train = TensorDataset(x,y)
+class Model(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.linear = nn.Linear(1, 1)
+
+    def forward(self,x):
+        return self.linear(x)
+
+loss_fn = nn.functional.mse_loss
+model = Model()
+opt = torch.optim.SGD(model.parameters(),lr=0.001,momentum=.9)
+model = model.fit(train, loss_fn,opt,20,valid_pct = 20,batch_size=2)
+```
+You can also use a dataloader instead of a dataset. If you're using a dataloader be sure to pass additional argument "valid_dataloader" otherwise 
+the no model validation would be carried out.
+
+```python
+dl = DataLoader(train,batch_size = 2)
+model = model.fit(dl, loss_fn,opt,20)
+
+```
+
+## To-do
+more documentation and all arguments and their function table comming soon.
