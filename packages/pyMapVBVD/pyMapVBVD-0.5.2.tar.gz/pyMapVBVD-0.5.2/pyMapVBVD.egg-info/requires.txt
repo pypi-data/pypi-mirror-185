@@ -1,0 +1,9 @@
+numpy
+tqdm
+scipy
+matplotlib
+setuptools
+pyyaml
+pytest
+h5py
+six
