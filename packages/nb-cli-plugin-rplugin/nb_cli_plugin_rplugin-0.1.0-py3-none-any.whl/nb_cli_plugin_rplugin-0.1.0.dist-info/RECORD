@@ -1,0 +1,16 @@
+nb_cli_plugin_rplugin/__init__.py,sha256=FX6PNKOwT6gaiVblTImn6T9u8f5J67pT2qPqT4qs3UI,272
+nb_cli_plugin_rplugin/cli.py,sha256=5owVaO6BIdKw7B4X20zkNhXTAZaEHtnV5lR1ChN8jOI,9325
+nb_cli_plugin_rplugin/exception.py,sha256=eqIWxVn7t5RjG74lfz95hOn1VcQ-HHYuC6EkPaosDqk,69
+nb_cli_plugin_rplugin/handler.py,sha256=-vwfdYiKYxbCJv81bOHdwVWxlieQ43CwH9Vzvdt_QwI,7056
+nb_cli_plugin_rplugin/installer.py,sha256=FYq1EaYwi9tfiRPZZQW_DfI6XY9Jo3USGAMP8kZE8WE,174
+nb_cli_plugin_rplugin/locale/zh_CN/LC_MESSAGES/nb-cli-plugin-rplugin.mo,sha256=fOKih20J0-RQO2xgOcW0niF4BKtKj8J0icBm0gIWAPg,3181
+nb_cli_plugin_rplugin/locale/zh_CN/LC_MESSAGES/nb-cli-plugin-rplugin.po,sha256=aBR_qpgnboWgd-iiTel936KHvS8C2uTblHCpv6GJb2A,5233
+nb_cli_plugin_rplugin/manager.py,sha256=OoIvTU6dt84yUJbJTKmnu7lwKjkFq9ffJPQUYJMniBQ,3297
+nb_cli_plugin_rplugin/meta.py,sha256=oyNqCtG-T9RZcwTwowQBOgUp5Gy-caLkfrEmDhiSlaE,4157
+nb_cli_plugin_rplugin/prompt.py,sha256=JMJqnngkeh11JS34JWHoSWoHvr60dMvILR5H0lIu7rQ,1862
+nb_cli_plugin_rplugin/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nb_cli_plugin_rplugin-0.1.0.dist-info/entry_points.txt,sha256=sMwHTRg8UzOMJ85l-u-MeE2pzD_8SPeC94_9azjvfaQ,54
+nb_cli_plugin_rplugin-0.1.0.dist-info/WHEEL,sha256=_LDBqpgIVFNHZvvFOGbg2pvJOENq6RHAyT5px-HeX0U,87
+nb_cli_plugin_rplugin-0.1.0.dist-info/METADATA,sha256=yXKPc-zwtOLQqPSJ3c5A7A_rB2kM76dbE5bFThxlOpU,1549
+nb_cli_plugin_rplugin-0.1.0.dist-info/licenses/LICENSE,sha256=xuXaPTJQxtWd3cXSydLMwqptNFzE1sYAyEyFaLKqsOE,1069
+nb_cli_plugin_rplugin-0.1.0.dist-info/RECORD,,
