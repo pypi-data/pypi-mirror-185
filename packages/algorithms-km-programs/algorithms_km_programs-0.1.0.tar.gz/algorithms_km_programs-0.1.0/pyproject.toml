@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "algorithms-km-programs"
+version = "0.1.0"
+description = ""
+authors = ["SzymiYay <szymoon09@gmail.com>"]
+readme = "README.md"
+packages = [{include = "algorithms_km_programs"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
