@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: partnr
+Version: 0.0.0
+Summary: PARTNR learns to solve ambiguities in pick and place problems through interactive learning.s
+Home-page: https://partnr-learn.github.io
+License: Apache2.0
+Author: Jelle Luijkx
+Author-email: j.d.luijkx@tudelft.nl
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Documentation, https://github.com/jelledouwe/partnr
+Project-URL: Repository, https://github.com/jelledouwe/partnr
