@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "aiosox"
+version = "0.3.0"
+description = "⛓️ Combination of asyncapi(documentation) & socketio pub/sub using aiokafka as the client manager  multinode backend services"
+authors = ["Arie <ariesorkin3@gmail.com>"]
+readme = "README.md"
+repository = "https://gitlab.com/arieutils/aiosox"
+documentation = "https://arieutils.gitlab.io/aiosox/"
+keywords = ["fastapi", "asyncapi","kafka","aiokafka","socketio","pubsub","websockets"]
+
+[tool.poetry.dependencies]
+python = "3.11.1"
+anyio = {extras = ["trio"], version = "^3.6.2"}
+pydantic = "^1.10.4"
+aiokafka = "^0.8.0"
+python-socketio = "^5.7.2"
+orjson = "^3.8.3"
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.0.2"
+fastapi = "^0.88.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

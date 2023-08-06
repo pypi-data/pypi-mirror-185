@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: aiosox
+Version: 0.3.0
+Summary: ⛓️ Combination of asyncapi(documentation) & socketio pub/sub using aiokafka as the client manager  multinode backend services
+Home-page: https://gitlab.com/arieutils/aiosox
+Keywords: fastapi,asyncapi,kafka,aiokafka,socketio,pubsub,websockets
+Author: Arie
+Author-email: ariesorkin3@gmail.com
+Requires-Python: ==3.11.1
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: aiokafka (>=0.8.0,<0.9.0)
+Requires-Dist: anyio[trio] (>=3.6.2,<4.0.0)
+Requires-Dist: fastapi (>=0.88.0,<0.89.0)
+Requires-Dist: mkdocs (>=1.4.2,<2.0.0)
+Requires-Dist: mkdocs-material (>=9.0.2,<10.0.0)
+Requires-Dist: orjson (>=3.8.3,<4.0.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Requires-Dist: python-socketio (>=5.7.2,<6.0.0)
+Requires-Dist: uvicorn[standard] (>=0.20.0,<0.21.0)
+Project-URL: Documentation, https://arieutils.gitlab.io/aiosox/
+Project-URL: Repository, https://gitlab.com/arieutils/aiosox
+Description-Content-Type: text/markdown
+
+![Sample image](https://gitlab.com/uploads/-/system/project/avatar/42327849/a5e01db694b47cd07018813ce821a4e1.png?width=64)
+
+
+aiosox: <a href="https://gitlab.com/arieutils/aiosox">repo link </a>
+=======================================
+Quick example
+-----------
+
+can be installed using pip/poetry:
+
+    poetry shell
+     
+    poetry run uvicorn example:app --port=8001
+    
+```python
+from typing import List
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+from aiosox import SioAuth, SioNamespace, SocketIoServer
+
+
+def get_app():
+    applitcation = FastAPI(title="tester")
+    return applitcation
+
+
+app = get_app()
+
+sio_server: SocketIoServer = SocketIoServer(app=app, kafka_url="localhost:29092")
+user_namespapce: SioNamespace = SioNamespace("/user", socket_io_server=sio_server)
+sio_server._sio.register_namespace(user_namespapce)
+
+
+@app.on_event("startup")
+async def on_start():
+    await sio_server.start()
+
+
+@app.on_event("shutdown")
+async def on_shutdown():
+    await sio_server.shutdown()
+
+
+class UserY(BaseModel):
+    name: str
+
+
+class UserT(BaseModel):
+    name: str
+    what: List[UserY]
+
+
+class OfferT(BaseModel):
+    title: str
+
+
+on_failed_emmiter = user_namespapce.create_emitter("failed", model=OfferT | UserT)
+
+
+@user_namespapce.on(
+    "submit",
+    description="when user submits a form",
+    payload_model=UserT | UserY,
+    response_model=List[UserT],
+    auth=SioAuth.jwt,
+)
+async def on_submit(sid, data):
+    print(
+        sid,
+        data,
+    )
+
+```
