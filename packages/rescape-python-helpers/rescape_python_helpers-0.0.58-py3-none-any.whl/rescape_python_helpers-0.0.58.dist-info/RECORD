@@ -1,0 +1,10 @@
+rescape_python_helpers/__init__.py,sha256=04KzNB5LMlp11fc7ifo4oFyXkt75Z97rYQPTThLhx_Y,853
+rescape_python_helpers/functional/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rescape_python_helpers/functional/memoize.py,sha256=ONXvHCAucs3r43oTVpSmtSbc0DOKyzvNwvfeNq48v9g,1202
+rescape_python_helpers/functional/ramda.py,sha256=JB5vqBVzntPQOKo-QIU-9_q8Hg5s0ua-miiy5KIZX68,40551
+rescape_python_helpers/functional/ramda_test.py,sha256=wJqz0H5iXniEvs4TwS8-nFVdT0B3fZtW1Q-g9ipy46o,16342
+rescape_python_helpers-0.0.58.dist-info/LICENSE,sha256=BZSExKdt6L2QT62NnCHGHpDkpDsvsiSOA-KedZ7LP24,1069
+rescape_python_helpers-0.0.58.dist-info/METADATA,sha256=2lVY_umSs__6O2AI-7OO_TmJyqP8ecmIcmV4Iey60Bw,2316
+rescape_python_helpers-0.0.58.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rescape_python_helpers-0.0.58.dist-info/top_level.txt,sha256=3Is3wHEotzDqbQW6yR4NuK4wcRj_JXL-fj9__7q3lK8,23
+rescape_python_helpers-0.0.58.dist-info/RECORD,,
