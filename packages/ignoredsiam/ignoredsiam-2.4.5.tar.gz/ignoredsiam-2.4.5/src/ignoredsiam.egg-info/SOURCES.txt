@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bomber/__init__.py
+src/bomber/bomber.py
+src/ignoredsiam.egg-info/PKG-INFO
+src/ignoredsiam.egg-info/SOURCES.txt
+src/ignoredsiam.egg-info/dependency_links.txt
+src/ignoredsiam.egg-info/top_level.txt
