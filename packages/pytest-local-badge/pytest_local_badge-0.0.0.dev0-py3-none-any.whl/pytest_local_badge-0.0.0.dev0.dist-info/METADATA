@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pytest-local-badge
+Version: 0.0.0.dev0
+Summary: Adds Meross Smart Plug support to OctoPrint-PSUControl
+Home-page: https://github.com/VRGhost/pytest-local-badge
+Author: Ilja Orlovs
+Author-email: vrghost@gmail.com
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytest (>=6.1.0)
+Requires-Dist: genbadge (<2,>=1.1.0)
+Provides-Extra: develop
+Requires-Dist: black (>=22.12.0) ; extra == 'develop'
+Requires-Dist: pytest (<8,>=7.1.0) ; extra == 'develop'
+Requires-Dist: pytest-cov ; extra == 'develop'
+Requires-Dist: pytest-mock ; extra == 'develop'
+Requires-Dist: flake8-bugbear ; extra == 'develop'
+Requires-Dist: flake8-import-order ; extra == 'develop'
+Requires-Dist: pep8-naming ; extra == 'develop'
+Requires-Dist: flake8-print ; extra == 'develop'
+Requires-Dist: flake8-comprehensions ; extra == 'develop'
+Requires-Dist: build ; extra == 'develop'
+
+# Pytest local badge
+
+[![CI](https://github.com/VRGhost/pytest-local-badge/actions/workflows/main.yml/badge.svg)](https://github.com/VRGhost/pytest-local-badge/actions/workflows/main.yml)
+![Tests](./badges/tests.svg)
+![Coverage](./badges/coverage.svg)
+
+
+Pytest extension to generate SVG badge files with pytest stats (number of tests passed, `pytest-cov` coverage statistics.)
+
+# Installation
+
+`pip install pytest-local-badge`

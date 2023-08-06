@@ -1,0 +1,9 @@
+pytest_local_badge/__init__.py,sha256=8TLDvolgkpUJji2aimLHYTliyLi1AsJ4DzCaFws9an0,29
+pytest_local_badge/badges.py,sha256=d1iV6S-vG9H3RM3uantzBQ01EaBTV_nsm8EV8z613h8,3038
+pytest_local_badge/plugin.py,sha256=c8hPCr2y22WKbtCJ3ZCHdGQlbXgKZ8gulbcSmyCTso8,1987
+pytest_local_badge-0.0.0.dev0.dist-info/LICENSE,sha256=hk_QN6JTyX6t1SGeeoTwBgmLXpPTqle0IClN-tP3v2s,1067
+pytest_local_badge-0.0.0.dev0.dist-info/METADATA,sha256=Srbn6pIIU0HKm6FazGkVMLIibzhULVzvQNCWIfKiqrY,1368
+pytest_local_badge-0.0.0.dev0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pytest_local_badge-0.0.0.dev0.dist-info/entry_points.txt,sha256=p26At3Dg4V74FAijp_g5o7N_o9E-JfNqd_WdSiCHgr0,51
+pytest_local_badge-0.0.0.dev0.dist-info/top_level.txt,sha256=sAuI6qAOzn9IHmgsrHgdblt-idP-gFIoBVSVbJ1VmUI,19
+pytest_local_badge-0.0.0.dev0.dist-info/RECORD,,
