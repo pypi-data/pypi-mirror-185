@@ -1,0 +1,12 @@
+pyFluxim/LL.py,sha256=AuaTwiiC2y_CxFi1IZw_vrzH8cFh-f4SMnAVXfaM4Eg,22419
+pyFluxim/__init__.py,sha256=N7ZzJ97zI56t2YcEDTNRw_FvNCf5l46hcdWgOlsMxDo,303
+pyFluxim/flux.py,sha256=43_ESfOnxk-IyUmcwbfcb_J4PzonXIawo5bOiIHJ2vU,2086
+pyFluxim/utils.py,sha256=44-xYRe5XekSZU632tk6VulP5emE_dWtzsJk6kS25TQ,2215
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_LL.py,sha256=cVQxBrQowJaG2Y_ypBDDLRby1xUqgre4iskESxBr7sQ,4301
+tests/test_flux.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyFluxim-0.0.11.dist-info/METADATA,sha256=KJHakD1W_hp975jDwHr-sJ4XSzUl1d5N_jALBokxmOM,1479
+pyFluxim-0.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyFluxim-0.0.11.dist-info/top_level.txt,sha256=PbGzYZkUwW2Y9XBiOw9FnfjMl9M54BbHPySkIbUY7ZI,15
+pyFluxim-0.0.11.dist-info/RECORD,,
