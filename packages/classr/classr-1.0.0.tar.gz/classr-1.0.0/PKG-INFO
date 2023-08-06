@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: classr
+Version: 1.0.0
+Summary: Use microclassifiers in the cloud for spam detection, sentiment analysis and more.
+Home-page: https://github.com/lambdacasserole/classr-py.git
+License: MIT
+Author: Saul Johnson
+Author-email: saul.a.johnson@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/lambdacasserole/classr-py.git
+Description-Content-Type: text/markdown
+
+# Classr SDK for Python
+Use microclassifiers in the cloud for spam detection, sentiment analysis and more.
+
+## Requirements
+
+- Python 3.6 or newer
+
+## Installation
+
+The Classr SDK for Python can be installed using `pip`:
+
+```sh
+pip install classr
+```
+
+## Usage
+
+TODO
+
+## Related Projects
+
+TODO
+
+## License
+
+[MIT](LICENSE) © [lambdacasserole](https://github.com/lambdacasserole).
+
