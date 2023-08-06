@@ -1,0 +1,7 @@
+setup.py
+WhatObf/__init__.py
+WhatObf.egg-info/PKG-INFO
+WhatObf.egg-info/SOURCES.txt
+WhatObf.egg-info/dependency_links.txt
+WhatObf.egg-info/requires.txt
+WhatObf.egg-info/top_level.txt
