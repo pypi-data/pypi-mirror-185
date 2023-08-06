@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: T5Custom
+Version: 1.0.1
+Summary: Custom T5 model creation with own csv training dataset
+Home-page: UNKNOWN
+Author: Sushil Ranjan
+Author-email: nikuraj006@gmail.com
+License: UNKNOWN
+Keywords: python,T5,T5-Base,T5-Large,T5-Small
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: sklearn
+Requires-Dist: scikit-learn
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: transformers
+Requires-Dist: flask
+Requires-Dist: pytorch-lightning
+Requires-Dist: flask-cors
+Requires-Dist: num2words
+
+Custom T5 model creation with own csv training dataset
+
