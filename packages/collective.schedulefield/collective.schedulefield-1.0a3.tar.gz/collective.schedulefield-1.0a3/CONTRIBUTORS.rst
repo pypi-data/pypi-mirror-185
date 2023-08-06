@@ -1,0 +1,7 @@
+- Gillian Sampont, Original Author [Affinitic]
+- Benoît Suttor [IMIO]
+- Christophe Boulanger [IMIO]
+- François Bruynbroeck [Affinitic]
+- Laurent Lasudry [Affinitic]
+- Martin Peeters [Affinitic]
+- Stéphan Geulette [IMIO]
