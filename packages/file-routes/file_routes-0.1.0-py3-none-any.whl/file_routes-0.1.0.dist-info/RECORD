@@ -1,0 +1,16 @@
+file_routes/__init__.py,sha256=aOHawL1zuHMfBWKXqwUkXcW96oXLNCY-CXdHDqkz4g4,18
+file_routes/directoryvisitor.py,sha256=9gUrD_XYwIqazlniNuvPf_LYWcEYMOTJkRCfAdYYDGs,4449
+file_routes/filerouteinfo.py,sha256=6pETVkRnFP5wYKiZz9FwiOkFxdIE75BzseZAlImYHdM,1336
+file_routes/inspection.py,sha256=SuMlPaJqg-TnaLQmjMt9c3uBgeQqPxBZN0h6cMEqWdk,4549
+file_routes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+file_routes/route.py,sha256=yarWVIPR8hut9ZWq8H-1ctgROHsEe-5QfRER4eODF4s,520
+file_routes/utils.py,sha256=VNF9_5DEgYSARpLpCbCBZql4xIuC8_MejtmRcsk8_n0,625
+file_routes/frameworks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+file_routes/frameworks/django.py,sha256=W56VOMalOAGt8aZaU_ZnChkxHYYjxpt1hZ-4nYi7yGc,2036
+file_routes/frameworks/flask.py,sha256=LtpZcOSP49PohV4yZauHApkOZ_pJ7kMARdk-uZh8IqU,1741
+file_routes/tests/django_settings.py,sha256=TCUXAw9u7J-hhPmPTI4U2iX1Su77h1voPDpSjW6oexw,119
+file_routes/tests/test_routes.py,sha256=DU4xOjwBXlkuXOrvfnNxE5nPFLKo3C4775l3OJ2kttE,7972
+file_routes-0.1.0.dist-info/METADATA,sha256=LWb1ZHkWMA8rh5GaKpUBuyV5zo3CO6CbCIrtm2SRS18,7793
+file_routes-0.1.0.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+file_routes-0.1.0.dist-info/licenses/LICENSE,sha256=Gwbwh_8T5qTW656Lthx6SuRu_2bEMuTcp-UDpb_ts3c,1499
+file_routes-0.1.0.dist-info/RECORD,,
