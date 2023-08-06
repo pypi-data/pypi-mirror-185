@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/pyailab.py
+src/pyailab.egg-info/PKG-INFO
+src/pyailab.egg-info/SOURCES.txt
+src/pyailab.egg-info/dependency_links.txt
+src/pyailab.egg-info/top_level.txt
