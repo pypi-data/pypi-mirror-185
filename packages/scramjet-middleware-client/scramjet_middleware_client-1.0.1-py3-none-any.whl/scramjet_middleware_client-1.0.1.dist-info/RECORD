@@ -1,0 +1,5 @@
+middleware_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+middleware_client/middleware_client.py,sha256=M96bmd9ANREO827HAd3LXgHKyQZv7ruJLdFP37tYn1E,617
+scramjet_middleware_client-1.0.1.dist-info/METADATA,sha256=B2738D6G4p1ecNnJHIucv73HpSFsALu-Pzm_fb8tJzU,1762
+scramjet_middleware_client-1.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+scramjet_middleware_client-1.0.1.dist-info/RECORD,,
