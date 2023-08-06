@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/helloworld.py
+src/helloworld333.egg-info/PKG-INFO
+src/helloworld333.egg-info/SOURCES.txt
+src/helloworld333.egg-info/dependency_links.txt
+src/helloworld333.egg-info/top_level.txt
