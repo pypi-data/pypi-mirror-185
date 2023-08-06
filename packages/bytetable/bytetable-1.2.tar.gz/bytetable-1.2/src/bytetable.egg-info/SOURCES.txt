@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bytetable.egg-info/PKG-INFO
+src/bytetable.egg-info/SOURCES.txt
+src/bytetable.egg-info/dependency_links.txt
+src/bytetable.egg-info/top_level.txt
