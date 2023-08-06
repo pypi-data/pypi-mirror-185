@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: wavesis
+Version: 0.0.9
+Summary: oop data analysis tools for wave data
+Home-page: https://github.com/Blockhead-yj/wavesis.git
+Author: yjdai
+Author-email: 136271877@qq.mail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Wavesis
+
+Tools for wave data analysis
