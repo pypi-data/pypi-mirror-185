@@ -1,0 +1,82 @@
+# Recomb to S3
+
+
+Installation
+============
+Installing from PyPI is as easy as doing:
+
+```bash
+
+  pip install recomb-to-s3
+
+```
+
+create the following environment variables in your settings:
+
+```python
+
+    AWS_ACCESS_KEY_ID="__your_secret_id__"
+    AWS_SECRET_ACCESS_KEY="__your_secret_key__"
+    AWS_STORAGE_BUCKET_NAME="__your_bucket_name__"
+    AWS_S3_SIGNATURE_VERSION="s3v4"
+    AWS_S3_REGION_NAME="__your_region_name__"
+    AWS_S3_FILE_OVERWRITE=False # true if you want to write over the file in s3
+    AWS_DEFAULT_ACL = "public-read" # to have access by the django admin
+    DEFAULT_FILE_STORAGE="storages.backends.s3boto3.S3Boto3Storage"
+
+```
+
+add recomb_to_s3 and storages in your installed apps
+
+```python
+
+INSTALLED_APPS = [
+    "storages",
+    "recomb_to_s3",
+]
+
+```
+run the migration
+
+```python
+
+python manage.py migrate
+
+```
+About
+=====
+
+The library aims to facilitate the sending of python dictionaries to an amazon s3 backet, however it is possible to send any type of file, or you can import the AbstractRecombToS3 class and add or remove fields according to your needs.
+
+
+How To Use
+=====
+
+the most basic way to use this package is very simple, just import the "send_dict_to_s3" function and use it as in the example below.
+
+```Python
+from recom_to_s3.contrib import send_dict_to_s3
+
+data = {"test": "test"}
+
+my_model = send_dict_to_s3(data=data, file_name="my_file.json", author=None)
+
+```
+
+Dependencies
+=====
+
+```toml
+[tool.dependencies]
+python = "^3.10"
+boto3 = "^1.26.47"
+django-storages = "^1.13.2"
+django = "^4.1"
+```
+
+
+Contributing
+=====
+
+
+[<img src="https://avatars.githubusercontent.com/u/52933958?v=4" width=40><br><sub>Alexandre Jastrow da Cruz</sub>](https://github.com/alexandrejastrow)
