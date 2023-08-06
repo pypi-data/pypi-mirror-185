@@ -1,0 +1,2 @@
+[flake8.extension]
+WNS = flake8_wagtail_no_serve:Plugin
