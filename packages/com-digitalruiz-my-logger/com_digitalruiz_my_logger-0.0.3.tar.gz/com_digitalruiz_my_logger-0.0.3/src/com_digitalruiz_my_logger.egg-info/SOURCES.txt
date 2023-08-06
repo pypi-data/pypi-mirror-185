@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/com_digitalruiz_my_logger/__init__.py
+src/com_digitalruiz_my_logger/my_logger.py
+src/com_digitalruiz_my_logger.egg-info/PKG-INFO
+src/com_digitalruiz_my_logger.egg-info/SOURCES.txt
+src/com_digitalruiz_my_logger.egg-info/dependency_links.txt
+src/com_digitalruiz_my_logger.egg-info/top_level.txt
