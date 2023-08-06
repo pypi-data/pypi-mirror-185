@@ -1,0 +1,9 @@
+weather_collector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weather_collector/sampler.py,sha256=XGUjYmi9HNDwZ374jaHBM1m72Xeyw9VClzDtoJ_jJK4,5707
+weather_collector/weather_collection.py,sha256=F0E5gvPnQDUUQTbG_KdiVeI7SWtTC8NX0YztkmCjGyw,1365
+weather_collector/weather_endpoints.py,sha256=PUDSbW7ylqGB50zOVqvj-FrygUHIlq7O1-8Me9L_DQw,9160
+weather_collector-0.2.5.dist-info/METADATA,sha256=OIw8wirlmqd2U5WD8VPXWOLfEolGmyNaBxu7etO-dOI,2388
+weather_collector-0.2.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+weather_collector-0.2.5.dist-info/entry_points.txt,sha256=_XVsGHNis9kKZi72C_No7x6aObaYJFpzNXO8F2oB2jk,71
+weather_collector-0.2.5.dist-info/top_level.txt,sha256=h6YQL_65D_SmbxjeaZueG3hyq2ql4YVe2HdIHDxXrnE,18
+weather_collector-0.2.5.dist-info/RECORD,,

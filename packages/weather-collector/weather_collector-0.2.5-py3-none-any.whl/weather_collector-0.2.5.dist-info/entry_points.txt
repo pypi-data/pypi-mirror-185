@@ -1,0 +1,2 @@
+[console_scripts]
+weather-collector = weather_collector.sampler:sample
