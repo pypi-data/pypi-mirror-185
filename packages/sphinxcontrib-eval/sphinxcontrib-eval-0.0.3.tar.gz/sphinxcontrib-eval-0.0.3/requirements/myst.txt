@@ -1,0 +1,4 @@
+#!/usr/bin/env -S pip install -r
+# For markdown. Recommend `pip install 'sphinxcontrib-eval[myst]'`.
+
+myst-parser

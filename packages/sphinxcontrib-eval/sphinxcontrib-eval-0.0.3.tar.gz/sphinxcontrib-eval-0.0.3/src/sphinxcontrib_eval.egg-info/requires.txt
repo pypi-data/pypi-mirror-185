@@ -1,0 +1,10 @@
+sphinx
+
+[dev]
+myst-parser
+pre-commit
+pytest-cov
+tomli
+
+[myst]
+myst-parser
