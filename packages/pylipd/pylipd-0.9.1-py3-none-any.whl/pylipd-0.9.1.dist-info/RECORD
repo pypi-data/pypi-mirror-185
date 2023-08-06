@@ -1,0 +1,10 @@
+pylipd/lipd.py,sha256=RzWflBcMv4z3KDIeT_BCTRmstcr-bEcxiVZt6a9-WVo,28143
+pylipd/lipd_to_rdf.py,sha256=YyPRqg_aT_radUkTkwPKcYBTBFtlYrlXJHmnFls2DYE,39689
+pylipd/rdf_to_lipd.py,sha256=9cYcp9DaXxs_UYowUD_z69oLaRoJtDuLM668L7hOPLc,15728
+pylipd/usage.py,sha256=U4XDw4y8cqkhxBp3Q_vVAdk_gAuP9byZiIq1LKpgFN0,2584
+pylipd/utils.py,sha256=-7H1z0v39t5L49EjMjM3Lbxb-rkVedVZqqC7WJBWXLU,1303
+pylipd-0.9.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pylipd-0.9.1.dist-info/METADATA,sha256=290hpT-Lh17gjAOlZlzww_HJflJA33hgeHy-8tkizTQ,1332
+pylipd-0.9.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pylipd-0.9.1.dist-info/top_level.txt,sha256=OdKP6Fas49OIuZLkgF-gWP3ImKO6mgPaJIjQuQS6QNs,7
+pylipd-0.9.1.dist-info/RECORD,,
