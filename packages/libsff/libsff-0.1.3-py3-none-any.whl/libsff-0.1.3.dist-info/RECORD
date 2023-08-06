@@ -1,0 +1,10 @@
+libsff/__init__.py,sha256=lVq9mSxdZh6EjLE7ExCBwmwyBw-ZdoFtKNK1T44_FCs,83
+libsff/balloon.py,sha256=p7HixjsOziCZmI4cy8GfS6a3RXuHXfo2rwk7deQZmNQ,2054
+libsff/consts.py,sha256=gysLBESvlwjYbcnekZjZne5dXnoRZ2SkyzSNI6BSz9A,516
+libsff/document.py,sha256=9EDzgMlu7zQp6cea6u9l1VuNyhti-TcAJhCcQx6MXo4,9707
+libsff/errors.py,sha256=sgUOT6vvAJsGaZNHyj5cB3le34flJuWYnYnF7Uh0DZQ,105
+libsff-0.1.3.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+libsff-0.1.3.dist-info/METADATA,sha256=GzKX-e6ppw-MGHBglXBAxT8fsgiO0Lw8H-I2xC4whjU,2701
+libsff-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+libsff-0.1.3.dist-info/top_level.txt,sha256=HX24IzEFaQlyitNnATBOSVCmHiUUltJqkoRaQPVGrkE,7
+libsff-0.1.3.dist-info/RECORD,,
