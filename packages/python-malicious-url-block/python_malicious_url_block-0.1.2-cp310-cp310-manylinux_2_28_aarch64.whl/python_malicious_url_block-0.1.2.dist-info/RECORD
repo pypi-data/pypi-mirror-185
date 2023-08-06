@@ -1,0 +1,11 @@
+_utils.cpython-310-x86_64-linux-gnu.so,sha256=2B4vqDbbm2boKg9XUg30bX4MQIGxjnjm6OUGt-3t8S8,153352
+python_malicious_url_block/__init__.py,sha256=Jf-2D99cE2m63gFXlHTb54nSjMzMUXalm_kZLrhkTLg,198
+python_malicious_url_block/python_malicious_url_block.py,sha256=EkcRYRP8d3lx37Ta1RM9KvO8vnPzdk8fAT4l98F-kIw,2800
+python_malicious_url_block/_utils/__init__.py,sha256=ovguP4wzQEDNguczwiZnhMm4dRRVcvnzmHrfQtlRCNQ,15
+python_malicious_url_block/_utils/binary_search.cpp,sha256=-yWrD7cD85x7wDgLTijM1juZPH9GSXuc4y92UjeyqdA,1035
+python_malicious_url_block-0.1.2.dist-info/AUTHORS.rst,sha256=_KPQhi0x6dSFZY9V0BIfHMdbSbhVPL01foC4I-QU1TU,158
+python_malicious_url_block-0.1.2.dist-info/LICENSE,sha256=h5yrZyfs9PeIQHhl4JFE6p7XMRHAbvzRLY-d6zEratg,1070
+python_malicious_url_block-0.1.2.dist-info/METADATA,sha256=MeCgPyKd7zS3k9YdI4uL0DOlPNywO_ST7ISvHqsymlQ,2073
+python_malicious_url_block-0.1.2.dist-info/WHEEL,sha256=FjbkJe0bMet_Y4TQF3W0bJIYNWq65q_gVibIA2rinZs,115
+python_malicious_url_block-0.1.2.dist-info/top_level.txt,sha256=fpV7xNAqmw6oa3RHbVhkI2acZ_nAXRXcL9lv5T5TA9M,34
+python_malicious_url_block-0.1.2.dist-info/RECORD,,
