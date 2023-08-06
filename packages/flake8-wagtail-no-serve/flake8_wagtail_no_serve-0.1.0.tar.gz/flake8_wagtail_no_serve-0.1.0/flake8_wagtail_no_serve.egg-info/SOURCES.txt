@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+flake8_wagtail_no_serve.py
+setup.cfg
+setup.py
+flake8_wagtail_no_serve.egg-info/PKG-INFO
+flake8_wagtail_no_serve.egg-info/SOURCES.txt
+flake8_wagtail_no_serve.egg-info/dependency_links.txt
+flake8_wagtail_no_serve.egg-info/entry_points.txt
+flake8_wagtail_no_serve.egg-info/requires.txt
+flake8_wagtail_no_serve.egg-info/top_level.txt
