@@ -1,0 +1,17 @@
+pylipd/__init__.py,sha256=xKd3pzbczuMsdB08eLAOqZDUd_q1IRxwZ_ccAFL4c4A,22
+pylipd/lipd.py,sha256=HrpnSgmgSrf_0upGzbDSH0fgopWSyKjevAs8PQLQ9dk,28161
+pylipd/lipd_to_rdf.py,sha256=JShZd-pJbsL-iqDsfQAQthe7EbuKFSgyuU3wt10c-cA,39693
+pylipd/rdf_to_lipd.py,sha256=4HffOqeg8Nl7T3pQKloX2u1l7CZH7dli-U50zESgJ-c,15732
+pylipd/usage.py,sha256=0p1XQKyYQ4C7g9DoqxzpHPdR_s6bZpBMbUoDlzH3klo,2591
+pylipd/utils.py,sha256=-7H1z0v39t5L49EjMjM3Lbxb-rkVedVZqqC7WJBWXLU,1303
+pylipd/globals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylipd/globals/blacklist.py,sha256=L6JO4Ga5OkMJjZvcWV43XirwyHmg_E8w_d1urZuPezE,383
+pylipd/globals/schema.py,sha256=lf7YYKGCMfxuXKai70rD1WYb4_IVJD_ZwadIVXSKqPA,14263
+pylipd/globals/urls.py,sha256=0RL2n0G4cbJtY7RZoRkkYGrMfJuLZWs9k91cJIu-fLw,197
+pylipd/series/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylipd/series/regexes.py,sha256=Er4wcAaSCp_JSEGKYJz3Xx4qls_TAp37xH_QyLnsvvE,3223
+pylipd-0.9.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pylipd-0.9.3.dist-info/METADATA,sha256=T-qe7VwSO_vpn2qZoHaBaueTzU-89WIJOD277xET62o,1138
+pylipd-0.9.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pylipd-0.9.3.dist-info/top_level.txt,sha256=OdKP6Fas49OIuZLkgF-gWP3ImKO6mgPaJIjQuQS6QNs,7
+pylipd-0.9.3.dist-info/RECORD,,
