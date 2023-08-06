@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/goodreads_export.egg-info/PKG-INFO
+src/goodreads_export.egg-info/SOURCES.txt
+src/goodreads_export.egg-info/dependency_links.txt
+src/goodreads_export.egg-info/entry_points.txt
+src/goodreads_export.egg-info/requires.txt
+src/goodreads_export.egg-info/top_level.txt
