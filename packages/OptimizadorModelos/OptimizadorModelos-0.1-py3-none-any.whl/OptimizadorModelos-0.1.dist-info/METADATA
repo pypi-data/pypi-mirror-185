@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: OptimizadorModelos
+Version: 0.1
+Summary: Es un optimizador basico de los modelos termodinamicos Wilson, NRTL y Uniquac, para sistemas de sustancias binarios en equilibrio
+Home-page: UNKNOWN
+Author: Luis Corado
+Author-email: wichocorado01@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
