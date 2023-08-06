@@ -1,0 +1,13 @@
+Click
+banal
+clickhouse-driver[numpy]
+followthemoney
+libindic-soundex
+libindic-utils
+metaphone
+nomenklatura
+numpy<1.24
+orjson
+pandas
+pyicu
+structlog
