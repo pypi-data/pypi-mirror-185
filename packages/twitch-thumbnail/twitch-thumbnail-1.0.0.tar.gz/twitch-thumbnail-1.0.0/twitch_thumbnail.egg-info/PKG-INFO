@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: twitch-thumbnail
+Version: 1.0.0
+Summary: Download Twitch channel thumbnail
+Home-page: https://github.com/minibox24/twitch-thumbnail
+Author: Minibox
+Author-email: minibox724@gmail.com
+Requires-Python: >=3.9
