@@ -1,0 +1,8 @@
+braveblock-0.4.0.dist-info/METADATA,sha256=FNJ7cfO2Ti4H42-cAfIDxdN5_dolmnL7xoPRenxp64c,3085
+braveblock-0.4.0.dist-info/WHEEL,sha256=_vCOXQpYoRXKjiUisiECJY_hzTIZMLhhRTSI81E9znE,131
+braveblock/__init__.py,sha256=cBaohmkxNIJ3ozN7vLwP1JrMvpKg5Wpb592IsgbpDh4,1540
+braveblock/easylist.txt.gz,sha256=gFI76T4u4KLchyghltO7HIekF2Rz6xurcB9DEEJAlOQ,428685
+braveblock/easyprivacy.txt.gz,sha256=ZbgYIY162e_MMZNYrN8oLhyNAZYGgNJNMkzpIcFLSAM,214947
+braveblock/braveblock.pyi,sha256=_IHSpOtkISg_RiH76nHCKtzQSPiGoRP1kiBsNOrcTPA,354
+braveblock/braveblock.cpython-310-x86_64-linux-gnu.so,sha256=fclf0CVfNbA5o8qSU5xnyPOA7wsI4ZolRlAiQlxRK78,2640664
+braveblock-0.4.0.dist-info/RECORD,,
