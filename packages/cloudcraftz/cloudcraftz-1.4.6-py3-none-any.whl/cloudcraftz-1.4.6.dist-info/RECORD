@@ -1,0 +1,12 @@
+cloudcraftz/__init__.py,sha256=PaIbxv7JbjcwsAzN9Fnl6AUTy8OTtNXoDXWd6XcD1qw,173
+cloudcraftz/new_optimizers.py,sha256=K48dCBrqqwoMFH26AQT2s6TOjnzPZ5ZiJRlhmYrArQU,7303
+cloudcraftz/optimizers.py,sha256=A7IkX2XkrSEiyhGpdnWI5eJ5P5l3GxWCYaaU_Ch8yVI,6395
+cloudcraftz/plots.py,sha256=scrvBsRMiWcDME7N2mnAHLiHK1ky9W6_hmorw_-iqkI,3818
+cloudcraftz/statistical_tests.py,sha256=nffGh3PkRJDpvsUAwKAyLIt0KNAeExllQF4UmCmCQT8,7568
+cloudcraftz/technical_indicators.py,sha256=NqYV5b7bJBsSaYKNkWsazFTGxcenbAdYPJ-_u-xDA6Q,9950
+cloudcraftz/utils.py,sha256=tMxqPp-IkAQ0VFg7O4z_H72IcItKSQYZ6AiM9TUdbss,25576
+cloudcraftz-1.4.6.dist-info/LICENSE.txt,sha256=jDcDXGyb9-btLsM1dmmKqFSBlaYVFoI6J-COP2tj5JE,46
+cloudcraftz-1.4.6.dist-info/METADATA,sha256=MyIo60lGdik5xIgBPSCtcmkIN7DGdwQbJaV0zw3bDAE,477
+cloudcraftz-1.4.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cloudcraftz-1.4.6.dist-info/top_level.txt,sha256=rjfAuoGXADGihnTfvN8dmAXNvmXshcclDyBdFKfFaQo,12
+cloudcraftz-1.4.6.dist-info/RECORD,,
