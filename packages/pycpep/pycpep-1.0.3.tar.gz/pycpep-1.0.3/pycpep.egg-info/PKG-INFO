@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pycpep
+Version: 1.0.3
+Summary: Predicts deviation in the heat capacity measurement for microDSC Tian-Calvet
+Home-page: https://github.com/nirmalparmarphd/PyCpep
+Author: Nirmal Parmar
+Author-email: nirmalparmarphd@gmail.com
+License: MIT
