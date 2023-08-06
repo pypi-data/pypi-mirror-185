@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: goquant
+Version: 1.0
+Summary: This package allows users to get lightnight fast crypto market data using Python functions.
+Project-URL: GoQuant's Website, https://goquant.io/
+Author-email: "Luke A. Parker" <luke.parker@goquant.io>, "Ben S. Chamberland" <benjamin.chamberland@goquant.io>
+License-File: LICENCE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
