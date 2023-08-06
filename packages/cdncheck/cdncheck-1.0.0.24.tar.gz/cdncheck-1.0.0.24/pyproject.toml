@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "cdncheck"
+version = "1.0.0.24"
+description = "A Python wrapper for ProjectDiscovery's cdncheck (https://github.com/projectdiscovery/cdncheck)"
+authors = ["TheTechromancer"]
+license = "GPL-3.0"
+readme = "README.md"
+repository = "https://github.com/blacklanternsecurity/cdncheck-python"
+homepage = "https://github.com/blacklanternsecurity/cdncheck-python"
+build = "build.py"
+
+[tool.poetry.scripts]
+cdncheck = 'cdncheck.cdncheck:main'
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+dnspython = "^2.2.1"
+cibuildwheel = "^2.11.4"
+
+[build-system]
+requires = ["setuptools", "poetry_core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.cibuildwheel]
+skip = ["*-win32", "*i686"]
+
+[tool.cibuildwheel.linux]
+before-build = "yum -y install epel-release; yum -y install golang"
+
+[[tool.cibuildwheel.overrides]]
+select = "*-musllinux*"
+before-build="apk add --no-cache git make musl-dev go"
