@@ -1,0 +1,17 @@
+sommify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sommify/regex.py,sha256=pvGAYy2uDNCHbZPLVfAhVdGHsgpcsJrvNFG-AahInAY,5590
+sommify/utils.py,sha256=aSQijuFzqzadc99hVH8m7Jm3MBTU8KWHhqza8SHfE-E,12716
+sommify/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sommify/data/constants.py,sha256=HKyqRmnoRt7L_YeAQmndwWp-h9XYBc_ccjU4qR70mEE,10007
+sommify/data/ingredient_funnel.py,sha256=smDrbW_k2l3-ZkgKsbYibh-635ByCejU-UjGhEGomOg,356666
+sommify/data/ingredients.py,sha256=7S1787p1J6u2XTc1QMfDMRHlVkJkPVRQY807sf6eRmA,14591
+sommify/data/meat.py,sha256=AHEsu7GoCoKUz6pD8QT5x9hTEoOctRSgf1GIfDRjDVo,6015
+sommify/data/modifiers.py,sha256=skU66GgNQk82XK5YfZ22zm41S-me76QipSguziM_6zg,4223
+sommify/data/vegetables.py,sha256=x8JUNNuyXSfhlrPqCC4NQjRz9ai2oEHo8Qr9hVjyUs4,758
+sommify/data/vulgar_fractions.py,sha256=aeUK4-1isjJFjRbZwZlxwroK1pcCEsmyQsvoKrAusPo,337
+sommify/recipes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sommify/recipes/reader.py,sha256=7M_PzEPibVJsBTFJBkls47TYGWQInray8J2WJWI4inc,3200
+sommify-0.1.5.dist-info/METADATA,sha256=HXrsKZjHi_CaCs6b9UtULUmAOS7hyT9U61bhgOyWo8k,416
+sommify-0.1.5.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+sommify-0.1.5.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+sommify-0.1.5.dist-info/RECORD,,
