@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+R123FSDFYPDF.egg-info/PKG-INFO
+R123FSDFYPDF.egg-info/SOURCES.txt
+R123FSDFYPDF.egg-info/dependency_links.txt
+R123FSDFYPDF.egg-info/top_level.txt
