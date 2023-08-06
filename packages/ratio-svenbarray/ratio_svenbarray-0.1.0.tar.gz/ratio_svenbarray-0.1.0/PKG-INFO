@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ratio-svenbarray
+Version: 0.1.0
+Summary: My first poetry file
+License: n
+Author: SvenBarray
+Requires-Python: ==3.10.4
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+In terminal:
+pip install -r requirements.txt
+python main.py
