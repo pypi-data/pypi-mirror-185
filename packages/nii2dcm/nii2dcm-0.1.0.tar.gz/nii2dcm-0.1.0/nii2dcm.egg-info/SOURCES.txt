@@ -1,0 +1,17 @@
+LICENCE
+README.md
+setup.py
+nii2dcm/__init__.py
+nii2dcm/__main__.py
+nii2dcm/dcm.py
+nii2dcm/dcm_writer.py
+nii2dcm/nii.py
+nii2dcm/run.py
+nii2dcm/svr.py
+nii2dcm.egg-info/PKG-INFO
+nii2dcm.egg-info/SOURCES.txt
+nii2dcm.egg-info/dependency_links.txt
+nii2dcm.egg-info/entry_points.txt
+nii2dcm.egg-info/requires.txt
+nii2dcm.egg-info/top_level.txt
+nii2dcm/test/__init__.py
