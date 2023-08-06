@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: assist
+Version: 1.0.1b7
+Summary: A library high accuracy ephemeris in REBOUND
+Home-page: https://github.com/matthewholman/assist
+Author: Matthew Holman
+Author-email: mholman@cfa.harvard.edu
+License: GPL
+Keywords: astronomy astrophysics nbody integrator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+.. image:: https://img.shields.io/badge/assist-v1.0.0-green.svg?style=flat
+    :target: https://assist.readthedocs.org
+
+ASSIST
+======
+
+ASSIST is a package supporting high-accuracy ephemeric calculations for small Solar System bodies in REBOUND.
