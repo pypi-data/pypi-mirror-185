@@ -1,0 +1,9 @@
+pgn_speaker/__init__.py,sha256=jAgy-3R5FFiwncrfmcwLU8pWVqnUST1I60eMOQQ3G-0,218
+pgn_speaker/__main__.py,sha256=Asg2XiZ4RHJgxguT6sWG0KghQFW8aZ4tn-JxgkgTyfM,120
+pgn_speaker/cli.py,sha256=jzU6-rJ_QtgrfEn7kVuVyKI17DqMPpin63oh43bNfSs,5433
+pgn_speaker/pyobjc_helper.py,sha256=3Lab_jd19TfFXQ0ixsuK7RpnU8Qv2pd_JQ93D-33AFA,934
+pgn_speaker/winsdk_helper.py,sha256=Z4q_T6zofYhkS8jnGvVTp7CSgmPRp062qJHDOdYSsek,1330
+pgn_speaker-1.0.0.post2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pgn_speaker-1.0.0.post2.dist-info/entry_points.txt,sha256=4B5gyKdKxNZzAuceO3OVcCPoQ0unbJX8pOIruzzISgM,52
+pgn_speaker-1.0.0.post2.dist-info/METADATA,sha256=JKhmpHr6xKGRNtuuO4SESZuRBXT6nUr-BnePCI93jBA,1765
+pgn_speaker-1.0.0.post2.dist-info/RECORD,,
