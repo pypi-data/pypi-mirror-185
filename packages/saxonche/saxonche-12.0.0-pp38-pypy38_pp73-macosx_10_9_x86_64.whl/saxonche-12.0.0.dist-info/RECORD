@@ -1,0 +1,12 @@
+nodekind.pypy38-pp73-darwin.so,sha256=W0cA__5WA4NTVzzKB51W63E7P2PoqUXVNQhcfPXse6Y,37400
+nodekind.cpython-38-darwin.so,sha256=ZgQy1RRPkZHvgnu41rbwrLuwEvGXmBFidfgztfO-PWM,40736
+saxonche.cpython-38-darwin.so,sha256=tPukNac_Rju0gzWVTu7JMK45z7BShN8CQptt_CHMYU8,879808
+saxonche.pypy38-pp73-darwin.so,sha256=pf1eTqgowyAZDhjJtOyh0lTbvWtU4w6Eb5mBfK5zOo4,646368
+saxonche/test_saxonc.py,sha256=abhSO7AmhpoPPf7f1KDBLGGBeVlVM51i3HmWuNckHcs,57673
+saxonche/setup.py,sha256=_HenLtlEjeNzfD7xC_3d-pcuV9MSdkervKNsRM6YSiY,2931
+saxonche/test_saxon_schema.py,sha256=Vjj0SLRSNMHbzR9Vkcz3xraBRrlIwujjV6-jbayxsIw,3995
+saxonche.dylibs/libsaxon-hec-12.0.dylib,sha256=hNftp6I50caqQS2z16b8fyy7Kv1VQQ-8u3vhVtK7vj4,48367136
+saxonche-12.0.0.dist-info/RECORD,,
+saxonche-12.0.0.dist-info/WHEEL,sha256=DVRQ5iilM88qEgPN9F-jdRErBkin2MqdJR-IvREPiVQ,116
+saxonche-12.0.0.dist-info/top_level.txt,sha256=7ovm5sZkmNaaPlEOauwcTj50pdCyWWrttpu6wgS17Zw,18
+saxonche-12.0.0.dist-info/METADATA,sha256=rrQ1G9nE9GgCg000Yu5SNKXzdRp9sESAehTTawW3Eo0,6985
