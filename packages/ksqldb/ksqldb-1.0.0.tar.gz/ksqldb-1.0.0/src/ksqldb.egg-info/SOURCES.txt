@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ksqldb/__init__.py
+src/ksqldb/api.py
+src/ksqldb/client.py
+src/ksqldb.egg-info/PKG-INFO
+src/ksqldb.egg-info/SOURCES.txt
+src/ksqldb.egg-info/dependency_links.txt
+src/ksqldb.egg-info/requires.txt
+src/ksqldb.egg-info/top_level.txt
