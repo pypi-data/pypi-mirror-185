@@ -1,0 +1,3 @@
+[console_scripts]
+test0000001 = test0000001.steps:run_steps
+
