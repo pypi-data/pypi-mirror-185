@@ -1,0 +1,12 @@
+pydantic[dotenv]
+requests
+
+[dev]
+build
+pre-commit
+pydantic[dotenv]
+pytest
+pytest-cov
+requests
+tox
+twine
