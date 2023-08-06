@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pianopy
+Version: 0.0.2
+Summary: A python library/application to play, compose and interface with virtual and real pianos using MIDI.
+Home-page: https://github.com/PeterPyPan/pianopy
+License: MIT
+Keywords: piano,music,game
+Author: PeterPyPan
+Author-email: PeterPyPanGitHub@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: mingus (>=0.6.1,<0.7.0)
+Requires-Dist: numpy (>=1.24.1,<2.0.0)
+Requires-Dist: pygame (>=2.1.2,<3.0.0)
+Requires-Dist: python-rtmidi (>=1.4.9,<2.0.0)
+Project-URL: Repository, https://github.com/python-poetry/poetry
+Description-Content-Type: text/markdown
+
+# pianopy
+A python library/application to play, compose and interface with virtual and 
+real pianos using MIDI.
+
+## Run tests, build, publish
+1. Run the unittests:  
+`make test`
+2. Build the package as a wheel:  
+`make build`
+3. Publish the package to pypi
+`make publish`
+
+## Development setup
+1. Make sure prerequisites are installed
+2. Clone the git repo:  
+`git clone https://github.com/PeterPyPan/pianopy`
+3. Use make to setup the dev environment:
+```
+# This sets up a venv in ./.venv using poetry and installs the pre-commit hooks.  
+make setup
+```
+
+## Prerequisites
+1. Install `poetry`  
+Verify the poetry installation using:  
+`poetry --version`  
+Installation instructions: https://python-poetry.org/docs/#installation.
+
+2. Install `make`
+Verify the make installation using:  
+`make --version`  
+
+```
+# Installation for OSX
+# remove previous installation of command line tools
+rm -rf /Library/Developer/CommandLineTools/
+# install command line tools
+xcode-select --install
+# setup command line tools
+sudo xcode-select --switch /Library/Developer/CommandLineTools/
+```
+
