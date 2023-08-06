@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+vbmc/__init__.py
+vbmc/_classes.py
+vbmc/_kernel.py
+vbmc/_score.py
+vbmc/utilities.py
+vbmc.egg-info/PKG-INFO
+vbmc.egg-info/SOURCES.txt
+vbmc.egg-info/dependency_links.txt
+vbmc.egg-info/requires.txt
+vbmc.egg-info/top_level.txt
