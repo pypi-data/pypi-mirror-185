@@ -1,0 +1,14 @@
+tweedekamer/__init__.py,sha256=IIbyA45wPCrTST_hboD5au0K6yt6HJL6-76p2q0KcIk,204
+tweedekamer/debate.py,sha256=Yte9q0nABAYGjSiVttRov0VCcRxG72JxVvAvwNfJVxo,2591
+tweedekamer/search.py,sha256=MXRzugeby_DEE13dgWP3adDh_JBgwj6oSylcQ3ywM5k,5622
+tweedekamer/speach.py,sha256=nlB8_m3WAV3Lft2LzwTf7E4CXfUDrgMFA502PkUV4OI,607
+tweedekamer/speaker.py,sha256=esEfGvcRXgPVM_OvSzksebeH6mNvGxP1aoT5g1nrOho,1509
+tweedekamer/subtitle.py,sha256=x0rfwnGVHCf4IMb4zu1wCUsEC9w31qmdIxXOxY2MaEw,5142
+tweedekamer/video.py,sha256=0JqNE2rkq4z4-HN_SfKUlhcPApRZ1TzQ45II8RBhKpA,1203
+tweedekamer/enums/debate_type.py,sha256=PQEDovENqf8bZaD2tBEM1-TFaA9voVxY4HEs2EPhKz4,143
+tweedekamer/enums/sort_direction.py,sha256=uSCdBZ3mZWrUfQhmE6rh6W-ios0abJyosAmqiy4vRrY,84
+tweedekamer/enums/sort_type.py,sha256=-HOrwHCc9MggElNuYlKoKK1MLcEyD5UBVq2H3ZCr-Yo,105
+tweedekamer-0.1.2.dist-info/METADATA,sha256=9NNEv2HgJwwdF1HgMuI2fAfNpLSirB2cTCdNfb4nNzY,2917
+tweedekamer-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tweedekamer-0.1.2.dist-info/top_level.txt,sha256=Um-3q1fms79w_1ZNNquEaNHl7E7RdyxgbvRi8KfPXfw,12
+tweedekamer-0.1.2.dist-info/RECORD,,
