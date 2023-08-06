@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sportsml
+Version: 0.0.3
+Summary: ML for sports
+License: MIT license
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: captum
+Requires-Dist: dgl
+Requires-Dist: dgllife
+Requires-Dist: hydra-core
+Requires-Dist: nba-api
+Requires-Dist: neo4j
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: mlflow
+Requires-Dist: pandas
+Requires-Dist: py2neo
+Requires-Dist: pyarrow
+Requires-Dist: pymongo[srv]
+Requires-Dist: pytorch-lightning
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: torch
+Requires-Dist: torchmetrics
+Requires-Dist: typer
+
+# SportsML
+
+ML for sports
