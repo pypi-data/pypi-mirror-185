@@ -1,0 +1,5 @@
+[console_scripts]
+makestack = makestack:main
+
+[makestack.cli]
+startproject = makestack.startproject:startproject

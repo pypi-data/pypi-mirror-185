@@ -1,0 +1,13 @@
+README.md
+setup.py
+makestack/__init__.py
+makestack/blocks.py
+makestack/startproject.py
+makestack/utils.py
+makestack.egg-info/PKG-INFO
+makestack.egg-info/SOURCES.txt
+makestack.egg-info/dependency_links.txt
+makestack.egg-info/entry_points.txt
+makestack.egg-info/requires.txt
+makestack.egg-info/top_level.txt
+makestack/data/__init__.py
