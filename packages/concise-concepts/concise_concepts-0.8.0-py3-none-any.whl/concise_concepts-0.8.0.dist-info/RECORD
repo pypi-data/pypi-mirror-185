@@ -1,0 +1,13 @@
+concise_concepts/__init__.py,sha256=39PSJhV3rnJUPBqpGu-Nr0KdF39NHQ5wpAiSIFw3QLc,1715
+concise_concepts/conceptualizer/Conceptualizer.py,sha256=rrTA7LifCE275PKfsbz06yDYZO1UYnUBXZtT26mCF7g,25647
+concise_concepts/conceptualizer/__init__.py,sha256=wcLwIpwsv-R2w8_FimGkSFBc5oDoldTJsDkYUS2T-t0,97
+concise_concepts/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+concise_concepts/examples/data.py,sha256=xn51xkWoMk6F3WgMZufeKRDmha3zwMs4yqxaqAmP6V4,759
+concise_concepts/examples/example_gensim_custom_model.py,sha256=oZzfBidQ_JQhJZBRkZTgbZdyss5YZM7Uxhsyuw1Km4E,862
+concise_concepts/examples/example_gensim_custom_path.py,sha256=w7e56bwZKtVe5O5BwiMPfzo1-GPCz4b_vPqQu44Qiwo,405
+concise_concepts/examples/example_gensim_default.py,sha256=YVxQ-PX6yeqhswA3RlmQVzqwUJ9Su93QQRm_MMwvlBk,316
+concise_concepts/examples/example_spacy.py,sha256=CNji5ostkK9zdvEXAzyEPcSimhrgPSUJPEg2QBE2zF0,268
+concise_concepts-0.8.0.dist-info/LICENSE,sha256=N0EVGHdOYZ7YEJVUCllwq0kJp4buqN-AC_W3FYfktNg,1077
+concise_concepts-0.8.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+concise_concepts-0.8.0.dist-info/METADATA,sha256=nBrQmMNM3j190yrAM9Eh2OevpkKulDPfJiw-8RPyPPA,9371
+concise_concepts-0.8.0.dist-info/RECORD,,
