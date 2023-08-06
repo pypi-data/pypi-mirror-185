@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: plugin2cube
+Version: 1.0.4
+Summary: A ChRIS helper app that registers a plugin to a CUBE instance
+Home-page: https://github.com/rudolphpienaar/pl-dylld
+Author: FNNDSC
+Author-email: rudolph.pienaar@childrens.harvard.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Provides-Extra: none
+Provides-Extra: dev
+License-File: LICENSE
+
+UNKNOWN
+
