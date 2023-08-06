@@ -1,0 +1,6 @@
+datasette
+regex
+
+[test]
+pytest
+pytest-asyncio
