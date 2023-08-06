@@ -1,0 +1,9 @@
+cnosdb_connector/__init__.py,sha256=nuJHZ81bif5R-XpQ4k515EJP9CN_xdv3tGKIv0DfYdc,950
+cnosdb_connector/client.py,sha256=x16TS0xXYfe4Xpp2TbL7VI9lo1dhs5e44_xNJ6zWaps,2490
+cnosdb_connector/conn.py,sha256=yzohjPOAfuOcxPPZW2uV1qrrn8850iyCvh_BjzlVW44,6076
+cnosdb_connector/cursor.py,sha256=yGvmfNxEYP4luBCPtdMyIFI64RoYkOL5G-pmtthu1Wg,2148
+cnosdb_connector/error.py,sha256=WYGx2fGv6bC9_Ds0Omd1HhvDr7Ku25_FjjTbsCA1tBo,1160
+cnos_connector-0.1.5.dist-info/LICENSE,sha256=joNwXkn31_W95yf4j8RC9KRASQ5gaX07isUhjFFdZr4,1063
+cnos_connector-0.1.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+cnos_connector-0.1.5.dist-info/METADATA,sha256=krlXZXuz7K4fiAsmwC6XYFGpLvjGH0qHX16bywtCQGs,3417
+cnos_connector-0.1.5.dist-info/RECORD,,
