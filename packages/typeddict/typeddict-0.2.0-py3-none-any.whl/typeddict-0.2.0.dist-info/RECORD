@@ -1,0 +1,8 @@
+typeddict/__init__.py,sha256=xDA93uNznsnCTkMGj-LK8xf7NQ8wa5RRuPRfvyX5kgg,119
+typeddict/__version__.py,sha256=zpHIM4v-sIMttitw4o_oPc-eiqXwmlmmcSwU6b3-XYw,63
+typeddict/_pydantic.py,sha256=l3FB7vVQWueYoAy1gxTUzjnVDvta-okKh1kXj19N3X0,1299
+typeddict/fields.py,sha256=AKAXzRYpPZKocIHOcaYVDnyGSQT6X79Emfcf7jinFpQ,5566
+typeddict-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+typeddict-0.2.0.dist-info/LICENSE,sha256=xacnkn1wNfIpygUKxURVJVv8YmVdFUbRJvAcC1X67xk,11341
+typeddict-0.2.0.dist-info/METADATA,sha256=u1c1PkncA6pGKkU0xIj1-5lAs1GJ0XXH5zVlt5rhXqs,2887
+typeddict-0.2.0.dist-info/RECORD,,
