@@ -1,0 +1,5 @@
+torch
+bitorch~=0.3.0.dev1
+
+[dev]
+pytest
