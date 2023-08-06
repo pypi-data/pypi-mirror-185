@@ -1,0 +1,12 @@
+indy_vdr/__init__.py,sha256=UdUBiUMVnVH09-r1HVixAUtUK7MWMjlfcz5XRm6WuMg,432
+indy_vdr/bindings.py,sha256=QgjfM51h1azhnZXxDwzqOIsvXzCtIq5xlLSLbe-YZFo,12653
+indy_vdr/error.py,sha256=22e1Urvr-Q1yeknzIlF4XyG_v9N-Pk6ZGD_z72Chq1Q,529
+indy_vdr/indy_vdr.dll,sha256=vpq8I3FfHIVSwdS5JNTF6WkmNB1_27OmwP3Wmiaipxg,3625984
+indy_vdr/ledger.py,sha256=EHO6VNw2NxL-0dKCxEJM-jP0HfTZEF3lwtxJwcuxK7U,29408
+indy_vdr/pool.py,sha256=NRfG0riGQp5CU-R1dB3s6opy-a9mWR5vmZxByvnLMjI,6868
+indy_vdr/request.py,sha256=amiPCprWmbt4aiu3tZ0rMdGyVCnENBXXy8yAG6brzf4,4074
+indy_vdr/version.py,sha256=vle5KhY1dQgykfdgK8uZJAWDIUuWoWDvG-mI_8zX-HU,71
+indy_vdr-0.4.0.dev1.dist-info/METADATA,sha256=PRrjlQnq6xisvNJKdcS99ALjOKB1_vrRiqw5qO48eEw,452
+indy_vdr-0.4.0.dev1.dist-info/WHEEL,sha256=AiyVnrmrEuW_cPqhPlarzpb5qtD8ITcBeZKvhXXgyN4,98
+indy_vdr-0.4.0.dev1.dist-info/top_level.txt,sha256=FyZw--sW_jzWJAXLXaPNrDFqK8O1vEWJ3ybqG6QeU2M,9
+indy_vdr-0.4.0.dev1.dist-info/RECORD,,
