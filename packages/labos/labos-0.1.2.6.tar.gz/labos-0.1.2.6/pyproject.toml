@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "labos"
+version = "0.1.2.6"
+description = "Paquete para trabajar en el labo"
+authors = ["joctavio287 <joctavio287@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "<3.12, >=3.8"
+numpy = ">=1.21"
+matplotlib = ">=3.2.2"
+sympy = ">=1.10"
+scipy = ">=1.10.0"
+requests = ">=2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
