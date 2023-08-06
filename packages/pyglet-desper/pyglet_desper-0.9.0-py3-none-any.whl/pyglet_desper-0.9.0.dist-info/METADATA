@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyglet-desper
+Version: 0.9.0
+Summary: Extension package for desper and pyglet interoperation
+Home-page: https://github.com/Ball-Man/pyglet-desper
+Author: Francesco Mistri
+Author-email: franc.mistri@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: desper (>=1.1.1)
+Requires-Dist: pyglet (>=2.0.0)
+
+![desper logo](https://github.com/Ball-Man/pyglet-desper/blob/master/assets/desper-logo-raw.png?raw=true)
+
+# Desper + Pyglet interoperation
+Combine resource and logic management of [desper](https://github.com/Ball-Man/desper]) with [pyglet](https://github.com/pyglet/pyglet)'s rendering and media.
+
+## Project status
+Docs and a user guide are in the making.

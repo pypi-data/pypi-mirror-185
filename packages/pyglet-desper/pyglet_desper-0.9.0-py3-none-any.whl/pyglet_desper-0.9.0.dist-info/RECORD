@@ -1,0 +1,12 @@
+pyglet-desper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyglet_desper/__init__.py,sha256=cGDW5xzfB3lInwLc6u37Kr6do7K4V0K1HfqSep_PYog,117
+pyglet_desper/logic.py,sha256=5xx7lb4vaPSJqL7xALYBXrUwg0q_NrRJYcNCVlAoxUI,10213
+pyglet_desper/loop.py,sha256=oLYrQJnsEu9Df23iOkh4pzN8dsO93frSi6ZW7B1TjCs,3414
+pyglet_desper/model.py,sha256=2LcU0SPnfd_ZKFQ30iChk_eM-Z1mBfjim7Xv8sNJCuk,18652
+pyglet_desper/logic/__init__.py,sha256=bTZ1q7nMGbCWw4iwG5zIFf5pJ-QbZJpMLNfTHyE-Zyo,10253
+pyglet_desper/logic/sync.py,sha256=t3Dy4IRUq6oonEIMoNV2UKW8LeCgBRdJ1ZIT0Opecrs,10628
+pyglet_desper-0.9.0.dist-info/LICENSE,sha256=gw3VNPsdAbrDW7E2kpNAMAvh6euYqYgE1CH4KAaNDTQ,1073
+pyglet_desper-0.9.0.dist-info/METADATA,sha256=47IqDrmFbgGzoebKB-C4-49YWO_HYQf-S_8MIeV0cjs,898
+pyglet_desper-0.9.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyglet_desper-0.9.0.dist-info/top_level.txt,sha256=PH7FQN28JNcQ6RbNxjveZFbrr3ouq21oH7iuyPHx0wE,14
+pyglet_desper-0.9.0.dist-info/RECORD,,
