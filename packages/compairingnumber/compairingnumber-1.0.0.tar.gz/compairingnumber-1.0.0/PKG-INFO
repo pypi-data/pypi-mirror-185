@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: compairingnumber
+Version: 1.0.0
+Summary: This function compair three number
+Author: Harshavardhan Manoranjan Dhas
+Author-email: dhasharsh@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# compairingnumber
+**This package help you to find greater and smaller number between three numbers
+
+# Getting started
+## Installing the Package
+> pip install compairingnumber
+
+## using the package
+` import compairingnumber as cn `
+
+# Functions Provided

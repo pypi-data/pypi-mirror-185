@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/HDPACKAGES/__init__.PY
+src/HDPACKAGES/python.py
+src/compairingnumber.egg-info/PKG-INFO
+src/compairingnumber.egg-info/SOURCES.txt
+src/compairingnumber.egg-info/dependency_links.txt
+src/compairingnumber.egg-info/top_level.txt
