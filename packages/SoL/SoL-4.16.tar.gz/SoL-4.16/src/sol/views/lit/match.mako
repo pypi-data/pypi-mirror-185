@@ -1,0 +1,184 @@
+## -*- coding: utf-8 -*-
+## :Project:   SoL
+## :Created:   mar 28 apr 2020, 08:50:19
+## :Author:    Lele Gaifax <lele@metapensiero.it>
+## :License:   GNU General Public License version 3 or later
+## :Copyright: © 2020, 2021, 2022, 2023 Lele Gaifax
+##
+
+<%inherit file="base.mako" />
+
+<%def name="header()">
+  <div class="centered">
+  <h1 class="title centered">
+    <a href="${request.route_path('lit_tourney', guid=tourney.guid) | n}" target="_blank">
+      ${tourney.description}
+    </a>
+  </h1>
+  <h2 class="title centered">
+    ${_('round $round', mapping=dict(round=currentturn))},
+    ${_('board $board', mapping=dict(board=match.board))}
+  </h2>
+  </div>
+  <div id="countdown" class="invisible">
+    <p></p>
+    <img id="stop-sign" class="invisible" src="/static/images/stop.jpg">
+  </div>
+</%def>
+
+<%def name="footer()">
+</%def>
+
+<%def name="title()">
+  ${match.caption(html=False)}
+</%def>
+
+<%def name="fui_css()">
+  ${parent.fui_css()}
+  <link rel="stylesheet" type="text/css" href="/static/css/fomantic-ui-button.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/fomantic-ui-form.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/match.css" />
+  <script src="/static/jquery-3.6.0.min.js"></script>
+  <script src="/static/fomantic-ui-checkbox.js"></script>
+  <script type="text/javascript" src="/static/match.js"></script>
+  <script>
+   $(document).ready(function() {
+     new MatchScorecard(${match.breaker if match.breaker else 'null'},
+                        ${100 if match.final else 9},
+                        ${tourney.duration}, ${tourney.prealarm},
+                        ${elapsed or 'false'})
+     .init("${_('New board')}", "${_('Do you confirm that the match has ended?')|n}");
+   });
+  </script>
+</%def>
+
+## Body
+
+<form class="ui center aligned form${' error' if error else ''}" method="POST">
+  <input type="hidden" name="turn" value="${tourney.currentturn}">
+  <input type="hidden" name="score1" value="${match.score1}">
+  <input type="hidden" name="score2" value="${match.score2}">
+  <table class="ui large unstackable celled table">
+    <thead>
+      <tr>
+        <%
+        if match.breaker:
+            if match.breaker == '1':
+                if not match.boards or len(match.boards) % 2:
+                    c1_current_breaker = ' current-breaker'
+                    c2_current_breaker = ''
+                else:
+                    c1_current_breaker = ''
+                    c2_current_breaker = ' current-breaker'
+            else:
+                if not match.boards or len(match.boards) % 2:
+                    c1_current_breaker = ''
+                    c2_current_breaker = ' current-breaker'
+                else:
+                    c1_current_breaker = ''
+                    c2_current_breaker = ' current-breaker'
+
+        else:
+            c1_current_breaker = ''
+            c2_current_breaker = ''
+        %>
+        <th class="center aligned${c1_current_breaker}" colspan="4" width="50%">
+          % if not match.breaker:
+            <div class="checker">
+              <div class="ui radio checkbox" title="${_('Break')}">
+                <input type="radio" name="breaker" value="1">
+              </div>
+              <br/>
+            </div>
+          % endif
+          ${match.competitor1.caption()|n}
+        </th>
+        <th class="center aligned${c2_current_breaker}" colspan="4" width="50%">
+          % if not match.breaker:
+            <div class="checker">
+              <div class="ui radio checkbox" title="${_('Break')}">
+                <input type="radio" name="breaker" value="2">
+              </div>
+              <br/>
+            </div>
+          % endif
+          ${match.competitor2.caption()|n}
+        </th>
+      </tr>
+      <tr>
+        <th class="center aligned">Score</th>
+        <th class="center aligned">${_('Coins')}</th>
+        <th class="center aligned collapsing">Q</th>
+        <th class="center aligned collapsing" colspan="2">#</th>
+        <th class="center aligned collapsing">Q</th>
+        <th class="center aligned">${_('Coins')}</th>
+        <th class="center aligned">Score</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      % for board in match.boards:
+        <%
+        if match.breaker:
+            if match.breaker == '1':
+                if board.number % 2:
+                    c1_break = " left marked red"
+                    c2_break = ""
+                else:
+                    c1_break = ""
+                    c2_break = " right marked red"
+            else:
+                if board.number % 2:
+                    c1_break = ""
+                    c2_break = " right marked red"
+                else:
+                    c1_break = " left marked red"
+                    c2_break = ""
+        else:
+            c1_break = c2_break = ""
+        q1_checked = ' checked="checked"' if board.queen == '1' else ''
+        q2_checked = ' checked="checked"' if board.queen == '2' else ''
+        %>
+        <tr id="board_${board.number}">
+          <td class="center aligned${c1_break}" id="score_${board.number}_1"></td>
+          <td class="center aligned">
+            <input type="number" name="coins_${board.number}_1"
+                   min="0" max="9"
+                   value="${board.coins1 or 0}" />
+          </td>
+          <td class="collapsing">
+            <div class="ui radio fitted checkbox center aligned" id="cb_queen_${board.number}_1">
+              <input type="radio" name="queen_${board.number}" value="1"${q1_checked | n} />
+            </div>
+          </td>
+          <td class="grey center aligned collapsing" colspan="2">${board.number}</td>
+          <td class="collapsing">
+            <div class="ui radio fitted checkbox center aligned" id="cb_queen_${board.number}_2">
+              <input type="radio" name="queen_${board.number}" value="2"${q2_checked | n} />
+            </div>
+          </td>
+          <td class="center aligned">
+            <input type="number" name="coins_${board.number}_2"
+                   min="0" max="9"
+                   value="${board.coins2 or 0}" />
+          </td>
+          <td class="center aligned${c2_break}" id="score_${board.number}_2"></td>
+        </tr>
+      % endfor
+      <tr id="totals">
+        <td class="center aligned" id="total_1"></td>
+        <td colspan="6" class="center aligned">
+          <div class="ui buttons">
+            <button id="new_board_btn" class="ui center aligned primary big${'' if match.breaker else ' disabled'} button" type="button">
+              ${_('New board') if match.boards else _('Start game')}
+            </button>
+            <button id="end_game_btn" class="ui center aligned positive big disabled button" name="endgame">
+              ${_('End game')}
+            </button>
+          </div>
+        </td>
+        <td class="center aligned" id="total_2"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
