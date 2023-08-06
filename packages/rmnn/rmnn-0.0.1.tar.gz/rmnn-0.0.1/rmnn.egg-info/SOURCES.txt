@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+rmnn/__init__.py
+rmnn.egg-info/PKG-INFO
+rmnn.egg-info/SOURCES.txt
+rmnn.egg-info/dependency_links.txt
+rmnn.egg-info/top_level.txt
