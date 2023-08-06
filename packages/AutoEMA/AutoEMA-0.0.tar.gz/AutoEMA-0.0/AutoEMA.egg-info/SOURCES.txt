@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+AutoEMA/AutoEMA.py
+AutoEMA.egg-info/PKG-INFO
+AutoEMA.egg-info/SOURCES.txt
+AutoEMA.egg-info/dependency_links.txt
+AutoEMA.egg-info/requires.txt
+AutoEMA.egg-info/top_level.txt
