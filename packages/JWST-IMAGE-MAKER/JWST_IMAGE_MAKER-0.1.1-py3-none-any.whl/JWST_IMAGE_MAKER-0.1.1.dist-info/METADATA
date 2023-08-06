@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: JWST-IMAGE-MAKER
+Version: 0.1.1
+Summary: Creates images from raw JWST data
+Home-page: https://github.com/henrywhite2727/JWST_Image_Maker
+Author: Henry White and Hansen Jiang
+Author-email: henrywhite@sidratresearch.com, hansen@sidratresearch.com
+License: Apache License 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: astropy.io.fits
+Requires-Dist: sys
+Requires-Dist: os
+Requires-Dist: matplotlib.pyplot
+
+# Description of Software Package #
+
+Doobabee here be the steps yarr
+
+## 1. Import
+
+First, we import the file.
+
+## 2. Process
+
+Second, we process the file. 
+
+## 3. Plotting
+
+Third, we visualize the data.
+
+The expected result is a comprehensible and presentable visualization of .fits data.
