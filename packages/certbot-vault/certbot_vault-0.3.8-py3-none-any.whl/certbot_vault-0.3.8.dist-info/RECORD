@@ -1,0 +1,8 @@
+certbot_vault/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_vault/plugin.py,sha256=lf3L0flBW1japvhgn36mgXHNPr_aiDxr5FJKiMDcnXA,6214
+certbot_vault-0.3.8.dist-info/LICENSE,sha256=Qz_NVXCw68uqVBz49bYzHSddF2irn0d5CLXlpQ6Nj8M,1104
+certbot_vault-0.3.8.dist-info/METADATA,sha256=kV1xh2BmQ2zLZjqmDHDfjhWW1wviXiCSsgowkuuo0SQ,1156
+certbot_vault-0.3.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+certbot_vault-0.3.8.dist-info/entry_points.txt,sha256=TqIEQZCWMLyGzPmJKDcASyv9wZcIeR9jeqpq2ngVKAQ,62
+certbot_vault-0.3.8.dist-info/top_level.txt,sha256=PKP6VRmVQGPPVcYDipJokrV0Ikmsg2k4hj-mBGeO7gs,14
+certbot_vault-0.3.8.dist-info/RECORD,,
