@@ -1,0 +1,12 @@
+requests
+aiohttp
+aiofiles
+
+[test]
+setuptools
+rich
+pytest
+pytest-asyncio
+pytest-json-report
+vermin
+pdoc
