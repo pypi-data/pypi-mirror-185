@@ -1,0 +1,592 @@
+/* html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+p,
+button {
+  margin: 0;
+  padding: 0;
+} */
+ol,
+li {
+  list-style: none;
+} /*목록에 점 없애기*/
+
+/* common */
+.hide {
+  display: none !important;
+}
+.split-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+.select-box {
+  min-width: 142px;
+  padding: 6px 30px 6px 6px;
+  font-size: 14px;
+  line-height: 23px;
+  border-color: #ccc;
+  /* background: url(../img/arrow-down.svg) no-repeat right 11px center; */
+  outline: none;
+  /* appearance: none; */
+}
+.color-mint{
+  color: #19bec9 !important;
+}
+
+/***** 영상 강의화면 레이아웃 *****/
+.lesson-view {
+  padding-top: 30px;
+}
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 20px;
+}
+.top-menu .btn {
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 0;
+  font-size: 14px;
+}
+.top-menu .btn:hover {
+  border-color: #b4b4b4;
+}
+.top-menu .close-btn {
+  display: none;
+}
+.top-menu .list-btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 0;
+}
+.top-menu .list-btn i {
+  font-size: 24px;
+}
+
+.container-h-full {
+  height: calc(100% - 70px);
+}
+
+.lesson-container-full {
+  height: calc(100% - 81px);
+}
+
+.lesson-container-full .container button{
+  border: 1px solid #bec2cf;
+}
+
+.lesson-container-full .container .card:hover{
+  background-color: #19bec9;
+}
+
+.lesson-container-full .container .card:hover span{
+  color:#fff
+}
+
+.lesson-h-full {
+  height: calc(100% - 70px);
+  max-height: calc(100% - 70px);
+}
+
+.lesson-wrap {
+  position: relative;
+  /* display: flex;
+  align-items: flex-start; */
+  height: calc(100% - 70px);
+  overflow-y: hidden;
+}
+
+/* 강의 목록 */
+.lesson-wrap .lesson-list {
+  flex: 1;
+  padding: 0 30px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.lesson-wrap .lesson-list .wrapper {
+  width: auto;
+}
+.lesson-wrap .lesson-list .wrapper .btn {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+/* 강의 내용 */
+.lesson-wrap .lesson-panel {
+  flex: 1;
+  height: 100%;
+  padding: 0 30px;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+}
+.lesson-wrap .lesson-panel .btn {
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 12px;
+  border: 1px solid #dfdfdf;
+  border-radius: 0;
+}
+.lesson-wrap .lesson-panel .split-wrap {
+  overflow-y: hidden;
+}
+.lesson-wrap .lesson-panel .split {
+  width: 100%;
+  /* height: 100%; */
+  height: calc(100% - 66px);
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 30px 0;
+}
+.lesson-wrap .lesson-panel .split h1 {
+  padding-bottom: 15px;
+}
+
+/* 채팅창 */
+.chat-panel {
+  display: flex;
+  /* flex-direction: column; */
+  min-width: 250px;
+  max-width: 18%;
+  height: calc(100% - 50px);
+}
+.chat-member {
+  width: 100%;
+  height: 30%;
+  background: #fff;
+}
+.chat-member .tit {
+  padding: 12px 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.chat-member .member-list {
+  height: calc(100% - 43px);
+  padding: 10px 20px;
+}
+.chat-member .member-list .member-item {
+  margin-top: 5px;
+}
+.chat-member .member-list .member-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.chat-member .member-list .member-item .name {
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 30px;
+}
+.chat-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #e1f1fc;
+}
+.chat-wrap .msg-box {
+  width: 100%;
+  height: 100%;
+  padding: 30px 15px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.chat-wrap .msg-box .msg-list {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.chat-wrap .msg-box .msg-list p {
+  margin: 5px 0;
+  text-align: center;
+}
+.chat-wrap .msg-box .msg-list .msg-item {
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+.chat-wrap .msg-box .msg-list .msg-item .tag {
+  position: absolute;
+  top: 5px;
+  height: 0;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #bce3ff transparent transparent #bce3ff;
+  border-radius: 3px;
+}
+.chat-wrap .msg-box .msg-list .msg-item .text-msg {
+  padding: 6px 8px;
+  width: 80%;
+  line-height: 25px;
+  font-size: 14px;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+  background: #bce3ff;
+}
+.chat-wrap .msg-box .msg-list .msg-item .date {
+  font-size: 12px;
+  color: #000;
+  margin: 0 5px;
+  font-weight: bold;
+}
+/* 보내는 메세지 */
+.chat-wrap .msg-box .msg-send .msg-item {
+  flex-direction: row-reverse;
+  margin-left: 5px;
+}
+.chat-wrap .msg-box .msg-send .msg-item .tag {
+  right: -9px;
+}
+/* 받는 메세지 */
+.chat-wrap .msg-box .msg-receive .msg-info {
+  display: flex;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.chat-wrap .msg-box .msg-receive .msg-info .user-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 1px solid #e2e2e2;
+  background: url(../images/photoDefault.png) no-repeat;
+  background-size: 26px;
+}
+.chat-wrap .msg-box .msg-receive .msg-info p {
+  font-size: 14px;
+}
+.chat-wrap .msg-box .msg-receive .msg-info span {
+  font-size: 10px;
+  color: #2eaef8;
+}
+.chat-wrap .msg-box .msg-receive .msg-item {
+  flex-direction: row;
+  margin-left: 20px;
+}
+.chat-wrap .msg-box .msg-receive .msg-item .tag {
+  left: -9px;
+  border-color: #fff #fff transparent transparent;
+}
+.chat-wrap .msg-box .msg-receive .msg-item .text-msg {
+  background: #fff;
+}
+/* 메세지 전송 */
+.chat-wrap .send-box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  border-radius: 4px;
+  background: #fff;
+  border-left: 1px solid #efefef;
+}
+.chat-wrap .send-box .text-form {
+  float: left;
+  padding: 10px;
+  width: calc(100% - 50px);
+  height: 50px;
+  color: #666;
+  border: 0;
+  resize: none;
+  outline: none;
+}
+.chat-wrap .send-box .send-btn {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+.chat-wrap .send-box .send-btn::after {
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/sendBtn.png) no-repeat;
+}
+.chat-wrap .send-box .send-btn:hover::after {
+  background-color: #f2f2f2;
+}
+
+/*-----------------세부 강의 표시---------------*/
+.weekly_plan {
+  width: 100%;
+  position: relative;
+}
+.weekly_plan .weekly_plan_box {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+}
+.weekly_plan .weekly_plan_box > div {
+  float: left;
+}
+.weekly_plan .weekly_plan_box > .left_week {
+  width: 92px;
+}
+.weekly_plan .weekly_plan_box > .left_week p.circle {
+  width: 60px;
+  height: 60px;
+  background: #f9fafb;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 12px;
+  color: #898989;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+}
+.weekly_plan .weekly_plan_box > .left_week p.circle span {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 23px;
+  color: #333;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.weekly_plan .weekly_plan_box > .left_week span.dash_line {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 92px;
+  border-top: 1px dashed #dfdfdf;
+  top: 30px;
+  left: 0;
+}
+.weekly_plan .weekly_plan_box > .right_plan {
+  width: calc(100% - 92px);
+  border-left: 1px dashed #dfdfdf;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.weekly_plan .weekly_plan_box > .right_plan > p.plan_tit {
+  font-size: 17px;
+  color: #333;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.weekly_plan .weekly_plan_box > .right_plan > .plan_accordion {
+  width: 100%;
+  position: relative;
+}
+/*테스트용 강좌 테스트 목록 부분*/
+.weekly_plan .test_class_tit {
+  font-size: 23px;
+  line-height: 57px;
+  background: #fff;
+  width: 50px;
+  position: relative;
+  z-index: 2;
+}
+.weekly_plan .right_plan ul.test_list {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.weekly_plan .right_plan ul.test_list li {
+  width: 100%;
+  border-bottom: 1px solid #f4f4f4;
+  line-height: 50px;
+  overflow: hidden;
+}
+.weekly_plan .right_plan ul.test_list li a {
+  float: left;
+  width: 80%;
+  height: 100%;
+}
+.weekly_plan .right_plan ul.test_list li a span.order_number {
+  font-size: 15px;
+  color: #333;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+}
+.weekly_plan .right_plan ul.test_list li a span.order_number b {
+  font-weight: 400 !important;
+}
+.weekly_plan .right_plan ul.test_list li a span.test_exam_tit {
+  width: 95%;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: #333;
+  font-weight: 400;
+}
+.weekly_plan .right_plan ul.test_list li button {
+  float: right;
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 12px;
+  margin-right: 30px;
+  border: 1px solid #dfdfdf;
+  margin-top: 14px;
+  color: #ea302e;
+}
+.weekly_plan .right_plan ul.test_list li button:hover {
+  border: 1px solid #b4b4b4;
+  color: #333;
+}
+.weekly_plan .right_plan ul.test_list li button.passed_exam {
+  border: 1px solid #dfdfdf !important;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #666;
+}
+
+.plan_accordion > ul > li {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.plan_accordion > ul > li:last-of-type {
+  margin-bottom: 0;
+}
+.plan_accordion ul li > a.acc_btn {
+  display: block;
+  width: 100%;
+  border: 1px solid #eaeaea;
+  background: #f9fafb;
+  line-height: 50px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.plan_accordion ul li > a.acc_btn span.nth {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 50px;
+  font-size: 15px;
+  color: #333;
+  font-weight: 400;
+}
+.plan_accordion ul li > a.acc_btn p.nth_tit {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  color: #333;
+  font-weight: 400;
+}
+.plan_accordion ul li > a.acc_btn span.arrow {
+  float: right;
+  margin-right: 20px;
+  color: #898989 !important;
+  transition: all 0.4s;
+  transform: rotate(0deg);
+}
+.plan_accordion ul li > a.acc_btn:hover span.arrow {
+  color: #333 !important;
+}
+.plan_accordion ul li > a.acc_btn.open_acc span.arrow {
+  transform: rotate(180deg);
+}
+.plan_accordion ul li > div ul {
+  margin-left: 20px;
+}
+.plan_accordion ul li > div ul li {
+  width: 100%;
+  border-bottom: 1px solid #f4f4f4;
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+}
+.plan_accordion ul li > div ul li span.depth {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-left: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  top: 15px;
+  left: 0;
+}
+.plan_accordion ul li > div ul li span.coding_include {
+  position: absolute;
+  color: #2eaef8;
+  font-size: 12px;
+  font-weight: 400;
+  left: 30px;
+  bottom: 7px;
+}
+.plan_accordion ul li > div ul li > p {
+  font-size: 14px;
+  color: #666;
+  font-weight: 400;
+  padding-left: 30px;
+  line-height: 65px;
+  float: left;
+}
+.plan_accordion ul li > div ul li div.right_part {
+  float: right;
+  margin-right: 20px;
+  height: 60px;
+}
+.plan_accordion ul li > div ul li div.right_part button {
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 12px; /*margin-right:30px;*/
+  border: 1px solid #dfdfdf;
+  margin-top: 14px;
+}
+.plan_accordion ul li > div ul li div.right_part button:hover {
+  border: 1px solid #b4b4b4;
+  color: #333;
+}
+.plan_accordion ul li > div ul li div.right_part span.video_length {
+  color: #898989 !important;
+  line-height: 60px;
+}
+.plan_accordion #appendAssignment #assignment1 p {
+  font-size: 15px;
+  color: #333;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/*--------------------AMP 스타일--------------------*/
+.amp-controlbaricons-middle {
+  margin-left: 30px;
+}
+.vjs-progress-control.vjs-control.outline-enabled-control {
+  width: 100px;
+}
+
+
+/* 해커톤 카드 리스트 */
+.hackathon-card:first-child{
+  border-top:2px solid #e5e7eb;
+}

@@ -1,0 +1,85 @@
+.jp-ReactWidget {
+  color: var(--jp-ui-font-color1);
+  background: var(--jp-layout-color1);
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.video-container {
+  width: 720px;
+  height: 480px;
+}
+
+.add-scroll {
+  overflow: scroll;
+}
+
+/*------------------------강좌 아코디언----------------------*/
+/* body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  padding: 30px;
+} */
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+.accordion-wrapper + * {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  line-height: 1.4;
+  /* padding: 30px; */
+
+  margin-top: 0.5em;
+}
+.accordion-item2 {
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+  height: auto;
+  max-height: 9999px;
+  border: 0;
+}
+.accordion-item2.collapsed {
+  max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+.accordion-title {
+  font-weight: 600;
+  cursor: pointer;
+  color: #666;
+  padding: 0.5em 1.5em;
+  border: solid 1px #ccc;
+  /* border-radius: 1.5em; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-title::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid currentColor;
+}
+.accordion-title:hover,
+.accordion-title.open {
+  color: black;
+}
+.accordion-title.open::after {
+  content: '';
+  border-top: 0;
+  border-bottom: 5px solid;
+}
+.accordion-content {
+  padding: 1em 1.5em;
+}
+
+
+/*------------------------유형 선택하기----------------------*/
+.category-popup ul li a:hover{
+  color: #19bec9;
+}
