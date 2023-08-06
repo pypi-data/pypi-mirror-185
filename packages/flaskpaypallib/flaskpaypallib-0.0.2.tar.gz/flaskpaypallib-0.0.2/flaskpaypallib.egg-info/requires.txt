@@ -1,0 +1,6 @@
+flask
+requests
+
+[tests]
+pyjwt
+uuid

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: flaskpaypallib
+Version: 0.0.2
+Summary: Easy to use library for making your payments
+Home-page: https://github.com/jerrygeorge360/flaskpaypallib
+Author: Jerry George(Jbotrex)
+Author-email: jbotrex@gmail.com
+License: MIT
+Keywords: python,paypal,sdk,flask,library,payment
+Platform: UNKNOWN
+Classifier: Framework :: Flask
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Provides-Extra: tests
+License-File: LICENSE
+
+This easy to use library ensures seamless integration of the paypal sdk into the flask framework.(More functionalities coming..)
+
