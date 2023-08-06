@@ -1,0 +1,14 @@
+madore/__init__.py,sha256=jHyRtf5PGaiaoF3IrN_mh_BeCYk__72FIT89UzqFYUQ,725
+madore/__main__.py,sha256=ubt6XyZvcHwdjCQ90B_U4MeP-3YJduz5GWUC9yOgkrg,27
+madore/cli.py,sha256=9Pybn7OZQTexfKZC-_Eg1kRiQRYZ7SDhqXFKhfZgha4,1457
+madore/render.py,sha256=ytwLBOikBLXohqUhZQI096EPIxw-yXFDjCCWcjdvUHY,2762
+madore/style.css,sha256=QA-LnnKDR-2-LrE4iHOb3XI0ZAAFnzRWHeXfIjgHRJ0,649
+madore/renderers/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+madore/renderers/matplotlib.py,sha256=5gyvYib5G6Zn6LY3jezb1Ir8Fv8aOHoyj5dSZ0oeY9M,306
+madore/renderers/pandas.py,sha256=equodPXuZ9M59cmbA5OCO3uQNdnAycTfGGvMgg75ZB4,535
+madore-1.dist-info/LICENSE,sha256=yVuuHRzgI17MzTVgt3LsHvuX80innw--CmNPDCzO_iw,11358
+madore-1.dist-info/METADATA,sha256=tS0u6rv8cMBLSJMt0p9rfJq020ZM5D4aF-3n56HrhoI,115
+madore-1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+madore-1.dist-info/entry_points.txt,sha256=7EpTT3RABxfIG_hg9x732KM9UVXnoQ6nPv2lxxJnQAg,39
+madore-1.dist-info/top_level.txt,sha256=LjpVozINQPsnEEYKI6L9GeiAj41aWHXheQbbuoMxIbA,7
+madore-1.dist-info/RECORD,,

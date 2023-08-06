@@ -1,0 +1,2 @@
+[console_scripts]
+madore = madore:main
