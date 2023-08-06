@@ -1,0 +1,15 @@
+conftest.py,sha256=hNJKKRDniceBFqFBgZB4tiaLhVVslWWd58waFyvsj60,147
+ploomber_core/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+ploomber_core/config.py,sha256=17Sl-BE6DwVY4-ImuLVMS3-VMhMH_mlFx7_mU16dVoI,4380
+ploomber_core/dependencies.py,sha256=YbOv09Q_Jbsa5oly6YN1D2Gplx7OA-zhZJmarZK80UQ,1916
+ploomber_core/deprecated.py,sha256=mqSbJGbL9p-SudXRRl7rLiyHvqWe66lw_0BQm7LCMQY,3317
+ploomber_core/exceptions.py,sha256=4NeXnnntmZJISoo50f7Js6Q4UoxyDGWt3kDGPgdHOI0,2200
+ploomber_core/warnings.py,sha256=fXkED2wwIY24mlNDw_6injyB9Fv72xu73q8HC9YhSXM,184
+ploomber_core/telemetry/__init__.py,sha256=PF_d0NJG8YzPeJOEVdnKs5fi5ywq6dNCJ6W9MhTJce0,81
+ploomber_core/telemetry/telemetry.py,sha256=73F48WG_gBCt9gY21d8iNI1Qfjg6iijTnjRyqngSnuw,23724
+ploomber_core/telemetry/validate_inputs.py,sha256=CLhEAd3hNwHf-zPrUvlKSIW5oLpQ89iKMyg3SVofMLw,628
+ploomber_core-0.1.2.dist-info/LICENSE,sha256=HCeA9IEIOSgiIbxhss3EVYZWGtPKBd7qbLB364syOiA,11355
+ploomber_core-0.1.2.dist-info/METADATA,sha256=RJkwm1m3HIRGEX04ucs9E309M4x-hBriOwvGogsQFYw,359
+ploomber_core-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ploomber_core-0.1.2.dist-info/top_level.txt,sha256=q2EQxlbg0xuxV9aG7lY125pJUPI9wPekfU8Guptt7Ow,23
+ploomber_core-0.1.2.dist-info/RECORD,,
