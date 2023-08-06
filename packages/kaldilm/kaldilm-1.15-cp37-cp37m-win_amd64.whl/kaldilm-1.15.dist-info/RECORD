@@ -1,0 +1,12 @@
+_kaldilm.cp37-win_amd64.pyd,sha256=sYio8ZBQPMzI-zPG5_FVDWDHH3oI7rSb3_-HOvUwhMY,788992
+_kaldilm.lib,sha256=li08Cl0nLFU6YMOR3anXOk6HF_LCaPzIjlOUR6P8Ot4,2016
+kaldilm_core.lib,sha256=hHoXrSh9P3gN_FzLviW5eKZZBgpHWtaDwQugiG_ppUY,722758
+kaldilm_fst.lib,sha256=SJjsO7raANqbwUEb7Uvi7FAu-d4zfEMA7cKDqw2OqMY,10008200
+kaldilm/__init__.py,sha256=OADtxnimogxVMpLt5fuo7Hk_HIhP0u8HBovcZU_sDTs,32
+kaldilm/__main__.py,sha256=FA7UoeMrqj9a6YvHuw0mop6ljREHxJWBWBVtPm49SCg,4097
+kaldilm/arpa2fst.py,sha256=3LTInFJAY-N8F-Et0zmJEzKbB8Y-w-Z-dhES0oj6Bww,2740
+kaldilm-1.15.dist-info/LICENSE,sha256=jfClcNbFUkJ_A39ojeA1MTvJ1caVOPB4_H-ABviJeF4,11939
+kaldilm-1.15.dist-info/METADATA,sha256=ySrzK6RLyiPZC7uqp8a0znLMHAwXa8X78FsKgb9CFww,9327
+kaldilm-1.15.dist-info/WHEEL,sha256=eaY3ejwL19QEEyHRYuTgC3FZQgNYBpzCION1l_gJUb8,101
+kaldilm-1.15.dist-info/top_level.txt,sha256=ZQOoN9KnODLnVltsGHx5yQLmi7hsRr0JgTzwDMkvUQA,17
+kaldilm-1.15.dist-info/RECORD,,
