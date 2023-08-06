@@ -1,0 +1,9 @@
+fastapi_aws_lambda/__init__.py,sha256=1om_MSEmjugxkuS_3CoBkgYSNd5vJk7BNSR16AGuHnM,74
+fastapi_aws_lambda/config.py,sha256=hdhhv-AnW7XZn1y4g3cYkkrZCCetpTPCQWzgBlIRWk0,226
+fastapi_aws_lambda/db.py,sha256=-1o8OXH_gaRs8Pmq_iaChwu3Clg1B7_fLKenCbWh20o,865
+fastapi_aws_lambda/main.py,sha256=rmzRWzQyN7FU-XuWQVjPRP_9mnmMflLQ6orCNS-wIzQ,7170
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_aws_lambda-0.0.1.dist-info/METADATA,sha256=T09DzM-3VGyCZrq3ZPZLfosux72LWDvgxNvdcqeYkxA,789
+fastapi_aws_lambda-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fastapi_aws_lambda-0.0.1.dist-info/top_level.txt,sha256=8ZaJIeM5af5JEm8Wca_LX6msS6Ye6i3NQebIWrhEKYI,25
+fastapi_aws_lambda-0.0.1.dist-info/RECORD,,
