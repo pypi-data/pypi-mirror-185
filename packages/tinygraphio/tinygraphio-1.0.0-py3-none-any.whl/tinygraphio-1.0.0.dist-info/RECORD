@@ -1,0 +1,16 @@
+tinygraphio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinygraphio/errors.py,sha256=XIAaTZOn7OFVyDGOUMY7sKT2tYeFIhz6yPhyRc6V_GM,267
+tinygraphio/graph.py,sha256=gwZO0xcAh5LSxOu6C-nde15_W2N09iBK_ABruK9klYQ,1224
+tinygraphio/proto/tinygraphio_pb2.py,sha256=dbWVklJl8hKYWpcOgzPxlJY12ahyql2PVqEByIjFy7U,1683
+tinygraphio/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinygraphio/reader.py,sha256=LX7EOA26BTtA3YwoKYZ3KCehb8GP5jfc95vmeyzGD_4,2397
+tinygraphio/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinygraphio/scripts/__main__.py,sha256=y1qmKW4rGqhGcdaDOyuMBnk0pLloyKH_aSze_u64c50,584
+tinygraphio/scripts/version.py,sha256=OtMQ0gLGRiRJMWCUsnxYuEsIbOEc0bNZa32iRpV3bDE,221
+tinygraphio/utils.py,sha256=dhIzmaAIsGw74GM4wj11FX8Ij5cGIZgfl_gtkzCoFew,353
+tinygraphio/writer.py,sha256=yfmexFGE0vQzaoFoHaamvYsc7AgUUI192_6QEnNa_rI,2687
+tinygraphio-1.0.0.dist-info/entry_points.txt,sha256=tRk7pvDp4v8N_AcNiwaru9vu2Acfs2MT8PskWXI3oxw,65
+tinygraphio-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tinygraphio-1.0.0.dist-info/LICENSE.md,sha256=Zp4pOVkUAHG0iNU7wWqgxVo_c_pcGVj5qfVRO5l4w1A,1066
+tinygraphio-1.0.0.dist-info/METADATA,sha256=fJTwkBT6ZAan7TPpdH-4qxjC6b1FalQ9lhpFKfYNTzA,1843
+tinygraphio-1.0.0.dist-info/RECORD,,

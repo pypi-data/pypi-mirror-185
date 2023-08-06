@@ -1,0 +1,3 @@
+[console_scripts]
+tinygraphio=tinygraphio.scripts.__main__:main
+
