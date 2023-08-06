@@ -1,0 +1,15 @@
+fastcrackle.cpython-39-darwin.so,sha256=fNmvM9FKMPR2kajM4XVIkmzRlZvihpeBw2-2lQdDf4A,1138384
+crackle/lib.py,sha256=jKvJTqR8-AHSDt0jHdVbTgi0c5JeqqHjffPQFYBqolc,1461
+crackle/util.py,sha256=kWNyoSvdvEvPmqTQmCUVHs1xWYLBVgAmdPji_hjivQ8,1127
+crackle/__init__.py,sha256=8E2FG4VUw3WBW8S-V8bSuvEQ96_ZqXkXOToB4c3vJjk,1665
+crackle/headers.py,sha256=CRpJ0_zNuw7BwZMzGDlbdU0BUyg39i7maiRsYhppUng,4168
+crackle/codec.py,sha256=l6oy34pXUUFTvxgUI26aO2-8riRrWmXAR3d5G5SoBLg,11055
+crackle/array.py,sha256=TjfuDJAZ-uNtBPu4ce4t8UApkZjM71BGPr0oOTAKjug,3951
+crackle_codec-0.3.0.dist-info/RECORD,,
+crackle_codec-0.3.0.dist-info/LICENSE,sha256=suvI3Zn_lBC4LsFTqRK6seDM6gSavT6CPkB6G8eqxxo,1527
+crackle_codec-0.3.0.dist-info/AUTHORS,sha256=Aa4H7O3dtmfq0lF_eATudy11i8K6QAI8LykzASr9bL0,52
+crackle_codec-0.3.0.dist-info/WHEEL,sha256=UlNw_PQRbc8y2O60L5paNCXmEdKCjgP3umWDtB6RxVY,109
+crackle_codec-0.3.0.dist-info/entry_points.txt,sha256=okVAkRMlGit_kM0j8F0njTVdMGeOuP1GDbOlaJwzAdY,45
+crackle_codec-0.3.0.dist-info/pbr.json,sha256=IS3Nw1HB-FvcYoyR105T-3UaUSi1TW-Y4UYEtTjpk2U,47
+crackle_codec-0.3.0.dist-info/top_level.txt,sha256=NtXto4wXokRp4JklBHghPn3EEp8ZW9IkAY-vVraj_dA,20
+crackle_codec-0.3.0.dist-info/METADATA,sha256=unHL6c6ebmcLgW-F-9vrkjprhDEtmcwshOAtWE_9fWM,13047
