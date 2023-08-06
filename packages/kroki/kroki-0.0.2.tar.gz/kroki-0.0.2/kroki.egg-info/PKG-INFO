@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: kroki
+Version: 0.0.2
+Summary: Access kroki from python
+Home-page: https://github.com/thorwhalen/kroki
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# kroki
+
+Access kroki from python
+
+To install:	```pip install kroki```
+
+# Examples
+
+```python
+from kroki import get_diagram_image
+
+get_diagram_image('Bob->Alice : Hello!', diagram_kind='plantuml', output_format='svg')
+
+```
+
+<img width="123" alt="image" src="https://user-images.githubusercontent.com/1906276/211854316-501ec323-bd26-4428-a722-2fa200bfbea3.png">
+
+
