@@ -1,0 +1,23 @@
+item = _{ SOI ~ line* ~ EOI } 
+line = _{ pair | other }
+
+other = ${ !(pair) ~ ANY }
+
+WHITESPACE = { " " | "\t" | NEWLINE }
+
+line_comment  = @{ "//" ~ (!(NEWLINE) ~ ANY)* }
+block_comment = @{ "/*" ~ (!("*/") ~ ANY)* ~ "*/"}
+COMMENT       = { line_comment | block_comment }
+
+string       = ${ inner_string }
+inner_string = @{ "\"" ~ inner ~ "\"" }
+
+pair    = _{ key ~ string }
+key     = { inner_string ~ colon }
+colon   = @{ ":" }
+
+inner   = @{ (!("\"" | "\\") ~ ANY)* ~ (escape ~ inner)? }
+escape  = @{ "\\" ~ ("\"" | "\\" | "/" | "b" | "f" | "n" | "r" | "t" | unicode) }
+unicode = @{ "u" ~ ASCII_HEX_DIGIT{4} }
+
+
