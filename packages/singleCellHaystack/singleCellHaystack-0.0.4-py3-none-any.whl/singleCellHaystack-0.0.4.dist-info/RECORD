@@ -1,0 +1,15 @@
+singleCellHaystack/__init__.py,sha256=ZiD2THaByOHvD8B3VH2fqq73L-mTJZhgdjWBu9svs3o,240
+singleCellHaystack/_cluster.py,sha256=pnkEyWQq00sAUCUekaDOcztKbNT_NzxNJ_K1tdfOSnE,4100
+singleCellHaystack/_data.py,sha256=cvXnCNhp_WJ6uWEA-OKgDT09FTnIe84GqZRP76YzLHY,168
+singleCellHaystack/_grid.py,sha256=eojPEIc5IWeP55xNSjWlR5qlrkxMRQVMABZJ39oBVwU,893
+singleCellHaystack/_haystack.py,sha256=f5sDzZfVCaXjA_oBOjWdjCS_c3aWGOdzkrtY0FlrGHQ,6302
+singleCellHaystack/_kld.py,sha256=NrguTKWZuYK9EaA5pKEXR9E_4nk5wAdrLgoJGlpqQss,1315
+singleCellHaystack/_plot.py,sha256=GTAP_kY45JZDRpVSHpEUtrvWv9pJdO58JvQS2hV4GVc,2664
+singleCellHaystack/_pvalue.py,sha256=c5PgBTVsXq8ENLAW1DOJQaS6r1zjzcCWqj1tk-gMYSs,3947
+singleCellHaystack/_randomization.py,sha256=MPFPFWKCYTObKTY_OR3t_IU3gXBC3jD8Q8xSY_oPH2k,1251
+singleCellHaystack/datasets/toy.h5ad,sha256=a7eA3yYXp2zaXl8Mubewx-HWgzFgC66cNTmq91Okfe4,223111
+singleCellHaystack-0.0.4.dist-info/LICENSE,sha256=dhe49RGyLtqY7uCmGnc49QKYImCCTRSd7Kcuw8W2b-I,1067
+singleCellHaystack-0.0.4.dist-info/METADATA,sha256=T-m_aRbLe673Qj5bw2imeX8bVlQHw3wnFo0jsED0xdQ,4431
+singleCellHaystack-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+singleCellHaystack-0.0.4.dist-info/top_level.txt,sha256=EpHxhgzI5dcm079H3U2FAOXqc_Tpw6n26i5oNzKKV3k,19
+singleCellHaystack-0.0.4.dist-info/RECORD,,
