@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/scrapeDataQuotes.py
+src/scrapeDataQuotes.egg-info/PKG-INFO
+src/scrapeDataQuotes.egg-info/SOURCES.txt
+src/scrapeDataQuotes.egg-info/dependency_links.txt
+src/scrapeDataQuotes.egg-info/requires.txt
+src/scrapeDataQuotes.egg-info/top_level.txt
