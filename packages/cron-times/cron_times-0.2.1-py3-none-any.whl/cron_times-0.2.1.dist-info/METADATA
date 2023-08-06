@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: cron-times
+Version: 0.2.1
+Summary: Show schdueled jobs in a more readable way
+License: Apache-2.0
+Author: tzing
+Author-email: tzingshih@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: croniter (>=1.3.8,<2.0.0)
+Requires-Dist: flask (>=2.2.2,<3.0.0)
+Requires-Dist: markdown2 (>=2.4.6,<3.0.0)
+Requires-Dist: pypugjs (>=5.9.12,<6.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Description-Content-Type: text/markdown
+
+# Timetable for cronjobs
+
+[![PyPI version](https://img.shields.io/pypi/v/cron-times)](https://pypi.org/project/cron-times/)
+
+Show schdueled jobs in a more readable way.
+
+![screenshot](./screenshot.png)
+
+*features*
+
+* Easy configure - Setup job list in YAML format
+* Timezone supported - Able to configure server timezone and show the time in local time
+* Quick filtering - Allow customized label and quick lookup
+
+
+## Usage
+
+1. Install
+
+   ```bash
+   pip install cron-times
+   ```
+
+2. Create job definition files
+
+   Job definition are YAML files placed under `tasks/` folder in current working directory.
+
+   An example job:
+
+   ```yaml
+   - name: Job name
+     schedule: "0 10 * * *"
+     timezone: Asia/Taipei  # tzdata format; Would use UTC if not provided
+     description: In the description, you *can* use `markdown`
+     labels:
+       - sample-label
+       - another-label
+   ```
+
+   All `*.yaml` files would be loaded on initialization time.
+   We could build some code to pull the defines from other places before flask started.
+
+4. Run the app
+
+   ```bash
+   flask --app cron_times run
+   ```
+
