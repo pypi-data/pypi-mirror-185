@@ -1,0 +1,9 @@
+jupyter_ydoc/__init__.py,sha256=g41ZUBA_w1TJ3YDIxy5BGYgfZ0wcbToJDy6U1n2zFho,528
+jupyter_ydoc/_version.py,sha256=WE9jTWv5eZR93uU9580X26LumPoL59Xd8VNtkm5xOzI,173
+jupyter_ydoc/utils.py,sha256=Wo3jkdtJ2GDbweInq2zoszwm8H7nDQhkM-mKCj6POew,883
+jupyter_ydoc/ydoc.py,sha256=XDZVIGtuuNNLCnlwejjMYyjEnb3ivQ72rCKtq7J_QrE,13353
+jupyter_ydoc-0.3.0a3.dist-info/METADATA,sha256=1rZmyp9JcaMARcRcRw1gp3o0zy_3gl59JqQOpyq4Mgw,2610
+jupyter_ydoc-0.3.0a3.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+jupyter_ydoc-0.3.0a3.dist-info/entry_points.txt,sha256=1vgA4_B19AWpFTH9PCfxs8byoQpHHuFHJabj1Vp-tGI,85
+jupyter_ydoc-0.3.0a3.dist-info/licenses/LICENSE,sha256=dqphsFbhnlzPK7Vlkc66Zc7g7PS-e1dln07GXIVpFCQ,1567
+jupyter_ydoc-0.3.0a3.dist-info/RECORD,,
