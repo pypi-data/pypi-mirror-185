@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: smartfox
+Version: 0.0.1.dev4
+Summary: An SDK for Smartfox API
+Home-page: https://gitlab.com/jfk344/python-smartfox-sdk
+Author: @jfk344
+Author-email: info@jfk.rocks
+License: mit
+License-File: LICENSE
+
+# Smartfox SDK for Python
