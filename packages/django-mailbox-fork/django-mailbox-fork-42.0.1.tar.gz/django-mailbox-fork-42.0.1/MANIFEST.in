@@ -1,0 +1,9 @@
+include *.rst
+include .github/workflows/ci.yaml
+include MANIFEST
+recursive-include inbox *.eml
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs Makefile
+recursive-include inbox/locale *.po
+recursive-include inbox/locale *.mo
