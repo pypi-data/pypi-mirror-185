@@ -1,0 +1,6 @@
+[console_scripts]
+oxpacy=oakx_spacy.cli:main
+
+[oaklib.plugins]
+spacy=oakx_spacy.spacy_implementation:SpacyImplementation
+
