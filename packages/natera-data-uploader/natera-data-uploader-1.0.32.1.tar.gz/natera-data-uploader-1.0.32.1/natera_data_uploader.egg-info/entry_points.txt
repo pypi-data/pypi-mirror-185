@@ -1,0 +1,2 @@
+[console_scripts]
+uploader = soyuz.entrypoint:main
