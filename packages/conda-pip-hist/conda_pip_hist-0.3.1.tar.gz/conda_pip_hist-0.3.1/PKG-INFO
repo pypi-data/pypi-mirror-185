@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: conda-pip-hist
+Version: 0.3.1
+Summary: 
+Author: victor
+Author-email: victor.ihuoma@danfoss.com
+Requires-Python: >=3.8.13,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pipreqs (>=0.4.11,<0.5.0)
+Requires-Dist: pytest (>=7.2.0,<8.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# conda-pip-hist
+
+The awesome conda dependency export utility with build versions and primary pip dependencies.
+
+share your conda project with environments that are easily reproducible.
+

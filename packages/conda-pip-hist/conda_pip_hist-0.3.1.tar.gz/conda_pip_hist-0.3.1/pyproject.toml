@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "conda-pip-hist"
+version = "0.3.1"
+description = ""
+authors = ["victor <victor.ihuoma@danfoss.com>"]
+readme = "README.md"
+packages = [{include = "conda_pip_hist"}]
+
+[tool.poetry.scripts]
+conda-pip-hist = "conda_pip_hist.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8.13"
+pipreqs = "^0.4.11"
+typer = {extras = ["all"], version = "^0.7.0"}
+pyyaml = "^6.0"
+pytest = "^7.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
