@@ -1,0 +1,15 @@
+cell_census/__init__.py,sha256=ypDhvMt0F-LYkcKVrJNAgG7ZPUYViFuitrRJiNyarA0,720
+cell_census/experiment.py,sha256=CJe_sBxDyrSw4Z9vkZe3UTCedv6nMxCTq48qaVJIAjk,1273
+cell_census/get_anndata.py,sha256=ItpdGvyrBx13T2f2zsY3yjFUz-mtDHj_LmDXVLsYYwo,2116
+cell_census/open.py,sha256=6CIgdTVz9Hf7U29oL1awFl_SQOpjW7hk0OyiYdEk33s,5463
+cell_census/presence_matrix.py,sha256=HHTiwLy_C00m7IkTERCWgMyzoakBgC38PPyJFnUg4So,1315
+cell_census/release_directory.py,sha256=lNAOIriiUns3NnmixARhofXhHInmvqAu_7tyynONFds,4630
+cell_census/util.py,sha256=skMExYooYzWLdy4-4XC5KSfDzV-U2pc531PTuYi-0gI,457
+cell_census/compute/__init__.py,sha256=ATAaN7p8lajgzttgQd9MSWuN5QfclxNaoyGiVXHPy-U,179
+cell_census/compute/highly_variable_genes.py,sha256=6V6c18zcsIAu1EccNuijDjFKbTUIVRAMI5TGTvnaFzA,3654
+cell_census/compute/meanvar.py,sha256=bW9vJcVQQRAl4bcngl5DilAtnQHZc92dHaftOxoPHK0,2801
+cell_census-0.1.0.dist-info/LICENSE,sha256=q_3bbWp5dY0uzKCiqqr1VpXSe1DMAhF4Smb4XS4PyQk,1083
+cell_census-0.1.0.dist-info/METADATA,sha256=6h0q8jgJRenJ-PKOfjpA4pFSo8Wfjk3qdA_3OzSK2YY,1925
+cell_census-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cell_census-0.1.0.dist-info/top_level.txt,sha256=qiiAC4Btye4hFHQFffxa83NDEx3UDwZGGcwVk8pbcFA,12
+cell_census-0.1.0.dist-info/RECORD,,
