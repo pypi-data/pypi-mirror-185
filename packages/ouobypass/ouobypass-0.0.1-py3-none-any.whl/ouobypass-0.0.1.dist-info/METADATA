@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ouobypass
+Version: 0.0.1
+Requires-Dist: beautifulsoup4
+Requires-Dist: selenium
+
