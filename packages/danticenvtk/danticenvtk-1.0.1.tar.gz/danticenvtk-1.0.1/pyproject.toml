@@ -1,0 +1,18 @@
+
+[tool.poetry]
+name = "danticenvtk"
+version = "1.0.1"
+description = "toolkit"
+authors = ["wayfaring-stranger <zw6p226m@duck.com>"]
+packages = [
+    { include = "danticenvtk" }
+]
+license = "mit"
+readme = "README.md"
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
