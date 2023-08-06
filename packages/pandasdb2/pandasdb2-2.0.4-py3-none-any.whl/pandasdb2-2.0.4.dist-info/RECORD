@@ -1,0 +1,12 @@
+pandasdb2/__init__.py,sha256=_iHbsGglmi2ImTphjK21R_t80N7AuwESeeiaF6gc6_k,272
+pandasdb2/cache.py,sha256=-Gto4ITw6P-9bYHpIapQbQgnzvHC2gZrPHlPC5CVG_Q,3917
+pandasdb2/column.py,sha256=UWDimlxZvQ-ZLMe2nv4dNgaKhmdrPRgO9e6ullbEJnY,28216
+pandasdb2/connection.py,sha256=eCt00EOMTH5VFV_nO5FFehEDz5q-dXVHNYukRVHuiJA,10166
+pandasdb2/exceptions.py,sha256=c9VqASy-pZ_BxSeqORNMGBUTd2CKwjte58l72nxdujU,814
+pandasdb2/expression.py,sha256=tOHPxsdiDyzUYvmjlLRRR_fQLhob4ruExtUOkLVYvaE,2708
+pandasdb2/table.py,sha256=hu1yrq9Fmxfl9OC4aSQ376LrYljtHcBCg9yLL-qyr8I,19547
+pandasdb2/utils.py,sha256=dPXkcJ6pgjOCNMNhjpqd7iinvqSBsCaa8NokwAEIblM,8021
+pandasdb2-2.0.4.dist-info/LICENSE,sha256=_YeTAG8GqKLYeo9Vs0YpHZgUttb0GHrLrIxHAedJvw0,1092
+pandasdb2-2.0.4.dist-info/METADATA,sha256=iJ8tlZq50UK0wrzwd5fkeATBkzPU_qvuQDT3Z3Wk3QQ,26355
+pandasdb2-2.0.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pandasdb2-2.0.4.dist-info/RECORD,,
