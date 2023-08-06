@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Mensajes-RoollAvendano
+Version: 7.0
+Summary: Un paquete para saludar y despedir
+Home-page: http://hecto.de
+Author: Rooll Avendaño
+Author-email: hola@hecto.de
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 2.3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.23.0)
+
+# Mensajes
+El paquete de mensajeria para pruebas de Rooll AvendaÃ±o
