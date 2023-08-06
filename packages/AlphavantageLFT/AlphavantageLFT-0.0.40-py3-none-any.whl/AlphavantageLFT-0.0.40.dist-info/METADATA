@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: AlphavantageLFT
+Version: 0.0.40
+Summary: An Alphavantage API wrapper that was initially built as a subcomponent for the Laurier Fintech Discord Bot.
+Home-page: UNKNOWN
+Author: Laurier Financial Technology
+Author-email: <team@wlufintech.com>
+License: UNKNOWN
+Keywords: python,Alphavantage,Laurier,Laurier Fintech,Stock Market,Crypto
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: requests
+
+UNKNOWN
+
