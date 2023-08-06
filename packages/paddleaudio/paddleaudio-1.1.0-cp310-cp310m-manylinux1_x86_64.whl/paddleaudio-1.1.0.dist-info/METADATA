@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: paddleaudio
+Version: 1.1.0
+Summary: Speech audio tools based on Paddlepaddle
+Home-page: https://github.com/PaddlePaddle/PaddleSpeech/audio
+Author: PaddlePaddle Speech and Language Team
+Author-email: paddlesl@baidu.com
+License: Apache 2.0
+Keywords: audio processpaddlepaddle
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Requires-Dist: kaldiio
+Requires-Dist: librosa (==0.8.1)
+Requires-Dist: scipy (>=1.0.0)
+Requires-Dist: soundfile (~=0.10)
+Requires-Dist: colorlog
+Requires-Dist: pathos (==0.2.8)
+Requires-Dist: pybind11
+Requires-Dist: parameterized
+Requires-Dist: tqdm
+Requires-Dist: scikit-learn
+Provides-Extra: develop
+Requires-Dist: sox ; extra == 'develop'
+Requires-Dist: soxbindings ; extra == 'develop'
+Requires-Dist: pre-commit ; extra == 'develop'
+
