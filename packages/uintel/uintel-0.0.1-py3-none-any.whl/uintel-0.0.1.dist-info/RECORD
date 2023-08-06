@@ -1,0 +1,13 @@
+uintel/__init__.py,sha256=SjRWgUTV7joeCVFOTUBuc3veA86c6kcifV9jz_61KS8,1555
+uintel/aws.py,sha256=ib6mhHubtEs73SZDShOgdEcrnubDFeQzrwe2nXw1Wis,3965
+uintel/colours.py,sha256=wutNEoX_fz3jlWfYICkKOYwOZJyRcLL4wUJkwgmnQD8,2103
+uintel/db.py,sha256=QQIyYXec9JxRM7Uy5pd7teCHEnMv08SMGoETh-VHhEE,1739
+uintel/esri.py,sha256=eXZX_cP5gCv85ZrlOcABnEWPhXNvRINGOSqVW6M0aN4,9818
+uintel/install.py,sha256=kbLc0qih4TcxwknYbiItO7lT8eMlqomhpWUScklQI-E,12262
+uintel/server.py,sha256=5i-qvOy9XwOOUYPuKBcrCNNlCQmBOv_mUapk7TwrSzc,5446
+uintel/slack.py,sha256=79ijgfEaXIjBE5seW6okljcTev8EyRH87QxTetC-uY8,18891
+uintel-0.0.1.dist-info/LICENSE,sha256=47zVydM9tSzI6kZttSbsquQB5Wd3xgbjEHhht2pevJw,1096
+uintel-0.0.1.dist-info/METADATA,sha256=hvDg4TSJ_R7WNqSoHPs8mUuc0Ma3EmuqKmQbm5ztrFg,1223
+uintel-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+uintel-0.0.1.dist-info/top_level.txt,sha256=LhX75p-n-EsMWUs5_VvfajI0a3oW3qkgCyMpHHWeKiI,7
+uintel-0.0.1.dist-info/RECORD,,

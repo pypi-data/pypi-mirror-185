@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: uintel
+Version: 0.0.1
+Summary: Urban Intelligence's collection of Python code for everyday use
+Home-page: https://github.com/uintel/pyui/
+Author: Sam Archie
+Author-email: sam.archie@urbanintelligence.co.nz
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: colour
+Requires-Dist: slack-sdk
+Requires-Dist: sqlalchemy
+Requires-Dist: sqlalchemy-utils
+Requires-Dist: psycopg2
+Requires-Dist: pyyaml
+Requires-Dist: tqdm
+Requires-Dist: paramiko
+Requires-Dist: boto3
+Requires-Dist: geopandas
+Requires-Dist: esridump
+Requires-Dist: requests
+
+ui-visual-library (for Python)
+=============
+
+*Matplotlib styles and colours for Urban Intelligence*
+
+This repo has Matplotlib styles and colours to format your figures for Urban Intelligence figures, scientific papers, presentations and theses.
+
+
+Getting Started
+---------------
+
+The easiest way to install pyui is by using `pip`:
+
+```bash
+pip install pyui
+```
+
+The pip installation will automatically move all of the Matplotlib style files `*.mplstyle` into the appropriate directory on your computer and ensure the required fonts (Rubik) are installed.
