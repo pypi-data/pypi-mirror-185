@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: my-custom-package-005
+Version: 0.0.2
+Summary: This pakcage is for testing purposes
+Author: AWAIS NAYYAR
+Author-email: awaisnayyar01@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE.txt
+
