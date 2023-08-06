@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pydustry.py
+setup.py
+pydustry.egg-info/PKG-INFO
+pydustry.egg-info/SOURCES.txt
+pydustry.egg-info/dependency_links.txt
+pydustry.egg-info/top_level.txt
