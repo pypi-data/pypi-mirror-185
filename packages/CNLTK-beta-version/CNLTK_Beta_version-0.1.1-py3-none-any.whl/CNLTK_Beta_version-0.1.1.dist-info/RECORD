@@ -1,0 +1,17 @@
+CNLTK/NER_MODEL.py,sha256=aRoYxmOycwe7NPLKxH2dFrMraeujXR6xqzOFeNHRrBQ,1833
+CNLTK/NER_TAGGER_MODEL.py,sha256=pMTgYXCWo2R-wIU1SgY6nfcGtZBVNkqO0pAsjp7N01o,918
+CNLTK/NER_test.py,sha256=IyqQVuWItYAA7qDxCtwMzM119o0DasUECixtEmYjvDI,1135
+CNLTK/POS_MODEL.py,sha256=xZgLv0jTXTrqzAZQVr4X6sjPXBqi6Vbit1DE3SrQ61I,1780
+CNLTK/POS_TAGGER_MODEL.py,sha256=b7cvtNQiT9K95IA9LxhZjbvNLKNA6l-fHT1QXmE8OhE,948
+CNLTK/POS_test.py,sha256=lKD0XLINZaupSavdevsSPERscYdj6VMBRBdl_ykYMQ4,1985
+CNLTK/__init__.py,sha256=sGi_gSDlGOHTJvxg6o2jkwQ45D0Q0fGAbIPv3ViZgRs,1182
+CNLTK/attention.py,sha256=XaBJk7-UT_Dp6s1nSljtBxIMWopZqQjEPchQGzKmRYE,1208
+CNLTK/ceb_corpus.py,sha256=yW9VQkWm_jzKbjVq1cFax-aC_hwBbqvTX483XbgT7Ec,240
+CNLTK/ner_tags.py,sha256=AXPTgDvtoPUWPB8jPVzHrQYRpV3t1lOVDPSyneBNV8k,249
+CNLTK/pos_tags.py,sha256=jE8MPVLmIlF_3RIH6v0Ro45voPxsLzM0JSLxxdhaxZU,379
+CNLTK/vocabulary.py,sha256=AdSaSGmDpXofRcgwYakX4slIHYXnVxzv-zuCRM764AM,324
+CNLTK_Beta_version-0.1.1.dist-info/LICENCE.txt,sha256=4HSjNhO8M-MDV4bIWZtDOeFxEYFvYIT23tT2sbaq41I,1060
+CNLTK_Beta_version-0.1.1.dist-info/METADATA,sha256=lP4by0r31obZpqm07FP0O-pH-VFXJEN6Sujj-tAJMIA,590
+CNLTK_Beta_version-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CNLTK_Beta_version-0.1.1.dist-info/top_level.txt,sha256=WiNWu-SDBRFWHzPWkim5yqyzeXMf43sEz45NX8p9rv8,6
+CNLTK_Beta_version-0.1.1.dist-info/RECORD,,
