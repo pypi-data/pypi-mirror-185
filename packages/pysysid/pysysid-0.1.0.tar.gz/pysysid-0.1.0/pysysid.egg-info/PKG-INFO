@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pysysid
+Version: 0.1.0
+Summary: System identification library in Python, compatible with `scikit-learn`
+Home-page: https://github.com/decargroup/pysysid
+Author: Steven Dahdah
+Author-email: steven.dahdah@mail.mcgill.ca
+Project-URL: Documentation, https://pysysid.readthedocs.io/en/stable
+Project-URL: Source, https://github.com/decargroup/pysysid
+Project-URL: Tracker, https://github.com/decargroup/pysysid/issues
+Project-URL: PyPI, https://pypi.org/project/pysysid/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+License-File: LICENSE
+
+.. role:: class(code)
+
+pysysid
+=======
+
+``pysysid`` is a system identification library in Python, compatible with
+``scikit-learn``.

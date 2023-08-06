@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+pysysid/__init__.py
+pysysid/classical.py
+pysysid/util.py
+pysysid.egg-info/PKG-INFO
+pysysid.egg-info/SOURCES.txt
+pysysid.egg-info/dependency_links.txt
+pysysid.egg-info/requires.txt
+pysysid.egg-info/top_level.txt
