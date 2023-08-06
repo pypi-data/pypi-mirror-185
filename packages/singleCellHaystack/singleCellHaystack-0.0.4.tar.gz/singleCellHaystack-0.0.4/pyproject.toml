@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "singleCellHaystack"
+version = "0.0.4"
+authors = [
+  { name="Diego Diez", email="diego10ruiz@gmail.com" },
+]
+description = "An implementation of [singleCellHaystack](https://github.com/alexisvdb/singleCellHaystack) in python."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Intended Audience :: Science/Research",
+    "Development Status :: 4 - Beta"
+]
+
+dependencies = [
+  "numpy",
+  "scipy",
+  "scikit-learn",
+  "anndata",
+  "scanpy",
+  "pandas",
+  "tqdm"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ddiez/singleCellHaystack-py"
+"Bug Tracker" = "https://github.com/ddiez/singleCellHaystack-py/issues"
+
+[tool.setuptools]
+packages = ["singleCellHaystack"]

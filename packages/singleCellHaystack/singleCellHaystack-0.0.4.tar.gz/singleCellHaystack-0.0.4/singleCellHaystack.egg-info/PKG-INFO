@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: singleCellHaystack
+Version: 0.0.4
+Summary: An implementation of [singleCellHaystack](https://github.com/alexisvdb/singleCellHaystack) in python.
+Author-email: Diego Diez <diego10ruiz@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 Diego Diez
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/ddiez/singleCellHaystack-py
+Project-URL: Bug Tracker, https://github.com/ddiez/singleCellHaystack-py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+singleCellHaystack
+==================
+
+[![Lifecycle:beta](https://img.shields.io/badge/lifecycle-beta-orange.svg)](https://github.com/ddiez/singleCellHaystack-py)
+[![](https://github.com/ddiez/singleCellHaystack-py/actions/workflows/python-package.yml/badge.svg)](https://github.com/ddiez/singleCellHaystack-py/actions/workflows/python-package.yml)
+[![PyPI](https://img.shields.io/pypi/v/singleCellHaystack?logo=PyPI)](https://pypi.org/project/singleCellHaystack)
+[![PyPIDownloads](https://pepy.tech/badge/singleCellHaystack)](https://pepy.tech/project/singleCellHaystack)
+
+This repository contains a python implementation of [singleCellHaystack](https://github.com/alexisvdb/singleCellHaystack) (version >= 1.0.0).
+
+This package is currently in beta. The most important functionality in the R package works, but some features are not yet available. Here is a (probably imcomplete) list of missing features. Some will be added in the future.
+
+* `weights.advanced.Q` (formerly known as `use.advanced.sampling`).
+* `seeding` method for calculating grid points.
+
+# Installation
+
+You can install singleCellHaystack from [pypi](https://pypi.org):
+
+```
+pip install singleCellHaystack
+```
+
+>Support for conda installation will be added in the future.
+
+# Example
+
+```
+import scanpy as sc
+import singleCellHaystack as hs
+
+adata = sc.read_h5ad("data.h5ad")
+
+[... process adata object ...]
+
+res = hs.haystack(adata, coord="pca")
+res["results"]
+```
+
+# References
+
+- Our manuscript describing the updated, more generally applicable version of `singleCellHaystack` inclusing this python implementation is available on [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.11.13.516355v1).
+
+- Our manuscript describing the original implementation of `singleCellHaystack` for R ([version 0.3.4](https://github.com/alexisvdb/singleCellHaystack/tree/binary)) was published in [Nature Communications](https://doi.org/10.1038/s41467-020-17900-3).
+
+If you use `singleCellHaystack` in your research please cite our work using:
+
+Vandenbon A, Diez D (2020). “A clustering-independent method for finding differentially expressed genes in single-cell transcriptome data.” *Nature Communications*, *11*(1), 4318. [doi:10.1038/s41467-020-17900-3](https://doi.org/10.1038/s41467-020-17900-3).
