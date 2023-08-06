@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: airflow-provider-pulumi
+Version: 0.1.0
+Summary: Apache Airflow Pulumi provider containing Operators & Hooks.
+Home-page: https://github.com/astronomer/airflow-provider-pulumi
+Author: Dylan Intorf
+Author-email: dylan.intorf@astronomer.io
+License: Apache License 2.0
+Project-URL: Source Code, https://github.com/astronomer/airflow-provider-pulumi
+Project-URL: Homepage, https://github.com/astronomer/airflow-provider-pulumi
+Project-URL: Changelog, https://github.com/astronomer/airflow-provider-pulumi/blob/main/CHANGELOG.md
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: apache-airflow (>=2.2.0)
+Requires-Dist: pulumi (<4.0.0,>=3.0.0)
+Provides-Extra: dev
+Requires-Dist: mypy (>=0.800) ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
+# Pulumi Airflow Provider
+
+
+An airflow provider to:
+- preview infrastructure resources before deployment
+- deploy infrastructure resources via Pulumi
+- destroy infrastructure resources
+
+This package currently contains
+
+1 hook :
+- `airflow_provider_pulumi.hooks.automation.PulumiAutoHook` - a hook to setup the Pulumi backend connection.
+
+4 operators :
+- `airflow_provider_pulumi.operators.base.BasePulumiOperator` - the base operator for Pulumi.
+- `airflow_provider_pulumi.operators.preview.PulumiPreviewOperator` - an operator that previews the deployment of infrastructure resources with Pulumi.
+- `airflow_provider_pulumi.operators.up.PulumiUpOperator` - an operator that deploys infrastructure resources with Pulumi.
+- `airflow_provider_pulumi.operators.destroy.PulumiDestroyOperator` - an operator that destroys infrastructure resources with Pulumi.
+
+## Requirements
+These operators require the Pulumi client to be installed. Use the following script to install the Pulumi client in your Airflow environment:
+
+```bash
+curl -fsSL https://get.pulumi.com | sh
+export PATH="$HOME/.pulumi/bin:$PATH"
+```
+
+## Quick start
+
+` pip install airflow-provider-pulumi`
+
+```python
+# example_pulumi_dag.py
+from datetime import datetime
+
+from airflow.decorators import dag
+from airflow_provider_pulumi.operators.destroy import PulumiDestroyOperator
+from airflow_provider_pulumi.operators.preview import PulumiPreviewOperator
+from airflow_provider_pulumi.operators.up import PulumiUpOperator
+
+
+@dag(
+    schedule_interval=None,
+    start_date=datetime(2022, 1, 1),
+    tags=["example"],
+)
+def example_pulumi():
+    def create_s3_bucket():
+        import pulumi
+        import pulumi_aws as aws
+
+        # Creates an AWS resource (S3 Bucket)
+        bucket = aws.s3.Bucket("my-bucket")
+
+        # Exports the DNS name of the bucket
+        pulumi.export("bucket_name", bucket.bucket_domain_name)
+
+    preview_s3_create_task = PulumiPreviewOperator(
+        task_id="preview_s3_create",
+        pulumi_program=create_s3_bucket,
+        stack_config={"aws:region": "us-west-2"},
+        plugins={"aws": "v5.0.0"},
+    )
+
+    s3_create_task = PulumiUpOperator(
+        task_id="s3_create",
+        pulumi_program=create_s3_bucket,
+        stack_config={"aws:region": "us-west-2"},
+        plugins={"aws": "v5.0.0"},
+    )
+
+    s3_destroy_task = PulumiDestroyOperator(
+        task_id="s3_destroy",
+        pulumi_program=create_s3_bucket,
+        stack_config={"aws:region": "us-west-2"},
+        plugins={"aws": "v5.0.0"},
+    )
+
+    preview_s3_create_task >> s3_create_task >> s3_destroy_task
+
+
+example_pulumi_dag = example_pulumi()
+```
+
+## Development
+
+### Unit Tests
+
+Unit tests are located at `tests`, the Pulumi client is required to run these tests. Execute with `pytest`.
