@@ -1,0 +1,29 @@
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[project]
+name = "stork-search"
+description = "Impossibly fast web search, made for static sites."
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: MIT License",
+    "Typing :: Typed"
+]
+
+[project.urls]
+Source = "https://github.com/RealOrangeOne/stork-search-py"
+Changelog = "https://github.com/RealOrangeOne/stork-search-py/releases"
+Issues = "https://github.com/RealOrangeOne/stork-search-py/issues"

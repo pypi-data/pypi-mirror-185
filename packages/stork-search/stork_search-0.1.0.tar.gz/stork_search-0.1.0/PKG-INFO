@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: stork-search
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Typing :: Typed
+License-File: LICENSE
+Summary: Impossibly fast web search, made for static sites.
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Issues, https://github.com/RealOrangeOne/stork-search-py/issues
+Project-URL: Source, https://github.com/RealOrangeOne/stork-search-py
+Project-URL: Changelog, https://github.com/RealOrangeOne/stork-search-py/releases
+
+# stork-search
+Python bindings to stork-search: Impossibly fast web search, made for static sites.
+
