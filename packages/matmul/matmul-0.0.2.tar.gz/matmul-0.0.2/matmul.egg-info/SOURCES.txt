@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.py
+IMPORTANT/LICENSE.txt
+IMPORTANT/README.txt
+IMPORTANT/SETUP.cfg
+IMPORTANT/__init__.py
+matmul/__init__.py
+matmul/matinput.py
+matmul/matmul.py
+matmul/test.py
+matmul.egg-info/PKG-INFO
+matmul.egg-info/SOURCES.txt
+matmul.egg-info/dependency_links.txt
+matmul.egg-info/not-zip-safe
+matmul.egg-info/top_level.txt
