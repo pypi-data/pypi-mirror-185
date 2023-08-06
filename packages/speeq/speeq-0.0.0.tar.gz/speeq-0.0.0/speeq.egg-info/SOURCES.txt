@@ -1,0 +1,5 @@
+setup.py
+speeq.egg-info/PKG-INFO
+speeq.egg-info/SOURCES.txt
+speeq.egg-info/dependency_links.txt
+speeq.egg-info/top_level.txt
