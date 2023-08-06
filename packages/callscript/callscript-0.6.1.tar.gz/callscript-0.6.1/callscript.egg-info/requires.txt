@@ -1,0 +1,6 @@
+redbaron
+
+[dev]
+pytest
+pytest-cov[all]
+tox
