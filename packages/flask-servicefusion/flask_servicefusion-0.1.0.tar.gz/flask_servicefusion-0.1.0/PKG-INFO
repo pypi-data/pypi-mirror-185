@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: flask_servicefusion
+Version: 0.1.0
+Summary: A servicefusion Rest Client For Flask applications
+Home-page: https://bitbucket.org/will_sexton/flask_servicefusion/src/master/
+Author: will sexton
+Author-email: will@theapiguys.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+
+README
+
