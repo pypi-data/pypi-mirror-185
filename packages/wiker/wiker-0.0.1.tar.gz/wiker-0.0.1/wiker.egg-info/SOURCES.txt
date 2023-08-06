@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+wiker/__init__.py
+wiker/__main__.py
+wiker/main.py
+wiker.egg-info/PKG-INFO
+wiker.egg-info/SOURCES.txt
+wiker.egg-info/dependency_links.txt
+wiker.egg-info/requires.txt
+wiker.egg-info/top_level.txt
