@@ -1,0 +1,22 @@
+[project]
+name = "dirdog"
+version = "0.0.1"
+authors = [
+  { name="Daniel Ewert", email="ewert.daniel@gmail.com" },
+]
+description = "Simplest Watchdog for a given directory"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+log_cli=true
+log_level="DEBUG"
