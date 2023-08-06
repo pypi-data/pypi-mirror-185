@@ -1,0 +1,72 @@
+mltk_audio_classifier-audio_io-brd2601-mvp:
+  date: '2023-01-09T23:01:09.954Z'
+  sha1: 3769197dcd7998e59ce09152812014a52adbd955
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_audio_classifier/mltk_audio_classifier-audio_io-brd2601-mvp-2a8ea36d.zip
+mltk_audio_classifier-brd2204-none:
+  date: '2022-11-09T19:31:43.172Z'
+  sha1: aeceeb3c01c40c9b511833e57b67991561ae4f3f
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_audio_classifier/mltk_audio_classifier-brd2204-none-389451da.zip
+mltk_audio_classifier-brd2601-mvp:
+  date: '2022-11-09T19:34:52.397Z'
+  sha1: bc2aea42a9835ba745e644d3daf075fec1d50210
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_audio_classifier/mltk_audio_classifier-brd2601-mvp-feaf971a.zip
+mltk_audio_classifier-brd2601-none:
+  date: '2022-11-09T19:33:50.567Z'
+  sha1: d984c4b3b41df9ae162f4be28d9555f8bda73642
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_audio_classifier/mltk_audio_classifier-brd2601-none-6438d21a.zip
+mltk_audio_classifier-brd4166-none:
+  date: '2022-11-09T19:32:48.357Z'
+  sha1: 563e89055ffb4b6fadd03e11ea7d7f2eaf8cb8b7
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_audio_classifier/mltk_audio_classifier-brd4166-none-3b40831b.zip
+mltk_audio_classifier-linux-none:
+  date: '2022-11-10T17:31:43.236Z'
+  sha1: c453a958f37eeb76425f02f46b20c5549ce3b6ba
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_audio_classifier/mltk_audio_classifier-linux-none-72903d83.zip
+mltk_audio_classifier-windows-none:
+  date: '2022-11-09T19:35:53.172Z'
+  sha1: 909edb873e48c9e96c5fdc6e3d84c8d4e72fe54a
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_audio_classifier/mltk_audio_classifier-windows-none-f99d29bd.zip
+mltk_fingerprint_authenticator-brd2601-mvp:
+  date: '2022-11-09T19:41:31.943Z'
+  sha1: ddc8878fd62284d7b1698879db26136dd948e021
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_fingerprint_authenticator/mltk_fingerprint_authenticator-brd2601-mvp-a4d2e663.zip
+mltk_fingerprint_authenticator-brd2601-none:
+  date: '2022-11-09T19:40:30.050Z'
+  sha1: 65b64c141246846f828fea9b4a5b6e0e68fde4b8
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_fingerprint_authenticator/mltk_fingerprint_authenticator-brd2601-none-4681e0db.zip
+mltk_image_classifier-brd2601-mvp:
+  date: '2022-11-09T19:38:05.092Z'
+  sha1: 7e91ccf23383d8b2f7fd0d2301d790ff2127972e
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_image_classifier/mltk_image_classifier-brd2601-mvp-95357f38.zip
+mltk_image_classifier-brd2601-none:
+  date: '2022-11-09T19:37:07.150Z'
+  sha1: ae9b388e92e49b3e23a794e83fe67105ff208360
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_image_classifier/mltk_image_classifier-brd2601-none-479b00e4.zip
+mltk_model_profiler-brd2204-none:
+  date: '2022-11-09T19:22:48.638Z'
+  sha1: ad60aba9101db8e6c04a53f16f1435a8ee626e10
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_model_profiler/mltk_model_profiler-brd2204-none-97c168bb.zip
+mltk_model_profiler-brd2601-mvp:
+  date: '2022-11-09T19:27:45.262Z'
+  sha1: 05d2a57936aec25ae3a6bab6fd09b89f8f69c5bc
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_model_profiler/mltk_model_profiler-brd2601-mvp-8a33c689.zip
+mltk_model_profiler-brd2601-none:
+  date: '2022-11-09T19:26:44.251Z'
+  sha1: 89ac53aeb388134b32f9df6a0b03cf5a4a6a2d60
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_model_profiler/mltk_model_profiler-brd2601-none-657ce629.zip
+mltk_model_profiler-brd4166-none:
+  date: '2022-11-09T19:23:45.745Z'
+  sha1: bbfb45df9778462ff0f4a67b1b5a74878dd444c0
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_model_profiler/mltk_model_profiler-brd4166-none-714b53af.zip
+mltk_model_profiler-brd4186-mvp:
+  date: '2022-11-09T19:25:42.779Z'
+  sha1: 3dcae6cc2b788da4cf20ef06141ff18aee521d11
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_model_profiler/mltk_model_profiler-brd4186-mvp-c27ee3d6.zip
+mltk_model_profiler-brd4186-none:
+  date: '2022-11-09T19:24:42.343Z'
+  sha1: 0200b695eb4ed387096bd2fec647bbf236f86e20
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_model_profiler/mltk_model_profiler-brd4186-none-8346a3a2.zip
+mltk_model_profiler-linux-none:
+  date: '2022-11-10T17:32:59.233Z'
+  sha1: 146a031ef1b62d20744dc2c90b7bf8eabd803e06
+  url: https://github.com/SiliconLabs/mltk_assets/raw/master/applications/mltk_model_profiler/mltk_model_profiler-linux-none-7d15c156.zip
