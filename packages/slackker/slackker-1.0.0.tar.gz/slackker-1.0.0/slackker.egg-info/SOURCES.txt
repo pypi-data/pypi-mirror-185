@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+slackker/__init__.py
+slackker/callbacks.py
+slackker.egg-info/PKG-INFO
+slackker.egg-info/SOURCES.txt
+slackker.egg-info/dependency_links.txt
+slackker.egg-info/requires.txt
+slackker.egg-info/top_level.txt
+slackker/utils/__init__.py
+slackker/utils/checkker.py
+slackker/utils/funckker.py
