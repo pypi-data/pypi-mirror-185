@@ -1,0 +1,7 @@
+tensorflow_gcs_config/__init__.py,sha256=AJ_IGYqn-hGhy5FxZykh5KaRGlscX-R7PVQLyqQD3lo,4508
+tensorflow_gcs_config/_gcs_config_ops.so,sha256=xH_0S72MXgtAB9SToIjydAPy3Q2rmXmfUA77HFeXzjY,684184
+tensorflow_gcs_config-2.11.0.data/data/_gcs_config_ops.so/_gcs_config_ops.so,sha256=xH_0S72MXgtAB9SToIjydAPy3Q2rmXmfUA77HFeXzjY,684184
+tensorflow_gcs_config-2.11.0.dist-info/METADATA,sha256=rJA4Mb5FDBCyXuMR4wcgo2sjTcFfkkNc3PqMjAecFnE,273
+tensorflow_gcs_config-2.11.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tensorflow_gcs_config-2.11.0.dist-info/top_level.txt,sha256=oto1hvHlCS3jPTjiqCfGEGrVbPodp5soWSo_EKL5evc,22
+tensorflow_gcs_config-2.11.0.dist-info/RECORD,,
