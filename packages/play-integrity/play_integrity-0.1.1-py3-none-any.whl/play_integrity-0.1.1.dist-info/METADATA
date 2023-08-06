@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: play-integrity
+Version: 0.1.1
+Summary: Python library to verify Play Integrity API
+Author: Yves Tumushimire
+Author-email: yvestumushimire@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: google-api-python-client (>=2.72.0,<3.0.0)
+Requires-Dist: google-auth (>=2.16.0,<3.0.0)
