@@ -1,0 +1,6 @@
+versiontk/__init__.py,sha256=BDOfJ7MUyig70P86X3ls6RQZZAFedVg5m4UbEnRdkEQ,233
+versiontk/objects.py,sha256=jYvsH1CvbNtwPzxxkkqRV-HU6rFEEwP1_R0QgaLYmmY,133
+versiontk/version.py,sha256=08cPnNBJlqqabU_9EZFYBSRL_Y31Tmciw6J-JBLQgJg,1754
+versiontk-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+versiontk-1.0.0.dist-info/METADATA,sha256=3gDA5ifXnCV4LY78b5EQ9dSYJIHrX0wcLCzBKXyMSqU,513
+versiontk-1.0.0.dist-info/RECORD,,
