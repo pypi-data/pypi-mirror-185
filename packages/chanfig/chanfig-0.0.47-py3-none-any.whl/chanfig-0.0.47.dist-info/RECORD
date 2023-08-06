@@ -1,0 +1,16 @@
+chanfig/__init__.py,sha256=32uCmkPSrV1UxfsUXYrs0ByxaewalCOwprHKkGBT4F0,244
+chanfig/config.py,sha256=HNL9MV7IBTC8hRLI0gq95FUtKpCs6u0HWKSMaxgZrbI,11051
+chanfig/flat_dict.py,sha256=P-uW_5102RdwieZaJTK_h_1ft0yT8uE62xLOs8PIKXA,23162
+chanfig/nested_dict.py,sha256=Io-RdD3XXQ4sJiECgYzOcO40Rfwx77NU4KuOz4KRN3c,13193
+chanfig/utils.py,sha256=M00RGtNkZ353CzrgOpcMZbcrzeDkXeEu0r024ZQsl4s,696
+chanfig/variable.py,sha256=xD86vbnKIWlRDBq51_73RMDt37mobPrQTORGA40qZbo,7125
+chanfig-0.0.47.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+chanfig-0.0.47.dist-info/LICENSE,sha256=lUTrEUlpJyMzk3yOm7f9STIoiY0r3Go_LmzhzKc96-g,58
+chanfig-0.0.47.dist-info/METADATA,sha256=ub72dX9BdkFEsRUadEwo_pY1DtF5dVm-k8Kkk_FXRdw,6737
+chanfig-0.0.47.dist-info/LICENSES/LICENSE.BSD2,sha256=XSD8A3aeI-xqU_stApHLxl8DbebGTU7ze3XMKWEvd2Y,1322
+chanfig-0.0.47.dist-info/LICENSES/LICENSE.MIT,sha256=r9GSPSpivCGY_FkouhaQlI3p6C-dIKxdfpw1RcsZTPs,1069
+chanfig-0.0.47.dist-info/LICENSES/LICENSE.GPL2,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+chanfig-0.0.47.dist-info/LICENSES/LICENSE.Apache2,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+chanfig-0.0.47.dist-info/LICENSES/LICENSE.GPL3,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+chanfig-0.0.47.dist-info/LICENSES/LICENSE.BSD3,sha256=04pVVqbRLIBTShRJqfn_y32z6HRaxCEJGL-XOE3lPv0,1520
+chanfig-0.0.47.dist-info/RECORD,,
