@@ -1,0 +1,8 @@
+__init__.py,sha256=cSLCMHmTTSKM3HgBnMfMfK6vjCZN2EQJ-sC3qKoxDGI,34
+regex_dictionary.py,sha256=Rt-uVhqWLjMzMeViKCKi3FKos-GiWxt6VoD_j9VEwiI,995
+test_regex_dictionary.py,sha256=TS9z2_JOZv0ivjWjCKmqUAa1MW-R3uATmF1nMLJ73XQ,1655
+regex_dictionary-1.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+regex_dictionary-1.0.2.dist-info/METADATA,sha256=aSqG2zmFrXpseEU96ZfBXvD_0iSSVe8w6_E8Vvic1ms,14178
+regex_dictionary-1.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+regex_dictionary-1.0.2.dist-info/top_level.txt,sha256=O1Mfhz9fuWBndZ_FyxUBlt3z4NrRYd-xfd5uPIZ9tTY,48
+regex_dictionary-1.0.2.dist-info/RECORD,,
