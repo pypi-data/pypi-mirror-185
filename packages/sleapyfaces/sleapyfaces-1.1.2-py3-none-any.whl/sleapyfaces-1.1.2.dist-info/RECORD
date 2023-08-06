@@ -1,0 +1,15 @@
+sleapyfaces/__about__.py,sha256=FJNM8eX_JjVQLSWdAQiZgk7J2_UE8VdruT0j91_QG3U,533
+sleapyfaces/__init__.py,sha256=5Qp-T9-LfkwuYa4qGrSUhEXHFQ77MjIOUBHVKPK0dF4,719
+sleapyfaces/__main__.py,sha256=SoX180ostlysQWHAhYNawkraIqm8XwNAksHiWyx5r6M,211
+sleapyfaces/clustering.py,sha256=UpO_UwsE0mmdgbr0WVmMek2LcbCeWGbUImrnuFpFrGc,23402
+sleapyfaces/experiment.py,sha256=_w3U_7IwISnusuKXEc9VTtiYxekh_Rg-3ePJTDKqXSM,14218
+sleapyfaces/io.py,sha256=fXJ4OGhFwplLcMZwZ-F1hMLdZVQD_reDtXjM6GlOcRs,10687
+sleapyfaces/normalize.py,sha256=t_UIHt4_wcwMApRl4VC8lZlBLSaCGfGqOUpdQQcEf1E,2104
+sleapyfaces/project.py,sha256=-T4M8jhnMGsqPFRkn6Je4dKWBNC9ItBCSggWwTykyIY,22089
+sleapyfaces/structs.py,sha256=R0M7kpeAdNTFwaBl7fDMZZzgNIHkNH0_SDBjiZlC7Uk,3273
+sleapyfaces/utils.py,sha256=6EAYK_p9CYfi3YRrkc7pOPEH31wRfeD9_OcTdzWG4Mw,10128
+sleapyfaces/cli/__init__.py,sha256=X4A5GJn7SYcp3JnwfVZxgkplkYxmDn0Uxm8oRTQ58WU,417
+sleapyfaces-1.1.2.dist-info/METADATA,sha256=qBxCH4jOWGXRTuV5mo1BPgc6fUQvYSxSt6-RZZg_mxg,41321
+sleapyfaces-1.1.2.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+sleapyfaces-1.1.2.dist-info/licenses/LICENSE,sha256=Wb-nKVCrBokXs_lLrGnQsJWHcOT8ynGY0zvB31uEcfg,1115
+sleapyfaces-1.1.2.dist-info/RECORD,,
