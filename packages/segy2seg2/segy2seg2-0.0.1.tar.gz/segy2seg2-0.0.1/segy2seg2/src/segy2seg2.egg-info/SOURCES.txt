@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+segy2seg2/src/segy2seg2.egg-info/PKG-INFO
+segy2seg2/src/segy2seg2.egg-info/SOURCES.txt
+segy2seg2/src/segy2seg2.egg-info/dependency_links.txt
+segy2seg2/src/segy2seg2.egg-info/requires.txt
+segy2seg2/src/segy2seg2.egg-info/top_level.txt
+segy2seg2/src/formats.py
+segy2seg2/src/header.py
+segy2seg2/src/segy2seg2.py
+segy2seg2/src/segy2seg2.egg-info/PKG-INFO
+segy2seg2/src/segy2seg2.egg-info/SOURCES.txt
+segy2seg2/src/segy2seg2.egg-info/dependency_links.txt
+segy2seg2/src/segy2seg2.egg-info/requires.txt
+segy2seg2/src/segy2seg2.egg-info/top_level.txt
