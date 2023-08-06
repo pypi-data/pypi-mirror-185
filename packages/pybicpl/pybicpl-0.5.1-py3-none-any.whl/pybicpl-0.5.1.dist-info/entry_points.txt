@@ -1,0 +1,5 @@
+[console_scripts]
+obj_mni2wf = bicpl.wavefront:mni2wavefront
+obj_wf2asc = bicpl.wavefront:wavefront2asc
+obj_wf2mni = bicpl.wavefront:wavefront2mni
+

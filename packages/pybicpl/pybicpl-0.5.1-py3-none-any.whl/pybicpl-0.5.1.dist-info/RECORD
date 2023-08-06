@@ -1,0 +1,13 @@
+bicpl/__init__.py,sha256=qO5T6FEjdwoATcxGydSulRg0jfM1aUtI_IJ8mTPfX2g,301
+bicpl/_version.py,sha256=-7OwUYTsZEGGbjrlGKEr9pSgYOk1V9Cr42-fXA6PgUQ,115
+bicpl/civet.py,sha256=OOjNO1F2DS58lxmthr1mzTEJHJgMv5dFUQVQpiyjMos,1213
+bicpl/math.py,sha256=Zy-4E1E_JGjVQ1FggCBK5gNZqKuiZj2QS6aMe3PHRk0,1070
+bicpl/obj.py,sha256=IcwWY1PDUrTJpiyfgqliJ4WAaiyjai30sqU871ORReY,9903
+bicpl/types.py,sha256=s4GSRFaKKR1YYNL3LaiS7YXMqCIpFK5yvwNvJ68xV54,1208
+bicpl/wavefront.py,sha256=-jg12B-PMEe9kMyVvkkdj-utbGosO-ZoIUym06pwZjY,4429
+pybicpl-0.5.1.dist-info/LICENSE,sha256=t4cwwwLO5hZxAR8ysP9dMtFT09yoNNeK3XGwbiDNOcQ,1068
+pybicpl-0.5.1.dist-info/METADATA,sha256=Zn74OJTuXa_Mxqg7A1GhAabsRlWU1zoVvofnDsGDAXU,411
+pybicpl-0.5.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pybicpl-0.5.1.dist-info/entry_points.txt,sha256=Vdv1xuqT82OQm41cetjRA7D18Ua5PqE1qFF8AJN2fmQ,148
+pybicpl-0.5.1.dist-info/top_level.txt,sha256=UkXS1tU1m9KsHpg0s6DG-8zlgeT_mhTDiQiUTPGMitw,6
+pybicpl-0.5.1.dist-info/RECORD,,
