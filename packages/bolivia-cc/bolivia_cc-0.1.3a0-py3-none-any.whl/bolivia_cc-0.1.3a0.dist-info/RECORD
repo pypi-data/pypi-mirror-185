@@ -1,0 +1,10 @@
+bolivia_cc/__init__.py,sha256=yVspyvkofzjIfs4Az1kYLAxdBY6Y24UW97A7F6UC40I,47
+bolivia_cc/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+bolivia_cc/cli.py,sha256=zeBCm6VHgIlBm4o2eX90CJVUkUYjxzIFTgTdbrLkmv0,21
+bolivia_cc/controlcode.py,sha256=sqwrrmQkGNCKKatm-sArz6YRU373gUJAC1pbx-zDdfQ,1867
+bolivia_cc/utils.py,sha256=ip4e-qjf5CKscA8ts_tWb7JOfeVqtA1KIHhCuN29tTE,2663
+bolivia_cc-0.1.3a0.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+bolivia_cc-0.1.3a0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bolivia_cc-0.1.3a0.dist-info/entry_points.txt,sha256=4Y1H-B1fjdccIgu-PdoFxHgVQRZjfl2nQtsGZ5srxO4,50
+bolivia_cc-0.1.3a0.dist-info/METADATA,sha256=uA-oVjDAlbKM4fzsGVaOk6D8VcB59Br_XnR5D5WPnhs,2690
+bolivia_cc-0.1.3a0.dist-info/RECORD,,

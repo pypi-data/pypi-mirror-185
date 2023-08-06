@@ -1,0 +1,3 @@
+[console_scripts]
+bolivia_cc=bolivia_cc.cli:main
+
