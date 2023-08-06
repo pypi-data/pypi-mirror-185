@@ -1,0 +1,40 @@
+# consumetpy
+
+A Python wrapper for the [Consumet API](https://api.consumet.org/) that provides easy access to the different categories and providers of the API.
+
+## Installation
+
+To install consumetpy, run the following command:
+
+```bash
+pip install consumetpy
+```
+
+## Usage
+
+The package includes different classes for the different categories and providers of the API. To use the package, you'll need to create an instance of the `ConsumetAPI` class and then access the different categories and providers through its attributes.
+
+    from consumet.py import ConsumetAPI
+
+    api = ConsumetAPI()
+
+    # Access the anime category
+    anime = api.anime
+
+    # Access the animepahe provider
+    animepahe = anime.animepahe
+
+    # Search for an anime by title
+    results = animepahe.search('spy x family')
+
+    # Get information about an anime
+    info = animepahe.info('1')
+
+    # Watch an anime episode
+    watch = animepahe.watch('12321dqw')
+
+You can access the providers, `enime`, `gogoanime`, `zoro` in similar way by using `anime.enime`, `anime.gogoanime` and `anime.zoro` respectively.
+
+## Contributions
+
+Contributions are welcome! If you'd like to contribute to this package, please fork the repository and make changes as you'd like. Once you've made your changes, open a pull request here and I'll review your changes.
