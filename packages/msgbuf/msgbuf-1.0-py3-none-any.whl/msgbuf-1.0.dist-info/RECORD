@@ -1,0 +1,9 @@
+msgbuf/__init__.py,sha256=BXZeWxw49JD0XB_DYLTJxBHimrSQ5Up4f90LtOkcNQk,139
+msgbuf/__main__.py,sha256=nbcVLaqmDeh5j1di7XB1EdBsYMe0mivPCF2lHVe5R9Y,107
+msgbuf/cli.py,sha256=fi4ZA13-iW5lG7WYNYJIoh3b-IYurFQZUCPOAtBQb6g,4905
+msgbuf-1.0.dist-info/LICENSE,sha256=KiPp0rVe-umElt1S2oRtS4v6IF6VOwMuQu7eOxnxYeI,1062
+msgbuf-1.0.dist-info/METADATA,sha256=v1UWgLOGLBaiPLB0_ZZ83fEWcyolRiEKTq8n1XbuAjI,1059
+msgbuf-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+msgbuf-1.0.dist-info/entry_points.txt,sha256=q0-nlat_EvltPqhtxWKx3qzRjOTTBqRKB5qB_34OxYI,43
+msgbuf-1.0.dist-info/top_level.txt,sha256=F3qUu1XJvxZqa9WhP4N6xRpufaZz6g4DgqbtikTv67g,7
+msgbuf-1.0.dist-info/RECORD,,
