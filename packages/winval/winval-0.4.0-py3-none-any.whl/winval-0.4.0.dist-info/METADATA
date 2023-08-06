@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: winval
+Version: 0.4.0
+Summary: Workflow inputs validation
+Author: doron
+Author-email: doron.shemtov@ultimagen.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: antlr4-python3-runtime (==4.10)
+Requires-Dist: google-cloud-storage (>=2.5.0,<3.0.0)
+Requires-Dist: pytest (>=7.1.2,<8.0.0)
