@@ -1,0 +1,8 @@
+src/archer/ArcherAuth.py,sha256=gY-V8WxQ3QqEi1-C8zLJ3g7X1GZVZzXNa9IT9P_cdD4,3050
+src/archer/ArcherServerClient.py,sha256=XaU8hMscZy7__LHiwsmu772NGwLUtUfA8QhPEbiYbjY,8450
+src/archer/SigningError.py,sha256=ClRJdH5-9XDLgF4YijjDAjEp_r4lZGJeqFIjJql5GvM,381
+src/archer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uscis_archer-0.0.3.dist-info/METADATA,sha256=_R4dyn31zl8YymMOaFru0tYvCGwkk7a4k5M6pcdlvsk,565
+uscis_archer-0.0.3.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+uscis_archer-0.0.3.dist-info/licenses/LICENSE,sha256=ONFkP11dkPwiYhu9HwDDKNE-Xj0BLwyVSgeqbH6JvXg,1088
+uscis_archer-0.0.3.dist-info/RECORD,,
