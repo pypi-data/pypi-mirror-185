@@ -1,0 +1,11 @@
+sphinxcontrib/eval/__init__.py,sha256=RhQZUyLkbtMvoaXPrsTD4dqZ6O_M8rogg5mMGz28g3g,1890
+sphinxcontrib/eval/_version.py,sha256=ecxYgYmVW6voOj3t8NqL_62765FAcc-gUSyum7oXnIg,160
+sphinxcontrib/eval/myst.py,sha256=efefDmPN0vQG-dbrc9Wmpb7sVEtlHVl_5qX8dcxFB0E,233
+sphinxcontrib/eval/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinxcontrib/eval/rst.py,sha256=jjwRoK4g5Za0nVQnG6tpqQ5CXxKnhgBdtEfilIP7EW8,209
+sphinxcontrib/eval/utils.py,sha256=Zst_nIpZtEQWz0gJkGXKZv__M5gXZLZztHD8OBxbHHk,2202
+sphinxcontrib_eval-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sphinxcontrib_eval-0.0.3.dist-info/METADATA,sha256=dMpaLpRQH2Q1hRS4dToVqE9cIMjL296HQ6Im6lxtcLQ,9738
+sphinxcontrib_eval-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sphinxcontrib_eval-0.0.3.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_eval-0.0.3.dist-info/RECORD,,
