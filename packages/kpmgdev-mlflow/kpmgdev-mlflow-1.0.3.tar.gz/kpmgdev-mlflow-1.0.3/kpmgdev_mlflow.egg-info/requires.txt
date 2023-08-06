@@ -1,0 +1,7 @@
+azure-core
+azure-mlflow
+openpyxl
+scikit-learn
+torch==1.13.1
+pandas
+numpy
