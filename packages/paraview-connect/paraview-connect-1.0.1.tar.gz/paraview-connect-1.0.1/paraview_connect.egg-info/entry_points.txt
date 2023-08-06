@@ -1,0 +1,2 @@
+[console_scripts]
+paraview-connect = pvconnect.cli:main
