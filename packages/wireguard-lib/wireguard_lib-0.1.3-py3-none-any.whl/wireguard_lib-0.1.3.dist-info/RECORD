@@ -1,0 +1,7 @@
+wireguard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wireguard/wireguard.py,sha256=K1cSkcd70QTn4ffNsD9_v4aIzVrIfgB-0t-Pr0ijAXo,9152
+wireguard_lib-0.1.3.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wireguard_lib-0.1.3.dist-info/METADATA,sha256=H9NvPHBpwaVR0bHK6ztV3ER3Do2z1eAWnyMxCXz_P_c,965
+wireguard_lib-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+wireguard_lib-0.1.3.dist-info/top_level.txt,sha256=YKrPjGXih8IOey7fG3EZlSHaoXdzZ48Q9Gf6J_GTMao,10
+wireguard_lib-0.1.3.dist-info/RECORD,,
