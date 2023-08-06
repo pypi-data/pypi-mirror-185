@@ -1,0 +1,3 @@
+[console_scripts]
+pyteseo-tests=pyteseo.cli:run_tests
+
