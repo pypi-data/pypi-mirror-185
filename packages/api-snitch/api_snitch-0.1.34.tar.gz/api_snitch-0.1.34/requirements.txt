@@ -1,0 +1,7 @@
+anyio
+asyncclick
+tox
+coverage
+aiohttp
+pyyaml
+requests

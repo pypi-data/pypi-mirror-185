@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "api-snitch"
+version = "0.1.34"
+authors = [
+  { name="Chen Cheng", email="ccwukong@gmail.com" },
+]
+description = "snitch is a CLI tool that helps you do health check, API idempotency check and more for your APIs."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "anyio",
+    "asyncclick",
+    "aiohttp",
+    "pyyaml",
+    "requests",
+    "urllib3",
+    "chardet"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ccwukong/snitch"
+"Bug Tracker" = "https://github.com/ccwukong/snitch/issues"
+
+[project.scripts]
+snitch = "snitch.main:run"
