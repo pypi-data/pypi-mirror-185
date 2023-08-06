@@ -1,0 +1,14 @@
+pydantic_xml/__init__.py,sha256=6skzr8c1UK4S0eYB3wA1FXPUSU23Hmp_yOSWfGyd16Y,320
+pydantic_xml/backend/__init__.py,sha256=znBU1SewEP3X5qsuvEFvq6CycWiut7ADrjmlN_AlN80,243
+pydantic_xml/backend/lxml.py,sha256=XbzchejLXDI5oBU1x6LL188AlnZe7EfF4Jhn4bSdZ8s,662
+pydantic_xml/backend/std.py,sha256=SWYsIT5gjOImiV9c-xRIsU830U7t_NE3pPHNp-Espl4,367
+pydantic_xml/config.py,sha256=_W3Sky9iweM7q-XDGe7RSNuVLc7yTy37nCuVycBY1UI,489
+pydantic_xml/errors.py,sha256=E3xPBSoMYgs9E45R5n7uDqrV_dTbsysfWKy12BtkhRk,497
+pydantic_xml/model.py,sha256=KaMM6VMtB2778S39PQ35uHLuxqHeK3RrqFMVQ-A3raQ,8789
+pydantic_xml/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_xml/serializers.py,sha256=0vWO5dvUixh6SOCH-qqQDAvw06Kll8K-Z3lIrukcVRU,29782
+pydantic_xml/utils.py,sha256=qRK-VIDE-gYwFJrrfftOLVCRwrUGOVhNiCh7KUH-j_Q,1952
+pydantic_xml-0.5.0.dist-info/METADATA,sha256=vi3lTwjtTwBPROVqzlRTMcSr6Yre4Fzjofj48okljrc,27830
+pydantic_xml-0.5.0.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+pydantic_xml-0.5.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pydantic_xml-0.5.0.dist-info/RECORD,,
