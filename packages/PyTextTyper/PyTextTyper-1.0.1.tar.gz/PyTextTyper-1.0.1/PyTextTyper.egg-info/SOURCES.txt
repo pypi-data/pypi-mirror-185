@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PyTextTyper.egg-info/PKG-INFO
+PyTextTyper.egg-info/SOURCES.txt
+PyTextTyper.egg-info/dependency_links.txt
+PyTextTyper.egg-info/requires.txt
+PyTextTyper.egg-info/top_level.txt
+pytexttyper/__init__.py
+pytexttyper/main.py
