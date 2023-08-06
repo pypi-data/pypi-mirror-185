@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyhelper-misc
+Version: 1.0.0
+Summary: Python Library Containing Generic Utilities and Helper Functions
+Home-page: https://www.linkedin.com/in/shubhamraj2202/
+Author: Shubham Raj
+Author-email: shubhamraj2202@gmail.com
+License-File: LICENSE
+
+![build](https://github.com/shubhamraj2202/py-helper/actions/workflows/github-actions.yml/badge.svg?event=push)
+[![codecov](https://codecov.io/gh/shubhamraj2202/py-helper/branch/main/graph/badge.svg?token=X9KIXXBOAV)](https://codecov.io/gh/shubhamraj2202/py-helper)
+# pyhelper
+Light Weight Python Library Containing Generic Utilities and Helper Functions

@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pyhelper_misc.egg-info/PKG-INFO
+pyhelper_misc.egg-info/SOURCES.txt
+pyhelper_misc.egg-info/dependency_links.txt
+pyhelper_misc.egg-info/top_level.txt
