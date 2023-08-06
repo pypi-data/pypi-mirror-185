@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pykillerx/__init__.py
+pykillerx/button.py
+pykillerx/support.py
+pykillerx.egg-info/PKG-INFO
+pykillerx.egg-info/SOURCES.txt
+pykillerx.egg-info/dependency_links.txt
+pykillerx.egg-info/requires.txt
+pykillerx.egg-info/top_level.txt
