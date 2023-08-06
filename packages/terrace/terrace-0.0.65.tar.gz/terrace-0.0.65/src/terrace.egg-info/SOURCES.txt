@@ -1,0 +1,17 @@
+README.md
+setup.py
+src/terrace/__init__.py
+src/terrace/batch.py
+src/terrace/categorical_tensor.py
+src/terrace/comp_node.py
+src/terrace/graph.py
+src/terrace/make_module.py
+src/terrace/meta_utils.py
+src/terrace/module.py
+src/terrace/type_data.py
+src/terrace/typed_module.py
+src/terrace.egg-info/PKG-INFO
+src/terrace.egg-info/SOURCES.txt
+src/terrace.egg-info/dependency_links.txt
+src/terrace.egg-info/requires.txt
+src/terrace.egg-info/top_level.txt
