@@ -1,0 +1,10 @@
+infoml/__init__.py,sha256=CxlQFejj2rnHhyvDFOVk0hKdUFTipBZpUqChL-pWHEA,3857
+infoml/data/GSE50499_GEO_Ceman_counts.txt.gz,sha256=7hg7Zm1_hUP3bUuyl8K4-nf4BEqIy_23qSYd9Zhu2yA,327885
+infoml/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+infoml/datasets.py,sha256=s_nx_fSUmEwFrFpVX_F_rkH19RNTo2eyGy66jXg6lY0,665
+infoml/pkg.py,sha256=3sH51rwcaZt_asl_gNdO_BCzf-tRr8vBILH-O6lvgvw,4323
+infoml/utils.py,sha256=j2a6gtIE5a81xZUdHOVYgAztjmLy4EG39NAAATUUi6k,17060
+infoml-0.5.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+infoml-0.5.0.dist-info/LICENSE,sha256=9AUuRyI3TEpF8CQd_i7BK3Hu3hgVe_P61mQuH9Lw8Qw,1077
+infoml-0.5.0.dist-info/METADATA,sha256=Z0V4o5rnBDtqyshE3CbBJ898MFIQRJgin-TtiShycps,2485
+infoml-0.5.0.dist-info/RECORD,,
