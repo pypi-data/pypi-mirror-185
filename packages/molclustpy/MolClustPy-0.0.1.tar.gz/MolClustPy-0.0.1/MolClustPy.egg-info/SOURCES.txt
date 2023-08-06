@@ -1,0 +1,12 @@
+LICENCE.txt
+setup.py
+MolClustPy/DataViz_NFsim.py
+MolClustPy/HelperFunctions.py
+MolClustPy/MultiRun_BNG.py
+MolClustPy/NFsim_data_analyzer.py
+MolClustPy/__init__.py
+MolClustPy.egg-info/PKG-INFO
+MolClustPy.egg-info/SOURCES.txt
+MolClustPy.egg-info/dependency_links.txt
+MolClustPy.egg-info/requires.txt
+MolClustPy.egg-info/top_level.txt
