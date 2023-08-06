@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: brainspike
+Version: 1.0.10
+Summary: Python toolbox for high-throughput patch-clamp analysis
+Home-page: https://github.com/mzabolocki/BrainSpike
+Author: Michael Zabolocki, Michael Prasinov, Matthew Prasinov
+Author-email: michael.zabolocki@sahmri.com
+License: Apache License, 2.0
+Project-URL: Source, https://github.com/mzabolocki/BrainSpike/brainspike
+Keywords: patch-clamp, ephys, intracellular, electrophysiology, post synaptic current, subthreshold, action potential
+Requires-Python: >=3.8.3, <4
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Requires-Dist: jupyter
+Requires-Dist: scipy (>=0.19)
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: BaselineRemoval
+Requires-Dist: tqdm
+Requires-Dist: pyabf
+Requires-Dist: ipfx
+Requires-Dist: allensdk
+
