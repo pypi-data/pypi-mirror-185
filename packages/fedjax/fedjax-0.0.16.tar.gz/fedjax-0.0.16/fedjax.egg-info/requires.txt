@@ -1,0 +1,8 @@
+absl-py
+dm-haiku
+jax>=0.3.19
+jaxlib
+msgpack
+optax
+requests
+scipy
