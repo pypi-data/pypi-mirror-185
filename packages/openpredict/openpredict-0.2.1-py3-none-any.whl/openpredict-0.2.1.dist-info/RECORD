@@ -1,0 +1,14 @@
+openpredict/__init__.py,sha256=wV59zHF_DQooWA2ykrWAm31u0hAEZAzQd4BUPfY2BYI,222
+openpredict/config.py,sha256=lM7yxhUJ7HbglEeNnrsaSPTrUW4X3p_EmnV9r_wWzh4,557
+openpredict/decorators.py,sha256=px93sa8HhIaE-yooE3kVpsHLbaoWebDc61-2xtj7CTU,1361
+openpredict/loaded_model.py,sha256=f5t7rM6j2ZfESPNB3KstXsXYjs6CsyWlDoMzKlj8nLc,1886
+openpredict/predict_output.py,sha256=5bLNjz4-11EgNnL77xl5DhdEZG-74gqYOTuCDArVnhc,867
+openpredict/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openpredict/rdf_utils.py,sha256=aE80WuA9RZ4FzFkFypJnjwIVh9Xn5ngSxTA5NhVtTLg,16918
+openpredict/trapi.py,sha256=_wHq_cw9YNe4f7ff6eDXSRTbUrSOgNkTOPlN75Emt_k,9166
+openpredict/trapi_parser.py,sha256=t1cM0gtbUCEdtYF1gzoKz3ATw0riGSnA27zZ0Fuyxzo,19892
+openpredict/utils.py,sha256=rvUUDDf1ZU2wDjnYJ5pMCLzRdex-ZpGUpccAa0oo5WA,3837
+openpredict-0.2.1.dist-info/METADATA,sha256=OSHeo0rm6Trz9sGfrTTeTMcJXY33knG7ZFwHTgMAHa4,18277
+openpredict-0.2.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+openpredict-0.2.1.dist-info/licenses/LICENSE.txt,sha256=WmxErtD-V78fBKgWvw42TkIXScXE6DtnZZ61yzkMO-E,1071
+openpredict-0.2.1.dist-info/RECORD,,
