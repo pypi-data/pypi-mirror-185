@@ -1,0 +1,11 @@
+gig/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gig/_constants.py,sha256=tI6nhhIdpnQ5BfnvwswLD0_DGZo01VFTVow0fdJmhdg,684
+gig/_remote_data.py,sha256=62But1EUSyXdyukOCwfGFjjsgtMoQUrbQOaWolnlKmk,370
+gig/ent_types.py,sha256=jfaHLQVlvf2mVA4X2iU1mdrXhvhErtfpSNQDQkvY_bo,1263
+gig/ents.py,sha256=6XuQL5pTnwL7sF7Lxd911TaadKcQne0ThJ3xfaaxaow,3060
+gig/ext_data.py,sha256=5xVXhl70KFPf1kXXEPcx5578PXa0VurLfWmNyLIMLGI,1426
+gig_nuuuwan-2.0.2.dist-info/LICENSE,sha256=DfIcv5mgPaPf0aSleXQh9n8i2rYdxtNVawdbmpk94bU,1064
+gig_nuuuwan-2.0.2.dist-info/METADATA,sha256=n7GXtiyC1HMCtMSsB_ThXiEMtZ4SK5X_o6qmhS8HnVk,581
+gig_nuuuwan-2.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gig_nuuuwan-2.0.2.dist-info/top_level.txt,sha256=Ym2TTFSjTMxDIhlT9Ow26xXNsA43PyoZv75XwlcdRtA,4
+gig_nuuuwan-2.0.2.dist-info/RECORD,,
