@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pysmells
+Version: 1.0.0
+Summary: Pysmells é um pacote Python que identifica e gera relatórios de erros no seu código Python
+Home-page: https://github.com/pysmells/pysmells
+Author: Marco Aurélio Proença Neto, Marcos Paulo Alves de Sousa
+Author-email: desousa.mpa@gmail.com
+License: MIT License
+Keywords: pysmells
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pysmells Ã© um pacote Python que identifica e gera relatÃ³rios de erros no seu cÃ³digo Python
