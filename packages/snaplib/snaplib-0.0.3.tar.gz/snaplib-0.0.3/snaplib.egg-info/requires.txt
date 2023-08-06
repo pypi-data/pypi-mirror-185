@@ -1,0 +1,4 @@
+pandas>=1
+numpy>=1
+scikit-learn>=1
+tqdm>=4
