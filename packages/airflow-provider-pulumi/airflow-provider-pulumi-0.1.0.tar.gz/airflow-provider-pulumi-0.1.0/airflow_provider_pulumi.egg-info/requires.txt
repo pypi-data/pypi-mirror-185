@@ -1,0 +1,7 @@
+apache-airflow>=2.2.0
+pulumi<4.0.0,>=3.0.0
+
+[dev]
+mypy>=0.800
+pytest
+pre-commit
