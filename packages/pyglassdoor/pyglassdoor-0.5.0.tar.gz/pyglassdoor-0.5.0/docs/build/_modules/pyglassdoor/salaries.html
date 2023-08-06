@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pyglassdoor.salaries &mdash; pyGlassdoor 0.2.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> pyGlassdoor
+          </a>
+              <div class="version">
+                0.2.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">PyGlassdoor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">pyGlassdoor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">pyglassdoor.salaries</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for pyglassdoor.salaries</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">Main Features</span>
+<span class="sd">_____________</span>
+
+<span class="sd">- get_salaries is the query for salaries information</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">.session</span> <span class="kn">import</span> <span class="n">get_session_headers</span><span class="p">,</span> <span class="n">api</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+
+
+<div class="viewcode-block" id="get_salaries"><a class="viewcode-back" href="../../reference/pyglassdoor.html#pyglassdoor.get_salaries">[docs]</a><span class="k">def</span> <span class="nf">get_salaries</span><span class="p">(</span><span class="n">company_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+                 <span class="n">page_number</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                 <span class="n">job_title</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">location</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">job_function</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">sort</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;COUNT&quot;</span><span class="p">,</span>
+                 <span class="n">display_as</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;ANNUAL&quot;</span><span class="p">,</span>
+                 <span class="n">session_info</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+                 <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the salaries of a company</span>
+
+<span class="sd">            :param company_id: The Glassdoor company ID</span>
+<span class="sd">            :param page_number: The page number of salary records to be collect, defaults to ``1``</span>
+<span class="sd">            :param job_title: search phrase for the desired job title</span>
+<span class="sd">            :param location: value for the location of the company/office</span>
+<span class="sd">            :param job_function: the identifier for desired job category, refer to the docs for more info</span>
+<span class="sd">            :param sort: defaults to ``COUNT``</span>
+
+<span class="sd">             can take any of the following values:</span>
+
+<span class="sd">             ``COUNT`` most salaries submitted first,</span>
+
+<span class="sd">             ``SALARY`` highest to the lowest salaries,</span>
+
+<span class="sd">             ``SALARY_ASC`` lowest to the highest salaries,</span>
+
+<span class="sd">            :param display_as: the level of aggregation, defaults to ``ANNUAL``</span>
+
+<span class="sd">             can take any of the following values:</span>
+
+<span class="sd">             ``ANNUAL`` for annual pay periods,</span>
+
+<span class="sd">             ``MONTHLY`` for monthly pay periods,</span>
+
+<span class="sd">             ``HOURLY`` for hourly pay periods,</span>
+
+<span class="sd">             ``None`` for assorted pay periods,</span>
+
+<span class="sd">            :param session_info: dictionary that contains active session information</span>
+<span class="sd">            :type company_id: int</span>
+<span class="sd">            :type page_number: int</span>
+<span class="sd">            :type job_title: str, optional</span>
+<span class="sd">            :type location: dict, optional</span>
+<span class="sd">            :type job_function: int, optional</span>
+<span class="sd">            :type sort: str</span>
+<span class="sd">            :type display_as: str</span>
+<span class="sd">            :type session_info: dict, optional</span>
+<span class="sd">            :return: the salaries of a company</span>
+<span class="sd">            :rtype: dict, json</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># create valid job title identifier for the query</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">job_title</span><span class="p">:</span>
+        <span class="n">job_title</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+    <span class="c1"># location ID</span>
+    <span class="n">location_id</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;countryId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;stateId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;metroId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;cityId&quot;</span><span class="p">:</span> <span class="kc">None</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="n">location</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">location_id</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">location</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="s1">&#39;The location id does not exist&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">location</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;You can only pass value for one of the location ids&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">location</span><span class="o">.</span><span class="n">values</span><span class="p">())[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;location id should be an integer&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">location_id</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">location</span><span class="p">)</span>
+
+    <span class="c1"># generate a goc id</span>
+    <span class="k">if</span> <span class="n">job_function</span><span class="p">:</span>
+        <span class="n">goc_id</span> <span class="o">=</span> <span class="n">job_function</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">goc_id</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="n">query</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;query EiSalariesGraphQuery($employerId: Int!, $cityId: Int, $metroId: Int, $goc: Int, $stateId: Int, &#39;</span>
+             <span class="s1">&#39;$countryId: Int, $jobTitle: String!, $pageNum: Int!, $sortType: SalariesSortOrderEnum, &#39;</span>
+             <span class="s1">&#39;$employmentStatuses: [SalariesEmploymentStatusEnum], $domain: String, $locale: String, $gdId: String, &#39;</span>
+             <span class="s1">&#39;$ip: String, $userId: Int, $payPeriod: PayPeriodEnum, $viewAsPayPeriodId: PayPeriodEnum, &#39;</span>
+             <span class="s1">&#39;$useUgcSearch2ForSalaries: String, $enableSalaryEstimates: Boolean, $enableV3Estimates: Boolean) {</span><span class="se">\n</span><span class="s1"> &#39;</span>
+             <span class="s1">&#39;  employmentStatusEnums(context: {domain: $domain}) {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    values</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  salariesByEmployer(</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    goc: {sgocId: $goc}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employer: {id: $employerId}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    jobTitle: {text: $jobTitle}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    page: {num: $pageNum, size: 20}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    location: {cityId: $cityId, metroId: $metroId, stateId: $stateId, countryId: $countryId}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;context: {domain: $domain, locale: $locale, gdId: $gdId, ip: $ip, userId: $userId, params: [{key: &#39;</span>
+             <span class="s1">&#39;&quot;useUgcSearch2&quot;, value: $useUgcSearch2ForSalaries}]}</span><span class="se">\n</span><span class="s1"> &#39;</span>
+             <span class="s1">&#39;    payPeriod: $payPeriod</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employmentStatuses: $employmentStatuses</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    sort: $sortType</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    viewAsPayPeriodId: $viewAsPayPeriodId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    enableSalaryEstimates: $enableSalaryEstimates</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    enableV3Estimates: $enableV3Estimates</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  ) {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    salaryCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    filteredSalaryCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    pages</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    mostRecent</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    jobTitleCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    filteredJobTitleCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    seoTexts {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      salarySeoDescriptionText</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      salarySeoDescriptionTitle</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      salarySeoDescriptionBody</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    lashedJobTitle {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      text</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    queryLocation {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      shortName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    queryEmployer {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      shortName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    results {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      salaryEstimatesFromJobListings</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      currency {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        code</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      employer {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        shortName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        squareLogoUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        counts {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          globalJobCount {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            jobCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        links {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          jobsUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      jobTitle {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        text</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      obscuring</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      payPeriod</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      count</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      employerTotalCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      employmentStatus</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      minBasePay</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      medianBasePay</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      maxBasePay</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      totalCompMin</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      totalCompMax</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      totalCompMedian</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      totalAdditionalCashPayMin</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      totalAdditionalCashPayMax</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      totalAdditionalCashPayMedian</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      links {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        employerSalariesByCompanyLogoUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        employerSalariesAllLocationsInfositeUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        employerSalariesInfositeUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      totalCompPercentiles {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        ident</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        value</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      totalPayInsights {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        isHigh</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        percentage</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  salaryLocations(</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employer: {id: $employerId}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    jobTitle: {text: $jobTitle}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    location: {cityId: $cityId, metroId: $metroId, stateId: $stateId, countryId: $countryId}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;context: {domain: $domain, locale: $locale, gdId: $gdId, ip: $ip, userId: $userId, params: [{key: &#39;</span>
+             <span class="s1">&#39;&quot;useUgcSearch2&quot;, value: $useUgcSearch2ForSalaries}]}</span><span class="se">\n</span><span class="s1"> &#39;</span>
+             <span class="s1">&#39;  ) {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    countries {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      identString</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      salaryCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      currency {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        symbol</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      states {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        identString</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        salaryCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        metros {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          identString</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          salaryCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          cities {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            identString</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            salaryCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;}&#39;</span><span class="p">)</span>
+
+    <span class="n">variables</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;cityId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;countryId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;domain&quot;</span><span class="p">:</span> <span class="s2">&quot;glassdoor.com&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;employerId&quot;</span><span class="p">:</span> <span class="n">company_id</span><span class="p">,</span>
+        <span class="s2">&quot;gdId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;getLocations&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s2">&quot;goc&quot;</span><span class="p">:</span> <span class="n">goc_id</span><span class="p">,</span>
+        <span class="s2">&quot;jobTitle&quot;</span><span class="p">:</span> <span class="n">job_title</span><span class="p">,</span>
+        <span class="s2">&quot;locale&quot;</span><span class="p">:</span> <span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;metroId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;pageNum&quot;</span><span class="p">:</span> <span class="n">page_number</span><span class="p">,</span>
+        <span class="s2">&quot;pageSize&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+        <span class="s2">&quot;sortType&quot;</span><span class="p">:</span> <span class="n">sort</span><span class="p">,</span>
+        <span class="s2">&quot;stateId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;payPeriod&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;viewAsPayPeriodId&quot;</span><span class="p">:</span> <span class="n">display_as</span><span class="p">,</span>
+        <span class="s2">&quot;useUgcSearch2ForSalaries&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;enableSalaryEstimates&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;enableV3Estimates&quot;</span><span class="p">:</span> <span class="kc">True</span>
+    <span class="p">}</span>
+
+    <span class="c1"># update location</span>
+    <span class="n">variables</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">location_id</span><span class="p">)</span>
+
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">api</span><span class="p">,</span>
+                                <span class="n">json</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span> <span class="s2">&quot;variables&quot;</span><span class="p">:</span> <span class="n">variables</span><span class="p">},</span>
+                                <span class="n">headers</span><span class="o">=</span><span class="n">get_session_headers</span><span class="p">(</span><span class="n">session_info</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="n">response_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response_json</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="n">response_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response_json</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Hamid Vakilzadeh.
+      <span class="lastupdated">Last updated on Jan 10, 2023.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

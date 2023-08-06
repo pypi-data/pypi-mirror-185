@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pyglassdoor.reviews &mdash; pyGlassdoor 0.2.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> pyGlassdoor
+          </a>
+              <div class="version">
+                0.2.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">PyGlassdoor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">pyGlassdoor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">pyglassdoor.reviews</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for pyglassdoor.reviews</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">## Main Features</span>
+
+<span class="sd">- get_reviews is the query for reviews</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">.session</span> <span class="kn">import</span> <span class="n">get_session_headers</span><span class="p">,</span> <span class="n">api</span>
+
+
+<div class="viewcode-block" id="get_reviews"><a class="viewcode-back" href="../../reference/pyglassdoor.html#pyglassdoor.get_reviews">[docs]</a><span class="k">def</span> <span class="nf">get_reviews</span><span class="p">(</span><span class="n">company_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+                <span class="n">records_to_collect</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+                <span class="n">only_current_employees</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+                <span class="n">job_title</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="n">location</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="n">employment_statuses</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">list</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="n">job_function</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                <span class="n">sort</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;RELEVANCE&quot;</span><span class="p">,</span>
+                <span class="n">language</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;eng&quot;</span><span class="p">,</span>
+                <span class="n">session_info</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns company reviews</span>
+
+<span class="sd">            :param company_id: The Glassdoor company ID</span>
+<span class="sd">            :param records_to_collect: The maximum number of reviews to collect, defaults to ``10``</span>
+<span class="sd">            :param only_current_employees: boolean for whether to get only the reviews of current employees,</span>
+<span class="sd">                defaults to ``False``</span>
+<span class="sd">            :param job_title: search phrase for the desired job title</span>
+<span class="sd">            :param location: value for the location of the company/office</span>
+<span class="sd">            :param employment_statuses: list of desired employment statues.</span>
+
+<span class="sd">             ``PART_TIME`` for part-time employee reviews,</span>
+
+<span class="sd">             ``CONTRACT`` for contractor reviews,</span>
+
+<span class="sd">             ``INTERN`` for intern reviews,</span>
+
+<span class="sd">             ``REGULAR`` for full-time employee reviews,</span>
+
+<span class="sd">             ``FREELANCE`` for freelancers reviews,</span>
+
+<span class="sd">             defaults to ``[&quot;REGULAR&quot;, &quot;PART_TIME&quot;]``</span>
+
+<span class="sd">            :param job_function: the identifier for desired job category, refer to the docs for more info</span>
+<span class="sd">            :param sort: defaults to &quot;RELEVANCE&quot;</span>
+
+<span class="sd">             ``DATE`` for most recent,</span>
+
+<span class="sd">             ``RATING`` for highest ratings first,</span>
+
+<span class="sd">             ``RATING_ASC`` for lowest ratings first,</span>
+
+<span class="sd">             ``RELEVANCE`` for most relevant first,</span>
+
+<span class="sd">             .. note:: ``sort`` value should be all caps.</span>
+
+
+<span class="sd">            :param language: ISO three-letter code of the language, defaults to ``eng``</span>
+<span class="sd">            :param session_info: dictionary that contains active session information</span>
+<span class="sd">            :type company_id: int</span>
+<span class="sd">            :type records_to_collect: int</span>
+<span class="sd">            :type only_current_employees: bool</span>
+<span class="sd">            :type job_title: str, optional</span>
+<span class="sd">            :type location: dict, optional</span>
+<span class="sd">            :type employment_statuses: list, optional</span>
+<span class="sd">            :type job_function: int, optional</span>
+<span class="sd">            :type sort: str</span>
+<span class="sd">            :type language: str</span>
+<span class="sd">            :type session_info: dict, optional</span>
+<span class="sd">            :returns: reviews of the specified company</span>
+<span class="sd">            :rtype: dict, json</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># create valid job title identifier for the query</span>
+    <span class="k">if</span> <span class="n">job_title</span><span class="p">:</span>
+        <span class="n">job_title_id</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="n">job_title</span><span class="p">}</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">job_title_id</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="c1"># location ID</span>
+    <span class="n">location_id</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;countryId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;stateId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;metroId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;cityId&quot;</span><span class="p">:</span> <span class="kc">None</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="n">location</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">location_id</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">location</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="s1">&#39;The location id does not exist&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">location</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;You can only pass value for one of the location ids&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">location</span><span class="o">.</span><span class="n">values</span><span class="p">())[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;location id should be an integer&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">location_id</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">location</span><span class="p">)</span>
+
+    <span class="c1"># employment statuses</span>
+    <span class="k">if</span> <span class="n">employment_statuses</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">employment_statuses</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;REGULAR&quot;</span><span class="p">,</span> <span class="s2">&quot;PART_TIME&quot;</span><span class="p">]</span>
+
+    <span class="c1"># generate a goc id in proper form (dictionary)</span>
+    <span class="k">if</span> <span class="n">job_function</span><span class="p">:</span>
+        <span class="n">goc_id</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;sgocId&quot;</span><span class="p">:</span> <span class="n">job_function</span><span class="p">}</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">goc_id</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="n">query</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;query EIReviewsPageGraphQuery($onlyCurrentEmployees: Boolean, $employerId: Int!, $jobTitle: &#39;</span>
+             <span class="s1">&#39;JobTitleIdent, $location: LocationIdent, $employmentStatuses: [EmploymentStatusEnum], $goc: GOCIdent, &#39;</span>
+             <span class="s1">&#39;$highlight: HighlightTerm, $page: Int!, $sort: ReviewsSortOrderEnum, $fetchHighlights: Boolean!, &#39;</span>
+             <span class="s1">&#39;$applyDefaultCriteria: Boolean, &#39;</span>
+             <span class="s1">&#39;$worldwideFilter: Boolean, $language: String, $divisionId: DivisionIdent, $preferredTldId: Int, &#39;</span>
+             <span class="s1">&#39;$dynamicProfileId: Int) {</span><span class="se">\n</span><span class="s1"> &#39;</span>
+             <span class="s1">&#39;  employerDivisionReviews(employer: {id: $employerId}) {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employer {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      links {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        reviewsUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employerRatings {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      overallRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employerReviews {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      divisionLink</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratingOverall</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      pros</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    divisions {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratings {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        overallRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      reviews {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        divisionLink</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        featured</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        pros</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  employerReviews(</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    onlyCurrentEmployees: $onlyCurrentEmployees</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employer: {id: $employerId}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    jobTitle: $jobTitle</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    location: $location</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    goc: $goc</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employmentStatuses: $employmentStatuses</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    highlight: $highlight</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    sort: $sort</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    page: {num: $page, </span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="sa">f</span><span class="s1">&#39;size: </span><span class="si">{</span><span class="n">records_to_collect</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    applyDefaultCriteria: $applyDefaultCriteria</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    worldwideFilter: $worldwideFilter</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    language: $language</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    division: $divisionId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    preferredTldId: $preferredTldId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    dynamicProfileId: $dynamicProfileId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  ) {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    filteredReviewsCountByLang {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      count</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      isoLanguage</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employer {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      badgesOfShame {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        headerText</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        bodyText</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      bestPlacesToWork {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        isCurrent</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        timePeriod</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        bannerImageUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      counts {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        pollCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      bestProfile {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ceo {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      employerManagedContent {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        isContentPaidForTld</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      largeLogoUrl: squareLogoUrl(size: LARGE)</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      links {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        jobsUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        reviewsUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      regularLogoUrl: squareLogoUrl(size: REGULAR)</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      shortName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      squareLogoUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      website</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    queryLocation {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      shortName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      longName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    queryJobTitle {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      text</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    currentPage</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    numberOfPages</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    lastReviewDateTime</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    allReviewsCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    ratedReviewsCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    filteredReviewsCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    ratings {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      overallRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      reviewCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ceoRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      recommendToFriendRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      cultureAndValuesRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      diversityAndInclusionRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      careerOpportunitiesRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      workLifeBalanceRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      seniorManagementRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      compensationAndBenefitsRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      businessOutlookRating</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ceoRatingsCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratedCeo {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        title</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        regularPhoto: photoUrl(size: REGULAR)</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        largePhoto: photoUrl(size: LARGE)</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        currentBestCeoAward {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          displayName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          timePeriod</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    reviews {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      isLegal</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      reviewId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      reviewDateTime</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratingOverall</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratingCeo</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratingBusinessOutlook</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratingWorkLifeBalance</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratingCultureAndValues</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratingDiversityAndInclusion</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratingSeniorLeadership</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratingRecommendToFriend</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratingCareerOpportunities</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ratingCompensationAndBenefits</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      employer {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        shortName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        regularLogoUrl: squareLogoUrl(size: REGULAR)</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        largeLogoUrl: squareLogoUrl(size: LARGE)</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      isCurrentJob</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      lengthOfEmployment</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      employmentStatus</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      jobEndingYear</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      jobTitle {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        text</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      location {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      originalLanguageId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      pros</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      prosOriginal</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      cons</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      consOriginal</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      summary</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      summaryOriginal</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      advice</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      adviceOriginal</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      isLanguageMismatch</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      countHelpful</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      countNotHelpful</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      employerResponses {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        response</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        userJobTitle</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        responseDateTime(format: ISO)</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        countHelpful</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        countNotHelpful</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        responseOriginal</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        languageId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        originalLanguageId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        translationMethod</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      isCovid19</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      divisionName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      divisionLink</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      topLevelDomainId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      languageId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      translationMethod</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  featuredReviewIdForEmployer(</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    reviewInput: {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      employerId: $employerId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      preferredTldId: $preferredTldId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      dynamicProfileId: $dynamicProfileId</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  )</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  pageViewSummary {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    totalCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  reviewHighlights(employer: { id: $employerId }, language: $language)</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    @include(if: $fetchHighlights) {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    pros {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      reviewCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      topPhrase</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      keyword</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      links {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        highlightPhraseUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    cons {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      reviewCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      topPhrase</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      keyword</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      links {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        highlightPhraseUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  reviewLocationsV2(employer: { id: $employerId }) {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    locations {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      atlasType</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employerHQLocation {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      atlasType</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  employmentStatuses {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    value</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    label</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }&#39;</span>
+             <span class="s1">&#39;}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+    <span class="n">variables</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;onlyCurrentEmployees&quot;</span><span class="p">:</span> <span class="n">only_current_employees</span><span class="p">,</span>
+        <span class="s2">&quot;employerId&quot;</span><span class="p">:</span> <span class="n">company_id</span><span class="p">,</span>
+        <span class="s2">&quot;jobTitle&quot;</span><span class="p">:</span> <span class="n">job_title_id</span><span class="p">,</span>
+        <span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="n">location_id</span><span class="p">,</span>
+        <span class="s2">&quot;employmentStatuses&quot;</span><span class="p">:</span> <span class="n">employment_statuses</span><span class="p">,</span>
+        <span class="s2">&quot;goc&quot;</span><span class="p">:</span> <span class="n">goc_id</span><span class="p">,</span>
+        <span class="s2">&quot;highlight&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;sort&quot;</span><span class="p">:</span> <span class="n">sort</span><span class="p">,</span>
+        <span class="s2">&quot;fetchHighlights&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;applyDefaultCriteria&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;worldwideFilter&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;language&quot;</span><span class="p">:</span> <span class="n">language</span><span class="p">,</span>
+        <span class="s2">&quot;divisionId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;preferredTldId&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;dynamicProfileId&quot;</span><span class="p">:</span> <span class="kc">None</span>
+    <span class="p">}</span>
+
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">api</span><span class="p">,</span>
+                                <span class="n">json</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span> <span class="s2">&quot;variables&quot;</span><span class="p">:</span> <span class="n">variables</span><span class="p">},</span>
+                                <span class="n">headers</span><span class="o">=</span><span class="n">get_session_headers</span><span class="p">(</span><span class="n">session_info</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="n">response_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response_json</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="n">response_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response_json</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Hamid Vakilzadeh.
+      <span class="lastupdated">Last updated on Jan 10, 2023.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

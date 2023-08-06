@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PyGlassdoor &mdash; pyGlassdoor 0.2.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="Contents" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> pyGlassdoor
+          </a>
+              <div class="version">
+                0.2.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PyGlassdoor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development">Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyGlassdoor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">PyGlassdoor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pyglassdoor">
+<h1>PyGlassdoor<a class="headerlink" href="#pyglassdoor" title="Permalink to this heading"></a></h1>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><th class="stub"><p>docs</p></th>
+<td><p><a class="reference external" href="https://pyglassdoor.readthedocs.io/"><img alt="Documentation Status" src="https://readthedocs.org/projects/pyglassdoor/badge/?style=flat" /></a></p></td>
+</tr>
+<tr class="row-even"><th class="stub"><p>tests</p></th>
+<td><div class="line-block">
+<div class="line"><a class="reference external" href="https://github.com/hamid-vakilzadeh/pyglassdoor/actions"><img alt="GitHub Actions Build Status" src="https://github.com/hamid-vakilzadeh/pyglassdoor/actions/workflows/github-actions.yml/badge.svg" /></a></div>
+<div class="line"><a class="reference external" href="https://codecov.io/github/hamid-vakilzadeh/pyglassdoor"><img alt="Coverage Status" src="https://codecov.io/gh/hamid-vakilzadeh/pyglassdoor/branch/main/graphs/badge.svg?branch=main" /></a></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><th class="stub"><p>package</p></th>
+<td><div class="line-block">
+<div class="line"><a class="reference external" href="https://pypi.org/project/pyglassdoor"><img alt="PyPI Package latest release" src="https://img.shields.io/pypi/v/pyglassdoor.svg" /></a> <a class="reference external" href="https://pypi.org/project/pyglassdoor"><img alt="PyPI Wheel" src="https://img.shields.io/pypi/wheel/pyglassdoor.svg" /></a></div>
+<div class="line"><a class="reference external" href="https://pypi.org/project/pyglassdoor"><img alt="Supported versions" src="https://img.shields.io/pypi/pyversions/pyglassdoor.svg" /></a> <a class="reference external" href="https://pypi.org/project/pyglassdoor"><img alt="Supported implementations" src="https://img.shields.io/pypi/implementation/pyglassdoor.svg" /></a></div>
+<div class="line"><a class="reference external" href="https://github.com/hamid-vakilzadeh/pyglassdoor/compare/v0.2.0...master"><img alt="Commits since latest release" src="https://img.shields.io/github/commits-since/hamid-vakilzadeh/pyglassdoor/v0.2.0.svg" /></a> <a class="reference external" href="https://pepy.tech/project/pyglassdoor"><img alt="downloads" src="https://static.pepy.tech/personalized-badge/pyglassdoor?period=total&amp;units=abbreviation&amp;left_color=yellowgreen&amp;right_color=grey&amp;left_text=Downloads" /></a></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>Python API for glassdoor.com.</p>
+<section id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>pyglassdoor
+</pre></div>
+</div>
+</section>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this heading"></a></h3>
+<p>The example below shows the code for downloading 20 reviews of Apple company.</p>
+<p>First, we need the <code class="docutils literal notranslate"><span class="pre">company_id</span></code> of Apple. We can find this number in the URL link of
+Apple’s <code class="docutils literal notranslate"><span class="pre">overview</span></code> page on glassdoor.</p>
+<p><a class="reference external" href="https://www.glassdoor.com/Overview/Working-at-Apple-EI_IE1138.11,16.htm">https://www.glassdoor.com/Overview/Working-at-Apple-EI_IE1138.11,16.htm</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">company_id</span></code> for Apple is <code class="docutils literal notranslate"><span class="pre">1138</span></code> which is the number right after <code class="docutils literal notranslate"><span class="pre">IE</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyglassdoor</span> <span class="k">as</span> <span class="nn">gd</span>
+
+<span class="c1"># download 20 reviews of APPLE Inc.</span>
+<span class="n">query</span> <span class="o">=</span> <span class="n">gd</span><span class="o">.</span><span class="n">get_reviews</span><span class="p">(</span><span class="n">company_id</span><span class="o">=</span><span class="mi">1138</span><span class="p">,</span> <span class="n">records_to_collect</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="c1"># query is in json format and contains all the information about reviews.</span>
+<span class="c1"># We can access the reviews as follows</span>
+<span class="n">apple_reviews</span> <span class="o">=</span> <span class="n">query</span><span class="p">[</span><span class="s1">&#39;employerReviews&#39;</span><span class="p">][</span><span class="s1">&#39;reviews&#39;</span><span class="p">]</span>
+
+<span class="c1"># and for example convert to dataframe</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">apple_reviews</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this heading"></a></h2>
+<p><a class="reference external" href="https://pyglassdoor.readthedocs.io/">https://pyglassdoor.readthedocs.io/</a></p>
+</section>
+<section id="development">
+<h2>Development<a class="headerlink" href="#development" title="Permalink to this heading"></a></h2>
+<p>To run all the tests run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tox</span>
+</pre></div>
+</div>
+<p>Note, to combine the coverage data from all the tox environments run:</p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><th class="stub"><p>Windows</p></th>
+<td><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">PYTEST_ADDOPTS</span><span class="o">=--</span><span class="n">cov</span><span class="o">-</span><span class="n">append</span>
+<span class="n">tox</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><th class="stub"><p>Other</p></th>
+<td><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PYTEST_ADDOPTS</span><span class="o">=--</span><span class="n">cov</span><span class="o">-</span><span class="n">append</span> <span class="n">tox</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Contents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Hamid Vakilzadeh.
+      <span class="lastupdated">Last updated on Jan 10, 2023.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

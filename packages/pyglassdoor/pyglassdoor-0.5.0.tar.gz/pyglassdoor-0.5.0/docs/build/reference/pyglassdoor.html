@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pyglassdoor &mdash; pyGlassdoor 0.2.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Contributing" href="../contributing.html" />
+    <link rel="prev" title="Reference" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pyGlassdoor
+          </a>
+              <div class="version">
+                0.2.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">PyGlassdoor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">pyglassdoor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pyglassdoor.get_interviews"><code class="docutils literal notranslate"><span class="pre">get_interviews()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyglassdoor.get_reviews"><code class="docutils literal notranslate"><span class="pre">get_reviews()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyglassdoor.get_salaries"><code class="docutils literal notranslate"><span class="pre">get_salaries()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyglassdoor.get_session_info"><code class="docutils literal notranslate"><span class="pre">get_session_info()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyGlassdoor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Reference</a></li>
+      <li class="breadcrumb-item active">pyglassdoor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/reference/pyglassdoor.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pyglassdoor">
+<h1>pyglassdoor<a class="headerlink" href="#pyglassdoor" title="Permalink to this heading"></a></h1>
+<span class="target" id="module-pyglassdoor"></span><p>A simple API for glassdoor.com</p>
+<p>All methods require at least the <cite>company_id</cite>, which is the unique
+identifier for each company on glassdoor.com. The most straight-forward way
+to find this number is the company url on glassdoor.com.</p>
+<p>For example, the <code class="docutils literal notranslate"><span class="pre">company_id</span></code> for <strong>Apple</strong> is <strong>1138</strong> which we can find in the
+urls of the company on glassdoor.com.
+Here are the <em>overview</em>, <em>reviews</em>, <em>salaries</em> , and <em>interviews</em> pages for apple:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://www.glassdoor.com/Overview/Working-at-Apple-EI_IE1138.11,16.htm">https://www.glassdoor.com/Overview/Working-at-Apple-EI_IE1138.11,16.htm</a></p></li>
+<li><p><a class="reference external" href="https://www.glassdoor.com/Reviews/Apple-Reviews-E1138.htm">https://www.glassdoor.com/Reviews/Apple-Reviews-E1138.htm</a></p></li>
+<li><p><a class="reference external" href="https://www.glassdoor.com/Salary/Apple-Salaries-E1138.htm">https://www.glassdoor.com/Salary/Apple-Salaries-E1138.htm</a></p></li>
+<li><p><a class="reference external" href="https://www.glassdoor.com/Salary/Apple-Salaries-E1138.htm">https://www.glassdoor.com/Salary/Apple-Salaries-E1138.htm</a></p></li>
+</ul>
+</div></blockquote>
+<dl class="py function">
+<dt class="sig sig-object py" id="pyglassdoor.get_interviews">
+<span class="sig-prename descclassname"><span class="pre">pyglassdoor.</span></span><span class="sig-name descname"><span class="pre">get_interviews</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">company_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">records_to_collect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'RELEVANCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="../_modules/pyglassdoor/interviews.html#get_interviews"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyglassdoor.get_interviews" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the reviews of a company</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>company_id</strong> (<em>int</em>) – The Glassdoor company ID</p></li>
+<li><p><strong>records_to_collect</strong> (<em>int</em>) – The maximum number of interviews to collect, defaults to <code class="docutils literal notranslate"><span class="pre">10</span></code></p></li>
+<li><p><strong>job_title</strong> (<em>str</em><em>, </em><em>optional</em>) – search phrase for the desired job title</p></li>
+<li><p><strong>location</strong> (<em>dict</em><em>, </em><em>optional</em>) – value for the location of the company/office</p></li>
+<li><p><strong>job_function</strong> (<em>int</em><em>, </em><em>optional</em>) – the identifier for desired job category, refer to the docs for more info</p></li>
+<li><p><strong>sort</strong> (<em>str</em>) – <p>defaults to <code class="docutils literal notranslate"><span class="pre">RELEVANCE</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">DATE</span></code> most recent first,</p>
+<p><code class="docutils literal notranslate"><span class="pre">DATE_ASC</span></code> the oldest first,</p>
+<p><code class="docutils literal notranslate"><span class="pre">DIFFICULTY</span></code> most difficult first,</p>
+<p><code class="docutils literal notranslate"><span class="pre">DIFFICULTY_ASC</span></code> the easiest first,</p>
+<p><code class="docutils literal notranslate"><span class="pre">RELEVANCE</span></code> for most relevant first,</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">sort</span></code> value should be all caps.</p>
+</div>
+</p></li>
+<li><p><strong>session_info</strong> (<em>dict</em><em>, </em><em>optional</em>) – dictionary that contains active session information</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>interviews of the specified company</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict, json</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyglassdoor.get_reviews">
+<span class="sig-prename descclassname"><span class="pre">pyglassdoor.</span></span><span class="sig-name descname"><span class="pre">get_reviews</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">company_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">records_to_collect</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_current_employees</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">employment_statuses</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'RELEVANCE'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'eng'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="../_modules/pyglassdoor/reviews.html#get_reviews"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyglassdoor.get_reviews" title="Permalink to this definition"></a></dt>
+<dd><p>Returns company reviews</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>company_id</strong> (<em>int</em>) – The Glassdoor company ID</p></li>
+<li><p><strong>records_to_collect</strong> (<em>int</em>) – The maximum number of reviews to collect, defaults to <code class="docutils literal notranslate"><span class="pre">10</span></code></p></li>
+<li><p><strong>only_current_employees</strong> (<em>bool</em>) – boolean for whether to get only the reviews of current employees,
+defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p><strong>job_title</strong> (<em>str</em><em>, </em><em>optional</em>) – search phrase for the desired job title</p></li>
+<li><p><strong>location</strong> (<em>dict</em><em>, </em><em>optional</em>) – value for the location of the company/office</p></li>
+<li><p><strong>employment_statuses</strong> (<em>list</em><em>, </em><em>optional</em>) – <p>list of desired employment statues.</p>
+<p><code class="docutils literal notranslate"><span class="pre">PART_TIME</span></code> for part-time employee reviews,</p>
+<p><code class="docutils literal notranslate"><span class="pre">CONTRACT</span></code> for contractor reviews,</p>
+<p><code class="docutils literal notranslate"><span class="pre">INTERN</span></code> for intern reviews,</p>
+<p><code class="docutils literal notranslate"><span class="pre">REGULAR</span></code> for full-time employee reviews,</p>
+<p><code class="docutils literal notranslate"><span class="pre">FREELANCE</span></code> for freelancers reviews,</p>
+<p>defaults to <code class="docutils literal notranslate"><span class="pre">[&quot;REGULAR&quot;,</span> <span class="pre">&quot;PART_TIME&quot;]</span></code></p>
+</p></li>
+<li><p><strong>job_function</strong> (<em>int</em><em>, </em><em>optional</em>) – the identifier for desired job category, refer to the docs for more info</p></li>
+<li><p><strong>sort</strong> (<em>str</em>) – <p>defaults to “RELEVANCE”</p>
+<p><code class="docutils literal notranslate"><span class="pre">DATE</span></code> for most recent,</p>
+<p><code class="docutils literal notranslate"><span class="pre">RATING</span></code> for highest ratings first,</p>
+<p><code class="docutils literal notranslate"><span class="pre">RATING_ASC</span></code> for lowest ratings first,</p>
+<p><code class="docutils literal notranslate"><span class="pre">RELEVANCE</span></code> for most relevant first,</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">sort</span></code> value should be all caps.</p>
+</div>
+</p></li>
+<li><p><strong>language</strong> (<em>str</em>) – ISO three-letter code of the language, defaults to <code class="docutils literal notranslate"><span class="pre">eng</span></code></p></li>
+<li><p><strong>session_info</strong> (<em>dict</em><em>, </em><em>optional</em>) – dictionary that contains active session information</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>reviews of the specified company</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict, json</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyglassdoor.get_salaries">
+<span class="sig-prename descclassname"><span class="pre">pyglassdoor.</span></span><span class="sig-name descname"><span class="pre">get_salaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">company_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job_function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'COUNT'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_as</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ANNUAL'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="../_modules/pyglassdoor/salaries.html#get_salaries"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyglassdoor.get_salaries" title="Permalink to this definition"></a></dt>
+<dd><p>Returns the salaries of a company</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>company_id</strong> (<em>int</em>) – The Glassdoor company ID</p></li>
+<li><p><strong>page_number</strong> (<em>int</em>) – The page number of salary records to be collect, defaults to <code class="docutils literal notranslate"><span class="pre">1</span></code></p></li>
+<li><p><strong>job_title</strong> (<em>str</em><em>, </em><em>optional</em>) – search phrase for the desired job title</p></li>
+<li><p><strong>location</strong> (<em>dict</em><em>, </em><em>optional</em>) – value for the location of the company/office</p></li>
+<li><p><strong>job_function</strong> (<em>int</em><em>, </em><em>optional</em>) – the identifier for desired job category, refer to the docs for more info</p></li>
+<li><p><strong>sort</strong> (<em>str</em>) – <p>defaults to <code class="docutils literal notranslate"><span class="pre">COUNT</span></code></p>
+<p>can take any of the following values:</p>
+<p><code class="docutils literal notranslate"><span class="pre">COUNT</span></code> most salaries submitted first,</p>
+<p><code class="docutils literal notranslate"><span class="pre">SALARY</span></code> highest to the lowest salaries,</p>
+<p><code class="docutils literal notranslate"><span class="pre">SALARY_ASC</span></code> lowest to the highest salaries,</p>
+</p></li>
+<li><p><strong>display_as</strong> (<em>str</em>) – <p>the level of aggregation, defaults to <code class="docutils literal notranslate"><span class="pre">ANNUAL</span></code></p>
+<p>can take any of the following values:</p>
+<p><code class="docutils literal notranslate"><span class="pre">ANNUAL</span></code> for annual pay periods,</p>
+<p><code class="docutils literal notranslate"><span class="pre">MONTHLY</span></code> for monthly pay periods,</p>
+<p><code class="docutils literal notranslate"><span class="pre">HOURLY</span></code> for hourly pay periods,</p>
+<p><code class="docutils literal notranslate"><span class="pre">None</span></code> for assorted pay periods,</p>
+</p></li>
+<li><p><strong>session_info</strong> (<em>dict</em><em>, </em><em>optional</em>) – dictionary that contains active session information</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the salaries of a company</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict, json</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyglassdoor.get_session_info">
+<span class="sig-prename descclassname"><span class="pre">pyglassdoor.</span></span><span class="sig-name descname"><span class="pre">get_session_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="../_modules/pyglassdoor/session.html#get_session_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyglassdoor.get_session_info" title="Permalink to this definition"></a></dt>
+<dd><p>Generate header information for request session.</p>
+<p>This step is integrated in data queries and can be skipped.
+But if the user decides to reuse header information for multiple queries (e.g., to save time), then this query
+is to be used.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>session information required for an authorized query</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Hamid Vakilzadeh.
+      <span class="lastupdated">Last updated on Jan 10, 2023.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

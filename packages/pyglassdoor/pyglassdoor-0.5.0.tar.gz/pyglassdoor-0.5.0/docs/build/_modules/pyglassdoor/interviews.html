@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pyglassdoor.interviews &mdash; pyGlassdoor 0.2.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> pyGlassdoor
+          </a>
+              <div class="version">
+                0.2.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">PyGlassdoor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">pyGlassdoor</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">pyglassdoor.interviews</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for pyglassdoor.interviews</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">## Main Features</span>
+
+<span class="sd">- get_interviews is the query for interviews</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">.session</span> <span class="kn">import</span> <span class="n">get_session_headers</span><span class="p">,</span> <span class="n">api</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+
+
+<div class="viewcode-block" id="get_interviews"><a class="viewcode-back" href="../../reference/pyglassdoor.html#pyglassdoor.get_interviews">[docs]</a><span class="k">def</span> <span class="nf">get_interviews</span><span class="p">(</span><span class="n">company_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+                   <span class="n">records_to_collect</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+                   <span class="n">job_title</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                   <span class="n">location</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                   <span class="n">job_function</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                   <span class="n">sort</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;RELEVANCE&quot;</span><span class="p">,</span>
+                   <span class="n">session_info</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Returns the reviews of a company</span>
+
+<span class="sd">            :param company_id: The Glassdoor company ID</span>
+<span class="sd">            :param records_to_collect: The maximum number of interviews to collect, defaults to ``10``</span>
+<span class="sd">            :param job_title: search phrase for the desired job title</span>
+<span class="sd">            :param location: value for the location of the company/office</span>
+<span class="sd">            :param job_function: the identifier for desired job category, refer to the docs for more info</span>
+<span class="sd">            :param sort:  defaults to ``RELEVANCE``</span>
+
+<span class="sd">             ``DATE`` most recent first,</span>
+
+<span class="sd">             ``DATE_ASC`` the oldest first,</span>
+
+<span class="sd">             ``DIFFICULTY`` most difficult first,</span>
+
+<span class="sd">             ``DIFFICULTY_ASC`` the easiest first,</span>
+
+<span class="sd">             ``RELEVANCE`` for most relevant first,</span>
+
+<span class="sd">             .. note:: ``sort`` value should be all caps.</span>
+
+<span class="sd">            :param session_info: dictionary that contains active session information</span>
+<span class="sd">            :type company_id: int</span>
+<span class="sd">            :type records_to_collect: int</span>
+<span class="sd">            :type job_title: str, optional</span>
+<span class="sd">            :type location: dict, optional</span>
+<span class="sd">            :type job_function: int, optional</span>
+<span class="sd">            :type sort: str</span>
+<span class="sd">            :type session_info: dict, optional</span>
+<span class="sd">            :return: interviews of the specified company</span>
+<span class="sd">            :rtype: dict, json</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># create valid job title identifier for the query</span>
+    <span class="k">if</span> <span class="n">job_title</span><span class="p">:</span>
+        <span class="n">job_title_id</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="n">job_title</span><span class="p">}</span>
+
+    <span class="c1"># location ID</span>
+    <span class="n">location_id</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;countryId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;stateId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;metroId&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;cityId&quot;</span><span class="p">:</span> <span class="kc">None</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="n">location</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">location_id</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">location</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="s1">&#39;The location id does not exist&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">location</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;You can only pass value for one of the location ids&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">location</span><span class="o">.</span><span class="n">values</span><span class="p">())[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;location id should be an integer&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">location_id</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">location</span><span class="p">)</span>
+
+    <span class="c1"># generate a goc id in proper form (dictionary)</span>
+    <span class="k">if</span> <span class="n">job_function</span><span class="p">:</span>
+        <span class="n">goc_id</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;sgocId&quot;</span><span class="p">:</span> <span class="n">job_function</span><span class="p">}</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">goc_id</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="n">query</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;query InterviewsPageGraphQueryIG($sort: InterviewsSortOrderEnum, $employerId: Int!, $goc: Int, &#39;</span>
+             <span class="s1">&#39;$jobTitle: JobTitleIdent, $location: LocationIdent, $outcome: [InterviewOutcomeEnum], $page: Int!, &#39;</span>
+             <span class="s1">&#39;$itemsPerPage: Int!, $tldId: Int!) {</span><span class="se">\n</span><span class="s1"> &#39;</span>
+             <span class="s1">&#39;  employerInterviews: employerInterviewsIG(</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;employerInterviewsInput: {sort: $sort, employer: {id: $employerId}, jobTitle: $jobTitle, goc: {sgocId: &#39;</span>
+             <span class="s1">&#39;$goc}, location: $location, outcomes: $outcome, page: {num: $page, size: $itemsPerPage}}</span><span class="se">\n</span><span class="s1"> &#39;</span>
+             <span class="s1">&#39;  ) {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    currentPageNum</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    totalNumberOfPages</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    totalInterviewCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    filteredInterviewCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employer {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      bestPlacesToWork(onlyCurrent: true) {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        bannerImageUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        isCurrent</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        timePeriod</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      bestProfile {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      ceo {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      counts {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        pollCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      employerManagedContent {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        isContentPaidForTld</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      largeLogoUrl: squareLogoUrl(size: LARGE)</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      links {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        jobsUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        reviewsUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      regularLogoUrl: squareLogoUrl(size: REGULAR)</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      shortName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      squareLogoUrl</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      website</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    interviewExperienceCounts {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      count</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    interviewObtainedChannelCounts {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      count</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    interviewOutcomeCounts {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      count</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    interviewExperienceSum</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    difficultySubmissionCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    difficultySum</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    newestReviewDate</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    interviewQuestionCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    overallDurationDaysSum</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    overallDurationDaysCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    content: interviews {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      advice</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      countHelpful</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      countNotHelpful</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      currentJobFlag</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      declinedReason</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      difficulty</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      durationDays</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      employerResponses {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        response</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        responseDateTime</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        userJobTitle</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      experience</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      featured</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      interviewDateTime</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      jobTitle {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        text</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      location {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      negotiationDescription</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      otherSource</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      otherSteps</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      outcome</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      processDescription</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      reviewDateTime</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      source</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      userQuestions {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        answerCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        question</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    popularJobTitlesInterviews {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      jobTitle</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      count</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    queryLocation {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      shortName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      longName</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  reviewLocations(employer: {id: $employerId}) {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    countries {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      identString</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      containsEmployerHQ</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      states {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        identString</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        containsEmployerHQ</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        metros {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          identString</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          containsEmployerHQ</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          cities(onlyIfOther: true) {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            type</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            id</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            identString</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            name</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            containsEmployerHQ</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;            __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;          __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;        __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;      __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  pageViewSummary {</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    totalCount</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    __typename</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  }</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  interviewCountForTldAndEmployer: interviewCountForTldAndEmployerIG(</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;    employerInterviewInsightsRequest: {employerId: $employerId, tldId: $tldId, applyTldFilter: true}</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;  )</span><span class="se">\n</span><span class="s1">&#39;</span>
+             <span class="s1">&#39;}&#39;</span><span class="p">)</span>
+
+    <span class="n">variables</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;employerId&quot;</span><span class="p">:</span> <span class="n">company_id</span><span class="p">,</span>
+        <span class="s2">&quot;employerName&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;goc&quot;</span><span class="p">:</span> <span class="n">goc_id</span><span class="p">,</span>
+        <span class="s2">&quot;itemsPerPage&quot;</span><span class="p">:</span> <span class="n">records_to_collect</span><span class="p">,</span>
+        <span class="s2">&quot;jobTitle&quot;</span><span class="p">:</span> <span class="n">job_title_id</span><span class="p">,</span>
+        <span class="s2">&quot;location&quot;</span><span class="p">:</span> <span class="n">location_id</span><span class="p">,</span>
+        <span class="s2">&quot;outcome&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="s2">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;queryLocation&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;sort&quot;</span><span class="p">:</span> <span class="n">sort</span><span class="p">,</span>
+        <span class="s2">&quot;worldwideFilter&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;tldId&quot;</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">}</span>
+
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">&quot;POST&quot;</span><span class="p">,</span> <span class="n">api</span><span class="p">,</span>
+                                <span class="n">json</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span> <span class="s2">&quot;variables&quot;</span><span class="p">:</span> <span class="n">variables</span><span class="p">},</span>
+                                <span class="n">headers</span><span class="o">=</span><span class="n">get_session_headers</span><span class="p">(</span><span class="n">session_info</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="n">response_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response_json</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="n">response_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">response_json</span></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Hamid Vakilzadeh.
+      <span class="lastupdated">Last updated on Jan 10, 2023.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
