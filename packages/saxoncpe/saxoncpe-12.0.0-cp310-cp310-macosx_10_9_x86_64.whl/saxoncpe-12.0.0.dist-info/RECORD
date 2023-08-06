@@ -1,0 +1,10 @@
+saxoncpe.cpython-310-darwin.so,sha256=HLH70Eqi1cCNAV-E2LW0gHZtOlZ3ZYWn1EdER89l6nE,879056
+nodekind.cpython-310-darwin.so,sha256=FonVpv22xtMlgUBVgqd4Wk1NCQEtPo54B0HrmaNeWOA,40744
+saxoncpe/test_saxonc.py,sha256=MYOjNx6IL-5pwp5CJbcbaM4iKNU6b_5hKCSrFPOSlas,57673
+saxoncpe/setup.py,sha256=NGeyRLqzeWW10beyYL6HFs_xTkyQxj0CCS2HEa-M8Pw,2931
+saxoncpe/test_saxon_schema.py,sha256=Vjj0SLRSNMHbzR9Vkcz3xraBRrlIwujjV6-jbayxsIw,3995
+saxoncpe.dylibs/libsaxon-pec-12.0.dylib,sha256=tHvKMK7THcub_6O0fbnYZFU64QWzbL1wPU1-UEYh5BQ,50002400
+saxoncpe-12.0.0.dist-info/RECORD,,
+saxoncpe-12.0.0.dist-info/WHEEL,sha256=85XxqUmZLCpAUbyN5ViL3rgA5Dw0b1knnC4gtrrtDjE,111
+saxoncpe-12.0.0.dist-info/top_level.txt,sha256=DGmcEZtO0bZlr3p36-9eELEuAabueGCVsmJmeTbttho,18
+saxoncpe-12.0.0.dist-info/METADATA,sha256=Snt2KHny9_utH7fJTsSwVNbaTrXlTVY-9PyK9tuaTWc,6985
