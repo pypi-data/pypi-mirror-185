@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: APIGtool
+Version: 0.3.0
+Summary: Collection of APIG Utilities
+Author: Chuck Muckamuck
+Author-email: chuck.muckamuck@gmail.com
+Requires-Dist: boto3 (>=1.7)
+Requires-Dist: Click (>=6.7)
+Requires-Dist: pymongo (>=3.6)
+Requires-Dist: tabulate (>=0.8)
+
