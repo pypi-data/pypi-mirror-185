@@ -1,0 +1,10 @@
+bodhi/client/__init__.py,sha256=LwE0oBqZcZJeuKrEHspzzlxrZVSOSF8-_kYm6Yuh2xc,935
+bodhi/client/bindings.py,sha256=Jwm2b8Gj5O8NxvAV6wwZyzGlqmmDewZdRaohHNVF8iY,41042
+bodhi/client/cli.py,sha256=ne2S4EmWjyipXy7mUXhogups_9JGtdRoh3gUjG49xYQ,54623
+bodhi/client/constants.py,sha256=cCQODt4Kn7FIVZTlgaGYN-0UMO41W6_50JiOJbihPYs,628
+bodhi/client/oidcclient.py,sha256=-vqyp3FjX3MEGh02yMX2Iej1foFH-XJHJVbGGdvHFuQ,12718
+bodhi_client-7.0.1.dist-info/COPYING,sha256=bggKngWIsEXAi3MHayPI2PTB43-WQ_PBjFkDU14CIiQ,18018
+bodhi_client-7.0.1.dist-info/METADATA,sha256=Uz8bqpGXc2nRN5uaxWPZ7oP3UXr4dX741-iyNHZbl_E,1393
+bodhi_client-7.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bodhi_client-7.0.1.dist-info/entry_points.txt,sha256=UezO4fPbH9k8AunXxraGih6Q5B0f9RaUdsw8AFL_RLs,46
+bodhi_client-7.0.1.dist-info/RECORD,,
