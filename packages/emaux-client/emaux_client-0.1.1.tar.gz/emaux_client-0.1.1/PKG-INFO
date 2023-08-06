@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: emaux_client
+Version: 0.1.1
+Summary: A client package to connect to an Emaux pool pump
+Project-URL: Homepage, https://github.com/dan-turner/emaux_client
+Project-URL: Bug Tracker, https://github.com/dan-turner/emaux_client/issues
+Author-email: Dan Turner <agile.hope1460@nomnom.me>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Emaux Client
+
+This is a package to connect to an Emaux pool pump.
