@@ -1,0 +1,7 @@
+polymers-0.0.6.dist-info/METADATA,sha256=2uU7zJIzRrmrXFgfV4MxVvt7rH9ILzHjKKgFvwKiMqg,7666
+polymers-0.0.6.dist-info/WHEEL,sha256=HYdW-Tdo-1HovXL_fO5fPIE7X5uRmsUvYOfOBDmAisg,103
+polymers-0.0.6.dist-info/license_files/LICENSE,sha256=9_IlE14eyQsCszBHeYx8zPMNzGKIAZsbXOhecqKJNwo,1663
+polymers/__init__.py,sha256=hsVZR7agC05B2LKh1o3-Xj95Uziyiy2NP0_kS0aEM4k,136
+polymers/ffi.py,sha256=l_i047dsYP8cOaqoz7oL9iajRvokRLdvFCPAGLcEz-U,118
+polymers/native.so,sha256=6-pYs6Fpqwpx7Kaup1ahITiaX1Kqqeaod8JF9ZkhUuw,16440
+polymers-0.0.6.dist-info/RECORD,,
