@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: defog
+Version: 0.2.0
+Summary: Defog is a Python library that helps you generate SQL queries from natural language questions.
+Author: Full Stack Data Pte. Ltd.
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
