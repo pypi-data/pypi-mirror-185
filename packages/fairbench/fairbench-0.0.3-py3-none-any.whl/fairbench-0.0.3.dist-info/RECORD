@@ -1,0 +1,13 @@
+fairbench/__init__.py,sha256=EIIEDWbbkw2WT84ssTKyjcE6oCLIdMkEN_r92aeiV8g,166
+fairbench/algorithms.py,sha256=3es1puDhsOCwHHCQTr1ScHAk3PUUKOVYf4OcNtMFm5o,1784
+fairbench/fork.py,sha256=Lk637xdoqEfyAq60rDxc2oFCAPBxxpeJzmb73n5xoXw,6939
+fairbench/output.py,sha256=aUtIgzlKuBLL14RgXPh6vJjJUeSfJn3UJX8jkqLFa-w,1407
+fairbench/reporting.py,sha256=jKxIT_xi0Wz7eRur0wLTgOB4KPW7HCRlVo424SyIqtU,768
+fairbench/metrics/__init__.py,sha256=i2kNaDKTfTSEh1aGZ83ByaVXwv0gYE-guFNjj9XlF6I,154
+fairbench/metrics/classification.py,sha256=R9da-LccRjnDXsMxFl6YLQRXm_siUKRV_3P1zmxztEA,184
+fairbench/metrics/disparate_impact.py,sha256=Kjc8uBzvryTKxV3WUj4LcDmH8ibGKe3H0WTFjzElxuw,716
+fairbench/metrics/disparate_mistreatment.py,sha256=RSxytc1BM6zrsAcHJ1Z493-KxYSKfL8-uH5BXufz_C4,1444
+fairbench-0.0.3.dist-info/METADATA,sha256=KofFP2gp70aokxQkPbGdwKPtRYaA_7PeVPah96VAYg0,714
+fairbench-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fairbench-0.0.3.dist-info/top_level.txt,sha256=V_xpM0npsVDF1PcMECNA-pE1JrkHNp3p62aiR-7iqDk,10
+fairbench-0.0.3.dist-info/RECORD,,
