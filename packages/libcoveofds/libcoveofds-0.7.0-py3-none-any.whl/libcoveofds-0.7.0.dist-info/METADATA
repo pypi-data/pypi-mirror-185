@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: libcoveofds
+Version: 0.7.0
+Summary: A data review library
+Home-page: https://github.com/Open-Telecoms-Data/lib-cove-ofds
+Author: Open Data Services
+Author-email: code@opendataservices.coop
+Project-URL: Documentation, https://libcoveofds.readthedocs.io/en/latest/
+Project-URL: Issues, https://github.com/Open-Telecoms-Data/lib-cove-ofds/issues
+Project-URL: Source, https://github.com/Open-Telecoms-Data/lib-cove-ofds
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: jsonschema
+Requires-Dist: requests
+Requires-Dist: jsonref
+Requires-Dist: json-merge-patch
+Requires-Dist: rfc3987
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+
+A data review library
