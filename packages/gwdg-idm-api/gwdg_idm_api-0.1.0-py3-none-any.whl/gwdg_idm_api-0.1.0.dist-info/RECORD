@@ -1,0 +1,11 @@
+gwdg_idm_api/__init__.py,sha256=1XRgaYJQpWucTEt4OusIB4ps56Kiok4vnNtzzdjKRe0,132
+gwdg_idm_api/_version.py,sha256=iyxbHkgS1yJGtIeySh-gmqzwOuLbVveAe9CoQYWfZ0c,160
+gwdg_idm_api/benutzerverwaltung.py,sha256=LGft1XsUoFGRY3rM5gfZ2FXyjYCWypyCaOjwGGhLPmE,4181
+gwdg_idm_api/models.py,sha256=JFSXL5DPilWYJPuJAos_dT6P1JeOlz3ePLnJc1b4TFE,6578
+gwdg_idm_api/string_cleaner.py,sha256=ygKj0WUxEUc8hqvNvks9PJo-WwBBpYBv1fEs8X1sQgs,6878
+gwdg_idm_api/util.py,sha256=mzyFo8dYBkC-cU4BrqhSLKQxyfwXeT9woqtjo6lQOc8,1350
+gwdg_idm_api-0.1.0.dist-info/LICENSE,sha256=3VHibT6Haz7qhKTzgkZdGFCTT_iKx-pfQLMM7hofnRo,1085
+gwdg_idm_api-0.1.0.dist-info/METADATA,sha256=0ad8FrGcuvOSGWUT-w18uKGMs5g9tN1n6gOX6IOHEHs,903
+gwdg_idm_api-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gwdg_idm_api-0.1.0.dist-info/top_level.txt,sha256=MuqsMCTw71NPCQQmwPKLXgmDcVD4yHlI87_lYTNV-I8,13
+gwdg_idm_api-0.1.0.dist-info/RECORD,,
