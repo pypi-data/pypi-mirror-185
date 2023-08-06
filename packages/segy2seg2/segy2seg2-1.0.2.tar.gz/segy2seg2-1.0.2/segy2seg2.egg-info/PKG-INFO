@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: segy2seg2
+Version: 1.0.2
+Summary: segy2seg2
+Author: Shanu Biswas
+Author-email: shanubiswas119@gmail.com
+Keywords: segy,seismic,seg2,segy to seg2 converter,segy to dat file converter,segy to dat file converter using python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A package to convert segy seismic file to seg2 (dat) file
