@@ -1,0 +1,16 @@
+boto3
+httpx
+phiterm==1.0.0.dev4
+polars
+pyarrow
+pydantic
+sqlmodel
+
+[aws]
+boto3
+
+[dev]
+mypy
+black
+pytest
+types-PyYAML
