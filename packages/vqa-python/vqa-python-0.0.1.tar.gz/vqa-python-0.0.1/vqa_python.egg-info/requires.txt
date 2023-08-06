@@ -1,0 +1,9 @@
+streamlit
+pyyaml==5.1
+torch
+numpy
+transformers
+tensorflow
+unidecode
+torchvision
+gdown
