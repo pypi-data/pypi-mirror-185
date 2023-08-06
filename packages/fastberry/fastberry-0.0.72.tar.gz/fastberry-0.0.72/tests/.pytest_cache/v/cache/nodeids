@@ -1,0 +1,4 @@
+[
+  "automated-testing/test_main.py::test_all_tasks",
+  "automated-testing/test_main.py::test_search"
+]
