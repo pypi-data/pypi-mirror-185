@@ -1,0 +1,17 @@
+transientNamer/.DS_Store,sha256=2WJKfI4yv7h-vR0fvg7ZUcInI36ZuufRUP4YYwvfccM,6148
+transientNamer/__init__.py,sha256=VLsUccRh3deeOca_nfoRH9j8X2kCSsALDUqLnJw3Nxc,181
+transientNamer/__version__.py,sha256=jMc7UM2pASY9F8z0XMALQbSXxGCAxWPyeXQlarwD0VI,22
+transientNamer/astronotes.py,sha256=dVSeS-yliJ-WpFN-LLqWJwUprA7-S672_6Rt06-2k2g,20254
+transientNamer/cl_utils.py,sha256=Cv7aehuofS7Yasb_DJ9833uK6UNbeviu4X3Tw4ty2HA,8852
+transientNamer/default_settings.yaml,sha256=DVDoglfuJl5nP2_eEG8xi6gacdCmrk1mrhq2SkoZxcU,2218
+transientNamer/search.py,sha256=xInkBOnyw890O2bi4lImmfXYgA_FoI72OTpqs3FjXxo,52991
+transientNamer/test_settings.yaml,sha256=oKXevZafoDhkSrMn8F0QqkYFeUMq06ITCt9KZoTRQTQ,2130
+transientNamer/utKit.py,sha256=A-f2PadsbdwLeDmU1xgPMCnjRs3-z4pRbL6FX4S1eRc,3390
+transientNamer/commonutils/__init__.py,sha256=wxL57Hl5BHIFg46WoYDtzYIfiM4LHyZVtQOZxUOd9Hc,129
+transientNamer/commonutils/getpackagepath.py,sha256=vr9I86INCZQ5-_lbwvCmp1PJfEiyzuEsOmcwyoZRGyU,327
+transientNamer-0.4.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+transientNamer-0.4.5.dist-info/METADATA,sha256=HlHQaai0yISpCn3DykBm6MZoFTBRI-yA3RRogYkjDsQ,2782
+transientNamer-0.4.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+transientNamer-0.4.5.dist-info/entry_points.txt,sha256=r1TUgDebnxA_DwCD1mGCBcFDrKgLZvkvaC-DR1F-UYA,64
+transientNamer-0.4.5.dist-info/top_level.txt,sha256=zGgKq2yyrX6kxoM77KFaugTw6opeLF1G3cpQCD54s5c,15
+transientNamer-0.4.5.dist-info/RECORD,,
