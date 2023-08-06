@@ -1,0 +1,16 @@
+cloner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloner/__main__.py,sha256=RjdgqIHgVHZMw_R5NtF5lCtN7GQibgCqzW3Nga5dP0Q,240
+cloner/__version__.py,sha256=8EjIC8Er4Bn8PhErizTXrZVYTgb6tHgj00LrrBVNYXA,22
+cloner/cli.py,sha256=rkY9AbffNnTdFF3jUKU2cHgsr8IUwyLozLGi5KGXRhk,2967
+cloner/clone_repos.py,sha256=yqoHCkMyvogeToTOqTFZzY3nka_4Av_2RbqOA8C-nDE,1127
+cloner/cloner_process.py,sha256=YOmjeVzrXHKVSz1nJV-i_bg5Zyeh2Ufb8_8ahJI7Juk,878
+cloner/obtain_repos.py,sha256=feZyDx8eS0NNCfgDFZvKI4zCIltnmF57JOu-VjeZxLM,2028
+cloner/put_repos_in_queue.py,sha256=BSO7D3sbX7M5RavLGookDoBcIN5GvJHRK3yIEMxqgag,761
+cloner/repository.py,sha256=eXcytaEDDn34VqvBp_BL-9ThNniANdLTtOnGRLB2VK0,596
+cloner/split_queue.py,sha256=nCRrgHK9G7VaUogU_kgMnS3kiWsYoC2ZP2XuJACxOAI,2629
+wr_cloner-1.6.0.dist-info/LICENSE,sha256=ayG0_5IJaAWFzBnyn-PUfjKNat7Ut7GXV4U6WhuDw4o,1062
+wr_cloner-1.6.0.dist-info/METADATA,sha256=LSs7-Smegn1Rb-b7I1Vf8XWUHAbAKsGmcxYnMgiEPSw,3857
+wr_cloner-1.6.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+wr_cloner-1.6.0.dist-info/entry_points.txt,sha256=Cgkdj-34lkCAReyt3gn7eG7-YpgrPq5hURFpdsvk-PM,42
+wr_cloner-1.6.0.dist-info/top_level.txt,sha256=okGHNKBqfTQa5K-G4Mc4Mg8rCozczFW_an68ASeN7uo,7
+wr_cloner-1.6.0.dist-info/RECORD,,
