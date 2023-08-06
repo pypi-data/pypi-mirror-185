@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: authz-sdk
+Version: 0.0.5
+Summary: Authz Python SDK
+Home-page: https://github.com/eko/authz-python-sdk
+Download-URL: https://github.com/eko/authz-python-sdk/archive/refs/tags/v0.0.5.tar.gz
+Author: Vincent Composieux
+Author-email: authz@composieux.fr
+License: MIT
+Keywords: authorization,authz,sdk,abac,rbac
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
