@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: mure
+Version: 0.1.0
+Summary: Perform multiple HTTP requests in parallel – without writing boilerplate code or worrying about async functions.
+Author: Severin Simmler
+Author-email: s.simmler@snapaddy.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp[speedups] (>=3.8.3,<4.0.0)
+Description-Content-Type: text/markdown
+
+# mure
+
+[![downloads](https://static.pepy.tech/personalized-badge/mure?period=total&units=international_system&left_color=black&right_color=black&left_text=downloads)](https://pepy.tech/project/mure)
+[![downloads/month](https://static.pepy.tech/personalized-badge/mure?period=month&units=abbreviation&left_color=black&right_color=black&left_text=downloads/month)](https://pepy.tech/project/mure)
+[![downloads/week](https://static.pepy.tech/personalized-badge/mure?period=week&units=abbreviation&left_color=black&right_color=black&left_text=downloads/week)](https://pepy.tech/project/mure)
+
+This is a thin layer on top of [`aiohttp`](https://docs.aiohttp.org/en/stable/) to perform **mu**ltiple HTTP **re**quests in parallel – without writing boilerplate code or worrying about `async` functions.
+
+Install the latest stable version from [PyPI](https://pypi.org/project/mure):
+
+```
+pip install mure
+```
+
+## Usage
+
+Pass an iterable of dictionaries with at least a value for `url` and get a generator with the responses:
+
+```python
+>>> import mure
+>>> resources = [
+...     {"url": "https://httpbin.org/get"},
+...     {"url": "https://httpbin.org/get", "params": {"foo": "bar"}},
+...     {"url": "invalid"},
+... ]
+>>> responses = mure.get(resources, batch_size=2)
+>>> responses
+<generator object get at 0x7fc2a9aae420>
+>>> for resource, response in zip(resources, responses):
+...     print(resource, "status code:", response["status"])
+...
+{'url': 'https://httpbin.org/get'} status code: 200
+{'url': 'https://httpbin.org/get', 'params': {'foo': 'bar'}} status code: 200
+{'url': 'invalid'} status code: 0
+```
+
+The keyword argument `batch_size` defines the number of requests to perform in parallel (don't be too greedy).
+
+There is also a convenience function for POST requests:
+
+```python
+>>> resources = [
+...     {"url": "https://httpbin.org/post"},
+...     {"url": "https://httpbin.org/post", "json": {"foo": "bar"}},
+...     {"url": "invalid"},
+... ]
+>>> responses = mure.get(resources)
+```
+
+You can even mix HTTP methods in the list of resources (but have to specify the method for each resource):
+
+```python
+>>> resources = [
+...     {"method": "GET", "url": "https://httpbin.org/get"},
+...     {"method": "GET", "url": "https://httpbin.org/get", "params": {"foo": "bar"}},
+...     {"method": "POST", "url": "https://httpbin.org/post"},
+...     {"method": "POST", "url": "https://httpbin.org/post", "json": {"foo": "bar"}},
+...     {"method": "GET", "url": "invalid"},
+... ]
+>>> responses = mure.request(resources)
+```
+
