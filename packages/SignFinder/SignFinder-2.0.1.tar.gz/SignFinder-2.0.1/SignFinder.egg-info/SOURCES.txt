@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+SignFinder/__init__.py
+SignFinder.egg-info/PKG-INFO
+SignFinder.egg-info/SOURCES.txt
+SignFinder.egg-info/dependency_links.txt
+SignFinder.egg-info/entry_points.txt
+SignFinder.egg-info/not-zip-safe
+SignFinder.egg-info/requires.txt
+SignFinder.egg-info/top_level.txt
