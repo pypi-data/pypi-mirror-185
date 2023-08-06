@@ -1,0 +1,10 @@
+dantzig-0.2.0.dist-info/METADATA,sha256=1df0AwcMizhyb5w6k5VwIsIAjj9C8Eag05sNRSj0bLQ,3658
+dantzig-0.2.0.dist-info/WHEEL,sha256=DurjWSQEZIAkkz5lL53EyD35BxtZ1xsf20Uk-9FnoM8,96
+dantzig-0.2.0.dist-info/license_files/LICENSE,sha256=ug7yQAeS60TgoPXafcB1XGcpOEqk4Ws2VHrCAEgJZcY,1093
+dantzig/exceptions.py,sha256=Ml1DXnquQjULqzO9nMYl5pNQQV4Nqwq2O8345mD4BKA,206
+dantzig/model.py,sha256=dj-RopHfRn4CXQnUyWxbQo8nEdvsVrQlNPYH4R3Gk10,10738
+dantzig/optimize.py,sha256=0inbrxthFk6jGFmeqJUMgSiHBWvwcSZCR6UVdFHUyRQ,2891
+dantzig/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dantzig/__init__.py,sha256=gWqvQqI3mbSGnBvSvqRd863oBLjYVITJZAqHFXWM4GY,252
+dantzig/rust.pyd,sha256=MIVvvo5I_MG7FIgtIp_zw8jVjKUSzQq4kCaxh7eD90g,422400
+dantzig-0.2.0.dist-info/RECORD,,
