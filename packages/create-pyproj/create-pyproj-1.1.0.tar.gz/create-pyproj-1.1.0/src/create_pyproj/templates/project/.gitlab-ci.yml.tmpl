@@ -1,0 +1,19 @@
+include:
+  - template: Security/SAST.gitlab-ci.yml
+
+stages:
+  - test
+  - build
+
+image: registry.gitlab.com/evenergi/secdevops/build-tools/pybuild3.10:latest
+
+build:
+  stage: build
+  script:
+    - pipenv check
+    - python scripts/pipfile_to_config.py
+    - semantic-release publish --post
+    - python -m build --sdist --wheel .
+    - twine upload --verbose --user nickoszee -p $PYPI_PASSWORD dist/*
+  only:
+    - main

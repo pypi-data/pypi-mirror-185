@@ -1,0 +1,6 @@
+pydantic
+pyyaml
+pyfiglet
+mako
+tomli
+pipenv
