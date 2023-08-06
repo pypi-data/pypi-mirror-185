@@ -1,0 +1,11 @@
+# Include the license file
+include LICENSE
+
+# Include the test files
+recursive-include tests *
+
+# Exclude these files
+recursive-exclude examples *
+recursive-exclude plots *
+recursive-exclude atmdata *
+recursive-exclude interplanetary-data *
