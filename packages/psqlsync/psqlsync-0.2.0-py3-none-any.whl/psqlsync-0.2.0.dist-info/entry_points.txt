@@ -1,0 +1,4 @@
+[console_scripts]
+prep=psqlsync.ghremote.cli:run
+psqlsync=psqlsync.cli:run
+
