@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "beaker-pyteal"
+version = "0.4.2"
+description = "A Framework for building PyTeal Applications"
+license = "MIT"
+authors = ["Ben Guidarelli <ben@algorand.com>"]
+readme = "README.md"
+homepage = "https://beaker.algo.xyz"
+repository = "https://github.com/algorand-devrel/beaker"
+keywords = ["pyteal", "algorand"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+]
+packages = [
+    { include = "beaker" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyteal = "~0.20.1"
+py-algorand-sdk = ">=1.16.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+flake8 = "^6.0.0"
+mypy = "^0.991"
+black = {extras = ["d"], version = "^22.12.0"}
+pytest-cov = "^4.0.0"
+pre-commit = "^2.20.0"
+flake8-tidy-imports = "^4.8.0"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "~5.0.2"
+sphinx-rtd-theme = "~1.0.0"
+
+[tool.poetry.group.examples.dependencies]
+numpy = "^1.23.0"
+matplotlib = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
