@@ -1,0 +1,16 @@
+themachinethatgoesping-0.5.5.dist-info/RECORD,,
+themachinethatgoesping-0.5.5.dist-info/METADATA,sha256=UF1Jg7euNkmN-sbsUVsbtl8-rzno44n3YbvXllg45gY,21581
+themachinethatgoesping-0.5.5.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+themachinethatgoesping-0.5.5.dist-info/WHEEL,sha256=BzpjRZ-FSXnCjB7mh7DLSosj3l1xBYoF-ZTog8ZUk-o,134
+themachinethatgoesping/tools.cpython-38-x86_64-linux-gnu.so,sha256=jkegXDrgctkKyVNCqL_uJZpP4R2JqvD1uUN3auGSVOo,1567432
+themachinethatgoesping/__init__.py,sha256=JFAd0YIjS8znuc-UKy7iqObU-rJNG7Rx9DiaXXZN4kw,1776
+themachinethatgoesping/navigation.cpython-38-x86_64-linux-gnu.so,sha256=xSdWoh-NBbWhX1HPPMSXQ-u2y91xHY9T_X96IMnpkGI,3015264
+themachinethatgoesping/echosounders.cpython-38-x86_64-linux-gnu.so,sha256=pz5Yj9nrqKgODF25_4Lbrp8Q7GiphMmqhjssV-_b3ZU,12107968
+themachinethatgoesping/gridding/__init__.py,sha256=S5i_1i1bFD7EJNSrYJyjFMlGJYL8Fs_uyWQeJ-T94I8,241
+themachinethatgoesping/gridding/echogrid.py,sha256=1H6DAUG3fQp-SiSYxLBjG0EL6b0uuuoDI51Lq0ILUHk,14520
+themachinethatgoesping/gridding/forwardgridder.py,sha256=X9xFJFof9tHb49VwtVMMQMctB5V4tEwV6XuVQFZoLT4,15684
+themachinethatgoesping/gridding/functions/__init__.py,sha256=-zEPPo7n3FrN5wQgMaa0F5OTVKK3s2m1hNV7IHq_mkA,58
+themachinethatgoesping/gridding/functions/gridfunctions.py,sha256=GVPeJV54lORLWqfXnVWFfwMbQHrOuxFw_fweyEFt09U,6682
+themachinethatgoesping/gridding/functions/helperfunctions.py,sha256=SOenEIjHNrrY_LOr3WoSM2UwOMB0H_w6aOmRY0Dhnrg,837
+themachinethatgoesping/tools_ext/__init__.py,sha256=5exFdq8PrNUGfzpQJ_H-7njo20NcCOm5KyzfnbkekO4,214
+themachinethatgoesping/tools_ext/timeconv_ext.py,sha256=R9ZSAAYwvaRQmWDu3Rhuq_hA4e02BF67XgHRtNczGIY,2231
