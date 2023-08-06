@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: iblpybpod
+Version: 2.0.2
+Summary: IBL implementation of pybpod software
+Home-page: https://github.com/int-brain-lab/iblpybpod/
+Author: IBL Staff
+License: MIT
+Requires-Python: >3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aenum
+Requires-Dist: AnyQt
+Requires-Dist: confapp
+Requires-Dist: markdown2
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: PyOpenGL
+Requires-Dist: PyQt5
+Requires-Dist: PyQtWebEngine
+Requires-Dist: pyserial
+Requires-Dist: pyusb
+Requires-Dist: PyYAML
+Requires-Dist: QScintilla
+Requires-Dist: scipy
+Requires-Dist: visvis
+Requires-Dist: opencv-python (==4.3.0.36) ; sys_platform != "win32"
+Requires-Dist: opencv-python ; sys_platform == "win32"
+
+
+iblpybpod is a GUI application that enables interaction with the Bpod device from [Sanworks](https://sanworks.io/). Much credit 
+and thanks go to the original creators of the [pybpod project](https://github.com/pybpod/pybpod).
