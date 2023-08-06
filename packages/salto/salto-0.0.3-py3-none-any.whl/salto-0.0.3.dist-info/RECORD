@@ -1,0 +1,9 @@
+salto/__init__.py,sha256=HF1O4MCEk72nr3gIMt6ZtIboXz8zuXilUmSKeye1_Vg,22
+salto/axis.py,sha256=R7SDtg1R__O3SWF_p7boWsFDSe9k_gWhKNVjUd8_wd0,6841
+tests/__init__.py,sha256=f-pAwivFHzDTxkzhAYfqk8HsX5g23_ImSULhZ5I8CcQ,112
+tests/test_axis.py,sha256=JbCyKGsS4BUCcWidYwVD3JldR4ExgZyOETyrlHXbR8Q,797
+salto-0.0.3.dist-info/LICENSE,sha256=HC5LAxQu7O8t6MLYb7ZbMBgPnmlzbuF0dbxAInz0H1k,1087
+salto-0.0.3.dist-info/METADATA,sha256=byDSKEtlI81W1kZMYrNMZd9-tkfwyncxmHYtIn8kT80,2625
+salto-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+salto-0.0.3.dist-info/top_level.txt,sha256=45HfHBM7s5eLNS1pkPGfnwQ3qd5SuaKX4Kq3-TeAIYs,12
+salto-0.0.3.dist-info/RECORD,,
