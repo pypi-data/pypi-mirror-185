@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: py-endway-api
+Version: 0.1.0
+Summary: Library for convenient work with the EndWay forum
+Home-page: https://endway.su/members/366/
+Author: life
+Author-email: I-will-tell-you@everything.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: bs4
+
+# EndWay Api
+
+Library for convenient work with the EndWay forum
+
+
+
+### Installation
+
+```
+
+pip install py-endway-api
+
+```
+
+
+
+### Get started
+
+How to start working with the library
+
+
+
+```Python
+
+from py-endway-api import EndWayApi
+
+
+
+# Instantiate a EndWayApi object
+
+ewApi = EndWayApi("...example xf_user...")
+
+
+
+# call the method of sending a message to the thread
+
+result = ewApi.add_reply(1, "Hello")
+
+print(result)
+
+```
