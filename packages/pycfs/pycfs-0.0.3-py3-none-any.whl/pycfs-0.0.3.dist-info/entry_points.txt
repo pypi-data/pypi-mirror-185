@@ -1,0 +1,3 @@
+[console_scripts]
+pycfs=pycfs.util.cli_handler:main
+
