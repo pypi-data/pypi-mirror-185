@@ -1,0 +1,3 @@
+[console_scripts]
+pypi-token-client=pypi_token_client.cli:cli_main
+
