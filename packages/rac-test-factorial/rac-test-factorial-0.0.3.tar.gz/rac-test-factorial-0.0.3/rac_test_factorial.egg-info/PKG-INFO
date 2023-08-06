@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: rac-test-factorial
+Version: 0.0.3
+Summary: Factorial module.
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: Linux
+
+A test module for our book.
+
