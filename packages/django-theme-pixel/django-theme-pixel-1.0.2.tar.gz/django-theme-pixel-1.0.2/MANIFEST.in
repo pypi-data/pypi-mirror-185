@@ -1,0 +1,5 @@
+include LICENSE.md
+include README.rst
+recursive-include theme_pixel/static *
+recursive-include theme_pixel/templates *
+recursive-include docs *
