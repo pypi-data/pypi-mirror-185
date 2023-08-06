@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: risticks
+Version: 1.0.1
+Summary: Библиотека для удобной работы с API Risticks
+Home-page: https://github.com/pip64/risticks-api
+Author: pip64, ierhon
+Author-email: mrpip64@mail.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+**Official API for risticks.xyz**
+
+Example Code:
+```py
+import risticks
+
+acc = risticks.Account(749202624171081779)
+
+likes = acc.likes
+dislikes = acc.dislikes
+username = acc.username
+
+print(f"{username}: {likes} likes, {dislikes} dislikes")```
+
