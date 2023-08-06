@@ -1,0 +1,12 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+gslconsts/__about__.py
+gslconsts/__init__.py
+gslconsts/consts.py
+gslconsts.egg-info/PKG-INFO
+gslconsts.egg-info/SOURCES.txt
+gslconsts.egg-info/dependency_links.txt
+gslconsts.egg-info/requires.txt
+gslconsts.egg-info/top_level.txt
