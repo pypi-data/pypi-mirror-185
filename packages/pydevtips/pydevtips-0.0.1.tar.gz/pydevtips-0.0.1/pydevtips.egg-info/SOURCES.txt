@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+pydevtips/__init__.py
+pydevtips/fftconvolve.py
+pydevtips.egg-info/PKG-INFO
+pydevtips.egg-info/SOURCES.txt
+pydevtips.egg-info/dependency_links.txt
+pydevtips.egg-info/requires.txt
+pydevtips.egg-info/top_level.txt
