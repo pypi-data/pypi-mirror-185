@@ -1,0 +1,2 @@
+[console_scripts]
+ecc_qiskit_wrapper = mqt.qecc.ecc_qiskit_wrapper:main
