@@ -1,0 +1,16 @@
+anyio
+aiofile
+fsspec
+loguru
+pydantic
+dill
+
+[cloud]
+gcsfs
+s3fs
+
+[gcs]
+gcsfs
+
+[s3]
+s3fs
