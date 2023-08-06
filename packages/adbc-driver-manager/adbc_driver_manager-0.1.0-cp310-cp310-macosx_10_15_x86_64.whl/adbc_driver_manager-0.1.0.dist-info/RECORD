@@ -1,0 +1,15 @@
+adbc_driver_manager/adbc.h,sha256=7GIiMeatHhn5OUofawgYRs4FhPWsx8umoaXXy1cGxYQ,48739
+adbc_driver_manager/adbc_driver_manager.h,sha256=pBD2H0s26sGcYcmohsGdYMOOKx02_FAUg5O1eULoFvY,3460
+adbc_driver_manager/_version.py,sha256=90XJ0YVfNMVV5LO2o_Od-JbLxo9qkDrMSXCUFootTSw,7108
+adbc_driver_manager/dbapi.py,sha256=VEy9fqSY_c1VFI_BuIGRcQwg7MTacTdIx8rtRCKYEeE,27204
+adbc_driver_manager/__init__.py,sha256=L6ti2c9JXVQ1UX9dm9XTBQmK371goCnl-gZnT2SpCnY,2134
+adbc_driver_manager/_lib.pyx,sha256=_6Z7IDdrtbC2PjTeQ61V6gz9c2_eRjbzBtl-DTT--PI,30434
+adbc_driver_manager/adbc_driver_manager.cc,sha256=kJgku-eh0aVd45URG0d7B9FiX5VTqJH0ccKrqdaFZTA,30424
+adbc_driver_manager/_static_version.py,sha256=_6TcUf2PmbeRNp5XOVoNpqUp4KU7E8E09LLePuu3ck8,60
+adbc_driver_manager/_lib.cpython-310-darwin.so,sha256=b8NrQ0oIWsdfOTac2dHdE5YoxORky8fKDGtSJWOMHRg,250064
+adbc_driver_manager-0.1.0.dist-info/RECORD,,
+adbc_driver_manager-0.1.0.dist-info/WHEEL,sha256=zst1g9R8aYeeErNlettjC8XiRzZ23gBXlMBKueiQ9-0,112
+adbc_driver_manager-0.1.0.dist-info/NOTICE.txt,sha256=ork4LFdNC7tkM_o0ZVZZBsBc3mUQAnu9tKovmU3-w60,166
+adbc_driver_manager-0.1.0.dist-info/top_level.txt,sha256=mDcKQErjAAj_tTVBqA3LLh9T69P_YY_P2bFkUsshgT4,20
+adbc_driver_manager-0.1.0.dist-info/LICENSE.txt,sha256=07u5dkCB1JfPIULSR76djK-hNKPbDrGexKS6Se2HJBE,14040
+adbc_driver_manager-0.1.0.dist-info/METADATA,sha256=iibIgAk3_ZwMda13KZeAbgTsOxUgqeYb7ywUT7w8C_c,644
