@@ -1,0 +1,8 @@
+grippy/__init__.py,sha256=BzeHgDtm-QWRppKlntJJjALhdAljur7TXrGHBCREvsI,27
+grippy/app.py,sha256=-fAWBtj8a2ha1qOKLzIyjL0ozqGEdIhi2RMldHkDT64,1368
+grippy/parse.py,sha256=qhMt_1cLwO1AEMOhhEt1ExBXYqZnPbC1gRIABVJ12Fw,668
+grippy/proto_message.py,sha256=xjZQ6W1BSfE6NmKDdrJXtVF2rA0dtj56urCUWHG2RRA,1019
+grippy/types.py,sha256=ks3plchyOEmpDdd8kxkv1QJ04Q3Ijphzz-N8pONLLbs,270
+grippy-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+grippy-0.0.1.dist-info/METADATA,sha256=xZejQ_EN3mclvFWx3bddFNuGWWWuhMqxdWAMQL9HRuM,532
+grippy-0.0.1.dist-info/RECORD,,
