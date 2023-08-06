@@ -1,0 +1,8 @@
+MANIFEST.in
+README.rst
+setup.py
+zxhtom.egg-info/PKG-INFO
+zxhtom.egg-info/SOURCES.txt
+zxhtom.egg-info/dependency_links.txt
+zxhtom.egg-info/top_level.txt
+zxhtom.egg-info/zip-safe
