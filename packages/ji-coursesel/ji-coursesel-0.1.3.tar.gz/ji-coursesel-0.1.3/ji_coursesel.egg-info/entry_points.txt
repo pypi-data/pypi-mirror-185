@@ -1,0 +1,2 @@
+[console_scripts]
+ji-coursesel = courseselcli.command_line:main
