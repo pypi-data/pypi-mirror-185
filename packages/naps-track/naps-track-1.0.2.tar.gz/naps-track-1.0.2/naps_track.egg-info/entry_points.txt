@@ -1,0 +1,3 @@
+[console_scripts]
+naps-track = naps.naps_track:main
+

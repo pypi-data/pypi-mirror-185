@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+naps/__init__.py
+naps/aruco.py
+naps/cost_matrix.py
+naps/matching.py
+naps/naps_track.py
+naps/sleap_utils.py
+naps_track.egg-info/PKG-INFO
+naps_track.egg-info/SOURCES.txt
+naps_track.egg-info/dependency_links.txt
+naps_track.egg-info/entry_points.txt
+naps_track.egg-info/requires.txt
+naps_track.egg-info/top_level.txt
