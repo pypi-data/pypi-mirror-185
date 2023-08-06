@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+import asyncio
+import sys
+
+from iacer.exceptions import IacerException
+from iacer.main import run
+
+if __name__ == "__main__":
+    if sys.version_info[0] == 3 and sys.version_info[1] >= 6:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        try:
+            loop.run_until_complete(run())
+        finally:
+            loop.close()
+    else:
+        raise IacerException("Please use Python 3.6+")
