@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ElectronCounting
+Version: 0.1.5
+Summary: Count single electron in direct electron detector data
+Home-page: https://github.com/wdwzyyg/ElectronCounting.git
+Author: Jingrui Wei
+Author-email: jwei74@wisc.edu
+License: MIT
+Keywords: direct electron detector,electron microscopy,data analysis,object detection,Faster R-CNN
+Requires-Dist: numpy (>=1.20.1)
+Requires-Dist: scikit-learn (>=1.0.2)
+Requires-Dist: matplotlib (>=3.2.2)
+Requires-Dist: kornia (>=0.6.9)
+
