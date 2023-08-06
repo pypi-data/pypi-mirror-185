@@ -1,0 +1,9 @@
+bimms/BIMMS.py,sha256=w1CqV1yA1xjQnIs5wIxDIzi1xeXt6iokmoOzZqO-tSQ,49049
+bimms/Measures.py,sha256=c0_vY2mQ1jo6BdCLR_0zeDbE_3sfXi1VxeuqSJgLWzM,802
+bimms/PostProcessing.py,sha256=NWzuTujNkbkJcGJ3TQdgiLgG8xMJlhZ96SMwh-3GLy8,3607
+bimms/__init__.py,sha256=eIv-k6iBp8yBwuPreCQDgo29yj-C_H2WyUugw1evDCY,526
+bimms/constants.py,sha256=z9MhW9voKoZWFkZF9kIKX_XKpLjJ_SKG0Qa7_NvR8ps,1371
+bimms-1.0.0.dist-info/METADATA,sha256=xFP-B6FpNDCiyscWIlu7rmjmA3UTAGKtYZYN7dVOnpU,382
+bimms-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bimms-1.0.0.dist-info/top_level.txt,sha256=DfKbPBFgCapXsbpf7yXoTMl7MKVN2GqXy6JxVIIO3RI,6
+bimms-1.0.0.dist-info/RECORD,,
