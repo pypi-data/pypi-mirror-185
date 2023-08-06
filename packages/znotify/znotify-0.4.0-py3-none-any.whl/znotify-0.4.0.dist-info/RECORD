@@ -1,0 +1,9 @@
+znotify/__init__.py,sha256=Hws0zRiNtGvBDH55vfnKrXNp6Jdvs9wMk4mthgSZbns,138
+znotify/client.py,sha256=onXa2fBdqxdymShU6dGsxZdcVtlplRzUeNtRajyGgRA,1432
+znotify/send.py,sha256=DnWpmmn5CmUPmjQsJkUIGRHICLEn956C0GLR5VjM3TU,161
+znotify/static.py,sha256=ukVpVNUJjni__YqyL38_XfPJr1tz_8zynsbHrviX5lo,219
+znotify/version.py,sha256=fgD6d64QfmR0d-u3kp_-3CknjyUGzAh_ra2fNF08s3w,189
+znotify-0.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+znotify-0.4.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+znotify-0.4.0.dist-info/METADATA,sha256=rpYYl6t_RwSeO5osSabU4d4PPcuSkDAZx_3DH0aHI5s,1282
+znotify-0.4.0.dist-info/RECORD,,
