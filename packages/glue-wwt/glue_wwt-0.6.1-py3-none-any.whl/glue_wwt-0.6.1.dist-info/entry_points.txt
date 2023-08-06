@@ -1,0 +1,2 @@
+[glue.plugins]
+wwt = glue_wwt:setup
