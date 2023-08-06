@@ -1,0 +1,12 @@
+fair_test/__init__.py,sha256=XbTNXp-FXe_pa4Wf1HMwnLeAZJsUrXaQnwJGd_63-8s,189
+fair_test/config.py,sha256=2I3jDZhIHM6MoX7i2rSRQ6qT40IL0g9uw42xr390UoA,613
+fair_test/fair_test.py,sha256=lArQAiY8eFbX5eLmSjgQzdJcQyN6GPkWQ1We__OZnnw,5808
+fair_test/fair_test_api.py,sha256=ITl9C0EnLKPPgWT4F8FpUUfiE9OYa_fPc-lY_TBTGMA,8644
+fair_test/fair_test_evaluation.py,sha256=VITWhzEYqNWISaGDGCPqZFTotjs1nyoTOKH9ZsUNLK8,14689
+fair_test/fair_test_logger.py,sha256=6jSgoqkkA8rySe7QCmyWXDZiYd8BZ3y8nSYnlpsKv9w,1870
+fair_test/metadata_harvester.py,sha256=2_SwZNeiC9qI5UYl3rIQz1gDpdzqJ0iG_KCp-keRYDE,16101
+fair_test/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fair_test-0.1.4.dist-info/METADATA,sha256=dFTPQIvSIcEvVLtLpZYFrFd8xEt8CJwGz1jM6D6iHtk,6657
+fair_test-0.1.4.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+fair_test-0.1.4.dist-info/licenses/LICENSE.txt,sha256=yfjs5XqBMUp5lxaFm0KQ0cm9CKjS5z3MD8l9qeQ4TVA,1106
+fair_test-0.1.4.dist-info/RECORD,,
