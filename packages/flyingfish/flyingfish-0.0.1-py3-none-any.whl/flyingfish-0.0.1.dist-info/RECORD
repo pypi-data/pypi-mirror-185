@@ -1,0 +1,12 @@
+flyingfish/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flyingfish/main.py,sha256=qjEZ96yBkU---UzlW8sRS4-l09cG5d74GT62xxHFBVM,471
+flyingfish/numericallist.py,sha256=eHd8rdj6qJBZykzekLuasOxB1vHbw2xuVm2H3iZ0iwE,5564
+flyingfish/other.py,sha256=8befS_PMQjTMjlq1Ma3A8bb3CwE1R2S0D2vuTKOfQKk,6215
+flyingfish/plot.py,sha256=BL5kbHc93eWov5gVTN5RPt-GCqtrf1vRlKd_KWSGm64,2253
+flyingfish/timeseries.py,sha256=6pSFS383BlDwjpVrcfynNY1yzQvOnSuYNJZUzTuB3HQ,6583
+flyingfish/write_report.py,sha256=pivo24DRp7mR5D9NyzR8C2Ubcn695dT8nlie-gMpsOo,2309
+flyingfish-0.0.1.dist-info/LICENSE,sha256=LR1TYtlOKIe4LsKQo-CnsD2pme8XQxgo6aO_EvlMvKI,1075
+flyingfish-0.0.1.dist-info/METADATA,sha256=htJJdriaCY99rSf8Rqz6AfpwIMxhQ4VhHvZ4SD5T9sc,2834
+flyingfish-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flyingfish-0.0.1.dist-info/top_level.txt,sha256=ZNqFX8Gs5PqYY5BnmRh8bjAeaFwWN9KBjayuQBsbytQ,11
+flyingfish-0.0.1.dist-info/RECORD,,
