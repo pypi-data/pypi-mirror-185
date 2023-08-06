@@ -1,0 +1,10 @@
+aiohttp
+beautifulsoup4
+fastapi
+flanautils
+playwright
+pytube
+requests
+ujson
+uvicorn
+yt-dlp
