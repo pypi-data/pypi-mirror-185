@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rp2040-tools
+Version: 0.0.7
+Summary: Some tools for RP2040
+Home-page: 
+Author: 曾钦李
+Author-email: 1838696034@qq.com
+Maintainer: 
+Maintainer-email: 
+License: MIT License
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# RP2040集成库
+
+## 还在更新中
