@@ -1,0 +1,10 @@
+setup.py
+work/squishom/__init__.py
+work/squishom/objectmaphelper.py
+work/squishom/remotesystem.py
+work/squishom/screen.py
+work/squishom/toplevelwindow.py
+work/squishom.egg-info/PKG-INFO
+work/squishom.egg-info/SOURCES.txt
+work/squishom.egg-info/dependency_links.txt
+work/squishom.egg-info/top_level.txt
