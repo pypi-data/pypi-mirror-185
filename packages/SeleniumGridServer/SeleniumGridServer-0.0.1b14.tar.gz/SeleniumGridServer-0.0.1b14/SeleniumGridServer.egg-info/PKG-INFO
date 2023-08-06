@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: SeleniumGridServer
+Version: 0.0.1b14
+Summary: ChokChaisak
+Home-page: https://test.pypi.org/user/ChokChaisak/
+Author: ChokChaisak
+Author-email: ChokChaisak@gmail.com
+License: ChokChaisak
+Keywords: SeleniumGridServer
+
+include README.md
