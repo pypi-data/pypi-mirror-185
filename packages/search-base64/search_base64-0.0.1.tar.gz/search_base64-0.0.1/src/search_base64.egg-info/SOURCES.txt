@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/search_base64/__init__.py
+src/search_base64/find.py
+src/search_base64.egg-info/PKG-INFO
+src/search_base64.egg-info/SOURCES.txt
+src/search_base64.egg-info/dependency_links.txt
+src/search_base64.egg-info/top_level.txt
