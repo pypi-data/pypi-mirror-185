@@ -1,0 +1,2 @@
+[console_scripts]
+catwallpaper = catwallpaper:main

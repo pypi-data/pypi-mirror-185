@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.py
+catwallpaper/__init__.py
+catwallpaper.egg-info/PKG-INFO
+catwallpaper.egg-info/SOURCES.txt
+catwallpaper.egg-info/dependency_links.txt
+catwallpaper.egg-info/entry_points.txt
+catwallpaper.egg-info/requires.txt
+catwallpaper.egg-info/top_level.txt
