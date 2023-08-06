@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lib-bme280
+Version: 0.1.0
+Summary: BME280 enviornment sensor library
+Home-page: UNKNOWN
+Author: Charles Redmond
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: smbus2
+
+UNKNOWN
+
