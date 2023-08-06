@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: logipass
+Version: 0.0.1
+Summary: Tool to generate safe, secure and random passwords
+Home-page: https://github.com/rahulmadanraju/LogiPass
+Author: Rahul Madan Raju
+Keywords: password,password-generator,passwords
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+Requires-Dist: importlib-metadata ; python_version < "3.9"
+
+# LogiPass
