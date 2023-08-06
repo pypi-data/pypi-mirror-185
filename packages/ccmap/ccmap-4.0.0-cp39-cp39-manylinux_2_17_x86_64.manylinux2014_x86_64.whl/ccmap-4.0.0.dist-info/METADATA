@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ccmap
+Version: 4.0.0
+Summary: A C implementation of a mesh based atomic pairwise distance computating engine, with docking pose generation capabilities and fast solvant accessible surface estimation
+Home-page: https://github.com/MMSB-MOBI/ccmap
+Author: G.Launay
+Author-email: pitooon@gmail.com
+Keywords: protein docking bioinformatics structure
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 5 - Production/Stable
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
