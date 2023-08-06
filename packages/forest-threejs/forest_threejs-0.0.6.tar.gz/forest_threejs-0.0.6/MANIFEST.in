@@ -1,0 +1,12 @@
+include forest_threejs/forest_threejs.min.js
+include forest_threejs/forest_threejs.min.js.map
+include forest_threejs/async-*.js
+include forest_threejs/async-*.js.map
+include forest_threejs/*-shared.js
+include forest_threejs/*-shared.js.map
+include forest_threejs/metadata.json
+include forest_threejs/package-info.json
+include README.md
+include LICENSE
+include package.json
+include assets/img/waternormals.jpg
