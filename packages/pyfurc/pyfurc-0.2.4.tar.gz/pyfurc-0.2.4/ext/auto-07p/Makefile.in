@@ -1,0 +1,121 @@
+#===> Makefile
+#
+#   Makefile originally written by Xianjun WANG in March 1994.
+#
+#   Redone by Randy C. Paffenroth 1999 for use with a configure script and python
+#   front end.
+SHELL=/bin/sh
+INSTALL=@INSTALL@
+INSTALL_DATA=@INSTALL_DATA@
+INSTALL_PROGRAM=@INSTALL_PROGRAM@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+bindir=@bindir@
+libdir=@libdir@
+autodir=@libdir@/auto-07p
+SED=@SED@
+@SET_MAKE@
+#
+all: src cmds util @GUI@ @PLAUT@ @PLAUT04@
+cmd: src cmds util @PLAUT@
+
+src: .FORCE
+	cd ./src;$(MAKE)
+
+cmds: .FORCE
+	# work around case insensitive filesystems
+	cd ./cmds; for cmd in @H @LB @R @RD; do \
+	    if test ! -r $$cmd; then \
+		cp -p @$$cmd $$cmd; \
+	    fi \
+	done
+
+util: .FORCE
+	cd ./util;$(MAKE)
+
+gui: .FORCE
+	cd ./gui;$(MAKE)
+
+plaut: .FORCE
+	cd ./plaut;$(MAKE)
+
+plaut04: .FORCE
+	cd ./plaut04;$(MAKE)
+
+#
+clean:
+	cd ./gui;$(MAKE) clean
+	cd ./plaut;$(MAKE) clean
+	cd ./plaut04;$(MAKE) clean
+	cd ./doc;$(MAKE) clean
+#
+superclean:  clean
+	cd ./cmds; if diff @R @@R > /dev/null; then rm @H @LB @R @RD; fi
+	cd ./plaut04;$(MAKE) superclean
+	rm -rf config.cache config.log config.status autom4te*.cache
+	cd ./bin; rm -f AUTO97 plaut autlab 86to97 94to97 double triple \
+	  keeplp keepbp keepsp keepuz deletelp deleteuz \
+	  listlabels reduce relabel plaut04 r3bplaut04
+	cd ./src; $(MAKE) superclean
+	cd ./util; $(MAKE) superclean
+	cd ./doc; $(MAKE) superclean
+	cd ./include; rm -f stamp-h1
+	rm -f python/*.pyc python/graphics/*.pyc
+	rm -f test/*.pyc test/*_log07p* test/verification/*.html
+	rm -f Makefile cmds/Makefile gui/Makefile plaut/Makefile src/Makefile \
+	  gui/auto.makefile include/config.h cmds/cmds.make \
+	  cmds/compat.sh util/Makefile
+	@echo "Super cleaning ... done"
+#
+distclean:  superclean
+
+install: all
+	$(INSTALL) -d $(DESTDIR)$(bindir)
+	$(INSTALL) bin/auto $(DESTDIR)$(bindir)/auto
+	$(INSTALL) bin/autox $(DESTDIR)$(bindir)/autox
+	$(SED) -i 's@AUTO_DIR=.*@AUTO_DIR=$(autodir)@' $(DESTDIR)$(bindir)/auto $(DESTDIR)$(bindir)/autox
+	$(INSTALL) -d $(DESTDIR)$(autodir)/python/auto/graphics
+	$(INSTALL_DATA) .autorc $(DESTDIR)$(autodir)
+	$(INSTALL_DATA) python/auto/*.py $(DESTDIR)$(autodir)/python/auto/
+	$(INSTALL_DATA) python/auto/graphics/*.py $(DESTDIR)/$(autodir)/python/auto/graphics/
+	$(INSTALL) -d $(DESTDIR)$(autodir)/include $(DESTDIR)$(autodir)/cmds
+	$(INSTALL) -d $(DESTDIR)$(autodir)/lib $(DESTDIR)$(autodir)/bin
+	$(INSTALL_DATA) include/auto_f2c.h $(DESTDIR)$(autodir)/include
+	$(INSTALL_DATA) include/config.h $(DESTDIR)$(autodir)/include
+	$(INSTALL) bin/autlab bin/[d-z]* $(DESTDIR)$(libdir)/auto-07p/bin
+	$(INSTALL) cmds/@* $(DESTDIR)$(libdir)/auto-07p/cmds
+	$(INSTALL_DATA) cmds/[a-zA-Z]* $(DESTDIR)$(autodir)/cmds
+	$(SED) -i 's@\(AUTO_DIR[ =]\).*@\1$(autodir)@' $(DESTDIR)$(autodir)/cmds/auto.env $(DESTDIR)$(autodir)/cmds/auto.env.sh
+	$(INSTALL_PROGRAM) -m 644 lib/* $(DESTDIR)$(autodir)/lib/
+	$(INSTALL) -d $(DESTDIR)$(autodir)/doc
+	if [ -f doc/auto.pdf ]; then \
+		$(INSTALL_DATA) doc/auto.pdf $(DESTDIR)$(autodir)/doc; \
+	fi
+	$(INSTALL) -d $(DESTDIR)$(autodir)/plaut04/doc $(DESTDIR)$(autodir)/plaut04/widgets
+	if [ -f plaut04/doc/userguide.pdf ]; then \
+		$(INSTALL_DATA) plaut04/doc/userguide.pdf $(DESTDIR)$(autodir)/plaut04/doc; \
+	fi
+	$(INSTALL_DATA) plaut04/*.rc $(DESTDIR)$(autodir)/plaut04
+	$(INSTALL_DATA) plaut04/widgets/* $(DESTDIR)$(autodir)/plaut04/widgets
+	$(INSTALL) -d $(DESTDIR)$(autodir)/demos
+	for d in demos/*; do \
+		$(INSTALL) -d $(DESTDIR)$(autodir)/$$d; \
+		for f in $$d/*; do \
+			if [ -d $$f ]; then \
+				$(INSTALL) -d $(DESTDIR)$(autodir)/$$f; \
+				$(INSTALL_DATA) $$f/* $(DESTDIR)$(autodir)/$$f; \
+			else \
+				$(INSTALL_DATA) $$f $(DESTDIR)$(autodir)/$$d; \
+			fi; \
+		done; \
+	done
+
+install-strip:
+	$(MAKE) INSTALL_PROGRAM='$(INSTALL_PROGRAM) -s' install
+
+check:
+	cd test && unset DISPLAY && OMP_NUM_THREADS=2 python ../python/auto all.auto
+
+.FORCE:
+
+
