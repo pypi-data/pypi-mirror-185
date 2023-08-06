@@ -1,0 +1,2 @@
+[oslo.config.opts]
+aprsd_slack_plugin.conf = aprsd_slack_plugin.conf.opts:list_opts

@@ -1,0 +1,15 @@
+aprsd_slack_plugin/__init__.py,sha256=T_JhsniGywhW-lzAyOREPtbMfkJkJXzBtUaPbsfAI24,643
+aprsd_slack_plugin/base_plugin.py,sha256=mXw2_HRqKKa0CyCfYF7_4pM7HRcOp34zjz6-dnA7DHM,2203
+aprsd_slack_plugin/location_plugin.py,sha256=IfK01bQMbpEvItDj04TbJZoelYD8SJtOsNb-5fFXGAU,5493
+aprsd_slack_plugin/message_plugin.py,sha256=a2iJHI7_90RAZ2MPQEBaa6lozh4ZHB2o73ME9V5BBI0,2716
+aprsd_slack_plugin/notify_plugin.py,sha256=MVIr4vfWvSaUYoM4CZ_LlVgmOCl13a80BVs0JzWQblU,1586
+aprsd_slack_plugin/conf/__init__.py,sha256=hHRbQ1FiSSNMalawqr3CVT7dXzpdDMe3_u6Yuj7ddUU,115
+aprsd_slack_plugin/conf/opts.py,sha256=-GePoYZqxJC7Hj140Ef1yHWpfFFeo7CeAnvWuEEK3aI,2736
+aprsd_slack_plugin/conf/slack.py,sha256=_hAVdMhBtrZeRdTII4LB4z2sZrSTKWvLPVAAjRu40vc,880
+aprsd_slack_plugin-1.2.0.dist-info/LICENSE.txt,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+aprsd_slack_plugin-1.2.0.dist-info/METADATA,sha256=aQ8x2BSEkwV0TF4tg4m-dnZ-fb-Oa-boELNeoMGdeS8,4043
+aprsd_slack_plugin-1.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aprsd_slack_plugin-1.2.0.dist-info/entry_points.txt,sha256=AOphpBFiO28L8nrommom4hdrQg-AMJWpvN7mvBky4WQ,84
+aprsd_slack_plugin-1.2.0.dist-info/pbr.json,sha256=Z7EZMcVLQpGelHCrX-iC2PVvJa-_sXLfue_JGo5SDhA,47
+aprsd_slack_plugin-1.2.0.dist-info/top_level.txt,sha256=dzuEA2Tt-RrD-QxzYXA76p3cAYctqCTFv9ez-FJM6Ws,19
+aprsd_slack_plugin-1.2.0.dist-info/RECORD,,
