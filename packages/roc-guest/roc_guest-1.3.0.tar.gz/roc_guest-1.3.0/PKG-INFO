@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: roc-guest
+Version: 1.3.0
+Summary: Gse data ReqUESTer (GUEST): Plugin to handle data products from/to ground tests (MEB GSE, ADS GSE)
+Home-page: https://gitlab.obspm.fr/ROC/Pipelines/Plugins/GUEST
+License: CECILL-C
+Author: Xavier Bonnin
+Author-email: xavier.bonnin@obspm.fr
+Requires-Python: >=3.8,<4
+Classifier: License :: CeCILL-C Free Software License Agreement (CECILL-C)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Jinja2 (>=3.0,<4.0)
+Requires-Dist: mysqlclient (>=1.4.6,<2.0.0)
+Requires-Dist: poppy-core
+Requires-Dist: poppy-pop
+Requires-Dist: roc-film (>=1.0,<2.0)
+Requires-Dist: roc-rpl (>=1.0,<2.0)
+Project-URL: Repository, https://gitlab.obspm.fr/ROC/Pipelines/Plugins/GUEST
+Description-Content-Type: text/markdown
+
+GUEST PLUGIN README
+===================
+
+The RPW Gse data ReqUESTer (GUEST) is a plugin used to handle data from GSE for RPW/Solar Orbiter (MEB GSE, ADS GSE).
+
+GUEST is designed to be run in an instance of the ROC Ground Test SGSE (RGTS).
+
+GUEST is developed with and run under the POPPY framework.
+
+## Quickstart
+
+### Installation with pip
+
+To install the plugin using pip:
+
+```
+pip install roc-guest
+```
+
+### Installation from the repository (restricted access)
+
+First, retrieve the `GUEST` repository from the ROC gitlab server:
+
+```
+git clone https://gitlab.obspm.fr/ROC/Pipelines/Plugins/GUEST.git
+```
+
+Then, install the package (here using (poetry)[https://python-poetry.org/]):
+
+```
+poetry install"
+```
+
+NOTES:
+
+    - It is also possible to clone the repository using SSH
+    - To install poetry: `pip install poetry`
+
+## Usage
+
+The roc-guest plugin is designed to be run in a POPPy-built pipeline.
+Nevertheless, it is still possible to import some classes and methods in Python files.
+
+## CONTACT
+
+* roc dot support at sympa dot obspm dot fr
+
+## License
+
+
+This project is licensed under CeCILL-C.
+
+## Acknowledgments
+
+Solar Orbiter / RPW Operation Centre (ROC) team
+
