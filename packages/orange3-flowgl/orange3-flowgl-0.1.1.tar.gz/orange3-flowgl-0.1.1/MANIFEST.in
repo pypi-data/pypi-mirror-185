@@ -1,0 +1,3 @@
+include orangecontrib/flowgl/widgets/icons/*
+
+include README.pypi

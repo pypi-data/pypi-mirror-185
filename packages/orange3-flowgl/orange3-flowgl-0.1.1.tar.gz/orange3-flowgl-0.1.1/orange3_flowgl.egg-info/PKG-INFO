@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: orange3-flowgl
+Version: 0.1.1
+Summary: Add-on containing a Flow widget for Orange3.
+Home-page: https://flowimmersive.com/
+Author: Flow Immersive
+Author-email: info@flow.gl
+License: BSD
+Keywords: orange3 add-on
+Description-Content-Type: text/markdown
+
+# Orange3 Flow Immersive
+
+Enables pushing data to Flow Immersive.

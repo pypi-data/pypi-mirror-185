@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   xml:space="preserve"
+   width="85.333336"
+   height="85.333336"
+   viewBox="0 0 85.333336 85.333336"
+   sodipodi:docname="flow_icon.ai"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs6"><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16"><path
+         d="M 0,64 H 64 V 0 H 0 Z"
+         id="path14" /></clipPath></defs><sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0" /><g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="flow_icon"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,85.333333)"><g
+       id="g10"><g
+         id="g12"
+         clip-path="url(#clipPath16)"><g
+           id="g18"
+           transform="translate(0,9)"><path
+             d="m 0,0 c 0,-4.971 4.029,-9 9,-9 h 46 c 4.971,0 9,4.029 9,9 v 46 c 0,4.971 -4.029,9 -9,9 H 9 C 4.029,55 0,50.971 0,46 Z"
+             style="fill:#022044;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path20" /></g><g
+           id="g22"
+           transform="translate(3.0186,15.7031)"><path
+             d="m 0,0 c 0.208,-0.338 0.828,1.537 5.909,2.305 5.306,0.802 9.857,0.602 12.822,0 3.006,-0.61 4.183,-1.278 7.505,-1.773 4.352,-0.649 13.867,-5.144 22.745,-2.235 3.13,1.025 5.607,3.566 7,5 0.867,0.89 2.219,4.188 1.986,7.989 -0.049,0.81 0.014,2.601 -1.478,4.128 -1.535,1.571 -4.371,2.08 -5.908,1.84 -0.248,-0.038 -0.985,-0.269 -1.536,-0.59 -0.769,-0.448 -0.948,-0.76 -0.945,-0.768 0.003,-0.012 0.075,0.084 1.441,0.102 0.389,0.005 1.456,0.267 2.44,-1.701 1,-2 0.21,-3.58 0,-4 -1,-2 -0.63,-2.276 -2,-3 C 48.533,6.531 47.188,5.552 41.609,5.423 37.067,5.317 34.844,6.2 23.631,7.538 20.218,7.945 16.177,8.029 15.171,8.066 5.562,8.427 2.48,3.837 0.894,2.25 0.63,1.986 -0.149,0.243 0,0"
+             style="fill:#0b56a0;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path24" /></g><g
+           id="g26"
+           transform="translate(45.876,58)"><path
+             d="m 0,0 v -3.528 h -26.198 v -21.994 h 23.195 v -3.454 h -23.195 v -24.321 h -3.678 V 0 Z"
+             style="fill:#e6e9ef;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path28" /></g></g></g></g></svg>

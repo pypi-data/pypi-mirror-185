@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+README.pypi
+setup.py
+orange3_flowgl.egg-info/PKG-INFO
+orange3_flowgl.egg-info/SOURCES.txt
+orange3_flowgl.egg-info/dependency_links.txt
+orange3_flowgl.egg-info/entry_points.txt
+orange3_flowgl.egg-info/namespace_packages.txt
+orange3_flowgl.egg-info/not-zip-safe
+orange3_flowgl.egg-info/requires.txt
+orange3_flowgl.egg-info/top_level.txt
+orangecontrib/__init__.py
+orangecontrib/flowgl/__init__.py
+orangecontrib/flowgl/widgets/__init__.py
+orangecontrib/flowgl/widgets/flow_push.py
+orangecontrib/flowgl/widgets/icons/flow_icon.svg

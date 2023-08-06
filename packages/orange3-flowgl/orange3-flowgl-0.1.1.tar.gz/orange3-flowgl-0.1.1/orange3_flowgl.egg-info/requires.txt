@@ -1,0 +1,4 @@
+Orange3
+flowgl
+pandas
+AnyQt
