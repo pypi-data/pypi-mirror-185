@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: jaq
+Version: 0.0.1
+Summary: A Json-Array Query tool
+Home-page: https://github.com/cubao/jaq
+Author: tzx
+Author-email: dvorak4tzx@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+
+# jaq: a Json-Array Query tool
+
+## build & test
+
+```
+make python_build
+make python_install
+python3 tests/test_basic.py
+```
+
+>   run `make build` to generate `build/compile_commands.json`
+>   to provide intellisense for VS Code.
