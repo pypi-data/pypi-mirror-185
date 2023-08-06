@@ -1,0 +1,10 @@
+aws_cdk/aws_identitystore/__init__.py,sha256=Khzp5GFzJB9aq538vrxd-d5X9cKqOnPySL4Bfi9SKDc,31259
+aws_cdk/aws_identitystore/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_identitystore/_jsii/__init__.py,sha256=4Ish8CHTg1YxxWjfQMMb3Hd23WnixFznLdmX0kgP06Y,432
+aws_cdk/aws_identitystore/_jsii/aws-identitystore@1.188.0.jsii.tgz,sha256=ZxrAQdj616MvmVAcDD_wDU6bhl0hwgSnPB3ZXNcU8t4,26343
+aws_cdk.aws_identitystore-1.188.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_identitystore-1.188.0.dist-info/METADATA,sha256=x-zEjc6Z3qo-OeqFSzeOpBga3weJGP5dES4XKk4Yrik,3218
+aws_cdk.aws_identitystore-1.188.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_identitystore-1.188.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_identitystore-1.188.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_identitystore-1.188.0.dist-info/RECORD,,
