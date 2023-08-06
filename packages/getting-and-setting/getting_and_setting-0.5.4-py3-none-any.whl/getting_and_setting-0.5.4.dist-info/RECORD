@@ -1,0 +1,13 @@
+getting_and_setting/__init__.py,sha256=9NYBAzQgbGhcczRKVsTgGvMZJlPj7y5iSAqy9mGUvmI,66
+getting_and_setting/mi_api.py,sha256=Pf8FiJxb9zGJs5G0QNT7x0s6Wn2JQXD8NmzneeDEqNs,6111
+getting_and_setting/mi_cli.py,sha256=RIV6WgGiHtAEcuyNW0Gwyqd-d8BjdcV6z1iE1X-TmhE,5939
+getting_and_setting/mi_contracts.py,sha256=YVe9QNJRxVY0uI0vxAu2b3dBpbAD2RiH2h5ACOX9V44,1581
+getting_and_setting/mi_endpoints.py,sha256=7MFfU5CKwggsjRE9h4cnjRVTKWJhQRSufFimTVu-G2M,2071
+getting_and_setting/mi_models.py,sha256=UxlBMOXe9iwltS1c1FuIyEQNyA9yucm3ouGS72Swzh0,1984
+getting_and_setting/mi_outputs.py,sha256=B8Qz7KfDcyPXyey2ELJ6kiPUhasQOir8fhRqVf2PaX0,1617
+getting_and_setting/mi_parser.py,sha256=6YQssgTKqVsmyB2RY_dwY7b1t8RjmVcv-K2YmBC2cfU,5250
+getting_and_setting/mi_request.py,sha256=pbSdpL_Xm-2az3WAx4SvU8_0750CTzyv-0HyPJwNN1s,3881
+getting_and_setting-0.5.4.dist-info/entry_points.txt,sha256=hCC7PMpn_LTgG90zOnKdo8P1vv7QlCB-FpjiwIDIaOc,56
+getting_and_setting-0.5.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+getting_and_setting-0.5.4.dist-info/METADATA,sha256=XTC6hl0baFOYsXYegE_IjuzufSZjMLcbumOMNqMb0S0,595
+getting_and_setting-0.5.4.dist-info/RECORD,,
