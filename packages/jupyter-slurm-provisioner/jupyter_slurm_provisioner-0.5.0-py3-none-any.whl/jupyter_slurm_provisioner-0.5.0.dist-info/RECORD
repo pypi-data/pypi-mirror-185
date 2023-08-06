@@ -1,0 +1,17 @@
+jupyter_slurm_provisioner/__init__.py,sha256=LySVmLgk0LcSFMjP_Gg_MeqbLJmJOqsrjaO3CU3UgAA,99
+jupyter_slurm_provisioner/__main__.py,sha256=lgzBMs0413Eq1CpSCgKcGZPL0HeUxYdO3m6N8B2AgOI,928
+jupyter_slurm_provisioner/provisioner.py,sha256=4392TZfv0jWkimpPnQwOIAjLGftrwyf-XvT6PBmn2qk,21062
+jupyter_slurm_provisioner-0.5.0.data/scripts/slurm_watch,sha256=Zucz_u4EpiTlZLrBAF0bC2P_xYopxF5ufGSh5Mzuo3w,240
+jupyter_slurm_provisioner-0.5.0.data/scripts/slurmel_allocate,sha256=cRnd9ETY4CYbZ7vY7DLrX4ocBM8_Ov6ZN8CNBtmmAx0,1038
+jupyter_slurm_provisioner-0.5.0.data/scripts/slurmel_allocinfo,sha256=w8GWAEp5rAkK5vTvsZxulwT9lcenSXHOhSz2Q8qc1o0,189
+jupyter_slurm_provisioner-0.5.0.data/scripts/slurmel_allocwait,sha256=15jMKkw8QKdsWnR84MIiotkSUf5fZ5EKIwKdmfD0OgA,1058
+jupyter_slurm_provisioner-0.5.0.data/scripts/slurmel_cancel,sha256=jx3IClxGRVP3AMhpY8ErV4acf7wPmEjZ4z_5upUMLtA,268
+jupyter_slurm_provisioner-0.5.0.data/scripts/slurmel_jobinfo,sha256=QoX9Nar3i2_6mpBxWmEuvs1SLvmfu2nRN1H74-u76Gw,169
+jupyter_slurm_provisioner-0.5.0.data/scripts/slurmel_kernel_start,sha256=sARwELzjXfBNh2E-XZrHcA4R5u0gPgIg1RgqaApiW5c,262
+jupyter_slurm_provisioner-0.5.0.data/scripts/slurmel_update_state,sha256=dhn-AN1PzSn0nymCCc9fZKnVJpQydhQq6MVBItiL_rQ,473
+jupyter_slurm_provisioner-0.5.0.dist-info/LICENSE,sha256=CgZ0dfO9vexshp7yFcN_vjpZphGX4b9zISCijesLumc,1064
+jupyter_slurm_provisioner-0.5.0.dist-info/METADATA,sha256=jF9S1P2UShf8kSsHcOJyl2GO0ADWEdg_QLW6qp68MI8,3260
+jupyter_slurm_provisioner-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jupyter_slurm_provisioner-0.5.0.dist-info/entry_points.txt,sha256=TfRm4Z4fe6gA62ZEPKzuvgXoclyb6w4j8A-lgbWBscM,100
+jupyter_slurm_provisioner-0.5.0.dist-info/top_level.txt,sha256=D3Mc47SYHsCH-4SMda-oOoZYxn41OC0hQHo05reOOIA,26
+jupyter_slurm_provisioner-0.5.0.dist-info/RECORD,,
