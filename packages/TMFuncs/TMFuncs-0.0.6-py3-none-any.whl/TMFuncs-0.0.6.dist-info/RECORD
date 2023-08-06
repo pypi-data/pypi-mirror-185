@@ -1,0 +1,9 @@
+TMFuncs/__init__.py,sha256=gl7iX4-fa7vuwwVzRPoumLXNPMnaAbYjNL1cTcUOhfs,121
+TMFuncs/base.py,sha256=1zA1aWnYZ5z18ce1lSlpETO49l3oahyfCT5cNkXahRI,1168
+TMFuncs/batch_read.py,sha256=ABwTayLvIRnXAP3iAQNi72-5fheCJ5oJVacCzv17_qE,734
+TMFuncs/op_log.py,sha256=9_WOkX6EY-yD1GKvMSg2aRg5L5LvLZye02tEKemxqkg,4512
+TMFuncs-0.0.6.dist-info/LICENSE,sha256=k1uUZ25Ne_mz5L4Wb-Wkt3ieMEaoetnGrYPV6EGJG9g,1091
+TMFuncs-0.0.6.dist-info/METADATA,sha256=Tf-dein6VVTc075N_PdxXC8OxIDno8lY1BUuyIIYZuQ,424
+TMFuncs-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+TMFuncs-0.0.6.dist-info/top_level.txt,sha256=rQhT0r82dJUa_hcE-MjcNmq5rgnwgkv-N5KAGeC-KHc,8
+TMFuncs-0.0.6.dist-info/RECORD,,
