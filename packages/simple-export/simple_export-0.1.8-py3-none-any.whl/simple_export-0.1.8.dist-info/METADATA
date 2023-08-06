@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: simple-export
+Version: 0.1.8
+Summary: 简单的模板导出工具
+License: Apache
+Author: mtl
+Author-email: 576694002@qq.com
+Requires-Python: >=3.7
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: openpyxl (>=3.0.10,<4.0.0)
+Project-URL: Bug Tracker, https://github.com/mtl940610/simple_export/issues
+Project-URL: Homepage, https://github.com/mtl940610/simple_export
+Description-Content-Type: text/markdown
+
+# simple_export
+
+simple_export是一款导出工具包，目标是根据模板快速导出
+[simple_export](https://github.com/mtl940610/simple_export/)
+
+
