@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: yeansq
+Version: 0.0.1
+Summary: A package for faster coding.
+Home-page: https://github.com/private_repo/nsq
+Author: slipper
+Author-email: r2fscg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: tornado
+
+## pynsq
+
+[![Build Status](https://github.com/nsqio/pynsq/workflows/tests/badge.svg)](https://github.com/nsqio/pynsq/actions) [![GitHub release](https://img.shields.io/github/release/nsqio/pynsq.svg)](https://github.com/nsqio/pynsq/releases/latest) [![PyPI](https://img.shields.io/pypi/v/pynsq.svg)](https://pypi.org/project/pynsq)
+
+The official Python client library for [NSQ][nsq].
+
+### Installation
+
+    $ pip install pynsq
+
+### Docs
+
+For HTML documentation, visit [https://pynsq.readthedocs.org/](https://pynsq.readthedocs.org/)
+
+### Tests
+
+`nsqd` and `nsqlookupd` are required to run tests, see [installing](https://nsq.io/deployment/installing.html).
+
+     python setup.py test
+
+[nsq]: https://github.com/nsqio/nsq
+
