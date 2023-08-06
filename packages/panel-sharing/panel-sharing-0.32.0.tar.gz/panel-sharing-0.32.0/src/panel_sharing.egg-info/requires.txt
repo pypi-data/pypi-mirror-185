@@ -1,0 +1,17 @@
+bokeh<3.0
+panel<1.0
+azure-storage-blob
+azure-identity
+azure-mgmt-cdn
+diskcache
+
+[dev]
+awesome-panel-cli[dev]
+
+[examples]
+awesome-panel-cli
+hvplot
+matplotlib
+notebook
+pandas
+scikit-image
