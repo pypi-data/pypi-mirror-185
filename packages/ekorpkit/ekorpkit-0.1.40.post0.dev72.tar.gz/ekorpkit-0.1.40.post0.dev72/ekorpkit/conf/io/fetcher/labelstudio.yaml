@@ -1,0 +1,6 @@
+defaults:
+  - _default_
+  - /model: labelstudio
+
+_target_: ekorpkit.io.fetch.labelstudio.LabelStudio
+name: labelstudio
