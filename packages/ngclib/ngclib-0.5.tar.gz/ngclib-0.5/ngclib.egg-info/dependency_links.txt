@@ -1,0 +1,5 @@
+git+https://gitlab.com/mihaicristianpirvu/media-processing-lib/#egg=media-processing-lib
+git+https://gitlab.com/neuralwrappers/nwgraph/#egg=nwgraph
+git+https://gitlab.com/neuralwrappers/nwutils/#egg=nwutils
+git+https://gitlab.com/mihaicristianpirvu/pool-resources/#egg=pool-resources
+git+https://gitlab.com/mihaicristianpirvu/lightning-module-enhanced#egg=lightning-module-enhanced

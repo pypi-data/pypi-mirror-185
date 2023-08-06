@@ -1,0 +1,22 @@
+numpy
+h5py
+torch
+tqdm
+overrides
+scikit-learn
+matplotlib
+graphviz
+pyyaml
+opencv-python
+flow_vis
+natsort
+torchmetrics
+kaleido
+plotly
+pandas
+lovely-tensors
+media-processing-lib@ git+https://gitlab.com/mihaicristianpirvu/media-processing-lib/
+nwgraph@ git+https://gitlab.com/neuralwrappers/nwgraph/
+nwutils@ git+https://gitlab.com/neuralwrappers/nwutils/
+pool-resources@ git+https://gitlab.com/mihaicristianpirvu/pool-resources/
+lightning-module-enhanced@ git+https://gitlab.com/mihaicristianpirvu/lightning-module-enhanced
