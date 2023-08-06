@@ -1,0 +1,7 @@
+[
+  "test_example.py::test_example",
+  "test_unique.py::test_ifdigit",
+  "test_unique.py::test_unique[aabbccdd-0]",
+  "test_unique.py::test_unique[abbbccdf-3]",
+  "test_unique.py::test_unique[asvbsfkldiss-8]"
+]
