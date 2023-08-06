@@ -1,0 +1,11 @@
+connectionist/__about__.py,sha256=kI_6qbbDF7Ih_nslnp1Xz3163kY83IBKgjh0H0CrtCs,24
+connectionist/__init__.py,sha256=mWjvGbsrqTk0wV6Ey4MoIiTiTcgyM89uEWg3MAGCHhs,48
+connectionist/data.py,sha256=Gx0Ckv3qH4zQKk2c4_QUAr8zorYIVyzJaKT8UcB7Oec,1687
+connectionist/layers.py,sha256=SzJ8hc9fGaNFJef7Fc_k0QjY2KFSuftA5uT3b0Y3Uhg,17213
+connectionist/models.py,sha256=pNFPcFmeTom6iRAyKSoWc9OM87NPnfSh1h31xL47pqk,4529
+connectionist/damage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+connectionist/damage/shrink_layer.py,sha256=86ILoEYJvLXCBfczXkzqRBkxwnTlxyX4pVjrVPfNF28,5917
+connectionist-0.1.0a9.dist-info/METADATA,sha256=98XjbKEJhaV3DcALpYZNxYTUEZmMOHANrjJY143_TJo,357
+connectionist-0.1.0a9.dist-info/WHEEL,sha256=3c4nLKpREKE5rhHFpZb1Uq66zgxvSvplqeRLQYroJ9M,105
+connectionist-0.1.0a9.dist-info/licenses/LICENSE,sha256=R-ZY3w-VtYcmF3-R20dmKnEf81xjTWxJbqjOG4Fo_r0,1065
+connectionist-0.1.0a9.dist-info/RECORD,,
