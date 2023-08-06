@@ -1,0 +1,13 @@
+nodekind.cp39-win_amd64.pyd,sha256=W8kmDcMCCJ8es9xaSgh9aGXoF_R0OS9xlU4wZ6ctHiA,18432
+saxoncee.cp39-win_amd64.pyd,sha256=Sje-wrIw39h9DUrE-5WYp8hoJVjkY92pgqq0mGQ6GbU,503296
+saxoncee/setup.py,sha256=SQnsqv7AY74OLwIzJicsERsRvJK_1E-vQFT9vSrtvIQ,3014
+saxoncee/test_saxonc.py,sha256=nunRzFbEIOMtgFn_XyuF5eQib_dgOWMLdUGVaVu2p58,58998
+saxoncee/test_saxon_schema.py,sha256=Kgg4lSH5bzQ7ac_H00ohYkQ2sHQAv7lisspgpGnZ1r0,4095
+saxoncee-12.0.0.data/platlib/.load-order-saxoncee-12.0.0,sha256=tqa7B-v5NiTS6DjuRD-jGiczhoZVpbDvMUb7Ix9KzyM,70
+saxoncee-12.0.0.data/platlib/libsaxon-eec-12.0-9cff2efaff961da50503b23e1a716f94.dll,sha256=HK-gXF_pEWWQar-0kXrmnAiPn0tL_Jtqnx6GOw_9row,57769984
+saxoncee-12.0.0.data/platlib/msvcp140.dll,sha256=yzx01vzAkfTrfGfuXrX3bByXPeqLHGuFH8ymLCqdiqg,579920
+saxoncee-12.0.0.dist-info/DELVEWHEEL,sha256=lZUK6Gc-MtfGf6k6ObJjwGYyQoPJIV-vWL2dl88x1Ug,424
+saxoncee-12.0.0.dist-info/METADATA,sha256=B_XtIMAX9pWL9oZuqmeGz-yXFpQxEKEJUYkDKV1_LMc,7191
+saxoncee-12.0.0.dist-info/RECORD,,
+saxoncee-12.0.0.dist-info/top_level.txt,sha256=u-Dw0twewj61L41npVrkWvGYrNdPqpTZz4hZvt169fo,18
+saxoncee-12.0.0.dist-info/WHEEL,sha256=J_4V_gB-O6Y7Pn6lk91K27JaIhI-q07YM5J8Ufzqla4,100
