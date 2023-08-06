@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: omemdb
+Version: 2.1.1
+Home-page: https://github.com/openergy/omemdb
+Author: Openergy team
+Author-email: contact@openergy.fr
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: French
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: LICENSE.txt
+Requires-Dist: numpy (<2.0,>=1.14.2)
+Requires-Dist: pandas (<2.0,>=1.0.0)
+Requires-Dist: marshmallow (<2.9999,>=2.15)
+
+# omemdb
+
+In memory orm.
+
+## users documentation
+
+see [doc-users.md](doc/doc-users.md) (use doc-users.py to modify)
+
+## developer documentation
+
+see [doc-developers.md](doc/doc-developers.md)
+
+Field validation is based on [Marshmallow v2.x framework](https://marshmallow.readthedocs.io/en/2.x-line/).
