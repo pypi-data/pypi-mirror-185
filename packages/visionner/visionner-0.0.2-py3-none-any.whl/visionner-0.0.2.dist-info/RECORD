@@ -1,0 +1,10 @@
+visionner/__init__.py,sha256=xTZOfDZ7fdeP319xKSWD8PxWEEY--Ss7A28NpQyGF6o,44
+visionner/normalize.py,sha256=bsmzQaLFFbRMhGWJQ7caVh4ji7R5lUzOIT9gvSCoBDM,1098
+visionner/vision.py,sha256=eUy2eqfeR9BMAeSk0qVWP-CoC-U-z02kK2kHa3Rm5rM,1987
+visionner/Dataset/DatasetManager.py,sha256=TJBYfPEy5xMM0t-dyNokluZnLH2-nheoGasIZasEi6o,3547
+visionner/Dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+visionner-0.0.2.dist-info/LICENSE.txt,sha256=XKGhHUSfx2z0r3tR_1nWIGqSVDdxO27Ia751yYasqG0,11544
+visionner-0.0.2.dist-info/METADATA,sha256=ZP_rYLtqIVHLx4gCB7L3Zb0pkx5YefZ0J0lRsXSk4bI,2806
+visionner-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+visionner-0.0.2.dist-info/top_level.txt,sha256=uyb2ZdQks4bmpPUB0kVqCGe29I2yMIUpZWtBKGMXKk0,10
+visionner-0.0.2.dist-info/RECORD,,
