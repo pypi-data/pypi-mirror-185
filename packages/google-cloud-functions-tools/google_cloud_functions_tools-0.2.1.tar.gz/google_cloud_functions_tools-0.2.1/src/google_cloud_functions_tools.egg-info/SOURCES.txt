@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+src/google_cloud_functions_tools/__init__.py
+src/google_cloud_functions_tools/cors.py
+src/google_cloud_functions_tools/firebase_verify_id.py
+src/google_cloud_functions_tools.egg-info/PKG-INFO
+src/google_cloud_functions_tools.egg-info/SOURCES.txt
+src/google_cloud_functions_tools.egg-info/dependency_links.txt
+src/google_cloud_functions_tools.egg-info/requires.txt
+src/google_cloud_functions_tools.egg-info/top_level.txt
