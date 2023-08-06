@@ -1,0 +1,3 @@
+This is repository for the package created for the purpose of Assignment no 1 of the course titled "Tools and Techniques for Data Science"
+
+This package contains two modules One is myTestModule which has basic functions like find a power, find a cube of a number, find largest of the two given numbers, and check if a number is a multiple of other or not Another one is named mySecondModule which has basic mathematical functions
