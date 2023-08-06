@@ -1,0 +1,11 @@
+ingenii_quantum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ingenii_quantum/hybrid_networks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ingenii_quantum/hybrid_networks/edge_detection.py,sha256=WbfSfE2zajlxG6p4-Cyku-oviZwk0HtPh91WYxfsaIc,15689
+ingenii_quantum/hybrid_networks/filters.py,sha256=vFzMfOpGUa56591YoLCNz3s80OqGv3ccrI8uVd058CE,33129
+ingenii_quantum/hybrid_networks/layers.py,sha256=RtGcxJlGha38GDwhGZxQUy0Vy_ls4lCVWZECCvNV2Lo,31548
+ingenii_quantum/hybrid_networks/utils.py,sha256=ded5GW27HVNmn7T6GLG0TzRo6r4xz_TXOmDhWiZeZss,2762
+ingenii_quantum_hybrid_networks-0.1.1.dist-info/METADATA,sha256=f6EJ2zwqO2TPr55Viq9q9C9h_xeKWJEjZoxOip2zy6o,2866
+ingenii_quantum_hybrid_networks-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ingenii_quantum_hybrid_networks-0.1.1.dist-info/dependency_links.txt,sha256=IUrW6uZ629nVwQ5UCtObU12QwkLxLOavSePo4Oj85H8,183
+ingenii_quantum_hybrid_networks-0.1.1.dist-info/top_level.txt,sha256=DpbjKfS3y8dvb1XGG6Bl97RxOABjYJ2U96emf315Yos,16
+ingenii_quantum_hybrid_networks-0.1.1.dist-info/RECORD,,
