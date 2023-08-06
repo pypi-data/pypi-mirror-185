@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/sharepoint_stuff.py
+src/sharepoint_stuff.egg-info/PKG-INFO
+src/sharepoint_stuff.egg-info/SOURCES.txt
+src/sharepoint_stuff.egg-info/dependency_links.txt
+src/sharepoint_stuff.egg-info/requires.txt
+src/sharepoint_stuff.egg-info/top_level.txt
