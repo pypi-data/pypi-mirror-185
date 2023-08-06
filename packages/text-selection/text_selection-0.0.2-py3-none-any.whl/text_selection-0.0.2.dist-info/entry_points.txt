@@ -1,0 +1,2 @@
+[console_scripts]
+text-selection-cli = text_selection_cli.cli:run_prod
