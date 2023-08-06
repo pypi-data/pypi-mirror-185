@@ -1,0 +1,272 @@
+Metadata-Version: 2.1
+Name: modelscope
+Version: 1.1.3
+Summary: UNKNOWN
+Home-page: https://github.com/modelscope/modelscope
+Author: Alibaba ModelScope team
+Author-email: modelscope@list.alibaba-inc.com
+License: Apache License 2.0
+Keywords: python,nlp,science,cv,speech,multi-modal
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: addict
+Requires-Dist: attrs
+Requires-Dist: datasets (<=2.5.2)
+Requires-Dist: easydict
+Requires-Dist: einops
+Requires-Dist: filelock (>=3.3.0)
+Requires-Dist: gast (>=0.2.2)
+Requires-Dist: jsonplus
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: oss2
+Requires-Dist: Pillow (>=6.2.0)
+Requires-Dist: pyarrow (!=9.0.0,>=6.0.0)
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: scipy
+Requires-Dist: setuptools
+Requires-Dist: tensorboard
+Requires-Dist: tqdm (>=4.64.0)
+Requires-Dist: yapf
+Provides-Extra: all
+Requires-Dist: albumentations (>=1.0.3) ; extra == 'all'
+Requires-Dist: av (>=9.2.0) ; extra == 'all'
+Requires-Dist: bmt-clipit (>=1.0) ; extra == 'all'
+Requires-Dist: clip (>=1.0) ; extra == 'all'
+Requires-Dist: easydict ; extra == 'all'
+Requires-Dist: fairscale (>=0.4.1) ; extra == 'all'
+Requires-Dist: fastai (>=1.0.51) ; extra == 'all'
+Requires-Dist: ffmpeg (>=1.4) ; extra == 'all'
+Requires-Dist: ffmpeg-python (>=0.2.0) ; extra == 'all'
+Requires-Dist: ftfy ; extra == 'all'
+Requires-Dist: imageio (>=2.9.0) ; extra == 'all'
+Requires-Dist: imageio-ffmpeg (>=0.4.2) ; extra == 'all'
+Requires-Dist: imgaug (>=0.4.0) ; extra == 'all'
+Requires-Dist: kornia (>=0.5.0) ; extra == 'all'
+Requires-Dist: lmdb ; extra == 'all'
+Requires-Dist: lpips ; extra == 'all'
+Requires-Dist: ml-collections ; extra == 'all'
+Requires-Dist: mmcls (>=0.21.0) ; extra == 'all'
+Requires-Dist: mmdet (>=2.25.0) ; extra == 'all'
+Requires-Dist: moviepy (>=1.0.3) ; extra == 'all'
+Requires-Dist: networkx (>=2.5) ; extra == 'all'
+Requires-Dist: numba ; extra == 'all'
+Requires-Dist: onnxruntime (>=1.10) ; extra == 'all'
+Requires-Dist: pai-easycv (>=0.6.3.9) ; extra == 'all'
+Requires-Dist: pandas ; extra == 'all'
+Requires-Dist: psutil ; extra == 'all'
+Requires-Dist: regex ; extra == 'all'
+Requires-Dist: scikit-image (>=0.19.3) ; extra == 'all'
+Requires-Dist: scikit-learn (>=0.20.1) ; extra == 'all'
+Requires-Dist: shapely ; extra == 'all'
+Requires-Dist: shotdetect-scenedetect-lgss ; extra == 'all'
+Requires-Dist: tensorflow-estimator (>=1.15.1) ; extra == 'all'
+Requires-Dist: tf-slim ; extra == 'all'
+Requires-Dist: timm (>=0.4.9) ; extra == 'all'
+Requires-Dist: torchmetrics (>=0.6.2) ; extra == 'all'
+Requires-Dist: torchvision ; extra == 'all'
+Requires-Dist: videofeatures-clipit (>=1.0) ; extra == 'all'
+Requires-Dist: ftfy (>=6.0.3) ; extra == 'all'
+Requires-Dist: librosa ; extra == 'all'
+Requires-Dist: pycocoevalcap (>=1.2) ; extra == 'all'
+Requires-Dist: pycocotools (>=2.0.4) ; extra == 'all'
+Requires-Dist: pytorch-lightning (<=1.7.7) ; extra == 'all'
+Requires-Dist: rouge-score (<=0.0.4) ; extra == 'all'
+Requires-Dist: sacrebleu ; extra == 'all'
+Requires-Dist: soundfile ; extra == 'all'
+Requires-Dist: taming-transformers-rom1504 ; extra == 'all'
+Requires-Dist: timm ; extra == 'all'
+Requires-Dist: tokenizers ; extra == 'all'
+Requires-Dist: transformers (>=4.12.0) ; extra == 'all'
+Requires-Dist: unicodedata2 ; extra == 'all'
+Requires-Dist: zhconv ; extra == 'all'
+Requires-Dist: boto3 ; extra == 'all'
+Requires-Dist: en-core-web-sm (>=2.3.5) ; extra == 'all'
+Requires-Dist: filelock ; extra == 'all'
+Requires-Dist: jieba (>=0.42.1) ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: nltk ; extra == 'all'
+Requires-Dist: pai-easynlp ; extra == 'all'
+Requires-Dist: protobuf (<3.21.0,>=3.19.0) ; extra == 'all'
+Requires-Dist: pythainlp ; extra == 'all'
+Requires-Dist: pyvi ; extra == 'all'
+Requires-Dist: sacremoses (>=0.0.41) ; extra == 'all'
+Requires-Dist: scikit-learn ; extra == 'all'
+Requires-Dist: sentencepiece ; extra == 'all'
+Requires-Dist: seqeval ; extra == 'all'
+Requires-Dist: spacy (>=2.3.5) ; extra == 'all'
+Requires-Dist: subword-nmt (>=0.3.8) ; extra == 'all'
+Requires-Dist: termcolor ; extra == 'all'
+Requires-Dist: text2sql-lgesql ; extra == 'all'
+Requires-Dist: biopython ; extra == 'all'
+Requires-Dist: iopath ; extra == 'all'
+Requires-Dist: ipdb ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: tensorboardX ; extra == 'all'
+Provides-Extra: audio
+Requires-Dist: easyasr (>=0.0.2) ; extra == 'audio'
+Requires-Dist: espnet (==202204) ; extra == 'audio'
+Requires-Dist: funasr (>=0.1.4) ; extra == 'audio'
+Requires-Dist: h5py ; extra == 'audio'
+Requires-Dist: inflect ; extra == 'audio'
+Requires-Dist: keras ; extra == 'audio'
+Requires-Dist: kwsbp (>=0.0.2) ; extra == 'audio'
+Requires-Dist: librosa ; extra == 'audio'
+Requires-Dist: lxml ; extra == 'audio'
+Requires-Dist: matplotlib ; extra == 'audio'
+Requires-Dist: MinDAEC ; extra == 'audio'
+Requires-Dist: nara-wpe ; extra == 'audio'
+Requires-Dist: nltk ; extra == 'audio'
+Requires-Dist: numpy (<=1.18) ; extra == 'audio'
+Requires-Dist: protobuf (<3.21.0,>3) ; extra == 'audio'
+Requires-Dist: ptflops ; extra == 'audio'
+Requires-Dist: py-sound-connect (>=0.1) ; extra == 'audio'
+Requires-Dist: pytorch-wavelets ; extra == 'audio'
+Requires-Dist: PyWavelets (>=1.0.0) ; extra == 'audio'
+Requires-Dist: scikit-learn ; extra == 'audio'
+Requires-Dist: SoundFile (>0.10) ; extra == 'audio'
+Requires-Dist: sox ; extra == 'audio'
+Requires-Dist: torchaudio ; extra == 'audio'
+Requires-Dist: tqdm ; extra == 'audio'
+Requires-Dist: ttsfrd (>=0.0.3) ; extra == 'audio'
+Requires-Dist: unidecode ; extra == 'audio'
+Provides-Extra: cv
+Requires-Dist: albumentations (>=1.0.3) ; extra == 'cv'
+Requires-Dist: av (>=9.2.0) ; extra == 'cv'
+Requires-Dist: bmt-clipit (>=1.0) ; extra == 'cv'
+Requires-Dist: clip (>=1.0) ; extra == 'cv'
+Requires-Dist: easydict ; extra == 'cv'
+Requires-Dist: fairscale (>=0.4.1) ; extra == 'cv'
+Requires-Dist: fastai (>=1.0.51) ; extra == 'cv'
+Requires-Dist: ffmpeg (>=1.4) ; extra == 'cv'
+Requires-Dist: ffmpeg-python (>=0.2.0) ; extra == 'cv'
+Requires-Dist: ftfy ; extra == 'cv'
+Requires-Dist: imageio (>=2.9.0) ; extra == 'cv'
+Requires-Dist: imageio-ffmpeg (>=0.4.2) ; extra == 'cv'
+Requires-Dist: imgaug (>=0.4.0) ; extra == 'cv'
+Requires-Dist: kornia (>=0.5.0) ; extra == 'cv'
+Requires-Dist: lmdb ; extra == 'cv'
+Requires-Dist: lpips ; extra == 'cv'
+Requires-Dist: ml-collections ; extra == 'cv'
+Requires-Dist: mmcls (>=0.21.0) ; extra == 'cv'
+Requires-Dist: mmdet (>=2.25.0) ; extra == 'cv'
+Requires-Dist: moviepy (>=1.0.3) ; extra == 'cv'
+Requires-Dist: networkx (>=2.5) ; extra == 'cv'
+Requires-Dist: numba ; extra == 'cv'
+Requires-Dist: onnxruntime (>=1.10) ; extra == 'cv'
+Requires-Dist: pai-easycv (>=0.6.3.9) ; extra == 'cv'
+Requires-Dist: pandas ; extra == 'cv'
+Requires-Dist: psutil ; extra == 'cv'
+Requires-Dist: regex ; extra == 'cv'
+Requires-Dist: scikit-image (>=0.19.3) ; extra == 'cv'
+Requires-Dist: scikit-learn (>=0.20.1) ; extra == 'cv'
+Requires-Dist: shapely ; extra == 'cv'
+Requires-Dist: shotdetect-scenedetect-lgss ; extra == 'cv'
+Requires-Dist: tensorflow-estimator (>=1.15.1) ; extra == 'cv'
+Requires-Dist: tf-slim ; extra == 'cv'
+Requires-Dist: timm (>=0.4.9) ; extra == 'cv'
+Requires-Dist: torchmetrics (>=0.6.2) ; extra == 'cv'
+Requires-Dist: torchvision ; extra == 'cv'
+Requires-Dist: videofeatures-clipit (>=1.0) ; extra == 'cv'
+Provides-Extra: multi-modal
+Requires-Dist: ftfy (>=6.0.3) ; extra == 'multi-modal'
+Requires-Dist: librosa ; extra == 'multi-modal'
+Requires-Dist: pycocoevalcap (>=1.2) ; extra == 'multi-modal'
+Requires-Dist: pycocotools (>=2.0.4) ; extra == 'multi-modal'
+Requires-Dist: pytorch-lightning (<=1.7.7) ; extra == 'multi-modal'
+Requires-Dist: rouge-score (<=0.0.4) ; extra == 'multi-modal'
+Requires-Dist: sacrebleu ; extra == 'multi-modal'
+Requires-Dist: soundfile ; extra == 'multi-modal'
+Requires-Dist: taming-transformers-rom1504 ; extra == 'multi-modal'
+Requires-Dist: timm ; extra == 'multi-modal'
+Requires-Dist: tokenizers ; extra == 'multi-modal'
+Requires-Dist: torchvision ; extra == 'multi-modal'
+Requires-Dist: transformers (>=4.12.0) ; extra == 'multi-modal'
+Requires-Dist: unicodedata2 ; extra == 'multi-modal'
+Requires-Dist: zhconv ; extra == 'multi-modal'
+Provides-Extra: nlp
+Requires-Dist: boto3 ; extra == 'nlp'
+Requires-Dist: en-core-web-sm (>=2.3.5) ; extra == 'nlp'
+Requires-Dist: filelock ; extra == 'nlp'
+Requires-Dist: ftfy ; extra == 'nlp'
+Requires-Dist: jieba (>=0.42.1) ; extra == 'nlp'
+Requires-Dist: matplotlib ; extra == 'nlp'
+Requires-Dist: nltk ; extra == 'nlp'
+Requires-Dist: pai-easynlp ; extra == 'nlp'
+Requires-Dist: pandas ; extra == 'nlp'
+Requires-Dist: protobuf (<3.21.0,>=3.19.0) ; extra == 'nlp'
+Requires-Dist: pythainlp ; extra == 'nlp'
+Requires-Dist: pyvi ; extra == 'nlp'
+Requires-Dist: regex ; extra == 'nlp'
+Requires-Dist: sacremoses (>=0.0.41) ; extra == 'nlp'
+Requires-Dist: scikit-learn ; extra == 'nlp'
+Requires-Dist: sentencepiece ; extra == 'nlp'
+Requires-Dist: seqeval ; extra == 'nlp'
+Requires-Dist: spacy (>=2.3.5) ; extra == 'nlp'
+Requires-Dist: subword-nmt (>=0.3.8) ; extra == 'nlp'
+Requires-Dist: termcolor ; extra == 'nlp'
+Requires-Dist: text2sql-lgesql ; extra == 'nlp'
+Requires-Dist: tokenizers ; extra == 'nlp'
+Requires-Dist: transformers (>=4.12.0) ; extra == 'nlp'
+Provides-Extra: science
+Requires-Dist: biopython ; extra == 'science'
+Requires-Dist: iopath ; extra == 'science'
+Requires-Dist: ipdb ; extra == 'science'
+Requires-Dist: lmdb ; extra == 'science'
+Requires-Dist: ml-collections ; extra == 'science'
+Requires-Dist: scipy ; extra == 'science'
+Requires-Dist: tensorboardX ; extra == 'science'
+Requires-Dist: tokenizers ; extra == 'science'
+
+
+<div align="center">
+
+[![PyPI](https://img.shields.io/pypi/v/modelscope)](https://pypi.org/project/modelscope/)
+<!-- [![Documentation Status](https://readthedocs.org/projects/easy-cv/badge/?version=latest)](https://easy-cv.readthedocs.io/en/latest/) -->
+[![license](https://img.shields.io/github/license/modelscope/modelscope.svg)](https://github.com/modelscope/modelscope/blob/master/LICENSE)
+[![open issues](https://isitmaintained.com/badge/open/modelscope/modelscope.svg)](https://github.com/modelscope/modelscope/issues)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/modelscope/modelscope.svg)](https://GitHub.com/modelscope/modelscope/pull/)
+[![GitHub latest commit](https://badgen.net/github/last-commit/modelscope/modelscope)](https://GitHub.com/modelscope/modelscope/commit/)
+<!-- [![GitHub contributors](https://img.shields.io/github/contributors/modelscope/modelscope.svg)](https://GitHub.com/modelscope/modelscope/graphs/contributors/) -->
+<!-- [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) -->
+
+
+</div>
+
+# Introduction
+
+[ModelScope]( https://www.modelscope.cn) is a “Model-as-a-Service” (MaaS) platform that seeks to bring together most advanced machine learning models from the AI community, and to streamline the process of leveraging AI models in real applications. The core ModelScope library enables developers to perform inference, training and evaluation, through rich layers of API designs that facilitate a unified experience across state-of-the-art models from different AI domains.
+
+The Python library offers the layered-APIs necessary for model contributors to integrate models from CV, NLP, Speech, Multi-Modality, as well as Scientific-computation, into the ModelScope ecosystem. Implementations for all these different models are encapsulated within the library in a way that allows easy and unified access. With such integration, model inference, finetuning, and evaluations can be done with only a few lines of codes. In the meantime, flexibilities are provided so that different components in the model applications can be customized as well, where necessary.
+
+Apart from harboring implementations of various models, ModelScope library also enables the necessary interactions with ModelScope backend services, particularly with the Model-Hub and Dataset-Hub. Such interactions facilitate management of  various entities (models and datasets) to be performed seamlessly under-the-hood, including entity lookup, version control, cache management, and many others.
+
+# Installation
+
+Please refer to [installation](https://modelscope.cn/docs/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85).
+
+# Get Started
+
+You can refer to [quick_start](https://modelscope.cn/docs/%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B) for quick start.
+
+We also provide other documentations including:
+* [Introduction to tasks](https://modelscope.cn/docs/%E4%BB%BB%E5%8A%A1%E7%9A%84%E4%BB%8B%E7%BB%8D)
+* [Use pipeline for model inference](https://modelscope.cn/docs/%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%8E%A8%E7%90%86Pipeline)
+* [Finetune example](https://modelscope.cn/docs/%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%AE%AD%E7%BB%83Train)
+* [Preprocessing of data](https://modelscope.cn/docs/%E6%95%B0%E6%8D%AE%E7%9A%84%E9%A2%84%E5%A4%84%E7%90%86)
+* [Evaluation metrics](https://modelscope.cn/docs/%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%AF%84%E4%BC%B0)
+
+# License
+
+This project is licensed under the [Apache License (Version 2.0)](https://github.com/modelscope/modelscope/blob/master/LICENSE).
+
+
