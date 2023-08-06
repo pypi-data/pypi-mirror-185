@@ -1,0 +1,14 @@
+edgar/__about__.py,sha256=OOnbq8GPKLLr0bGDTA4SGLVvrTSwh3xVFHrYa6umES4,134
+edgar/__init__.py,sha256=ycDZQMGgMeFRsL61ANeEp_5jrOwvClOT9OoSp7pkAfw,710
+edgar/company.py,sha256=In8WxXWtKc95VMgQIgDM2xVCfpihIc8mLLuChamC1tc,22456
+edgar/core.py,sha256=8_Xl-bEk1cEKPV5xJ-0dnjrLDHk1zjuoPKl6wn0Ul-g,9186
+edgar/filing.py,sha256=yuDvOChK-wMZO6T-SnLAbcZyMWzdjbu1r1ma9WQxMxQ,24169
+edgar/gaap.py,sha256=eYnUI3QmfYLvrrYqtQNzGPHiSgFe0iciJr2RQsAYa2U,1378
+edgar/ownership.py,sha256=RVA59eSHlXVvPlrxdxf3qC3eQW20alG2zOsgsLO6Mqc,23035
+edgar/xbrl.py,sha256=dThcwVgMR2CAr01iSmp3216KOMgaWDiJ6Da5T_xfbSI,8215
+edgar/xml.py,sha256=QPAs6A2ioI_aL_DEaG3F8Qcn0ziOTUylqFH8nBwwr0s,2857
+edgar/data/GAAP_Taxonomy_2022.csv,sha256=Xc_JEUr7Eb2EOcMnqPhGaAaT4MxLttVPPNbSS3zFauI,1609032
+edgartools-1.4.2.dist-info/METADATA,sha256=Yu_BgTRaWM-mERXTXdUTE6s5zeH9GyL0bP0UW9WEucQ,16416
+edgartools-1.4.2.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+edgartools-1.4.2.dist-info/licenses/LICENSE.txt,sha256=3JK5gy0HugTKZ1lhd-QvDaaUvXCWgHqyEAor2UuECiE,1109
+edgartools-1.4.2.dist-info/RECORD,,
