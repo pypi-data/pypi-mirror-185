@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: stistools
+Version: 1.4.3
+Summary: Tools for STIS (Space Telescope Imaging Spectrograph)
+Home-page: https://github.com/spacetelescope/stistools
+Author: Paul Barrett, Phil Hodge
+Author-email: help@stsci.edu
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/plain
+License-File: LICENSE.txt
+Requires-Dist: astropy (>=4.1)
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: stsci.tools
+Requires-Dist: pysiaf
+Requires-Dist: astroquery
+
+Tools for analyzing STIS data from the Hubble Space Telescope
