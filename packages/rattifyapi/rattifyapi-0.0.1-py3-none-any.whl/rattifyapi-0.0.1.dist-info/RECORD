@@ -1,0 +1,10 @@
+rattifyapi/__init__.py,sha256=_PeSRKxakbRY9_HoUD-kWzNkNJJVPUDWu6rsiyyJCZg,175
+rattifyapi/base.py,sha256=jXLFtO5xgAJUplIwTSCtvn86zJga45A4JLDh13ABbX4,2258
+rattifyapi/generic.py,sha256=MgoNVKhrQNztM4V9mx2qW_Z7zf4M6PZ45yiE-1PPNDE,554
+rattifyapi/rattify.py,sha256=vArtJfk6xTmT-hddALBsFy6E9nQ1MvX8OFIbhA2OqlA,390
+rattifyapi/users.py,sha256=B4oB4c3eN1XEQlSeaXC3UVGnutHYm7fVxBUoG-EO3pc,666
+rattifyapi-0.0.1.dist-info/LICENSE,sha256=siCQakwSa7D6LtCKD7mzVcmQkn-zQI_eA1T0AU6DlgE,1065
+rattifyapi-0.0.1.dist-info/METADATA,sha256=v8aXQP3ayDO7SK1DRYpsu55Fk6AmRgBK4b-reqh5CJY,2095
+rattifyapi-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+rattifyapi-0.0.1.dist-info/top_level.txt,sha256=u8oL3NLOwrwjgNmveysiecuVfgKYuVEUfEuLV9eLC08,11
+rattifyapi-0.0.1.dist-info/RECORD,,
