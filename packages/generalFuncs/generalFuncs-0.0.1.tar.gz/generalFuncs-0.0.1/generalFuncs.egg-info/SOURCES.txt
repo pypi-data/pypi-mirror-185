@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+generalFuncs.egg-info/PKG-INFO
+generalFuncs.egg-info/SOURCES.txt
+generalFuncs.egg-info/dependency_links.txt
+generalFuncs.egg-info/entry_points.txt
+generalFuncs.egg-info/not-zip-safe
+generalFuncs.egg-info/requires.txt
+generalFuncs.egg-info/top_level.txt
+generalFunctions/__init__.py
+generalFunctions/_modidx.py
+generalFunctions/core.py
+generalFunctions/runModels.py
