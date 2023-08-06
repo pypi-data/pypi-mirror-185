@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+pyclass_generator/__init__.py
+pyclass_generator/cst.py
+pyclass_generator/generator.py
+pyclass_generator/utils.py
+pyclass_generator.egg-info/PKG-INFO
+pyclass_generator.egg-info/SOURCES.txt
+pyclass_generator.egg-info/dependency_links.txt
+pyclass_generator.egg-info/not-zip-safe
+pyclass_generator.egg-info/requires.txt
+pyclass_generator.egg-info/top_level.txt
