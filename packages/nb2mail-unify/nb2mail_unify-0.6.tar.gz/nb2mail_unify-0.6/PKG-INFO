@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: nb2mail_unify
+Version: 0.6
+Summary: Convert notebooks to email - bug fix for Unifydb
+Home-page: https://github.com/scottpersinger/nb2mail
+Author: Neal Fultz
+Author-email: nfultz@gmail.com
+License: BSD
