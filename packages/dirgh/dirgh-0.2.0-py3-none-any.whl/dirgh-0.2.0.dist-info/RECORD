@@ -1,0 +1,13 @@
+dirgh/__init__.py,sha256=Ldko7grnGiyKx1uqt_rgRR6UA97ENXE7yJs-1Hs8qFg,52
+dirgh/ci/Dockerfile,sha256=mGJq8Ho5ES-OoJvk9KMyHleJCaDGEQEnVwPYcv6HGao,58
+dirgh/ci/deployment/.env,sha256=SFC_m4SAiY693rNB2HjKdTKVKDfWDuwFDCModofgpfc,787
+dirgh/ci/deployment/deploy.sh,sha256=bYkdBeBvP8YzeurvT6cS_woD2gtE7FYbwdylkYtGJwM,664
+dirgh/ci/deployment/docker-compose.yml,sha256=LzbD01YvGufsvuo-utbpFrLdGAv_rpC8rsiAICr7Vb8,457
+dirgh/ci/test.sh,sha256=BnysNf8Zbd42O11xG2hmVJ_vEFrPbEq9qP4m0v14gZI,142
+dirgh/cli.py,sha256=roX1ccWwROPnIG_shRbX6slUkeGbTgci_VfeEn3IFQw,4191
+dirgh/download.py,sha256=nqRVEcv4EFfcWlxz0uzrGwif1GlP599o6toztK4zXac,5218
+dirgh/main.py,sha256=43HOQU5GvA53_N4y7EfP8I1LwK0OdCU6IbNXHOyPTmY,495
+dirgh-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dirgh-0.2.0.dist-info/METADATA,sha256=SwcfUOyMfSik_8HE2PYrbCVokqmzSvKDWnDW9kpf4lE,2506
+dirgh-0.2.0.dist-info/entry_points.txt,sha256=K4UNyHID-N17tmpZfsPk5YG8vKiCQ9_8i2g03hM6kyM,39
+dirgh-0.2.0.dist-info/RECORD,,
