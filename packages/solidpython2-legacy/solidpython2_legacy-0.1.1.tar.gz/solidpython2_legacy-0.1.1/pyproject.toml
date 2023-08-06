@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "solidpython2-legacy"
+version = "0.1.1"
+description = "the legacy extension for SolidPython 2.x.x which provides some backwards compatibility to SolidPython 1.x.x"
+authors = ["jeff <1105041+jeff-dh@users.noreply.github.com>"]
+license = "LGPL"
+
+packages=[
+    { include = "solid2_legacy"}
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pypng = "^0.0.19"
+prettytable = "=0.7.2"
+euclid3 = "^0.1.0"
+solidpython2 = "^2.0.0-beta.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
