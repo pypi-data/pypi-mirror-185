@@ -1,0 +1,3 @@
+cryptography
+xmlsec
+zeep
