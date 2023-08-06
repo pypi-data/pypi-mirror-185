@@ -1,0 +1,2 @@
+[console_scripts]
+privateprefs = privateprefs.core.cli:main
