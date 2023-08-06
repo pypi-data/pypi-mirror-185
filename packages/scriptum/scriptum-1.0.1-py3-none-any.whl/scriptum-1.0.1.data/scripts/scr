@@ -1,0 +1,130 @@
+#!python
+from os import path as p
+from sys import argv
+from json.decoder import JSONDecodeError
+from subprocess import call
+from jsonc_parser.parser import JsoncParser
+
+class Styling:
+    cyan = "\033[96m"
+    bold = "\033[1m"
+    green = "\033[92m"
+    red = "\033[91m"
+    end = "\033[0m"
+
+    def toCyan(message):
+        return f"{Styling.cyan}{message}{Styling.end}"
+
+    def toGreen(message):
+        return f"{Styling.green}{message}{Styling.end}"
+
+    def toRed(message):
+        return f"{Styling.red}{message}{Styling.end}"
+
+    def toBold(message):
+        return f"{Styling.bold}{message}{Styling.end}"
+
+def send_to_terminal(command: str, silent: bool) -> int:
+    if not silent:
+        print(f"> {Styling.toGreen(command)}")
+    return call(command, shell=True)
+
+def get_scripts(filename) -> dict:
+    return JsoncParser.parse_file(filename)
+
+def print_options(options: list):
+    for i in options:
+        print(f"- {Styling.toBold(Styling.toCyan(i))}")
+
+def print_err(message: str, silent: bool) -> bool:
+    if not silent:
+        print(Styling.toRed(message))
+    return 0
+
+def main(filename: str) -> bool: # returns True if an error occured, else false
+    silent = "--silent" in argv
+    continue_ = "--continue" in argv
+    args = argv[1:]
+
+    if silent:
+        args = args[:-1]
+    if continue_:
+        args = args[:-1]
+
+    if (p.exists(filename)):
+        try:
+            scripts = get_scripts(filename)
+        except JSONDecodeError as err:
+            return print_err(f"Invalid json:\n {str(err)}", silent)
+    else:
+        if filename == "scripts.json":
+            return main("scripts.jsonc")
+        print_err("scripts.json or scripts.jsonc not found", silent)
+        return 2
+        
+    path = []
+
+    if not args:
+        if not silent:
+            print("\nScripts:")
+            print_options(scripts.keys())
+            print()
+        return
+        
+    params = ""
+    if args[-1].startswith("[[") and args[-1].endswith("]]"):
+        params = f" {args[-1][2:-2].replace(',,', ' ')}"
+        args = args[:-1]
+
+    err = False
+    i = 0
+    while i < len(args):
+        arg = args[i]
+        if arg in scripts:
+            scripts = scripts[arg]
+            if type(scripts).__name__ == "str" or type(scripts).__name__ == "list":
+                if i == len(args) - 1:
+                    break
+                else:
+                    return print_err(f"{Styling.toBold('.'.join(path) + '.' + arg)}{Styling.red} is a command itself; it does not have any subcommands", silent)
+            if type(scripts).__name__ == "dict":
+                path.append(arg)
+        else:
+            err_message = f"script/category {Styling.toBold(arg)}{Styling.red} not found"
+            if i != 0:
+                err_message += f" in {Styling.toBold('.'.join(path))}"
+            print_err(err_message, silent)
+            if not silent:
+                print("Did you mean:")
+                print_options(scripts.keys())
+            return 2
+        i += 1
+
+    if type(scripts).__name__ == "str":
+        command = scripts
+        if params:
+            command = f"{command}{params}"
+        try:
+            send_to_terminal(command, silent)
+        except KeyboardInterrupt:
+            return 130
+    elif type(scripts).__name__ == "list":
+        for command in scripts:
+            if (params):
+                command = f"{command}{params}"
+            try:
+                res = send_to_terminal(command, silent)
+            except KeyboardInterrupt:
+                if not continue_:
+                    return 130
+            if res != 0 and continue_ == False:
+                break
+    elif not silent: # dict
+        print(f"\nScripts in {Styling.toBold('.'.join(path))}:")
+        print_options(scripts.keys())
+        print()
+        return 0
+
+    return 1
+
+exit(main("scripts.json"))
