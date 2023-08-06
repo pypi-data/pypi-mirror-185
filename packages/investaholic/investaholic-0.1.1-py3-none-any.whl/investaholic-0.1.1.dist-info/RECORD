@@ -1,0 +1,9 @@
+investaholic/advisor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+investaholic/advisor/advisor.py,sha256=39_vKqYKWBNd-1BFSLuMsQnUbxITJbFXEbABEcG04uI,4971
+investaholic/advisor/stock_advisor.py,sha256=loQaxAmTSrSfTUjZ6RHctNlR69l_SmwmOP2i7GZtb18,4591
+investaholic/stats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+investaholic/stats/statistics.py,sha256=eB8pUfoKDmqh92QvQMAXK6xC01aOoj35jqzyfAYDMhI,1783
+investaholic-0.1.1.dist-info/METADATA,sha256=LdndwQGjAOpJdbLJ6MHIieCdNophbC3hdIy8K_QpIdk,254
+investaholic-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+investaholic-0.1.1.dist-info/top_level.txt,sha256=UbrqNUloa0lJZ1uSZ-Lh5M-Yf4LBtQsoZJiWhKZ2RRA,40
+investaholic-0.1.1.dist-info/RECORD,,

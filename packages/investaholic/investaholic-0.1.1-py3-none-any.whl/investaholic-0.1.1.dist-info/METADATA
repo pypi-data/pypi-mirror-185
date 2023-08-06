@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: investaholic
+Version: 0.1.1
+Summary: "investaholic client"
+Author: "Manuel Acquistapace"
+Author-email: "manuel.acquistapace@student.supsi.ch"
+Requires-Dist: requests
+Requires-Dist: tabulate
+Requires-Dist: investaholic-common
+
