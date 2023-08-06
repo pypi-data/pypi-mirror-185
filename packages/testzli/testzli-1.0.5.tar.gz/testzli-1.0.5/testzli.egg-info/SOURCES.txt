@@ -1,0 +1,10 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+testzli/__init__.py
+testzli/uniswap_v2_price_calculator.py
+testzli.egg-info/PKG-INFO
+testzli.egg-info/SOURCES.txt
+testzli.egg-info/dependency_links.txt
+testzli.egg-info/top_level.txt

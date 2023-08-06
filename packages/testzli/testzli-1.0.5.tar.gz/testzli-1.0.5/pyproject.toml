@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=58.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testzli"
+version = "1.0.5"
+authors = [
+  { name="zli06160", email="zli06160@zli06160.com" },
+]
+description = "A personal practice repo"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/zli06160/testzli"
+"Bug Tracker" = "https://github.com/zli06160/testzli/issues"
