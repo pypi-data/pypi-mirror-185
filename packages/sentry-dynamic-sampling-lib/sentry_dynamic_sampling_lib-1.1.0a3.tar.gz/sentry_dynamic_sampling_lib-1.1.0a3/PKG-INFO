@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: sentry-dynamic-sampling-lib
+Version: 1.1.0a3
+Summary: 
+Author: jeanloup.monnier
+Author-email: jean-loup.monnier@spikeelabs.fr
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: psutil (>=5.9.4,<6.0.0)
+Requires-Dist: requests-cache (>=0.9.7,<0.10.0)
+Requires-Dist: schedule (>=1.1.0,<2.0.0)
+Requires-Dist: wrapt (>=1.14.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Sentry Dynamic Sampling Controller
+
+This project aims to provide dynamic sampling without relying on Sentry Dynamic Sampling.
+
+
+It work by installing the library [sentry-dynamic-sampling-lib](https://github.com/SpikeeLabs/sentry-dynamic-sampling-lib) on each project that use sentry. This lib hooks into the sentry callback to change the sampling rate. to get the rate the lib calls this service.
+
+
+
+
+## Install
+```bash
+# install deps
+poetry install
+
+# pre-commit
+poetry run pre-commit install --install-hook
+poetry run pre-commit install --install-hooks --hook-type commit-msg
+```
+
+
+## Run
+```bash
+poetry shell
+
+# add user
+python manage.py createsuperuser
+
+# run server
+# admin @ http://localhost:8000/admin/
+python manage.py runserver
+
+```
+
