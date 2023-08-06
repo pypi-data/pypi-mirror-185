@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mcdmtools
+Version: 0.0.23
+Summary: For solving multi-criteria decision problem with python
+Author: Algın OKURSOY
+Author-email: algin.okursoy@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+License-File: LICENSE

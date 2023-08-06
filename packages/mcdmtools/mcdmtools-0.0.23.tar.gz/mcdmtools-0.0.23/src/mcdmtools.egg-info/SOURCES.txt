@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mcdm/__init__.py
+src/mcdm/ahp.py
+src/mcdm/electre.py
+src/mcdm/merec.py
+src/mcdm/normalization.py
+src/mcdm/setup.py
+src/mcdm/swara.py
+src/mcdm/topsis.py
+src/mcdmtools.egg-info/PKG-INFO
+src/mcdmtools.egg-info/SOURCES.txt
+src/mcdmtools.egg-info/dependency_links.txt
+src/mcdmtools.egg-info/requires.txt
+src/mcdmtools.egg-info/top_level.txt
