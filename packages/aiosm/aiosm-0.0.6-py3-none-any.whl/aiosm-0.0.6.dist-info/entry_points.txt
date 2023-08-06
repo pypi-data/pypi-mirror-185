@@ -1,0 +1,3 @@
+[console_scripts]
+aiosm-host=aiosm:__main__.run_host
+
