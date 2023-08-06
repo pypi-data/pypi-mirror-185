@@ -1,0 +1,5 @@
+nonebot2>=2.0.0rc2
+nonebot-adapter-onebot>=2.1.5
+nonebot-plugin-guild-patch>=0.2.0
+websockets>=10.3
+tortoise-orm>=0.19.2aio-mc-rcon>=3.2.0click>=8.0.4
