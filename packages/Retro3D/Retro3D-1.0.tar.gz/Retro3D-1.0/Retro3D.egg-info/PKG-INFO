@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Retro3D
+Version: 1.0
+Summary: 3d engine
+Home-page: UNKNOWN
+Author: Deepak Deo
+Author-email: deepakbr14@yahoo.com
+License: MIT
+Keywords: 3d game engine software rendering
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Retro3D. 3d game ending software rendering library
+
+
+
+
+
+Change Log
+==========
+
+1.0 (Jan 11, 2023)
+------------------
+- First Release
+
+
