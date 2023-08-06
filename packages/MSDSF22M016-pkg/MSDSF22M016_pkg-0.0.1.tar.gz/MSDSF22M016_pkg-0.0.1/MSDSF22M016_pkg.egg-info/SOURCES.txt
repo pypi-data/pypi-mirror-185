@@ -1,0 +1,9 @@
+License.txt
+README.txt
+setup.py
+MSDSF22M016_pkg/SDT.py
+MSDSF22M016_pkg/__init__.py
+MSDSF22M016_pkg.egg-info/PKG-INFO
+MSDSF22M016_pkg.egg-info/SOURCES.txt
+MSDSF22M016_pkg.egg-info/dependency_links.txt
+MSDSF22M016_pkg.egg-info/top_level.txt
