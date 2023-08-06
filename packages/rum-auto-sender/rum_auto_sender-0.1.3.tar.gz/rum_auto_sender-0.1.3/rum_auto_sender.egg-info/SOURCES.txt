@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+rum_auto_sender/__init__.py
+rum_auto_sender/auto_sender.py
+rum_auto_sender.egg-info/PKG-INFO
+rum_auto_sender.egg-info/SOURCES.txt
+rum_auto_sender.egg-info/dependency_links.txt
+rum_auto_sender.egg-info/requires.txt
+rum_auto_sender.egg-info/top_level.txt
