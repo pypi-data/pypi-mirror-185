@@ -1,0 +1,10 @@
+saxoncee.cpython-311-darwin.so,sha256=ZoC0MHprQSigOOaGt2bfVkHCpBfEXF62-ycJ5t3eLNM,879392
+nodekind.cpython-311-darwin.so,sha256=esyiemc_MBHeBM_K98U0wg1EtMqOkxw7310wPU8Rnu0,40768
+saxoncee/test_saxonc.py,sha256=5jvHOTeB-QeIrazyHIc4IM_mvzjgA6ypU3dVZE6sERY,57673
+saxoncee/setup.py,sha256=vJB-M9s46PGxk05cv9Wk4iUVDsV1ezsk3kqxkXVFxdY,2931
+saxoncee/test_saxon_schema.py,sha256=Vjj0SLRSNMHbzR9Vkcz3xraBRrlIwujjV6-jbayxsIw,3995
+saxoncee-12.0.0.dist-info/RECORD,,
+saxoncee-12.0.0.dist-info/WHEEL,sha256=cU6VF8zMujJUYVnyrnmNyXlIvfRQGwjK6RJnNnUKSGE,111
+saxoncee-12.0.0.dist-info/top_level.txt,sha256=u-Dw0twewj61L41npVrkWvGYrNdPqpTZz4hZvt169fo,18
+saxoncee-12.0.0.dist-info/METADATA,sha256=WzSlxzxIao03c_g1JOH__prdMaa1Esx7jJW75lDfSXE,6985
+saxoncee.dylibs/libsaxon-eec-12.0.dylib,sha256=NsOGzwhvr81372KSJjywp4BoFrnlue_toq24pLoVewI,57203168
