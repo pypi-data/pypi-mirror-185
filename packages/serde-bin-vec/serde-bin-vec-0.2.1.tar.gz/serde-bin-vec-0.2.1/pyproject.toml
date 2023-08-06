@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "serde-bin-vec"
+version = "0.2.1"
+description = "serde vecs in bin format"
+authors = ["Andrew Matte <andrew.matte@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
