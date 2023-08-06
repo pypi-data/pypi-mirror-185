@@ -1,0 +1,2 @@
+soda-core==3.0.18
+soda-core-postgres==3.0.18
