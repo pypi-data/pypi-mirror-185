@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tinycta
+Version: 0.0.4
+Summary: ...
+Home-page: https://github.com/tschm/TinyCTA
+Author: Thomas Schmelzer
+Requires-Python: >=3.7.0,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pandas
+Requires-Dist: plotly
+Project-URL: Repository, https://github.com/tschm/TinyCTA
+Description-Content-Type: text/markdown
+
+# TinyCTA
+
+Underlying package for the 10-line cta
+
