@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+generic_output_manager.egg-info/PKG-INFO
+generic_output_manager.egg-info/SOURCES.txt
+generic_output_manager.egg-info/dependency_links.txt
+generic_output_manager.egg-info/requires.txt
+generic_output_manager.egg-info/top_level.txt
+genericoutput/__init__.py
+genericoutput/go_manager.py
+genericoutput/notifier.py
+genericoutput/metadata/__init__.py
+genericoutput/metadata/metadata.py
+genericoutput/storages/__init__.py
+genericoutput/storages/filesystem.py
+genericoutput/storages/storage.py
