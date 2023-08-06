@@ -1,0 +1,13 @@
+mergegi/__init__.py,sha256=6kpdBWIHVLeFcmNowypz6JfwzU5G1tuCFvoLJ6s0nAc,51
+mergegi/cli.py,sha256=DNVBonK_0RFlBKZXKdJcwdU5aL2ROqdX6rBvM140Kj8,3754
+mergegi/mergegi.py,sha256=X1u4jllJjNDMpU3GrN458b7QfdmacWX-QFbdPjpnpCI,4274
+mergegi/samplesheet_converter.py,sha256=OxvbCT8BSUY0gY523A6xTEAr2rZE0EI1AxFKxaKpn3A,1588
+sequana_pipelines/mergegi/__init__.py,sha256=4Dx9xwziFADWHRcv-YXJ_-1yd1esE2ELtk1nlnZ8xhk,76
+sequana_pipelines/mergegi/config.yml,sha256=59FtyiO0HicKNw1uYiFqwNY3Q5W9SmnTPHIEHvB-H-Y,1011
+sequana_pipelines/mergegi/main.py,sha256=oaW0-UmcVENMh4C69ytvVs27fH0aeB7-RjnUvjvki50,4127
+sequana_pipelines/mergegi/mergegi.smk,sha256=8S9vJ4XdSXgws42w16y3hOa3ODGVQUYJyP9tNRuwkH4,2956
+mergegi-0.2.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mergegi-0.2.2.dist-info/entry_points.txt,sha256=aPqXFA9Nfegj41MlTB_XjYf3T0e6Mzpywa_H35eJRRE,128
+mergegi-0.2.2.dist-info/LICENSE,sha256=fBauwVEuG3nRFC_qndoct4WzgZP1eCNHciKmUfEqC6o,1515
+mergegi-0.2.2.dist-info/METADATA,sha256=aYUIMre9CHywea9ntcsDLnb1ipoCuP3ehIM6EpV2wQo,6186
+mergegi-0.2.2.dist-info/RECORD,,
