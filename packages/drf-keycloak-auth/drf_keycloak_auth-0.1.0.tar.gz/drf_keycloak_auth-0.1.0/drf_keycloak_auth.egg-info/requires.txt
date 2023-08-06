@@ -1,0 +1,5 @@
+djangorestframework<4,>=3.9
+python-keycloak<1,>=0.22.0
+django>=2
+urllib3<1.27,>=1.21.1
+pytz
