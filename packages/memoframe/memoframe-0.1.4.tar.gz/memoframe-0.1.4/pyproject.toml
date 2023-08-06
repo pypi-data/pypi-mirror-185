@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "memoframe"
+version = "0.1.4"
+description = "Python project that creates a package that optimize pandas dataframe"
+authors = ["Ilyes Braham"]
+readme = "README.md"
+packages = [
+    { include = "memoframe" },
+    { include = "memoframe/**/*.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
