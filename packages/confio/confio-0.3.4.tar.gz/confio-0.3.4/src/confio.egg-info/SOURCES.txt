@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/confio/__init__.py
+src/confio/__meta__.py
+src/confio.egg-info/PKG-INFO
+src/confio.egg-info/SOURCES.txt
+src/confio.egg-info/dependency_links.txt
+src/confio.egg-info/top_level.txt
+src/confio/core/__init__.py
+src/confio/core/base.py
+src/confio/core/parser.py
+src/confio/providers/__init__.py
+src/confio/providers/consul.py
+src/confio/providers/db.py
+src/confio/providers/fs.py
