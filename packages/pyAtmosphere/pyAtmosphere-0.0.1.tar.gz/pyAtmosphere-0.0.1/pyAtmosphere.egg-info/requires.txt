@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+matplotlib
+
+[:python_version < "3.8"]
+typing_extensions
+
+[doc]
+sphinx
+
+[jupyter]
+jupyter_ui_poll
