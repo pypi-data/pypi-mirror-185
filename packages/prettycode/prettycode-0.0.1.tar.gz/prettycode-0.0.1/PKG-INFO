@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: prettycode
+Version: 0.0.1
+Summary: A simple library to generate pretty pseudo-random verification codes
+Home-page: UNKNOWN
+Author: Nikolai Suanov
+Author-email: suanwow@gmail.com
+License: MIT
+Keywords: verification codes
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+This is a simple python library for generating pseudo-random codes. 
+
+It can generate 4 or 5 digit codes based on some rules to make them easy memorable for the user.
+
