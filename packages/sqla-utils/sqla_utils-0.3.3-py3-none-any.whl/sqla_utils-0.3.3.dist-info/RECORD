@@ -1,0 +1,15 @@
+NEWS.md,sha256=NkknfbS558C7tNCykabcciIB64xNxl3rfw08rJwNMAg,1720
+sqla_utils/__init__.py,sha256=EeGdhbod_xPfkaookYCBiPtf8a0u_NU-EEcUpwTaZcg,364
+sqla_utils/base.py,sha256=9vkWQFjcgNcMe6jkRqU_Gq9mVql9XjUXeJXlmKtmlYo,6560
+sqla_utils/builder.py,sha256=59EHPir0hhJLma5zfloWBNQicRLMKrht6VDawl7SqmE,3082
+sqla_utils/exc.py,sha256=q-Q1kclTk5M_DaEF-GBCIlrhKscDVnrVlJ7wxxEbiZs,2035
+sqla_utils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqla_utils/session.py,sha256=vmsGoVVgjtordPmSrmNAbGxf6BPwWiCY5p-piL3aPqM,1998
+sqla_utils/split_sql.py,sha256=57v6ZZsvhLNs8bgIR_yZ2DP3hLm44YTmcUpwB8gjcUk,2475
+sqla_utils/test.py,sha256=w6vF1vM9RZ2fxknPi0kYv3X8C4_fI4vk3TnVYUugi18,10862
+sqla_utils/transaction.py,sha256=Ozwj9ROhNe5d9bfH2Tcas-LMdUWS_Wz7s_jf1Ebn5fk,3607
+sqla_utils/types.py,sha256=NVhvMtRnXXvOe7LoctsoyA7VKymXiOBCxgi3fE_rGes,38
+sqla_utils-0.3.3.dist-info/METADATA,sha256=l1eWilkkKBVQ_YIk1fw1dLzSArsF_fPBws-iDrPGPws,3203
+sqla_utils-0.3.3.dist-info/LICENSE,sha256=1urS5riRxUbX3tW9CcKCPG4jAAkCP1c1TPE4bzmTYIY,1073
+sqla_utils-0.3.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sqla_utils-0.3.3.dist-info/RECORD,,
