@@ -1,0 +1,8 @@
+KitronikPicoSimplyServosWheelSetup.py
+LICENSE
+README.md
+SimplyServos.py
+KitronikPicoSimplyServos.egg-info/PKG-INFO
+KitronikPicoSimplyServos.egg-info/SOURCES.txt
+KitronikPicoSimplyServos.egg-info/dependency_links.txt
+KitronikPicoSimplyServos.egg-info/top_level.txt
