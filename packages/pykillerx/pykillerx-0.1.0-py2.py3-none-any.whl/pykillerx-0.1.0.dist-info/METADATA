@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pykillerx
+Version: 0.1.0
+Summary: KillerX Userbot Pyrogram.
+Home-page: https://github.com/TeamKillerX/KillerX-Base
+Author: TeamKillerX
+Author-email: killerx@randydev.my.id
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# pykillerx
+
+* KillerX Userbot Pyrogram 
+
+## test library
+```
+pip install pykillerx
+```
+
+
+
