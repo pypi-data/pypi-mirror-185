@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: protPy
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/amckenna41/pyPro
+Author: MIT
+Author-email: amckenna41@qub.ac.uk
+Maintainer: AJ McKenna
+License: MIT
+Download-URL: https://github.com/amckenna41/pyPro/archive/refs/heads/main.zip
+Keywords: bioinformatics,protein engineering,python,pypi,machine learning,directed evolution,sequence activity relationships,SAR,aaindex,protein descriptors
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (>=1.16.6)
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: delayed
+Requires-Dist: scikit-learn (==0.24.1)
+Requires-Dist: requests (>=2.25)
+Requires-Dist: urllib3 (>=1.26matplotlib)
+Requires-Dist: seaborn
+Requires-Dist: tqdm
+Requires-Dist: pytest
+Requires-Dist: varname
+Requires-Dist: biopython
+Requires-Dist: aaindex
+
+# pyPro
+Protein physiochemical and structural descriptors.
+
+
