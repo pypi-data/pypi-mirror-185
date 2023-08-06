@@ -1,0 +1,12 @@
+nodekind.pypy38-pp73-x86_64-linux-gnu.so,sha256=SdhPGM4YJYOMtyLotDzyIGHJVnkfkwCQcTwN0k7e9Lo,24528
+nodekind.cpython-38-x86_64-linux-gnu.so,sha256=niodoaCOiomXycqnQtgTPLEcsd8_VvmWZt-JiGJxbvQ,70600
+saxoncee.cpython-38-x86_64-linux-gnu.so,sha256=f7zEHK4Wb2z3AevNOiBxfRIo_peEU--6JFeqcnbRsrQ,9222696
+saxoncee.pypy38-pp73-x86_64-linux-gnu.so,sha256=UnKQy4rAIDtygemlj8CCpvofsHFs1RFjExA1h_prxck,903520
+saxoncee.libs/libsaxon-eec-12-182c9ba8.0.so,sha256=puRMCNkDuCOElI8skIKzlixsEDNf5b-KSKQsSETjA1Y,60363336
+saxoncee-12.0.0.dist-info/METADATA,sha256=WzSlxzxIao03c_g1JOH__prdMaa1Esx7jJW75lDfSXE,6985
+saxoncee-12.0.0.dist-info/WHEEL,sha256=4wgzez947PPhESBEKoqUdRfJBlfPT-Edfyf5TV-_wG8,162
+saxoncee-12.0.0.dist-info/RECORD,,
+saxoncee-12.0.0.dist-info/top_level.txt,sha256=u-Dw0twewj61L41npVrkWvGYrNdPqpTZz4hZvt169fo,18
+saxoncee/test_saxonc.py,sha256=5jvHOTeB-QeIrazyHIc4IM_mvzjgA6ypU3dVZE6sERY,57673
+saxoncee/setup.py,sha256=vJB-M9s46PGxk05cv9Wk4iUVDsV1ezsk3kqxkXVFxdY,2931
+saxoncee/test_saxon_schema.py,sha256=Vjj0SLRSNMHbzR9Vkcz3xraBRrlIwujjV6-jbayxsIw,3995
