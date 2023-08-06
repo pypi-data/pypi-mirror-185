@@ -1,0 +1,8 @@
+LICENSE
+README.md
+dirdog.py
+pyproject.toml
+dirdog.egg-info/PKG-INFO
+dirdog.egg-info/SOURCES.txt
+dirdog.egg-info/dependency_links.txt
+dirdog.egg-info/top_level.txt
