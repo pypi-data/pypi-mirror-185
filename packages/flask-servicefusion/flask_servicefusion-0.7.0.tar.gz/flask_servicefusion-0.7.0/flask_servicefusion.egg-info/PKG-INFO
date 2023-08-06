@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: flask-servicefusion
+Version: 0.7.0
+Summary: A servicefusion Rest Client For Flask applications
+Home-page: https://bitbucket.org/will_sexton/flask_servicefusion/src/master/
+Author: will sexton
+Author-email: will@theapiguys.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+* Requirements
+  * Two directories must exist in the root of the project
+    - tokens
+    - logs
+  * Two config variables must be set in the app config
+    - SERVICEFUSION_CLIENT_ID
+    - SERVICEFUSION_CLIENT_SECRET
+- Package uses Client_Credentials authentication, because authorization code flow is broken locally for the SF api. 
+
