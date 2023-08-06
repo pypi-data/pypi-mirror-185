@@ -1,0 +1,10 @@
+yolov8tohf/__init__.py,sha256=jMH-F9mkcl2wejyJ4GVoyamcoPZVfr3KIpeFaGatf50,114
+yolov8tohf/cli.py,sha256=PXnGO5ZtZVWOyoWy17whdfd90rryxmZQh5WFU3xDB3E,156
+yolov8tohf/hf_utils.py,sha256=b7BfkUiZeumOZ9ROYJbOKXLVCnB0HuWkSPTqjeD1rNc,8832
+yolov8tohf/ultralytics_utils.py,sha256=EQG4eigSC59ZF2o-E3GWByQ3SikfFbKODkjE3nAbXmA,3248
+yolov8tohf-0.0.2.dist-info/LICENSE,sha256=op7W2OPEgnWCsTJP6KiF_xsMq_daj1FyBQUYpU8-5Lk,1062
+yolov8tohf-0.0.2.dist-info/METADATA,sha256=L9P9jr6gZsLNq6AGft2kWOPw8ZMZqHRc8QIAqMEt4ms,2287
+yolov8tohf-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+yolov8tohf-0.0.2.dist-info/entry_points.txt,sha256=FrtyDIL3FpUzGGW7BxdLgvZHy2CEeS7bh4wTAaopxuQ,50
+yolov8tohf-0.0.2.dist-info/top_level.txt,sha256=yQlshmFvAn2-6OsgiIai1RqPkr7zK5lo1Lg81PJINh8,11
+yolov8tohf-0.0.2.dist-info/RECORD,,
