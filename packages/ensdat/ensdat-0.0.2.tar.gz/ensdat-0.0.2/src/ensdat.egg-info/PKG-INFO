@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ensdat
+Version: 0.0.2
+Summary: encryption module
+Home-page: https://github.com/Aqouthe
+Author: Aqouthe
+Author-email: hoonie0929@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Security :: Cryptography
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+
+Useful modules for encryption and file encryption and decryption (currently only string decryption)
+
+## test
+
+making key code :
+```python
+print(destr.make_key('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'))
+# result : [97, 97, 97, 97, 
+#           97, 97, 97, 97, 
+#           97, 97, 97, 97, 
+#           97, 97, 97, 97, 
+#           97, 97, 97, 97, 
+#           97, 97, 97, 97, 
+#           97, 97, 97, 97, 
+#           97, 97, 97, 97]
+```
+encrypting code
+```python
+print(destr.ens('this is test str.', destr.key)) 
+# result : b'89k2hfSgnomKayxjTYPH4rxGGMSZORJJueh8x53OCaXq4+UFzTWeU2qjQQcqmtMV'
+print(destr.ens('this is test str.', destr.key)) 
+# result : b'qfEw+NuqhmIsq1DbXZh6glNEQSW3EUkZWxFEOdQwdSudTGWszjA17BNF27hSgBgs'
+print(destr.ens('this is test str.', destr.key)) 
+# result : b'xxMjhD7BbBTNKYDWM9W9F51n13VgxGtUqYbVGx5ErBvcWBVHG4umnaHPPsoobcj2'
+print(destr.ens('this is test str.', destr.key)) 
+# result : b'JdheT2cei4KTYHY3I8aMMi+9xYX#+ugySPBGLAuUpZE6VlSNWKmguyifgI5yxh8YG'
+```
+
+decrypting code
+```python
+print(destr.des(b'89k2hfSgnomKayxjTYPH4rxGGMSZORJJueh8x53OCaXq4+UFzTWeU2qjQQcqmtMV', destr.key))
+# result : 'this is test str.'
+```
+

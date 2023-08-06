@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/ensdat/__init__.py
+src/ensdat/defi.py
+src/ensdat/destr.py
+src/ensdat/o_chap.py
+src/ensdat.egg-info/PKG-INFO
+src/ensdat.egg-info/SOURCES.txt
+src/ensdat.egg-info/dependency_links.txt
+src/ensdat.egg-info/requires.txt
+src/ensdat.egg-info/top_level.txt
