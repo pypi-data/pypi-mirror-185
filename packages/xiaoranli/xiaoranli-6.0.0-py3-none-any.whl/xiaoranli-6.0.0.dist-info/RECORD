@@ -1,0 +1,17 @@
+xiaoranli/__init__.py,sha256=9R0d0bDFvoYGOeFZbsfXSTehrx5C9w-wsqWCDQhwOD0,2251
+xiaoranli/data/rc_files/alias,sha256=RcOl_t5durshnltVcCGSxSqybBJIx-Bzlx3K1mpn1hQ,1920
+xiaoranli/data/rc_files/dockerignore,sha256=fNTcMXrdUU9h9Y0tkLpfQKbLhwRwaVNd-MyP-ycI3sE,75
+xiaoranli/data/rc_files/gdbinit,sha256=Om1pIhhf-_lIfLgx8Gt730W2R4vvZLr05hbgnhNy0Hs,393
+xiaoranli/data/rc_files/gitconfig,sha256=sSooqGwfXpEHUvL047wvYQOMl1zQUgN8GVWWMhRLYII,124
+xiaoranli/data/rc_files/inputrc,sha256=LBnvTQA6YANbPWZPboj8cPjf6dWwOETn-Uu24vNrqPY,534
+xiaoranli/data/rc_files/tmux.config,sha256=kk88x2Skt6csucriayhCNORaufCV8FsLMycVzEkrwHA,903
+xiaoranli/data/rc_files/vimrc,sha256=f4aZHW70bg168Rm9oY4ku9t4V1ri3DZcqzRdc2MzAyo,356
+xiaoranli/scripts/install_golang.sh,sha256=sR2H-HL-Bj6dj9bTD0apJsRLlEQaLoD0Ay5S3qUycxc,188
+xiaoranli/scripts/install_useful_tools.sh,sha256=dvomQdYawpqPtaK8iEqPbLQKAv0lEL6c0Dr7_3XAWDc,1562
+xiaoranli/scripts/install_zsh.sh,sha256=TuRcGNmCyXCQu9PGdKfXtRZcMghpGcCbmpKZYF-0JA0,156
+xiaoranli-6.0.0.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+xiaoranli-6.0.0.dist-info/METADATA,sha256=zH9qbVfpG80xvKi-61_4uOmk7GX8GRSDfxswofuETEk,923
+xiaoranli-6.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xiaoranli-6.0.0.dist-info/entry_points.txt,sha256=T3ZBwdXMY38i4JvMaIXq1WIMdrDEDrVkaWIgKfVsrTc,45
+xiaoranli-6.0.0.dist-info/top_level.txt,sha256=DjwPuFyAkwL8uNM0Z41wNraAt9-71lDJ8SRwYTqRRcs,10
+xiaoranli-6.0.0.dist-info/RECORD,,
