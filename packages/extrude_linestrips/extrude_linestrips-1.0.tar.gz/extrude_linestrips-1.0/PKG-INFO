@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: extrude_linestrips
+Version: 1.0
+Summary: Extrude 2D line strips and line loops into 3D meshes.
+Author-email: Yotam Gingold <yotam@yotamgingold.com>
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Requires-Dist: numpy ; extra == "test"
+Requires-Dist: polyscope ; extra == "test"
+Provides-Extra: test

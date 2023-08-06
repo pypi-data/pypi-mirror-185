@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "extrude_linestrips"
+authors = [{name = "Yotam Gingold", email = "yotam@yotamgingold.com"}]
+classifiers = ["License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"]
+dynamic = ["version", "description"]
+
+[project.optional-dependencies]
+test = [
+    "numpy",
+    "polyscope",
+]
