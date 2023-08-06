@@ -1,0 +1,5 @@
+setup.py
+proxies_manager.egg-info/PKG-INFO
+proxies_manager.egg-info/SOURCES.txt
+proxies_manager.egg-info/dependency_links.txt
+proxies_manager.egg-info/top_level.txt
