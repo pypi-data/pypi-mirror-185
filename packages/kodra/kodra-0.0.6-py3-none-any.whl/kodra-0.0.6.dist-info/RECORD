@@ -1,0 +1,9 @@
+kodra/__init__.py,sha256=iEfBhZ6Nj28yKVxLOErmamNjpfLHWZ0HtDqVihhfS9M,62
+kodra/client.py,sha256=kQPPBnbqFUOFYi03uQtuCVI3Qa6hj4LYD8kvbylk66s,4781
+kodra/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kodra/test/test_kodra.py,sha256=TVB_PgKDKYTZQM9cmzTJz6y6nYYn5RzgoRUt-IiwSUE,1375
+kodra-0.0.6.dist-info/LICENSE,sha256=GdWv5go7iEGuXdHQq4C1zm3QZ9XxQZzYYh3Ly8QtGyI,11353
+kodra-0.0.6.dist-info/METADATA,sha256=vFhJ2ryclwmIt-N67vNVcv0TkhEY8G5x91mASNteGMA,618
+kodra-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+kodra-0.0.6.dist-info/top_level.txt,sha256=xN4-YrEjsm85MaBLh9lMw6hr_tOULAlX9pJcILbwArk,6
+kodra-0.0.6.dist-info/RECORD,,
