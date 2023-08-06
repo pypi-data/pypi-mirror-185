@@ -1,0 +1,17 @@
+README.md
+setup.py
+aiostorage_orm.egg-info/PKG-INFO
+aiostorage_orm.egg-info/SOURCES.txt
+aiostorage_orm.egg-info/dependency_links.txt
+aiostorage_orm.egg-info/requires.txt
+aiostorage_orm.egg-info/top_level.txt
+storage_orm/__init__.py
+storage_orm/exceptions.py
+storage_orm/operation_result.py
+storage_orm/storage_frame.py
+storage_orm/storage_item.py
+storage_orm/storage_orm.py
+storage_orm/redis_impl/__init__.py
+storage_orm/redis_impl/redis_frame.py
+storage_orm/redis_impl/redis_item.py
+storage_orm/redis_impl/redis_orm.py
