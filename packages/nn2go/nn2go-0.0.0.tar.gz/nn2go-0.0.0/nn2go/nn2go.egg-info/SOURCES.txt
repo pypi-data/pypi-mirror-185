@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+nn2go/__init__.py
+nn2go/nn2go.egg-info/PKG-INFO
+nn2go/nn2go.egg-info/SOURCES.txt
+nn2go/nn2go.egg-info/dependency_links.txt
+nn2go/nn2go.egg-info/requires.txt
+nn2go/nn2go.egg-info/top_level.txt
