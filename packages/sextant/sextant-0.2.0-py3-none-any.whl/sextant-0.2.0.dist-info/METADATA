@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sextant
+Version: 0.2.0
+Summary: CLI tool to work with helm charts and our helm chart modules.
+Home-page: https://gitlab.wikimedia.org/repos/sre/sextant
+Author: Giuseppe Lavagetto
+Author-email: joe@wikimedia.org
+License: GPLv3+
+Keywords: wmf,automation,kubernetes,helm,charts
+Platform: GNU/Linux
+License-File: LICENSE
+Provides-Extra: tests
+Requires-Dist: flake8 (>=3.2.1) ; extra == 'tests'
+Requires-Dist: pytest (>=6.1.0) ; extra == 'tests'
+Requires-Dist: black (>=22.0.0) ; extra == 'tests'
+
