@@ -1,0 +1,3 @@
+pdfminer.aemc==20221115
+Pillow>=9.1
+Wand>=0.6.10
