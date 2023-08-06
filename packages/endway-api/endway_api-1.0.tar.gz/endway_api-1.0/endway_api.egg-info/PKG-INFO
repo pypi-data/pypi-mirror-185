@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: endway-api
+Version: 1.0
+Summary: Library for convenient work with the EndWay forum
+Home-page: https://github.com/life-live/endway_api
+Author: life-live
+Author-email: I-will-tell-you@everything.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+https://github.com/life-live/endway_api
