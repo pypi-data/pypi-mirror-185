@@ -1,0 +1,7 @@
+[requires]
+openssl/1.1.1s
+gtest/1.11.0
+
+[generators]
+CMakeDeps
+CMakeToolchain
