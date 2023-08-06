@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+notionai/__init__.py
+notionai/enums.py
+notionai/notionai.py
+notionai_py.egg-info/PKG-INFO
+notionai_py.egg-info/SOURCES.txt
+notionai_py.egg-info/dependency_links.txt
+notionai_py.egg-info/requires.txt
+notionai_py.egg-info/top_level.txt
