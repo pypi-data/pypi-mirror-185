@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+# to override print <= can be a big problem with exceptions
+from __future__ import print_function # must be 1st
+import builtins
+
+import sys
+
+from fire import Fire
+
+from daskcheck.version import __version__
+from daskcheck import unitname
+from daskcheck import config
+
+
+
+
+def main(cmd = "usage", debug=False):
+    ''' Main function of the project
+    '''
+
+    #======== DEFINE THE CONFIG FILE HERE ========
+
+    config.CONFIG['filename'] = "~/.config/daskcheck/cfg.json"
+    # config.load_config()
+    # config.save_config()
+
+    #unitname.func()
+    print("i... THIS IS NOT USABLE CODE NOW.... you need to import ")
+
+if __name__=="__main__":
+    Fire(main)
