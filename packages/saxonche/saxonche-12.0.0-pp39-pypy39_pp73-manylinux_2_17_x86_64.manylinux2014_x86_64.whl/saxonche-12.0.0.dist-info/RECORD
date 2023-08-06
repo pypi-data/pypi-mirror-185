@@ -1,0 +1,12 @@
+saxonche.cpython-39-x86_64-linux-gnu.so,sha256=xqLKxuFtbzAqmvBjU3OTlLFdiTazJsBPu1LuZ5MDfxg,9067064
+nodekind.pypy39-pp73-x86_64-linux-gnu.so,sha256=wZ2Qr7f1_cSYnVL1nYqr-LYB1A8P5s-WnbUdFTKZzDw,24560
+saxonche.pypy39-pp73-x86_64-linux-gnu.so,sha256=wVOM2U2zJkmMsDiSsGRt05K6s2T_v1WPhmY5rg1xiV4,887136
+nodekind.cpython-39-x86_64-linux-gnu.so,sha256=syOQNmzqP3PLAVgBw86NuKamm5JW4Ptv8ofU081-n70,67480
+saxonche/test_saxonc.py,sha256=abhSO7AmhpoPPf7f1KDBLGGBeVlVM51i3HmWuNckHcs,57673
+saxonche/setup.py,sha256=_HenLtlEjeNzfD7xC_3d-pcuV9MSdkervKNsRM6YSiY,2931
+saxonche/test_saxon_schema.py,sha256=Vjj0SLRSNMHbzR9Vkcz3xraBRrlIwujjV6-jbayxsIw,3995
+saxonche-12.0.0.dist-info/METADATA,sha256=rrQ1G9nE9GgCg000Yu5SNKXzdRp9sESAehTTawW3Eo0,6985
+saxonche-12.0.0.dist-info/WHEEL,sha256=zevXRBFV3Viwx-zJ1CmfKrZ0bJyn-BZWNDYFs0Oq8Qs,162
+saxonche-12.0.0.dist-info/RECORD,,
+saxonche-12.0.0.dist-info/top_level.txt,sha256=7ovm5sZkmNaaPlEOauwcTj50pdCyWWrttpu6wgS17Zw,18
+saxonche.libs/libsaxon-hec-12-6e90f80c.0.so,sha256=PUKZsWpe7DwxwmPkcpZZuOfDM2SIiKCQzPvk6e1LA18,50635176
