@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+colorma/__init__.py
+colorma/fore.py
+colorma.egg-info/PKG-INFO
+colorma.egg-info/SOURCES.txt
+colorma.egg-info/dependency_links.txt
+colorma.egg-info/top_level.txt
