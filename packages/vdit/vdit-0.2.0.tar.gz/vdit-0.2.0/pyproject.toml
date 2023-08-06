@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vdit"
+authors = [
+    {name = "Christos Damianidis", email = "xrhstosgr@gmail.com"},
+]
+version = "0.2.0"
+description = "Transfer text from no copy VDI using QR codes"
+readme = "Utility to generate a QR code on the VDI and parse it on the main computer"
+requires-python = ">=3.7"
+dependencies = [
+    "pyqrcode",
+	"pyautogui",
+	"pyzbar",
+    "pyperclip",
+    "pypng",
+]
+
+[project.scripts]
+vdit = "vdit.__main__:main"

@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: vdit
+Version: 0.2.0
+Summary: Transfer text from no copy VDI using QR codes
+Author-email: Christos Damianidis <xrhstosgr@gmail.com>
+Requires-Python: >=3.7
