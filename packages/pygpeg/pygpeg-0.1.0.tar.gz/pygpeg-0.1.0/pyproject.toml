@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "pygpeg"
+version = "0.1.0"
+description = "Another PEG parser for Python"
+authors = ["Curtis Schlak <foss@schlak.com>"]
+license = "MIT"
+readme = "README.rst"
+homepage = "https://realistschuckle.gitlab.io/pygpeg"
+repository = "https://gitlab.com/realistschuckle/pygpeg"
+documentation = "https://realistschuckle.gitlab.io/pygpeg"
+keywords = ["parser", "peg"]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Topic :: Software Development :: Compilers",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+pytest = "^7.2.0"
+pytest-watch = "^4.2.0"
+flake8 = "^6.0.0"
+pyclean = "^2.2.0"
+
+
+[tool.poetry.group.docs.dependencies]
+jupyter-book = "^0.13.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
