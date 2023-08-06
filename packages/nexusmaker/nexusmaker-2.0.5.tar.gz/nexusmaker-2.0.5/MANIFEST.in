@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+prune htmlcov
+prune .cache
+prune .git
+prune build
+prune dist
+prune *.egg-info
