@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+robotsparser/__init__.py
+robotsparser/parser.py
+robotsparser.egg-info/PKG-INFO
+robotsparser.egg-info/SOURCES.txt
+robotsparser.egg-info/dependency_links.txt
+robotsparser.egg-info/requires.txt
+robotsparser.egg-info/top_level.txt
