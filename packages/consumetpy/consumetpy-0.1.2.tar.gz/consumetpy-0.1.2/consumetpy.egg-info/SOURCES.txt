@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+consumetpy/__init__.py
+consumetpy/consumetapi.py
+consumetpy.egg-info/PKG-INFO
+consumetpy.egg-info/SOURCES.txt
+consumetpy.egg-info/dependency_links.txt
+consumetpy.egg-info/requires.txt
+consumetpy.egg-info/top_level.txt
