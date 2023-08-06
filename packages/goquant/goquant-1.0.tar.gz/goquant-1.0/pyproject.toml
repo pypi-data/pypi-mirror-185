@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "goquant"
+version = "1.0"
+authors = [
+  { name="Luke A. Parker", email="luke.parker@goquant.io" },
+  { name="Ben S. Chamberland", email="benjamin.chamberland@goquant.io" },
+]
+description = "This package allows users to get lightnight fast crypto market data using Python functions."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"GoQuant's Website" = "https://goquant.io/"
