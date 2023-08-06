@@ -1,0 +1,14 @@
+CustomIntents/Bcolor.py,sha256=g_org6mF96ZhE9l4KyVn-9uVsIC9wjqth8skFobsbCk,237
+CustomIntents/BinaryImageClassificator.py,sha256=HwyIsOYSsFaRl4tQvd-NvebN4J6IXb8FBM4vgqIXCaY,17882
+CustomIntents/Chatbot.py,sha256=WZdZsZNBIUoKcoLhA7pQMkh0bArlwS4Bm1nvcRNlTk0,26320
+CustomIntents/JsonIntents.py,sha256=kJrL5LCebEZ8YbLyI9s0QdAh_oQPiicDC4PTNV4xjVo,5885
+CustomIntents/Legacy.py,sha256=aILAAOdq3om2X4w2c6pzmumB5GoHr9EctWiZYzSaV_Q,55975
+CustomIntents/PLinearRegression.py,sha256=epXPg8kmBz76jOu1wN--ierSH2d3qpi1HvPX05glYeM,7218
+CustomIntents/Pfunctions.py,sha256=8QBWdGVfZykGw6zgsJmUVrPLNWA-zIQexsqZsrYJbmw,16628
+CustomIntents/__init__.py,sha256=DwINnsXMa6h49YlJsyJ6-BmWYR04ap7ZYQDzhj0us0o,208
+CustomIntents/cascades/haarcascade_frontalcatface.xml,sha256=5yqoCQ5zFI2BuV1z5TP2ZHBwdgEVbxxlv526ifwXP80,963439
+CustomIntents-0.7.0.dist-info/LICENSE.md,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+CustomIntents-0.7.0.dist-info/METADATA,sha256=LzrOpHCKkqv4GPqB7Hk25kt13ALnPxU1NFUTki08zrc,10182
+CustomIntents-0.7.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CustomIntents-0.7.0.dist-info/top_level.txt,sha256=_JvqL5-uaYkBUQS3PYNdzZo_O1cCBBSgeUQQ1Xa2IqQ,14
+CustomIntents-0.7.0.dist-info/RECORD,,
