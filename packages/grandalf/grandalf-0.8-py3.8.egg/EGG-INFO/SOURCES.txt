@@ -1,0 +1,17 @@
+README.rst
+setup.py
+grandalf/__init__.py
+grandalf/graphs.py
+grandalf/layouts.py
+grandalf/routing.py
+grandalf.egg-info/PKG-INFO
+grandalf.egg-info/SOURCES.txt
+grandalf.egg-info/dependency_links.txt
+grandalf.egg-info/requires.txt
+grandalf.egg-info/top_level.txt
+grandalf/utils/__init__.py
+grandalf/utils/dot.py
+grandalf/utils/geometry.py
+grandalf/utils/linalg.py
+grandalf/utils/nx.py
+grandalf/utils/poset.py

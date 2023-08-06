@@ -1,0 +1,5 @@
+pyparsing
+
+[full]
+numpy
+ply
