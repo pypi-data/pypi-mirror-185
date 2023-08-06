@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: rebapy
+Version: 0.0.1
+Summary: Reba Python Client
+Project-URL: Homepage, https://github.com/multisig-labs/rebapy
+Project-URL: Bug Tracker, https://github.com/multisig-labs/rebapy/issues
+Author-email: Chandler Lofland <chandler@usereba.com>
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: web3>=5.31.0
+Description-Content-Type: text/markdown
+
+# Rebapy
+
+Reba Python Client
+
+## Example
+
+```python
+from rebapy import RelayClient
+client = RelayClient("0xe28a707663e73e2502d835a5b456af43425196013c6e1218cdf76d43e975dc46")
+while True:
+
+    tx = client.read_tx()
+    print(tx.as_dict())
+
+```

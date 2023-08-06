@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rebapy"
+version = "0.0.1"
+authors = [{ name = "Chandler Lofland", email = "chandler@usereba.com" }]
+description = "Reba Python Client"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = ["web3 >= 5.31.0"]
+
+[project.urls]
+"Homepage" = "https://github.com/multisig-labs/rebapy"
+"Bug Tracker" = "https://github.com/multisig-labs/rebapy/issues"
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]

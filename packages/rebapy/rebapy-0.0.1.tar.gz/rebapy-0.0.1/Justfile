@@ -1,0 +1,41 @@
+set dotenv-load
+
+[private]
+default:
+    just --list --unsorted
+
+# Install development dependencies
+dev-install:
+    #!/bin/bash
+    set -euo pipefail
+    echo "Creating virtual environment..."
+    python -m venv env
+    source env/bin/activate
+    echo "Upgrading pip...."
+    python -m pip install --upgrade pip
+    echo "Installing dependencies...."
+    python -m pip install -U pytest web3 build twine hatchling autopep8
+    echo "Done"
+
+# builds the package
+build:
+    python -m hatchling build
+
+# publish to pypi
+publish: build
+    python -m twine upload dist/*
+
+# runs unit tests
+test:
+    python -m pytest
+
+# clean up
+clean:
+    rm -rf dist .pytest_cache
+    find . -name __pycache__ -type d -exec rm -rf {} +
+
+send:
+    python scripts/client_send.py
+
+read:
+    python scripts/client_read.py
