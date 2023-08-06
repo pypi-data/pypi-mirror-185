@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: netbox-disk
+Version: 0.0.7.6.5.49
+Summary: Netbox Disk Plugin
+Author: Tim Rhomberg
+Author-email: timrhomberg@hotmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+### Directory structure
+
+```
++- api - The API type
++- filters - Filters of the models
++- forms - The ModelForm, ModelFilterForm, ModelImportForm, ModelBulkEditForm
++- migrations - DB Django Migration
++- tables - The ModelBaseTable, ModelTable, RelatedModelTable
++- templates
+  +- netbox_disk - The detail view of each model
+    +- disk - The template content box in the Virtual Machine Model
++- views - PhysicalvolumeListView, PhysicalvolumeView, PhysicalvolumeEditView, PhysicalvolumeDeleteView, 
+           PhysicalvolumeBulkImportView, PhysicalvolumeBulkEditView, PhysicalvolumeBulkDeleteView
+```
+
+Basis:
+- pv:
+  - size
+  - Storage Cluster
+  - virtual_machine
+
+Windows Form:
+- Laufwerk Name (D, E, F)
+- filesystem (ntfs)
+
+Linux Form:
+- vg name
+- lv name
+- path
+- filesystem
+
+
+Extra Filesystem Model & als ChoiceField ausgeben
+
+# Build
+poetry publish --build
+
+
+
+git add . && git commit -m "0.0.7.6.5.41" && git push
