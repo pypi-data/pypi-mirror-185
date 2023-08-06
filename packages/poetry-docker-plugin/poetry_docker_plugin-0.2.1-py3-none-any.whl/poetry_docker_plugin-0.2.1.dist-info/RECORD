@@ -1,0 +1,8 @@
+poetry_docker_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_docker_plugin/docker_builder.py,sha256=nIQmH7MdmD7EKVBlM9q63PSKyQyNTqCEjG1apsQw-Q8,8049
+poetry_docker_plugin/plugin.py,sha256=Ppj-LBucD7G8aAzew32YsYxNm5wNyJMTASrEy789cWY,4357
+poetry_docker_plugin-0.2.1.dist-info/entry_points.txt,sha256=TYnuXs9Bi1fUMqPH93UqkpDtDoafvj1P9xvuHFgEAfw,77
+poetry_docker_plugin-0.2.1.dist-info/LICENSE,sha256=8-CYy05HnofC_8KVtlqYfKeIRHsO7dF3Wy4Izhfry7E,1090
+poetry_docker_plugin-0.2.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+poetry_docker_plugin-0.2.1.dist-info/METADATA,sha256=cL_FpMp0GmGYFs25YAd42ZlZQQ8LKax16FNBdkTHS6w,3624
+poetry_docker_plugin-0.2.1.dist-info/RECORD,,
