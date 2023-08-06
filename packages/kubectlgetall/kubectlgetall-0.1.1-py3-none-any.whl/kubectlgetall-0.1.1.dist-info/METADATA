@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kubectlgetall
+Version: 0.1.1
+Summary: Get a list of CRs for cluster CRDs in a namespace
+Home-page: https://github.com/Boomatang/kubectlgetall
+Keywords: OpenShift,Kubernetes,k8s,CRD,CR
+Author: Jim Fitzpatrick
+Author-email: jimfity@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Project-URL: Documentation, https://github.com/Boomatang/kubectlgetall
+Project-URL: Repository, https://github.com/Boomatang/kubectlgetall
