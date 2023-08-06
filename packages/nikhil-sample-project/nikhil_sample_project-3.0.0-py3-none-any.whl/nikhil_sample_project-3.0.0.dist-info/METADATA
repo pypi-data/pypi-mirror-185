@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nikhil-sample-project
+Version: 3.0.0
+Summary: An sample project to understand.
+Author-email: Nikhil Nasit <nikhil.nasit@crestdatasys.om>
+Maintainer-email: Nikhil Nasit <nikhil.nasit@crestdatasys.om>
+Keywords: nikhil,sample-project
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: peppercorn
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
