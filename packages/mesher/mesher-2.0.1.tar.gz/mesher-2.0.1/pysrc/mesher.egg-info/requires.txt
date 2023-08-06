@@ -1,0 +1,9 @@
+vtk
+pygdal==3.0.4.*
+numpy
+scipy
+matplotlib
+cloudpickle
+metis
+mpi4py
+natsort
