@@ -1,0 +1,7 @@
+click
+flask
+imutils
+numpy
+opencv-python
+rembg
+waitress
