@@ -1,0 +1,11 @@
+parasect/__init__.py,sha256=J9THgswdS3azHGP4znmCdUSjAJM0NB2j89WDpH4OcSQ,193
+parasect/__main__.py,sha256=UH3-IlLCltWLZkgjTjP8-DNgh-wnAvsJhEQZIdWB9pg,3502
+parasect/_helpers.py,sha256=B_Xc5AEP0iCQ1thoZlY2wpwpvOkKJJ33Yw70oF0xX2I,26127
+parasect/build_lib.py,sha256=YWPIFvHmzTqTp8v7G8jP9j-1kHzN3_j_ZHQ2dv0RFV4,28007
+parasect/compare_lib.py,sha256=YjzfMcvzDg6Yavsl0hqf0aF6vpWWTGQGq-hO3egxYW0,15184
+parasect/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parasect-1.1.0.dist-info/entry_points.txt,sha256=rIVV_NvZl4k7JXlP7DpA9YrQhH4_4pgy39qPuncagwM,50
+parasect-1.1.0.dist-info/LICENSE.rst,sha256=7SHEZN1mk8TH3chS5c79kcUBmVrpaD66HHbmOpPCrm8,1080
+parasect-1.1.0.dist-info/METADATA,sha256=7I45u7dAemm0iCFHwoOfmUtjoTKSibtfPoy6Zvyml9w,5409
+parasect-1.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+parasect-1.1.0.dist-info/RECORD,,
