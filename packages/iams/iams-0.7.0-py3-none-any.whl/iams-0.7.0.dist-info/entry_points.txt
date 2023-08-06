@@ -1,0 +1,4 @@
+[console_scripts]
+iams-server = iams.server:execute_command_line
+iams-simulation = iams.simulation:execute_command_line
+
