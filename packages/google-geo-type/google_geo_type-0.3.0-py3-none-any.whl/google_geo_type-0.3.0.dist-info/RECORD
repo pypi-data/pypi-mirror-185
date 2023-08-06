@@ -1,0 +1,14 @@
+google_geo_type-0.3.0-py3.9-nspkg.pth,sha256=xH5gTxc4UipYP3qrbP-4CCHNGBV97eBR4QqhheCvBl4,539
+google/geo/type/__init__.py,sha256=k1N_B_rcQGEooujH3t9XP9J3o5nfJJDAF1n2fau_2Q4,768
+google/geo/type/gapic_metadata.json,sha256=B6IvqSXJaEnnH4K3K0ylpcj5eJa9455CUNpnoPhkwv4,219
+google/geo/type/gapic_version.py,sha256=Y0SWKHncE3VaxHGggWM-P2ylactY_6rnuERvNnhcS4Q,653
+google/geo/type/py.typed,sha256=ol04FqgiKKOSbhgTiwGyc9LGTNH_2eRkJsFDK3dxPo4,76
+google/geo/type/services/__init__.py,sha256=cy2W0ArG0dH2c6GO6MSWmmdZDYSu0lnc4KfvgYxp0ak,600
+google/geo/type/types/__init__.py,sha256=Faf1FAE-rtl6LO_RELxNhZ1fjZzFMeimvkwgRRustuw,656
+google/geo/type/types/viewport.py,sha256=_ewQ7v--Aw8JOf_HAJGPFmwHfKNHR5ujWlLBehMKR7c,2688
+google_geo_type-0.3.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+google_geo_type-0.3.0.dist-info/METADATA,sha256=zg6DjNxOTmK7jxGz5MBWxxqzV6OMb681a8LKHTshcMM,4824
+google_geo_type-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+google_geo_type-0.3.0.dist-info/namespace_packages.txt,sha256=_1QvSJIhFAGfxb79D6DhB7SUw2X6T4rwnz_LLrbcD3c,7
+google_geo_type-0.3.0.dist-info/top_level.txt,sha256=_1QvSJIhFAGfxb79D6DhB7SUw2X6T4rwnz_LLrbcD3c,7
+google_geo_type-0.3.0.dist-info/RECORD,,
