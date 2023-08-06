@@ -1,0 +1,17 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/pre-commit.yml
+.github/workflows/pypi.yml
+docs/images/get_notion_token.png
+examples/basic_usage.py
+notionai/__init__.py
+notionai/enums.py
+notionai/notionai.py
+notionai_py.egg-info/PKG-INFO
+notionai_py.egg-info/SOURCES.txt
+notionai_py.egg-info/dependency_links.txt
+notionai_py.egg-info/requires.txt
+notionai_py.egg-info/top_level.txt
