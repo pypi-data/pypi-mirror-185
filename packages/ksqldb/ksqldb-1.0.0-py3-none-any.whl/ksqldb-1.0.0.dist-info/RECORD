@@ -1,0 +1,8 @@
+ksqldb/__init__.py,sha256=6YK9oVcryIp1LUcRamUfyiOu7keYPg6KzFYwPN5WcQ4,98
+ksqldb/api.py,sha256=Zdv-mTmZXu0lxJB6342ODk2ZSLOdMLiSRfxez2OCfDQ,1783
+ksqldb/client.py,sha256=k7sd487j0KQflkuuwN9xr_Fk8yZEBqTXQVOvkkzwIUI,1582
+ksqldb-1.0.0.dist-info/LICENSE,sha256=MhqkPnUPxdwlSH9RIzWvS8RUeDmBtUxZ0OhedxSHFso,1068
+ksqldb-1.0.0.dist-info/METADATA,sha256=Qype36xF1CnZwg__2A3-Wfl46RyncT566WNcTES8ST8,4128
+ksqldb-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ksqldb-1.0.0.dist-info/top_level.txt,sha256=Cg_8oZwNPj-ZqXyXuk_McdkIuk3ypXvTqca5LeXLjJk,7
+ksqldb-1.0.0.dist-info/RECORD,,
