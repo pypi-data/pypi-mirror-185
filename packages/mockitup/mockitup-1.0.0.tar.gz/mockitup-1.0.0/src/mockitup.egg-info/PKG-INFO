@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mockitup
+Version: 1.0.0
+Summary: A `unittest.mock` wrapper for easier mocking
+Author-email: Shacham Ginat <shacham6@gmail.com>
+Requires-Python: <4.0,>=3.8
