@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "play-integrity"
+version = "0.1.1"
+description = "Python library to verify Play Integrity API"
+authors = ["Yves Tumushimire <yvestumushimire@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+google-api-python-client = "^2.72.0"
+google-auth = "^2.16.0"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^22.12.0", allow-prereleases = true}
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+isort = "^5.11.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
