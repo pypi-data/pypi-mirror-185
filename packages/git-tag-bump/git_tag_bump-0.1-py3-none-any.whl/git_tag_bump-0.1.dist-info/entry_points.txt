@@ -1,0 +1,3 @@
+[console_scripts]
+git-bump=git_tag_bump:main
+
