@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/stactools/aster/__init__.py
+src/stactools/aster/cog.py
+src/stactools/aster/commands.py
+src/stactools/aster/constants.py
+src/stactools/aster/stac.py
+src/stactools/aster/utils.py
+src/stactools/aster/xml_metadata.py
+src/stactools_aster.egg-info/PKG-INFO
+src/stactools_aster.egg-info/SOURCES.txt
+src/stactools_aster.egg-info/dependency_links.txt
+src/stactools_aster.egg-info/requires.txt
+src/stactools_aster.egg-info/top_level.txt
