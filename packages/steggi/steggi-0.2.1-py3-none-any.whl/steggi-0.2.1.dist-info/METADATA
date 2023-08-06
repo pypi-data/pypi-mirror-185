@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: steggi
+Version: 0.2.1
+Summary: Stegsolve like GUI program for steganographic purposes.
+Home-page: https://github.com/tamton-aquib/steggi
+Keywords: GUI,tkinter,opencv,steganogrpahy,image processing,stegsolve
+Author: Aquib
+Author-email: aquibjavedt007@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: opencv-python (>=4.6.0.66,<5.0.0.0)
+Requires-Dist: pillow (>=9.3.0,<10.0.0)
+Requires-Dist: tk (>=0.1.0,<0.2.0)
+Project-URL: Documentation, https://github.com/tamton-aquib/steggi
+Description-Content-Type: text/markdown
+
+# steggi
+
+Stegsolve like GUI program in python with opencv and tkinter.
+
