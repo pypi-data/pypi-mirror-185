@@ -1,0 +1,6 @@
+numpy
+scipy
+matplotlib
+networkx
+scikit-learn
+setuptools
