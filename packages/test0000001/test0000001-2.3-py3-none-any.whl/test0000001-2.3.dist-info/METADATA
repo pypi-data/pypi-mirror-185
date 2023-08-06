@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: test0000001
+Version: 2.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pyrebase
+Requires-Dist: logger
+Requires-Dist: logging
+Requires-Dist: uuid
+Requires-Dist: python-dotenv
+
+UNKNOWN
+
