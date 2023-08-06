@@ -1,0 +1,2 @@
+[console_scripts]
+jupyter-nb-double-quote-to-single-quote = jupyter_nb_double_quote_to_single_quote._main:main
