@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: easy-pyinstaller
+Version: 0.0.21
+Summary: # Objetivo
+Author: Igor Polegato
+Author-email: 
+License: MIT License
+Keywords: ip-pyinstaller
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Objetivo
+Facilitar a compilaÃ§Ã£o utilizando pyinstaller

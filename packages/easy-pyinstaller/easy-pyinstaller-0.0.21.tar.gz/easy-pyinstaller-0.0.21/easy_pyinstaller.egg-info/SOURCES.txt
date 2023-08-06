@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+easy_pyinstaller/__init__.py
+easy_pyinstaller/installer.py
+easy_pyinstaller.egg-info/PKG-INFO
+easy_pyinstaller.egg-info/SOURCES.txt
+easy_pyinstaller.egg-info/dependency_links.txt
+easy_pyinstaller.egg-info/requires.txt
+easy_pyinstaller.egg-info/top_level.txt
