@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pyflutterinstall
+Version: 0.1
+Summary: Installs the flutter sdk and dependencies
+Home-page: https://github.com/zackees/pyflutterinstall
+Author: Zach Vorhies
+Author-email: dont@email.me
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Environment :: Console
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: download
+Requires-Dist: windows-path-adder ; platform_system == "Windows"
+Requires-Dist: pywin32 ; platform_system == "Windows"
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# pyflutterinstall
+
+[![Win_Tests](https://github.com/zackees/pyflutterinstall/actions/workflows/push_win.yml/badge.svg)](https://github.com/zackees/pyflutterinstall/actions/workflows/push_win.yml)
+[![MacOS_Tests](https://github.com/zackees/pyflutterinstall/actions/workflows/push_macos.yml/badge.svg)](https://github.com/zackees/pyflutterinstall/actions/workflows/push_macos.yml)
+[![Ubuntu_Tests](https://github.com/zackees/pyflutterinstall/actions/workflows/push_ubuntu.yml/badge.svg)](https://github.com/zackees/pyflutterinstall/actions/workflows/push_ubuntu.yml)
+
+Installs the dependencies for pyflutter.
+
+Usage
+```bash
+> pip install pyflutterinstall
+> pyflutterinstall
+```
+
+This is still beta software. Despite tests passing, only windows is supported.
+
+# Releases
+
+  * 0.1: Initial release - win32 supported.
