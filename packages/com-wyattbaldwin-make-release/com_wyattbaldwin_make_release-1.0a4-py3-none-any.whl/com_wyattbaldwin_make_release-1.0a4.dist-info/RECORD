@@ -1,0 +1,14 @@
+CHANGELOG.md,sha256=M8Z_cFpwS1TVtNbzdUbfE1nRGUOARpFpWyXcDSY8_Ww,553
+README.md,sha256=2JlmhzqWNkn82ZOrOW2xJUxd98Qb1KWPPqVmixLpG0E,2831
+make_release/__init__.py,sha256=FC0_Nye1VSka0NuOUmFMCxEupNjVl3XlEKBKtl1emQw,57
+make_release/__main__.py,sha256=X-43QCoJdBEaN5Ix7eIbVcpzB1c-SNitNE1p-1vkfZM,96
+make_release/merge.py,sha256=MfYUdr-SXMrv-9qgv5_aTCvXmmGznsWl6NJdelilmFs,1361
+make_release/prepare.py,sha256=TPkiJnDe4wNH8MPQMxOmlJbv3C3JJbcMSEJUKzXQNX0,1462
+make_release/release.py,sha256=ObKsTLLBVOcSbFNRV8FevmYg0fdkBw1HQfNV00ccfB0,9006
+make_release/resume.py,sha256=HWgdSoob8vhvVdejbr19-vej-DpynFbfAW-X-RpC-3Q,1803
+make_release/tag.py,sha256=5vEGfG7fPkChGVr8IqsRo3HBIvzrO11TWW0bt-YGOr4,1076
+make_release/util.py,sha256=fBMxc3DKLKH0eUUE8U9CU2IeUNR1Y2k_oYP3KQrQQW8,8674
+com_wyattbaldwin_make_release-1.0a4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+com_wyattbaldwin_make_release-1.0a4.dist-info/entry_points.txt,sha256=0lreIz3TF0_kweO3E3-27GumSyd02mgU8WXWCQcu7E4,73
+com_wyattbaldwin_make_release-1.0a4.dist-info/METADATA,sha256=Fgt4xg_LRgC8cP1epXnacNkWVjS1Nm4_B0D_m0HZwPs,3563
+com_wyattbaldwin_make_release-1.0a4.dist-info/RECORD,,
