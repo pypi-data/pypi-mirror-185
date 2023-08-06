@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "example_package_akash"
+version = "0.0.1"
+authors = [
+  { name="Akash Zalavadiya", email="akash.zalavadiya@crestdatasys.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Operating System :: Microsoft :: Windows :: Windows 11",
+    "Operating System :: iOS",
+    "Programming Language :: Cython",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+"Homepage" = "https://packaging.python.org/en/latest/tutorials/packaging-projects/"
+"Reference" = "https://pypi.org/"
