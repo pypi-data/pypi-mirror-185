@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.py
+gitstats/__init__.py
+gitstats/get_stats.py
+gitstats/repo_metrics.py
+gitstats_py.egg-info/PKG-INFO
+gitstats_py.egg-info/SOURCES.txt
+gitstats_py.egg-info/dependency_links.txt
+gitstats_py.egg-info/entry_points.txt
+gitstats_py.egg-info/requires.txt
+gitstats_py.egg-info/top_level.txt
+gitstats_py.egg-info/zip-safe
