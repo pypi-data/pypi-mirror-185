@@ -1,0 +1,12 @@
+protonup/__init__.py,sha256=ZvAkAuN9ENY9_4wyEhwFWVntTOqwx1KW9JwYOX_xSuo,247
+protonup/__main__.py,sha256=z3OQolCKD8rUd3pKYp_FISq2VctFhFl1mV-DVnaoNOM,29
+protonup/api.py,sha256=--NTIFpeSIldrbUdJdOZALRrmvqsC9gpOb6DnJ-nd-Q,5549
+protonup/cli.py,sha256=SLPIFj8PXrgzJFU8Lq2F2yeegjSfNh8Xf3QhidiEJH0,2198
+protonup/constants.py,sha256=W1xZugdnHImU2r8xX2NMyXMuT3Do11v89POQEI6ykkY,340
+protonup/utilities.py,sha256=s5kxq_lF3xFXDoqEIlt4koCzBseNlkASBVu-ob8W11k,2087
+protonup-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+protonup-0.1.5.dist-info/METADATA,sha256=6wgSbp_xyR6Ik_J157_SEpgAsWEy2fCvYMJlLTOciws,2157
+protonup-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+protonup-0.1.5.dist-info/entry_points.txt,sha256=-8PK1fTaDB9xserdAO2x5_XPk1ekM-Kox0zfQ_3lpfI,43
+protonup-0.1.5.dist-info/top_level.txt,sha256=loW4ZyU9WTA9gASO4_T9Rnzem486Au5-cWfmYsky_oo,9
+protonup-0.1.5.dist-info/RECORD,,
