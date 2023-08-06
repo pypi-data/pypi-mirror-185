@@ -1,0 +1,12 @@
+palm_rlhf_pytorch/__init__.py,sha256=8LOX1-zHKGNQkRF5k_JzbjxV7fwB0sDojnrNAvIDIB4,161
+palm_rlhf_pytorch/lora.py,sha256=AnTaqrwhUaPJpMCWbq9WNxjSl-4_ss8j1FPMC_qo8Rs,670
+palm_rlhf_pytorch/optimizer.py,sha256=9NiG1nWuPy8fMr6_ZwVZ0wkD4pwL_3rFiyueXWgoEeQ,943
+palm_rlhf_pytorch/palm_rlhf_pytorch.py,sha256=NVYtVcbS16xUNNuse8MCxBvdvNkiisjwu_6S4-GRD80,15345
+palm_rlhf_pytorch/ppo.py,sha256=k4UkX1aumniIBqS6oBW2MuzJUvQOEv5nbbOsmKd1VXU,19512
+palm_rlhf_pytorch/reward.py,sha256=qPLOJ_mH6rz_hKUzvbRIgT6E6gHoC2oE1R9Dv98ztgI,3165
+palm_rlhf_pytorch/utils.py,sha256=C_iqS_E7vGDxxEob_XynaanErjDti1buftACcolQuVs,1912
+PaLM_rlhf_pytorch-0.0.50.dist-info/LICENSE,sha256=xZDkKtpHE2TPCAeqKe1fjdpKernl1YW-d01j_1ltkAU,1066
+PaLM_rlhf_pytorch-0.0.50.dist-info/METADATA,sha256=Egt-MZUkkLMzY4_sRnhkknqmfrJFhHxXIjkyk5rrcus,826
+PaLM_rlhf_pytorch-0.0.50.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+PaLM_rlhf_pytorch-0.0.50.dist-info/top_level.txt,sha256=lKEGt6mtQa9wJdOF12INnEgbm59GR6XACF0WMcfJGQI,18
+PaLM_rlhf_pytorch-0.0.50.dist-info/RECORD,,
