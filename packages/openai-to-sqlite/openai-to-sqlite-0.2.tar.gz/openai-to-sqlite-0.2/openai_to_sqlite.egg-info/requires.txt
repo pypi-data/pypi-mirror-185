@@ -1,0 +1,7 @@
+click
+httpx
+sqlite-utils>=3.28
+
+[test]
+pytest
+pytest-httpx
