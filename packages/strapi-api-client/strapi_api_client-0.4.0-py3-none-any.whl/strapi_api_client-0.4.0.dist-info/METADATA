@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: strapi-api-client
+Version: 0.4.0
+Summary: Strapi API Client is used for maintaining a communication with the Strapi CMS by HTTP transfer protocol.
+Home-page: https://github.com/culturepulse/strapi-api-client
+Author: Adam Žúrek
+Author-email: adam@culturepulse.ai
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Communications
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# strapi-api-client
+
+Strapi API Client is used for maintaining a communication with the [Strapi CMS](https://strapi.io/) by HTTP transfer protocol.
+
+> **IMPORTANT NOTE**: For now, dependency is in a testing phase and is used for a very specific use cases. It still needs
+> more modular and configurable way to be used by a community.
+
+## Installation
+
+```python
+# pip
+pip install strapi-api-client
+
+# pipenv
+pipenv install strapi-api-client
+
+# poetry
+poetry add strapi-api-client
+```
+
+## Example
+
+#### 1. Create ApiClient object
+
+```python
+import os
+
+from strapi_api_client.api_client import ApiClient
+
+api_client = ApiClient(
+    api_url=os.getenv('API_URL'),
+    api_key=os.getenv('API_KEY'),
+    timeout=60
+)
+```
+
+#### 2. Create request to Strapi with an Api Client
+
+> This request will return a dictionary as a result.
+
+```python
+community_response = api_client.community.get_community(name='my-community')
+```
+
+## Tests
+
+To run tests, you need to run command: `pytest`
+
+Tests require access data to the api. For security reasons, access data is stored in environment variables. To set
+environment variables, you need to create an `.env` file from the example in the `.env.example` file.
+
+---
+Developed with 💙 and ☕️ by [Adam Žúrek](https://zurek11.github.io/)
+with the support of [CulturePulse.ai](https://www.culturepulse.ai/), 2023 (C)
+
+## 0.1.0 : 01.01.2023
+
+- **Added**: Community CRUD operations
+
+## 0.2.0 : 03.01.2023
+
+- **Added**: Subgroup CRUD operations
+
+## 0.3.0 : 04.01.2023
+
+- **Added**: Group CRUD operations
+
+## 0.4.0 : 10.01.2023
+
+- **Added**: Serializing of responses
