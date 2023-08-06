@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pymoterm.egg-info/PKG-INFO
+pymoterm.egg-info/SOURCES.txt
+pymoterm.egg-info/dependency_links.txt
+pymoterm.egg-info/requires.txt
+pymoterm.egg-info/top_level.txt
