@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+coloringpy.egg-info/PKG-INFO
+coloringpy.egg-info/SOURCES.txt
+coloringpy.egg-info/dependency_links.txt
+coloringpy.egg-info/top_level.txt
+modlib/__init__.py
