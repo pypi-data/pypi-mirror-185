@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: musiclang
+Version: 0.0.1
+Summary: A python package for music notation and generation
+Home-page: 
+Author: Florian GARDIN
+Author-email: Florian GARDIN <fgardin.pro@gmail.com>
+License: BSD 2-Clause License
+        
+        Copyright (c) 2023, Florian GARDIN
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Project-URL: Homepage, https://github.com/MusicLang/musiclang
+Keywords: music,ai,notation
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.md
+
+Musiclang
+=========
+
+![MusicLang logo](documentation/images/MusicLang.png "MusicLang")
+
+
+[![Documentation Status](https://readthedocs.org/projects/musiclang/badge/?version=latest)](https://musiclang.readthedocs.io/en/latest/?badge=latest)
+
+The Python framework to write, analyze, transform and predict music.
+
+
+What is MusicLang ?
+--------------------
+
+MusicLang which simply stands for "music language" is a Python framework
+that allows composers to write symbolic music in a condensed and high level manner.
+The way one write music with this tool should be close to how one create music
+in practice. This framework is not only another notation software but also
+an assistant that is able to automate some tasks that would normally be tedious for a composer.
+It is naturally good at analyzing and manipulating existing
+pieces of music in musicxml or midi format.
+
+[Read our documentation](https://musiclang.readthedocs.io/en/latest).
+
+
+How to install
+-------------
+
+MusicLang is available on Pypi :
+
+```
+pip install musiclang
+```
+
+Or use this repo for the latest version :
+
+```
+pip install git+https://github.com/MusicLang/musiclang
+```
+    
+
+Example
+-------
+
+Here is a simple example to write a C-major chord in musiclang and save it to midi :
+
+```python
+from musiclang.library import *
+
+# Write A C major chord
+score = (I % I.M)(piano__0=s0, piano__1=s2, piano__3=s4)
+
+# Store it to midi
+score.to_midi('c_major.mid')
+```
+
