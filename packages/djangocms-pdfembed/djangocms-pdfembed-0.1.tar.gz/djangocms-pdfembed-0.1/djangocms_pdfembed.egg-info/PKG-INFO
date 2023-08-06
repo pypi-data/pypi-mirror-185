@@ -1,0 +1,38 @@
+Metadata-Version: 1.2
+Name: djangocms-pdfembed
+Version: 0.1
+Summary: A Django CMS plugin for pdf embedding.
+Home-page: https://gitlab.com/woutervoorschot/djangocms-pdfembed
+Author: Wouter van Oorschot
+Author-email: woutervanoorschot@outlook.com
+License: MIT
+Description: # Django CMS PDFembed 
+        This is a plugin for [django CMS](https://www.django-cms.org/) to let users embed a PDF file on webpages.
+        
+        It uses django-filer for thje file upload handling.
+        
+        ## Installation
+        
+        - Add `pdfembed` to `INSTALLED_APPS`.
+        - Run `manage.py migrate` to apply the needed migrations.
+        
+        ## Customization
+        
+        The default template will render the PDF in an iframe with default width 100% and heigth 500px. These can be changed in the plugin creation wizard.
+        
+        The template is located in `/templates/pdfembed/pdf_embed.html` and can also on that location be overwritten in your own project.
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.9
