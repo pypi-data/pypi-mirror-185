@@ -1,0 +1,7 @@
+jsonschema
+lxml
+rfc3987
+frozendict
+
+[:python_version < "3.7"]
+dataclasses
