@@ -1,0 +1,17 @@
+kodexa_cli/__init__.py,sha256=Fk8wh5m-HSd65w_yl58HPpp3gvvoGSGMO3BIzy-LsIA,61
+kodexa_cli/cli.py,sha256=lcCu064pLtLVim4KXl76DlYLXvBBfssekmimiF15RHE,21163
+kodexa_cli/documentation.py,sha256=GJCrSt5JUIxgdf-MY0fTHjb75UUWQBJKRW4kRt9UbaE,8646
+kodexa_cli/templates/action.j2,sha256=Vat4N4MhE30DPwkROeZbYuiCGKHmt1PCeJwVH4SmpXU,150
+kodexa_cli/templates/assistant.j2,sha256=pAeTn-206o9Xj73ABTdEo_SuA_HFot3WdjpipX555nI,475
+kodexa_cli/templates/extension-pack.j2,sha256=QvJhH8eor2DU5CsEG9sk3QaKnZlOHmo0PftrAf0oOUA,79
+kodexa_cli/templates/index.j2,sha256=lJPhX8OepTc06loQzJ1fbtHA_IGObM83qXL89bngspI,349
+kodexa_cli/templates/model-runtime.j2,sha256=1WCkAu6aIz3yIMgZKoaLQnkf0-2QUK6WaijtOqd_vYc,77
+kodexa_cli/templates/options.j2,sha256=OBuuEnntKGkbDOPU36wQlhvuY_A78GD7Y1cLK0-O15Q,965
+kodexa_cli/templates/overview.j2,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kodexa_cli/templates/project-template.j2,sha256=QvJhH8eor2DU5CsEG9sk3QaKnZlOHmo0PftrAf0oOUA,79
+kodexa_cli/templates/store.j2,sha256=1WCkAu6aIz3yIMgZKoaLQnkf0-2QUK6WaijtOqd_vYc,77
+kodexa_cli/templates/taxonomy.j2,sha256=RS5h6UkpzYejCG6g1EmdDgji1x6DNFuKfH1eiiLDa-o,154
+kodexa_cli-6.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+kodexa_cli-6.0.0.dist-info/METADATA,sha256=jY4H5Bn8dsXNP4UQQgMzJOpir4JhKMBwHgKrVnCeF0M,614
+kodexa_cli-6.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+kodexa_cli-6.0.0.dist-info/RECORD,,
