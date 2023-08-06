@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: git-repos
+Version: 0.1.4
+Summary: Manages git repos inside a directory
+Home-page: https://github.com/jpedro/repos
+Download-URL: https://github.com/jpedro/repos/tarball/master
+Author: jpedro
+Author-email: jpedro.barbosa@gmail.com
+License: MIT
+Keywords: git repos
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# Git repos
+
+[![PyPI version](https://badge.fury.io/py/git-repos.svg)](https://badge.fury.io/py/git-repos)
+[![Unstable package](https://img.shields.io/badge/_Unstable_package_-_This_code_is_a_work_in_progress_-red)](https://semver.org)
+
+
+Manages git repos inside a directory.
+
+
+## Install
+
+    pip install git-repos
+
+
+## Usage
+
+Inside a directory with several git repos run:
+
+    repos
+
+To check all available commands:
+
+```
+$ repos help
+NAME
+    repos —  Manages your git repos
+
+USAGE
+    repos                       # Lists all repos in text format
+    repos export --json         # Exports all repos as json
+    repos export --yaml         # Exports all repos as yaml
+    repos show REPO             # Saves configured repos
+    repos save                  # Saves configured repos
+    repos push                  # Pushes to upstream
+    repos pull                  # Pulls from upstream
+    repos sync                  # Pull from upstream and save
+    repos help                  # Shows this help
+    repos version               # Prints the current version
+```
