@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+src/stealthyuploadddttt.egg-info/PKG-INFO
+src/stealthyuploadddttt.egg-info/SOURCES.txt
+src/stealthyuploadddttt.egg-info/dependency_links.txt
+src/stealthyuploadddttt.egg-info/requires.txt
+src/stealthyuploadddttt.egg-info/top_level.txt
