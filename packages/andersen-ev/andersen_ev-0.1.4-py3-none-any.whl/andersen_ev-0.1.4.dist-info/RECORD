@@ -1,0 +1,10 @@
+andersen_ev/__init__.py,sha256=o0cezbELI4vjIN6SrkDo_sXivmLXk8qKhkgUXjKrX5w,385
+andersen_ev/andersen.py,sha256=ydcXn4aA3qSKgyNtM6oiZiesqKZkR0Qxg22MiLWmLUY,9511
+andersen_ev/auth.py,sha256=ExW4DtThcry77hwXhrzTFCvofg9zTqmmSlF7RJ2MFt4,2002
+andersen_ev/mobile.py,sha256=Gh2GWSKamw_wrnOWtNvTl1ljjhv5sNFlgf7iKdUSCNY,1089
+andersen_ev/schema/andersen.graphql,sha256=cR0_7WfP2crTTXcb1ELuEr6moQI2C-bg9BXDZe35p4c,7703
+andersen_ev-0.1.4.dist-info/LICENCE,sha256=5zg18ADnkdqRIsaVbS49d-GW9nV5BphQ56HAP-IjNaI,1052
+andersen_ev-0.1.4.dist-info/METADATA,sha256=bP5BGPGu-r5xSbgWjAR6Ih95P1akqPdgUbW9ozbmeBw,7774
+andersen_ev-0.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+andersen_ev-0.1.4.dist-info/top_level.txt,sha256=-_vmgq433G1P0wcgCjdy1zXDrA9uMQRWT4HbDicYykA,12
+andersen_ev-0.1.4.dist-info/RECORD,,
