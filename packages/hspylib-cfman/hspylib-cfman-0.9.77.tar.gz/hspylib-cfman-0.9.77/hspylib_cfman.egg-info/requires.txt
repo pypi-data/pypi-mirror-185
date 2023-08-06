@@ -1,0 +1,2 @@
+hspylib>=latest
+hspylib-clitt>=latest
