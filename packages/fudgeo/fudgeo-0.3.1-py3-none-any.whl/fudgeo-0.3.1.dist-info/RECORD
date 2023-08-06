@@ -1,0 +1,12 @@
+fudgeo/__init__.py,sha256=9KZGy_gsSTvsctaImhRu0bjeU-MW9Z0ppvXg9PZTRpE,117
+fudgeo/constant.py,sha256=MAckALg-qQLaznJFboxqUlbbLGILjpNs_2bP3xENvHg,1484
+fudgeo/enumeration.py,sha256=NvgtVBYxfULGVIks-J0rFLRxvGrtU2DM1bjZB0HxZRU,1157
+fudgeo/geometry.py,sha256=o_FqAJlC0_coywU6kCM-DbAEcAEv3vzyHTt2iI4axkQ,51146
+fudgeo/geopkg.py,sha256=RFZyN3WuN3vCXoqfL3D205CTccwLGS-861skeeqJhHI,16482
+fudgeo/geopkg.sql,sha256=BEFuvWUjUOHA-WS-AmpR6dtW1OH0pK6X6fGOEuA2y-g,2795
+fudgeo/sql.py,sha256=8zgHMjIORCleyzNRZL_x-lqXI4SmY8CYNyajane-204,5399
+fudgeo-0.3.1.dist-info/LICENSE,sha256=YzPb1Q_55fDG8VX03aDaJa5un3vPc0-2tzIArk-sZRM,1083
+fudgeo-0.3.1.dist-info/METADATA,sha256=ZTEmjfX61YtfHSAwL8u8lqOFAI3mqN3JFVIMdcbMhXw,9090
+fudgeo-0.3.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fudgeo-0.3.1.dist-info/top_level.txt,sha256=RlcnukuWGTUINTexweATRDqQgM1d0q2iaOd6B6tBWWI,7
+fudgeo-0.3.1.dist-info/RECORD,,
