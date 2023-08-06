@@ -1,0 +1,2 @@
+[console_scripts]
+nifigator = nifigator.cli:main

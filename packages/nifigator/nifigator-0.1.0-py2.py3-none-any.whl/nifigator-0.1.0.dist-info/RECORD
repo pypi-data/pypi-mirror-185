@@ -1,0 +1,15 @@
+nifigator/__init__.py,sha256=AYcWbgJh5OD0WsAlKjqCaOuYSZQBSmK30Bb09qWtpcc,269
+nifigator/const.py,sha256=23INRFGdD1YIwdiDXXV3FDu-buxYfIHcag8UOFUXIOw,8090
+nifigator/converters.py,sha256=AgK2flPnp11xG8asUB009uwwjsuQciVDh13_qyr0xUs,11081
+nifigator/nafdocument.py,sha256=mLRWViD8Pv-4Gln5_k1s7cMf1BP_9uz9ldpqurrnTo0,40366
+nifigator/nifgraph.py,sha256=qXIlO2V8nxJ3xVN0D5sI5CgNone-ofugQ10K3quwCZg,12170
+nifigator/nifobjects.py,sha256=bqjZk3W3rgsO0DJzbExfZ-XKonUVUSDtEqYQ4LVHrg8,64995
+nifigator/pdfparser.py,sha256=F_rPJZWxhEwS_sTqG6IxQ2LhourJaHAsZZItE6tv6Vc,5484
+nifigator/utils.py,sha256=ZiLxgVrLm2630j-ZHNNchPJagDM9h2zgs9TExvP2qjg,10367
+nifigator-0.1.0.dist-info/AUTHORS.rst,sha256=ymT-NhTZNyGSrT06zyXwMtocmE3sjncSn2hWXNnXYLc,177
+nifigator-0.1.0.dist-info/LICENSE,sha256=-zY5Q_T8wbQm9ZAbZbvKKcE2XvQOQoEh3pe9wtSZczw,1100
+nifigator-0.1.0.dist-info/METADATA,sha256=5LunOm3wGvDyQfm-LUa-VBRBJwwy2g9FXPi4qUxCJwo,2650
+nifigator-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+nifigator-0.1.0.dist-info/entry_points.txt,sha256=yzW4gnn956-zektSIVYZk8yF3RKM7gjGnVogMUnXPDI,49
+nifigator-0.1.0.dist-info/top_level.txt,sha256=28yDNfqHZVhjrjwKrhqtbtixnZk2ZbJjkeWXOgZtgts,10
+nifigator-0.1.0.dist-info/RECORD,,
