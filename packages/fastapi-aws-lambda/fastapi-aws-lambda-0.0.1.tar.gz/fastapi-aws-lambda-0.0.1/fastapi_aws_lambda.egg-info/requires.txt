@@ -1,0 +1,6 @@
+fastapi
+odmantic
+pydantic[dotenv,email]
+python-multipart
+python-jose
+mangum
