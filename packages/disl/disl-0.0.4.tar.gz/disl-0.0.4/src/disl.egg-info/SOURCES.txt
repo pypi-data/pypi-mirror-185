@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/disl.py
+src/disl.egg-info/PKG-INFO
+src/disl.egg-info/SOURCES.txt
+src/disl.egg-info/dependency_links.txt
+src/disl.egg-info/top_level.txt
+src/tests/demo.py
+src/tests/disl_test.py
