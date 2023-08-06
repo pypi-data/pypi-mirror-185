@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/genlic.py
+src/genlic.egg-info/PKG-INFO
+src/genlic.egg-info/SOURCES.txt
+src/genlic.egg-info/dependency_links.txt
+src/genlic.egg-info/entry_points.txt
+src/genlic.egg-info/requires.txt
+src/genlic.egg-info/top_level.txt

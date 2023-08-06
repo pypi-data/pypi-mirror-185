@@ -1,0 +1,2 @@
+[console_scripts]
+genlic = genlic:main
