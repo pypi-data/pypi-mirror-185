@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: S3Sqlite3
+Version: 0.2
+Summary: Accessor for Sqlite3 in AWS S3
+Home-page: https://grasplabs.no/
+Author: GraspLabs
+Author-email: yuan@grasplabs.no
+License: MIT License
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: apsw (>=3.39.3.0)
+
+# S3Sqlite3
+
+
