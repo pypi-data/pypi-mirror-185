@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: org-djangokit-core
+Version: 0.0.3
+Summary: DjangoKit core
+License: MIT
+Author: Wyatt Baldwin
+Author-email: self@wyattbaldwin.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Django (>=3.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# DjangoKit Core
+
+> NOTE: DjangoKit is a full stack Django+React framework. See
+> https://djangokit.org/ for more information.
+
+This package implements the core functionality of DjangoKit.
+
