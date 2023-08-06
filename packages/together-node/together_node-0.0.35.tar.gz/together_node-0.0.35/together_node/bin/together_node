@@ -1,0 +1,81 @@
+#! python
+import typer
+from typing import Optional
+from rich.prompt import Prompt
+from together_node.src.model import serve_model
+from together_node.src.constants import MODEL_CONFIG
+from together_node.src.utility import remote_download
+from together_node.src.system import check_binary_exists, check_folders
+
+app = typer.Typer()
+
+@app.command()
+def check():
+    is_slurm = check_binary_exists("sinfo")
+    print("Slurm: ", is_slurm)
+    is_singularity = check_binary_exists("singularity")
+    print("Singularity: ", is_singularity)
+    is_docker = check_binary_exists("docker")
+    print("Docker: ", is_docker)
+
+@app.command()
+def serve(
+        # required arguments
+        model: str=typer.Option(..., prompt="What's the model name you want to serve?"), 
+        home_dir: str=typer.Option(..., prompt="What's the home directory you want to serve? It cannot be on an NFS drive."),
+        data_dir: str=typer.Option(..., prompt="What's the directory you want to store model weights? It could be on an NFS drive."),
+
+        # optional, but suggested arguments
+        gpus: str = typer.Option(..., prompt="GPU Specifiers (e.g., titanrtx:1)"),
+        queue: str=typer.Option(None, help="Queue name - default is None"),
+        singularity: bool = typer.Option(False, help="Use singularity to serve the model"),
+        docker: Optional[bool]=typer.Option(False, help="Use docker to serve the model"),
+        tags: Optional[str] = typer.Option("", help="Only Process Academic jobs"),
+        account: str = typer.Option(None, help="Account name - default is None"),
+        modules: str = typer.Option(None, help="Modules to load - default is None"),
+        
+        # only required in some cases
+        name: str=typer.Option("together", help="Unique name of the node - default is together. You should set this name to a unique name if you want to run multiple nodes at the same time."),
+        hf_home: str = typer.Option(None, help="Huggingface home directory - default is home_dir/hf"),
+        matchmaker_addr: str = typer.Option("wss://api.together.xyz/websocket", help="Global Matchmaker address - leave it as it is in most cases")
+        # port: int=typer.Option(8092, help="Port number - default is 8092. In case of conflict, change it to a different number."),
+    ):
+    if docker and singularity:
+        print("[ERROR] You can only choose one of docker or singularity")
+        return
+    if docker:
+        print("[INFO] Containerization: Docker")
+    elif singularity:
+        print("[INFO] Containerization: Singularity")
+    else:
+        print("[ERROR] You must choose one of docker or singularity")
+    check_folders(home_dir = home_dir, data_dir=data_dir)
+
+    serve_model(
+        model_name=model,
+        queue_name=queue,
+        home_dir = home_dir,
+        data_dir = data_dir,
+        matchmaker_addr= matchmaker_addr,
+        tags = tags,
+        use_docker=docker,
+        use_singularity=singularity,
+        gpus = gpus,
+        account = account,
+        node_name = name,
+        modules = modules,
+    )
+    
+
+@app.command()
+def download():
+    model_name = Prompt.ask("What's the model name you want to serve?")
+    remote_url = MODEL_CONFIG[model_name]["singularity_url"]
+    remote_download(remote_url=remote_url, local_path="./")
+
+@app.command()
+def main():
+    print("TOMA")
+
+if __name__ == "__main__":
+    app()
