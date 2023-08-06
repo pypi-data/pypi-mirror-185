@@ -1,0 +1,12 @@
+ts_stat_tests/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+ts_stat_tests/correlation.py,sha256=0pKf3mdyCswi85aLxDx-Xd_J9oey_TWrS8gsE4vV2WY,13271
+ts_stat_tests/normality.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ts_stat_tests/regularity.py,sha256=66-JzW6C8l0CGwBzGtqCKYsCjOLUJHKF-BS5uYkH7dA,24445
+ts_stat_tests/seasonality.py,sha256=pWmTHMfqLPKn2ggcPoBA53k9152IrCt41y0Ve-ad0rc,10566
+ts_stat_tests/stability.py,sha256=hpW4TgKaZCymuIfqU_v0vY0LV_E3j-io1Ayou9Bkd-I,5692
+ts_stat_tests/stationarity.py,sha256=zYltdxnho6hM7rBIECEo-Wvldzk8ngUMC9JcD4y0Ku4,4034
+ts_stat_tests/suitability.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ts_stat_tests-0.2.1.dist-info/METADATA,sha256=db0s9i_drqc0u-IQveprFS2y2mGvEkOZvx2OAasVxtk,5394
+ts_stat_tests-0.2.1.dist-info/LICENSE,sha256=gK-yXD-9w0_NnGG7AfzQRhdqnWNImUWfW4G_0znDN-o,1070
+ts_stat_tests-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+ts_stat_tests-0.2.1.dist-info/RECORD,,
