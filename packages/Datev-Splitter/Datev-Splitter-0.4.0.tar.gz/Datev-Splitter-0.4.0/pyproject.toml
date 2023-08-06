@@ -1,0 +1,55 @@
+[project]
+name = "Datev-Splitter"
+description = "Splits Datev-Reports into single pdf files per Personalnummer."
+authors = [
+    { name = "Christoph Becker", email = "christoph.becker@exb.de" },
+]
+dependencies = [
+    "pip>=22.3.1",
+    "PyMuPDF>=1.21.1",
+    "loguru>=0.6.0",
+    "flake8>=6.0.0",
+    "pytest>=7.2.0",
+]
+requires-python = ">=3.10"
+dynamic = []
+readme = "README.md"
+version = "0.4.0"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+datev_splitr = "datev_splitter:datev_split"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.build]
+includes = [
+    "datev_splitter/",
+    "CHANGELOG.md",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "datev_splitter/__version__.py"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "flake8>=4.0.1",
+    "pytest>=7.1.2",
+    "pytest-cov>=3.0.0",
+    "python-semantic-release>=7.31.2",
+]
+
+[tool.semantic_release]
+version_source = "commit"
+version_variable = "datev_splitter/__version__.py:__version__"
+commit_author = "Semantic commit <a_bot_at@exb.de>"
+branch = "main"
+build_command = "pdm build"
+hvcs = "github"
