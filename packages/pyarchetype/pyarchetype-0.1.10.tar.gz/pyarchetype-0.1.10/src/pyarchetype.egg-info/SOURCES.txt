@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyarchetype/__init__.py
+src/pyarchetype/pyarchetype.py
+src/pyarchetype.egg-info/PKG-INFO
+src/pyarchetype.egg-info/SOURCES.txt
+src/pyarchetype.egg-info/dependency_links.txt
+src/pyarchetype.egg-info/entry_points.txt
+src/pyarchetype.egg-info/requires.txt
+src/pyarchetype.egg-info/top_level.txt
+src/pyarchetype/templates/__init__.py
+src/pyarchetype/templates/templates.py

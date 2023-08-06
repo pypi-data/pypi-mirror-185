@@ -1,0 +1,2 @@
+[console_scripts]
+pyarchetype = pyarchetype.pyarchetype:main
