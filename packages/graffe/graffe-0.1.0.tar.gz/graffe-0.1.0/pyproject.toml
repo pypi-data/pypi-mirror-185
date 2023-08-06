@@ -1,0 +1,32 @@
+[project]
+name = "graffe"
+version = "0.1.0"
+authors = [
+    { name="John Constable", email="johnmconstable@icloud.com" }
+]
+description = "A desktop application to simplify graph creation for scientific, two-variable data."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+dependencies = [
+    "matplotlib",
+    "Pillow"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ensanguinedIB/graffe"
+"Bug Tracker" = "https://github.com/ensanguinedIB/graffe/issues"
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]

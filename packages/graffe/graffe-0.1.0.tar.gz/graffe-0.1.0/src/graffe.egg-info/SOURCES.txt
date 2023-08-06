@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/graffe/__init__.py
+src/graffe/__main__.py
+src/graffe/graph.py
+src/graffe.egg-info/PKG-INFO
+src/graffe.egg-info/SOURCES.txt
+src/graffe.egg-info/dependency_links.txt
+src/graffe.egg-info/requires.txt
+src/graffe.egg-info/top_level.txt
