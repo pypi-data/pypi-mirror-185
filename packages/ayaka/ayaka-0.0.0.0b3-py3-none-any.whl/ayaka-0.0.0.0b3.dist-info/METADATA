@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ayaka
+Version: 0.0.0.0b3
+Summary: 猫猫，猫猫！
+Home-page: https://bridgel.github.io/ayaka/
+License: MIT
+Author: Su
+Author-email: wxlxy316@163.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/bridgeL/ayaka
+Description-Content-Type: text/markdown
+
+<div align="center">
+
+# Ayaka - 猫猫，猫猫！ - 0.0.0.0b3
+
+</div>
+
