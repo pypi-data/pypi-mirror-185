@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/the_calc_pack_Pranav76/__init__.py
+src/the_calc_pack_Pranav76/sim-calc.py
+src/thecalcpack.egg-info/PKG-INFO
+src/thecalcpack.egg-info/SOURCES.txt
+src/thecalcpack.egg-info/dependency_links.txt
+src/thecalcpack.egg-info/top_level.txt
