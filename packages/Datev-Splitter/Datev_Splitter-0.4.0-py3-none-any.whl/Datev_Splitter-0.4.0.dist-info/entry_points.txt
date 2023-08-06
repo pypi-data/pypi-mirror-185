@@ -1,0 +1,3 @@
+[console_scripts]
+datev_splitr=datev_splitter:datev_split
+
