@@ -1,0 +1,3 @@
+[console_scripts]
+query=dbs.query:app
+
