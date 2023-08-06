@@ -1,0 +1,187 @@
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pypms"
+version = "0.7.1"
+description = "Data acquisition and logging for Air Quality Sensors with UART interface"
+authors = ["Alvaro Valdebenito <avaldebe@gmail.com>"]
+readme = "README.md"
+homepage = "https://avaldebe.github.io/PyPMS"
+repository = "https://github.com/avaldebe/PyPMS"
+keywords = ["air quality", "particulate matter"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+    "Topic :: Terminals :: Serial",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+packages = [{ include = "pms", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+pyserial = ">=3.5"
+typer = ">=0.6.1"
+loguru = ">=0.6.0"
+importlib-metadata = { version = ">=3.6", python = "<3.10" }
+# extras
+paho-mqtt = { version = ">=1.4.0", optional = true }
+influxdb = { version = ">=5.2.0", optional = true }
+# test
+pytest = { version = ">=7.1.2", optional = true }
+pytest-cov = { version = ">=2.12.1", optional = true }
+packaging = { version = "^21.3", optional = true }
+mock_serial = { version = ">=0.0.1", optional = true }
+# docs
+mkdocs = { version = ">=1.2.3", optional = true }
+mkdocs-material = { version = ">=8.2.5", optional = true }
+pymdown-extensions = { version = ">=9.5", optional = true }
+
+
+[tool.poetry.extras]
+mqtt = ["paho-mqtt"]
+influxdb = ["influxdb"]
+test = ["pytest", "pytest-cov", "packaging", "mock_serial"]
+docs = ["mkdocs", "mkdocs-material", "pymdown-extensions"]
+
+[tool.poetry.dev-dependencies]
+pytest-sugar = ">=0.9.4"
+mypy = ">=0.991"
+
+[tool.poetry.scripts]
+pms = "pms.cli:main"
+
+[tool.poetry.plugins."pypms.sensors"]
+# docs/sensors/Plantower.md
+PMSx003 = "pms.sensors.plantower.pmsx003"
+PMS3003 = "pms.sensors.plantower.pms3003"
+PMS5003S = "pms.sensors.plantower.pms5003s"
+PMS5003ST = "pms.sensors.plantower.pms5003st"
+PMS5003T = "pms.sensors.plantower.pms5003t"
+# docs/sensors/NovaFitness.md
+SDS01x = "pms.sensors.novafitness.sds01x"
+SDS198 = "pms.sensors.novafitness.sds198"
+# docs/sensors/Honeywell.md
+HPMA115S0 = "pms.sensors.honeywell.hpma115s0"
+HPMA115C0 = "pms.sensors.honeywell.hpma115c0"
+# docs/sensors/Sensirion.md
+SPS30 = "pms.sensors.sensirion.sps30"
+# docs/sensors/mcu680.md
+MCU680 = "pms.sensors.bosch_sensortec.mcu680"
+# docs/sensors/Winsen.md
+MHZ19B = "pms.sensors.winsen.mhz19b"
+ZH0xx = "pms.sensors.winsen.zh0xx"
+
+[tool.poetry.plugins."pypms.extras"]
+influxdb = "pms.extra.influxdb:cli"
+mqtt = "pms.extra.mqtt:cli"
+bridge = "pms.extra.bridge:cli"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "pep440"
+pattern = '^v?(?P<base>\d+(\.\d+)*)$'
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = lint, docs, py38, py39, py310, py311
+skip_missing_interpreters = True
+isolated_build = True
+
+[testenv]
+commands_pre =
+    python --version
+commands =
+    pytest -ra -q {posargs:--cov}
+extras =
+    test
+
+[testenv:lint]
+skip_install=True
+commands =
+    pre-commit run --all-files --show-diff-on-failure
+deps =
+    pre-commit
+
+[testenv:docs{,-serve,-deploy}]
+commands =
+    docs:        mkdocs build --clean
+docs-serve:  mkdocs serve
+docs-deploy: mkdocs gh-deploy {posargs:--clean}
+extras =
+    docs
+"""
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--lf -Werror"
+
+[tool.coverage.run]
+source = ["pms"]
+omit = ["*/__init__.py", "*/__main__.py", "*/core/types.py"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "@overload",
+    "@abstractmethod",
+    "ModuleNotFoundError",
+    "def __repr__",
+    "def __str__",
+    'if spec == "":',
+]
+show_missing = true
+skip_covered = true
+fail_under = 100
+
+[tool.black]
+target-version = ['py38']
+line-length = 100
+
+[tool.isort]
+py_version = "38"
+profile = "black"
+src_paths = ["src", "tests"]
+line_length = 100
+
+[tool.mypy]
+python_version = "3.8"
+warn_unused_configs = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_return_any = false
+warn_unreachable = true
+show_error_codes = true
+pretty = true
+sqlite_cache = true
+exclude = "site"
+
+[[tool.mypy.overrides]]
+module = [
+    "paho.mqtt",
+    "influxdb",
+    "serial",
+    "importlib_metadata",
+    "typer.*",
+    "packaging.*",
+    "pytest",
+    "loguru",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["pms.extra.mqtt", "pms.extra.influxdb"]
+warn_unused_ignores = false
