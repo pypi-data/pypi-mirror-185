@@ -1,0 +1,12 @@
+CHANGES.rst
+DESCRIPTION.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/configurable_objects.egg-info/PKG-INFO
+src/configurable_objects.egg-info/SOURCES.txt
+src/configurable_objects.egg-info/dependency_links.txt
+src/configurable_objects.egg-info/top_level.txt
+src/confobj/__init__.py
+src/confobj/_core.py
