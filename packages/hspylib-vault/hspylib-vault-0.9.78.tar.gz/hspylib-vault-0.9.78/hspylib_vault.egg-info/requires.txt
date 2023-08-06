@@ -1,0 +1,5 @@
+hspylib>=latest
+hspylib-datasource>=latest
+hspylib-clitt>=latest
+cryptocode>=latest
+cryptography>=latest
