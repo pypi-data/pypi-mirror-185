@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "liquidrocketpy"
+version = "0.1.5"
+authors = [
+  { name="Nicholas Cassarino", email="nmcassa804@outlook.com" },
+]
+description = "A package for data from the rl liquipedia pages"
+readme = "README.md"
+url = 'https://github.com/nmcassa/liquidrocketpy'
+requires-python = ">=3.7"
+install_requires = ['beautifulsoup4', 'requests']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nmcassa/liquidrocketpy"
+"Bug Tracker" = "https://github.com/nmcassa/liquidrocketpy/issues"
