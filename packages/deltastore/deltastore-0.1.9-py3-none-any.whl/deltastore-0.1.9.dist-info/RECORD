@@ -1,0 +1,10 @@
+deltastore/_yarl_patch.py,sha256=lJhJBSt1p-_PebLBs0PdcqIwM8J1K17wN9tImW7yRO0,856
+deltastore/converter.py,sha256=pN1CcDWKwc08d7HJIV29C-qISBdDmbTS9XjrjC7koN0,10501
+deltastore/helper.py,sha256=ilo8KLOaEPH4tu_BmIPrPL8JIM1niRm46Rqsh8qJfo0,1325
+deltastore/protocol.py,sha256=_faYHmDlb2w7Jc8UbPrqq8r4OePeWXZonod3rd3QcxI,7842
+deltastore/reader.py,sha256=I3CrRz8jXUxrN1J3U_vZD1KA3lFj26m3M6XZqxiMGhQ,12380
+deltastore/rest_client.py,sha256=5zOvd1ni35JlqE-cJkuEOid4gweaTIoAt0pmBNCLKcg,15337
+deltastore-0.1.9.dist-info/METADATA,sha256=zqdAApn2Cdr6LLCO4MimMUIFCHkThbEqoirywz9CLUY,308
+deltastore-0.1.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+deltastore-0.1.9.dist-info/top_level.txt,sha256=8tDaZb5xn-A6Gsls-PCnuVapf-VYdtFicFxnJyQI5xY,11
+deltastore-0.1.9.dist-info/RECORD,,
