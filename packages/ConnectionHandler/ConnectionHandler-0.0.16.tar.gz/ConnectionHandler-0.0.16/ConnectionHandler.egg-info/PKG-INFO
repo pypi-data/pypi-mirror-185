@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ConnectionHandler
+Version: 0.0.16
+Summary: AWS Database Connection Handler
+Author: Tyler Arnold
+Author-email: tarnold2707 <tarnold@databankimx.com>
+Keywords: Python,AWS,Database
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt

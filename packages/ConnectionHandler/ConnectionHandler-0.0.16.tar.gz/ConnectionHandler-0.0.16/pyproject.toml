@@ -1,0 +1,12 @@
+[build-system]
+requires = ['setuptools']
+build-backend="setuptools.build_meta"
+
+[project]
+name='ConnectionHandler'
+version= '0.0.16'
+description='AWS Database Connection Handler'
+readme="README.md"
+authors=[
+    {name="tarnold2707", email="tarnold@databankimx.com"},
+]
