@@ -1,0 +1,8 @@
+oakx_spacy/__init__.py,sha256=QKVd6s7NN0FnZyVnEGt0eiumY-yDEWVfRR1ixGrWFF8,348
+oakx_spacy/cli.py,sha256=NZbLwPJL9b9cvoMg0RiAiWzn8s_lKbSoSXT6yU4PZ8Q,760
+oakx_spacy/spacy_implementation.py,sha256=1SB_bjDou228oyKrKuzKKQ7BsaTxmQFn6FLTQqQvFsI,16338
+oakx_spacy-0.1.4.dist-info/entry_points.txt,sha256=xggEAc9ZHFnNMVy4Bd2UsE90HnYMOuOtcYrudvd90Go,122
+oakx_spacy-0.1.4.dist-info/METADATA,sha256=FdXyq2mXuZRAIyV-upehSMs5Wt8Hm3dYcPawVEiG3uY,8642
+oakx_spacy-0.1.4.dist-info/LICENSE,sha256=gvJN6i0gGxYF2VNrSo4ajtgVOEebb82u5TOQiW29QJY,1515
+oakx_spacy-0.1.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+oakx_spacy-0.1.4.dist-info/RECORD,,
