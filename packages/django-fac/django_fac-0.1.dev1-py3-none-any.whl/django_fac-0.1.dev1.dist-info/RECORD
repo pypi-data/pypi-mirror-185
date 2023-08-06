@@ -1,0 +1,14 @@
+django_fac/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_fac/apps.py,sha256=kfCF1G_P1q71g7nr9TaHFvlvu6i6VZzzxZkDyK25JHI,151
+django_fac/tests.py,sha256=4UsaqLZU796cB-Vows0id4iMDy7xp6YEBTnh5KWzWa8,942
+django_fac/views.py,sha256=p2ha1FC1tUkvUHTtFvlawrt32sgTZDByY8qHELXUmKk,901
+django_fac/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_fac/core/constants.py,sha256=3Zv5nGJJsGSgCFwp8xJzh2pfQCGJ0yuSW6LNJSeEODc,981
+django_fac/core/entities.py,sha256=qsYOthA2eacRG0yjIIror3y2QWMBkdMBOgIesP-KfgQ,511
+django_fac/core/payment.py,sha256=Xebl18t8X0zJDOhI-5HIVRRmEj-duYMsfl2lAOdeSCg,2620
+django_fac/core/utils.py,sha256=lbWt7mYilHUlCsAAah65DEOeqzlR0ATtAngZVDbhgwU,3913
+django_fac-0.1.dev1.dist-info/LICENSE,sha256=09xw0BnQJwcG4B8bXnxMtWw36hRIdcHsZvkl4OP8dLM,1066
+django_fac-0.1.dev1.dist-info/METADATA,sha256=pGw7KQBEA106n_xiotXPHB9BpRQIRD7WrhBGzaPbKAg,1774
+django_fac-0.1.dev1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_fac-0.1.dev1.dist-info/top_level.txt,sha256=1lLjs9nhKV5RVEG05bO6xgVt7PTrPScvntqaUdwvj2c,11
+django_fac-0.1.dev1.dist-info/RECORD,,

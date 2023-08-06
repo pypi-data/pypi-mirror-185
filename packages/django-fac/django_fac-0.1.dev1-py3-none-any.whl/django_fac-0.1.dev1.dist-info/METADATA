@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: django-fac
+Version: 0.1.dev1
+Summary: django-fac is a Django app to conduct that is used to integrate with First Atlantic Commerce payment gateway
+Home-page: https://github.com/realdecoy/django-fac/
+Author: Davane Davis
+Author-email: ddavis@realdecoy.com
+License: MIT
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django (>=2.2.2)
+Requires-Dist: requests (>=2.22.0)
+
+=====
+First Atlantic Commerce Payment Integration
+=====
+
+django-fac is a Django app to conduct that is used to integrate with First Atlantic Commerce payment gateway
+
+Detailed documentation is in the "docs" directory.
+
+Quick start
+-----------
+
+1. Add "django_fac" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'django_fac',
+    ]
+
+2. Include the polls URLconf in your project urls.py like this::
+
+    path('payment/', include('django_fac.urls')),
+
+3. Start the development server and visit http://127.0.0.1:8000/admin/
+   to create a poll (you'll need the Admin app enabled).
+
+4. Visit http://127.0.0.1:8000/payment/health/ to test the integration.
