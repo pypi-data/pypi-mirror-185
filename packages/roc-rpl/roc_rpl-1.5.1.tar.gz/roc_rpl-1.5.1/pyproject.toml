@@ -1,0 +1,72 @@
+[tool]
+
+[tool.black]
+skip-string-normalization = true
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.poetry]
+name = "roc-rpl"
+version = "1.5.1"
+readme = "README.md"
+license = "CeCILL-C"
+repository = "https://gitlab.obspm.fr/ROC/Pipelines/Plugins/RPL"
+description = "RPW Packet parsing Library (RPL): a plugin for the RPW TM/TC packet analysis"
+authors = ["Xavier Bonnin <xavier.bonnin@obspm.fr>", "ROC Team <roc.support@sympa.obspm.fr>"]
+exclude = ["bump_descriptor.py"]
+build = "build.py"
+
+# handle namespace with poetry
+packages = [
+    { include = "roc" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+Cython = "^0.29"
+numpy = "!=1.19.5"
+maser-tools = {version="*"}
+spice_manager = {version = "*"}
+"roc-idb" = {version = "^1.0"}
+"poppy-core" =  {version = ">=0.9.4"}
+"poppy-pop" = {version = ">=0.7.5"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^2.10.1"
+pytest-timeout = "^1.4"
+pre-commit = "^2.8"
+
+[build-system]
+requires = ["setuptools==54", "wheel", "poetry", "poetry-core", "cython~=0.29", "numpy!=1.19.5"]
+build-backend = "poetry.core.masonry.api"
+
+#[[tool.poetry.source]]
+#name = "gitlab"
+#url = "https://gitlab.obspm.fr/api/v4/projects/2052/packages/pypi/simple"
+#secondary = true
+
+[tool.coverage.run]
+omit = ["*/tests/*"]
+
+[tool.coverage.report]
+skip_empty = true
+exclude_lines = [
+    "pragma: no cover",
+    "from * import *",
+    "import *",
+    "__all__",
+]
