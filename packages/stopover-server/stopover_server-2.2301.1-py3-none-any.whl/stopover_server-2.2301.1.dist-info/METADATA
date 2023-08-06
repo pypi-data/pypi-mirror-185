@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: stopover-server
+Version: 2.2301.1
+Summary: A simple and robust message broker built on top of RocksDB
+Home-page: https://github.com/labteral/stopover
+Author: Rodrigo Martínez Castaño
+Author-email: dev@brunneis.com
+License: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: msgpack (<2.0.0,>=1.0.4)
+Requires-Dist: python-snappy (<1.0.0,>=0.6.1)
+Requires-Dist: easyrocks (<3.0.0,>=2.214.0.1)
+Requires-Dist: pyyaml (<7.0.0,>=6.0.0)
+Requires-Dist: falcon (<4.0.0,>=3.1.1)
+Requires-Dist: bjoern (<4.0.0,>=3.2.2)
+
