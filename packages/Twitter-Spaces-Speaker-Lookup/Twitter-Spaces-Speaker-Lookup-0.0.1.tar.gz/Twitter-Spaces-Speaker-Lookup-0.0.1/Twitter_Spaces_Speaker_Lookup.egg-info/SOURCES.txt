@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Twitter-Spaces-Speaker-Lookup/__init__.py
+Twitter-Spaces-Speaker-Lookup/speaker_lookup.py
+Twitter_Spaces_Speaker_Lookup.egg-info/PKG-INFO
+Twitter_Spaces_Speaker_Lookup.egg-info/SOURCES.txt
+Twitter_Spaces_Speaker_Lookup.egg-info/dependency_links.txt
+Twitter_Spaces_Speaker_Lookup.egg-info/top_level.txt
