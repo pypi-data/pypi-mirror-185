@@ -1,0 +1,6 @@
+numpy
+srsgui>=0.1.9
+
+[gui]
+matplotlib
+pyside2
