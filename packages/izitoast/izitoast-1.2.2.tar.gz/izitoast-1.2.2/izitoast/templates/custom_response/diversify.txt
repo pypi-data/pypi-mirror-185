@@ -1,0 +1,36 @@
+{% if position %}
+    <div class="alert-position" style="display: none !important; color: transparent;">
+        <li>{{position}}</li>
+    </div>
+{% else %}
+    <div class="alert-position" style="display: none !important; color: transparent;">
+        <li>topRight</li>
+    </div>
+{% endif %}
+{% if transition_in %}
+    <div class="transition-in" style="display: none !important; color: transparent;">
+        <li>{{transition_in}}</li>
+    </div>
+{% else %}
+    <div class="transition-in" style="display: none !important; color: transparent;">
+        <li>flipInX</li>
+    </div>
+{% endif %}
+{% if transition_out %}
+    <div class="transition-out" style="display: none !important; color: transparent;">
+        <li>{{transition_out}}</li>
+    </div>
+{% else %}
+    <div class="transition-out" style="display: none !important; color: transparent;">
+        <li>flipOutX</li>
+    </div>
+{% endif %}
+{% if time_out %}
+    <div class="time" style="display: none !important; color: transparent;">
+        <li>{{time_out}}</li>
+    </div>
+{% else %}
+    <div class="time" style="display: none !important; color: transparent;">
+        <li>3000</li>
+    </div>
+{% endif %}

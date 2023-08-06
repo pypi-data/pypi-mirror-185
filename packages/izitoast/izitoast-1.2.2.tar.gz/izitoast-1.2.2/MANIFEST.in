@@ -1,0 +1,5 @@
+include LICENCE.rst
+include README.md
+include CHANGELOG.md
+recursive-include izitoast/templates *
+recursive-include izitoast/static *

@@ -1,0 +1,12 @@
+{% if messages %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'iziToast.min.css' %}" />
+<script src="{% static 'jquery.min.js' %}"></script>
+<script src="{% static 'iziToast.min.js' %}"></script>
+<script src="{% static 'toastr.min.js' %}"></script>
+
+{% for message in messages %}
+<div style="display: none !important; color: transparent;">{{message}}</div>
+{% endfor %} {% endif %}
+
+

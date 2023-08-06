@@ -1,0 +1,1 @@
+<ul class="infolist">{% for data in raw %}<li>{{forloop.counter}}<ul class="infolist"><li>{{data.tag}}</li><li>{{data.item}}</li></ul></li>{% endfor %}</ul>

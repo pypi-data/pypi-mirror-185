@@ -1,0 +1,1 @@
+<ul class="customerrorlist">{% for data in raw %}<li>{{forloop.counter}}<ul class="customerrorlist"><li>{{data.tag}}</li><li>{{data.item}}</li></ul></li>{% endfor %}</ul>
