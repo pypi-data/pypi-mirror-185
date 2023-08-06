@@ -1,0 +1,30 @@
+2023-01-03 Version: 1.0.15
+- Add ContextMessageId.
+- Add ChannelType viber
+
+2022-11-18 Version: 1.0.14
+- Mark deprecated parameter.
+- Add CustSpaceId parameter.
+- Add QueryChatappPhoneNumbers,
+- Add QueryChatappBindWaba
+
+2022-10-12 Version: 1.0.13
+- Fixed parameter typo.
+
+2022-10-08 Version: 1.0.12
+- Add template modify API.
+- Add BeeBot APIs.
+
+2022-09-20 Version: 1.0.11
+- Support ISV features.
+
+2022-08-19 Version: 1.0.10
+- Support Batch Send API.
+
+2022-07-15 Version: 1.0.9
+- Support Fallback to SMS Message When Failed.
+
+2022-05-11 Version: 1.0.8
+- Added output parameter.
+- Remove deprecated APIs.
+
