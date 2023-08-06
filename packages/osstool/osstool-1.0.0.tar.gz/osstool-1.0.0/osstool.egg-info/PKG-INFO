@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: osstool
+Version: 1.0.0
+Summary: OSS Python SDK
+Home-page: https://github.com/ybwang0211/oss-python-sdk
+Author: wangyingbin
+Author-email: 869063218@qq.com
+License-File: license.txt
+
+# oss-python-sdk
+
