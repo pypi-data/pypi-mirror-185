@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pycontrols
+Version: 0.0.0a0
+Summary: Python module to for test purposes
+Author-email: Vignesh Sivanandha Rao <svignesh1793@gmail.com>
+Keywords: rubber-duck
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# Rubber Duck
+A placeholder application
