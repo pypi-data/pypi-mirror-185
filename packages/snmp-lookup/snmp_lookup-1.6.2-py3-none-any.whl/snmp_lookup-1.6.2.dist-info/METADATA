@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: snmp-lookup
+Version: 1.6.2
+Summary: SNMP helper library for Modio SCADA system
+Home-page: https://gitlab.com/ModioAB/snmp_lookup
+Author: D. Spindel Ljungmark
+Author-email: spider@modio.se
+Keywords: scada,snmp,modio
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.mibs
+License-File: COPYING.mibs
+Requires-Dist: importlib-resources
+
+files: README.md
