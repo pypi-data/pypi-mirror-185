@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/logic4py/__init__.py
+src/logic4py/example_theorems.py
+src/logic4py/formula.py
+src/logic4py/lexer.py
+src/logic4py/logic_gui.py
+src/logic4py/parser_def_formula.py
+src/logic4py/parser_formula.py
+src/logic4py/parser_theorem.py
+src/logic4py.egg-info/PKG-INFO
+src/logic4py.egg-info/SOURCES.txt
+src/logic4py.egg-info/dependency_links.txt
+src/logic4py.egg-info/requires.txt
+src/logic4py.egg-info/top_level.txt
