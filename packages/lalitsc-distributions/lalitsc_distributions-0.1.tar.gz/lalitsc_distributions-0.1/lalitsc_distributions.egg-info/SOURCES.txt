@@ -1,0 +1,10 @@
+setup.py
+lalitsc_distributions/Binomialdistribution.py
+lalitsc_distributions/Gaussiandistribution.py
+lalitsc_distributions/Generaldistribution.py
+lalitsc_distributions/__init__.py
+lalitsc_distributions.egg-info/PKG-INFO
+lalitsc_distributions.egg-info/SOURCES.txt
+lalitsc_distributions.egg-info/dependency_links.txt
+lalitsc_distributions.egg-info/not-zip-safe
+lalitsc_distributions.egg-info/top_level.txt

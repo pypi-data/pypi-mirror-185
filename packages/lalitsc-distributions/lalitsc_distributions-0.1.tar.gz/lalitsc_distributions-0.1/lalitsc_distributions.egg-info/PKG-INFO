@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lalitsc-distributions
+Version: 0.1
+Summary: Gaussian and Binomial distributions
+Author: Lalit Shankar Chowdhury
+Author-email: lalitshankarch@gmail.com
+License: MIT
+
+Test package to upload to PyPI for the "AI Programming with Python Nanodegree" course on Udacity. Contains classes to construct Gaussian and Binomial distributions.
