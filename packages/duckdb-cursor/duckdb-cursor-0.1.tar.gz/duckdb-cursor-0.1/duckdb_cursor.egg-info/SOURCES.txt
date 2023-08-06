@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+duckdb_cursor/__init__.py
+duckdb_cursor/cursor.py
+duckdb_cursor.egg-info/PKG-INFO
+duckdb_cursor.egg-info/SOURCES.txt
+duckdb_cursor.egg-info/dependency_links.txt
+duckdb_cursor.egg-info/requires.txt
+duckdb_cursor.egg-info/top_level.txt

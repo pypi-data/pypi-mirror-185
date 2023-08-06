@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: duckdb-cursor
+Version: 0.1
+Summary: DuckDB cursor wrapper
+Home-page: https://gitlab.com/wcorrales/duckdb-cursor
+Author: Wagner Corrales
+Author-email: wagnerc4@gmail.com
+License: GNU
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+DuckDB-Cursor
+=============
+
+DuckDB-Cursor is simple [DuckDB](https://www.duckdb.org) wrapper.
+
+
+Install
+-------
+
+First install library,
+```
+pip install duckdb-cursor
+```
+
+
+Usage
+-----
+
+Create an DB object and initialise it with the application,
+```python
+from duckdb import connect
+from duckdb_cursor import CURSOR
+
+cur = CURSOR(connect("db.duckdb"))
+cur.set("INSERT INTO users VALUES(1, ?);", ('Wendys', ))
+del cur
+```
+
+can select one row,
+```python
+cur = CURSOR(connect("db.duckdb"))
+row = cur.get("SELECT name FROM users WHERE id=1;", as_dict=True, one=True)
+del cur
+
+print(row['name'])
+```
+
+can select all rows,
+```python
+cur = CURSOR(connect("db.duckdb"))
+rows = cur.get("SELECT name FROM users;")
+del cur
+
+print(rows)
+```
+
+
+Contributing
+------------
+
+DuckDB-Cursor is developed on [GitLab](https://gitlab.com/wcorrales/duckdb-cursor). You are very welcome to
+open [issues](https://gitlab.com/wcorrales/duckdb-cursor/issues) or
+propose [merge requests](https://gitlab.com/wcorrales/duckdb-cursor/merge_requests).
+
+
+Help
+----
+
+This README is the best place to start, after that try opening an
+[issue](https://gitlab.com/wcorrales/duckdb-cursor/issues).
