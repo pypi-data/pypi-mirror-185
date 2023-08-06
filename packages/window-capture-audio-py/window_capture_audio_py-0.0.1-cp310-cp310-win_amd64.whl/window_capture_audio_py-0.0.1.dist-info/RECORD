@@ -1,0 +1,7 @@
+wcap_core.cp310-win_amd64.pyd,sha256=rHll97wKl-wmV9UyOAKcXmQ5F5Z-SioGs5o_4-Qc5zM,192000
+wcap/__init__.py,sha256=MS7OcQxdg67zBnOeMev_GVVCn2PiPE7uDUvS6PaxKCg,19
+wcap/wcap.py,sha256=A5A9NQKXq_b1SmgScBc3lEhwbDDWwh7LVd0jV9i7mgY,1656
+window_capture_audio_py-0.0.1.dist-info/METADATA,sha256=FQWDokUXxQP1UwXe0d75RiTB9XXUZYBZx32dZRuPaSc,185
+window_capture_audio_py-0.0.1.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+window_capture_audio_py-0.0.1.dist-info/top_level.txt,sha256=CwEhLsl6wmYc3Vx4FsBNnExDYc5GWtXOmn_ezga3x_g,15
+window_capture_audio_py-0.0.1.dist-info/RECORD,,
