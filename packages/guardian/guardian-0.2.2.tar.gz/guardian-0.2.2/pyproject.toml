@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "guardian"
+version = "0.2.2"
+description = "Monitor the status of a set of services."
+authors = ["Cédric Bonhomme <cedric@cedricbonhomme.org>"]
+license = "AGPL-3.0-or-later"
+
+readme = "README.md"
+homepage = "https://sr.ht/~cedric/guardian"
+repository = "https://git.sr.ht/~cedric/guardian"
+
+keywords = ["monitoring", "system", "notification", "report"]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "Topic :: System :: Monitoring",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
+]
+
+include = [
+    "README.md",
+    "COPYING",
+    "reports",
+    "guardian/templates/email.txt",
+    "guardian/templates/report.html"
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://todo.sr.ht/~cedric/guardian"
+
+[tool.poetry.scripts]
+guardian = "guardian.main:run"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyYAML = "^6.0.0"
+jinja2 = "^3.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
