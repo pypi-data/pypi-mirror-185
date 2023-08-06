@@ -1,0 +1,7 @@
+README
+pyproject.toml
+src/__init__.py
+src/apljax.egg-info/PKG-INFO
+src/apljax.egg-info/SOURCES.txt
+src/apljax.egg-info/dependency_links.txt
+src/apljax.egg-info/top_level.txt

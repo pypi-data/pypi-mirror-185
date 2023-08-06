@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: apljax
+Version: 0.0.1
+Summary: k to jax
+Author-email: 疒奀 <yz@mmon.co>
+Project-URL: Homepage, https://github.com/mlegls/apljax
+Project-URL: Bug Tracker, https://github.com/mlegls/apljax/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
