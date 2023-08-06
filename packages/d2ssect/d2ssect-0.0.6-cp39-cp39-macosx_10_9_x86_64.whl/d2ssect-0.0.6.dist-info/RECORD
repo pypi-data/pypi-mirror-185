@@ -1,0 +1,11 @@
+d2ssect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+d2ssect/__main__.py,sha256=SawL8maJ3gCqCgnDpXB5wgUq9sFij0fSegT3w5fnfUU,4018
+d2ssect/jellyfish.cpp,sha256=fMdsAnhmzpKnTaMnj3GeyQYO3pi4iNMdPZluoJyvwHI,8920
+d2ssect/jellyfish.cpython-39-darwin.so,sha256=dj9JCgfmohPK8UqF5cJay32oLwTfX6OBywsa1GuRWBA,90440
+d2ssect/utils.py,sha256=hE9MlYJRCAe0H4VEzumOHZY_EUfwD2famXHXEnEz43g,1385
+d2ssect-0.0.6.dist-info/LICENSE,sha256=j53v47_mQxYWiYmDDUB5OlB08lqLE_O7iwk5FKfCf3M,1091
+d2ssect-0.0.6.dist-info/METADATA,sha256=kkwNG4c3PNlwXH49rjjRo-I69StAfZxTWAK7V-oypiY,3609
+d2ssect-0.0.6.dist-info/WHEEL,sha256=UlNw_PQRbc8y2O60L5paNCXmEdKCjgP3umWDtB6RxVY,109
+d2ssect-0.0.6.dist-info/entry_points.txt,sha256=fAukAkfb6IBuSewucI5nsG19fI-tCV1FDLdlBj8TuDM,50
+d2ssect-0.0.6.dist-info/top_level.txt,sha256=yiYvT9MYD1HWltnz13FRaB_jVbheAYXblyVIF5wQjtY,8
+d2ssect-0.0.6.dist-info/RECORD,,
