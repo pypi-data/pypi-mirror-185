@@ -1,0 +1,4 @@
+include fco/requirements.txt
+include fco/thirdparty.json
+include fco/README.MD
+include fco/LICENSE

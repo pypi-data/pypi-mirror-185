@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+fco/LICENSE
+fco/README.MD
+fco/__init__.py
+fco/requirements.txt
+fco/thirdparty.json
+fco.egg-info/PKG-INFO
+fco.egg-info/SOURCES.txt
+fco.egg-info/dependency_links.txt
+fco.egg-info/top_level.txt
