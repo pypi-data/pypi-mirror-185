@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: guided
+Version: 0.0.4
+Summary: Getting from diagramming to programming
+Home-page: https://github.com/i2mint/guided
+License: mit
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: graphviz
+Requires-Dist: pydot
+Requires-Dist: importlib-resources
+
+
+# guided
+There is a bit of an air of mystery around this project...
+
+
+To install:	```pip install guided```
