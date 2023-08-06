@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+compscat/__init__.py
+compscat/__main__.py
+compscat/constants.py
+compscat/cross_section.py
+compscat/generate_event.py
+compscat/plotting.py
+compscat/save_events.py
+compscat.egg-info/PKG-INFO
+compscat.egg-info/SOURCES.txt
+compscat.egg-info/dependency_links.txt
+compscat.egg-info/requires.txt
+compscat.egg-info/top_level.txt
+tests/test_xsec.py
