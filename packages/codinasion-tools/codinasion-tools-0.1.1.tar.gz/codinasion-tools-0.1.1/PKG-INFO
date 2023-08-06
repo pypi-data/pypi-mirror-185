@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: codinasion-tools
+Version: 0.1.1
+Summary: A collection of useful open source tools
+Home-page: https://github.com/codinasion/codinasion-tools
+Author: Harsh Raj
+Author-email: harshraj8843@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/codinasion/codinasion-tools/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+<h1 align="center">Codinasion Tools</h1>
+
+<p align="center">
+A collection of open source tools that can be used to help you in your daily activities.
+</p>
+<div align="center">
+
+![LICENSE](https://img.shields.io/github/license/codinasion/codinasion-tools?color=lightgreen)
+[![PIP](https://img.shields.io/pypi/v/codinasion-tools?color=lightgreen)](https://pypi.org/project/codinasion-tools "PIP Package")
+
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/codinasion/.github/master/assets/rainbow-hr.png" alt="rainbow hr" width="100%" height="70%">
+</div>
+
+## How To Install
+
+```bash
+pip install codinasion-tools
+```
+
+## How To Use
+
+```python
+from codinasion_tools import ConvertDecimalToBinary
+
+binary = ConvertDecimalToBinary(10)
+print(binary) # 1010
+```
+
+<br/>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/codinasion/.github/master/assets/rainbow-hr.png" alt="rainbow hr" width="100%" height="70%">
+</div>
+
+<br/>
+
+<p align="center">
+Made with 💖 by Codinasion
+</p>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/codinasion/.github/master/assets/rainbow-hr.png" alt="rainbow hr" width="100%" height="70%">
+</div>
+
+
