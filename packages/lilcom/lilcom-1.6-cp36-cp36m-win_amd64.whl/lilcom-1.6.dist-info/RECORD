@@ -1,0 +1,9 @@
+lilcom_extension.lib,sha256=QsQklMboqFZmAMX71V3ljhZSZ2o0mX_LtS_QcQijhfM,45242
+lilcom_extension.pyd,sha256=l3hY25DToZpbQxPZw2622xB-bgb0STFOYf-ws5x4r5I,141824
+lilcom/__init__.py,sha256=rqIUx84PfBt3j9fyArTnmvCcaBtSm2ujxgvoFx3P1TM,123
+lilcom/lilcom_interface.py,sha256=Jcz4aPqY7dgY01uVpMfp7zBIJER7oZE04-WgLmKQen8,4311
+lilcom-1.6.dist-info/LICENSE,sha256=ZhR7-60VvUx8ckOmVEhPKXi2wqqpvvQaVpfXGJgbDmk,1201
+lilcom-1.6.dist-info/METADATA,sha256=GtPyUhyTNLv03CRKCHmW7ZZPvP3i0KgswLRZKMG3JCA,3348
+lilcom-1.6.dist-info/WHEEL,sha256=zukbZftcRdNfJ55Q_RYV9JZ3uVyqWKyq-wDJbmszs_U,101
+lilcom-1.6.dist-info/top_level.txt,sha256=_c6DTrG_0CXrczL0IVn5N36_-80_JWUPFhqRSfgoaG4,24
+lilcom-1.6.dist-info/RECORD,,
