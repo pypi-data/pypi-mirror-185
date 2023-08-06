@@ -1,0 +1,2 @@
+[datasette]
+cookies_for_magic_parameters = datasette_cookies_for_magic_parameters
