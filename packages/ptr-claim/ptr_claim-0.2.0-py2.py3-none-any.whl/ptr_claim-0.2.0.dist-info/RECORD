@@ -1,0 +1,16 @@
+ptr_claim/__init__.py,sha256=-VzqS2Phz0YREVsOIh5MyqG2Q7Ql9VZxftC5fXEUos8,113
+ptr_claim/__main__.py,sha256=OP4Xf61ToJlx5nuKkXCnoF-xPTqnPO2i8bJ1dJRyI7s,5311
+ptr_claim/draw_map.py,sha256=X7a-JKd_r6EzokjIjWhltOUn8VKBI-rTZSsHz9P69yA,2551
+ptr_claim/make_app.py,sha256=IclYD1bmreMamXh41_VI7cHtFdl5H2TMGVByxwMJ7tk,1813
+ptr_claim/prep_data.py,sha256=tKNxcKKUesichMQVayh2QmLEMYypaUOWeY3zwDfsHF8,11058
+ptr_claim/scrape_tr.py,sha256=PqFPrwc5exFYjEn6PTyYbZ2BDoColRSRXUlSo7NgPXI,5298
+ptr_claim/data/Tamriel Rebuilt Province Map_2022-11-25.png,sha256=BjIG4cfnR9UtGBFXLxsQOngeUmKaHux-SuPMRnjpEDY,3320602
+ptr_claim/data/__init.py__,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ptr_claim/data/img_coords.json,sha256=FkNp7G08nJ0FbC4DDijH0ou4G5aSgl_2cxXufq53NHQ,39310
+ptr_claim/data/name_hints.json,sha256=G1FvWUjPQ0u850JhKbVAbTKj1A6JPUCzxU3kRlykJlE,476
+ptr_claim/data/url_hints.json,sha256=XXTb1znrEoumKfPuYHzKNX2S8_VOP8pqSHmNMv72eto,1041
+ptr_claim-0.2.0.dist-info/entry_points.txt,sha256=uEOhsFEIW8yg3wqctLwctMdWl3onMVFt4wt8wPV_G8Y,53
+ptr_claim-0.2.0.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+ptr_claim-0.2.0.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+ptr_claim-0.2.0.dist-info/METADATA,sha256=fcgCyyh1VfgNLIbfNYmRyZ3O6QWO-L-GMqeUy8_NLjg,3375
+ptr_claim-0.2.0.dist-info/RECORD,,

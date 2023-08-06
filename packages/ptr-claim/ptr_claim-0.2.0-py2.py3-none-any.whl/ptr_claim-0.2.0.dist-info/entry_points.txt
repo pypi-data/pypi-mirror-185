@@ -1,0 +1,3 @@
+[console_scripts]
+ptr-claim=ptr_claim.__main__:main
+
