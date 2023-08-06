@@ -1,0 +1,17 @@
+Dependabot
+Javascript
+Lua
+macOS
+Podman
+autoformatter
+boolean
+bowtie
+errored
+golang
+linter
+positionally
+runtime
+schemas
+shortname
+shortnames
+validator
