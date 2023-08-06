@@ -1,0 +1,11 @@
+LICENSE,sha256=h6dW5yRP__7ICaHJi7ZbKAO5Eln9wBs9Yd84flq0VB0,1065
+trio_binance/__init__.py,sha256=6SaKlbFXqU_l1oKUAC7D_BusACsf7yVTc8t02J92N5o,67
+trio_binance/client.py,sha256=rhSPcdSd_bErkouH7JRgVxs0wUujVQ36Pf6FL_GuwuA,62008
+trio_binance/enums.py,sha256=SST3W8sKObBQTld-QFEzSForR8R-FUO8ffek0KJ4dRc,1891
+trio_binance/exceptions.py,sha256=rPOunJL46OkxLotZgqZqvKL7uU4iG-44v5EDTsOHiSc,2280
+trio_binance/helpers.py,sha256=fVAa9GY12sAKbUyXsu7PwnwJPuhuPHGCuo0hqhWt63Y,1493
+trio_binance/streams.py,sha256=QX94u7tCOS-mURZsTpGFbiN2tYQ2GP_ENsiuQnfnCY0,6088
+trio_binance-0.2.2.dist-info/LICENSE,sha256=h6dW5yRP__7ICaHJi7ZbKAO5Eln9wBs9Yd84flq0VB0,1065
+trio_binance-0.2.2.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+trio_binance-0.2.2.dist-info/METADATA,sha256=GsiHJ0FOqYpdl2tQTnEM_gj7ACxgbXaPhD06tnkQAns,2086
+trio_binance-0.2.2.dist-info/RECORD,,
