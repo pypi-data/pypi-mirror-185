@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+AlphavantageLFT/AlphavantageLFT.py
+AlphavantageLFT/__init__.py
+AlphavantageLFT.egg-info/PKG-INFO
+AlphavantageLFT.egg-info/SOURCES.txt
+AlphavantageLFT.egg-info/dependency_links.txt
+AlphavantageLFT.egg-info/requires.txt
+AlphavantageLFT.egg-info/top_level.txt
