@@ -1,0 +1,3 @@
+[console_scripts]
+varst=varst.cli:main
+
