@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wp-socket
+Version: 0.0.12
+Summary: WallPad Socket Client
+Home-page: https://gitlab.com/rs_wall_pad/wp_socket
+Author: stkang90
+Author-email: stkang90@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/rs_wall_pad/wp_socket/-/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: asyncio
+
+Description
+===========
+
+WallPad Socket Client
+
