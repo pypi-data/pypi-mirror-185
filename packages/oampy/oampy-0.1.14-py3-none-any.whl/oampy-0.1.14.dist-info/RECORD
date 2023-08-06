@@ -1,0 +1,12 @@
+oampy/__init__.py,sha256=EWLRhJVL5DVfjvaMgZY0DN4lM6ttzzy7n0OdPxH0gtU,5297
+oampy/__main__.py,sha256=RkyAx_xkxCcBwX3QSwbl7Hlu5sx8WnlpSK9Czldvqos,1375
+oampy/client.py,sha256=imovXD9vVVsE3K2j9LFhaBl7Orw1xqebNZFl7kOwor0,2595
+oampy/docs.py,sha256=rOIkCqFHCWtvmaLCSNmlSWkJKr1SlObDW1PNOLOUxGA,9379
+oampy/query.py,sha256=cfS2JqxC3pIIA5Ey5x_x0nUNBhCQQSmHvK9Min5i4J4,1852
+oampy/utils.py,sha256=lftFRUsd9IuQFlNHDlYci3N_U2VxhR1GJ69gSTlnZVQ,2586
+oampy-0.1.14.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+oampy-0.1.14.dist-info/METADATA,sha256=lCl0qf7rDPurF343TMU-35rQPFbKhjUr-2_i9P1Qzng,2085
+oampy-0.1.14.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+oampy-0.1.14.dist-info/entry_points.txt,sha256=lHG5GmkGX8s45hyvhGoVG--vXJ20iVldWboCV_BKL70,46
+oampy-0.1.14.dist-info/top_level.txt,sha256=61VEFWM2X4civXZWb9IXLdfsncVrMc2fPWk_zKIBa0E,6
+oampy-0.1.14.dist-info/RECORD,,

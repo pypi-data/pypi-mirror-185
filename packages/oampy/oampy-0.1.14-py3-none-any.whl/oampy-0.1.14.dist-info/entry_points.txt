@@ -1,0 +1,2 @@
+[console_scripts]
+oampy = oampy.__main__:main
