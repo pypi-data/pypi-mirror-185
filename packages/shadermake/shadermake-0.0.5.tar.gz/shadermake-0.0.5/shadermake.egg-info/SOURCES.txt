@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+shadermake/__init__.py
+shadermake/decorator.py
+shadermake/engine.py
+shadermake.egg-info/PKG-INFO
+shadermake.egg-info/SOURCES.txt
+shadermake.egg-info/dependency_links.txt
+shadermake.egg-info/top_level.txt
+shadermake/engines/opengl.py
