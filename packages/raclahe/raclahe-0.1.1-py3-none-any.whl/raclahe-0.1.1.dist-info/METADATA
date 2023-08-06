@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: raclahe
+Version: 0.1.1
+Summary: Original package to support Region Adaptive Magnetic Resonance Image Enhancement for improving CNN based segmentation of the prostate and prostatic zones paper
+Home-page: https://github.com/dzaridis/RACLAHE_Image_Enhancement_for_CNN_model_segmentation
+Author: Dimitris Zaridis
+Author-email: dimzaridis@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENCE.txt
+Requires-Dist: numpy
+Requires-Dist: protobuf (==3.19.6)
+Requires-Dist: scikit-image
+Requires-Dist: pydicom
+Requires-Dist: opencv-python (==4.5.1.48)
+Requires-Dist: tensorflow (==2.2.0)
+Requires-Dist: matplotlib
+Requires-Dist: keras-unet-collection (==0.1.11)
+Requires-Dist: pandas
+Requires-Dist: glob2
+Requires-Dist: nibabel (==3.2.1)
+
+UNKNOWN
+
