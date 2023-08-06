@@ -1,0 +1,9 @@
+[project]
+name = "pyriotapi"
+version = "0.0.1"
+authors = [
+  { name="skereeHub", email="skeree2104@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.10"
