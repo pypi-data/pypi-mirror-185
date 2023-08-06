@@ -1,0 +1,2 @@
+[snek5000.solvers]
+cbox = snek5000_cbox.solver

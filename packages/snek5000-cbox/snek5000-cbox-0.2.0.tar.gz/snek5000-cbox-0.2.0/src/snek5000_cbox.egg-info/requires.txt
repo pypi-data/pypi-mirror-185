@@ -1,0 +1,11 @@
+snek5000>=0.9.0rc3
+
+[tests]
+nox
+pytest
+coverage[toml]
+pytest-cov
+pytest-datadir
+pytest-mock
+ipython
+scipy
