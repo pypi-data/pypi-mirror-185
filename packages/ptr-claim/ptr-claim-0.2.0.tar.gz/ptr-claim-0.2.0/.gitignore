@@ -1,0 +1,13 @@
+**/__pycache__
+.ipynb_checkpoints
+.virtual_documents
+.vscode
+dist/
+*.code-workspace
+*.html
+*.xlsx
+/*.png
+/*.json
+.env
+todo.txt
+unlocated.txt
