@@ -1,0 +1,4 @@
+[console_scripts]
+d0s = docker0s.commands:invoke
+docker0s = docker0s.commands:invoke
+
