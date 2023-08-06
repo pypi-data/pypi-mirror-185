@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: JWST_IMAGE_MAKER
+Version: 0.1.0
+Summary: Creates images from raw JWST data
+Home-page: https://github.com/henrywhite2727/JWST_Image_Maker
+Author: Henry White and Hansen Jiang
+Author-email: henrywhite@sidratresearch.com, hansen@sidratresearch.com
+License: Apache License 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+**Description of Software Package**

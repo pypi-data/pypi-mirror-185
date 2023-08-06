@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+JWST_IMAGE_MAKER/__init__.py
+JWST_IMAGE_MAKER/importing.py
+JWST_IMAGE_MAKER/main.py
+JWST_IMAGE_MAKER/plotting.py
+JWST_IMAGE_MAKER/processing.py
+JWST_IMAGE_MAKER.egg-info/PKG-INFO
+JWST_IMAGE_MAKER.egg-info/SOURCES.txt
+JWST_IMAGE_MAKER.egg-info/dependency_links.txt
+JWST_IMAGE_MAKER.egg-info/requires.txt
+JWST_IMAGE_MAKER.egg-info/top_level.txt
+JWST_IMAGE_MAKER/Input Data/__init__.py
