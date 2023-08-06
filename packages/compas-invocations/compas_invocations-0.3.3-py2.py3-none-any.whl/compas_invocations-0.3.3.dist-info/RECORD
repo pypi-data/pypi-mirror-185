@@ -1,0 +1,12 @@
+compas_invocations/__init__.py,sha256=LFB0wvYQ5b6g4h6Jj-pNv38qCE1zvg_gbA9yhlumhNU,143
+compas_invocations/build.py,sha256=Ox9fE4WKopUzHq5CBk5DeHXD_7K65eLHzkWyWNWG9BU,4909
+compas_invocations/console.py,sha256=cIlfywOjTmsk6BCbILYpATFe8jFvb8--zs7yQRJ2uCY,2245
+compas_invocations/docs.py,sha256=ZF1J0yKcpEtSkMg-e70aInU93bF_m5lYoVXS8DJdzrM,1234
+compas_invocations/style.py,sha256=LXkZL8jjJXJuQ8RoqK0Dlca01d4JHyR_Z3jhvMftNwo,823
+compas_invocations/tests.py,sha256=PWiAIIhjO9dt1yscZrNGRmF6xWAkGenGPg6hxq48o-Q,610
+compas_invocations-0.3.3.dist-info/AUTHORS.md,sha256=yAu5bJMzyS9OrEUvvkBwJF3gPHqZsBTq0h675jGxS4Q,99
+compas_invocations-0.3.3.dist-info/LICENSE,sha256=uce-Jqr1wwXEwzIVLhEGLQvgFCNYKdbyxkUeeyGXONk,1048
+compas_invocations-0.3.3.dist-info/METADATA,sha256=Rlrfxx8qqwyBhmVJRVhldCUQW7pI1ezavz9alYv951Q,1652
+compas_invocations-0.3.3.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+compas_invocations-0.3.3.dist-info/top_level.txt,sha256=LKPKsHmRlbHeXBSdnNDju6auK-4_XnmPSqhMVYeFjlo,19
+compas_invocations-0.3.3.dist-info/RECORD,,
