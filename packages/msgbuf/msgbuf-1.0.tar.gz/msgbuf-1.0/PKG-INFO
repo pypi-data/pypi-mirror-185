@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: msgbuf
+Version: 1.0
+Summary: A Python message buffer
+Home-page: https://github.com/dmotte/msgbuf
+Author: dmotte
+License: MIT
+Keywords: notifications cli telegram log text buffer notifier logs msg send message notification notify buf message-buffer msgbuf msg-buf
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+[![PyPI](https://img.shields.io/pypi/v/msgbuf?logo=python&style=flat-square)](https://pypi.org/project/msgbuf/)
+
+A Python **message buffer**.
+
+Please refer to the [GitHub repository](https://github.com/dmotte/msgbuf) for more information.

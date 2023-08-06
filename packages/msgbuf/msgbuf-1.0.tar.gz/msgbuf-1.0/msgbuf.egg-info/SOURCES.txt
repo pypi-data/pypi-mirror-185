@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+msgbuf/__init__.py
+msgbuf/__main__.py
+msgbuf/cli.py
+msgbuf.egg-info/PKG-INFO
+msgbuf.egg-info/SOURCES.txt
+msgbuf.egg-info/dependency_links.txt
+msgbuf.egg-info/entry_points.txt
+msgbuf.egg-info/top_level.txt
