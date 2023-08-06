@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: word2number_es
+Version: 1.0
+Summary: Convert number words (eg. twenty one) to numeric digits (spanish)
+Home-page: https://github.com/Neuri-ai/w2n_es
+Author: Neuri
+Author-email: support@neuri.ai
+License: The MIT License (MIT)
+        
+        Copyright (c) 2016 Akshay Nagpal (https://github.com/akshaynagpal)
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Keywords: numbers,convert,words,spanish
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+
+# Word to Number (Spanish) ![GitHub issues](https://img.shields.io/github/issues/Neuri-ai/w2n_es) ![GitHub forks](https://img.shields.io/github/forks/Neuri-ai/w2n_es) ![GitHub stars](https://img.shields.io/github/stars/Neuri-ai/w2n_es) ![GitHub licence](https://img.shields.io/github/license/Neuri-ai/w2n_es)
+
+This is a Python module to convert number words (eg. veintiuno) to numeric digits (21).
+It works for positive numbers upto the range of 999,999,999,999 (i.e. billions)
+Below is the installation, usage and other details of this module.
+
+## Installation
+
+Please ensure that you have **updated pip** to the latest version before installing word2number_es.
+
+You can install the module using Python Package Index using the below command.
+
+    pip install word2number_es
+
+Make sure you install all requirements given in requirements.txt
+```
+pip install -r requirements.txt
+```
+## Usage
+
+First you have to import the module using the below code.
+
+    from word2number_es import w2n
+
+Then you can use the **word_to_num** method to convert a number-word to numeric digits, as shown below.
+```
+print(w2n.word_to_num("dos millones novecientos noventa y dos mil"))
+2992000
+```
+```
+print(w2n.word_to_num('dos punto tres')) 
+2.3
+```
+```
+print(w2n.word_to_num('112')) 
+112
+```
+```
+print(w2n.word_to_num('punto cinco')) 
+0.5
+```
+```
+print(w2n.word_to_num('dosmil veintitres')) 
+2023
+```
+```
+print(w2n.word_to_num('millon millon'))
+Error: Redundant number! Please enter a valid number word (eg. two million twenty three thousand and forty nine)
+None
+```
+```
+print(w2n.word_to_num('blah'))
+Error: No valid number words found! Please enter a valid number word (eg. two million twenty three thousand and forty nine)
+None
+```
+
+You can also use the **numwords_in_sentence** to convert all number words in a sentence to numeric digits, as shown below.
+```
+print(w2n.numwords_in_sentence("el reloj me costo diez mil pesos"))
+el reloj me costo 10000 pesos
+```
+
+
+
+## Contributors
+- Ben Batorsky [bpben](https://github.com/bpben)
+- Alex [ledovsky](https://github.com/ledovsky)
+- Tal Yarkoni [tyarkoni](https://github.com/tyarkoni)
+- ButteredGroove [ButteredGroove](https://github.com/ButteredGroove)
+- TurqW [TurqW](https://github.com/TurqW)
