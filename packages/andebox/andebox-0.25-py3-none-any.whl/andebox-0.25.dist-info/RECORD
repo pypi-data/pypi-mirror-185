@@ -1,0 +1,15 @@
+andebox-0.25.data/scripts/andebox,sha256=iAfeUIrFp8xeKNEaRFG_UFiIlwe9WerXZIuH44Ns2fQ,2009
+andeboxlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+andeboxlib/exceptions.py,sha256=yUca6CXg4ViFW2ept1pfPNjlizU-rJMY3qx7QY8Wvqg,211
+andeboxlib/actions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+andeboxlib/actions/ansibletest.py,sha256=tgDZC0Pm8m8_nQo2Hw9ylPFRXukmTshhZ0Hxo4euEdY,3423
+andeboxlib/actions/base.py,sha256=j1BNkkmo19AmQwbV3P6B3qX1fOlOJPdWl_8REt1gygo,3072
+andeboxlib/actions/ignorefile.py,sha256=iRdfaHLluN-ympFlauxdN60ufDwNOVvuez658WxP42U,7906
+andeboxlib/actions/runtime.py,sha256=dr46hmKNOGl6gi11_UdoR5Z0on7bSwVxb_VohFC4BU0,3473
+andeboxlib/actions/toxtest.py,sha256=NZ4l7a5uIK7buCeZbVZOc_As6IOt18a5TNPIVB7zh0E,2629
+andeboxlib/actions/vagrant.py,sha256=DJOxJ4rBdc13fVMjQziIMn27ZKNems0hF8Exxjr7I-c,2283
+andebox-0.25.dist-info/LICENSE,sha256=5hqVHmxWT2LPYFiwH3C488pBurdSR0uVqLkaAReJuHU,1073
+andebox-0.25.dist-info/METADATA,sha256=bXEJCl9gCos1KTWV2Ud3Hmb31oAmambfUhAxZei0L-k,7388
+andebox-0.25.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+andebox-0.25.dist-info/top_level.txt,sha256=A1kEXTpdd-0MD7ZFGUclBRu7FNH3ABLqR-BE4i5O8Y0,11
+andebox-0.25.dist-info/RECORD,,
