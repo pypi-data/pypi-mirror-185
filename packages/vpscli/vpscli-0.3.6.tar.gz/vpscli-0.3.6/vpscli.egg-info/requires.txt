@@ -1,0 +1,15 @@
+aiofile
+aiohttp
+aiomysql
+aioredis
+argparse
+codefast
+endlessh
+joblib
+knivesout
+loguru
+pandas
+psutil
+pymysql
+redis
+uuidentifier

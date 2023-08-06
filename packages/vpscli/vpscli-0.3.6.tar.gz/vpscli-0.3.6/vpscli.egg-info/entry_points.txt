@@ -1,0 +1,5 @@
+[console_scripts]
+vpsinit = vps.__init__:main
+vpspanel = vps.client:client
+vpsstatus = vps.status:status
+
