@@ -1,0 +1,17 @@
+uritemplate
+fastavro
+
+[aiohttp]
+aiohttp
+
+[dev]
+coverage[toml]
+pytest
+pytest-asyncio
+pre-commit
+mypy
+sphinx
+documenteer[guide]
+
+[httpx]
+httpx
