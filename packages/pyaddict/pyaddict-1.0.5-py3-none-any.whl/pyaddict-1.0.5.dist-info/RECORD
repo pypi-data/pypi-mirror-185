@@ -1,0 +1,13 @@
+pyaddict/__init__.py,sha256=nPREAOq90y_uQrFZT33aWa4C9aUF94tSHTR_Q1cqzck,143
+pyaddict/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyaddict/pyaddict.py,sha256=LKeCI28M2xnFy_LzomTpQiRCTa1mHscEnfsFd-1zx6I,17832
+pyaddict/interfaces/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyaddict/interfaces/common.py,sha256=LEF3UXStLrVWGrWEAfp0_Eh8YgLnypvlXiDqxq2adaM,1876
+pyaddict/schema/__init__.py,sha256=9ZKGlNtIyFLLNF6CFOCCYvU03y9j6rBUkFGMrMhsVqY,148
+pyaddict/schema/schema.py,sha256=oYK31-LEa9Yzk0X5MUqSOE6bEPvlkBDwr7vkUIq9qPo,17600
+pyaddict/types/__init__.py,sha256=R_xHK8WGGc2YJV0MttU0jM5cIw0yS1vkxBBcpZyLdSo,146
+pyaddict/types/types.py,sha256=Ym1dZux5XafeiNQMSI_XBaRTUEdKha3pARPJH1R4o7E,194
+pyaddict-1.0.5.dist-info/METADATA,sha256=GYxHZ8C4mOtjOXNH8Me88ThthQCbyODhMPmFwSnLBQs,23109
+pyaddict-1.0.5.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+pyaddict-1.0.5.dist-info/licenses/LICENSE,sha256=JoTeFzAOCkNGhvHsf4r2BFIHpLRXo_4EsrnOZV58XVA,17098
+pyaddict-1.0.5.dist-info/RECORD,,
