@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+funsql/__init__.py
+funsql.egg-info/PKG-INFO
+funsql.egg-info/SOURCES.txt
+funsql.egg-info/dependency_links.txt
+funsql.egg-info/not-zip-safe
+funsql.egg-info/requires.txt
+funsql.egg-info/top_level.txt
+funsql/data/sql_keywords.txt
+funsql/data/sql_templates.sql
+funsql/src/pghook.py
+funsql/src/template.py
+funsql/tests/__init__.py
+funsql/tests/test_funsql.py
