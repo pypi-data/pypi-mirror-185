@@ -1,0 +1,13 @@
+pcpi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pcpi/_cspm_session.py,sha256=Pa3drprBOuskUzdpvKx7MAXuTeefje34ZYDYPmbr4IQ,3320
+pcpi/_onprem_cwp_session.py,sha256=hA-axgqYwS6sUPRD-oK9rC-fExyg07rrM8dvjpIH7OE,2652
+pcpi/_saas_cwp_session.py,sha256=isbIKweGTEGTB4G4n66jLUlpIQZTi7LmfcZPh4tDceU,4017
+pcpi/_session_base.py,sha256=hUYCspnnF0jTfJ9NPlLOkuccmfUl-KGMcW0l-nIvshg,20066
+pcpi/_session_types.py,sha256=b3UC7QUWvR9NVmrUUKV9lfq8otSqaRyXm1zi9EHjjgA,146
+pcpi/onprem_session_manager.py,sha256=mfydVOCRfl2IVb_jiQYgEXECOQVCAfg1peurV6Aeq5E,966
+pcpi/saas_session_manager.py,sha256=Cx16UAbkkWfehXS5KivEef23AB2DeAJWC1aCyqv_fSk,1716
+pcpi/session_loader.py,sha256=W8_FSFetkQ9bDUQp_EwbEKskv_v77uX8L9uDtsO4agM,35583
+pcpi-0.5.2.dist-info/METADATA,sha256=rLDdoG3mVXgp2tXouXoDfUfLV8DH511pcVvcrxJ7kyo,18584
+pcpi-0.5.2.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+pcpi-0.5.2.dist-info/licenses/LICENSE,sha256=Q0c5L0KeeIITOtmlHhCRwVS3wWHZ3oYoolQ8UcduRhk,755
+pcpi-0.5.2.dist-info/RECORD,,
