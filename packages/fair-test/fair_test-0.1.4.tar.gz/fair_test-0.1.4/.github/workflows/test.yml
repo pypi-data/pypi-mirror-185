@@ -1,0 +1,128 @@
+name: Run tests
+# Run test at each push to master or develop, if changes to package files
+on:
+  workflow_dispatch:
+  workflow_call:
+  push:
+    branches: [ main ]
+    paths:
+    - 'pyproject.toml'
+    - 'src/**'
+    - 'tests/**'
+    - 'docs/**'
+    - 'mkdocs.yml'
+    - 'example/metrics/**'
+    - '.github/workflows/test.yml'
+
+jobs:
+
+  codeql-analysis:
+    name: CodeQL analysis
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'python' ]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: ${{ matrix.language }}
+
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v2
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+      with:
+        category: "/language:${{matrix.language}}"
+
+
+  tests:
+    name: Run tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9, '3.10', '3.11']
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        # Disabling shallow clone is recommended for improving relevancy of reporting
+        fetch-depth: 0
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - uses: actions/cache@v3
+      id: cache
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ runner.os }}-python-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}-test-v02
+
+    - name: Install dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: pip install -e ".[test]"
+
+    - name: Check
+      run: bash scripts/check.sh
+
+    # - name: Test
+    #   run: bash scripts/test.sh
+    # - name: Upload coverage
+    #   uses: codecov/codecov-action@v3
+
+    - name: Setup SonarCloud
+      uses: warchant/setup-sonar-scanner@v4
+
+    - name: Test with pytest with coverage
+      run: |
+        pytest --cov fair_test --cov-report xml:coverage.xml tests/
+
+    - name: Run SonarCloud
+      env:
+        # to get access to secrets.SONAR_TOKEN, provide GITHUB_TOKEN
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: sonar-scanner -Dsonar.login=${{ secrets.SONAR_TOKEN }} -Dsonar.organization=maastrichtu-ids  -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.projectKey=MaastrichtU-IDS_fair-test -Dsonar.python.coverage.reportPaths=coverage.xml -Dsonar.sources=src
+
+
+    # - name: SonarCloud Scan
+    #   uses: SonarSource/sonarcloud-github-action@master
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+    #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+  docs:
+    name: Update documentation website
+    needs: [ tests, codeql-analysis ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: |
+          pip install ".[doc]"
+
+      - name: Deploy mkdocs on GitHub Pages
+        run: |
+          # git pull
+          mkdocs gh-deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

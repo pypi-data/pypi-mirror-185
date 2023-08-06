@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: fair-test
+Version: 0.1.4
+Summary: A library to define and publish FAIR metrics tests APIs complying with the FAIRMetrics working group specifications. Each API can expose multiple metric tests endpoint, each test assesses the compliance of a subject URL with a FAIR principle. Those APIs can be used by FAIR evaluation services, such as FAIR enough and the FAIR evaluator.
+Project-URL: Homepage, https://github.com/MaastrichtU-IDS/fair-test
+Project-URL: Documentation, https://maastrichtu-ids.github.io/fair-test
+Project-URL: History, https://github.com/MaastrichtU-IDS/fair-test/releases
+Project-URL: Tracker, https://github.com/MaastrichtU-IDS/fair-test/issues
+Project-URL: Source, https://github.com/MaastrichtU-IDS/fair-test
+Author-email: Vincent Emonet <vincent.emonet@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022-present Vincent Emonet <vincent.emonet@gmail.com>
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE.txt
+Keywords: API,FAIR,evaluation,test
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Requires-Dist: extruct
+Requires-Dist: fastapi>=0.51.0
+Requires-Dist: idutils
+Requires-Dist: pydantic
+Requires-Dist: pyld
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml>=5.3.1
+Requires-Dist: rdflib>=6.1.1
+Requires-Dist: requests>=2.24.0
+Provides-Extra: dev
+Requires-Dist: pre-commit>=2.17.0; extra == 'dev'
+Requires-Dist: uvicorn[standard]>=0.12.0; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: mdx-include<2.0.0,>=1.4.1; extra == 'doc'
+Requires-Dist: mkdocs-markdownextradata-plugin<0.3.0,>=0.1.7; extra == 'doc'
+Requires-Dist: mkdocs-material<9.0.0,>=8.1.4; extra == 'doc'
+Requires-Dist: mkdocs<2.0.0,>=1.1.2; extra == 'doc'
+Requires-Dist: mkdocstrings[python]; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: black==22.8.0; extra == 'test'
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: httpx; extra == 'test'
+Requires-Dist: isort<6.0.0,>=5.0.6; extra == 'test'
+Requires-Dist: mypy==0.971; extra == 'test'
+Requires-Dist: pytest-cov<4.0.0,>=2.12.0; extra == 'test'
+Requires-Dist: pytest<8.0.0,>=7.1.3; extra == 'test'
+Requires-Dist: ruff>=0.0.219; extra == 'test'
+Requires-Dist: types-pyyaml; extra == 'test'
+Requires-Dist: types-requests; extra == 'test'
+Description-Content-Type: text/markdown
+
+
+<div align="center">
+
+# ☑️ FAIR Test
+
+[![Version](https://img.shields.io/pypi/v/fair-test)](https://pypi.org/project/fair-test) [![Python versions](https://img.shields.io/pypi/pyversions/fair-test)](https://pypi.org/project/fair-test) [![MIT license](https://img.shields.io/pypi/l/fair-test)](https://github.com/MaastrichtU-IDS/fair-test/blob/main/LICENSE)
+
+[![Publish to PyPI](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/publish.yml/badge.svg)](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/publish.yml) [![Run tests](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/test.yml/badge.svg)](https://github.com/MaastrichtU-IDS/fair-test/actions/workflows/test.yml) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=MaastrichtU-IDS_fair-test&metric=coverage)](https://sonarcloud.io/dashboard?id=MaastrichtU-IDS_fair-test)
+
+</div>
+
+`fair-test` is a library to build and deploy [FAIR](https://www.go-fair.org/fair-principles/) metrics tests APIs, supporting the specifications used by the [FAIR Metrics Working Group](https://github.com/FAIRMetrics/Metrics), that can be queried to assess if a resource is complying with the [FAIR principles](https://www.go-fair.org/fair-principles/) (Findable, Accessible, Interoperable, Reusable).
+
+It aims to enable python developers to easily write, and deploy FAIR metric tests functions that can be queried by various FAIR evaluations services, such as [FAIR enough](https://fair-enough.semanticscience.org/) and the [FAIRsharing FAIR Evaluator](https://fairsharing.github.io/FAIR-Evaluator-FrontEnd/).
+
+## 📖 Documentation
+
+Visit the `fair-test` documentation website for more details on how to use the library to publish new FAIR tests: [**https://maastrichtu-ids.github.io/fair-test**](https://maastrichtu-ids.github.io/fair-test)
+
+## 🧑‍💻 Contribute
+
+If you wish to contribute to the `fair-test` library, checkout the [Contribute page](https://maastrichtu-ids.github.io/fair-test/contributing/) in the documentation to get started.
