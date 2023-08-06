@@ -1,0 +1,6 @@
+requests
+pythonnet
+pywin32
+pyserial
+parse
+waiter
