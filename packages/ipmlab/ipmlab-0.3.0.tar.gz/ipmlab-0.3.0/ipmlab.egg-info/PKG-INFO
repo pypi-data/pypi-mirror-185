@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: ipmlab
+Version: 0.3.0
+Summary: Image Portable Media Like A Boss
+Home-page: https://github.com/KBNLresearch/ipmlab
+Author: Johan van der Knijff
+Author-email: johan.vanderknijff@kb.nl
+Maintainer: Johan van der Knijff
+Maintainer-email: johan.vanderknijff@kb.nl
+License: Apache License 2.0
+Download-URL: https://github.com/KBNLresearch/ipmlab/archive/0.3.0.tar.gz
+Description: Workflow software for automated imaging of portable storage media
+Platform: linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.2
