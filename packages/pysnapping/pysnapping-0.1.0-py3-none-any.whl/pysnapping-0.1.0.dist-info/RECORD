@@ -1,0 +1,17 @@
+pysnapping/__init__.py,sha256=k8g_4WDQp07MKtMnYwG2-pOUp-OcgrEnfLF6dbBYXlQ,1281
+pysnapping/linear_referencing.py,sha256=ulKI7rQUKRou0rM6FXDWXUCBqpla01aumGG9tC_xu-4,25323
+pysnapping/ordering.py,sha256=h4BdJh9agveLg_YfRoLH81oGZCbI-JWoCBzSpTH2EXE,6143
+pysnapping/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysnapping/snap.py,sha256=lxzkUWzFcQdNQ5-qXPz-wQuio-lRfhARck_PHN5TqY0,55746
+pysnapping/util.py,sha256=wyYT-6DFrOCGk-PuUOCghJ8JWzDypjndzgMZWxxCL-E,4498
+pysnapping/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysnapping/test/complex_trip.geojson,sha256=MPpcKHT7mlX3-3VfzvKb9zefatP8EY-9mseCp-m4paA,50005
+pysnapping/test/test_linear_referencing.py,sha256=joSfRbW4Oc3A34_i4Jq1ETSUroLwSIkZg15cdFmTo9c,12330
+pysnapping/test/test_ordering.py,sha256=PKbXpPyte9GAUK8_IEWr8VWVteff3q9hvBpz_PfA3Jw,2805
+pysnapping/test/test_snap.py,sha256=3QPidVkWQxFiLeV4NY5fiC9aMW5F4QBhAEwStsukcGw,14439
+pysnapping/test/test_util.py,sha256=3DD1r6l4TznT0lMKNhqaZGIWgeDQo-WY0ZOG3308pmo,623
+pysnapping-0.1.0.dist-info/LICENSE,sha256=grRuN80hcLZOOQ5DPTHQKS8qjk95uU_xaNj71np-8Kc,1062
+pysnapping-0.1.0.dist-info/METADATA,sha256=Zfp5SgEXZFFbsF0SfoD-PXgHq8F1l9Kc2RWo0UpCaRc,6568
+pysnapping-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pysnapping-0.1.0.dist-info/top_level.txt,sha256=GuikW57DRhUjO-zUC2xxEaINnrTUleW67Km_HqqYqH4,11
+pysnapping-0.1.0.dist-info/RECORD,,
