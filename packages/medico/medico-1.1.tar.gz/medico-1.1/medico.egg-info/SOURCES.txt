@@ -1,0 +1,7 @@
+setup.py
+medico/__init__.py
+medico.egg-info/PKG-INFO
+medico.egg-info/SOURCES.txt
+medico.egg-info/dependency_links.txt
+medico.egg-info/requires.txt
+medico.egg-info/top_level.txt

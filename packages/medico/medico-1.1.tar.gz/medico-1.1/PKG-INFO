@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: medico
+Version: 1.1
+Summary: Extract vital medical information from text.
+Author: Mr. Medico
+
+This package extracts vital health information from string such as medicine names, dosage, treatment names, diagnostic data, etc.
