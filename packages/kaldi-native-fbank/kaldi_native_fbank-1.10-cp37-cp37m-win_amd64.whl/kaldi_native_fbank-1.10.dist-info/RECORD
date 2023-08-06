@@ -1,0 +1,15 @@
+_kaldi_native_fbank.cp37-win_amd64.pyd,sha256=JWrUChBbXVKv9ac0qjQeyCTb8NAC06xNTJZbJ32buTQ,276480
+kaldi_native_fbank/__init__.py,sha256=XbflnTDubH_9eHAmAtFaSpK82zumbLqaG8yc7cKbZrc,148
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/feature-fbank.h,sha256=S1L-iaaNjVh7EFzfC5WRM_yGKJ3s86UfgtBSTn_fkX4,4666
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/feature-functions.h,sha256=0HNxN3jNE7RRWYeZkaPuP8zscrCPr7_6M3UCmXJv8wg,1568
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/feature-window.h,sha256=1fRJjk-Np12xVXk28EMx1fnm-Wf2aqs5QvKjlV8RJj0,7258
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/log.h,sha256=rsHl8COaYJSoklPnSrYKD2YCx1bpkoQ8gI7EWLM4Qlc,11665
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/mel-computations.h,sha256=GefEXY0RA7CBLcVkvobw1F4h4FJYTLuZqckjJvBlFvU,4090
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/online-feature.h,sha256=VaNr9YIeYlthdA5T9FoMkgkTgZJN92NNf20zR1Yj7pQ,5409
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/rfft.h,sha256=TkBxazwkD1XUJyXHO8Ic_icFYHr6iTEl4v0nnmjGawo,1654
+kaldi_native_fbank/lib/kaldi-native-fbank-core.lib,sha256=BgzfTksluGyjQDIUEyjDlO_mkv27pr8w40OjyHPloSM,676712
+kaldi_native_fbank-1.10.dist-info/LICENSE,sha256=jfClcNbFUkJ_A39ojeA1MTvJ1caVOPB4_H-ABviJeF4,11939
+kaldi_native_fbank-1.10.dist-info/METADATA,sha256=HiocYnKOjWhn0RcXfC7nhitBytJrYygI238eMr_-_WI,3116
+kaldi_native_fbank-1.10.dist-info/WHEEL,sha256=eaY3ejwL19QEEyHRYuTgC3FZQgNYBpzCION1l_gJUb8,101
+kaldi_native_fbank-1.10.dist-info/top_level.txt,sha256=eXV9GD-CJzXw884LEFar9T7A-8MF6m91XUJljShEaKQ,39
+kaldi_native_fbank-1.10.dist-info/RECORD,,
