@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: bigfeat
+Version: 0.1
+Summary: Automated feature engineering library
+Home-page: https://github.com/DataSystemsGroupUT/BigFeat
+License: MIT
+Keywords: feature engineering,machine learning,automl,feature extraction,feature selection
+
+Automated feature engineering library

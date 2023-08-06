@@ -1,0 +1,10 @@
+README.md
+setup.py
+bigfeat/__init__.py
+bigfeat/bigfeat_base.py
+bigfeat/local_utils.py
+bigfeat.egg-info/PKG-INFO
+bigfeat.egg-info/SOURCES.txt
+bigfeat.egg-info/dependency_links.txt
+bigfeat.egg-info/requires.txt
+bigfeat.egg-info/top_level.txt
