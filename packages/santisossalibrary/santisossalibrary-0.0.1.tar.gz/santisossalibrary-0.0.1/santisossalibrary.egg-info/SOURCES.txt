@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+my_module/__init__.py
+santisossalibrary.egg-info/PKG-INFO
+santisossalibrary.egg-info/SOURCES.txt
+santisossalibrary.egg-info/dependency_links.txt
+santisossalibrary.egg-info/top_level.txt
