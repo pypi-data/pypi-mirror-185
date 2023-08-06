@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: SABRKBO
+Version: 0.1
+Summary: metrics calculator for Python
+Home-page: https://github.com/YJPark0421/SABRKBO
+Author: yjpark
+Author-email: yjpark200421@gmail.com
+License: MIT License
+Keywords: SABRmetrics,SABR,baseball,stat,MLB,KBO,NPB
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+====================
+sabr
+====================
+
+SABRmetrics calculator for Python
+
+Install
+====================
+
+    $ pip install sabr
+
+
+Usage
+====================
+
+.. code-block:: python
+
+    from sabr.metrics import stats
+
+    h9 = stats.hr9(26, 209.7)
+
+
+
+Requirement
+====================
+
+python 3.5+
+
+License
+====================
+
+MIT License http://opensource.org/licenses/MIT
