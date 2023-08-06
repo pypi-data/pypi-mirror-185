@@ -1,0 +1,12 @@
+edusign/__init__.py,sha256=9b5wtMRXBR6RBFWOBenIKqVYHn55rZ8hJ0U2c3l_5hI,324
+edusign/utils.py,sha256=oYrbEI7DVIAT26_N388J95eR8ko3WCQ4Mw6nqPc9zi4,1347
+edusign/models/__init__.py,sha256=wJXvfLBFun_6yzFckWpP6172MIx8E1rKzvBcGr0VBGs,238
+edusign/models/courses.py,sha256=1ms8h6ymnSEW2g9pvLcDnjgKdgUbDiBc3Fceg3DOADw,4222
+edusign/models/groups.py,sha256=Ll1-BWWo08qgl4ZOSi0Dw033p48E2sZ2vO7ScS4CuIA,1066
+edusign/models/professors.py,sha256=Pt0d0LTsu9ddE4wvU6zV4GODgqdMZTphlF0aLg_dqIE,2292
+edusign/models/students.py,sha256=SWXQophR6WqAZeZBmC2KXQf54HDO7FRtrUFqdbs2_wk,2882
+edusign-0.0.9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+edusign-0.0.9.dist-info/METADATA,sha256=f1LeBmN0CoPD7qcqcXtD8xj_w6nQRbNyEXbY7p_CI4U,1144
+edusign-0.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+edusign-0.0.9.dist-info/top_level.txt,sha256=HXvoiwqqvjoS9qMV4cEaKUKzT8vwqomO3bTm33FWbhY,8
+edusign-0.0.9.dist-info/RECORD,,
