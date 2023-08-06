@@ -1,0 +1,4 @@
+prettytable
+jaccount_cli
+typer
+rich

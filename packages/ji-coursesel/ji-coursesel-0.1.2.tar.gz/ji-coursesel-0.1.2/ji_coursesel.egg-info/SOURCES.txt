@@ -1,0 +1,17 @@
+MANIFEST.in
+Readme.md
+setup.cfg
+setup.py
+courseselcli/__init__.py
+courseselcli/command_line.py
+courseselcli/coursesel.py
+courseselcli/elector.py
+courseselcli/login.py
+courseselcli/main.py
+courseselcli/single.py
+ji_coursesel.egg-info/PKG-INFO
+ji_coursesel.egg-info/SOURCES.txt
+ji_coursesel.egg-info/dependency_links.txt
+ji_coursesel.egg-info/entry_points.txt
+ji_coursesel.egg-info/requires.txt
+ji_coursesel.egg-info/top_level.txt
