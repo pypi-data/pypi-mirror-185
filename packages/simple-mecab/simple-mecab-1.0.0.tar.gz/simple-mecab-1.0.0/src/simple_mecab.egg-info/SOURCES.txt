@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+sample.ipynb
+.github/workflows/python-publish.yml
+src/__init__.py
+src/_version.py
+src/simple_mecab.py
+src/simple_mecab.egg-info/PKG-INFO
+src/simple_mecab.egg-info/SOURCES.txt
+src/simple_mecab.egg-info/dependency_links.txt
+src/simple_mecab.egg-info/requires.txt
+src/simple_mecab.egg-info/top_level.txt
