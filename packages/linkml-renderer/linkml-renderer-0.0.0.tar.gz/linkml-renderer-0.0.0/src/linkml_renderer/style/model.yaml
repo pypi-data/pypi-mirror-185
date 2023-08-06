@@ -1,0 +1,97 @@
+id: https://w3id.org/linkml/render/stylesheet
+name: linkml-render-style
+description: >-
+  A stylesheet for rendering LinkML models
+prefixes:
+  linkml: https://w3id.org/linkml/
+  dcterms: http://purl.org/dc/terms/
+  style: https://w3id.org/linkml/render/
+imports:
+  - linkml:types
+default_prefix: style
+
+classes:
+  Configuration:
+    description: >-
+      A configuration for rendering instances of a LinkML model
+    attributes:
+      frameworks:
+        range: HTMLFramework
+        multivalued: true
+      rules:
+        range: RenderRule
+        multivalued: true
+      include_diagrams:
+        range: boolean
+
+
+  RenderRule:
+    description: >-
+      A rule for rendering a particular element
+    attributes:
+      name:
+      applies_to_slots:
+        range: SlotName
+        multivalued: true
+      applies_to_curies:
+        range: uriorcurie
+        multivalued: true
+      applies_to_render_types:
+        range: RenderType
+        multivalued: true
+      render_as:
+        range: RenderElementType
+      fstring:
+        range: string
+      template:
+        range: string
+
+types:
+  SlotName:
+    typeof: string
+
+enums:
+  RenderType:
+    permissible_values:
+      HTML:
+      MARKDOWN:
+      MERMAID:
+  HTMLFramework:
+    permissible_values:
+      Bootstrap:
+      Tailwind:
+
+  Shape:
+    permissible_values:
+      SQUARE:
+      ROUNDED_SQUARE:
+      CIRCLE:
+      DIAMOND:
+
+  LineStyle:
+    permissible_values:
+      SOLID:
+      DASHED:
+      DOTTED:
+      DOUBLE:
+  RenderElementType:
+    permissible_values:
+      heading:
+      h1:
+        is_a: heading
+      h2:
+        is_a: heading
+      h3:
+        is_a: heading
+      description_list:
+        description: description list
+      simple_list:
+        description: simple list
+      table:
+        description: table
+      TUPLE:
+        comments:
+          - not actually an HTML element
+      NO_ELEMENT:
+        description: >-
+          No rendering
