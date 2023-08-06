@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qftiful"
+version = "0.0.1"
+description = "QFT in Python"
+readme = "README.md"
+authors = [{ name = "A T M Ragib Raihan", email = "atmragibraihan@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["QFT", "Feynman", "Quantum Field Theory"]
+
+requires-python = ">=3.9"
+
+[project.urls]
+"Homepage" = "https://ragibraihan.com/qftiful"

@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+qftiful.egg-info/PKG-INFO
+qftiful.egg-info/SOURCES.txt
+qftiful.egg-info/dependency_links.txt
+qftiful.egg-info/not-zip-safe
+qftiful.egg-info/top_level.txt
+src/qftiful/__init__.py
