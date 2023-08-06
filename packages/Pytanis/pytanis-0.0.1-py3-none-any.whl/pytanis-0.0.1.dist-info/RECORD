@@ -1,0 +1,12 @@
+pytanis/__init__.py,sha256=zfvDNgDhD8JqVOjAaCW2Q2N-no1QVdp7CIeZLfb8RGg,255
+pytanis/_version.py,sha256=0E2q3bbXSYHV7qQaXVj0To-J2XdlP2Roo0TsM8oQtR4,160
+pytanis/config.py,sha256=yet7F35JFVSl3_Gjhe0eoY_-kt9vrf-poxCtHNrFNG0,1979
+pytanis/google.py,sha256=rBBjnk90YGFuxunwzfZZlRRdeTUodjDP7Ro7S9hghKs,2957
+pytanis/helpdesk.py,sha256=_4k7owykQeiXhLKsi2n0WjAAvG5v7weS5ADCeOBhGpI,55
+pytanis/pretalx.py,sha256=ysHbLcTYcEDw8EzLDpQJQEsrYkVm946ELDyX7X2ohLk,2170
+pytanis/utils.py,sha256=lLBs_VjLDXn6-vWTMCjF0WTZDyUWfeuZvgiTVrdV8pk,337
+pytanis-0.0.1.dist-info/METADATA,sha256=LS_dgHdCGgJNDsZ_FCfvBb81myeC0t_XymaR-HhPANo,8901
+pytanis-0.0.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+pytanis-0.0.1.dist-info/licenses/AUTHORS.md,sha256=Qo0D9O7fXIMh4xQch3kZ4mJ8hhxreI6hq9_Z1RA9pa0,96
+pytanis-0.0.1.dist-info/licenses/LICENSE.txt,sha256=l9BQTwKZ5YVzVrYv2rh69Xgj02Wa7c1IGMWZ0GWEAzc,1082
+pytanis-0.0.1.dist-info/RECORD,,
