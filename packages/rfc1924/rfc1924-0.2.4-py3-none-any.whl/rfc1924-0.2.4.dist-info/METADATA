@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: rfc1924
+Version: 0.2.4
+Summary: Implementation of RFC 1924
+Home-page: https://github.com/0xflotus/rfc1924
+Author: 0xflotus
+Author-email: 0xflotus+pypi@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RFC 1924
+
+This python library is an implementation of [RFC 1924](https://www.rfc-editor.org/rfc/rfc1924). 
+
+## A Compact Representation of IPv6 Addresses
+
+With this library you can store IPv6 addresses in a more compact form. It's Base85 encoded.
+
+## Usage
+
+```py
+from rfc1924 import *
+
+print(encode("2345:0425:2CA1::0567:5673:23b5")) # -> AN?6(i3Y+yVr74uX@J3P
+print(decode("AN?6(i3Y+yVr74uX@J3P")) # -> 2345:0425:2CA1::0567:5673:23b5
+```
+
+Save up to 48% space with this compact form:
+
+`ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff` -> `=r54lj&NUUO~Hi%c2ym0`
