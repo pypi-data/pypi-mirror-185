@@ -1,0 +1,7 @@
+rich
+psutil
+matplotlib
+pandas
+cycler
+numpy
+drawilleplot
