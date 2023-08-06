@@ -1,0 +1,13 @@
+setup.py
+codec/diameter/__init__.py
+codec/diameter/_avp_decoder.py
+codec/diameter/_avp_encoder.py
+codec/diameter/_diam_tools.py
+codec/diameter/diameter.py
+codec/diameter/dictionary.py
+diameter_codec.egg-info/PKG-INFO
+diameter_codec.egg-info/SOURCES.txt
+diameter_codec.egg-info/dependency_links.txt
+diameter_codec.egg-info/namespace_packages.txt
+diameter_codec.egg-info/top_level.txt
+diameter_codec.egg-info/zip-safe

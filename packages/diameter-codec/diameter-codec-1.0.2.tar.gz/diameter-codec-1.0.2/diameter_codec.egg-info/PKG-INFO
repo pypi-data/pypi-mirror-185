@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: diameter-codec
+Version: 1.0.2
+Home-page: https://gitlab.com/3gpp-toolbox/diameter-codec
+Author: Kresimir Popovic
+Author-email: kresimir.popovic@gmail.com
+Maintainer: 
+Maintainer-email: 
+License: European Union Public Licence 1.2 (EUPL 1.2)
+Keywords: diameter codec rfc6733
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Diameter codec - encoder & decoder  
+- codec is based on RFC https://datatracker.ietf.org/doc/html/rfc6733  
+- no third party py libs dependencies  
+- very simple and straightforward to use  
+- python support: >= 3.6  
+  
+### How to setup dev env  
+- apt install python3.6   
+- apt install python3.6-venv  
+- source venv/bin/activate  
+- pip install -r requirements.txt
+- pylint src/main/python/codec/diameter/ --ignored-classes=_socketobject *.py
+  
+### How to build project  
+- pyb -v
+- pyb -Q
+
+### How to upload project to test.pypi with twine
+-   python -m twine upload --repository-url https://test.pypi.org/legacy/ target/dist/diameter-codec-<x.y.z>/dist/*
+
+### How to upload project to pypi with twine (production)
+-   python -m twine upload target/dist/diameter-codec-<x.y.z>/dist/*
+
+### How to push git tag
+- git push origin v<x.y.z>
+
+### How to encode and decode Capabilities-Exchange message
+	import os  
+	import typing    
+	from codec.diameter.diameter import DiameterHeader, Diameter, Avp  
+	from codec.diameter.dictionary import DictionaryLayout, DefaultDictionaryLayout	
+	cer_request: typing.Tuple = (  
+      Avp("Product-Name", "hello"),  
+      Avp("Origin-Realm", "zte.com.cn"),  
+      Avp("Origin-Host", "dmtsrv001.zte.com.cn"),  
+      Avp("Host-IP-Address", "192.168.0.1"),  
+      Avp("Vendor-Id", 10415),  
+      Avp("Product-Name", "dummy-product"),  
+      Avp("Inband-Security-Id", 1),  
+      Avp("Vendor-Specific-Application-Id", (  
+         Avp("Vendor-Id", 10415),  
+         Avp("Acct-Application-Id", 1),  
+         Avp("Auth-Application-Id", 1),  
+      )),  
+      Avp("Vendor-Specific-Application-Id", (  
+         Avp("Auth-Application-Id", 2),  
+         Avp("Acct-Application-Id", 2),  
+         Avp("Vendor-Id", 10415),  
+      )),  
+    )
+    header: DiameterHeader = DiameterHeader(application_id=0, command_code=257, avp_set=cer_request)
+    xml_dict_path: str = <path to diameter xml file>  
+	dictionary_layout: DictionaryLayout = DefaultDictionaryLayout(xml_dict_path)  
+	diameter: Diameter = Diameter(dictionary_layout)
+    encoded_header: bytes = self.diameter.encode(header) #	send to TCP server     
+    decoded_header: DiameterHeader = diameter.decode(encoded_header) # decoded on TCP server
