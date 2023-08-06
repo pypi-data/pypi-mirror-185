@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="09789e04-d1dc-43a4-bdd5-064a1675a0b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pyfitness/__about__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyfitness/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyfitness/load_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_107m_distance_26.785km_power5_402.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_1529m_distance_37.969km_power5_335.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_16m_distance_31.273km_power5_374.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_196m_distance_11.837km_power5_364.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_196m_distance_11.92km_power5_376.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_372m_distance_29.024km_power5_369.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_372m_distance_30.096km_power5_366.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_372m_distance_37.366km_power5_374.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_411m_distance_24.11km_power5_383.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_4m_distance_20.227km_power5_376.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_511m_distance_12.368km_power5_365.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_511m_distance_48.112km_power5_370.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_52m_distance_29.886km_power5_357.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_57m_distance_14.031km_power5_365.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_57m_distance_29.333km_power5_364.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_77m_distance_24.954km_power5_378.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_949m_distance_18.803km_power5_353.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_958m_distance_79.841km_power5_339.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Indoor/Luciano_indoor_climb_961m_distance_104.545km_power5_295.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_1012m_distance_53.711km_power5_319.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_1083m_distance_129.869km_power5_311.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_1549m_distance_42.387km_power5_320.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_1562m_distance_42.127km_power5_324.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_379m_distance_422.626km_power5_241.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_528m_distance_22.98km_power5_291.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_599m_distance_42.809km_power5_NA.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_607m_distance_36.254km_power5_334.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_609m_distance_45.384km_power5_373.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_611m_distance_36.584km_power5_377.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_615m_distance_57.193km_power5_342.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_616m_distance_44.702km_power5_373.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_617m_distance_34.903km_power5_341.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_617m_distance_68.161km_power5_364.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_618m_distance_35.219km_power5_348.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_619m_distance_67.058km_power5_389.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_621m_distance_36.566km_power5_364.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_650m_distance_59.817km_power5_352.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_767m_distance_164.554km_power5_368.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_808m_distance_27.871km_power5_312.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_812m_distance_27.766km_power5_318.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_825m_distance_104.585km_power5_366.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_839m_distance_157.889km_power5_347.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_839m_distance_18.356km_power5_401.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_929m_distance_131.452km_power5_327.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/Luciano/Outdoor/Luciano_indoor_climb_NAm_distance_40.598km_power5_328.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/cheats/pedal_calibration/Garmin_Assioma_200mm_test_Dec_20_2022.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/cheats/pedal_calibration/Garmin_assioma_160_wrong_Dec_19_2022.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/cheats/pedal_calibration/Garmin_assioma_160_wrong_Dec_19_2022.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/cheats/pedal_calibration/Zwift_KickrBikeV1_TruePower_Dec_20_2022.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/cheats/pedal_calibration/Zwift_Kickr_true_Dec+19_2022.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/cheats/pedal_calibration/Zwift_Kickr_true_Dec+19_2022.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/indoor/10k_vEveresting.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/indoor/Zwift_Innsbruck.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/indoor/Zwift_Time_Trial_Tuesday__Bologna_E_record_1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/indoor/Zwift_Zwift_Fast_Fridays_Bologna_Time_Trial_E_.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/indoor/Zwift_jeudi_de_fin_de_session.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/outdoor/A_Groba_-_Oia.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/outdoor/Morning_Ride.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/testdata/outdoor/PARC_GATINEAU.fit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/tests.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Blank Requirements File" />
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2K92oz3SE7URNNQSSQOOnHUHGX7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/vincentdavis/REPO/pyfitness/tests",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09789e04-d1dc-43a4-bdd5-064a1675a0b2" name="Changes" comment="" />
+      <created>1673372657892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673372657892</updated>
+      <workItem from="1673372659761" duration="5523000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
