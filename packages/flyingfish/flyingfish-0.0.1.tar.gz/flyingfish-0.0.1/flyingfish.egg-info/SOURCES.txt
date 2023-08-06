@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+flyingfish/__init__.py
+flyingfish/main.py
+flyingfish/numericallist.py
+flyingfish/other.py
+flyingfish/plot.py
+flyingfish/timeseries.py
+flyingfish/write_report.py
+flyingfish.egg-info/PKG-INFO
+flyingfish.egg-info/SOURCES.txt
+flyingfish.egg-info/dependency_links.txt
+flyingfish.egg-info/top_level.txt
