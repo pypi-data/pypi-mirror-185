@@ -1,0 +1,115 @@
+[tool.poetry]
+name = "blitzly"
+version = "0.5.0"
+description = "Lightning-fast way to get plots with Plotly"
+authors = ["Christopher Lemke <christopher.lemke@invia.de>", "Prem Srinivasan <prem.srinivasan@invia.de>"]
+packages = [{ include = "blitzly", from = "src" }]
+readme = "docs/README.md"
+documentation = "https://invia-flights.github.io/blitzly"
+repository = "https://github.com/invia-flights/blitzly"
+license = "MIT"
+include = ["CHANGELOG.md"]
+
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Typing :: Typed",
+]
+keywords = [
+    "python",
+    "data science",
+    "analytics",
+    "plotly",
+    "plotting",
+]
+
+[tool.poetry.urls]
+Changelog = "https://github.com/invia-flights/blitzly/blob/main/CHANGELOG.md"
+Issues = "https://github.com/invia-flights/blitzly/issues"
+Discussions = "https://github.com/invia-flights/blitzly/discussions"
+Contributing = "https://github.com/invia-flights/blitzly/blob/main/docs/CONTRIBUTING.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+
+plotly = "5.11.0"
+pandas = "1.5.2"
+numpy = "1.23.5"
+nbformat = "5.7.2"
+scikit-learn = "1.2.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+joblib = "1.2.0"
+pillow = "9.3.0"
+kaleido = "0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+black = {extras = ["jupyter"], version = "^22.12.0"}
+bandit = "^1.7.4"
+isort = "^5.11.4"
+mypy = "^0.991"
+pylint = "^2.15.10"
+pre-commit = "^2.21.0"
+nbstripout = "^0.6.1"
+ssort = "^0.11.6"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "1.4.2"
+mkdocstrings = {extras = ["python"], version = "0.19.1"}
+mkdocs-material = "9.0.2"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.docs]
+optional = true
+
+[build-system]
+requires = ["poetry-core>=1.4.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests"
+]
+
+[tool.pylint.messages_control]
+disable = [
+    "C0301",
+    "C0103",
+    "C0114",
+    "E0401",
+    "R0912",
+    "R0913",
+    "R0914",
+    "R0916",
+    ]
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.mypy]
+strict = true
+disallow_subclassing_any = false
+ignore_missing_imports = true
+disallow_any_generics = false
+warn_return_any = false
+no_namespace_packages = true
+exclude = ["tests", "docs"]
+
+[tool.black]
+target-version = ['py311']
+
+
+[tool.isort]
+profile = "black"
+skip_glob = ["docs/*"]
+src_paths = ["src/blitzly", "tests"]
+extend_skip = [".md", ".joblib", ".json", ".yaml", ".yml"]
