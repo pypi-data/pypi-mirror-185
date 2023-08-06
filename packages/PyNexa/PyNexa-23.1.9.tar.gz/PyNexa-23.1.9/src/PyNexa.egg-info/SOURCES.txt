@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/PyNexa.egg-info/PKG-INFO
+src/PyNexa.egg-info/SOURCES.txt
+src/PyNexa.egg-info/dependency_links.txt
+src/PyNexa.egg-info/top_level.txt
