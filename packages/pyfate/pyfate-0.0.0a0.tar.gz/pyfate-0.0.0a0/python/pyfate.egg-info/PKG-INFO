@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyfate
+Version: 0.0.0a0
+Summary: UNKNOWN
+Home-page: https://fate.fedai.org/
+Author: FederatedAI
+Author-email: contact@FedAI.org
+License: Apache-2.0 License
+Description: FATE (Federated AI Technology Enabler) is the world's first industrial grade federated learning open source framework to enable enterprises and institutions to collaborate on data while protecting data security and privacy. It implements secure computation protocols based on homomorphic encryption and multi-party computation (MPC). Supporting various federated learning scenarios, FATE now provides a host of federated learning algorithms, including logistic regression, tree-based algorithms, deep learning and transfer learning.
+Keywords: federated learning
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Provides-Extra: rabbitmq
+Provides-Extra: pulsar
+Provides-Extra: spark
+Provides-Extra: eggroll
+Provides-Extra: all
