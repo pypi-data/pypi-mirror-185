@@ -1,0 +1,9 @@
+{
+    "mail_host": "smtp.qq.com",
+    "mail_user": "2864283875",
+    "mail_pass": "urqcczoemnhrdhdi",
+    "sender": "2864283875@qq.com",
+    "receivers": [
+        "a2864283875@foxmail.com"
+    ]
+}
