@@ -1,0 +1,17 @@
+gym==0.21
+numpy>=1.21.0
+typing-extensions>=4.3.0
+
+[all]
+matplotlib>=3.5
+lbforaging==1.1.1
+
+[grid-world]
+matplotlib>=3.5
+lbforaging==1.1.1
+
+[lbf]
+lbforaging==1.1.1
+
+[testing]
+pytest>=7.2
