@@ -1,0 +1,23 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+# ct_analyser
+
+#### Visualising and Extracting Data from Axial Chest CT Scans
+
+The CT analyser (CTA) package is a module developed to enable users to load in and process medical images, specifically DICOM (.dcm) files of axial CT scans. This package is available to install from PyPi or using `pip install`.
+
+## Main Features
+
+***
+Once imported, CTA offers several functions to threshold and mask the images in order to isolate key structures (such as the heart or lungs) or regions of interest. Finally, key data relating to the regions of interest including the volume, dimensions and tissue type can be produced.
+
+## Vision for ct_analyser
+
+***
+Ultimately, this package offers the foundation for further applications, both in medical settings as an aid for radiologists, or in training to extract example structures from real images for the teaching of students or even as a basis for processing data inputted into machine learning models for automated diagnostic tools.
+
+## Getting started 
+
+***
+The module can be installed with:
+* `pip install ct_analyser`
