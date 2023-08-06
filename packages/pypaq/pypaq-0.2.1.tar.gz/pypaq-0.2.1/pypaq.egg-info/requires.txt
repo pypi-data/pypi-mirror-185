@@ -1,0 +1,13 @@
+GPUtil
+Levenshtein
+matplotlib
+numpy
+pandas
+plotly
+psutil
+scipy
+sklearn
+tensorboard
+tensorflow
+torch
+typing-extensions
