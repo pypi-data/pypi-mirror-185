@@ -1,0 +1,11 @@
+cis_checks_8/__init__.py,sha256=sAAk4mThQvxAM6azhqC-PGrFdDL4PtwAh955ofeTzOw,11140
+cis_checks_8/iam_control_1.py,sha256=cCCUl5O_-QuWOH7F2sni7WNhY1OBKvWov2_U2rwV7Ck,36449
+cis_checks_8/logging_control_2.py,sha256=ZUgDpSD1LQUJqZnCsy0T6Wrp9BEbIfHhdndo275Mhug,16125
+cis_checks_8/monitoring_control_3.py,sha256=q6jfwErzZks9pnwom8liliWULJg_HWAWmtSw6t-bT4U,43694
+cis_checks_8/networking_control_4.py,sha256=nHlTldPzhrp4I-_uFNp28spBFrLS1F0m33qtxBy--Iw,19930
+cis_checks_8/security_control_5.py,sha256=gb3YZAFP1Lp8Zzqrzz017Wv_LKZ3CQo6ltlDgvP05Cc,33460
+cis_checks_8/utils.py,sha256=Q6VjoSpBMtPBTOAYJbj8Sqf0PlPVTPQtgeGj394V7xU,18520
+cis_checks_8-0.0.9.dist-info/METADATA,sha256=dHGaf4a3QHboR5a07KaLzulJ_yliN5rgDkTeBioBzwA,790
+cis_checks_8-0.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cis_checks_8-0.0.9.dist-info/top_level.txt,sha256=H77e6QTBxQ3TluDozcl-crNYJTUBPbLtuQVpIwmPZZQ,13
+cis_checks_8-0.0.9.dist-info/RECORD,,
