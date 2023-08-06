@@ -1,0 +1,10 @@
+aws_cdk/aws_cloudfront_origins/__init__.py,sha256=ENplMhTdFoayn8tLs0tbjkCtKcOJEc-0FlEzfjTW6BE,82091
+aws_cdk/aws_cloudfront_origins/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_cloudfront_origins/_jsii/__init__.py,sha256=Qs-rTgy6rIPlSlLhdumesxqeiCS7lr6UUpyh_HVdZnY,619
+aws_cdk/aws_cloudfront_origins/_jsii/aws-cloudfront-origins@1.188.0.jsii.tgz,sha256=hZ5gFBh4GqtoojaVdas2Fx-5IzuMR3F6joO8UymX0qQ,35249
+aws_cdk.aws_cloudfront_origins-1.188.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_cloudfront_origins-1.188.0.dist-info/METADATA,sha256=YPB271HyWSrzxot0hOq_E99At0Ri5O4DyA61udr-fm4,6986
+aws_cdk.aws_cloudfront_origins-1.188.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_cloudfront_origins-1.188.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_cloudfront_origins-1.188.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_cloudfront_origins-1.188.0.dist-info/RECORD,,
