@@ -1,0 +1,10 @@
+quiltplus/__init__.py,sha256=HhMBNgjCQUIirt27xNKVEpsPx31KD6ptUdKneS549Bg,151
+quiltplus/cache.py,sha256=y0B_rg9Cck6_crSjYSW8Twd6FN6cacuvFT3mbK37BZ0,3333
+quiltplus/id.py,sha256=tCIghlxBB9ZBHvWNONXHZtky4a9s80JC3U_CSDJ_xZ4,3044
+quiltplus/package.py,sha256=TMDgHvFfDO_l5z-n-4Mx_Zco2nlmzlpxrc1KDLAeuAI,2165
+quiltplus/parse.py,sha256=a_R5Pxt19zvM2HOMM4ceNsmECuDpjt_DysjBfvIavMw,1739
+quiltplus/unparse.py,sha256=oxhpl82e_DdR5WgAd7rUI0yCFBYfNT7VdpgQvLY-s78,1539
+quiltplus-0.6.0.dist-info/LICENSE.md,sha256=zeVPn8tYkjMCLOeNNtvtYEd1fKVnJIXEEiGrYrhsgAQ,1067
+quiltplus-0.6.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+quiltplus-0.6.0.dist-info/METADATA,sha256=BSsis2cZI5Zms8pjtbcy46-9qutPsvjbfMVKBITr2v0,1279
+quiltplus-0.6.0.dist-info/RECORD,,
