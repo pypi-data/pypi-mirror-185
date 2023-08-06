@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: snaplib
+Version: 0.0.8
+Summary: Data preprocessing lib
+Home-page: https://github.com/kolasdevpy/snaplib
+Author: Artyom Kolas
+Author-email: artyom.kolas@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1)
+Requires-Dist: numpy (>=1)
+
+# snaplib
+simple preprocessing tools for ML
+
+
