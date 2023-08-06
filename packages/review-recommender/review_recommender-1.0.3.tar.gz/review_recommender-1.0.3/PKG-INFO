@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: review_recommender
+Version: 1.0.3
+Summary: A toll to rank possible reviewer for a pull request
+Project-URL: Homepage, https://github.com/manuelmaiorano/ReviewRecommender
+Project-URL: Bug Tracker, https://github.com/manuelmaiorano/ReviewRecommender/issues
+Project-URL: Documentation, https://reviewrecommender.readthedocs.io/en/latest/
+Author-email: Manuel Maiorano <manuelmaiorano01@gmail.com>, Giovanni Dimolfetta <giovanni.dimolfetta@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: requests-cache==0.9.7
+Description-Content-Type: text/markdown
+
+# Review Recommender
+
+A tool that helps find reviewer for a pull request.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
+
+```bash
+pip install review-recommender
+```
+## Usage
+
+```bash
+usage: review_recommender [-h] owner repo num token
+
+Given pull request, rank revisors
+
+positional arguments:
+  owner       the owner of the repository
+  repo        the name of the repository
+  num         the number of the pull request
+  token       the github access token
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
