@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: snek5000-phill
+Version: 0.5.0
+Summary: Nek5000 phill example executed via snek5000
+Home-page: https://github.com/snek5000/snek5000-phill
+Author: Ashwin Vishnu Mohanan
+Author-email: dev@fluid.quest
+License: BSD-3-Clause
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: snek5000 (>=0.9.0rc3)
+Provides-Extra: dev
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: recommonmark ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: breathe ; extra == 'dev'
+Requires-Dist: setuptools-scm ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: click ; extra == 'dev'
+Requires-Dist: colorlog ; extra == 'dev'
+Requires-Dist: pdbpp ; extra == 'dev'
+Requires-Dist: rope ; extra == 'dev'
+Requires-Dist: python-language-server ; extra == 'dev'
+Requires-Dist: fortran-language-server ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: readme-renderer[md] ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: recommonmark ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: breathe ; extra == 'docs'
+Requires-Dist: setuptools-scm ; extra == 'docs'
+Provides-Extra: hpc
+Requires-Dist: pytest ; extra == 'hpc'
+Requires-Dist: ipython ; extra == 'hpc'
+Requires-Dist: click ; extra == 'hpc'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: ipython ; extra == 'tests'
+
+# snek5000-phill
+
+The [Nek5000 phill example] adapted for a workflow using [Snek5000].
+
+## Install
+
+```sh
+pip install snek5000-phill
+```
+
+For more details, see https://snek5000.readthedocs.io/en/latest/install.html.
+
+## Tests
+
+```sh
+pip install '.[tests]'
+# Run simple tests: including compilation
+pytest
+# Run slow tests: launches simulation
+pytest --runslow
+```
+
+[nek5000 phill example]: https://github.com/KTH-Nek5000/KTH_Examples/tree/master/phill_STAT
+[snek5000]: https://github.com/exabl/snek5000
