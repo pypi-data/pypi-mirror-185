@@ -1,0 +1,14 @@
+src/unofficial-pokedex-main/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/unofficial-pokedex-main/launch_pokedex_program.py,sha256=nmdd_W7s0g1THF5HR4OqA0Wdek1QbOto3ctjW76DoTo,29385
+src/unofficial-pokedex-main/modules/__init__.py,sha256=mR0WOavz1AweNQI5InpMDTKudXyxUkEmnIiGM6VGmhw,159
+src/unofficial-pokedex-main/modules/ability_module.py,sha256=rbvb2pGGBPE11ofbGlAf05rEsDr_LqBE9YNMprnuyUA,1274
+src/unofficial-pokedex-main/modules/attack_module.py,sha256=59NIs0oGJvnTWtknWsAqZM1vzU6Pr2FG-RW4ebKkvpA,1888
+src/unofficial-pokedex-main/modules/height_weight_module.py,sha256=mgkXkh10KVkR8K1NbT5BWMQHRNYRucOzKp1bOrF_H0c,557
+src/unofficial-pokedex-main/modules/misc_module.py,sha256=bsv6i74GqrU_mObeW7sQ3Vss7NmijKDggl_qtMCE9IY,1217
+src/unofficial-pokedex-main/modules/sound_module.py,sha256=Ie57cf0Q9bjKjqhB7d80U9ELvmn2xdTNep9ci9KzgR8,1190
+src/unofficial-pokedex-main/modules/text_updates.py,sha256=iVW3m2_P6w4XaKrWYqxSibXKyLIsaquRs7cqGW06hrY,960
+src/unofficial-pokedex-main/modules/type_module.py,sha256=h3SrBvdhzuex87VHC63D9XBJwsn4jrDaKu5n-encFV0,5675
+unofficial_pokedex-0.0.1.dist-info/METADATA,sha256=i5drJ7z7WrDv-pP_g1cfyzZzYWNfU6EzuHxw_7NWgB8,3965
+unofficial_pokedex-0.0.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+unofficial_pokedex-0.0.1.dist-info/licenses/LICENSE.txt,sha256=dDbk3_VrClu3Ulfy33fxpa-9zdaERWqW0fN1ooV6XDY,1061
+unofficial_pokedex-0.0.1.dist-info/RECORD,,
