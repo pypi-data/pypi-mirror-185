@@ -1,0 +1,18 @@
+name: test_env_xmip
+channels:
+  - conda-forge
+dependencies:
+  - xarray>=0.17.0
+  - xgcm < 0.7.0 # temporary pin since we need 'extrapolate' option for padding
+  # Dependencies for the pangeo cloud data
+  - intake-esm
+  - gcsfs
+  - zarr
+  - pint
+  - cf_xarray>=0.6.0
+  - pint-xarray
+  # Dependencies for the testing suite
+  - pytest-cov
+  - pytest-xdist
+  - pytest-rerunfailures
+  - codecov
