@@ -1,0 +1,12 @@
+psqlsync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psqlsync/actions.py,sha256=2SsgrRg5zD5gkNA_S9nQNjgQ8GkUhkMK9OY--sT_xkE,3802
+psqlsync/cli.py,sha256=p0xZVSX3PH0Gi1jqp_7uTaKMC-jQn56Pmp7-lxTouC4,5215
+psqlsync/ghmoteqlync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psqlsync/ghmoteqlync/cli.py,sha256=scg4P6Qaf0S8R3i_ExYZuEYibcjFVIELm8VkVkHUOdY,2672
+psqlsync/ghmoteqlync/sync.py,sha256=WhuItQWJ8qMAx7iG-Wah9BL_rWpeK-p-yrAg9f_Fyw8,2237
+psqlsync/lib.py,sha256=96fF7g_ZK2QIKi3BOmJ1D88eLSqI2s1_YEJ-fBxC8_4,5278
+psqlsync-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+psqlsync-0.2.1.dist-info/LICENSE,sha256=UMQuRDWTy4S9ssrADgT_L6RXUbx6TdOZBYCrwovQcA8,12720
+psqlsync-0.2.1.dist-info/METADATA,sha256=9lvNUZKTfUtbsaVbI5QKQenK3TUWLcIhrvEjUZDdFZI,5064
+psqlsync-0.2.1.dist-info/entry_points.txt,sha256=aXgU6DW3vdf3_TQDa23dyfGBXcnrW8Y6plaA7SvUbtw,76
+psqlsync-0.2.1.dist-info/RECORD,,
