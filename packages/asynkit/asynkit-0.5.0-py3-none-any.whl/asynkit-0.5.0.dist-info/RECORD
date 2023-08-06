@@ -1,0 +1,9 @@
+asynkit/__init__.py,sha256=LlStbVdOTvO07-2DA-bk51nD5ajnbkNlGni2AQwUnz4,78
+asynkit/coroutine.py,sha256=PF0I7qhrV5akpQUDnwfbZzxNqcufsPVEK3LsxLqMJQQ,9505
+asynkit/eventloop.py,sha256=KzIaM-C0FC-oE2Um_GBtPWLBwA6CQD0Nk8Skta4pFAs,8373
+asynkit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asynkit/tools.py,sha256=jjIkDJcsW4MCy4qzwvxBfgyQQxoa7wC_S5cWYQoMY00,1156
+asynkit-0.5.0.dist-info/LICENSE,sha256=oqb4yJVTAPLbBrUxoqjIXfNjkV9CJoc__ZuKd5ZaZEI,1081
+asynkit-0.5.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+asynkit-0.5.0.dist-info/METADATA,sha256=BzlijKWqeLQeyOjh6_YgkHpE5-fWx0KxjyQbER8TDY4,10574
+asynkit-0.5.0.dist-info/RECORD,,
