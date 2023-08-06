@@ -1,0 +1,7 @@
+aiohttp>=3.8.3
+dints>=0.0.1
+orjson>=3.8.4
+pendulum>=2.1.2
+pydantic>=1.10.4
+pythonnet>=3.0.1
+uplink>=0.9.7
