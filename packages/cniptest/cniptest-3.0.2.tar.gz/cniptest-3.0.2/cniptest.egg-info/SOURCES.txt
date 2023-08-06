@@ -1,0 +1,8 @@
+README.md
+setup.py
+cniptest/__init__.py
+cniptest.egg-info/PKG-INFO
+cniptest.egg-info/SOURCES.txt
+cniptest.egg-info/dependency_links.txt
+cniptest.egg-info/requires.txt
+cniptest.egg-info/top_level.txt
