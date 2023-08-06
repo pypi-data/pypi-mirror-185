@@ -1,0 +1,10 @@
+grafana_loki_provider/__init__.py,sha256=rdKE319eB9sXrea-pwgtqbbvaHh066XQs5AFcgXVK5Y,612
+grafana_loki_provider/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grafana_loki_provider/hooks/loki.py,sha256=h2lFLoSL7awhy3ppmwQuzOIMhh-A8Xmh6v4-thKlkeo,1489
+grafana_loki_provider/log/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grafana_loki_provider/log/loki_task_handler.py,sha256=jlvK_ljf1vwPNDYWHw992z1QnLeMNvD17vxSZnRi6cc,6193
+airflow_provider_grafana_loki-0.0.1a3.dist-info/METADATA,sha256=sWm3jJ3hr_zIfkftn-Xxwrgu_-5YHu83GrVCPF5QHD4,4641
+airflow_provider_grafana_loki-0.0.1a3.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+airflow_provider_grafana_loki-0.0.1a3.dist-info/entry_points.txt,sha256=PD5pU2k6Fv39F0Jrk2rx13ggeCHJOwyOKPXbFy0pheM,91
+airflow_provider_grafana_loki-0.0.1a3.dist-info/licenses/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+airflow_provider_grafana_loki-0.0.1a3.dist-info/RECORD,,
