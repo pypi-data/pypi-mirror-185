@@ -1,0 +1,15 @@
+pytest_lsp/__init__.py,sha256=ylB76tHMeDf7Cc8xt7071N-Z-99KwlbXb4Tn4rtzoeY,461
+pytest_lsp/check.py,sha256=9cjlOBv099WZvt0dKqtKqnT2aSypVHI-5LvkKn9oNEY,2179
+pytest_lsp/client.py,sha256=XS4_qzY69Ax3vlVMK8LC8T3FZZgqN85Zp9rDpMPcL4I,19529
+pytest_lsp/gen.py,sha256=gFgosWe1TAzMLNHoF9ktFNBF_CDgSSVYgAHFeiwGlBM,38174
+pytest_lsp/plugin.py,sha256=AE-r-xbiUu_3cemf0RRKFcg7PsxYZNFp5as2gfXX_oc,9370
+pytest_lsp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_lsp/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_lsp/clients/neovim_v0.6.1.json,sha256=8mYfTR8un00CFYqhjuZwDwA0OwQW7KeI16PpeUFL5ac,4161
+pytest_lsp/clients/visual_studio_code_v1.65.2.json,sha256=zEqzz714RZAmbBIcafurmImF10yuFmg_oDqVx0pN6OY,7592
+pytest_lsp-0.2.1.dist-info/LICENSE,sha256=3H8ak9GWCZRs5oLk0ro0RcQ3cJjiHMUNdVDZriFP-2A,1068
+pytest_lsp-0.2.1.dist-info/METADATA,sha256=jKyBYFpdk67AYU8DyAX0kq8bQGz2aSDWu8JdtTLD78E,2782
+pytest_lsp-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pytest_lsp-0.2.1.dist-info/entry_points.txt,sha256=9aoqoiNcEq3gjqmIBShRhpCOV7fsc1kOLCSJcaFOYt0,35
+pytest_lsp-0.2.1.dist-info/top_level.txt,sha256=oiPtpAqQojjJOzMOMbOg8OlyAPMVXypzPnVjSlV7E8Q,11
+pytest_lsp-0.2.1.dist-info/RECORD,,
