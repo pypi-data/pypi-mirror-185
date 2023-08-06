@@ -1,0 +1,5 @@
+setup.py
+PythonEasyGUI.egg-info/PKG-INFO
+PythonEasyGUI.egg-info/SOURCES.txt
+PythonEasyGUI.egg-info/dependency_links.txt
+PythonEasyGUI.egg-info/top_level.txt
