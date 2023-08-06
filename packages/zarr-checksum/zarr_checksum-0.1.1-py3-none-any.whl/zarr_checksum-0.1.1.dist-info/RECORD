@@ -1,0 +1,9 @@
+zarr_checksum/__init__.py,sha256=_8V8nNUqS9E_UW2sTEm-JSCnhyV_89fZ88waHUr9diM,467
+zarr_checksum/checksum.py,sha256=MNBgbGJxfcGAKSZ6mCeGfhCrBGAwZfp1GuSGz-pm8JI,2896
+zarr_checksum/cli.py,sha256=g7m-YYL-HqUmn4DFVQmrsbiGtNVYE88RbTR9k4r9ZQY,1114
+zarr_checksum/generators.py,sha256=s5ukSnzXGFGIXhzm95qYxAkdJWEFk8zVQonMG7uuye8,3361
+zarr_checksum/tree.py,sha256=0szpYHPLRoDxtiy0uGk_m-QP1SorDGJ74lwzwxgGCN4,3084
+zarr_checksum-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+zarr_checksum-0.1.1.dist-info/METADATA,sha256=EdZbMMt-hR1atLyX326PcNNFkPrGgUM5UTODNNmk_js,724
+zarr_checksum-0.1.1.dist-info/entry_points.txt,sha256=DsxbaoWcB8n7rRFKM5FzX2dtSwJVKt_wwwMRKq3ywWw,49
+zarr_checksum-0.1.1.dist-info/RECORD,,
