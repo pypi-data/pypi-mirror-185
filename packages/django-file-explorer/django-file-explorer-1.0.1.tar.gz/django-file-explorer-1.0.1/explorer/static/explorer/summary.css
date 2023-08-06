@@ -1,0 +1,22 @@
+
+.summary {
+    background-color: gray;
+    color: white;
+    margin-top: 20%;
+    padding: 2%;
+}
+
+.summary-data {
+    text-align: left;
+    background-color: lightgray;
+    color: black;
+}
+
+.summary-table {
+    width: 100%;
+    font-size: large;
+}
+
+.summary-table-left-pad {
+    padding-left: 5%;
+}
