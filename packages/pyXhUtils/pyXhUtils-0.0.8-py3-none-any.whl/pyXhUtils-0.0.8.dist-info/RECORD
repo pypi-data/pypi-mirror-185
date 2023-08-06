@@ -1,0 +1,12 @@
+file_changes_xh/FileChanges.py,sha256=aEyqJEl35reP9WtS6d0Mubc1RyKuAsECg1T4OBMqqr4,6192
+file_changes_xh/__init__.py,sha256=H0FlgdHRBwWm8E5nUMaxFV-Q5JchQRtYrnIQHbEC4Oc,110
+ip_utils_xh/IpHostFinder.py,sha256=8WvGJXLD1fxJsBK4EhkknOZhURswFtdke3IpBV68XS4,459
+ip_utils_xh/IpTools.py,sha256=pGLELl3ML2CVCEW2YITAjBlI-VN8P7-eimEwbUUybP8,1792
+ip_utils_xh/__init__.py,sha256=Kgwq9o5t00JiWn8XHZseVCG45Urw1VC9qN_OdmXBm5s,105
+string_utils_xh/StringUtils.py,sha256=uah7Vhwku1ofVhaVwi6y12y_dFXsKoL1DBru0LpkmLE,158
+string_utils_xh/__init__.py,sha256=bbPezeqxiA8l4XsKxL7nTYBYevcB11UBwz9QeKmiA5A,37
+pyXhUtils-0.0.8.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+pyXhUtils-0.0.8.dist-info/METADATA,sha256=8hPsl0s3nTFqkzUX9INtPmlHrNDlbvE1I69YtbR7G3Y,2413
+pyXhUtils-0.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyXhUtils-0.0.8.dist-info/top_level.txt,sha256=XXC-xKbg_HD9U_kgY9lrqTCtQHzeXvNjCmfIweuXXh8,44
+pyXhUtils-0.0.8.dist-info/RECORD,,
