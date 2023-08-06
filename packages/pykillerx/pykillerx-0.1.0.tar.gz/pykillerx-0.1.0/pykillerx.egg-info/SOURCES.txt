@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pykillerx/__init__.py
+pykillerx/__version__.py
+pykillerx.egg-info/PKG-INFO
+pykillerx.egg-info/SOURCES.txt
+pykillerx.egg-info/dependency_links.txt
+pykillerx.egg-info/top_level.txt
