@@ -1,0 +1,11 @@
+inpost/__init__.py,sha256=cujMdCcdSwDiqVMgvLlFOJknGG1JDliLYpccWYg2zHE,24
+inpost/api.py,sha256=eoiwsl2laqRuQ7Cflz3TKpvWLGWSRRIOkVt1N940Z_c,11429
+inpost/static/__init__.py,sha256=YJGbtXhzQGwHOHQ_vQSto9drMiq0YushMbxfkbLx94Q,941
+inpost/static/endpoints.py,sha256=Rw4Nl55mALZN8Yq8lAgaRtAF9Rp3xLzIW3iWM2M4nOs,1472
+inpost/static/exceptions.py,sha256=XaQPmX8JuloanGYddFljjF0WUdtniwpFzcMCfHiELhA,2236
+inpost/static/headers.py,sha256=1WLqyOSmKx-m41qfH_LlO-piOsmoG4kAJNvXXkuW2hs,47
+inpost/static/parcels.py,sha256=8VtHXCpqqAFPP4ok_8IZPgv_0LleEtAdmespETalPa8,9858
+inpost/static/statuses.py,sha256=F54CM3NJc2heimQZVp8xw7pqN393AXT6GOS6cnz5ZKE,2304
+inpost-0.0.1.dist-info/METADATA,sha256=cxtzrpBuWn-Z_cgHDhdhd3RZ8GieScGZZ6aVFKJDzas,1024
+inpost-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+inpost-0.0.1.dist-info/RECORD,,
