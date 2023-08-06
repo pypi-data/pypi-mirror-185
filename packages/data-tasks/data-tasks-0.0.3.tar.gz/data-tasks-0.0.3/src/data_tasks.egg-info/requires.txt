@@ -1,0 +1,9 @@
+sqlalchemy
+psycopg2
+importlib_resources
+jinja2
+sqlparse
+tabulate
+
+[:python_version < "3.8."]
+importlib_metadata
