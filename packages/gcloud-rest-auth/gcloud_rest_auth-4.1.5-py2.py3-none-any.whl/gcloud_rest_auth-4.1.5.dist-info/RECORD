@@ -1,0 +1,15 @@
+gcloud/__init__.py,sha256=BaOzURyoHw2i0N9QmVHNU1kTLrCDP6XhI-ex2NM8TFA,520
+gcloud/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcloud/rest/__init__.py,sha256=EqnEI186K4gABgF0HMfu-wAWeAtmLIeLG3jysNCIs0U,524
+gcloud/rest/auth/__init__.py,sha256=Wd1HBSY7bOp_35QLo6KdY_DXmrafisOdf1L3EmWI3RY,2356
+gcloud/rest/auth/build_constants.py,sha256=tlzBiJp7nwLavDbTcAIzuFMGQGX85RFf51wD1oBa-NA,492
+gcloud/rest/auth/iam.py,sha256=Tqkf-JBT3w5oyP_dypSITtZYYc_vJh-ASxtxruMqPh4,5705
+gcloud/rest/auth/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcloud/rest/auth/session.py,sha256=augWCt9x0F3M1Q8HxJp2vOTHhIIpWPQIDufBA4Wfeac,12054
+gcloud/rest/auth/token.py,sha256=kUGSmwC3LS6-35mG96AT_u9qGjnjwoZfCtR8bTHjbhY,10215
+gcloud/rest/auth/utils.py,sha256=MRxURuipFAWjxhVqJOmy0TaMKDxAJOqBM6df6mcwCh4,1559
+gcloud/rest/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcloud_rest_auth-4.1.5.dist-info/WHEEL,sha256=SlW3K6T2LNPbN9-QzFT1pS72PIuYOJEoe_9_lIJkxrk,92
+gcloud_rest_auth-4.1.5.dist-info/METADATA,sha256=D8lhzCAOQPCq0Qoz1sP9zpTKlWxyQxA8OMrUt0Ijqgs,4404
+gcloud_rest_auth-4.1.5.dist-info/LICENSE,sha256=5BNZKnocORweIzozcY2dB5Mf_d0MJP5VbpwdzL4ZjoM,1063
+gcloud_rest_auth-4.1.5.dist-info/RECORD,,
