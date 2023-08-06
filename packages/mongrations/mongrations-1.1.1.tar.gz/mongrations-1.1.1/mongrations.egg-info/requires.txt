@@ -1,0 +1,7 @@
+Click
+motor
+pydotenvs
+pymongo
+PyMySQL
+requests
+psycopg[binary,pool]
