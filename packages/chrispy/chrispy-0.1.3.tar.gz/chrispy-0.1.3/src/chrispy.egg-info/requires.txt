@@ -1,0 +1,11 @@
+six
+typer
+numpy
+pandas
+tabulate
+sqlalchemy
+matplotlib
+
+[notebook]
+jupyter
+ipynbname
