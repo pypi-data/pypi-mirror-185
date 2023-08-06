@@ -1,0 +1,11 @@
+[project]
+name = "madore"
+version = "1"
+requires-python = ">=3.8"
+dependencies = ["mistune"]
+
+[project.scripts]
+madore = "madore:main"
+
+[tool.setuptools.package-data]
+madore = ["style.css"]

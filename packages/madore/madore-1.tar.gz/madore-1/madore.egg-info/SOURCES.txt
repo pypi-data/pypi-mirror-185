@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+madore/__init__.py
+madore/__main__.py
+madore/cli.py
+madore/render.py
+madore/style.css
+madore.egg-info/PKG-INFO
+madore.egg-info/SOURCES.txt
+madore.egg-info/dependency_links.txt
+madore.egg-info/entry_points.txt
+madore.egg-info/requires.txt
+madore.egg-info/top_level.txt
+madore/renderers/__init__.py
+madore/renderers/matplotlib.py
+madore/renderers/pandas.py
