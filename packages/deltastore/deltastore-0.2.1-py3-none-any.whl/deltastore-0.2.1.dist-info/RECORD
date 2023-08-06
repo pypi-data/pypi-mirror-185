@@ -1,0 +1,12 @@
+deltastore/__init__.py,sha256=uqmM1V7RDl-I-Drff_BLlQcAwcak7KttyURc0pP8s60,930
+deltastore/_yarl_patch.py,sha256=lJhJBSt1p-_PebLBs0PdcqIwM8J1K17wN9tImW7yRO0,856
+deltastore/converters.py,sha256=pN1CcDWKwc08d7HJIV29C-qISBdDmbTS9XjrjC7koN0,10501
+deltastore/helpers.py,sha256=ilo8KLOaEPH4tu_BmIPrPL8JIM1niRm46Rqsh8qJfo0,1325
+deltastore/protocols.py,sha256=_faYHmDlb2w7Jc8UbPrqq8r4OePeWXZonod3rd3QcxI,7842
+deltastore/reader.py,sha256=DsgEnSUY3NhX86atLDfR50kyWoC3Gjf4upHhabg2PdE,12388
+deltastore/rest_client.py,sha256=ngcrC5XT9hBz46Z96taPWOk05cTlMPhDx5zXVErHePw,15299
+deltastore/version.py,sha256=r2gEPaS3fSzR2XpUsVMN8p4b4VNGshZ95lxUKFWSzMc,626
+deltastore-0.2.1.dist-info/METADATA,sha256=pf6DqQ6kiK4vt9MBWcwKpY59HihdVFVJYd3pDhB7Kcw,308
+deltastore-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+deltastore-0.2.1.dist-info/top_level.txt,sha256=8tDaZb5xn-A6Gsls-PCnuVapf-VYdtFicFxnJyQI5xY,11
+deltastore-0.2.1.dist-info/RECORD,,
