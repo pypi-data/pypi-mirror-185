@@ -1,0 +1,15 @@
+Change Log
+==========
+
+1.0 (Jan 11, 2023)
+------------------
+- First Release
+
+1.01 (Jan 11, 2023)
+------------------
+- Moving things around to make it all work properly
+
+
+1.2 (Jan 12, 2023)
+------------------
+- Rearranging Game Engine for easier use
