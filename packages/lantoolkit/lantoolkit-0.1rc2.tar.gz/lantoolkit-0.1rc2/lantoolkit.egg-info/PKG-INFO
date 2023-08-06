@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lantoolkit
+Version: 0.1rc2
+Summary: A python toolkit:fix
+Home-page: 
+Author: lan
+Author-email: soft-diyuge@outlook.com
+Maintainer: 虚位以待
+Maintainer-email: none@none.none
+License: MuLan PSL License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+License-File: LICENCE-PY
