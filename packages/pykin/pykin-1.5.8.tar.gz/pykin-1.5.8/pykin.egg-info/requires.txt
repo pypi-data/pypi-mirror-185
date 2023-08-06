@@ -1,0 +1,8 @@
+Pillow
+matplotlib
+numpy
+pyglet==1.5.21
+python-fcl
+pyyaml
+tqdm
+trimesh[easy]
