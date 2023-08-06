@@ -1,0 +1,5 @@
+[console_scripts]
+nbdep_pipfile = nbdep.pipfile:write_pipfile
+
+[nbdev]
+nbdep = nbdep._modidx:d
