@@ -1,0 +1,12 @@
+FrcApi/__init__.py,sha256=DPNjNvDg6HlT8_vKlU6YqEy1alCneydUDwAKfvsnM4o,229
+FrcApi/config.py,sha256=eWjWSx9jexoYxHtW_esAOcuoyB8ZoWaqOFFm6X06Qk8,525
+FrcApi/district_ranking_calculation.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FrcApi/fun.py,sha256=X61p4Pld0C7luPdTlYpUja334t6zLu8UDEqx2engM0Q,424
+FrcApi/matchresults.py,sha256=pjltOm0xZrsQtTZTgnHIhJOMJ4OptMpAdL7dJAFvbls,3503
+FrcApi/rankings.py,sha256=Cua1qbOMTUjXL9Uj1eZUJjDRlu2TqSSjCnPQ1MLGq5s,7938
+FrcApi/seasondata.py,sha256=Rq7_w0uNq5yop1xAAzDGPqRezpnHI5fBk3XDCNBViKg,7071
+frc_api-1.0.1.dist-info/LICENSE,sha256=oO50YGSwbQnKsHaBFuwmX9DUUmHUCHya0saYoHx6rA4,35803
+frc_api-1.0.1.dist-info/METADATA,sha256=JQ4ygvMQfn4F5lKh06wP4DPRoKd2kZ6TkPRd401NLkQ,42561
+frc_api-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+frc_api-1.0.1.dist-info/top_level.txt,sha256=ovAWSN9hER6FUDbJEuceo1RlsjmetM56GKZ9-nouLFA,7
+frc_api-1.0.1.dist-info/RECORD,,
