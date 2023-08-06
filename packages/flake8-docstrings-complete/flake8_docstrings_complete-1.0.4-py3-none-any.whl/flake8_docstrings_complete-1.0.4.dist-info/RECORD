@@ -1,0 +1,12 @@
+flake8_docstrings_complete/__init__.py,sha256=TnwY62AoQqduYZlTaM4ax2UvQG4ATZjCvZiCIJDtrbU,20172
+flake8_docstrings_complete/args.py,sha256=5IzeKIo1e3hYWQq4ewp7-sDEoCxwf8l-Nq8p-j67tfk,4625
+flake8_docstrings_complete/attrs.py,sha256=RnxTHfEb2nw0x6dx1OrPlal9D4jh2eQoW51FnoXlfhU,11094
+flake8_docstrings_complete/constants.py,sha256=thBaVrvfTlnYDwSCaGrKXFtnCwimbnUPWozy0C85phQ,177
+flake8_docstrings_complete/docstring.py,sha256=J5xrMyJ_-OhKjaINvy_v1qhGs0enOmGoVn37fJMeB7A,5723
+flake8_docstrings_complete/raises.py,sha256=6PQFh3h3uWQCzzLD4-F5FePnOOO5-1T5dWA_Z6gTn-I,5711
+flake8_docstrings_complete/types_.py,sha256=HVNoL8tNl6uDeyLWsENOwB44vsv_7S9poDR-ZwjyIFQ,953
+flake8_docstrings_complete-1.0.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+flake8_docstrings_complete-1.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flake8_docstrings_complete-1.0.4.dist-info/METADATA,sha256=jEpGShTgg0Qc0SM8qJe_bMWo6XXo-TUl4p0UTN4Lxo0,32568
+flake8_docstrings_complete-1.0.4.dist-info/entry_points.txt,sha256=i8MF13y1oSjjQb8xZUa_52R-lTrBh80xPQKiEjOKlWY,58
+flake8_docstrings_complete-1.0.4.dist-info/RECORD,,
