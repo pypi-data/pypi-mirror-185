@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: medico
+Version: 1.0
+Summary: Extract vital medical information from text.
+Author: Mr. Medico
+Requires-Dist: boto3
+Requires-Dist: time
+Requires-Dist: spacy
+Requires-Dist: nltk
+
+This package extracts vital health information from string such as medicine names, dosage, treatment names, diagnostic data, etc.
