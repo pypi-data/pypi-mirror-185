@@ -1,0 +1,12 @@
+conda_mirror/__init__.py,sha256=t9KZdp_DIvv91kyAlbqfXkrky_63qicYujvE-nd8xlM,93
+conda_mirror/_version.py,sha256=ZVinOFsB0ahzqRukkKktFwW043ss6g_OZ1u01AuzRyc,497
+conda_mirror/conda_mirror.py,sha256=FyH6aoog8D0AFxhhzoA3Q-QbLuBC6kfOGD2wz8vGGyQ,40872
+conda_mirror/diff_tar.py,sha256=mpWqzg-XiJV4rDydC1yHs-tgol7BTirzb1orBWiKmEU,7336
+conda_mirror/versionspec.py,sha256=ovyBwmDd5OwYhsKzi45S9abCZRqgK3NuzL905xJv1Z0,25475
+conda_mirror-0.9.0.dist-info/AUTHORS.md,sha256=i-UkI2oulwR9oRYC4FTuSiFxL2-vyEpJq0h0NVnYTcI,358
+conda_mirror-0.9.0.dist-info/LICENSE,sha256=LbRwKBWyHHCKeI3nCm-UAZ83_1BsanJOfbWxwjyhsMI,1616
+conda_mirror-0.9.0.dist-info/METADATA,sha256=7CuFzAeM3VQvxLgpt9xpZnsach0okTBgwB1K4h3OHfk,9986
+conda_mirror-0.9.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+conda_mirror-0.9.0.dist-info/entry_points.txt,sha256=eh747qLSgb9FfHgh-VX6aJpuEyDyqh2idYUsvccYjks,107
+conda_mirror-0.9.0.dist-info/top_level.txt,sha256=Qk9dlsT8mLsPvP9lvsOpHEU-O1ZOZ5DkRB6_rCcYOAQ,13
+conda_mirror-0.9.0.dist-info/RECORD,,
