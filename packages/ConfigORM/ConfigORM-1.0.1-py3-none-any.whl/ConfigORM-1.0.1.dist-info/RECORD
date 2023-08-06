@@ -1,0 +1,9 @@
+configorm/__init__.py,sha256=BSbFWbMjBtP-_UUsWfGotvQpQWkG8SlyCs2V3at-whU,432
+configorm/config_orm.py,sha256=FhzUQ6w6OF--CXPhtM8kDiVjfUfM3P8fAX5Xv0sMIVU,3819
+configorm/connectors.py,sha256=Cchyaw1XxPuxtyqi2D1lSZcTIjfNGKbfArZfuwujS0s,11794
+configorm/fields.py,sha256=Vv1kfGEO_HtsSiEuexaPQ_dAMpgMLTkjShr0-mWp8Cw,6886
+ConfigORM-1.0.1.dist-info/LICENSE,sha256=uAHBedHBnlPolAIAbtTD_mwofzsZP1uOp0nRYZ_JU9A,1080
+ConfigORM-1.0.1.dist-info/METADATA,sha256=Iwr6jY-PATMhWfXHgqNsr5QqLd3zPLhGtWqlY86Lu8o,5645
+ConfigORM-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ConfigORM-1.0.1.dist-info/top_level.txt,sha256=1VKgta1rdPLt7sEWA85OOHorC1SRWwrOOCJvFLQQsSI,10
+ConfigORM-1.0.1.dist-info/RECORD,,
