@@ -1,0 +1,16 @@
+dict_from_pypinyin/__init__.py,sha256=r8-AayHhtDu7YTB7VRPNIuCgXNXsii1clgbunwpFqCs,50
+dict_from_pypinyin/api.py,sha256=nPw3J0m1QCDjggwxsEMPKawcmszkiPj7LrdcMAvZx9M,726
+dict_from_pypinyin/argparse_helper.py,sha256=cc6RiB2GJwuGLzAHpdbRkyTcwivEpV5XDPHz2Z_sJew,7044
+dict_from_pypinyin/cli.py,sha256=9kWpVsI0nIO0fmm3X6CHKKlwGvmBV9kuUJE_ECLRJ3E,2610
+dict_from_pypinyin/logging_configuration.py,sha256=C5nFB7OSQup_7W9LVXx0ZN27OohoXmauDMzprZZmbyE,4719
+dict_from_pypinyin/main.py,sha256=_cF_-rQvUzITCLIxllaRetrqPLktxh6JGf6qIWNABMk,8242
+dict_from_pypinyin/transcription.py,sha256=lkkfY0yWCjuX6D8TL_FluZG9hRiNiq25DztN1PRCaxw,2299
+dict_from_pypinyin_tests/__init__.py,sha256=M0NZuQ7-112l8K2h1eayVvSmvQrufrOcD5AYKgIf_Is,1
+dict_from_pypinyin_tests/transcription_py/__init__.py,sha256=M0NZuQ7-112l8K2h1eayVvSmvQrufrOcD5AYKgIf_Is,1
+dict_from_pypinyin_tests/transcription_py/test_word_to_pinyin.py,sha256=n6VuwzY8jlC_sGivog5qS4_raHZAbvL7pLHgeI430Dc,5148
+dict_from_pypinyin-0.0.1.dist-info/LICENSE,sha256=rJ_gjQ0TNgutieJx1khubIzAr709hQGFZx2dGxOOoPU,1071
+dict_from_pypinyin-0.0.1.dist-info/METADATA,sha256=JWieI0kRDwZpZRcQkMx5YnybwslS1Wem2esTGAgLODw,5069
+dict_from_pypinyin-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dict_from_pypinyin-0.0.1.dist-info/entry_points.txt,sha256=MN98aClJL9KsWDyWvjGeeLOGmAP_DNuGg-XgUvuyoxc,75
+dict_from_pypinyin-0.0.1.dist-info/top_level.txt,sha256=GH0OkjHZQS6Qy6P0fePKTpKfPosfiXxcU_Ty5wd916I,44
+dict_from_pypinyin-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+dict-from-pypinyin-cli = dict_from_pypinyin.cli:run_prod
