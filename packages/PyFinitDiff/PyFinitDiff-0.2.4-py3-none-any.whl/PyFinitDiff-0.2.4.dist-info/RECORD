@@ -1,0 +1,17 @@
+PyFinitDiff/Coefficients.py,sha256=UT7TsL7n7IQbiqk1lZsDXWEU6IoRpiXlozPn7sQ304k,1742
+PyFinitDiff/Dense.py,sha256=gDB8NChGZOwTY-FuuTZ5acHDUqitagaky11isSD921g,8747
+PyFinitDiff/Sparse1D.py,sha256=6fJBf6sSPpwmMjHKrddzsf0Om83ChHdf7KlzyZtFPaw,6653
+PyFinitDiff/Sparse2D.py,sha256=_QGXyBU-nVtNIARXTfgr8Q_rehT5f9YxThHzWyPQft8,8603
+PyFinitDiff/Tools.py,sha256=Yx6v0C5sNNYzRem79W1rTExJ1iMZnMkoQHLi8mWs-uw,7867
+PyFinitDiff/Utils.py,sha256=L6cNBJ9B5Nb9D3nTC20ytQ8cGBfwK3vHXWyZ2cAAK-g,3606
+PyFinitDiff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyFinitDiff/future.py,sha256=40LxdgfG38cH8pnmQzW8-zw_EM2G8JQ1tUKHbP6Ke0s,5720
+PyFinitDiff/coefficients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyFinitDiff/coefficients/backward.py,sha256=na_PH1PwgAj6NwiOkiZlcQlR-IfT56OsQ7x0P4xNKsk,1412
+PyFinitDiff/coefficients/central.py,sha256=ZBPwQOmxWLidAvHEt9JGIDSxTrho-F3yHDYyOukYVQw,1947
+PyFinitDiff/coefficients/forward.py,sha256=5dxhUhSXsX-8OqdIuQmrnJ3jxGftIaMnL-H8kQ43-uo,1396
+PyFinitDiff-0.2.4.dist-info/LICENSE,sha256=U6YG4UEW9XJzHa53oijR0qw6JNN_SZ38WOBmYn3NPd0,1072
+PyFinitDiff-0.2.4.dist-info/METADATA,sha256=vCWAmaDq9zyvVpQj8oH_kX1i_xNO-lNPoUZYjb0YLms,2252
+PyFinitDiff-0.2.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+PyFinitDiff-0.2.4.dist-info/top_level.txt,sha256=yl_A1Z9VT4HxBK5PTOM4ZyRcXZb-VtbQo1TzRUc1mW4,12
+PyFinitDiff-0.2.4.dist-info/RECORD,,
