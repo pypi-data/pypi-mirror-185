@@ -1,0 +1,173 @@
+{% extends 'psu_base/layout/main.html' %}
+{% load base_taglib %}
+
+{%block title%}Downtime Console{%endblock%}
+{%block scripts%}{%datatables%}{%endblock%}
+
+{% block pagecontent %}
+    <h1>Downtimes</h1>
+
+    {%if not active_base_downtime%}
+        <div class="well" style="max-width: 800px;margin:0 auto;">
+            <form method="post" action="{%url 'psu:add_downtime'%}">
+                {%csrf_token%}
+                <h2 style="margin-bottom: 0;">Create a Downtime</h2>
+                <em class="text-muted">Downtime affects only {%app_name%}</em><br />
+                <br />
+                <label>
+                    Start downtime at: <input type="datetime-local" name="from_date" />
+                </label><br />
+
+                <label>
+                    End downtime at: <input type="datetime-local" name="until_date" />
+                </label><br />
+
+                <label for="reason">
+                    Reason for downtime:
+                </label><br />
+                <textarea name="reason" id="reason" class="form-control"></textarea><br />
+
+                <input type="submit" class="btn btn-success btn-block" style="max-width: 500px;margin:0 auto;" />
+            </form>
+        </div><br />
+    {%endif%}
+
+    <h2>{%app_name%} Downtimes</h2>
+    <table class="table table-condensed table-striped sm" id="downtime-table">
+        <thead>
+            <tr>
+                <th scope="col">When</th>
+                <th scope="col">From</th>
+                <th scope="col">Until</th>
+                <th scope="col">Reason</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for dt in downtimes%}
+            <tr>
+                <td>
+                    <span class="hidden">{{dt.start_cd.timestamp}}</span>
+                    {%if dt.is_past%}
+                        {%fa fa-history fa-fw text-muted title="Past Downtime"%}
+                    {%elif dt.is_future%}
+                        {%fa fa-clock-o fa-fw text-info title="Future Downtime"%}
+                    {%else%}
+                        {%fa fa-star fa-fw text-danger title="Active Downtime"%}
+                    {%endif%}
+                    {{dt.from_date_description}}
+                </td>
+                <td>
+                    <span class="hidden">{{dt.start_cd.timestamp}}</span>
+                    {{dt.from_date_display}}
+                </td>
+                <td>
+                    <span class="hidden">{{dt.end_cd.timestamp}}</span>
+                    {{dt.until_date_display}}
+                </td>
+                <td>{{dt.reason}}</td>
+
+                <td>
+                    {%if dt.can_delete%}
+                        <a href="{%url 'psu:delete_downtime' dt.id%}">{%fa fa-trash-o text-danger title="Delete"%}</a>
+                    {%elif dt.can_end%}
+                        <a href="{%url 'psu:end_downtime' dt.id%}">{%fa fa-stop text-danger title="End Downtime"%}</a>
+                    {%endif%}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table><br />
+    <br />
+    <br />
+
+
+    <h2>Banner Downtimes</h2>
+    <em>
+        <ul>
+            <li>
+                Banner downtime windows are determined via a
+                <a href="{{downtime_json_path}}" target="_blank">JSON file</a>
+                on the static content server.
+            </li>
+            <li>The downtime schedule does not bring this site up or down, it only provides messaging.</li>
+            <li>This site is only disabled when Finti is unavailable.</li>
+            <li>
+                Banner downtime messages exist for the following scenarios
+                <em class="text-muted">(ordered chronologically)</em>:<br />
+                <ol>
+                    <li>Upcoming downtime (starting within 30 minutes)</li>
+                    <li>Downtime started (less than 30 minutes ago), but Finti is still available</li>
+                    <li>Downtime started, and Finti is down</li>
+                    <li>Downtime started (more than 30 minutes ago), and Finti is restored</li>
+                </ol>
+            </li>
+        </ul>
+    </em>
+
+    <table class="table table-condensed table-striped sm" id="banner-downtime-table">
+        <thead>
+            <tr>
+                <th scope="col">When</th>
+                <th scope="col">From</th>
+                <th scope="col">Until</th>
+                <th scope="col">Message</th>
+                <th scope="col">Type</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for dt in banner_downtimes%}
+            <tr>
+                <td>
+                    <span class="hidden">{{dt.start_cd.timestamp}}</span>
+                    {%if dt.is_past%}
+                        {%fa fa-history fa-fw text-muted title="Past Downtime"%}
+                    {%elif dt.is_future%}
+                        {%fa fa-clock-o fa-fw text-info title="Future Downtime"%}
+                    {%elif dt.is_fye%}
+                        {%fa fa-credit-card fa-fw text-danger title="FYE: Cashnet Downtime"%}
+                    {%else%}
+                        {%fa fa-star fa-fw text-danger title="Active Downtime"%}
+                    {%endif%}
+                    {{dt.from_date_description}}
+                </td>
+                <td>
+                    <span class="hidden">{{dt.start_cd.timestamp}}</span>
+                    {{dt.from_date_display}}
+                </td>
+                <td>
+                    <span class="hidden">{{dt.end_cd.timestamp}}</span>
+                    {{dt.until_date_display}}
+                </td>
+                <td>{{dt.message}}</td>
+                <td>{{dt.reason}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
+
+    <script type="text/javascript">
+
+        $('#downtime-table').DataTable( {
+            "order": [[ 1, "desc" ]],
+            "pageLength": 10,
+            "pagingType": "full_numbers",
+            "searching": false,
+            "lengthChange": false,
+        } );
+
+        $('#banner-downtime-table').DataTable( {
+            "order": [[ 1, "desc" ]],
+            "pageLength": 10,
+            "pagingType": "full_numbers",
+            "searching": false,
+            "lengthChange": false,
+        } );
+
+    </script>
+    {% endblock %}
+</body>
+</html>

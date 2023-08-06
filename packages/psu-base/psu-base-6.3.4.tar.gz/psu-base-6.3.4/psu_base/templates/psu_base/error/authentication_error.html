@@ -1,0 +1,28 @@
+{% extends 'psu_base/layout/limited_width.html' %}
+{% load base_taglib %}
+
+{%block title%}Authentication Error{%endblock%}
+
+{% block pagecontent %}
+    <h1>Authentication Error</h1>
+    You are currently logged in as <span class="code">{{request.user}}</span>,
+    which cannot be associated with a know person.
+    <br />
+    <br />
+
+    Common reasons for this can include:
+    <ul>
+        <li>You logged in with a service account (an account shared by multiple people)</li>
+        <li>You logged in with your privileged account (a "high" account)</li>
+        <li>You logged in with an email address rather than your Odin username</li>
+        <li>There may have been a temporary database connection error</li>
+    </ul>
+    <br />
+
+    <div class="well" style="text-align:center;font-size:1.5em;">
+        Please <a href="{%url 'cas:logout'%}">log out</a> and log back in using your personal PSU Odin account credentials.
+    </div>
+    <br />
+    <br />
+
+{% endblock %}

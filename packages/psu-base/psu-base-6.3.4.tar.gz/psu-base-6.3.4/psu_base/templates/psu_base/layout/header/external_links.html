@@ -1,0 +1,25 @@
+{% load base_taglib %}
+
+{# Banweb Link #}
+<a href="{%banweb_url%}" id="banweb-link">
+    <span id="banweb-link-nprd_ind"></span>
+    <span id="banweb-link-label">Banweb</span>
+</a>
+{%if is_non_production%}
+    <script type="text/javascript">
+        try{
+            let sid = $('#banweb-link').attr('href').split('/')[2].split('.')[0];
+            $('#banweb-link-nprd_ind').html(sid.charAt(0).toUpperCase() + sid.slice(1));
+        }
+        catch(ee){
+            $('#banweb-link-nprd_ind').html('Non-Production');
+        }
+    </script>
+{%endif%}
+
+|
+
+{# PSU Homepage #}
+<span class="header-link">
+    <a href="http://www.pdx.edu">PSU Home</a>
+</span>

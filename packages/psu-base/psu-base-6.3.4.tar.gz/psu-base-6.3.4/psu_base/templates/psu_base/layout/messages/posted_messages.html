@@ -1,0 +1,44 @@
+{% load base_taglib %}
+<script type="text/javascript">
+    clearStaleMessages();
+</script>
+{% for message in messages %}
+  <div class="alert {{ message.tags }} alert-dismissible alert-flash-msg" role="alert" birth_date="{%flash_message_birth_date%}" seq="{{ forloop.counter }}">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <span class="message-content">{{ message|safe }}</span>
+  </div>
+{% endfor %}
+
+{%if flash_message_position == 'ANIMATE'%}
+<script type="text/javascript">
+  var msgs = $('.alert-flash-msg');
+  var pct = 50;
+  var msg_interval;
+
+  function moveIt(){
+      msgs.each(function(){
+        $(this).css('top', `${pct}%`).css('left', `${pct}%`);
+        $(this).css('-webkit-transform', `translateX(-${pct}%, -${pct}%)`);
+        $(this).css('transform', `translateX(-${pct}%, -${pct}%)`);
+      });
+
+      if(pct < 100){
+        pct += 1;
+      }
+      else{
+        clearInterval(msg_interval);
+        msgs.removeClass('alert-flash-msg').addClass('bottomright');
+      }
+  }
+
+  $(document).ready(function(){
+      msgs.slideToggle( 100, function(){});
+      setTimeout(function(){
+        clearInterval(msg_interval);
+        msg_interval = setInterval(function(){moveIt();}, 12);
+      }, 500);
+  });
+</script>
+{%endif%}

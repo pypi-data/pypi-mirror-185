@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: psu-base
+Version: 6.3.4
+Summary: Basic features used in all PSU Django apps
+Home-page: https://github.com/PSU-OIT-ARC/django-psu-base
+Author: Mike Gostomski
+Author-email: mjg@pdx.edu
+License: MIT License
+Description: Reusable Django app specifically for PSU's custom-built web applications. 
+Platform: UNKNOWN
+Classifier: Framework :: Django :: 2.2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

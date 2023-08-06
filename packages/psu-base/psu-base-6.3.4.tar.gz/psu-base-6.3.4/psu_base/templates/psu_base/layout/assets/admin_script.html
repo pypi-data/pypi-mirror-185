@@ -1,0 +1,10 @@
+{% load base_taglib %}
+{%if 'admin_script'|feature:True%}
+
+    {% for ss in scripts%}
+        <script type="text/javascript">
+            {{ss.javascript|safe}}
+        </script>
+    {%endfor%}
+
+{%endif%}

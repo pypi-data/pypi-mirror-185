@@ -1,0 +1,790 @@
+=== 6.3.4 ===
+- No plugin changes. Updated build process.
+
+=== 6.3.3 ===
+- Allow non ~PowerUser to look up ID when specified via utility_service.allow_id_lookups(True|False)
+- New context variable `can_lookup_id` indicates if user can look up IDs
+- Finti setting `simulate_when_possible` can be set to "SSO" to simulate SSO_Proxy calls and make calls to other apps
+    (this is useful when running Finti locally, and only one finti app is being served)
+- When `simulate_when_possible` is set to SSO during development, non-cached sso_prosy calls will go to DEVL Finti
+
+=== 6.3.2 ===
+- Separate downtime_service function to get FYE downtime (will be used by Cashnet plugin)
+
+=== 6.3.0 ===
+- Revised downtime functionality:
+      - Two downtime types:
+            1. psu_base.models.Downtime
+                - Brings this site up/down for maintenance or other issues
+            2. psu_base.classes.BannerDowntime
+                - Provides messageing about Banner downtime windows
+      - Both downtime types are displayed on the Downtimes page (admin menu -> developer tools)
+      - psu_base downtimes will now disable the site (certain pages remain available)
+      - New messaging displayed for Finti outage during a defined BannerDowntime
+
+=== 6.2.1 ===
+- Log errors as warnings on the HealthCheck endpoint to reduce
+  the number of Sentry alerts (now limited to 200k/month)
+
+=== 6.2.0 ===
+- Allow grouping of admin menu items into submenus
+- Group developer links into "Developer Resources" submenu
+
+=== 6.1.2 ===
+- Include Django version in psu:versions endpoint
+- Include app URL and use_sentry flag in versions endpoint
+- (Versions endpoint will be used as part of an app management dashboard)
+
+=== 6.1.0 ===
+- Fixed flash_message bug that prevented stale message clearing
+- Fixed database export to remove "[]" when exported table was empty
+- You can now select which tables to export (for fixture export to YAML)
+
+=== 6.0.5 ===
+- Do not post error message on Finti Failure.  Log as error instead.
+- This will result in Sentry alert.  Might result in a lot of ignored alerts?
+
+=== 6.0.4 ===
+- New role "auditor" for people who can view audit records and clear XSS attempts
+
+=== 6.0.3 ===
+- New class psu.classes.Term works with common Term info
+    * Term.get_current() -- Get current term (accepts S/E flag)
+    * Term.get() -- Get specified term by date or code (also accepts S/E flag)
+
+=== 6.0.2 ===
+- ConvenientDate now has a function to get the next specified day of the week
+      Ex: next_thurs = cd_instance.get_next_specified_day("Thursday")
+
+=== 6.0.1 ===
+- Display downtime message any time Finti does not have a database connection
+-
+- Reorganized all templates into psu_base directory
+- See docs/v6-template-reorg.xlsx for template changes
+-
+- At a minimum, EVERY APP MUST:
+   * replace every occurance of "psu_base.html" with "psu_base/layout/main.html"
+   * replace every occurance of "_components/header" with "psu_base/layout/header"
+
+=== 5.3.4 ===
+- Ability to ignore all similar errors (on error management page)
+- Visual improvements to error list page
+
+=== 5.3.2 ===
+- Handle app-specific token in multi-app apps when deployed to AWS
+- Log (debug) last 4 digits of Finti token on forbidden response
+
+=== 5.3.0 ===
+- Allow for app-specific token in multi-app apps
+- Automatically process Finti results from pipelined functions that contain JSON_DATA strings
+
+=== 5.2.3 ===
+- Allow specifying an app to export models for. Do not export psu_base.Audit by default
+
+=== 5.2.2 ===
+- Sub-Apps on feature toggles
+- Use DataTables on Feature Toggle page
+
+=== 5.2.0 ===
+- Implemented UI-editable variables (psu_base.models.Variable)
+- Template-tag for variable display: {%variable "var_code" default_value="" data_type=""%}
+- Use sf-stage rather than ws-test for all references to non-prod Finti
+
+=== 5.1.17 ===
+- Get app version from __init__.py and fall back to settings.py if not found
+
+=== 5.1.16 ===
+- Added validation_service.remove_html(str)
+
+=== 5.1.15 ===
+- Log warning message when user is denied access to something
+
+=== 5.1.14 ===
+- New template tag: js_prompt to prompt for a single value using jquery-confirm
+
+=== 5.1.11 ===
+- Log "Photo not found" as a warning so it doesn't trigger a Sentry alert
+
+=== 5.1.10 ===
+- Unbold some text in identity search template
+
+=== 5.1.9 ===
+- Log 500 errors with error_service
+
+=== 5.1.8 ===
+- New filter: |convenient_date:my_d
+- New taglib: {%humanize%}
+- Added user_description() in Audit model
+- {%display_name%} now takes optional user arg {%display_name user_data%}
+- Use cached User objects for id_tag and id_card taglibs
+
+=== 5.1.4 ===
+- Keep preferred names up-to-date in psu_base.Student models
+
+=== 5.1.0 ===
+- Suppress ID photos for students with confidential indicator set in Banner
+
+=== 5.0.2 ===
+- Cleanup (IdentityCAS.py) resulting from one-off Sentry alert
+- Warning on improper use of enable dates in feature toggles
+
+=== 5.0.1 ===
+- New filter to collect attrs from a list of objects
+- New filter to get the max allowed length of a field in a model instance
+- Utility service functions to set session vars now return the set value
+
+=== 5.0.0 ===
+- request.is_ajax() no longer exists. Created utility_service function to do the check
+- Use 'path' rather than 'url' in all urls.py files
+- Remove all occurences of from django.conf.urls import url
+- Accept fa_class attr on {%fa%} tag for when the class is in a variable {%fa fa-fw fa_class={{my_fa_var}} title="..." %}
+
+=== 4.9.1 ===
+- Include time-only formats in ConvenientDate
+- Remove trace logging from get_next_downtime()
+
+=== 4.9.0 ===
+- Do not cycle the flash scope or log on session extension
+
+=== 4.8.4 ===
+- Added classes.IdentitySearch to search for identities and process results
+- templates/psu_base/components/_identity_search_hints.html
+
+=== 4.8.3 ===
+- Handle downtime_service issue with unaware dates when timezone is being used
+
+=== 4.8.2 ===
+- Management command `aws_logs` for downloading AWS logs from S3
+
+=== 4.8.1 ===
+- Fixed bug in error_service that prevented accurate locating of the line that caused the error
+- Mask sensitive parameters when logging an unexpected error
+- Mask sensitive parameters in Finti POST calls
+
+=== 4.8.0 ===
+- Fix proxy redirect after not finding the specified proxy
+
+=== 4.7.5 ===
+- True/False option for select_menu tag options
+
+=== 4.7.3 ===
+- Call one-time-links function on page load (to initialize anything with the one-time-link class)
+
+=== 4.7.2 ===
+- Taglib to display a user ID and expand it to graphical ID tag when clicked {%expandable_id 1049650%}
+- Reorganized psu_base template to keep versions in sync
+- Moved styles for id_card and id_tag to css file to avoid multiple inclusion of their styles
+- utility_service.get_browser()
+
+=== 4.7.0 ===
+- Use preferred names by default when setting USE_PREFERRED_NAMES == True
+- Preferred and legal versions of names available via User class
+
+=== 4.6.5 ===
+- Make sure Finti response is a dict before trying to populate a user from it
+
+=== 4.6.4 ===
+- Bug fix in Log.end to return the result when logging is being suppressed
+
+=== 4.6.3 ===
+- Remove comment length restriction on Audit records
+- Filter audits by current app (for multi-app configurations)
+- Automated code formatting
+
+=== 4.5.4 ===
+- Updated versions in requirements.txt
+
+=== 4.5.3 ===
+- New decorator @feature_redirect redirects when specified feature is enabled
+
+=== 4.5.2 ===
+- Fall back to sans-serif when Lato font not working
+
+=== 4.5.1 ===
+- Added rel="noopener" to some target="_blank" links as suggested by Chrome's Lighthouse audit
+- Redirect to root when next_destination is invalid (for impersonation)
+- New option for flash message positioning: ANIMATE
+
+=== 4.5.0 ===
+- Authentication error page when logged in with service account or high account
+
+=== 4.4.1 ===
+- Ability to post messages to be delayed until the next request (message_service.post_delayed_message)
+
+=== 4.4.0 ===
+- Update fa templatetag to avoid duplicate text for screen-readers
+- Removed error handler from @trace decorator which made debugging more difficult
+
+=== 4.3.3 ===
+- Handle case where student's pdx.edu email is missing from goremal
+- Do not redirect from @decorators on AJAX request (forbidden response instead)
+
+=== 4.3.1 ===
+- Bug fix in User class
+
+=== 4.2.3 ===
+- Hide more of the status page when not authenticated
+
+=== 4.2.2 ===
+- Get a user object even if they do not have a username in zgbidmp
+
+=== 4.2.1 ===
+- Copy of base template that limits body content to 1000px (overridable)
+- New dynamic role "~ro" that covers all known RO roles
+
+=== 4.2.0 ===
+- Add support for static files hosted in elastic beanstalk
+
+=== 4.1.2 ===
+- Add utility_service.to_choices() to convert API results to django-style choices lists
+
+=== 4.1.1 ===
+- Moved new special-character functions from banner_service to validation_service
+- Moved some validation functions from utility_service to validation_service
+- Finti special character encoding will now remove disallowed characters by default
+- Unencoded special characters in Finti call parameters will be automatically removed
+
+=== 4.0.6 ===
+- Function for cleaning a name (special characters) prior to sending to Banner - validation_service.clean_name()
+- Function for cleaning special characters from non-names - validation_service.clean_special_characters()
+- {%banner_character_functions%} (add to scripts block) for functions to clean disallowed chars from inputs
+- {%banner_name_input%} TagLib for a name input that auto-cleans name input (requires {%banner_character_functions%})
+- {%banner_text_input%} TagLib for a text input that auto-cleans non-name input (requires {%banner_character_functions%})
+- Clean any other type of input with onchange="clean_banner_characters($(this));"
+
+=== 4.0.5 ===
+- Function in Finti class to encode a string with special characters
+
+=== 4.0.4 ===
+- Suppress authorization error when impersonating from a page that requires an authority
+
+=== 4.0.3 ===
+- Auto-clean gtest addresses (was previously just cleaning gdev)
+
+=== 4.0.2 ===
+- Accept dict of SSO data when initializing a User object
+
+=== 4.0.1 ===
+- Downtime warning message
+
+=== 4.0.0 ===
+- Changes for Python 3 on AmazonLinux2
+
+=== 3.3.2 ===
+- Downtime warning message
+
+=== 3.3.1 ===
+- Handle role list coming from Banner rather than SSO
+- Accept "~" roles as "Dynamic" roles ('~PowerUser' == 'DynamicPowerUser')
+
+=== 3.3.0 ===
+- Session expiration handling
+- jquery-confirm now included on every page via base template (used by session expiration feature)
+- Revised footer includes link to Privacy Policy
+- Copyright year now dynamic rather than hard-coded year
+- Removed warning about using old Finti server in development
+
+=== 3.2.0 ===
+- Bug fix getting psu_base.Student via auth service
+
+=== 3.1.5 ===
+- New management command to generate eb printenv commands:
+    python manage.py env_vars {dev|stage|prod}
+
+=== 3.1.4 ===
+- bug fix in pagination taglib when no results
+
+=== 3.1.3 ===
+- app_code and app_name in context
+- css fix for jquery-confirm alerts
+
+=== 3.1.2 ===
+- Error handling in export view
+
+=== 3.1.1 ===
+- Bug fix with retrieving authorities when changing sub-apps
+
+=== 3.1.0 ===
+- Convert nested variables in custom template-tags
+
+=== 3.0.14 ===
+- Bug fix in @trace decorator
+
+=== 3.0.12 ===
+- Another attempt to reduce logging
+
+=== 3.0.11 ===
+- Auto-created feature toggles for apps with sub-apps will be default entries
+
+=== 3.0.10 ===
+- Auth service function for getting a Student model
+- @trace() decorator automates trace/end logging and unexpected error handling
+
+=== 3.0.9 ===
+- Reduce logging during AWS Health Checks, or when specified
+- Set current APP_CODE to primary app when path starts with primary APP_CODE
+- New Student model for basic student identity. Save as foreign key in other app's models.
+
+=== 2.1.9 & 3.0.8 ===
+- Bug fix for csv_to_list when empty-string is given as a list
+
+=== 2.1.8 & 3.0.7 ===
+- Fix for term_description() when missing or invalid term code is given
+- Do not call Sentry from unexpected_error() if system_error is a string
+
+=== 2.1.7 & 3.0.6 ===
+- pagination_sort_info() will always treat filters with "list" in the name as a list
+- Allow Finti simulation to be toggled via switch in footer when using simulate_when_possible for development
+- Taglib for full-screen smokescreen and spinner: {%smokescreen_spinner 'spinner_name' 'Message...' %}
+
+=== 2.1.6 & 3.0.5 ===
+- Convert spaces in email addresses to plus (+)
+- Allow pagination_sort_info() to process a multiple-select as a keyword/filter
+
+=== 2.1.5 & 3.0.4 ===
+- Only add security headers to HttpResponse responses
+- Accept other attributes in js_alert and js_confirm tags
+- Only show old Finti dev warning once per session (temporarily back on old server)
+
+=== 2.1.4 ===
+- Add reference_code and reference_id to audit model
+- Updated audit list and filters for new reference fields
+- sortable_th now accepts a csv list of columns to sort by
+
+=== 2.1.3 ===
+- Bug fix when user has no eduPersonScopedAffiliation
+ 
+=== 2.1.2 ===
+- auth_service.get_authorized_users()
+- email_service.get_authorized_emails()
+- Fix unhandled ELB Health Check exception when Finti has a connection error
+
+=== 2.1.0 ===
+- Use Sentry for error tracking
+
+=== 2.0.8 ===
+- Fixed psu_* plugin version detection
+- Bug fix on duplicate message suppression
+
+=== 2.0.7 ===
+- Added taglibs: js_alert and js_confirm for simple jquery-confirm alerts and confirmations
+- New filters for checking authorities and features:
+   *  'admin'|has_authority:True  or  'admin'|has_authority:False
+   *  'finti_console'|feature:True  or  'finti_console'|feature:False
+
+=== 2.0.5 ===
+- utility_service.pagination_sort_info now accepts and tracks a list of keyword inputs
+- log.end returns the logged result for convenient one-line return in calling function
+
+=== 2.0.3 ===
+- Warn developer when using old Finti test URL for local development
+- Avoid error when Finti is not reachable and returns None
+- Only verify Finti cert when deployed, or when using https locally
+- Prevent duplicate posted messages on server-side
+- Clear stale messages when posting new messages
+
+=== 2.0.2 ===
+Reduce ELB HealthCheck error recording
+
+=== 2.0.1 ===
+- Filter to get a dict value from a template. {{ my_dict|get:some_value }}
+
+=== 2.0.0 ===
+- Updated dependencies. urllib3 had been pinned to a specific version because a newer version broke
+  Finti calls. The pinned version has a security vulnerability, and upon initial testing, newest versions
+  of urllib3 no longer break Finti calls. I recommend thorough testing before pushing an app out to prod
+  with psu_base >= 2.0.0
+- utility_service.options_list_to_dict() now uses an OrderedDict
+
+=== 1.3.13 ===
+- Small bug fixes
+- utility_service.has_unlikely_characters()
+
+=== 1.3.12 ===
+- Endpoint for date input validation
+- Endpoint for phone_number input format/validation
+- Endpoint for generic menu options (state, nation, etc)
+- select_menu tag now accepts banner_options="" to populate the menu with options from Banner
+- Finti object now includes http_status_code after any Finti call
+- banner_service functions to return Finti responses as JsonResponse with appropriate status_code
+
+=== 1.3.8 ===
+- Include stacktrace in unexpected error logging
+- Fix Finti console post method
+- Improve Finti logging
+
+=== 1.3.5 ===
+- Allow audit record to have null username
+
+=== 1.3.4 ===
+- ID Card template now shows primary role (student, employee, etc)
+- Link to remove proxy from proxy ID card
+
+=== 1.3.3 ===
+- Added an email template for content known to be safe (safe_template.html)
+- Search features on error list page
+
+=== 1.3.2 ===
+- Allow select menus to be nullable until a value is selected (nullable="null")
+
+=== 1.3.1 ===
+- Fix for format_phone
+- Database export to yaml file (developers only)
+- Secondary sort on paginated results. Requires prefixing the sortby param with * in .order_by()
+
+=== 1.2.1 ===
+- Added dynamic power and super user roles to context
+- Added utiltity_service functions to identify a string as a term code or a psu-id
+
+=== 1.2.0 ===
+- Removed unused "parameters" parameter from Finti.post()
+
+=== 1.1.17 ===
+- Accept string description of common options in {%select_menu%}
+   - options="YN" or options="NY" for yes/no menus
+   - options="1..50" or options="100..50" for number menus
+
+=== 1.1.16 ===
+- Bug fix when recording errors while not authenticated
+- Post recorded errors to the screen during local development
+- Include browser info in unexpected errors
+- Utility service function for converting Finti menu options to a dict
+
+=== 1.1.15 ===
+- Enforce string length limits when recording error messages
+- Added json parameter to Finti post
+- Bug fix for setting_value templatetag
+
+=== 1.1.14 ===
+- Error handling in ConvenientDate init function
+- Include conversion error as property of ConvenientDate
+- Give default bootstrap 'danger' color better contrast
+
+=== 1.1.13 ===
+- Enforce field length limits in services that save objects (audit, error, email)
+
+=== 1.1.12 ===
+- Taglib for including jquery-confirm: {%jquery_confirm%}
+
+=== 1.1.11 ===
+- Remove extra spacing from fa icon taglib, which resulted in extra underline when used in a link
+- Taglib for sortable column headings. {%sortable_th column="username" heading="User"%}
+
+=== 1.1.10 ===
+- Bug fix attempting to send plain-text version of html email when no 'content' is provided
+- Stop trace-logging on security interceptor and page/flash session mgmt since it has proven itself reliable
+- Fix page titles on generic PSU Base pages
+- Search feature on email list
+- Fix for SOME errors when trying to display a sent email
+
+=== 1.1.9 ===
+- Track one optional filter/search parameter along with pagination sort data
+
+=== 1.1.8 ===
+- Utility service function to get session-backed pagination sort info and page number
+- Only show pagination link to first/last when different than link to prev/next
+- Error page was displaying system error a second time rather than the debug info
+
+=== 1.1.5 ===
+- Show item count in paginated results
+- Accept new 'nonprod_only' attribute on admin menu items
+
+=== 1.1.4 ===
+- Handle HTML "datetime-local" input's date/time format
+
+=== 1.1.3 ===
+- Accept additional debug info on unexpected_error()
+- Shortcut for logging unexpected errors without posting an error. record(ee, debug_info=None)
+
+=== 1.1.0 ===
+- New decorator for limiting a view to non-production use
+- Add Cache-control: no-store and Pragma: no-cache headers (recommended by security team)
+- Added psu-base version to jQuery library URL to force new version over cached version
+
+=== 1.0.2 ===
+- New template-tag for formatting decimals and currency
+
+=== 1.0.1 ===
+- No change, just a re-build
+
+=== 1.0.0 ===
+***
+    BUILT IN WRONG PYTHON ENV
+    This code base is fine, but the PyPi upload was bad. Deleted from PyPi.
+***
+- Finti test server has a real certificate now. Verify certificate except in local development.
+- psu-base is now in multiple production apps.  Time to call it version 1
+
+=== 0.19.0 ===
+- Feature toggles now accept optional activation and termination dates
+
+=== 0.18.4 ===
+- Removed some logging that was cluttering logs because of health checks
+- Filter audit events by content of comments
+
+=== 0.18.3 ===
+- Include context in ID tag and ID card template tags
+- Ability to reduce or suppress Finti logging
+
+=== 0.18.2 ===
+- Never email anyone other than the default recipient when running in DEV environment
+
+=== 0.18.1 ===
+- Created flash scope in the session to replicate Grails' flash scope
+- Renamed "temp_session" to "page_scope" for clearer differentiation from the new flash scope
+- Created get/set functions for page scope variables
+- Deprecated get/set functions for "temp_session" (replaced by get/set functions for "page_scope")
+- Template tag for getting flash varaibles in templates
+
+=== 0.17.6 ===
+- Include recipients in posted email status messages
+- Eliminate duplicate posting of both a warning and error message upon failed email
+- Function to get absolute URL from email service
+- Optionally strip HTML from logged messages
+- Strip HTML when logging posted messages
+
+=== 0.17.5 ===
+- Allow email content to be null (for when custom template is used)
+- Include psu_base context in email context by default
+
+=== 0.17.2 ===
+- New function to lookup a person's identity and cache it for the duration of the request
+
+=== 0.17.0 ===
+- Disable gravatar images by default when looking up users.
+- Allow SSO and Impersonated user gravatar by default (can disable with DISABLE_GRAVATAR setting)
+
+=== 0.16.2 ===
+- Allow User() to skip authority checking when only identity is needed
+
+=== 0.16.1 ===
+- Select menu now converts values and options to strings (to handle number select menus)
+- Non-prod indicator updated to allow more control over contrast of the text (Chrome accessibility inspection)
+- Block for breadcrumbs in base template
+- Setting for moving flash messages to bottom of screen (FLASH_MESSAGE_POSITION = 'BOTTOM')
+
+=== 0.16.0 ===
+- Bug fix to SIMULATE_WHEN_POSSIBLE in Finti() that was calling Finti when not needed
+
+=== 0.15.7 ===
+- Override base template of admin site to use psu-base template
+- Put admin site CSS into static-content. Ugly, but usable.
+
+=== 0.15.6 ===
+- New template-tag for decoding IDs from a list of options: {% decode id options_dict %}
+- Bug fix: Audit menu item was displayed to users who may not have access.
+- Removed some debug info from status test page
+
+=== 0.15.4 ===
+- Convert the parameter given in User(parameter) to a string (i.e. when providing a pidm)
+- Prepend page titles with DEV or STAGE in non-prod
+- Prepend DEV or STAGE to email subjects from non-prod
+- Added page titles to many pages that were missing titles
+
+=== 0.15.3 ===
+- New taglib for getting absolute URLs {% absolute_url 'view_name' arg %}
+
+=== 0.15.2 ===
+- Taglib for getting description from term code: {%term_description '202002'%}
+- Replaced default email PSU Logo with a png from static content server
+- Clean default recipient email
+- Allow email template to be provided with or without .html extension
+
+=== 0.15.0 ===
+- Moved authority checking to User object.
+- has_authority() now exists at User level in addition to auth_service and Auth object
+
+=== 0.14.6 ===
+- Enable access to built-in admin pages for superusers
+- Removed some debug logging
+
+=== 0.14.5 ===
+- Add and subtract days from ConvenientDates
+- New local setting option to simulate Finti responses whenever possible
+- Check for ability to proxy on impersonated user, not sso user
+
+=== 0.14.3 ===
+- New logic in string-to-date for handling date stings with month names
+
+=== 0.14.2 ===
+- Option to not allow gravatar image in User()
+- Log error when sending emails
+
+=== 0.14.0 ===
+- utility_service.store() returns stored value for convenient one-liner in calling function
+- Unexpected error function in error_service.py saves error details to DB
+
+=== 0.13.10 ===
+- New header nav-tab option to only show tab when that url is active
+- New options in header nav tab tag allow specifying "#" or a relative path rather than a named url
+
+=== 0.13.8 ===
+- Template-tag for enabling Chosen selects
+
+=== 0.13.7 ===
+- Include current_user (User object) in the context
+
+=== 0.13.6 ===
+- Bug fix when filtering audits by event code
+- Option to convert csv list elements to int in utility_service.csv_to_list()
+
+=== 0.13.5 ===
+- Create audit entries for XSS attempts and for the review of attempts
+
+=== 0.13.4 ===
+- Sort the links in the admin menu
+- New taglib for checking is user should see admin menu
+- Allow individual apps to add admin menu items via their __init__ file
+
+=== 0.13.2 ===
+- Get DynamicRoles from strings (for use in template-tags)
+- Completed some ToDo items (posting error messages on failure of tasks)
+
+=== 0.13.1 ===
+- Notify users of insufficient privileges when redirecting
+- Only cache successful Finti responses
+- Decorator for checking feature toggles
+- Finti console now has feature toggle
+- Grouped some roles/authorities together into the DynamicRole class
+- Corrected some authorities that were out of sync between visible links and accessible pages
+
+=== 0.13.0 ===
+- Updated utility_service.csv_to_list to strip spaces from list items
+- Header tabs taglib now accepts required authorities (ex authorities="admin, developer")
+- Header tabs taglib now accepts feature toggle code (ex feature="admin_script")
+- Cleanup of unused imports
+- Changed some required authorities in admin views
+
+=== 0.12.6 ===
+- Define plugin admin menu items in __init__ for auto-inclusion in the Admin Menu template
+- Moved some psu-base default settings to __init__ to prevent circular import in settings.py
+- Admin menu item taglib now accepts required authorities (ex authorities="admin, developer")
+- Admin menu item taglib now accepts feature toggle code (ex feature="admin_script")
+
+=== 0.11.0 ===
+- Enable caching of Finti responses for offline development
+
+=== 0.10.6 ===
+- Handle passing a datetime instance to ConvenientDate constructor
+- Use timestamp as default string representation of ConvenientDates
+
+=== 0.10.4 ===
+- Store/recall features in utility_service
+- Bug fix in Finti test console
+- Include version number in app stylesheet url to prevent cache issues when styles are updated
+
+=== 0.10.3 ===
+- Templatetag for adding datatables (js and css)
+- Fix pagination style for datatables
+
+=== 0.10.1 ===
+- Allow user to log out or stop impersonating after getting an XSS lock-out
+
+=== 0.10.0 ===
+- Record XSS attempts
+- Lock users out after three XSS attempts
+- Basic interface for reviewing XSS attempts and unlocking users
+
+=== 0.9.0 ===
+- Replaced conditional template-tags with context variables (template-tags didn't work in AWS when not in debug mode)
+- Tags for checking features and authorities replaced by context-setting tags: check_feature, check_authority
+
+=== 0.8.1 ===
+- Updated styles based on Brennen's feedback
+- Check for Finti certificate template tag issue on status/test page
+
+=== 0.8.0 ===
+- WDT Fonts now in static-content repo
+- Debug info from AWS template-tag debugging is still in place
+
+=== 0.7.1 ===
+- Updated Banner downtime messages parameter to Z_BANWEB
+- Error handling around Gravatar call
+- Temporary debug logging around login status template-tag
+
+=== 0.7.0 ===
+- Header navigation tabs collapse into a hamburger icon
+
+=== 0.6.8 ===
+- Template tag for select menus now accepts options as dict or list-of-dicts
+- Implemented nullable and null_label for select menu tag
+
+=== 0.6.6 ===
+- Bug fix for on-prem deployments
+
+=== 0.6.5 ===
+- TemplateTag for formatting phones accepts individual pieces of phone (area, phone, ext)
+
+=== 0.6.3 ===
+- Removed extra "Be Yourself" link that was displayed unconditionally
+- Added app code to template stylesheet to prevent displaying like a different (cached) site
+
+=== 0.6.2 ===
+- TEST is no longer an expected environment. Convert TEST to STAGE and log a warning.
+- Completed partially changed base template from last commit
+
+=== 0.6.0 ===
+- Gave up on sass files in AWS. Copy to static-content server. Not ideal, but can be revisited in the future.
+- Tag lib for development vs non-development content
+
+=== 0.5.12 ===
+- Template tag for formatting PSU phone numbers
+
+=== 0.5.11 ===
+- Overrideable padding around main content via #psu-main-content-block
+- Class for normal text to look like heading without screen reader implications: text-heading
+- Remove dependency on django.utils.six
+
+=== 0.5.7 ===
+- Template tags for header nav tabs and menu items
+- Allow overriding calculated PSU Logo filters via sass_variables.py
+- Also log messages at appropriate level when posting them
+- Post status messages when sending emails (unless disabled via parameter)
+
+=== 0.5.6 ===
+- Header redesigned to follow Jack's design
+- Header template broken down into overridable sub-templates
+
+=== 0.5.5 ===
+- Silence logs during AWS Health Checks
+- Lower the minimum required version of Django for use in Elastic Beanstalk
+
+=== 0.5.2 ===
+- Allow non-word characters in SASS color definitions (for readability)
+
+=== 0.5.1 ===
+- Ability to define SASS colors using hex code
+- Define official PSU colors along with standard web color names
+
+=== 0.5.0 ===
+- Using SASS, with some ability to override the variables via Python settings
+- Flash messages will not display duplicate messages
+- Flash messages older than 3 seconds will be removed when posting new messages
+
+=== 0.4.3 ===
+- Show link for admin script interface in developer menu
+
+=== 0.4.2 ===
+- Had to pin version number for urllib3 to 1.25.3 because 1.25.4 breaks the Finti test server connection
+
+=== 0.4.0 ===
+- Handle both on-prem and AWS apps (URL_CONTEXT)
+- Replace existing settings structure by starting from a custom project template
+
+=== 0.3.0 ===
+- Auto-display Banner downtime messages (includes feature toggle)
+- Created an install script to install psu_base into a new Django app
+
+=== 0.2.6 ===
+- Allow HTML in posted messages
+- Changed Finti console layout
+
+=== 0.2.5 ===
+- Edited the manifest file
+
+=== 0.2.4 ===
+- Function to get attrs and body from a custom tag.
+- Added PyPi deployment instructions to the readme
+
+=== 0.2.3 ===
+- Initial Release

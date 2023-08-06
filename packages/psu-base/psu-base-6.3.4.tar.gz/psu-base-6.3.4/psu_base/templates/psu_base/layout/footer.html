@@ -1,0 +1,19 @@
+{% load base_taglib %}
+<div class="psu-footer">
+    {# LEFT SIDE#}
+    <div class="float-left">&copy; {{now|date:'Y'}}</div>
+    <div class="float-left">&nbsp; | &nbsp;</div>
+    <div class="float-left">
+        <a href="https://www.pdx.edu/about-digital-privacy" target="_blank" rel="noopener">PSU Web Privacy Notice</a>
+    </div>
+
+
+    {# RIGHT SIDE#}
+    <div class="float-right" {%if is_developer%}title="Base v.{% psu_version %}"{%endif%}>{% app_version %}</div>
+    <div class="float-right">&nbsp; &nbsp;</div>
+    {%if is_developer%}
+        <div class="float-right"><span id="psu-time-left"></span></div>
+        <div class="float-right">&nbsp;</div>
+        <div class="float-right">{%include 'psu_base/layout/assets/finti_simulation_toggle.html'%}</div>
+    {%endif%}
+</div>

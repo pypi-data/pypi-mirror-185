@@ -1,0 +1,72 @@
+.ajax-replace{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/** ID CARD ******************************************************************/
+.id_card{
+    width: 300px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    text-align: left;
+
+    display: inline-grid;
+    grid-template-columns: [photo] 100px [text] 1fr;
+    grid-template-rows: [name] 30px [identifiers] auto [footer] 15px;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+}
+.id_card-photo{
+    grid-area: 1 / photo / 5 / text
+}
+.id_card-name {
+    font-family: times, serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.id_card-photo .id_photo{
+    margin: 5px;
+    border: 1px solid #333;
+}
+.id_card-text{
+    font-size: .9em;
+}
+.id_card-footer{
+    margin-top: 10px;
+    font-size: .8em;
+    text-align: right;
+    padding: 0 5px;
+}
+
+/** ID TAG *******************************************************************/
+.id_tag{
+    padding-right: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: left;
+    display: inline-grid;
+    grid-template-columns: [photo] 60px [text] 1fr;
+    grid-column-gap: 5px;
+    overflow: hidden;
+}
+.id_tag-photo{
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+.id_tag-photo .id_photo{
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.id_tag-text{
+    font-size: .8em;
+}

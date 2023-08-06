@@ -1,0 +1,31 @@
+input.editable{
+    border: 0px;
+    border-bottom: 1px dotted #AAA;
+}
+.text-muted input, .text-muted select{
+    color: #777;
+}
+.text-danger input, .text-danger select{
+    color: red;
+}
+.date{
+    font-size: .75em;
+    cursor: default;
+}
+
+
+.modal-dialog {
+    max-width: 800px;
+}
+.modal-body {
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+}
+.modal-body textarea{
+    width: 100%;
+    min-height: 300px;
+    padding: 5px;
+    padding-left: 20px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #DEDEDE;
+}

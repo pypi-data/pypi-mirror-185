@@ -1,0 +1,60 @@
+{% load base_taglib %}
+
+{## If there is a current or future downtime ##}
+{%if next_downtime%}
+
+    {## Downtime may be psu-base or Banner downtime (if feature enabled) ##}
+
+    {%if active_downtime%}
+        {%if next_downtime.downtime_type != "banner"%}
+            <div class="alert alert-danger">
+                {%fa fa-exclamation-triangle%}
+                This site currently undergoing scheduled maintenance.
+                Please check back later.
+            </div>
+
+        {%elif sid and next_downtime.minutes_since_start > 30 %}
+            <div class="alert alert-info">
+                {%fa fa-medkit%}
+                Connected systems just came back up from maintenance.<br />
+                <em class="indent">
+                    If you experience any issues, please contact
+                    <a href="mailto:OIT-webdev-group@pdx.edu">OIT-webdev-group@pdx.edu</a>
+                    to report the issue.
+                </em>
+            </div>
+
+        {%elif sid%}
+            <div class="alert alert-danger">
+                {%fa fa-exclamation-triangle%}
+                Connected systems are scheduled to be down for {{next_downtime.reason}}.<br />
+                <em>This site may go offline at any moment. You should check back later to avoid any potential issues.</em>
+                <br />
+                <br />
+                Our systems are expected to be back online {{next_downtime.until_time_display}}
+                <em class="sm">&nbsp;({{next_downtime.end_cd.humanized}})</em>
+            </div>
+
+        {%else%}
+            <div class="alert alert-danger">
+                {%fa fa-exclamation-triangle%}
+                Our systems are currently down for {{next_downtime.reason}}.<br />
+                <br />
+                Our systems are expected to be back online {{next_downtime.until_time_display}}
+                <em class="sm">&nbsp;({{next_downtime.end_cd.humanized}})</em>
+            </div>
+        {%endif%}
+    {%elif next_downtime.is_future%}
+        <div class="alert alert-info">
+            {%fa fa-clock-o%}
+
+            {%if next_downtime.downtime_type != "banner"%}
+                This site will be going offline in {{next_downtime.minutes_until_start}} minutes.<br />
+                <div class="indent" style="padding-top:7px;"><em>{{next_downtime.reason}}</em></div>
+            {%else%}
+                Our systems will be going offline in {{next_downtime.minutes_until_start}} minutes for {{next_downtime.reason}}.<br />
+                <div class="indent" style="padding-top:7px;"><em>{{next_downtime.message}}</em></div>
+            {%endif%}
+        </div>
+    {%endif%}
+{%endif%}

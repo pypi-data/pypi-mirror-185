@@ -1,0 +1,17 @@
+{# Requires: name, message#}
+
+<div id="sss-{{name}}" class="smokescreen hidden"></div>
+<div id="sss-{{name}}-message" class="smokescreen-spinner hidden">
+    <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i><br />
+    {{message}}
+</div>
+<script type="text/javascript">
+    function show_{{name}}(){
+        $("#sss-{{name}}").removeClass('hidden');
+        $("#sss-{{name}}-message").removeClass('hidden');
+    }
+    function hide_{{name}}(){
+        $("#sss-{{name}}").addClass('hidden');
+        $("#sss-{{name}}-message").addClass('hidden');
+    }
+</script>

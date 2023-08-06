@@ -1,0 +1,35 @@
+{% load base_taglib %}
+<ul class="list-group">
+    <li class="list-group-item">
+        A username or PSU ID will get the best results<br />
+        <div class="indent code">
+            {%if current_user.username%}
+                {{current_user.username}}<br />
+                {{current_user.psu_id}}<br />
+            {%else%}
+                viking123<br />
+                987654321<br />
+            {%endif%}
+        </div>
+    </li>
+
+    <li class="list-group-item">
+        Name searches include partial matches, and work best with first and last name - or at least an initial.<br />
+        <div class="indent code">
+            <s class="text-danger">Sam</s><br />
+            <span class="text-success">Sam J</span><br />
+        </div>
+    </li>
+
+    <li class="list-group-item">
+        You can use '%' as a wildcard to find variations of a name, or if you're not sure of the spelling<br />
+        <div class="indent code">
+            J%quin Ph%nix
+        </div>
+    </li>
+
+    <li class="list-group-item">
+        Students' current names are displayed<br />
+        If you searched for an alternate name, it may have found them and displayed them with their new name.
+    </li>
+</ul>

@@ -1,0 +1,108 @@
+{% extends 'psu_base/layout/no_body.html' %}
+{% load base_taglib %}
+
+{%block title%}Database Connection Error{%endblock%}
+
+{% block pagecontent %}
+
+{% include 'psu_base/layout/header/grid-minimal.html' %}
+{%if active_downtime or next_downtime.minutes_until_start < 10%}
+    {%include "psu_base/layout/messages/psu_base_downtime.html"%}
+{%endif%}
+<br />
+<div style="max-width:800px;margin:0 auto;">
+    {%if active_downtime%}
+        <div class="text-center">
+            <h1>{%fa fa-wrench fa-fw%} System Maintenance</h1>
+            {%if next_downtime.downtime_type == "psu_base"%}
+                This site is offline for scheduled maintenance.  Please check back later.
+            {%else%}
+                Our systems are offline for scheduled maintenance.  Please check back later.
+            {%endif%}
+        </div>
+
+    {%elif next_downtime and next_downtime.minutes_until_start < 5%}
+        <div class="text-center">
+            <h1>{%fa fa-wrench fa-fw%} System Maintenance</h1>
+            {%if next_downtime.downtime_type == "psu_base"%}
+                This site is offline for scheduled maintenance.  Please check back later.
+            {%else%}
+                Our systems are offline for scheduled maintenance.  Please check back later.
+            {%endif%}
+        </div>
+
+    {%else%}
+        <h1>{%fa fa-bomb fa-fw%} Boom!</h1>
+        <div class="indent">
+            <div class="indent text-muted">
+                Something has gone wrong...
+            </div>
+
+            {%if is_development%}
+                <div class="card float-left" style="width:610px;max-width:98%;margin: 5px;">
+                    <div class="card-body">
+                        <b class="card-title" >
+                            {%fa fa-lock fa-fw%} VPN
+                        </b>
+                        <div class="card-text text-muted" style="font-size: .8em;">
+                            <b class="text-danger">You must be on VPN</b> to connect to Finti during development.<br />
+                            Check your VPN connection and try again.
+                        </div>
+                    </div>
+                </div><br style="clear: both;" />
+            {%endif%}
+
+            <div class="card float-left" style="max-width:300px;margin: 5px;">
+                <div class="card-body">
+                    <b class="card-title" >
+                        {%fa fa-wrench fa-fw%} Unexpected Maintenance
+                    </b>
+                    <div class="card-text text-muted" style="font-size: .8em;">
+                        A connected system may be experiencing issues.
+                        Please try back later.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card float-left" style="max-width:300px;margin: 5px;">
+                <div class="card-body">
+                    <b class="card-title" >
+                        {%fa fa-repeat fa-fw%} Try Again
+                    </b>
+                    <div class="card-text text-muted" style="font-size: .8em;">
+                        Maybe this was a random occurrence.  You could try refreshing the page...
+                    </div>
+                </div>
+            </div>
+
+            <div class="card float-left" style="max-width:300px;margin: 5px;">
+                <div class="card-body">
+                    <b class="card-title" >
+                        {%fa fa-life-ring fa-fw%} Help!
+                    </b>
+                    <div class="card-text text-muted" style="font-size: .8em;">
+                        If you continue to receive this message, you can email the Web & Mobile Team at:
+                        <br />
+                        <br />
+                        <div class="text-center">
+                            <a href="mailto:OIT-webdev-group@pdx.edu">OIT-webdev-group@pdx.edu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <br />
+
+            <img src="{%static_content_url%}/images/viking.png"
+                 style="max-width: 50%;margin-top: 10px;"
+                 alt="Image of a cartoon viking"
+            />
+            <br style="clear:both;" />
+            <br />
+        </div>
+    {%endif%}
+
+</div>
+{% include 'psu_base/layout/footer.html' %}
+{% endblock %}

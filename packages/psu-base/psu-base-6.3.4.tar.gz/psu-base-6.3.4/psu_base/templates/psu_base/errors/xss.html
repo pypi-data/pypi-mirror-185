@@ -1,0 +1,20 @@
+{% extends 'psu_base/layout/main.html' %}
+{% load base_taglib %}
+
+{%block title%}Suspicious Input Detected{%endblock%}
+{% block pagecontent %}
+<h1>Suspicious Input Detected</h1>
+<p>
+    Suspicious input was detected in your request.  A record of this request has been logged for review.<br />
+    <br />
+    For immediate assistance, you can email the Web & Mobile Team at
+    <a href="mailto:OIT-webdev-group@pdx.edu">OIT-webdev-group@pdx.edu</a>
+</p>
+
+<h2>Phishing Attacks</h2>
+<p>
+    If you were brought to this page after clicking a link in your email, you may have been the victim of a phishing attempt.<br />
+    <br />
+    Learn how to <a href="https://www.pdx.edu/oit/phishing-attacks" target="_blank" rel="noopener">protect yourself from phishing attacks</a>.
+</p>
+{% endblock %}

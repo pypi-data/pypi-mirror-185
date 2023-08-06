@@ -1,0 +1,139 @@
+{% extends 'psu_base/layout/main.html' %}
+{% load base_taglib %}
+{%block title%}{%app_name%} - Admin Scripts{%endblock%}
+{% block pagecontent %}
+    <h1>Scripts for {%app_name%}</h1>
+    <table class="table table-condensed table-striped">
+        <tr>
+            <th scope="col">Scope</th>
+            <th scope="col">Description</th>
+            <th scope="col">Target URL</th>
+            <th scope="col">Target User</th>
+            <th scope="col">Enabled</th>
+            <th scope="col">Effective</th>
+            <th scope="col">End Date</th>
+            <th scope="col">Audit</th>
+            <th scope="col">Actions</th>
+        </tr>
+
+        {### ADMIN SCRIPTS ###}
+        {% for ss in app_scripts%}
+        <tr>
+            <td>{{ss.app_code}}</td>
+            <td><input type="text" id="description-{{ss.id}}" value="{{ss.description}}" class="editable" onchange="update_script($(this));" /></td>
+            <td><input type="text" id="target_url-{{ss.id}}" value="{{ss.target_url|default:''}}" class="editable" onchange="update_script($(this));" /></td>
+            <td><input type="text" id="target_username-{{ss.id}}" value="{{ss.target_username|default:''}}" class="editable" onchange="update_script($(this));" /></td>
+            <td>
+                {%select_menu id=ss.id value=ss.enabled options=enabled_options onchange="update_script($(this));" %}
+            </td>
+            <td><input type="date" id="eff_date-{{ss.id}}" value="{{ss.eff_date|default:''}}" class="editable" onchange="update_script($(this));" /></td>
+            <td><input type="date" id="end_date-{{ss.id}}" value="{{ss.end_date|default:''}}" class="editable" onchange="update_script($(this));" /></td>
+            <td class="date">
+                {{ss.developer}}<br />
+                <span title="{{ss.last_updated|date:'g:i A'}}">{{ss.last_updated|date:"d-M-Y"|upper}}</span>
+            </td>
+            <td>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="script-{{ss.id}}" tabindex="-1" role="dialog" aria-labelledby="script-{{ss.id}-label}" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <b class="modal-title" id="script-{{ss.id}}-label">{{ss.description}}</b>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                  $(document).ready(function(){
+                                  <textarea name="javascript" id="javascript-{{ss.id}}">{{ss.javascript}}</textarea>
+                                  });
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" onclick="update_script( $('#javascript-{{ss.id}}') );" data-dismiss="modal">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#script-{{ss.id}}">
+                            {%fa fa-file-code-o title="Edit Javascript Code"%}
+                        </button>
+
+
+                {%fa fa-trash-o title="Delete this script" class="btn btn-danger btn-sm" onclick="delete_script($(this), {{ff.id}});"%}
+            </td>
+        </tr>
+        {% endfor %}
+
+        {%set_current_user%}
+        <form action="{% url 'psu:add_script' %}" method="post" id="script-form">
+            {%csrf_token%}
+            <tr>
+                <td>
+                    <select name="app_code">
+                        <option id="{%app_code%}">{%app_name%}</option>
+                        {%if is_global_admin%}
+                            <option value="">Global</option>
+                        {%endif%}
+                    </select>
+                </td>
+                <td><input type="text" name="description" maxlength="100" /></td>
+                <td><input type="text" name="target_url" maxlength="80" /></td>
+                <td><input type="text" name="target_username" maxlength="30" /></td>
+                <td>
+                    {%select_menu name="enabled" id="new" value="N" options=enabled_options %}
+                </td>
+                <td><input type="date" name="eff_date"  min="{%now 'Y-m-d'%}"/></td>
+                <td><input type="date" name="end_date" min="{%now 'Y-m-d'%}" /></td>
+                <td>{{current_user.username}}</td>
+                <td>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <b class="modal-title" id="exampleModalLabel">Modal title</b>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                  $(document).ready(function(){
+                                  <textarea name="javascript" style="width: 100%;min-height:200px;padding-left: 25px;"></textarea>
+                                  });
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal">
+                            {%fa fa-file-code-o title="Edit Javascript Code"%}
+                        </button>
+
+                    <button type="submit" class="btn btn-success btn-sm" title="Add">
+                        <span class="fa fa-plus" aria-hidden="true"></span>
+                        <span class="sr-only">Add</span>
+                    </button>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+    <style>
+        {%include 'psu_base/admin_script/style.css'%}
+    </style>
+
+    <script type="text/javascript">
+        {%include 'psu_base/admin_script/script.js'%}
+    </script>
+{% endblock %}

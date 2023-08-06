@@ -1,0 +1,16 @@
+{% load base_taglib %}
+{%if submenu_allowed%}
+    <b class="header-menu-item header-submenu">
+        <div class="dropright"  onmouseenter="toggle_submenu($(this));" onmouseleave="toggle_submenu($(this));">
+            <div class="dropdown-menu dropdown-content" style="top:-20px;font-weight:normal;">
+                {% for sub_link in menu %}
+                    {% header_nav_menu_item attributes=sub_link %}
+                {% endfor %}
+            </div>
+            <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {%fa fa-fw fa_class=icon%}
+                <span>{{label}}</span>
+            </div>
+        </div>
+    </b>
+{%endif%}

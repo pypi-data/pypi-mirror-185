@@ -1,0 +1,40 @@
+{% load base_taglib %}
+{%if 'FINTI_SIMULATE_WHEN_POSSIBLE'|get_setting:False%}
+    <span style="margin-right: 10px;" id="finti-simulation-toggle">
+        {%if request.session.finti_pause_simulation%}
+            {%fa fa-toggle-off title="Finti simulation is paused" onclick="toggle_simulation();"%}
+        {%else%}
+            {%fa fa-toggle-on title="Finti simulation is on" onclick="toggle_simulation();"%}
+        {%endif%}
+    </span>
+    <script type="text/javascript">
+        function toggle_simulation(){
+            let container = $("#finti-simulation-toggle");
+            let toggle = container.find(".fa");
+            $.ajax({
+                type:   "POST",
+                url:    '{%url 'psu:toggle_simulation'%}',
+                data:   { csrfmiddlewaretoken: '{{ csrf_token }}' },
+                beforeSend:function(){
+                    container.append(getAjaxLoadImage());
+                },
+                success:function(status){
+                    if(status.trim() == 'True'){
+                        toggle.removeClass('fa-toggle-on');
+                        toggle.addClass('fa-toggle-off');
+                        toggle.attr('title', 'Finti simulation is off');
+                    }
+                    else{
+                        toggle.removeClass('fa-toggle-off');
+                        toggle.addClass('fa-toggle-on');
+                        toggle.attr('title', 'Finti simulation is on');
+                    }
+                },
+                error:function(ee){},
+                complete:function(){
+                    clearAjaxLoadImage(container);
+                }
+            });
+        }
+    </script>
+{%endif%}

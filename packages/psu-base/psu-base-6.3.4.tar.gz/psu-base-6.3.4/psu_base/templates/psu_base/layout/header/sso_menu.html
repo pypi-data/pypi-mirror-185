@@ -1,0 +1,145 @@
+{% load base_taglib %}
+
+{%set_auth_object%}
+{%set_current_user%}
+{# AUTHENTICATED USER (LOGGED IN) #}
+{% if logged_in %}
+    <div class="dropdown float-right">
+        <button class="dropbtn">
+            <span class="sso-photo">
+                {%id_photo user=current_user class="id_photo-navbar" %}
+                {%if is_proxying%}
+                    {%id_photo user=auth_object.proxied_user class="id_photo-navbar-proxy"%}
+                {%endif%}
+            </span>
+            <span class="sso-name">{{current_user.display_name}}</span>
+            <i class="fa fa-caret-down" style="font-size: .8em;" title="Expand" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-content">
+            <div class="menu-top">
+                Logged in as: <b class="menu-item dropdown-user">{{ current_user.display_name }}</b>
+            </div>
+
+            {## IMPERSONATION FORM ########################################}
+            {%if can_impersonate %}
+
+                {# Link to Remove Current Impersonation ########}
+                {% if is_impersonating %}
+                    <a class="header-menu-item" href="{% url 'psu:stop_impersonating' %}" onclick="show_sso_auth_spinner();">
+                        <span class="fa fa-undo" aria-hidden="true"></span>
+                        Be Yourself
+                    </a>
+                {% endif %}
+
+                {# Link for impersonation selection form #######}
+                <a class="header-menu-item" onclick="showAuthForm('impersonate');">
+                    <span class="fa fa-user-circle-o" aria-hidden="true"></span>
+                    Impersonate Someone{%if is_impersonating%} Else{%endif%}
+                </a>
+                <div id="sso_impersonation-form-container" class="header-menu-item sso_menu-form hidden">
+                    <form action="{% url 'psu:start_impersonating' %}" method="post" id="sso_impersonation-form" onsubmit="show_sso_auth_spinner();">
+                        {%csrf_token%}
+                        <label class="sr-only" for="sso_impersonation-form-input">Username or PSU ID</label>
+                        <input type="text"
+                                id="sso_impersonation-form-input"
+                                name="impersonation_data"
+                                placeholder="Username or PSU ID"
+                                size="50"
+                        />
+                        <input type="submit" id="sso_impersonation-submit" value="Go" class="sr-only" /><br />
+                        <br />
+                    </form>
+                </div>
+            {% endif %}
+
+            {## PROXY FORM ################################################}
+            {%if can_proxy%}
+                {# Link to Remove Current Proxy ############}
+                {%if is_proxying%}
+                    <a class="header-menu-item" href="{% url 'psu:stop_proxying' %}" onclick="show_sso_auth_spinner();">
+                        <span class="fa fa-undo" aria-hidden="true"></span>
+                        Remove Proxy
+                    </a>
+                {%endif%}
+
+                <a class="header-menu-item" onclick="showAuthForm('proxy');">
+                    <span class="fa fa-users" aria-hidden="true"></span>
+
+                    Select
+                    {%if is_not_proxying%}a{%endif%}
+                    {%if is_proxying%}Another{%endif%}
+                    Proxy
+                </a>
+
+                {# Impersonation Selection Form ################}
+                <div id="proxy-form-container" class="header-menu-item sso_menu-form hidden">
+                    <form action="{% url 'psu:start_proxying' %}" method="post" id="proxy-form" onsubmit="show_sso_auth_spinner();">
+                        {%csrf_token%}
+                        <label class="sr-only" for="proxy-form-input">Username or PSU ID</label>
+                        <input type="text"
+                                id="proxy-form-input"
+                                name="proxy_data"
+                                placeholder="Username or PSU ID"
+                        />
+                        <input type="submit" id="proxy-submit" value="Go" class="sr-only" /><br />
+                        <br />
+                    </form>
+                </div>
+            {%endif%}
+            <a class="header-menu-item" href="{% url 'cas:logout' %}">
+                <span class="fa fa-sign-out" aria-hidden="true"></span>
+                Log Out
+            </a>
+        </div>
+        {%smokescreen_spinner 'sso_auth_spinner' 'Refreshing Authentication Data' %}
+    </div>
+
+{# NON-AUTHENTICATED USER (LOGGED OUT) #}
+{% else %}
+    <a class="login" href="{% url 'cas:login' %}">
+        <i class="fa fa-sign-in" title="login" aria-hidden="true"></i>
+        Log In
+    </a>
+{% endif %}
+
+<script type="text/javascript">
+    /** Proxy Functions *******************************/
+    //Add key-press event to input
+    $('#sso_impersonation-form-input').keydown(function(e){
+        if(e.keyCode === 9){
+            $('#sso_impersonation-form').submit();
+        }
+    });
+    $('#proxy-form-input').keydown(function(e){
+        if(e.keyCode === 9){
+            $('#proxy-form').submit();
+        }
+    });
+
+    function showAuthForm(proxy_type){
+        if(proxy_type === 'impersonate'){
+            if ($('#sso_impersonation-form-container').is(':visible')) {
+                $('#sso_impersonation-form-container').addClass('hidden');
+            } else {
+                $('#sso_impersonation-form-container').removeClass('hidden');
+                $('#sso_impersonation-form-input').focus();
+                try{
+                    $('#proxy-form-container').addClass('hidden');
+                }
+                catch(ee){}
+            }
+        }
+        else{
+            if ($('#proxy-form-container').is(':visible')) {
+                $('#proxy-form-container').addClass('hidden');
+            } else {
+                $('#proxy-form-container').removeClass('hidden');
+                $('#proxy-form-input').focus();
+                try{
+                    $('#sso_impersonation-form-container').addClass('hidden');
+                }
+                catch(ee){}
+            }
+        }
+    }
+</script>

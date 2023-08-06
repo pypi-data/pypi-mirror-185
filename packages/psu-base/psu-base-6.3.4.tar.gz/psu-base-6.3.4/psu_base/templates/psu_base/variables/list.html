@@ -1,0 +1,116 @@
+{% extends 'psu_base/layout/main.html' %}
+{% load base_taglib %}
+
+{%block title%}{%app_name%} - Variables{%endblock%}
+
+{% block pagecontent %}
+    <h1>Variables for {%app_name%}</h1>
+    <table class="table table-condensed table-striped" id="variable_table">
+        <tr>
+            <th scope="col">Variable</th>
+            <th scope="col">Description</th>
+            <th scope="col">Data Type</th>
+            <th scope="col">Value</th>
+            <th scope="col">Activity Date</th>
+            <th scope="col">Updated By</th>
+            <th scope="col"><span class="sr-only">Actions</span></th>
+        </tr>
+
+        {% for variable in variables%}
+        <tr>
+            <td><span class="code">{{variable.code}}</span></td>
+            <td>
+                <input type="text" id="title-{{variable.id}}" value="{{variable.title|default:''}}" onchange="update_variable($(this));" class="form-control" />
+            </td>
+            <td>
+                {{variable.data_type}}
+            </td>
+            <td>
+                <input type="text" value="{{variable.current_value|default:''}}" id="value-{{variable.id}}"  onchange="update_variable($(this));" class="form-control" />
+                {%if variable.previous_value%}
+                <em class="text-muted sm">Previously: {{variable.previous_value}}</em>
+                {%endif%}
+            </td>
+            <td>
+                {{variable.last_updated_cd.banner_date}}<br />
+                {{variable.last_updated_cd.time}}
+            </td>
+            <td>
+                {{variable.updated_by}}
+            </td>
+            <td class="date"><span class="fa fa-trash-o" title="Delete this variable" onclick="delete_variable($(this), {{variable.id}});"></span></td>
+        </tr>
+        {% endfor %}
+    </table><br />
+    <br />
+
+
+    <style>
+        #variable_table input{
+            width: 100%;
+        }
+        .text-muted input, .text-muted select{
+            color: #777;
+        }
+        .text-danger input, .text-danger select{
+            color: red;
+        }
+        .date{
+            font-size: .75em;
+            cursor: default;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        function update_variable(element){
+            let html_id = element.attr('id');
+            let pieces = html_id.split('-');
+            let prop = pieces[0];
+            let id = pieces[1];
+            let value = element.val();
+
+            $.ajax({
+                type:   "POST",
+                url:    "{% url 'psu:update_variable' %}",
+                data:   {
+                    id: id, prop: prop, value: value,
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                beforeSend:function(){
+                    element.css('border-color', 'orange');
+                },
+                success:function(data){
+                    element.css('border-color', 'green');
+                    element.val(data)
+                },
+                error:function(){
+                    element.css('border-color', 'red');
+                },
+                complete:function(){}
+            });
+        }
+
+        function delete_variable(element, id){
+
+            $.ajax({
+                type:   "POST",
+                url:    "{% url 'psu:delete_variable' %}",
+                data:   {
+                    id: id, csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+                beforeSend:function(){
+                    element.after(getAjaxLoadImage());
+                },
+                success:function(data){
+                    element.closest('tr').remove();
+                },
+                error:function(){
+                    element.addClass('ajax-error');
+                },
+                complete:function(){}
+            });
+        }
+    </script>
+
+{% endblock %}

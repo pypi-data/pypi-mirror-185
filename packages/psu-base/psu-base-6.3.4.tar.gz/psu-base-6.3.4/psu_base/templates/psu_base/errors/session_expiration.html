@@ -1,0 +1,12 @@
+{% extends 'psu_base/layout/main.html' %}
+{% load base_taglib %}
+
+{%block title%}Session Expired{%endblock%}
+
+{% block pagecontent %}
+<h1>Your Session Has Expired</h1>
+<p>
+    {%fa fa-hourglass-end%}
+    Your session has expired due to a period of inactivity.
+</p>
+{% endblock %}

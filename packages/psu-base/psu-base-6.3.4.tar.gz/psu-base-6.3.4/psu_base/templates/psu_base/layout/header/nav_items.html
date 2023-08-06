@@ -1,0 +1,22 @@
+{% load base_taglib %}
+
+<nav class="navbar navbar-expand-sm">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-tabs">
+        {%fa fa-bars%}<span class="sr-only">Toggle Navigation Menu</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-tabs">
+        <ul class="navbar-nav nav nav-fill ">
+
+            {### YOUR NAVIGATION TABS GO HERE. (Samples provided below) ###}
+            {% header_nav_tab url="/" label="Home" icon="fa-home" icon_only=True %}
+            {% header_nav_tab url="psu:test" label="Status" %}
+            {% header_nav_tab url="psu:finti" label="Finti Console" optional=True authorities="developer" feature="finti_console" %}
+
+            {### DEVELOPER MENU ###}
+            <li class="nav-item header-nav-item">
+                {# You may override the admin menu items by copying the template into your project #}
+                {% include 'psu_base/layout/header/admin_menu.html' %}
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,66 @@
+{% load base_taglib %}
+{% load sass_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {%if is_development%}
+            DEV:
+        {%elif is_non_production%}
+            STAGE:
+        {%endif%}
+        {% block title %}Portland State University{% endblock %}
+    </title>
+    <link rel="shortcut icon" href="{%static_content_url%}/images/favicon.ico" type="image/x-icon">
+    {%jquery%}
+    {%bootstrap%}
+    {%font_awesome version='4'%}
+
+    {% wdt_stylesheet 'legacy.css' %}
+    {% wdt_stylesheet 'main.css' %}
+    {% wdt_stylesheet 'fonts.css' %}
+    {% wdt_javascript "ajax.js" %}
+    {% wdt_javascript 'utils.js' %}
+    {% wdt_javascript 'flash-messages.js' %}
+    {% wdt_javascript 'filter-generator.js' %}
+    {% jquery_confirm %}
+
+    {% if use_local_static %}
+        <link href="{%sass_src 'css/template.scss'%}?app={%app_code%}&v={%app_version%}" rel="stylesheet" type="text/css" />
+    {% else %}
+        <link href="{%static_content_url%}/wdt/apps/{%app_code%}/template.css?app={%app_code%}&v={%app_version%}" rel="stylesheet" type="text/css">
+    {% endif %}
+
+    <style>
+        {%include 'psu_base/layout/assets/template.css'%}
+    </style>
+
+    {% block head %}{% endblock %}
+    {% block scripts %}{% endblock %}
+</head>
+
+<body>
+    {% include 'psu_base/layout/header/grid.html' %}
+    {% include 'psu_base/layout/messages/psu_base_downtime.html' %}
+
+    <div id="breadcrumb-container" class="breadcrumbs">{% block breadcrumbs %}{% endblock %}</div>
+    {% include 'psu_base/layout/messages/container.html' %}
+
+    <div id="psu-main-content-block">
+    {% block pagecontent %}{% endblock %}
+    </div>
+
+    {% include 'psu_base/layout/footer.html' %}
+
+    <script type="text/javascript">
+        {%include 'psu_base/layout/assets/template.js'%}
+    </script>
+
+    {## Run AdminScripts if enabled ##}
+    {%admin_script%}
+</body>
+</html>
+

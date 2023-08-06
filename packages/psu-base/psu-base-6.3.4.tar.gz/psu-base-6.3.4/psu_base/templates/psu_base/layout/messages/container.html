@@ -1,0 +1,40 @@
+<div id="message-container">
+  {% include 'psu_base/layout/messages/posted_messages.html' %}
+</div>
+<script>
+  $(document).ajaxComplete(function(e, xhr, settings){
+    if (!settings.bypassGlobalComplete){
+      flash_messages("{% url 'psu:messages' %}");
+    }
+  });
+</script>
+<style>
+{%if flash_message_position == 'BOTTOM'%}
+    #message-container{
+        position: fixed;
+        min-width: 300px;
+        bottom: 20px;
+        right: 0;
+    }
+{%elif flash_message_position == 'ANIMATE'%}
+    #message-container{
+        position: fixed;
+        min-width: 300px;
+        bottom: 20px;
+        right: 0;
+    }
+    .alert-flash-msg{
+        position: fixed;
+        display: none;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .bottomright {
+        top: 100%;
+        left: 100%;
+        -webkit-transform: translate(-100%, -10%);
+    }
+{%endif%}
+</style>

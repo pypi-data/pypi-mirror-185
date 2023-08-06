@@ -1,0 +1,173 @@
+{% extends 'psu_base/layout/main.html' %}
+{% load base_taglib %}
+
+{% block pagecontent %}
+<div style="padding: 25px;">
+    <h1>Finti Console</h1>
+
+     {% if authorized %}
+        <form action="#">
+            {# API URL #}
+            <div style="text-align:center">
+                <label for="url" class="sr-only">Finti Endpoint:</label>
+                <span class="small text-muted" style="white-space:nowrap;">{{ base_url }}/</span>
+                <input class="finti" id="url" name="api_url" type="text" value="{{api_path}}" size="40"
+                       style="border: 0px; border-bottom: 1px solid #777;margin-bottom: 10px;"
+                />
+            </div>
+
+            {# CHECKBOXES #}
+            <div style="text-align:center">
+                <label style="margin: 0 20px;">
+                    <input class="finti" id="metadata" name="metadata" type="checkbox" {%if metadata%}checked{%endif%}/>
+                    Include Metadata
+                </label>
+
+                <label style="margin: 0 10px;">
+                    <input class="finti" id="use_token" type="checkbox" {%if token%}checked{%endif%} onclick="toggleToken( $(this) );" />
+                    Specify Finti Token
+                </label>
+            </div>
+
+            {# FINTI TOKEN (optional) #}
+            <div class="{%if not token%}hidden{%endif%}" id="token_container">
+                <div class="card" style="max-width:450px;margin: 25px auto;">
+                    <div class="card-body" style="background-color: #DEDEDE">
+                        <b class="card-title" ><label for="token">Finti Token</label></b>
+                        <p class="card-text text-muted" style="font-size: .8em;">
+                            To use a token other than the token specified in your local_settings.py file,
+                            enter the token below:
+                        </p>
+                        <input  class="finti"
+                                id="token" name="token"
+                                type="text" style="width:100%;"
+                                placeholder="Token from local_settings"
+                                value="{{token}}"
+                        />
+                    </div>
+                </div>
+            </div>
+
+
+            {# METHOD and SUBMIT #}
+            <div style="text-align:center;margin: 25px 0">
+                <span class="small">
+                    <label for="http_method">Method:</label>
+                    <select id="http_method" name="http_method">
+                        <option value="GET" selected>GET</option>
+                        <option value="POST">POST</option>
+                        <option value="PUT">PUT</option>
+                        <option value="DELETE">DELETE</option>
+                    </select>
+                </span>
+
+                <span>
+                    <button class='btn btn-primary btn-sm' type="submit">Call API</button>
+                </span>
+            </div>
+
+
+            {# POST WARNING #}
+            <div class="text-danger hidden" id="api_warning" style="text-align:center;">
+                {%fa fa-bell title="Warning"%} PUT/POST/DELETE calls will change the database content
+            </div>
+
+            {# PAYLOAD #}
+            <div id="payload_input" class="hidden">
+                <div class="card" style="max-width:800px;margin: 25px auto;">
+                    <div class="card-body" style="background-color: #DEDEDE">
+                        <b class="card-title" ><label for="payload">Request Payload</label></b>
+                        <p class="card-text text-muted" style="font-size: .8em;">
+                            Payload should be in JSON format.
+                            You are responsible for the correctness of the payload data.
+                        </p>
+                        <textarea class="finti" id="payload" name="payload" cols="50" rows="3" style="width:100%"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+
+        {# RESPONSE / RESULT #}
+        <div style="padding: 25px;">
+            <h2>API Response:</h2>
+            <textarea class="finti" style="width:100%" rows="10">{{ content }}</textarea>
+            <br/>
+            <br/>
+            <h3>API Response's Keys:</h3>
+            <ul>
+                {% for key, value in content.items %}
+                <li>{{ key }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+
+     {# IF ACCESS DEINED #}
+     {% else %}
+        <div class="text-danger" style="text-align:center;margin-bottom: 0px;">
+            {%fa fa-lock style="font-size: 20em;" title="Access Denied"%}<br />
+        </div>
+     {% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+    $(document).ready(function() {
+
+        $('#http_method').on('change', function() {
+            toggleMethod();
+        });
+
+        toggleMethod();
+        selectInput();
+    });
+
+    function selectInput(){
+        $('#url').focus()
+        document.getElementById('url').setSelectionRange(0, 999);
+    }
+
+    function toggleMethod(){
+        var payload_container = $('#payload_input');
+        var warning_container = $('#api_warning');
+        var selected = $('select[name=http_method]').val();
+
+        if (selected === 'POST' || selected === 'PUT') {
+            payload_container.show();
+        }
+        else {
+            payload_container.hide();
+        }
+
+        if (selected !== 'GET') {
+            warning_container.show();
+        }
+        else {
+            warning_container.hide();
+        }
+    }
+
+    function toggleToken(e){
+        if(e.is(':checked')){
+            $('#token_container').show();
+        }
+        else{
+            $('#token_container').hide();
+        }
+
+    }
+
+</script>
+<style>
+    form.finti {
+        width: 100%;
+    }
+    input[type=text].finti {
+        min-width: 270px;
+    }
+    textarea.finti {
+        width: 90%;
+    }
+</style>
+{% endblock %}

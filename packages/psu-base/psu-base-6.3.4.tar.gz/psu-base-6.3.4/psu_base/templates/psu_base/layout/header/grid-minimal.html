@@ -1,0 +1,56 @@
+{% load base_taglib %}
+<div class="header-container">
+
+    {# External Links #}
+    <div class="header-links">
+
+    </div>
+
+    {# Unused Space #}
+    <div class="header-space">&nbsp;</div>
+
+    {# SSO Menu #}
+    <div class="header-menu" id="sso-menu">
+
+    </div>
+
+
+    {# PSU Logo #}
+    <div class="header-logo">
+        <picture>
+            <source srcset="{% static_content_url %}/images/psu_knot.png" media="(max-width: 768px)" class="psu-logo">
+            {% image src="psu_logo.png" alt="PSU Logo" class="psu-logo" %}
+        </picture>
+    </div>
+
+
+    {# Site Title #}
+    <div class="header-title">
+        {% include 'psu_base/layout/header/site_title.html' %}
+    </div>
+
+
+    {# Search Bar #}
+    <div class="header-search">
+        {% include 'psu_base/layout/header/search_bar.html' %}
+    </div>
+
+
+    {# Navigation Tabs #}
+    <div class="header-nav">
+        {% include 'psu_base/layout/header/nav_items.html' %}
+    </div>
+
+
+    <!-- Hamburger Icon -->
+    <div class="menu-responsive">
+        <a href="javascript:void(0);" class="icon nav-icon">
+            <i style="line-height:40px;font-size:1.2em;" class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Navigation Menu</span>
+        </a>
+    </div>
+</div>
+
+<script>
+    {%include 'psu_base/layout/header/header.js'%}
+</script>

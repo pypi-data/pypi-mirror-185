@@ -1,0 +1,74 @@
+{% load base_taglib %}
+
+{# The following only displays for developers and administrators #}
+{%check_admin_menu %}
+{% if has_admin_menu %}
+    <div class="dropdown float-right">
+        <button class="dropbtn">
+            {%fa fa-cog fa-fw title="Admin Menu"%}
+            <i class="fa fa-caret-down" title="Expand" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-content">
+            <div class="menu-top">
+                <span style="font-weight: bold;">{%app_name%}</span>
+                {% if is_developer %}
+                    <a href="{%url 'psu:versions'%}" class="float-right" style="color:#333;text-decoration:none;padding:3px;width:auto;">
+                        {%app_version%}
+                    </a>
+                {% endif %}
+            </div>
+
+            {# Plugin Items #}
+            {% for plugin_link in plugin_admin_links %}
+                {%if "menu" in plugin_link%}
+                    {%header_nav_submenu plugin_link%}
+                {%else%}
+                    {% header_nav_menu_item attributes=plugin_link %}
+                {%endif%}
+            {% endfor %}
+        </div>
+    </div>
+    <script type="text/javascript">
+        function toggle_submenu(el){
+            let menu_content = el.find(".dropdown-menu");
+            if(menu_content.is(":visible")){
+                menu_content.hide();
+            }
+            else{
+                menu_content.show();
+            }
+        }
+        function show_active_submenu(){
+            $(".header-menu-item-active").closest(".dropright").closest(".header-menu-item").addClass("header-menu-item-active");
+        }
+        function hide_empty_submenus(){
+            $(".header-submenu").each(function(){
+                let submenu = $(this);
+                let menu_items = submenu.find(".dropdown-menu").find("a.header-menu-item");
+                if(menu_items.length == 0){
+                    submenu.remove();
+                }
+            });
+        }
+        function remove_ungrouped_duplicate_links(){
+            let submenu_links = $(".header-submenu").find(".dropdown-menu").find("a.header-menu-item");
+            submenu_links.each(function(){
+                let url = $(this).attr("href");
+                if(url){
+                    //Get matching links not in a submenu
+                    $(`a[href="${url}"]`).filter(function(){
+                        return $(this).hasClass("header-menu-item");
+                    }).filter(function(){
+                        return $(this).closest(".dropright").length == 0;
+                    }).remove();
+                }
+            });
+
+        }
+        $(document).ready(function(){
+            hide_empty_submenus();
+            show_active_submenu();
+            remove_ungrouped_duplicate_links();
+        });
+    </script>
+{% endif %}
