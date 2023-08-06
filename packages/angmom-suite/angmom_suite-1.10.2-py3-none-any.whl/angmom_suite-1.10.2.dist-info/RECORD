@@ -1,0 +1,13 @@
+angmom_suite/__init__.py,sha256=LjpODOqcVyCNENrBw5iEbVDzi9lYeQMUS5nMhS9zt3Y,134
+angmom_suite/__version__.py,sha256=gMMdvnrID8tb_3QzG4-vNG6nCKxjV8v7VDWuI4UjRMU,107
+angmom_suite/barrier.py,sha256=2mYpMbYR_Td-RmchgV3Jq9q5mIB_nJ2PJPDuLP7gSNo,9496
+angmom_suite/basis.py,sha256=J0vFW1X-Crp0AV9WVeGaH1tubhQnHo2cpoIyYZFTcCI,22997
+angmom_suite/cli.py,sha256=zJV8xXwR2SWzZBEa7FHvAd7ffpJPqe3MINVWYVJHtJ4,3830
+angmom_suite/crystal.py,sha256=2A978a6QG3BVOJuknfTgK9OWq8UcLqQdB7w9lUwuC24,34607
+angmom_suite/multi_electron.py,sha256=3qjaKqx0PXFlWwoMg1cF46OY57Hjcd7SVDjCvdmdEt4,14051
+angmom_suite/utils.py,sha256=PFSnfo5I5_4wiscifqMTSbQ8_3p8BcZsraT46Cef82I,3414
+angmom_suite-1.10.2.dist-info/LICENSE,sha256=8Qt6ttdTzPf7wDSos2lFRAkJfKi9xBkcE4Bx2oYcfeU,35072
+angmom_suite-1.10.2.dist-info/METADATA,sha256=HTVvjt6V2vGYNzhpQu1w9ebvoBmKfcBJZqWx5UiatWY,3846
+angmom_suite-1.10.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+angmom_suite-1.10.2.dist-info/top_level.txt,sha256=npKKNnlNUN8NaTZDR_p36_PINzebCMnpM1GU1rX02iw,13
+angmom_suite-1.10.2.dist-info/RECORD,,
