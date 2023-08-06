@@ -1,0 +1,13 @@
+**/.DS_Store
+.venv
+*__pycache__
+build/
+*.vscode
+.idea/
+*.env
+*.log
+*_credentials.json
+agc_apiclient_test.json
+agc_apiclient_xw.json
+api_client_project.json
+api_client_team.json
