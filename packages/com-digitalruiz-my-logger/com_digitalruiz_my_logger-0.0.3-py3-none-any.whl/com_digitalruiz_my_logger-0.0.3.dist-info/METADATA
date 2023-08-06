@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: com-digitalruiz-my-logger
+Version: 0.0.3
+Summary: A small package to set up logging on other scripts
+Author-email: Reyes Ruiz <reyes@digitalruiz.com>
+Project-URL: Homepage, https://github.com/reyesruiz/my_logger
+Project-URL: Bug Tracker, https://github.com/reyesruiz/my_logger/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# My Logger 
+
+This is a simple module to setup logging.
+
+example use:
+
+```
+from com_digitalruiz_my_logger import my_logger
+
+LOGGER = my_logger.set_logger(module_name=sys.argv[0], loglevel='INFO')
+```
