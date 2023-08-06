@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+a_cv2_text_effects/README.MD
+a_cv2_text_effects/__init__.py
+a_cv2_text_effects/requirements.txt
+a_cv2_text_effects/thirdparty.json
+a_cv2_text_effects.egg-info/PKG-INFO
+a_cv2_text_effects.egg-info/SOURCES.txt
+a_cv2_text_effects.egg-info/dependency_links.txt
+a_cv2_text_effects.egg-info/requires.txt
+a_cv2_text_effects.egg-info/top_level.txt
