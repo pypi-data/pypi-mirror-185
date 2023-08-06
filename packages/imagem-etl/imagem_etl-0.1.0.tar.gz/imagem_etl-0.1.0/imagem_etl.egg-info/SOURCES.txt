@@ -1,0 +1,9 @@
+README.md
+setup.py
+imagem_etl/__init__.py
+imagem_etl/main.py
+imagem_etl.egg-info/PKG-INFO
+imagem_etl.egg-info/SOURCES.txt
+imagem_etl.egg-info/dependency_links.txt
+imagem_etl.egg-info/requires.txt
+imagem_etl.egg-info/top_level.txt

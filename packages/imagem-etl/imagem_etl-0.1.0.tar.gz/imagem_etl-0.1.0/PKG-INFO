@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: imagem_etl
+Version: 0.1.0
+Summary: ETL da Imagem (Utilities)
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# ETL
+-----
+
+O módulo ETL tem por finalidade integrar dados de sistemas variados, sendo que este processo é baseado em três etapas principais:
+ - Extração (Extract): Módulo que extrai as informações de uma fonte de dados.
+ - Transformação (Transform): Módulo que converte os valores de acordo com as regras de negócio.
+ - Carregamento (Load): Módulo que carrega determinada saída de dados.
+
+## Extração
+Este módulo realiza a extração de dados de uma fonte nos formatos:
+ - Excel (XLS)
+ - DATABASE (ESRI)
+ - Conexão SQL (SQL)
+
+## Transformação
+Este módulo realiza a convesão dos valores baseado nas regras de negócio especificadas nos arquivos de configuração. As transformações realizadas são:
+ - Tipo do campo
+
+## Carregamento
+Este módulo realiza a carga dos dados no formato de saída especificado. Os formatos de saída adotados são:
+ - DATABASE (ESRI)
+
