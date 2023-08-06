@@ -1,0 +1,8 @@
+README.md
+setup.py
+./scr
+scriptum.egg-info/PKG-INFO
+scriptum.egg-info/SOURCES.txt
+scriptum.egg-info/dependency_links.txt
+scriptum.egg-info/requires.txt
+scriptum.egg-info/top_level.txt
