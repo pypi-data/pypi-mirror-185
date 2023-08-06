@@ -1,0 +1,5 @@
+pronunciation-dictionary>=0.0.5
+word-to-pronunciation>=0.0.1
+ordered-set>=4.1.0
+pypinyin<0.48,>=0.47.1
+tqdm
