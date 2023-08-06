@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tracecode-build
+Version: 0.10.0
+Home-page: https://github.com/nexB/tracecode-build
+Author: nexB Inc.
+Author-email: info@aboutcode.org
+License: Apache-2.0
+Keywords: tracecode,strace,tracing,build
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+License-File: NOTICE
+License-File: AUTHORS.rst
+
+TraceCode Dynamic build tracer

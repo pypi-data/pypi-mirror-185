@@ -1,0 +1,2 @@
+[console_scripts]
+tracecode = tracecode.tracecode:cli

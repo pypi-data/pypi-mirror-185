@@ -1,0 +1,18 @@
+graft src
+graft tests
+
+include *.LICENSE
+include NOTICE
+include *.ABOUT
+include *.toml
+include *.yml
+include *.rst
+include setup.*
+include configure*
+include requirements*
+include .git*
+
+recursive-include etc *
+recursive-include docs *
+
+global-exclude *.py[co] __pycache__ *.*~
