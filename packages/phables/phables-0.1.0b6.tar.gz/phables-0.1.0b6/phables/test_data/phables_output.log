@@ -1,0 +1,50 @@
+2023-01-12 21:04:03,116 - INFO - Welcome to Phables: Phage bubbles resolve bacteriophage genomes in viral metagenomic samples.
+2023-01-12 21:04:03,116 - INFO - Input arguments: 
+2023-01-12 21:04:03,116 - INFO - Assembly graph file: /Users/vijinimallawaarachchi/Documents/phables/phables/test_data/assembly_graph.gfa
+2023-01-12 21:04:03,116 - INFO - Assembly paths info file: /Users/vijinimallawaarachchi/Documents/phables/phables/test_data/assembly_info.txt
+2023-01-12 21:04:03,116 - INFO - Unitig coverage file: /Users/vijinimallawaarachchi/Documents/phables/phables/test_data/edge_coverages.tsv
+2023-01-12 21:04:03,116 - INFO - BAM files path: /Users/vijinimallawaarachchi/Documents/phables/phables/test_data
+2023-01-12 21:04:03,116 - INFO - Unitig .hmmout file: /Users/vijinimallawaarachchi/Documents/phables/phables/test_data/edges.fasta.hmmout
+2023-01-12 21:04:03,116 - INFO - Unitig phrog annotations file: /Users/vijinimallawaarachchi/Documents/phables/phables/test_data/phrogs_annotations.tsv
+2023-01-12 21:04:03,116 - INFO - Minimum length of unitigs to consider: 2000
+2023-01-12 21:04:03,116 - INFO - Minimum coverage of paths to output: 10
+2023-01-12 21:04:03,117 - INFO - Minimum unitig count to consider a component: 200
+2023-01-12 21:04:03,117 - INFO - Maximum number of paths to resolve for a component: 10
+2023-01-12 21:04:03,117 - INFO - Length threshold to consider single copy marker genes: 0.2
+2023-01-12 21:04:03,117 - INFO - Minimum alignment score for phrog annotations: 90
+2023-01-12 21:04:03,117 - INFO - Minimum sequence identity for phrog annotations: 0.3
+2023-01-12 21:04:03,117 - INFO - Output folder: /Users/vijinimallawaarachchi/Documents/phables/phables/test_data
+2023-01-12 21:04:03,118 - INFO - Total number of vertices in the assembly graph: 6
+2023-01-12 21:04:03,118 - INFO - Total number of links in the assembly graph: 3
+2023-01-12 21:04:03,230 - INFO - Total number of components found: 3
+2023-01-12 21:04:03,890 - DEBUG - my_count: 0
+2023-01-12 21:04:03,891 - DEBUG - number of unitigs: 3
+2023-01-12 21:04:03,891 - DEBUG - [0, 1, 2]
+2023-01-12 21:04:03,891 - DEBUG - clean_node_count: 3
+2023-01-12 21:04:03,892 - DEBUG - Original candidate_nodes: [0, 1, 2]
+2023-01-12 21:04:03,892 - DEBUG - Identified candidate source_sinks from BFS: ['edge_2-']
+2023-01-12 21:04:03,892 - DEBUG - Identified source_sink from BFS: 1
+2023-01-12 21:04:03,892 - DEBUG - Ordered candidate_nodes: [1, 0, 2]
+2023-01-12 21:04:03,893 - DEBUG - edge_list_indices: {1: 'edge_1-', 0: 'edge_2-', 2: 'edge_3-'}
+2023-01-12 21:04:03,893 - DEBUG - G_mfd: {'Nodes': 3, 'list of edges': [(1, 3, 189, 4742), (0, 1, 193, 4742), (0, 2, 353, 4858), (2, 3, 367, 4858)], 'subpaths': {0: [1, 3], 1: [0, 1], 2: [0, 2], 3: [2, 3]}}
+2023-01-12 21:04:04,858 - DEBUG - Number of paths found: 0
+2023-01-12 21:04:04,858 - DEBUG - No paths detected
+2023-01-12 21:04:04,858 - DEBUG - my_count: 1
+2023-01-12 21:04:04,859 - DEBUG - number of unitigs: 1
+2023-01-12 21:04:04,859 - DEBUG - [3]
+2023-01-12 21:04:04,859 - DEBUG - phage_comp_1_cycle_1	10320
+2023-01-12 21:04:04,875 - DEBUG - my_count: 2
+2023-01-12 21:04:04,876 - DEBUG - number of unitigs: 2
+2023-01-12 21:04:04,876 - DEBUG - [4, 5]
+2023-01-12 21:04:04,876 - DEBUG - phage_comp_2_cycle_1	3102
+2023-01-12 21:04:04,878 - INFO - Total number of cyclic components found: 2
+2023-01-12 21:04:04,878 - INFO - Total number of cyclic components resolved: 1
+2023-01-12 21:04:04,878 - INFO - Circular unitigs identified: 1
+2023-01-12 21:04:04,878 - INFO - Total number of cyclic components found including circular unitigs: 3
+2023-01-12 21:04:04,878 - INFO - Total number of components resolved: 2
+2023-01-12 21:04:04,878 - INFO - Total number of genomes resolved: 2
+2023-01-12 21:04:04,878 - INFO - Resolved genomes can be found in /Users/vijinimallawaarachchi/Documents/phables/phables/test_data/resolved_paths.fasta
+2023-01-12 21:04:04,879 - INFO - Resolved genome information can be found in /Users/vijinimallawaarachchi/Documents/phables/phables/test_data/resolved_genome_info.txt
+2023-01-12 21:04:04,880 - INFO - Resolved component information can be found in /Users/vijinimallawaarachchi/Documents/phables/phables/test_data/resolved_component_info.txt
+2023-01-12 21:04:04,880 - INFO - Elapsed time: 1.7629661560058594 seconds
+2023-01-12 21:04:04,880 - INFO - Thank you for using Phables!
