@@ -1,0 +1,53 @@
+# Based on the template from https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Python.gitlab-ci.yml
+
+stages:
+  - build
+  - publish
+
+# Official language image. Look for the different tagged releases at:
+# https://hub.docker.com/r/library/python/tags/
+image: python:3.11.1
+
+# Change pip's cache directory to be inside the project directory since we can
+# only cache local items.
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  TWINE_USERNAME: __token__
+  TWINE_PASSWORD: $PYPI_API_TOKEN
+
+build-package:
+  stage: build
+
+  cache:
+    paths:
+      - .cache/pip
+      - venv/
+
+  before_script:
+    - python --version # For debugging
+    - pip install virtualenv
+    - virtualenv venv
+    - source venv/bin/activate
+
+  script:
+    # install the package itself including all requirements
+    - python -m pip install .
+    - pip list
+
+    # create the source distribution to upload to PyPI
+    - pip install build
+    - python -m build --sdist
+
+  artifacts:
+    paths:
+      # - dist/*.whl
+      - dist/*.tar.gz
+
+upload-package-to-pypi:
+  stage: publish
+  script:
+    - pip install twine
+    - twine upload dist/*
+  only:
+    refs:
+      - master
