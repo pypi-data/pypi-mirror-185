@@ -1,0 +1,6 @@
+setup.py
+CALCULADORAMINHA/__init__.py
+MODULOS_TESTS.egg-info/PKG-INFO
+MODULOS_TESTS.egg-info/SOURCES.txt
+MODULOS_TESTS.egg-info/dependency_links.txt
+MODULOS_TESTS.egg-info/top_level.txt
