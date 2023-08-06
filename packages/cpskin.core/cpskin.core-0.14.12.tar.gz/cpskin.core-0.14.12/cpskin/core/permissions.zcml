@@ -1,0 +1,23 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  i18n_domain="cpskin">
+
+  <permission
+    id="cpskin.siteadministrator"
+    title="CPSkin: Site administrator"
+    description=""
+    />
+
+  <permission
+    id="cpskin.editkeywords"
+    title="CPSkin: Edit keywords"
+    description=""
+    />
+
+    <permission
+    id="cpskin.accessrestapiusersvocabulary"
+    title="CPSkin: Access REST API users vocabulary"
+    description=""
+    />
+
+</configure>
