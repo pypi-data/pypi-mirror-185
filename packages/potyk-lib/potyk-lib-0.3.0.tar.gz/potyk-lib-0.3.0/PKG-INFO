@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: potyk-lib
+Version: 0.3.0
+Summary: 
+Author: potykion
+Author-email: potykion@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: phonenumbers (>=8.13.0,<9.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
