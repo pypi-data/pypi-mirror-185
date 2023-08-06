@@ -1,0 +1,9 @@
+psend/.gitignore,sha256=ON-1vyNJ2YPSyHoIshupDWwgQBHMYSAJynvKa-13Sqw,14
+psend/__init__.py,sha256=MrBmQboOkSwxhsDgCtkGM2dfLHbaM_yD92O3eaof75w,33
+psend/__main__.py,sha256=_gqvOPOqH-tyC6zagPCTWB3y6UM-k9aVXGUiwU1UF8g,76
+psend/functions.py,sha256=eoh5um4-1DbHhmUZG6y6EBwY7t2JbFyjPS8IGKXeSec,1859
+psend-0.1.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+psend-0.1.8.dist-info/METADATA,sha256=HFzIwmWmMCisnXgdveYoDonTjLmKhjPwhDim39r01Kk,2422
+psend-0.1.8.dist-info/WHEEL,sha256=SlW3K6T2LNPbN9-QzFT1pS72PIuYOJEoe_9_lIJkxrk,92
+psend-0.1.8.dist-info/entry_points.txt,sha256=7G-fgcPSWpU9g4RjoHCn9qvgO7ox4dTAEDyCbZkG36M,46
+psend-0.1.8.dist-info/RECORD,,
