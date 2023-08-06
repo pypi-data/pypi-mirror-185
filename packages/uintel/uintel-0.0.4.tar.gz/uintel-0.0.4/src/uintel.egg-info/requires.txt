@@ -1,0 +1,13 @@
+matplotlib
+colour
+slack_sdk
+sqlalchemy
+sqlalchemy_utils
+psycopg2
+pyyaml
+tqdm
+paramiko
+boto3
+geopandas
+esridump
+requests
