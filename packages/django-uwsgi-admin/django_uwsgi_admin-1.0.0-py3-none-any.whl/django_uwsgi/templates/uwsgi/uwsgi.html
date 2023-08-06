@@ -1,0 +1,17 @@
+{% extends "admin/change_list.html" %}
+
+{% load i18n %}
+
+{% block breadcrumbs %}
+    <div class="breadcrumbs">
+        <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+        &rsaquo; <a href="{% url 'admin:app_list' app_label='django_uwsgi' %}">{% trans "uWSGI" %}</a>
+        &rsaquo; {% trans "Status" %}
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div id="content-main">
+        {% include "uwsgi/panel.html" %}
+    </div>
+{% endblock %}

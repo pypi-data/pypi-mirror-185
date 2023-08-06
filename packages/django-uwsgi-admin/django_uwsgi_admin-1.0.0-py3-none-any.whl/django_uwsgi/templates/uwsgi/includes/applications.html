@@ -1,0 +1,28 @@
+<thead>
+<tr>
+    <th>#</th>
+    <th>modifier1</th>
+    <th>mountpoint</th>
+    <th>interpreter</th>
+    <th>callable</th>
+    <th>chdir</th>
+    <th>requests</th>
+    <th>exceptions</th>
+</tr>
+</thead>
+<tbody>
+{% for w in uwsgi.workers %}
+    {% for app in w.apps %}
+        <tr>
+            <td>{{ app.id }}</td>
+            <td>{{ app.modifier1 }}</td>
+            <td>{{ app.mountpoint.decode|pprint }}</td>
+            <td>{{ app.interpreter }}</td>
+            <td>{{ app.callable }}</td>
+            <td>{{ app.chdir.decode|pprint }}</td>
+            <td>{{ app.requests }}</td>
+            <td>{{ app.exceptions }}</td>
+        </tr>
+    {% endfor %}
+{% endfor %}
+</tbody>
