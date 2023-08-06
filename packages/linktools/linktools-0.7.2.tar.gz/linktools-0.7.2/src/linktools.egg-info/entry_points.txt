@@ -1,0 +1,20 @@
+[console_scripts]
+at-adb = linktools.scripts.android.adb:script.main
+at-agent = linktools.scripts.android.agent:script.main
+at-app = linktools.scripts.android.app:script.main
+at-debug = linktools.scripts.android.debug:script.main
+at-frida = linktools.scripts.android.frida:script.main
+at-info = linktools.scripts.android.info:script.main
+at-intent = linktools.scripts.android.intent:script.main
+at-objection = linktools.scripts.android.objection:script.main
+at-pidcat = linktools.scripts.android.pidcat:script.main
+at-top = linktools.scripts.android.top:script.main
+ct-grep = linktools.scripts.common.grep:script.main
+ct-shell = linktools.scripts.common.shell:script.main
+ct-tools = linktools.scripts.common.tools:script.main
+it-frida = linktools.scripts.ios.frida:script.main
+it-objection = linktools.scripts.ios.objection:script.main
+it-scp = linktools.scripts.ios.scp:script.main
+it-sib = linktools.scripts.ios.sib:script.main
+it-ssh = linktools.scripts.ios.ssh:script.main
+lt = linktools.__main__:script.main
