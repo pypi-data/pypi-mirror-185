@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+substreams/__init__.py
+substreams/substream.py
+substreams.egg-info/PKG-INFO
+substreams.egg-info/SOURCES.txt
+substreams.egg-info/dependency_links.txt
+substreams.egg-info/requires.txt
+substreams.egg-info/top_level.txt
