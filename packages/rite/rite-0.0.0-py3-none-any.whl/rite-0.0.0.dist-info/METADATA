@@ -1,0 +1,134 @@
+Metadata-Version: 2.1
+Name: rite
+Version: 0.0.0
+Summary: Starling Bearing is a Spatial Python Framework
+Home-page: https://www.scape.agency
+Download-URL: https://www.scape.agency
+Author: Lars van Vianen
+Author-email: lars@scape.agency
+Maintainer: Scape Agency
+Maintainer-email: info@scape.agency
+License: MIT
+Project-URL: documentation, https://rite.pypa.io/
+Project-URL: repository, https://github.com/scape-agency/rite
+Keywords: starling,rite,geometry,geospatial
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+<header>
+<p align="center">
+    <img src=".github/images/rite_logo.png" width="20%" height="20%" alt="rite Logo">
+</p>
+<h3 align='center'>Python Utility Package</h3>
+</header>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/scaoe-agency/rite/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=bug_report.yml">Report a Bug</a>
+  |
+  <a href="https://github.com/scaoe-agency/rite/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Afeature-request%2CHelp+wanted+%F0%9F%AA%A7&template=feature_request.yml">Request a Feature</a>
+  |
+  <a href="https://github.com/scaoe-agency/rite/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Aquestion&template=question.yml">Ask a Question</a>
+  |
+  <a href="https://github.com/scaoe-agency/rite/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Aenhancement&template=suggestion.yml">Make a Sugestion</a>
+  |
+  <a href="https://github.com/scaoe-agency/rite/discussions">Start a Discussion</a>
+</div>
+
+<br/>
+
+<div align="center">
+
+[![license](https://img.shields.io/github/license/scaoe-agency/rite?color=green&label=license&style=flat-square)](LICENSE.txt)
+[![website](https://img.shields.io/website?color=blue&down_color=red&down_message=offline&label=website&style=flat-square&up_color=green&up_message=online&url=https%3A%2F%2Fwww.rite.tools)](https://www.rite.tools)
+
+![python](https://img.shields.io/pypi/pyversions/rite?color=blue&label=python&style=flat-square)
+![wheel](https://img.shields.io/pypi/wheel/rite?color=green&label=wheel&style=flat-square)
+
+![stars](https://img.shields.io/github/stars/scaoe-agency/rite?color=blue&label=stars&style=flat-square)
+![forks](https://img.shields.io/github/forks/scaoe-agency/rite?color=blue&label=forks&style=flat-square)
+![downloads](https://img.shields.io/github/downloads/scaoe-agency/rite/total?color=blue&label=downloads&style=flat-square)
+![issues](https://img.shields.io/github/issues/scaoe-agency/rite?label=issues&style=flat-square)
+![sponsors](https://img.shields.io/github/sponsors/scaoe-agency?color=blue&label=sponsors&style=flat-square)
+![contributors](https://img.shields.io/github/contributors/scaoe-agency/rite?color=blue&label=contributors&style=flat-square)
+
+</div>
+
+---
+
+<br/>
+
+<details open="open">
+<summary>Table of Contents</summary>
+
+- [About](#about)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+- [Authors](#authors)
+- [License](#license)
+- [Contributing](#contributing)
+- [Disclaimer](#disclaimer)
+
+</details>
+
+
+## About
+
+
+**rite** is a Python Utility Package.
+
+
+
+## Quick Start
+
+### Installation
+
+```
+pip install rite
+```
+```
+pip install rite==0.0.0
+```
+[PyPi](https://pypi.org/project/rite/)
+
+## Usage
+
+...
+
+
+
+## Authors
+
+**rite** is an open-source project by [Scape Agency](https://www.scape.agency "Scape Agency website").
+
+## Scape Agency
+
+Scape Agency is a spatial innovation collective that dreams, discovers and designs the everyday of tomorrow. We blend design thinking with emerging technologies to create a brighter perspective for people and planet. Our products and services naturalise technology in liveable and sustainable –scapes that spark the imagination and inspire future generations.
+
+- website: [scape.agency](https://www.scape.agency "Scape Agency website")
+- github: [github.com/scape-agency](https://github.com/scape-agency "Scape Agency Github")
+
+
+## License
+
+Except where otherwise noted, **rite** is licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT "MIT License").
+
+
+## Contributing
+
+We'd love for you to contribute and to make **rite** even better than it is today!
+Please refer to the [contribution guidelines](CONTRIBUTING.md) for information.
+
+
+## Disclaimer
+
+**THIS SOFTWARE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
