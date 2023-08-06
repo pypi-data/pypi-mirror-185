@@ -1,0 +1,9 @@
+numpy
+yt-dlp
+opencv-python
+tqdm
+pydub
+numba
+requests
+ffmpeg-python
+pyaudio
