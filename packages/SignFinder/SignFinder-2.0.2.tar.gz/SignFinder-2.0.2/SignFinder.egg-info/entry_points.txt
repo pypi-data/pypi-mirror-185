@@ -1,0 +1,2 @@
+[console_scripts]
+sf2 = SignFinder.__main__:cli_start

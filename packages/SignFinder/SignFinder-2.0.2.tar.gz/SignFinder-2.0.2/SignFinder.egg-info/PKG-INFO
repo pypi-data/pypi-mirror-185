@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: SignFinder
+Version: 2.0.2
+Summary: Antivirus evasion toolkit
+Home-page: https://github.com/d3ranged/sf2
+Author: d3ranged
+Author-email: d3ranged_blog@proton.me
+License: Unlicense
+Keywords: security malware hacking pentesting antivirus elf pe av evasion bypass hacking-tool crypter fud antivirus-evasion redteam undetectable
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Russian
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Assemblers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Disassemblers
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+
+This is PRE-RELEASE!
+
+Check this: https://github.com/d3ranged/sf2
