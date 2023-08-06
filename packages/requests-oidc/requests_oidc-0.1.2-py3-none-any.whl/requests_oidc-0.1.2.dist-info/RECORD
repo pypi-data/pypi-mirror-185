@@ -1,0 +1,8 @@
+requests_oidc/__init__.py,sha256=5syQtY0g_NBg6-1iYlGM-CNBhVELFteHGgv_IXizRQI,39
+requests_oidc/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requests_oidc/catcher.py,sha256=bWJY-5b8WKq81D-AYwwFn-A8YMGrznAzCppnOpNC95I,877
+requests_oidc/discovery.py,sha256=3rSF-I_TnEgh-KKVrDkDZgPmqc3ERE_6VNmXru-KMBM,483
+requests_oidc/factory.py,sha256=UIDt31_tdRN5e0pbq4e-h0hbN-owTOxYslD_pdPA9ok,2920
+requests_oidc-0.1.2.dist-info/METADATA,sha256=sXLw9S6mB4dloTSUTGK5g1mR3-P_IZBYg2Za3n_CWR4,3640
+requests_oidc-0.1.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+requests_oidc-0.1.2.dist-info/RECORD,,
