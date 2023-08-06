@@ -1,0 +1,6 @@
+obspy
+PyQt5
+swprocess
+numpy
+scipy
+matplotlib
