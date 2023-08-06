@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0",
+            "numpy",
+            "matplotlib",
+            "sympy",
+            "feynman",
+            "scipy",
+            "matchingtools"]
+
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qftify"
+version = "0.0.1"
+description = "A python package for QFT calculations"
+readme = "README.md"
+authors = [{ name = "A T M Ragib Raihan", email = "atmragibraihan@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["QFT", "Feynman", "Quantum Field Theory"]
+
+requires-python = ">=3.10"
+
+[project.urls]
+"Homepage" = "https://test.pypi.org/project/qftify"
