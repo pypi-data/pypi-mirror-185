@@ -1,0 +1,2 @@
+[nbdev]
+semantic_segmentation_augmentations = semantic_segmentation_augmentations._modidx:d
