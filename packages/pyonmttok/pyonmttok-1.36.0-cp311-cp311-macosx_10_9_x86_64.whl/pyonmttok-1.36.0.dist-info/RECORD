@@ -1,0 +1,8 @@
+pyonmttok-1.36.0.dist-info/RECORD,,
+pyonmttok-1.36.0.dist-info/WHEEL,sha256=3l2sFXXhmwn6VCsPMLBU2FgMCTSVOaoCxrz-Nap45oI,111
+pyonmttok-1.36.0.dist-info/top_level.txt,sha256=wuxOdfXNXj98ECi-4TSLRm_bpRYIccmePnOKlVvxvfY,10
+pyonmttok-1.36.0.dist-info/METADATA,sha256=UquhOKteJ5EkRjUb609DoAwYUbbNRF4YwlWyzwJN60U,12602
+pyonmttok/version.py,sha256=hHSTZVqqWlpCeiZq8w-JLhryZX8W-t7WRHLV70hvtgg,51
+pyonmttok/_ext.cpython-311-darwin.so,sha256=oWvsgF6C1WBlSJCdyqgYR_3PdLxU7eJe2f-J5pRVXwA,973904
+pyonmttok/__init__.py,sha256=_EYMWbfsy9vsR13gblByKK1UOy8XoevDfH7Ew6_yC6k,1496
+pyonmttok/.dylibs/libOpenNMTTokenizer.dylib,sha256=rRQaKMLR4Ozk56wcee9hjVXn_7VUGsLeq-cjTNUv9EY,34856848
