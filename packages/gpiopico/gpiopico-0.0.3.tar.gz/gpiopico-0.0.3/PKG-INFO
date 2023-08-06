@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: gpiopico
+Version: 0.0.3
+Summary: Easy way to connect hardware and use gpio in raspberry pico
+Home-page: https://github.com/irvyncornejo/hwlib/tree/main/raspberry-pico/rpi-gpio-pico
+Author: Irvyn Cornejo
+Author-email: irvyncornejo@gmail.com
+License: MIT
+Keywords: raspberry-pi pico,rpi-pico
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# GPIO CONTROL IN RASPBERRY PI PICO
+## Hardware control
+### Input Devices
+- Touch Sensor
+- Potenciometer
+- Joystick
+- PIR
+- LM35
+### Ouput Devices
+- LED
+- Reley
+- Solid state relay
+- Motor DC
+- RGB
+- Servo motor
+
+
+```python
+from gpiopico import Led
+
+led1 = Led(2, True)
+led1.change_pwm(125) #value 0-255
+```
+
