@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: customt5
+Version: 1.0.0
+Summary: T5 train with custome dataset
+Author-email: Sushil Ranjan <nikuraj006@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+Install requirements using "pip install -r requirements.txt"
