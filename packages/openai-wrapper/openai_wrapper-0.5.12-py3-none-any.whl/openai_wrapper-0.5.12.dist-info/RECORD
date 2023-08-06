@@ -1,0 +1,6 @@
+openai_wrapper/__init__.py,sha256=8RLEfUYoN99m0Oil57AKA9jDALR0rUYs62VCj6fpCc8,135
+openai_wrapper/completion.py,sha256=48NrlhpFXfsCcsuh0okLuM1lhJPPSnFAPt_xLcVWsZc,13148
+openai_wrapper/config.py,sha256=kLu-oQ5Ih_Kxv7x2QLNiwNyl2a72VIf_UG3-_xklUmo,2053
+openai_wrapper-0.5.12.dist-info/METADATA,sha256=C2N9K6kmLOQ-rllii3glWxGUaby-0CsQguWj_h8dklw,962
+openai_wrapper-0.5.12.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+openai_wrapper-0.5.12.dist-info/RECORD,,
