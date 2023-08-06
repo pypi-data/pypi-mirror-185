@@ -1,0 +1,24 @@
+{
+  "robot_name": "fetch",
+  "urdf_md5sum": "338459c27088a928a7a3b08023474fbb",
+  "joint_names": [
+    "torso_lift_joint",
+    "shoulder_pan_joint",
+    "shoulder_lift_joint",
+    "upperarm_roll_joint",
+    "elbow_flex_joint",
+    "forearm_roll_joint",
+    "wrist_flex_joint",
+    "wrist_roll_joint",
+    "head_pan_joint",
+    "head_tilt_joint"
+  ],
+  "ignore_link_names": [],
+  "valid_loss": 0.01513225546781905,
+  "time_stamp": 1672601900.3374653,
+  "model_config": {
+    "n_dof": 10,
+    "n_width": 200,
+    "n_depth": 3
+  }
+}

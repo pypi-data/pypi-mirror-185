@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: selcol
+Version: 0.0.3
+Summary: self collision network
+Home-page: UNKNOWN
+Author: Hirokazu Ishida
+Author-email: h-ishida@jsk.imi.i.u-tokyo.ac.jp
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
