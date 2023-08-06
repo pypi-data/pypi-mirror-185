@@ -1,0 +1,3 @@
+[console_scripts]
+conda-diff-tar = conda_mirror.diff_tar:main
+conda-mirror = conda_mirror.conda_mirror:cli
