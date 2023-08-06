@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: snaplib
+Version: 0.1.0
+Summary: Data preprocessing lib
+Home-page: https://github.com/kolasdevpy/snaplib
+Author: Artyom Kolas
+Author-email: artyom.kolas@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1>snaplib</h1>
+<h2>A simple data preprocessing tools.</h2>
+
+____________________________________________
+
+# user guide
+
+**[Kaggle Notebook](https://www.kaggle.com/code/artyomkolas/data-preprocessing-lib?scriptVersionId=116077080)**   
+<https://www.kaggle.com/code/artyomkolas/data-preprocessing-lib?scriptVersionId=116077080>
+
+
