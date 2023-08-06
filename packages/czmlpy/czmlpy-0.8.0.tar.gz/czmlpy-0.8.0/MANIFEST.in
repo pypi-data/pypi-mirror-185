@@ -1,0 +1,4 @@
+include LICENSE
+
+graft src
+global-exclude *.py[cod] __pycache__ *.so
