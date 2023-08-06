@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: tqc
+Version: 0.2.3
+Summary: Command line interface for the TinyQueries Compiler
+Home-page: https://github.com/querytechnology/tqc-py
+Author: Wouter Diesveld
+Author-email: wouter@querytechnology.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: colorama
+Requires-Dist: yaml
+
+# tqc-py
+
+Command line interface written in Python for the TinyQueries&trade; Compiler
+
+## Installation
+
+- Make sure you have an API key for the TinyQueries&trade; Compiler - you can get one here: https://tinyqueries.com/signup.
+- Add the API key as `TINYQUERIES_API_KEY` to your ENV variables.
+- Make sure you have Python and pip installed
+- run `pip install tqc`
+
+## Setup TinyQueries&trade; for your project
+
+It is assumed you have a folder for your project. It can be an empty folder or a folder which contains other code as well.
+- Create a folder inside your project folder (for example `tinyqueries`) in which you put your TinyQueries source queries
+- Create a folder inside your project folder (for example `sql`) in which you want the compiler to put your compiled queries
+- Create a config file `tinyqueries.json` or `tinyqueries.yaml` in the root of your project folder. For example:
+```yaml
+project:
+  label: my-project-label
+compiler:
+  dialect: mysql
+  input: ./tinyqueries
+  output: ./sql
+```
+
+For a more detailed description of config files please check https://compile.tinyqueries.com
+
+## Compile your queries
+
+Once you have setup your project you just have to execute
+```
+tqc
+```
+from your project folder each time you want to compile your source files
+
+
