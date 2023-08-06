@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nn2go
+Version: 0.0.0
+Summary: Pre-trained neural networks ready for deployment.
+Home-page: https://github.com/nn2go/nn
+Author: nn2go team
+Author-email: jordan.welsman@hotmail.co.uk
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jutils
+
+# nn
+Pre-trained neural networks ready for deployment.
