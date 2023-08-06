@@ -1,0 +1,13 @@
+tasksource/__init__.py,sha256=u35R0iTM9yMZ4KqR5QdGee2YKaZCGTmaIE12uYDLna8,69
+tasksource/access.py,sha256=R-IYB87iKPhwC-mx88B7-SPGNvZZRlTCY0cJ-yxMTvQ,3003
+tasksource/preprocess.py,sha256=IkngxmxQoe4MJ9-2XTTXBV8QifSoalld-nyHgySp4Hc,7602
+tasksource/tasks.py,sha256=9xcgjOzxhe8zYvxKWGxtj1QQX0YupP2YFJyytTeUFlI,54400
+tasksource/metadata/__init__.py,sha256=4XhSd-TrTn0qB0eK07Md14GowZaVhUvYaqavc-Px8MQ,1585
+tasksource/metadata/bigbench_groups.py,sha256=enAxyJ56B91hv2H_H3TGhnUfEnCJ0zp92y2Jk7hk4qY,3612
+tasksource/metadata/blimp_groups.py,sha256=G38wFKuS8tKbfD2SyXtoQ12Fr4TdKylOqg_K9f-tP0g,2721
+tasksource/metadata/popularity.py,sha256=deyOwbZXiHnIWV4mREfk2rTogX2kQcgVs8U-Y_vSaRw,25139
+tasksource-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tasksource-0.0.4.dist-info/METADATA,sha256=CjchP_NXfLpznNrTB0ckzZVhEzGOHZTb7yeESHEiPBg,3507
+tasksource-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tasksource-0.0.4.dist-info/top_level.txt,sha256=8-uTiGc-igKr8xJziOSHwNnlI9xStn2k3XwaV-AuAs4,11
+tasksource-0.0.4.dist-info/RECORD,,
