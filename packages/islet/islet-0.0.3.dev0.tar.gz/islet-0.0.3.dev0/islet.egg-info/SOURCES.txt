@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+islet/__init__.py
+islet/main.py
+islet/utils.py
+islet.egg-info/PKG-INFO
+islet.egg-info/SOURCES.txt
+islet.egg-info/dependency_links.txt
+islet.egg-info/top_level.txt
+islet/tests/__init__.py
