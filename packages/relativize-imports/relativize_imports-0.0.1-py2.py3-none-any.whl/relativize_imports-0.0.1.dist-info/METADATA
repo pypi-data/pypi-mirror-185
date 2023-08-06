@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: relativize-imports
+Version: 0.0.1
+Summary: Automatically convert python absolute imports to relative.
+Home-page: https://github.com/reallyliri/relativize-imports
+Author: ReallyLiri
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+relativize-imports
+================
+
+Automatically convert python absolute imports to relative.
+
+Inspired and adapted from [MarcoGorelli/absolufy-imports](https://github.com/MarcoGorelli/absolufy-imports).
+
+## Installation
+
+```console
+$ pip install relativize-imports
+```
+
+## Usage as a pre-commit hook
+
+See [pre-commit](https://github.com/pre-commit/pre-commit) for instructions
+
+Sample `.pre-commit-config.yaml`:
+
+```yaml
+-   repo: https://github.com/reallyliri/relativize-imports
+    rev: v0.0.1
+    hooks:
+    -   id: relativize-imports
+```
+
+## Command-line example
+
+```console
+$ relativize-imports
+$ relativize-imports mypackage/myfile.py
+```
+
+```diff
+- from mypackage import __version__
++ from . import __version__
+```
+
+## Build and Publish
+
+```shell
+pip wheel .
+
+```
+
