@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "grippy"
+version = "0.0.1"
+description = ""
+authors = ["Erik Hasse <erik.g.hasse@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+grpcio-tools = "^1.51.1"
+pydantic = "^1.10.4"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pytest = "~=6.0"
+ipykernel = "^6.20.1"
+flake8 = "^6.0.0"
+flake8-pyproject = "^1.2.2"
+
+[tool.flake8]
+per-file-ignores = "__init__.py:F401"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
