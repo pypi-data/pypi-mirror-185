@@ -1,0 +1,3 @@
+[console_scripts]
+pydesigner = designer.pydesigner:main
+
