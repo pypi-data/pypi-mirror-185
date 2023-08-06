@@ -1,0 +1,12 @@
+comfun/__init__.py,sha256=Qs_-hKYmRchkkR1diqS7AHe2liq4aAgaYMNyOWnQu5A,75
+comfun/file_ops.py,sha256=DywZkD8a7KYECwlAwGag34lrZDJ2GUcvzB6SJDXIjQc,724
+comfun/geoloc.py,sha256=9043Yi72-A5mmXlkTHmCLh7OeU2bgsEqtnQGotmr-NI,1451
+comfun/img_ops.py,sha256=NCMp1kfLAFwq-WUiQPDlre1_r8FwVYCO7veAhFpRT7o,1029
+comfun/pdf_ops.py,sha256=7sVrm8j3NqGpGAdgNqXGKqAPPgUhQKMIKf0ik85pcJQ,3161
+comfun/trigonometry.py,sha256=I3tCkYn2HcjO71UzpcMsKycXei9g-d7NJmmoHDlhSuo,1462
+comfun/ukraine_reports.py,sha256=sMQMytTE6WgCsFgVs9ZxY10xnmKbR0BymoizQ7MpLgk,1012
+comfun/utils.py,sha256=y70acbqtbps7DkmkDQqa7Av_TspWvq-lhhQXDmsgTEg,1053
+comfun-0.1.1.dist-info/METADATA,sha256=NO0kjLgisrsfu7eQa9r0YLcTCBQy7snQWvQMvttIy84,232
+comfun-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+comfun-0.1.1.dist-info/top_level.txt,sha256=LZPHFYuklTbMb8NIIULOdXOlmdJ2er45b0-UUhRUch0,7
+comfun-0.1.1.dist-info/RECORD,,
