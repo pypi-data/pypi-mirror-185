@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: testnph1
+Version: 0.0.3
+Summary: A package for calculaor
+Home-page: UNKNOWN
+Author: nikhesh
+Author-email: nikhesh1999@gmail.com
+License: UNKNOWN
+Description: install cal
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
