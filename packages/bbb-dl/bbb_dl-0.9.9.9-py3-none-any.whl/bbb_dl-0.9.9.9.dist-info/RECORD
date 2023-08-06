@@ -1,0 +1,13 @@
+bbb_dl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bbb_dl/batch.py,sha256=hjuNhhMDAvku81vk-mv7sGbVIC_O6YoplQRQ-0szf-A,11524
+bbb_dl/ffmpeg.py,sha256=Wull3Y5G8Sm2gpwAc_VoEZAl_bqZjdO02fQmju_bPUU,10091
+bbb_dl/main.py,sha256=WBzeFWUyxiLMYH4_ZlSvWqWvbMONXcGUUKycSM12eVI,54538
+bbb_dl/utils.py,sha256=V80iHA7UQ7xhiRwX_xLSGEIGv8xQJ2_B0NCsQLtkJ0I,12414
+bbb_dl/version.py,sha256=B5z_9_gb9Y23edTYmMd5vMHm42XpEY5zeEnftXCf6Mk,24
+bbb_dl-0.9.9.9.dist-info/AUTHORS,sha256=4MaLPvR3Vve1W0HapD8zLF2MyzY0qDoQ-ck9YvosZ6g,421
+bbb_dl-0.9.9.9.dist-info/LICENSE,sha256=tRwtTRj1yGv5K9lBbymjdH5sgPT7qTA7lbU3Qi00AMY,1093
+bbb_dl-0.9.9.9.dist-info/METADATA,sha256=iKtXyyukd-aEK-u8ixyJEL9SBsYgo3aeZ4HR3vrR4tU,9617
+bbb_dl-0.9.9.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bbb_dl-0.9.9.9.dist-info/entry_points.txt,sha256=SinCIpP82WuE-5-ly6vUjIToukP5z3_gXdr66WT4an8,77
+bbb_dl-0.9.9.9.dist-info/top_level.txt,sha256=FDJlQVlLgO6oDBtCWr9A2RiEW-JlaN0Aps0xQlzwhbw,7
+bbb_dl-0.9.9.9.dist-info/RECORD,,
