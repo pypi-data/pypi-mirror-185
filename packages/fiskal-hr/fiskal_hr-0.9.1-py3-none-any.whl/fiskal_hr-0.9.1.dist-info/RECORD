@@ -1,0 +1,16 @@
+fiskalhr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fiskalhr/enums.py,sha256=rpIpxmo0PyLry45_XZuiQSjZdArGdBaAdxmJnsGG8Q0,8919
+fiskalhr/errors.py,sha256=vyp965mplyPBHzEqyAkAcxRtz7YbsK8XgjEfHZIe3fo,1113
+fiskalhr/invoice.py,sha256=4sG0qKGanODDdK43RA-6AxRzEIiIFqakhrc7bY1Nex8,19916
+fiskalhr/item.py,sha256=7mXdSjKfTqY3EB0xrE4fNa4S-HqwQ_SDN1ZNIHczibg,1638
+fiskalhr/meta.py,sha256=0A25tujGnu2_MiwmaMczWvO-APuTQi5gBUbGlS3tz98,1424
+fiskalhr/oib.py,sha256=r1GvB9z0abFldyzliV3p6V0781sPszf5mU9mUDsQ0dE,1257
+fiskalhr/signature.py,sha256=1xdXua0GQpyeMLY5YP0_mYwGyC4WJweaAqW4pCVT4dc,7192
+fiskalhr/utils.py,sha256=_cHdZJuv47gQ-JeiLDgMABUHSxp-NOoiT3TCvblN1Tk,369
+fiskalhr/ws.py,sha256=rvylksIORMxO3qnuNJYdrClrVn5VeYeMgZxw8Ls4dgk,6279
+fiskalhr/zki.py,sha256=A67J6LbdVzNxc8v1FRQ9nU6JeZJwXlkZip0AaEXAHVE,1732
+fiskal_hr-0.9.1.dist-info/LICENSE,sha256=52s_nwI83t3a7KZK21KKzmbAo32QO4RUQF155zsuWLA,1076
+fiskal_hr-0.9.1.dist-info/METADATA,sha256=mshXK144GfcHKlISFKrnZy5vy9CrjurheH93x_PUjAg,4117
+fiskal_hr-0.9.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fiskal_hr-0.9.1.dist-info/top_level.txt,sha256=Rh96ojHRR3ex_oNtUvTtHSsb-a3LXfZamD7cvSZdZI0,9
+fiskal_hr-0.9.1.dist-info/RECORD,,
