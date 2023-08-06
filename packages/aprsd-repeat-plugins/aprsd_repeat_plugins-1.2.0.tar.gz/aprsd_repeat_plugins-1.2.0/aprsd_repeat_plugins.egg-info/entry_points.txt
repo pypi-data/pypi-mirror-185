@@ -1,0 +1,2 @@
+[oslo.config.opts]
+aprsd_repeat_plugins.conf = aprsd_repeat_plugins.conf.opts:list_opts

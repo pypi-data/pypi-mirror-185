@@ -1,0 +1,5 @@
+pbr
+aprsd>=3.0.0
+requests
+pyproj
+oslo.config
