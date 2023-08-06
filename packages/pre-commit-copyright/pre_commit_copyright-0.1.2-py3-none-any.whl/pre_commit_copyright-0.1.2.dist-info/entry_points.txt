@@ -1,0 +1,3 @@
+[console_scripts]
+pre-commit-copyright=pre_commit_copyright:main
+
