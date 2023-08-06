@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "twitter_threader"
+version = "1.5.1"
+authors = [{name = "Iyanuoluwa Ajao", email = "me@iyanuashiri.com"}]
+description = "Twitter Threader is a library to manage threads on Twitter. You can GET and POST threads on Twitter"
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+
+[project.urls]
+Home = "https://github.com/iyanuashiri/twitter-threader"
