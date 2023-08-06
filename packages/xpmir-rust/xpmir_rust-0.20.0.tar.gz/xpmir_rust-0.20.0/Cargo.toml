@@ -1,0 +1,53 @@
+[package]
+name = "xpmir-rust"
+version = "0.20.0"
+edition = "2021"
+authors = ["Benjamin Piwowarski <benjamin@piwowarski.fr>"]
+license = "GPL-2.0-or-later"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "xpmir_rust"
+crate-type = ["cdylib", "rlib"]
+bench = false
+test = false
+
+
+[[bench]]
+name = "sparse"
+harness = false
+
+# [[bench.dependencies.helpers]]
+# path = "libs/helpers"
+
+[[test]]
+name = "sparse"
+
+[dependencies]
+pyo3 = { version = "0.16.5", features = ["extension-module", "abi3-py38"] }
+numpy = "0.16.2"
+ndarray = "0.15.4"
+serde = { version = "1.0", features = ["derive"] }
+ciborium = { version = "0.2" }
+simple-error = "0.2.3"
+byteorder = "1.4.3"
+sucds = "0.5.0"
+log = { version = "0.4.17", features = ["max_level_debug", "release_max_level_info"] }
+env_logger = "0.9.3"
+typetag = "0.2"
+memmap2 = "0.5.8"
+self_cell = "0.10.2"
+
+[dev-dependencies]
+criterion = "0.4.0"
+ntest = "0.8.1"
+rstest = "0.15.0"
+temp-dir = "0.1.11"
+rand_distr = "0.4.3"
+rand = "0.8.5"
+
+[dev-dependencies.helpers] 
+path = "local_dependencies/helpers"
+
+[build-dependencies]
+pyo3-build-config = "0.17.3"
