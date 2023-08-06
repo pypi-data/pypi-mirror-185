@@ -1,0 +1,8 @@
+bronx
+footprints
+
+[docs]
+sphinx
+
+[tests]
+numpy
