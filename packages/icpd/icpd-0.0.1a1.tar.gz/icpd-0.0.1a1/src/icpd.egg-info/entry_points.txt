@@ -1,0 +1,2 @@
+[console_scripts]
+icpd = icpd.__main__:main
