@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: lamarkdown
+Version: 0.9
+Summary: A tool for compiling markdown files into standalone HTML documents, using Python Markdown. Supports Latex (given an existing Tex distribution), custom CSS and JavaScript, multiple document variations from a single source file, and a live output view.
+Home-page: https://bitbucket.org/cooperdja/lamarkdown
+License: MIT
+Keywords: markdown
+Author: David J A Cooper
+Author-email: dave@djac.au
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Requires-Dist: cssselect (>=1.1.0,<2.0.0)
+Requires-Dist: diskcache (>=5.4.0,<6.0.0)
+Requires-Dist: lxml (>=4.9.0,<5.0.0)
+Requires-Dist: markdown (>=3.3.7,<4.0.0)
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
+Requires-Dist: pygments (>=2.12.0,<3.0.0)
+Requires-Dist: pymdown-extensions (>=9)
+Requires-Dist: watchdog (>=2.1.9,<3.0.0)
+Project-URL: Documentation, https://bitbucket.org/cooperdja/lamarkdown/wiki/Home
+Project-URL: Repository, https://bitbucket.org/cooperdja/lamarkdown
+Description-Content-Type: text/markdown
+
+# Lamarkdown
+
+Command-line markdown document compiler based on Python-Markdown.
+
+The intent is to provide a tool comparable to Latex, but with the Markdown and HTML formats in
+place of Latex and PDF. Lamarkdown is _not_ a drop-in replacement for Latex, but it attempts to
+address the same document-preparation use case. To this end, Lamarkdown:
+
+* Is a locally-run, command-line tool.
+* Builds a complete HTML document, where the author has complete control over the appearance
+    (though making it easy to produce something that _looks_ more like a document than a webpage).
+* Builds an entirely _self-contained_ HTML document (except where you insert external references
+    yourself), which can be stored and distributed as a standalone file.
+    * (Also currently with the exception of fonts, which are, for now, declared as links to `fonts.googleapis.com`.)
+* Allows embedding of Latex environments (or entire Latex documents), with the resulting output converted
+    to SVG format and embedded within the HTML.
+
+Further goals of the project (sometimes also associated with Latex document preparation) are to:
+
+* Provide a live-updating feature to improve editing productivity. When enabled, the markdown file
+    is automatically re-compiled, and the HTML document auto-reloaded, when changes are detected.
+* Provide a scheme for compiling multiple variants of a single source document.
+
+
+## Requirements and Installation
+
+Lamarkdown depends on Python 3.7+. To install via pip:
+
+`$ pip install lamarkdown`
+
+This will resolve dependencies on other PyPi packages (including "markdown", others).
+
+However, to embed Latex code, you need to a Latex distribution (e.g., Texlive), which must be 
+installed separately. The actual commands are configurable. By default, Lamarkdown's Latex 
+extension runs 'xelatex' and 'dvisvgm'.
+
+
+## Basic usage
+
+To compile `mydocument.md` into `mydocument.html`, just run:
+
+`$ lamd mydocument.md`
+
+(Or `lamd.py` if appropriate.)
+
+You can enable the live-update mode using `-l`/`--live`:
+
+`$ lamd -l mydoc.md`
+
+This will launch a local web-server and a web-browser, and will keep `mydoc.html` in sync with any
+changes made to `mydoc.md`, until you press Ctrl+C in the terminal.
+
+
+## Wiki
+
+For detailed documentation, see [the wiki](https://bitbucket.org/cooperdja/lamarkdown/wiki/).
+
