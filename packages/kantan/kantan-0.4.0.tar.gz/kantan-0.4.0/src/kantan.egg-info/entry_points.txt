@@ -1,0 +1,2 @@
+[console_scripts]
+kantan = kantan.cli:main
