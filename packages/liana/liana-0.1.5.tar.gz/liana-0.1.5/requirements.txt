@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+statsmodels
+anndata
+scanpy
+pytest
+setuptools
+plotnine
+tqdm
