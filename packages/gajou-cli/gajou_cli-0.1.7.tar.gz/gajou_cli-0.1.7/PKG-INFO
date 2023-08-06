@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gajou_cli
+Version: 0.1.7
+Summary: Base classes and helpers to make QA autotests for CLI
+Home-page: https://github.com/ArtyomKomarenko/gajou-cli
+Author: Artyom Komarenko
+Author-email: artyom.komarenko@mail.ru
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h2>牙城-CLI</h2>
+
+<h3>CLI</h3>
+
+* BaseCLI - contains method to send command in terminal with logging. Allure can be passed for adding attaches to
+  reports.
+* CLIResponse - dataclass for CLI response deserialization.
+* ReturnCodes - enum with basic CLI return codes.
