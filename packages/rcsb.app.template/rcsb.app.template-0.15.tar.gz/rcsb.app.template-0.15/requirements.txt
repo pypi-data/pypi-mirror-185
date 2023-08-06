@@ -1,0 +1,8 @@
+gunicorn >= 20.0.4
+fastapi[all] >= 0.68
+# --
+# from fastapi
+# uvicorn >= 0.11.5
+# pydantic >= 1.4
+# aiofiles >= 0.5.0
+rcsb.utils.io >= 1.17

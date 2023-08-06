@@ -1,0 +1,9 @@
+gunicorn>=20.0.4
+fastapi[all]>=0.68
+rcsb.utils.io>=1.17
+
+[dev]
+check-manifest
+
+[test]
+coverage
