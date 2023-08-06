@@ -1,0 +1,9 @@
+callscript/__init__.py,sha256=wuKV0iRaVuY9rl6rbqQPFefJPfx21EmPGIhlbOxGyZc,34
+callscript/_version.py,sha256=7Bs6k3rW9k2IpwrZWRsFlWXbSNCRTq6s0Ey8OYrM270,155
+callscript/callscript.py,sha256=vO89cXhdfn7iV9iQUQuKvgV_CnlccJlo75YoEFeOtL0,2619
+callscript/redbaron_utils.py,sha256=R-0Q77Xn-oo3vltuFndbUSTGxJWfbxJn8CsjGICatDU,608
+callscript-0.6.dist-info/LICENSE.txt,sha256=Cj4cZ-OKQca4JQQb4Vmqeop5qUYA_EjCc5oLWqG50yo,1079
+callscript-0.6.dist-info/METADATA,sha256=1xvm2GTvKgAi3maZxsSPEzytUKwyuaE5ePd4C52JpuA,3691
+callscript-0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+callscript-0.6.dist-info/top_level.txt,sha256=puWcXdqsvagYpth04bP1TRDZ5XLWKj1XnmA5nJDjPgU,11
+callscript-0.6.dist-info/RECORD,,
