@@ -1,0 +1,9 @@
+cedict/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cedict/cedict.py,sha256=T_UPwV5Eca35RmwWOcim9st0UJ6gGpMDLoyz87K7S3I,2460
+cedict/csv/EnWords.csv,sha256=M_XuwwHsco-4By1R8lpZWyvGHKjkLwsP-FhMsKZkd_M,4715776
+cedict/db/words.db,sha256=N-E-0ld0oVW7PsTg-2P9uHiwilKPVAOUXAon8N1ToI4,5091328
+cedict-0.1.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+cedict-0.1.0.dist-info/METADATA,sha256=thYBtgQi-sY89_gMhoPAk312lQiQFF0UYmSY0zzyUQM,790
+cedict-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cedict-0.1.0.dist-info/top_level.txt,sha256=1WDDFJ_ZJEgQdRI9XRvyORKoJTQK4jKwthwCETAd8_g,7
+cedict-0.1.0.dist-info/RECORD,,
