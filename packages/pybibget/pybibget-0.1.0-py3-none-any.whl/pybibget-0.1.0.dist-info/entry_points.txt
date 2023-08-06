@@ -1,0 +1,4 @@
+[console_scripts]
+pybibget = pybibget:pybibget
+pybibparse = pybibget:pybibparse
+pybibupdate = pybibget:pybibupdate
