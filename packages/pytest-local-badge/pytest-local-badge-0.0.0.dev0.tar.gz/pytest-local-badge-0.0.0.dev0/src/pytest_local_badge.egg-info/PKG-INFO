@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pytest-local-badge
+Version: 0.0.0.dev0
+Summary: Adds Meross Smart Plug support to OctoPrint-PSUControl
+Home-page: https://github.com/VRGhost/pytest-local-badge
+Author: Ilja Orlovs
+Author-email: vrghost@gmail.com
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: develop
+License-File: LICENSE
+
+# Pytest local badge
+
+[![CI](https://github.com/VRGhost/pytest-local-badge/actions/workflows/main.yml/badge.svg)](https://github.com/VRGhost/pytest-local-badge/actions/workflows/main.yml)
+![Tests](./badges/tests.svg)
+![Coverage](./badges/coverage.svg)
+
+
+Pytest extension to generate SVG badge files with pytest stats (number of tests passed, `pytest-cov` coverage statistics.)
+
+# Installation
+
+`pip install pytest-local-badge`
