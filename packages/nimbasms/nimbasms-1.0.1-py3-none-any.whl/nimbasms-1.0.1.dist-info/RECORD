@@ -1,0 +1,9 @@
+nimbasms/__init__.py,sha256=K66mMJ0SKOUbXRTOvR6LFc7V6_EBMpVZm500RZIJqCI,8899
+nimbasms/execptions.py,sha256=DpdKLeTFO7Smw4S7OEpCtzqaQIVfRDtqh_JRRxVeBAc,42
+nimbasms/rest.py,sha256=SuYjQpnCnLtyRYDpAKoHB_FcUyR0JnXv6_5Ja-dPOO8,9078
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nimbasms-1.0.1.dist-info/LICENSE,sha256=O2roZbVKVZoQ1Jf3yxnSuf8x1asGvu_7NpnjqsO8kSQ,1066
+nimbasms-1.0.1.dist-info/METADATA,sha256=JS0cnFPEiNHVf0wqtcNv_9cGOnWiK018_L9C7PyGWK0,2614
+nimbasms-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nimbasms-1.0.1.dist-info/top_level.txt,sha256=AehjHE-sZet5jYtnhoXw8JEomX9aWNoqcD3IY5YPHyg,15
+nimbasms-1.0.1.dist-info/RECORD,,
