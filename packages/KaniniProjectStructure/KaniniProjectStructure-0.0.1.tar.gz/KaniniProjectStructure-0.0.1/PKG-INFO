@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: KaniniProjectStructure
+Version: 0.0.1
+Summary: To create the project structure
+Home-page: 
+Author: Sathish Kumar
+Author-email: sathishkumar.sk236@gmail.com
+License: MIT
+Keywords: Project formater
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Sample function
+
+Change Log 
+
+==========
+
+0.0.1 (First release)

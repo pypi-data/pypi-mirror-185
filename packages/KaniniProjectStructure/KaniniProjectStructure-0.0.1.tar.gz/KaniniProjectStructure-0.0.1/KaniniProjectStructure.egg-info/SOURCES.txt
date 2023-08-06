@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+KaniniProjectStructure/__init__.py
+KaniniProjectStructure.egg-info/PKG-INFO
+KaniniProjectStructure.egg-info/SOURCES.txt
+KaniniProjectStructure.egg-info/dependency_links.txt
+KaniniProjectStructure.egg-info/top_level.txt
