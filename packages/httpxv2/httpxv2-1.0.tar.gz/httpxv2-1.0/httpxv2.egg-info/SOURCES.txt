@@ -1,0 +1,5 @@
+setup.py
+httpxv2.egg-info/PKG-INFO
+httpxv2.egg-info/SOURCES.txt
+httpxv2.egg-info/dependency_links.txt
+httpxv2.egg-info/top_level.txt
