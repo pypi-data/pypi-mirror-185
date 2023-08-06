@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+spectra2rgb/Color.py
+spectra2rgb/Colors.py
+spectra2rgb/RGB.py
+spectra2rgb/Slice.py
+spectra2rgb/__init__.py
+spectra2rgb/spectralData.py
+spectra2rgb.egg-info/PKG-INFO
+spectra2rgb.egg-info/SOURCES.txt
+spectra2rgb.egg-info/dependency_links.txt
+spectra2rgb.egg-info/requires.txt
+spectra2rgb.egg-info/top_level.txt
