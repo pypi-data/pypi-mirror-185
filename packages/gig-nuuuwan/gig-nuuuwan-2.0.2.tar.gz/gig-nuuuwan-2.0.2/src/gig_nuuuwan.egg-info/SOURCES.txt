@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/gig/__init__.py
+src/gig/_constants.py
+src/gig/_remote_data.py
+src/gig/ent_types.py
+src/gig/ents.py
+src/gig/ext_data.py
+src/gig_nuuuwan.egg-info/PKG-INFO
+src/gig_nuuuwan.egg-info/SOURCES.txt
+src/gig_nuuuwan.egg-info/dependency_links.txt
+src/gig_nuuuwan.egg-info/requires.txt
+src/gig_nuuuwan.egg-info/top_level.txt
