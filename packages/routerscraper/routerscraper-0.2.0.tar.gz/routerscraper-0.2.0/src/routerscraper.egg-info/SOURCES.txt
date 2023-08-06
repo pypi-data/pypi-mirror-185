@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+src/routerscraper/__init__.py
+src/routerscraper/basescraper.py
+src/routerscraper/dataTypes.py
+src/routerscraper/fastgate_dn8245f2.py
+src/routerscraper/technicolor_tg789vacv2.py
+src/routerscraper.egg-info/PKG-INFO
+src/routerscraper.egg-info/SOURCES.txt
+src/routerscraper.egg-info/dependency_links.txt
+src/routerscraper.egg-info/requires.txt
+src/routerscraper.egg-info/top_level.txt
