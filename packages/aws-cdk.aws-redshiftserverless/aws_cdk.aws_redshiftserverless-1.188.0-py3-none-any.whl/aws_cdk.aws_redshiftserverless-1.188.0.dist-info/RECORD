@@ -1,0 +1,10 @@
+aws_cdk/aws_redshiftserverless/__init__.py,sha256=LnzkWnsQ-zg00rwoCEZMc7nFB2uiz7nk5DwFl18ps9Y,137638
+aws_cdk/aws_redshiftserverless/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_redshiftserverless/_jsii/__init__.py,sha256=gd74vwUr0J35djn20tNK3lw4gg77maujksCT3UFNebY,442
+aws_cdk/aws_redshiftserverless/_jsii/aws-redshiftserverless@1.188.0.jsii.tgz,sha256=17lfJapftczy7uRAUg1W4_PX7WqceV4InBI4r7xdcto,54947
+aws_cdk.aws_redshiftserverless-1.188.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_redshiftserverless-1.188.0.dist-info/METADATA,sha256=JLDoIQg2Zm692MXYLRAskMR74WP0WqbSS-v_B5y1ij8,3273
+aws_cdk.aws_redshiftserverless-1.188.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_redshiftserverless-1.188.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_redshiftserverless-1.188.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_redshiftserverless-1.188.0.dist-info/RECORD,,
