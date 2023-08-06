@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+Manifest.in
+Readme.md
+setup.py
+simplesuper.py
+simplesuper.egg-info/PKG-INFO
+simplesuper.egg-info/SOURCES.txt
+simplesuper.egg-info/dependency_links.txt
+simplesuper.egg-info/top_level.txt
