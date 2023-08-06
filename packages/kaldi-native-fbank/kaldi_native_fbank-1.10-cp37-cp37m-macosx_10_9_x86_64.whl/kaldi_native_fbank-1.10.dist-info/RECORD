@@ -1,0 +1,15 @@
+_kaldi_native_fbank.cpython-37m-darwin.so,sha256=E18HZY2okdkk1tX0K16p5y0RxpG-LtNDvlxAWgG5Bds,260128
+kaldi_native_fbank-1.10.dist-info/RECORD,,
+kaldi_native_fbank-1.10.dist-info/LICENSE,sha256=poLW79HuXe4IqOQFwjPCwZjqcK4HGBKdqoOrWM_jHF0,11728
+kaldi_native_fbank-1.10.dist-info/WHEEL,sha256=65_gdror4VDHS1i9xQgp9SfwHiJGzcbzYtDxUELWm-8,110
+kaldi_native_fbank-1.10.dist-info/top_level.txt,sha256=eXV9GD-CJzXw884LEFar9T7A-8MF6m91XUJljShEaKQ,39
+kaldi_native_fbank-1.10.dist-info/METADATA,sha256=rUQ0tm9O3PfIQUNAGnrvY3J9G0H2pDlYHliY4L9leEI,2995
+kaldi_native_fbank/__init__.py,sha256=A2rhpJ3T8TOToaWClF2ck-WNnW_NcUVSezbm9Ki087k,141
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/feature-functions.h,sha256=9BARF76b3w5MkI6RgIBX6CX0e-pfh8zfy1PEErURW8I,1530
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/online-feature.h,sha256=lSkCOuHOpE-WCBKUrHdVyZ_95UgQZKi_OVRB66WYeEo,5268
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/feature-fbank.h,sha256=SIIyKfVpXU1rMYxC_tO0pl9kJArFKd7eIlg7dpu3ep4,4534
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/log.h,sha256=fA2QPSSi6CwECCN59rPIbcxIiY1szuyU-BWXeQy5cmA,11282
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/rfft.h,sha256=B0IEIRnPK-cVCdked0ki5PKpkmZ0--kI8qRjBDJm8wM,1598
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/feature-window.h,sha256=C13ka1kPdyEAJDB6Dvm-z_3BsKYYjDku7geYsyBtW7o,7080
+kaldi_native_fbank/include/kaldi-native-fbank/csrc/mel-computations.h,sha256=9oAhkJoEvYuVEtgz_2nPmEoLRtlc-7Ksb-Rx8gbprX8,3975
+kaldi_native_fbank/lib/libkaldi-native-fbank-core.dylib,sha256=8xi1vW9cs8MgKnB7bcL4wQqbnAVqvOKVRAX5PUzF8uI,138384
