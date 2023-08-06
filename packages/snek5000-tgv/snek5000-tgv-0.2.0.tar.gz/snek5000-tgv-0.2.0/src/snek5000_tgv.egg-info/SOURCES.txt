@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/snek5000_tgv/Snakefile
+src/snek5000_tgv/__init__.py
+src/snek5000_tgv/output.py
+src/snek5000_tgv/solver.py
+src/snek5000_tgv/tgv.par.cfg
+src/snek5000_tgv/tgv.usr.f
+src/snek5000_tgv.egg-info/PKG-INFO
+src/snek5000_tgv.egg-info/SOURCES.txt
+src/snek5000_tgv.egg-info/dependency_links.txt
+src/snek5000_tgv.egg-info/entry_points.txt
+src/snek5000_tgv.egg-info/requires.txt
+src/snek5000_tgv.egg-info/top_level.txt
