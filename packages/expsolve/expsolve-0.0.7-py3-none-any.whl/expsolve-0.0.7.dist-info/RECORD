@@ -1,0 +1,12 @@
+expsolve/__init__.py,sha256=jH7D-93JK5DRwe61MPek5cR_XLAa1mQ3CfcmBaIek2E,98
+expsolve/timepropagation.py,sha256=-qMN0BdWtzCcY70EzNncZD60LrnWWE_1RHBzhILbUks,902
+expsolve/fourier/__init__.py,sha256=5Lar-DNO2InlYEu5PtLf5N9ghQQeV5SS1CIFzQQ_xWo,275
+expsolve/fourier/discretize.py,sha256=h0oT04oLzdWqqnol6RA3V6Q9aMcsKBuoCIDc3O6YAJ8,3382
+expsolve/fourier/operators.py,sha256=iQI1RMJDYeW7p2fchw2IRUH6VPtjw3J2fKI5MVarD4o,1778
+expsolve/fourier/spectral.py,sha256=QMQzPUSStZ1QSCS8Vuj2hXi-0GYhdZ2dh0abPbiETew,2293
+expsolve/splittings/__init__.py,sha256=3P0AwGYzy9xkbEh6Q6yNX6hqRN1J4jXsAe3AkeaiEtk,94
+expsolve/splittings/classical.py,sha256=TeZI7sqtb_UnSQgVVrdQr1Afx4ZQm6mvYPzcNvL-j_s,1440
+expsolve-0.0.7.dist-info/METADATA,sha256=xHX96BYmhSek2RVLqPsgbK8F8QsoSqtwytq7-Q1odgA,1103
+expsolve-0.0.7.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+expsolve-0.0.7.dist-info/licenses/LICENSE.md,sha256=itgbYSGPHe2ggNckC8z8S9N7P54IAnsK1uZZXFXA-6Y,1080
+expsolve-0.0.7.dist-info/RECORD,,
