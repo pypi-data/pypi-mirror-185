@@ -1,0 +1,2 @@
+[console_scripts]
+amptk = amptk.amptk:main
