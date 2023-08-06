@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: farm-ng-core
+Version: 0.1.4
+Home-page: https://github.com/farm-ng/farm-ng-core
+Download-URL: https://github.com/farm-ng/farm-ng-core
+Author: Farm-ng Inc.
+Author-email: info@farm-ng.com
+Keywords: robotics,open-source
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Framework :: Robot Framework
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: farm-ng-package
+Requires-Dist: protobuf
+Requires-Dist: grpcio
+Provides-Extra: dev
+Requires-Dist: pytest (==7.1.2) ; extra == 'dev'
+Requires-Dist: pytest-mypy (==0.9.1) ; extra == 'dev'
+Requires-Dist: pre-commit (==2.20.0) ; extra == 'dev'
+Requires-Dist: mypy (==0.971) ; extra == 'dev'
+Requires-Dist: types-protobuf ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: grpcio-tools ; extra == 'dev'
+Requires-Dist: mypy-protobuf ; extra == 'dev'
+Requires-Dist: pylint-protobuf (==0.20.2) ; extra == 'dev'
+
+# farm-ng-core
+
+[![PyPI version](https://badge.fury.io/py/farm-ng-core.svg)](https://pypi.org/project/farm-ng-core)
+
+## Build on MacOS
+
+Make sure ports is installed: https://www.macports.org/install.php
+
+Install dependencies, once:
+
+```
+sudo port install cmake
+sudo PATH=$PATH port install protobuf3-cpp
+sudo port install ccache
+sudo port install pre-commit
+sudo port select --set virtualenv virtualenv310
+```
+
+From within the repo:
+
+```
+mkdir build
+cd build
+cmake ../super_project
+make -j
+```
+
+Run pre-commit before commiting changes
+
+```
+pre-commit run -a
+```
