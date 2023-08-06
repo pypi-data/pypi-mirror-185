@@ -1,0 +1,15 @@
+appdirs
+errr>=1.2.0
+
+[arbor]
+arbor>=0.6
+
+[dev]
+sphinx
+pre-commit
+
+[mpi]
+mpi4py
+
+[neuron]
+nrn-patch==4.0.0a4
