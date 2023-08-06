@@ -1,0 +1,11 @@
+README.md
+setup.py
+S3Sqlite3.egg-info/PKG-INFO
+S3Sqlite3.egg-info/SOURCES.txt
+S3Sqlite3.egg-info/dependency_links.txt
+S3Sqlite3.egg-info/requires.txt
+S3Sqlite3.egg-info/top_level.txt
+s3_sqlite3/__init__.py
+s3_sqlite3/s3_sqlite3.py
+s3_sqlite3/s3vfs.py
+s3_sqlite3/s3vfsfile.py
