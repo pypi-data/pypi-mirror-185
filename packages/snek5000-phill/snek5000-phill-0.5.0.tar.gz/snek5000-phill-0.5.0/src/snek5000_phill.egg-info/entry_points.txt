@@ -1,0 +1,2 @@
+[snek5000.solvers]
+phill = phill.solver

@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: snek5000-phill
+Version: 0.5.0
+Summary: Nek5000 phill example executed via snek5000
+Home-page: https://github.com/snek5000/snek5000-phill
+Author: Ashwin Vishnu Mohanan
+Author-email: dev@fluid.quest
+License: BSD-3-Clause
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: hpc
+Provides-Extra: dev
+License-File: LICENSE
+
+# snek5000-phill
+
+The [Nek5000 phill example] adapted for a workflow using [Snek5000].
+
+## Install
+
+```sh
+pip install snek5000-phill
+```
+
+For more details, see https://snek5000.readthedocs.io/en/latest/install.html.
+
+## Tests
+
+```sh
+pip install '.[tests]'
+# Run simple tests: including compilation
+pytest
+# Run slow tests: launches simulation
+pytest --runslow
+```
+
+[nek5000 phill example]: https://github.com/KTH-Nek5000/KTH_Examples/tree/master/phill_STAT
+[snek5000]: https://github.com/exabl/snek5000

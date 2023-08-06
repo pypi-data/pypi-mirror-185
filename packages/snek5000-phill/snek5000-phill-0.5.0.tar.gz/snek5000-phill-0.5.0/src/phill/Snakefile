@@ -1,0 +1,91 @@
+from snek5000 import ensure_env, get_snek_resource
+from phill import short_name, Output
+
+
+configfile: "config_simul.yml"
+
+
+ensure_env()
+
+# Necessary to pass configuration to other Snakemake modules
+Output.update_snakemake_config(config, short_name)
+
+
+# default rule
+rule all:
+    input:
+        "nek5000",
+
+
+# shorthand for mesh
+rule mesh:
+    input:
+        f"{short_name}.re2",
+        f"{short_name}.ma2",
+
+
+# compiler and run rules
+# ======================
+module compiler:
+    snakefile:
+        get_snek_resource("compiler.smk")
+    config:
+        config
+
+
+use rule * from compiler
+
+
+# I/O rules
+# =========
+module io:
+    snakefile:
+        get_snek_resource("io.smk")
+    config:
+        config
+
+
+use rule * from io
+
+
+# internal rules
+# ==============
+module internal:
+    snakefile:
+        get_snek_resource("internal.smk")
+    config:
+        config
+
+
+use rule * from internal as internal_*
+
+
+# generate compile.sh
+# ===================
+rule generate_compile_sh:
+    output:
+        "compile.sh",
+    run:
+        from snek5000.resources import get_base_template
+
+        template = get_base_template("compile.sh.j2")
+        Output.write_compile_sh(template, config, path=output)
+
+
+# create a archive with source files
+# ==================================
+rule source_archive:
+    input:
+        f"{short_name}.box",
+        f"{short_name}.par",
+        f"{short_name}.usr",
+        "SIZE",
+        "compile.sh",
+        "makefile_usr.inc",
+        *list(Output().makefile_usr_sources),
+    output:
+        f"{short_name}_source-archive.tar.gz",
+    shell:
+        """
+        tar cvf {output} {input}
+        """
