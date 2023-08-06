@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyNotifications"
+version = "1.0.0"
+authors = [
+    {name = "Iratxe Moya", email = "iratxe.moya@gmail.com"},
+]
+description = "Python package for sending telegram messages."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+]
+dependencies = [
+    "requests",
+]
+[project.urls]
+"Homepage" = "https://github.com/iratxeMoya/PythonNotifications"
+"Bug Tracker" = "https://github.com/iratxeMoya/PythonNotifications/issues"
