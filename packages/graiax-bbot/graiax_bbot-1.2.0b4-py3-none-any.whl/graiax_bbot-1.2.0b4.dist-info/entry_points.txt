@@ -1,0 +1,3 @@
+[console_scripts]
+bbot=graiax_bbot.__main__:main
+
