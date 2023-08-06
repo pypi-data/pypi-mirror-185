@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyqt_hidable_menubar/__init__.py
+pyqt_hidable_menubar/hidableMenuBar.py
+pyqt_hidable_menubar.egg-info/PKG-INFO
+pyqt_hidable_menubar.egg-info/SOURCES.txt
+pyqt_hidable_menubar.egg-info/dependency_links.txt
+pyqt_hidable_menubar.egg-info/requires.txt
+pyqt_hidable_menubar.egg-info/top_level.txt
+pyqt_hidable_menubar/ico/__init__.py
+pyqt_hidable_menubar/ico/close.svg

@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyqt-hidable-menubar
+Version: 0.0.11
+Summary: PyQt Hidable Menubar (show/hide menu bar with close button at the right corner of it)
+Home-page: https://github.com/yjg30737/pyqt-hidable-menubar.git
+Author: Jung Gyu Yoon
+Author-email: yjg30737@gmail.com
+License: MIT
+License-File: LICENSE
