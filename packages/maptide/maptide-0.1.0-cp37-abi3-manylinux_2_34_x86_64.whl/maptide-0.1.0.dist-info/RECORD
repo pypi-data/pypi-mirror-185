@@ -1,0 +1,8 @@
+maptide-0.1.0.dist-info/METADATA,sha256=hkNYFFZvuOZgECN25wJzd9jrFxeOStzs4OwPBXvBh_M,2129
+maptide-0.1.0.dist-info/WHEEL,sha256=g4YPn5lbtO1yPSi1eH43xtOZA-j_Dvf1PBL_8yMAx4k,108
+maptide-0.1.0.dist-info/entry_points.txt,sha256=Z6u5k9dphRd0EKC3OQuZhUblbmmSdY2YLTscAwGTFrk,42
+maptide/__init__.py,sha256=qB3-J-aryMIDh-xsXs7VAxhAvucgNlOMuorBDPuJWPs,165
+maptide/cli.py,sha256=ETcg9GpmuTOxaU4fYzFadpptpHNUiZU0ljYXnqflhFk,4038
+maptide/api.py,sha256=c9zOsIjjHE9BneFYqpUycTCF1V8bhPMsTT4QJnln308,1099
+maptide/maptide.abi3.so,sha256=vxgzAAikAwuVCS_gcTiYxHVEFuqB82BGmaSSDR6cgj4,743848
+maptide-0.1.0.dist-info/RECORD,,
