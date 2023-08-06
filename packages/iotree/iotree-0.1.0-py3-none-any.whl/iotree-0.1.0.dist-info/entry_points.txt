@@ -1,0 +1,3 @@
+[console_scripts]
+iotree=iotree.cli:app
+
