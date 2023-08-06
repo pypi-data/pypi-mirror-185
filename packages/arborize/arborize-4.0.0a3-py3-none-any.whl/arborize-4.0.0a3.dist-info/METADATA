@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: arborize
+Version: 4.0.0a3
+Summary: Write descriptions for NEURON cell models in an Arbor-like manner.
+Home-page: https://github.com/dbbs-lab/arborize
+Author: Robin De Schepper
+Author-email: robingilbert.deschepper@unipv.it
+License: GPLv3
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: errr (>=1.2.0)
+Requires-Dist: morphio (>=3.3.3)
+Provides-Extra: arbor
+Requires-Dist: arbor (>=0.8) ; extra == 'arbor'
+Provides-Extra: dev
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Provides-Extra: neuron
+Requires-Dist: nrn-patch (==4.0.0a1) ; extra == 'neuron'
+Requires-Dist: nrn-glia[neuron] (==4.0.0a1) ; extra == 'neuron'
+
+# arborize
+A framework to package NEURON cell models following a clear separation between
+cell model description and its implementation in NEURON. Cell models described
+using this framework are highly portable, testable and distributable.
