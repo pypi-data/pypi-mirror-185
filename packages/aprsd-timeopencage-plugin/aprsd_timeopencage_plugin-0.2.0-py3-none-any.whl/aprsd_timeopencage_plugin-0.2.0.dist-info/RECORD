@@ -1,0 +1,12 @@
+aprsd_timeopencage_plugin/__init__.py,sha256=w2px4zzXWrcFo70UqjGzjxqZRd0_o3XDr0rai-fWCPs,651
+aprsd_timeopencage_plugin/aprsd_timeopencage_plugin.py,sha256=LSnmcvR3iC7YP2sdm6CTmXSlemAR02rfjFBadDO35K0,2915
+aprsd_timeopencage_plugin/conf/__init__.py,sha256=xN3yNpBPQ12kRXWltINSBz5I7V0DFcnHDIGO0GEBP7w,120
+aprsd_timeopencage_plugin/conf/opts.py,sha256=3qym3Okut04eCcs-PHvHqDzz-lmQN5U5YfvKPNPsAdM,2741
+aprsd_timeopencage_plugin/conf/time.py,sha256=bFOrvgoJOJqiOCcGd_CBNGNa89lKG2V_owNHqSYXXuk,572
+aprsd_timeopencage_plugin-0.2.0.dist-info/LICENSE,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+aprsd_timeopencage_plugin-0.2.0.dist-info/METADATA,sha256=JDemtn1MWarfczv7hDNDfL0jc1NN7JJX32TM08dXPuY,3690
+aprsd_timeopencage_plugin-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aprsd_timeopencage_plugin-0.2.0.dist-info/entry_points.txt,sha256=gROyIGdNAhEQlUQDMSjB3Cq12nNFnh2Zsn52O4lMRbM,98
+aprsd_timeopencage_plugin-0.2.0.dist-info/pbr.json,sha256=uAjTVylymaCApIfOLhV-jIADm-L1Yfu9ObWPPs4RF7A,46
+aprsd_timeopencage_plugin-0.2.0.dist-info/top_level.txt,sha256=iEiXmgmE4_gwkcDhjC7FnBDPsh9qnY6cv7k_AOnI3kk,26
+aprsd_timeopencage_plugin-0.2.0.dist-info/RECORD,,
