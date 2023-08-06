@@ -1,0 +1,3 @@
+[console_scripts]
+lamd=lamarkdown.lib.lamd:main
+
