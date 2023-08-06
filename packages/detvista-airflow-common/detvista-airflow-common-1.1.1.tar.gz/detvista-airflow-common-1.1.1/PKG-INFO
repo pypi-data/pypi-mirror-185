@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: detvista-airflow-common
+Version: 1.1.1
+Summary: detvista airflow support
+Author: detvista
+Author-email: dennis.wang@detvista.com
+License: Apache License
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
