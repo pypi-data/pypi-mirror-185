@@ -1,0 +1,5 @@
+fastapi
+layoutparser[layoutmodels,tesseract]
+python-multipart
+uvicorn
+huggingface-hub
