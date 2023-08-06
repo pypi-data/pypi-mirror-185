@@ -1,0 +1,12 @@
+saxoncee.cpython-39-darwin.so,sha256=l5hvl-8ZmEAuxygfWg6WZj22FW2H9CwZvq5Gva4T5Cw,879472
+nodekind.pypy39-pp73-darwin.so,sha256=D4xolLtwUGkQWD2ocB_1QGnLHfbsCeiFX0516siwMh0,37400
+nodekind.cpython-39-darwin.so,sha256=XSobLvlGaZCbUEFxdyaCqKRPLQiuN06gYwiQI_2zZ_A,40736
+saxoncee.pypy39-pp73-darwin.so,sha256=5iGWijMC2occYONQsBxSZHPfyUSXy4Rdi0skAs-Tb_k,646352
+saxoncee/test_saxonc.py,sha256=5jvHOTeB-QeIrazyHIc4IM_mvzjgA6ypU3dVZE6sERY,57673
+saxoncee/setup.py,sha256=vJB-M9s46PGxk05cv9Wk4iUVDsV1ezsk3kqxkXVFxdY,2931
+saxoncee/test_saxon_schema.py,sha256=Vjj0SLRSNMHbzR9Vkcz3xraBRrlIwujjV6-jbayxsIw,3995
+saxoncee-12.0.0.dist-info/RECORD,,
+saxoncee-12.0.0.dist-info/WHEEL,sha256=hYENoTBUAfaD-HuFCiayfIGVDP6ISJKZtsrZQLdfYOo,116
+saxoncee-12.0.0.dist-info/top_level.txt,sha256=u-Dw0twewj61L41npVrkWvGYrNdPqpTZz4hZvt169fo,18
+saxoncee-12.0.0.dist-info/METADATA,sha256=WzSlxzxIao03c_g1JOH__prdMaa1Esx7jJW75lDfSXE,6985
+saxoncee.dylibs/libsaxon-eec-12.0.dylib,sha256=NsOGzwhvr81372KSJjywp4BoFrnlue_toq24pLoVewI,57203168
