@@ -1,0 +1,6 @@
+ReversedCodedSaltEncryption.py
+setup.py
+rscencryption.egg-info/PKG-INFO
+rscencryption.egg-info/SOURCES.txt
+rscencryption.egg-info/dependency_links.txt
+rscencryption.egg-info/top_level.txt
