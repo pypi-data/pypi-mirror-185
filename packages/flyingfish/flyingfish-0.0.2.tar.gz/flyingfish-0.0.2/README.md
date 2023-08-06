@@ -1,0 +1,25 @@
+<img align="right" src="logo.svg" alt="logo" width="175"/>   
+
+[![Repo status - in process](https://img.shields.io/static/v1?label=Repo+status&message=in+process&color=90EE90&style=for-the-badge)](https://)
+[![contributions - welcome](https://img.shields.io/static/v1?label=contributions&message=welcome&color=90EE90&style=for-the-badge)](https://)
+[![Python - 3.10.8](https://img.shields.io/static/v1?label=Python&message=3.10.8&color=yellow&style=for-the-badge&logo=python)](https://)
+[![license - MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge&)](https://lbesson.mit-license.org/)
+
+
+An open source library for common hydrological and meteorological issues.
+
+The motivation for implementing this library grows out of my personal and academic projects where I face some typical problems repeatedly.
+
+## functionalities
+The library contains following functionalities, which are updated regularly.
+
+### `EDA`
+1. estimates of location: `arithmetic_mean`, `weighted_arithmetic_mean`, `trimmed_mean`,`geometric_mean`,`exponential_mean`,`harmonic_mean`,`median`,`weighted_median`,`percentile`
+2. estimate_of_variability: `mu`, `avg_absolute_deviation_from_mean`, `avg_absolute_deviation_from_median`, `median_absolute_deviaton`,`variance`, `stdev`, `range`, `iqr`
+3. estimates of distribution: `coefficient_of_skewness`, `coefficient_of_kurtosis` TODO #7, `mode`
+4. quality investigation: `missing_days`, `duplicates`, `outlier`
+### `TimeSeries`
+- `subset_timeframe`: subdivide time series based on a timeframe
+- `subset_period`: subdivide time series based on a period
+- `hyd_year`: derive the hydrological year based on a given start day and month
+- `principal_values`: derive principal values (HHX, HX, MHX, MX, MNX, NX, NNX) from a time series

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+flyingfish/EDA.py
+flyingfish/__init__.py
+flyingfish/timeseries.py
+flyingfish.egg-info/PKG-INFO
+flyingfish.egg-info/SOURCES.txt
+flyingfish.egg-info/dependency_links.txt
+flyingfish.egg-info/top_level.txt
