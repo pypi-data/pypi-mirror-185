@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+munazzatsd.egg-info/PKG-INFO
+munazzatsd.egg-info/SOURCES.txt
+munazzatsd.egg-info/dependency_links.txt
+munazzatsd.egg-info/top_level.txt
