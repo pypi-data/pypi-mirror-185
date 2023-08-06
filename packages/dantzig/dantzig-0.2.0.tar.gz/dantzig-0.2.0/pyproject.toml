@@ -1,0 +1,40 @@
+[project]
+name = "dantzig"
+version = "0.2.0"
+description = "A Rust-powered linear programming library for Python."
+authors = [
+    { name = "Matteo Santamaria", email = "matteosantama@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Rust",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Typing :: Typed"
+]
+
+[project.urls]
+repository = "https://github.com/matteosantama/dantzig"
+
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[tool.maturin]
+python-source = "python-source"
+
+[tool.isort]
+profile = "black"
+known_first_party = ["dantzig"]
+
+[tool.mypy]
+files = ["python-source/dantzig", "tests"]
+strict = "true"
+enable_error_code = ["ignore-without-code"]
+
+[[tool.mypy.overrides]]
+module = "dantzig.rust"
+ignore_missing_imports = "true"
