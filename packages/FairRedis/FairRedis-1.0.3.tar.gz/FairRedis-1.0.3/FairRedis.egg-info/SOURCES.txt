@@ -1,0 +1,8 @@
+README.md
+setup.py
+FRedis/__init__.py
+FairRedis.egg-info/PKG-INFO
+FairRedis.egg-info/SOURCES.txt
+FairRedis.egg-info/dependency_links.txt
+FairRedis.egg-info/requires.txt
+FairRedis.egg-info/top_level.txt
