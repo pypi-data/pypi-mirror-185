@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: mpitree
+Version: 0.0.8
+Summary: A Parallel Decision Tree Implementation using MPI
+Home-page: https://github.com/duong-jason/mpitree
+Author: Jason Duong
+Author-email: my.toe.ben@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: mpi4py
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Provides-Extra: testing
+Requires-Dist: black ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pylint ; extra == 'testing'
+Requires-Dist: numpydoc ; extra == 'testing'
+
+# mpitree
+
+![Build Status](https://github.com/duong-jason/mpitree/workflows/Unit%20Tests/badge.svg)
+![Build Status](https://github.com/duong-jason/mpitree/workflows/Lint/badge.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/PyCQA/pylint)
+[![PyPI](https://badge.fury.io/py/mpitree.svg)](https://badge.fury.io/py/mpitree)
+
+A Parallel Decision Tree Implementation using MPI *(Message Passing Interface)*.
+
+## Overview
+
+![psplit](https://raw.githubusercontent.com/duong-jason/mpitree/main/images/process_split.png)
+
+For every interior decision tree node created, a variable number of processes collectively calculate the best feature to split *(i.e., the feature that provides the most information gain)* in addition to the *divide and conquer* strategy. During the *divide* phase, processes in a *communicator* are split approximately evenly across all levels of the split feature. Let $n$ be the number of processes and $p$ be the number of levels, then each distribution, $m$, contains at least $\lfloor n/p \rfloor$ processes and at most one distribution has at most $\lceil n/p \rceil$ processes where $n\nmid p$. During the *conquer* phase, processes in a distribution independently participate among themselves at their respective levels. In detail, processes are assigned in the cyclic distribution or round-robin fashion such that their $comm = (\lfloor ranks/m\rfloor)\mod p$ and $rank = comm_{size}/rank$.
+
+In the above diagram, the root node consists of eight total processes, $p_0, p_1, ..., p_7$, with three distinct feature levels, $l_0, l_1, l_2$. Group 1 consists of processes and ranks, $(0,0), (1,1), (6,2), (7,3)$ respectively, Group 2 consists of processes and ranks, $(2,0), (3,1)$ respectively and Group 3 consists of processes and ranks, $(4,0), (5,1)$ respectively.
+
+Each routine waits for their respective processes from their original *communicator* to finish executing. The completion of a routine results in a sub-tree on a particular path from the root, and the local communicator is de-allocated. The algorithm terminates when all sub-trees are recursively gathered to the root process.
+
+Note that all processes only perform a split during the *divide* phase in a given communicator at an interior node. Therefore, a leaf node may consist of more than one process, because the purity measurement at a node is independent of the number of processes.
+
+See [Documentation](https://duong-jason.github.io/mpitree/) Here.
+
+## Requirements
+
+- [mpi4py](https://pypi.org/project/mpi4py/) (>= 3.1.4)
+- [numpy](https://pypi.org/project/pandas/) (>= 1.24.1)
+- [pandas](https://pypi.org/project/numpy/) (>= 1.5.2)
+- [matplotlib](https://pypi.org/project/matplotlib/) (>= 3.6.2)
+
+## Installation
+
+Using [Github](https://github.com/duong-jason/mpitree)
+
+```bash
+git clone https://github.com/duong-jason/mpitree.git
+cd mpitree
+make install
+```
+
+Using the package manager [pip](https://pypi.org/project/mpitree/)
+
+```bash
+pip install mpitree
+```
+
+## Example using the *iris* dataset
+
+```python
+from mpi4py import MPI
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+
+from mpitree.decision_tree import ParallelDecisionTreeClassifier, world_comm, world_rank
+
+if __name__ == "__main__":
+    iris = load_iris(as_frame=True)
+
+    X_train, X_test, y_train, y_test = train_test_split(
+        iris.data, iris.target, test_size=0.20, random_state=42
+    )
+
+    # Start the clock once all processes constructed their train-test sets
+    world_comm.Barrier()
+    start_time = MPI.Wtime()
+
+    # Concurrently train a decision tree classifier of `max_depth` 2 among all processes
+    tree = ParallelDecisionTreeClassifier(criterion={"max_depth": 2})
+    tree.fit(X_train, y_train)
+
+    # Evaluate the performance (e.g., accuracy) of the decision tree classifier
+    train_score = tree.score(X_train, y_train)
+    test_score = tree.score(X_test, y_test)
+
+    # Stop the clock w.r.t each process
+    end_time = MPI.Wtime()
+    if not world_rank:
+        # Display a string-formatted representation of the decision tree
+        # classifier from process 0
+        print(tree)
+        print(f"Train Accuracy: {train_score:.2%}")
+        print(f"Test Accuracy: {test_score:.2%}")
+        # Display the total elapsed time from process 0
+        print(f"Parallel Execution Time: {end_time - start_time:.3f}s")
+```
+
+### Executing `iris.py` with 5 processes
+
+```bash
+$ mpirun -n 5 python3 iris.py
+├── petal length (cm)
+│  └── 0 [< 2.45]
+│  ├── petal length (cm) [>= 2.45]
+│  │  └── 1 [< 4.75]
+│  │  └── 2 [>= 4.75]
+Train Accuracy: 95.00%
+Test Accuracy: 96.67%
+Parallel Execution Time: 0.448s
+```
+
+### Decision Boundaries varying values for the `max_depth` hyperparameter
+
+Overfitting becomes apparent as the decision tree gets deeper because predictions are based on smaller and smaller cuboidal regions of the feature space. In a sense, the decision tree model is biasing towards *singleton* nodes; and, therefore, may cause mispredictions in the likelihood of noisy data.
+
+Pre-and-post-pruning techniques are some solutions to reduce the likelihood of an overfitted decision tree. Pre-pruning techniques introduce early stopping criteria *(e.g., depth, number of samples)*. In both pruning techniques, one may resort to validation methodologies *(e.g., k-fold Cross-Validation)*.
+
+The figures below depict various decision boundaries for different values of the `max_depth` hyperparameter. We used the *iris* dataset provided by *scikit-learn* as it provides a base analysis for our (parallel) decision tree implementation. The former figure demonstrates how noisy instances may negatively impact the performance of the decision tree model. In contrast, in the latter figure, the decision boundary does not shift in the presence of the one outlier for the *iris setosa* class.
+
+![dt_noise](https://raw.githubusercontent.com/duong-jason/mpitree/main/images/dt_noise.png)
+
+![dt_outlier](https://raw.githubusercontent.com/duong-jason/mpitree/main/images/dt_outlier.png)
+
+## Unit Tests
+
+```bash
+pytest --doctest-modules
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Licence
+
+[MIT](https://github.com/duong-jason/mpitree/blob/main/LICENSE)
