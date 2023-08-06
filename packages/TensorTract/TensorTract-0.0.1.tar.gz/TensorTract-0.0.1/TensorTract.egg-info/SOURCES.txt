@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+TensorTract/__init__.py
+TensorTract.egg-info/PKG-INFO
+TensorTract.egg-info/SOURCES.txt
+TensorTract.egg-info/dependency_links.txt
+TensorTract.egg-info/requires.txt
+TensorTract.egg-info/top_level.txt
+TensorTract.egg-info/zip-safe
