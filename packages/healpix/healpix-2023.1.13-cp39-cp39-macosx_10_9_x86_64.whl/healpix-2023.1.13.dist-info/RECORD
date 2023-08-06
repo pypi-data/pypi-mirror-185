@@ -1,0 +1,11 @@
+chealpix.cpython-39-darwin.so,sha256=DJNoV6MFUqQYHMndQ9VlLe32415Ai4BdZPL8mMjHopY,61112
+healpix/__init__.py,sha256=bnfBBNdgmQjI9H70VHxVNU-U58sx46J8bE_wqnmlWCE,5766
+healpix/test/conftest.py,sha256=Uru55wwUe9KL2dLm8wjdFSfmoGJsLW_Wk9nCLWKWfG8,1568
+healpix/test/__init__.py,sha256=6mXN8srJvHWb5CU1SckC7ioiwXtb42wxwSv7hh3MWcQ,297
+healpix/test/test_healpix.py,sha256=JYWS0CNKA9y9GXkP0518FNkv-CZ-cub4XRd3-M7qZAM,2532
+healpix/test/test_chealpix.py,sha256=hMfV4rgP7KaghTp2VBPLX7YCxvmir_6laDW7pIYq2rY,3425
+healpix-2023.1.13.dist-info/LICENSE.md,sha256=N5rZiOwPjuCJGqK86_cSX0J2Rlcni6fEDdQMMKKZgLM,1683
+healpix-2023.1.13.dist-info/RECORD,,
+healpix-2023.1.13.dist-info/WHEEL,sha256=UlNw_PQRbc8y2O60L5paNCXmEdKCjgP3umWDtB6RxVY,109
+healpix-2023.1.13.dist-info/top_level.txt,sha256=-yee_hkxhhhZUDs2dtOsp98YhQvWP92jOoSOQ8Uxqh0,17
+healpix-2023.1.13.dist-info/METADATA,sha256=o7DDJBzT5qJf7gZSiHb9UyX6d00HMaZTISjvv51djuc,2815
