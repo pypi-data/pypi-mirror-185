@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Kalkoltorsmdm
+Version: 0.1
+Summary: Basic Calculator
+Author: Jawad MSDS009
+Author-email: aqwaseem5@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENCE.txt
+
