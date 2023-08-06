@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: django-payment-gateways
+Version: 0.12
+Summary: Payment Gateways Implementation for Django
+Home-page: UNKNOWN
+Author: Misagh Lotfi
+Author-email: misaghlb@live.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+
