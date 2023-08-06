@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: icpd
+Version: 0.0.1a1
+Home-page: https://codeberg.org/Fresh2dev/icpd
+Author: donald
+Author-email: hello@Fresh2.dev
+Project-URL: Repository, https://codeberg.org/Fresh2dev/icpd
+Project-URL: License, https://www.Fresh2.dev/code/r/icpd/i/license
+Project-URL: Documentation, https://www.Fresh2.dev/code/r/icpd/i
+Project-URL: Issues, https://codeberg.org/Fresh2dev/icpd/issues
+Project-URL: Changelog, https://www.Fresh2.dev/code/r/icpd/i/changelog
+Project-URL: Funding, https://www.Fresh2.dev/tip
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: yapx[pydantic] (==0.0.1a8)
+Requires-Dist: icloudpy (==0.3.2)
+Requires-Dist: requests (==2.*)
+Requires-Dist: tzlocal (==4.*)
+Requires-Dist: piexif (==1.*)
+Requires-Dist: croniter (==1.*)
+Requires-Dist: prometheus-client (==0.*)
+Requires-Dist: tabulate
+Requires-Dist: typing-extensions ; python_version < "3.10"
+Provides-Extra: build
+Requires-Dist: build ; extra == 'build'
+Requires-Dist: setuptools ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Requires-Dist: myke[io] (==0.0.1a11) ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-comprehensions ; extra == 'dev'
+Requires-Dist: flake8-pytest-style ; extra == 'dev'
+Requires-Dist: flake8-simplify ; extra == 'dev'
+Requires-Dist: importlib-metadata (<5.0) ; extra == 'dev'
+Requires-Dist: autoflake ; extra == 'dev'
+Requires-Dist: pyupgrade ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy[reports] ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pylint-pytest ; extra == 'dev'
+Requires-Dist: rope ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: myke[io] (==0.0.1a11) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs (==1.*) ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] (==0.19.0) ; extra == 'docs'
+Requires-Dist: mkdocs-autorefs ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest (==7.*) ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-html ; extra == 'tests'
+Requires-Dist: pytest-sugar ; extra == 'tests'
+Requires-Dist: hypothesis (==6.*) ; extra == 'tests'
+Requires-Dist: packaging ; extra == 'tests'
+Requires-Dist: mocx (==0.0.1a1) ; extra == 'tests'
+
+# icpd
+
+![](https://img.fresh2.dev/fresh2dev.svg)
+
+icpd is <_>. I created icpd to <_>. This is valuable because <_>.
+
+icpd is similar to/inspired by <_>, <_>, <_>. The distinguishing feature of icpd its ability to <_>.
+
+If this project delivers value to you, I ask that you [provide feedback](https://codeberg.org/Fresh2dev/icpd/issues), make [code contributions](https://www.Fresh2.dev/code/r/icpd/i/contributing), and/or [pay me](https://www.Fresh2.dev/tip).
+
+|               |                           |
+| ------------- | ------------------------- |
+| Repository    | https://codeberg.org/Fresh2dev/icpd              |
+| Repo Mirror   | https://www.Fresh2.dev/code/r/icpd           |
+| Documentation | https://www.Fresh2.dev/code/r/icpd/i              |
+| License       | https://www.Fresh2.dev/code/r/icpd/i/license      |
+| Changelog     | https://www.Fresh2.dev/code/r/icpd/i/changelog    |
+| Contributing  | https://www.Fresh2.dev/code/r/icpd/i/contributing |
+| Project Board | https://codeberg.org/Fresh2dev/icpd/projects     |
+| Issues        | https://codeberg.org/Fresh2dev/icpd/issues       |
+| Funding       | https://www.Fresh2.dev/tip           |
+
+To learn more, [read the docs]() and find examples in the page of [**recipes**](https://www.Fresh2.dev/code/r/icpd/i/recipes).
+
+View other projects by Fresh2.dev @ https://www.Fresh2.dev/projects.
