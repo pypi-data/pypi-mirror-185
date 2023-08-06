@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: slack-hero
+Version: 0.1
+Summary: A package that enables you to easily exception messages from django to slack
+Requires-Python: >=3.6
+License-File: LICENSE

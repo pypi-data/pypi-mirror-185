@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+slack_exception_messages/__init__.py
+slack_exception_messages/log.py
+slack_hero.egg-info/PKG-INFO
+slack_hero.egg-info/SOURCES.txt
+slack_hero.egg-info/dependency_links.txt
+slack_hero.egg-info/requires.txt
+slack_hero.egg-info/top_level.txt
