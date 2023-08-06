@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: django-canto
+Version: 0.3.0
+Summary: A canto client for python with django integration
+Home-page: https://github.com/RaphaelKimmig/django-canto
+Download-URL: https://github.com/RaphaelKimmig/django-canto/archive/v0.3.0.tar.gz
+Author: Raphael Kimmig
+Author-email: raphael@ampad.de
+License: BSD 3-Clause License
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# django-canto
+A simple client for python with django integration that 
+allows you to integrate cantos DAM.
+
+## FIXME Getting started
+Add `canto` to your `INSTALLED_APPS` 
+
+- add urls
+- permissions
+- customize / import example
