@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/combine_csv/__init__.py
+src/combine_csv.egg-info/PKG-INFO
+src/combine_csv.egg-info/SOURCES.txt
+src/combine_csv.egg-info/dependency_links.txt
+src/combine_csv.egg-info/entry_points.txt
+src/combine_csv.egg-info/requires.txt
+src/combine_csv.egg-info/top_level.txt
