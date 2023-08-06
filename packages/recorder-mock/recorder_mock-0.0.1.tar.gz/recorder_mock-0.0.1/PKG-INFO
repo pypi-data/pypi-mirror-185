@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: recorder-mock
+Version: 0.0.1
+Summary: recorder-mock allows to record interactions on patched Python objects and repeat the interactions when the patched object is no longer available.
+Author-email: Albertas Gimbutas <albertasgim@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+`recorder-mock` allows to record interactions on patched Python objects and repeat the interactions when the patched object is no longer available.
+
+## Installation
+
+```bash
+pip install recorder-mock
+```
+
+## Usage
+```
+from recorder_mock import recorder_patch
+
+@recorder_patch("httpx")
+class ExampleTestCase(unittest.TestCase):
+    def test_get_example_com_content():
+        client = httpx.client()
+        resp = client.get("example.com")
+        return resp.content
+```
+
+First execution of the tests will hit the Internet and record the interactions.
+Second test run won't hit the internet, recorded interactions will be repeated instead.
+
+
+## Related projects
+This tool was inspired by:
+- `patch` and `MagicMock` from [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) standard library package
+- [VCR.py](https://vcrpy.readthedocs.io/en/latest/index.html) package
