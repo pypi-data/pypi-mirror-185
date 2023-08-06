@@ -1,0 +1,11 @@
+# This file is used for development purposes
+name: ez-disk-cache
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - twine  # Helps publishing packages on PyPI
+  - pyyaml
+  - pytest
+  - pip:
+      - build  # Creates built distributions (wheels)

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ez-disk-cache"
+version = "0.0.3"
+authors = [
+  { name="Robert Voelckner" },
+]
+description = "A smart decorator to cache function results transparently to disk."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["pyyaml>=6.0"]
+
+[project.urls]
+"Homepage" = "https://github.com/robvoe/ez-disk-cache"
+"Bug Tracker" = "https://github.com/robvoe/ez-disk-cache/issues"
