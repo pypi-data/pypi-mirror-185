@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: irt-camera
+Version: 0.0.1a1
+Summary: Receiving 32*24 thermal data from MLX90640 using GY-MCU90640
+Home-page: https://github.com/dhchenx/irt-camera
+Author: Donghua Chen
+Author-email: douglaschan@126.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/dhchenx/irt-camera/issues
+Project-URL: Source, https://github.com/dhchenx/irt-camera
+Keywords: MLX90640,GY-MCU90640;thermal data
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyserial
+Requires-Dist: opencv-python
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+## Infrared Thermal Camera
+
+### Introduction
+An upper computer program receiving 32*24 thermal data from MLX90640 using GY-MCU90640.
+
+### Credits
+
+Part of source code comes from [GY-MCU90640-on-PC](https://github.com/autogyro/GY-MCU90640-on-PC)
+
+This package is developed by Donghua Chen with MIT license. 

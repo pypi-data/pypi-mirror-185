@@ -1,0 +1,9 @@
+irtcamera/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irtcamera/mlx90640.py,sha256=KGXAhWij3wYQw-H8tBqF1Orb5vE1l9DwL5V_Mns0Ckg,7576
+irtcamera/__pycache__/__init__.cpython-39.pyc,sha256=02otbCdHq88q9ZGqiDJKZUnH8uuW0jVq8itPGx8JNgg,160
+irtcamera/__pycache__/mlx90640.cpython-39.pyc,sha256=v6RdMEYfMvExKAT7q9GahdxOWC_T35oxWtvj0v4QHig,6232
+irt_camera-0.0.1a1.dist-info/LICENSE,sha256=ajxCpFG1ZxRGDKhOE45GyYsTpVBwzw4xagnZYh2Uooc,1086
+irt_camera-0.0.1a1.dist-info/METADATA,sha256=t5gQ_j17Ch_zG9VpFDiMiqXQ1UUggpfgrHVvopdPE9s,1550
+irt_camera-0.0.1a1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+irt_camera-0.0.1a1.dist-info/top_level.txt,sha256=p_o3MBzmWrxRRTkSWfFa6EdEqSVFB0FP7Ym6T16N6z4,10
+irt_camera-0.0.1a1.dist-info/RECORD,,
