@@ -1,0 +1,10 @@
+uplc/__init__.py,sha256=bCcAkd97butBNQLwOhEpPxHJ6MYwe3whkiRxojnUpwE,540
+uplc/machine.py,sha256=DRS5HhMSuaEVC92nSUBmj7l2HiGHEfBTb6JWYex38Rs,3180
+uplc/uplc_ast.py,sha256=7qPo9moh_9Sv1m2NatUpHSUTEZM7F9S1c2ycLW-3z9Y,19900
+uplc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uplc/tests/test_misc.py,sha256=p4FrGJnFfK4A2fmX_6JsHRsh801HI94mgwtgX1sSLZ0,220772
+uplc-0.2.5.dist-info/LICENSE.txt,sha256=hauengzzsrEjjlrE7QN0voZdEjUQlYh4N1RF28yZKR8,1077
+uplc-0.2.5.dist-info/METADATA,sha256=apYnduVA9sHSq8BaKaThXcIAF5ievGIVvPNStuyG-z4,1807
+uplc-0.2.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+uplc-0.2.5.dist-info/top_level.txt,sha256=2eGAMY2_fDIRQlPse625AZfQAMq__J0lPhpRL7fnm5w,5
+uplc-0.2.5.dist-info/RECORD,,
