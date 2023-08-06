@@ -1,0 +1,2 @@
+[console_scripts]
+pvpcheck = pvpcheck.public_vs_private_pypi_check:main
