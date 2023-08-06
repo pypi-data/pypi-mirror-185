@@ -1,0 +1,14 @@
+govuk_bank_holidays/__init__.py,sha256=Rq3ASTVWblqz4rPon-MfAN9yixdyv3MWfhjP_XvzzKs,116
+govuk_bank_holidays/bank-holidays.json,sha256=gGPalet_xQQFO5TEPxIOnPg8fBEN6juMAZ584aJJZEU,51816
+govuk_bank_holidays/bank_holidays.py,sha256=BOamYwbzjW76L-6fjf0m8qNIV-F2yMCQdCf61aGTM6A,10908
+govuk_bank_holidays/i18n.py,sha256=pqQZOkWK4yY5y6f9h545L-Pc4wP6Pc0erzDLkYsiBmo,1247
+govuk_bank_holidays/setup_extensions.py,sha256=l0hugZF_Zrn6-aA40mE3kekTl73jx6ATbeEDkqNY1Fk,4876
+govuk_bank_holidays/locale/cy/LC_MESSAGES/messages.mo,sha256=rqlI4Csn1A9HhjbsJSprLjZX4ArBuG5--0uolytzbZM,1951
+govuk_bank_holidays/locale/cy/LC_MESSAGES/messages.po,sha256=-OfZhxlGYEbB9jBLt9V33xtYrlraLtf0a5POwFcu82w,2871
+govuk_bank_holidays/locale/en/LC_MESSAGES/messages.mo,sha256=dvIkgcihZBMfhWjK39KPagu6tyZvthmz17z3xUqBi_Y,227
+govuk_bank_holidays/locale/en/LC_MESSAGES/messages.po,sha256=3wc2X44uSxv0l7v8zShkg1EXuUll77XkUPr7_aAai1U,2293
+govuk_bank_holidays-0.13.dist-info/LICENSE.txt,sha256=PtldjLyHQyc1Pmw5codCIGQ0qPDc3DanvDjN3Dxl2aQ,1123
+govuk_bank_holidays-0.13.dist-info/METADATA,sha256=8D8XXMK1B1nxS0jNSiL9K6fgTa9H678-QM8TbBobDmM,5858
+govuk_bank_holidays-0.13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+govuk_bank_holidays-0.13.dist-info/top_level.txt,sha256=IZcV1Q1GuzC4lKnQZfRTQPl_z-85z5V68PRsB99DNug,20
+govuk_bank_holidays-0.13.dist-info/RECORD,,
