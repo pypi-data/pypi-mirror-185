@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: deap_misl
+Version: 0.2.0
+Summary: DEAP additional tooklit by MISL
+Home-page: https://github.com/D-HISL/deap_misl
+Author: junjis0203
+Author-email: junjis0203@gmail.com
+License: LGPL
+Description: # DEAP-MISL
+        
+        This is additional library for [DEAP](https://github.com/deap/deap) developed by MISL.
+        Package structure is same with DEAP.
+        
+        DEAP-MISL includes following algorithms.
+        
+        * NSGA-II using design variable space's crowding
+        * MOEA/D
+        * Operator for 2D gene
+        * Utility for adaptive hyperparameter
+        
+        ## Installation
+        
+        ```bash
+        pip install deap_misl
+        ```
+        
+Keywords: evolutionary algorithms,genetic algorithms,ga
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
