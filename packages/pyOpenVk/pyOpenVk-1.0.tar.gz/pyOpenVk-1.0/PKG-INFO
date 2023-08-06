@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyOpenVk
+Version: 1.0
+Summary: Проста у використанні реалізація OpenVk ApipyOpenVk - python OpenVK Api
+Home-page: https://github.com/ptushkea/pyOpenVk
+Author: Ptushkea
+Author-email: alyonalisicyna@gmail.com
+License: MIT License, see LICENSE file
+Download-URL: https://github.com/ptushkea/pyOpenVk/releases
+Description: Проста у використанні реалізація OpenVk Api
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
