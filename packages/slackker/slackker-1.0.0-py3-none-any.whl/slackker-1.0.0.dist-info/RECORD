@@ -1,0 +1,10 @@
+slackker/__init__.py,sha256=oPOVbfwihFPDEGMksLB5o8sgvFf53UVtLnnUYdXFj38,501
+slackker/callbacks.py,sha256=OrnuszuU6JYNZ_wRLUikCXetMj0L9sC38-X0fwIA0Uo,3320
+slackker/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slackker/utils/checkker.py,sha256=lCvFXMbu6eoC_lQiR1bOzQMPaFf7dgBQ2t-3OIBsSTM,1617
+slackker/utils/funckker.py,sha256=SL0KuvsS94I75OfFo-2zxkNQdY45FGVRX5b8YVNVTKs,3234
+slackker-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+slackker-1.0.0.dist-info/METADATA,sha256=OUPh3Dtszhk8ADHClB0D2HSGcH5yTuBny3VbOCEg-W8,7521
+slackker-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+slackker-1.0.0.dist-info/top_level.txt,sha256=ZrZlC_Dqui7O_gegc-dPDGQrVlZcPHxwI2bopHYcuj8,9
+slackker-1.0.0.dist-info/RECORD,,
