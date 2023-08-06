@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+setuptools_protobuf/__init__.py
+setuptools_protobuf.egg-info/PKG-INFO
+setuptools_protobuf.egg-info/SOURCES.txt
+setuptools_protobuf.egg-info/dependency_links.txt
+setuptools_protobuf.egg-info/entry_points.txt
+setuptools_protobuf.egg-info/requires.txt
+setuptools_protobuf.egg-info/top_level.txt
+setuptools_protobuf.egg-info/zip-safe
