@@ -1,0 +1,3 @@
+fsspec
+pydantic[dotenv]
+sqlalchemy
