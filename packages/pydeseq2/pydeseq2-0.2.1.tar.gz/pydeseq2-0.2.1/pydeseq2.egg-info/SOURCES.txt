@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pydeseq2/DeseqDataSet.py
+pydeseq2/DeseqStats.py
+pydeseq2/__init__.py
+pydeseq2/__version__.py
+pydeseq2/grid_search.py
+pydeseq2/preprocessing.py
+pydeseq2/utils.py
+pydeseq2.egg-info/PKG-INFO
+pydeseq2.egg-info/SOURCES.txt
+pydeseq2.egg-info/dependency_links.txt
+pydeseq2.egg-info/requires.txt
+pydeseq2.egg-info/top_level.txt
