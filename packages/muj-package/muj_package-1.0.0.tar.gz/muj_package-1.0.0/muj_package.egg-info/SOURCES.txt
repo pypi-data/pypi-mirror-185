@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+muj_package/__init__.py
+muj_package/area.py
+muj_package/averager.py
+muj_package.egg-info/PKG-INFO
+muj_package.egg-info/SOURCES.txt
+muj_package.egg-info/dependency_links.txt
+muj_package.egg-info/top_level.txt
