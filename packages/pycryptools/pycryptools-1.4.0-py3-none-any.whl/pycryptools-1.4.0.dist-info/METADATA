@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pycryptools
+Version: 1.4.0
+Summary: PyCrypTools is a python library that brings us a series of algorithms to encrypt and decrypt inputs.
+Home-page: https://github.com/14wual/pycryptools
+Author: Carlos Padilla
+Author-email: cpadlab@gmail.com
+License: Apache License 2.0
+Project-URL: Bug Tracker, https://github.com/14wual/pycryptools/issues
+Project-URL: Documentation, https://github.com/14wual/pycryptools/tree/main/about
+Keywords: encrypt decrypt
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
