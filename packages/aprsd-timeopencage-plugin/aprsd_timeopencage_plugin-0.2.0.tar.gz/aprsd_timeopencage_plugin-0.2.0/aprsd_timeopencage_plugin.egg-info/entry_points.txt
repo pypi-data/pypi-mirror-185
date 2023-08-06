@@ -1,0 +1,2 @@
+[oslo.config.opts]
+aprsd_timeopencage_plugin.conf = aprsd_timeopencage_plugin.conf.opts:list_opts

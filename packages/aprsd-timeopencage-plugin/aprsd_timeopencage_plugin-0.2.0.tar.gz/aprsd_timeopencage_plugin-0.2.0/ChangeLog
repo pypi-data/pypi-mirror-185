@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+v0.2.0
+------
+
+* fixed pep8
+* Update for aprsd 3.0.0
+* Update for aprsd 2.7.0
+
+v0.1.0
+------
+
+* remove trace
+* Updated with code from APRSD
+* Initial commit
