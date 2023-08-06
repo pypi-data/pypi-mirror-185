@@ -1,0 +1,3 @@
+[console_scripts]
+stock_summary_tool=stock_summary.main:main
+
