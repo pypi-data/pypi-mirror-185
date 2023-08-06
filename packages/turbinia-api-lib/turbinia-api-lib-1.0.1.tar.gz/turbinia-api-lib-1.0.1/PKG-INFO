@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: turbinia-api-lib
+Version: 1.0.1
+Summary: Turbinia API Server
+Home-page: 
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: Apache License 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Turbinia API Server
+Requires-Python: >=3.6
+
+    Turbinia API server  # noqa: E501
+    
