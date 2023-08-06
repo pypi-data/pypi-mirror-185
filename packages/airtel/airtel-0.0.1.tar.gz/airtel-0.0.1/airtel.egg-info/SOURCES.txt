@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+airtel/core.py
+airtel.egg-info/PKG-INFO
+airtel.egg-info/SOURCES.txt
+airtel.egg-info/dependency_links.txt
+airtel.egg-info/requires.txt
+airtel.egg-info/top_level.txt
