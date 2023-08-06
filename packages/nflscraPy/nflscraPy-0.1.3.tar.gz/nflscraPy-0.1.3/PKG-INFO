@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: nflscraPy
+Version: 0.1.3
+Summary: Datasets and Scraping Functions for NFL Data
+Home-page: https://github.com/blnkpagelabs/nflscraPy
+Author: Tyler Durden
+Author-email: blankpagelabs@gmail.com
+License: MIT License
+Description: 
+        This package was inspired by the creators of nflscrapR and nflfastR and the tremendous influence they have had on the open-source NFL community
+        
+        The functionality of nflscraPy was designed to allow Python users to easily ingest boxscore and seasonal data from publicly available resourses, in particular, Pro Football Reference
+        
+        Hopefully this package builds upon the availabilty of open-source resources for the football and data analytics community
+        
+Keywords: python,scraper,NFL Data,Pro Football Reference,Sports Reference,fiveThirtyEight
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
