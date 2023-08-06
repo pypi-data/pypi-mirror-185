@@ -1,0 +1,38 @@
+[
+  {
+    "name": "mapio",
+    "organization": "U.S. Geological Survey",
+    "description": "Library for dealing with grid formats",
+    "version": "main",
+    "status": "Development",
+    "permissions": {
+      "usageType": "openSource",
+      "licenses": [
+        {
+          "name": "Public Domain, CC0-1.0",
+          "URL": "https://code.usgs.gov/ghsc/esi/mapio/-/raw/main/LICENSE.md"
+        }
+      ]
+    },
+    "homepageURL": "https://github.com/usgs/mapio",
+    "downloadURL": "https://code.usgs.gov/ghsc/esi/mapio/-/archive/main/mapio-main.zip",
+    "disclaimerURL": "https://code.usgs.gov/ghsc/esi/mapio/-/raw/main/DISCLAIMER.md",
+    "repositoryURL": "https://code.usgs.gov/ghsc/esi/mapio.git",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+      "maps",
+      "grids"
+    ],
+    "languages": [
+      "python"
+    ],
+    "contact": {
+      "name": "Mike Hearne",
+      "email": "mhearne@usgs.gov"
+    },
+    "date": {
+      "metadataLastUpdated": "2022-12-06"
+    }
+  }
+]
