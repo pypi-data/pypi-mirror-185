@@ -1,0 +1,12 @@
+setuptools
+nrn-glia[neuron]==4.0.0a4
+errr>=1.2.0
+numpy>=1.21.0
+NEURON>=8.0
+
+[dev]
+sphinx
+pre-commit
+black>=22.1.0
+helveg--sphinx-code-tabs
+sphinx_rtd_theme
