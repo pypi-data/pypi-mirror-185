@@ -1,0 +1,2 @@
+[console_scripts]
+nifti2gif = nifti2gif.__main__:main
