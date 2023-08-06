@@ -1,0 +1,37 @@
+name: Pytesting
+
+on: [push]
+
+env:
+  PYTHONPATH: "/home/runner/work/gutenbergPasswordGenerator/gutenbergPasswordGenerator/src"
+
+jobs:
+  build:
+    name: Run tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.7','3.8','3.9','3.10']
+
+    steps:
+      - name: Set correct timezone
+        uses: szenius/set-timezone@v1.0
+        with:
+          timezoneLinux: "America/Chicago"
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: pip install pytest pytest-cov pytest-md pytest-emoji gutenbergpy
+      - name: Run Pytests
+        uses: pavelzw/pytest-action@v2
+        with:
+          emoji: true
+          verbose: true
+          job-summary: true
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

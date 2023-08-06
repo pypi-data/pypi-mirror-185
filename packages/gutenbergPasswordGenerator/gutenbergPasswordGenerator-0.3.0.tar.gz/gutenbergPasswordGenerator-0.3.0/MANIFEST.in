@@ -1,0 +1,7 @@
+include README.rst
+include LICENSE 
+include requirements.txt
+graft .
+recursive-exclude * *.py[co]
+include ./src/gutenbergPasswordGenerator/versioneer.py
+include ./src/gutenbergPasswordGenerator/_version.py
