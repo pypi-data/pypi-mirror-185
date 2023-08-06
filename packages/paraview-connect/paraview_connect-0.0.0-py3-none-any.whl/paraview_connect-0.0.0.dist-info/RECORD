@@ -1,0 +1,9 @@
+pvconnect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pvconnect/cli.py,sha256=QCe-zEhybLbM1XxLNfixl1yGqGbyTY9-rPHsC93Jh_4,11019
+pvconnect/connection.py,sha256=M9Fvu8esep_QqWHV5t-rS5mRhKbFQt4E_YH8pVQ9DeI,8158
+paraview_connect-0.0.0.dist-info/LICENSE,sha256=dw_waf3wy5ca2q0GjJvSWJTKNrk7YIs_j0qcK-oov_o,1482
+paraview_connect-0.0.0.dist-info/METADATA,sha256=_0uQykYUb854-Yuqa5tOUCwwlikNQlKZY1bKYRVW750,7522
+paraview_connect-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+paraview_connect-0.0.0.dist-info/entry_points.txt,sha256=1WP9PaQnSDT2qfnwrNH5C6Sa8AiZc6T91Sbfn_BPmig,56
+paraview_connect-0.0.0.dist-info/top_level.txt,sha256=o4Cd3F6G75P_MxCkH8IYOspqW0pyiGYniICwbyg2g2M,10
+paraview_connect-0.0.0.dist-info/RECORD,,
