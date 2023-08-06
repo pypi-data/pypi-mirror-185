@@ -1,0 +1,14 @@
+LICENSE-MIT
+README.md
+setup.cfg
+setup.py
+otio_cdl_adapter/__init__.py
+otio_cdl_adapter/cdl_adapter.py
+otio_cdl_adapter/plugin_manifest.json
+otio_cdl_adapter/utils.py
+otio_cdl_adapter.egg-info/PKG-INFO
+otio_cdl_adapter.egg-info/SOURCES.txt
+otio_cdl_adapter.egg-info/dependency_links.txt
+otio_cdl_adapter.egg-info/entry_points.txt
+otio_cdl_adapter.egg-info/requires.txt
+otio_cdl_adapter.egg-info/top_level.txt

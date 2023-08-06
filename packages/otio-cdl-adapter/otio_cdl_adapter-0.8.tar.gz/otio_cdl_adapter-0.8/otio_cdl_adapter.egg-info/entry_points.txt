@@ -1,0 +1,2 @@
+[opentimelineio.plugins]
+otio_cdl_adapter = otio_cdl_adapter
