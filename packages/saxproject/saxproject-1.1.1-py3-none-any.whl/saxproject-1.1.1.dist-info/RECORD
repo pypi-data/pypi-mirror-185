@@ -1,0 +1,9 @@
+saxproject/__init__.py,sha256=q8_5C0f-8mHWNb6mMw02zlYPnEGXBqvOmP3z0CEwZKM,22
+saxproject/api.py,sha256=551jWrS3PuGtqdauHkFucTfrBmAanaeNLdmZDKeedws,3927
+saxproject/middleware.py,sha256=nC2DQ6zwHY7X27Y77J5xFJa7frlq1AEzTALydMlYsSs,692
+saxproject/orm.py,sha256=LcuXS3nzOweImBcCjFk2nEg_-X9Ihq0SEpqD0VzHTWw,6224
+saxproject/response.py,sha256=p1-gp5V-JvktiF9MW_kjSiKOwVVW4CRTk1jvUkA5zUw,1233
+saxproject-1.1.1.dist-info/LICENSE.md,sha256=gvnt2OY49ucTHQ5F2uCjBySrqUqEEcwHVxE1C-ICkyQ,1098
+saxproject-1.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+saxproject-1.1.1.dist-info/METADATA,sha256=pZr-7my_IRPCP81lUV2f7L_9BUJ2KJy_Ctk-I7DtSMI,4263
+saxproject-1.1.1.dist-info/RECORD,,
