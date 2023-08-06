@@ -1,0 +1,11 @@
+voxelmap/__init__.py,sha256=2mrGlatW72SrkjKPTbrqCCmtYIs56SfVklPvUHopVks,200
+voxelmap/annex.py,sha256=JXRzULXBolljPgW7UzPfD-GhamMPq-GMILjm_TTkOBs,2093
+voxelmap/data.py,sha256=1zbu_45NnNCE39Wx5IwwHTuKDDR-SgujlzLxUV0_FyU,2841
+voxelmap/image.py,sha256=iMFcZDfSMLXzxr-cG4nh2A0c-15mAp23Ds_o0q1D8po,13748
+voxelmap/main.py,sha256=loCAy1VVgiV_UzUH5RxGq92fh7ITKBt-q8aSlyX7oao,5545
+voxelmap/objloader.py,sha256=kscUfToufGJJA6nRE-Ll5EB1fwDqAm0TOLRlIeMMSY8,4565
+voxelmap/objviewer.py,sha256=gJQiiUsvOVzsz7ggqXilDOl2ahPKOCrDJZ7hYCOTXjs,2697
+voxelmap-2.1.5.dist-info/METADATA,sha256=FQFjoFvfV3F0bdjDTWGwdoGNfbmI3Q61LE9byB_tw9o,2244
+voxelmap-2.1.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+voxelmap-2.1.5.dist-info/LICENSE,sha256=VF3VTdGLU6hmRzSbcEyTLdJF3ZvY2jfEPko4A2YrUho,1073
+voxelmap-2.1.5.dist-info/RECORD,,
