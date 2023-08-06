@@ -1,0 +1,6 @@
+pubs/plugs/extract/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pubs/plugs/extract/annotation.py,sha256=wua-xZEuIe3oACJnzUuhv70pr82nTsYMgqwnChTeK9Y,3813
+pubs/plugs/extract/extract.py,sha256=5jN-2zw28F4hSdMJA9mA0BKQvDVBUF1JZBSNUdTK_lk,11923
+pubs_extract-0.2.0.dist-info/METADATA,sha256=IZfzevnjTLH0OHq-YJbmG4VZXxj-hiTacQe62aR2ouA,8815
+pubs_extract-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pubs_extract-0.2.0.dist-info/RECORD,,
