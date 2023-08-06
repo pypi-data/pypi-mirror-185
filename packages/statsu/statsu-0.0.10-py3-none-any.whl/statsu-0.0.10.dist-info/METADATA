@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: statsu
+Version: 0.0.10
+Summary: Pandas Dataframe Editor
+Author: sbyim
+License-File: LICENSE
+Requires-Dist: PySide6
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
