@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "material-plausible-plugin"
+description = "Plausible Analytics implementation for Material for MkDocs"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Alexander Pushkov", email = "alexander@notpushk.in" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "mkdocs",
+  "mkdocs-material",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://material-plausible-plugin.ale.sh/"
+Issues = "https://gitlab.com/notpushkin/material-plausible-plugin/issues"
+Source = "https://gitlab.com/notpushkin/material-plausible-plugin"
+
+[project.entry-points."mkdocs.plugins"]
+"material-plausible" = "material_plausible.plugin:MaterialPlausiblePlugin"
+
+[tool.hatch.version]
+path = "material_plausible/__about__.py"
+
+[tool.hatch.envs.default]
+path = ".venv"
