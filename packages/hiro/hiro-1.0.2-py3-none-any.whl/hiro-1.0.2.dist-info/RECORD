@@ -1,0 +1,12 @@
+hiro/__init__.py,sha256=BzuMWD5zIlIGjkPnDYjiwSJv1h1qHeoVBV8VTXrtrnc,218
+hiro/_version.py,sha256=qIqI5guRnwfTslY3mbt_51p1ofUo6kz-J1AV1W23-E4,497
+hiro/core.py,sha256=c62V7RHRrCxuGJCuEGEe-yWMXFQ_EA_vB3MORDZrolI,14394
+hiro/errors.py,sha256=e1YZ_TQrdekSIx8C6KiZb2Wc0Yl3xTwEKwsKjzfyixw,883
+hiro/patches.py,sha256=LHh9zCFU2Qb6Uq-IVv-utWGQkkNGnkr6KL25g2hBp9A,1402
+hiro/utils.py,sha256=v4hxF63wIOIjjoDSfsXekfQAYsN6Oz13B8lyIZHOvyI,1711
+hiro/version.py,sha256=3P8Y3HVs3KoI6r96xoC3f34ThF_ojxOBD9IS6vspv6g,61
+hiro-1.0.2.dist-info/LICENSE,sha256=E3PSxCqjwb3GoPiMWHnUK-C849sZY2mPU7qjvgUwNcE,1083
+hiro-1.0.2.dist-info/METADATA,sha256=2-uCOrlP1qjzhou-0xjGHhTv8_BP0ey7IQGuvgQoKqM,8220
+hiro-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hiro-1.0.2.dist-info/top_level.txt,sha256=oeMa4zJ-qfArfiCZ81SrQgK3GU1bRJ7tSuP6mLhM5Rw,5
+hiro-1.0.2.dist-info/RECORD,,
