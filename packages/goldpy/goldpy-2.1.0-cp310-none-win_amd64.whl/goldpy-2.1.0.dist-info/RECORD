@@ -1,0 +1,5 @@
+goldpy-2.1.0.dist-info/METADATA,sha256=7qO-dBQGLSJ6ggeSOLCDblTSmr47Ly-njM_Aaxap1Eg,255
+goldpy-2.1.0.dist-info/WHEEL,sha256=keLBtIOE7ZgLyd8Cijw37iqv72a2jhfxMdDu8Unr7zo,96
+goldpy/__init__.py,sha256=WD2_vZJLPDyCCpOYDxo9G8i2nJK9oepotFPjBEU6k4c,107
+goldpy/goldpy.cp310-win_amd64.pyd,sha256=gZBG9k4e6WAg8ZXKo_gFZSI0l1AF7mibu09lN_JYFJY,2029568
+goldpy-2.1.0.dist-info/RECORD,,
