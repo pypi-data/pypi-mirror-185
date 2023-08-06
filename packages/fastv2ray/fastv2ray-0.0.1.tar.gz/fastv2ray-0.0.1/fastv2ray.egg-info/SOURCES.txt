@@ -1,0 +1,16 @@
+README.md
+setup.py
+fastv2ray/__init__.py
+fastv2ray/app.py
+fastv2ray.egg-info/PKG-INFO
+fastv2ray.egg-info/SOURCES.txt
+fastv2ray.egg-info/dependency_links.txt
+fastv2ray.egg-info/entry_points.txt
+fastv2ray.egg-info/requires.txt
+fastv2ray.egg-info/top_level.txt
+fastv2ray/bins/geoip-only-cn-private.dat
+fastv2ray/bins/geoip.dat
+fastv2ray/bins/geosite.dat
+fastv2ray/bins/v2ctl
+fastv2ray/bins/v2ray
+fastv2ray/configs/default.json
