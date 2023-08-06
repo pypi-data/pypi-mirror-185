@@ -1,0 +1,11 @@
+setup.py
+bimms/BIMMS.py
+bimms/Measures.py
+bimms/PostProcessing.py
+bimms/__init__.py
+bimms/constants.py
+bimms.egg-info/PKG-INFO
+bimms.egg-info/SOURCES.txt
+bimms.egg-info/dependency_links.txt
+bimms.egg-info/requires.txt
+bimms.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bimms
+Version: 1.0.0
+Summary: BIMMS python API
+Home-page: https://github.com/fkolbl/BIMMS
+Author: Louis Regnacq - Florian Kolbl
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+file: README.md
