@@ -1,0 +1,11 @@
+ruamel.std.pathlib-0.10.3-py3.10-nspkg.pth,sha256=XW5yD6uDr0aefROa8QqCZLm6btApJznzQoIfNxe5e6U,1686
+ruamel/std/pathlib/__init__.py,sha256=7Ccso5Ys_WJ8Ca0FadVGrXBhCLgBq4I5NaJvjximab4,11237
+ruamel/std/pathlib/blake3.py,sha256=WwKoVKA6WaDS1jEEiY686fuzihZ_Oc-tLQkH1mBgR_4,1074
+ruamel/std/pathlib/json.py,sha256=lbJOKNBNJ2s-OPqagtPFSlLsZvZJpqC7uP3bJMec73w,2542
+ruamel/std/pathlib/tempdir.py,sha256=iDtBeusuXaPrZS4pTso7GDOENetOdAzztAxDpxse2ng,2970
+ruamel.std.pathlib-0.10.3.dist-info/LICENSE,sha256=U84vnxFtXoFXo7ZXn1TJ0ZWIsLlNN4ShnvLsWfhr1Z8,1121
+ruamel.std.pathlib-0.10.3.dist-info/METADATA,sha256=oQBkQ-iRU1DlVLOeLxH-wC6ITo0T-KbUo97k0bsn6FU,16105
+ruamel.std.pathlib-0.10.3.dist-info/WHEEL,sha256=Ow1Agppnny4NfvfZK4t6N-TUVQfFCpnFCb5wBX-uuec,110
+ruamel.std.pathlib-0.10.3.dist-info/namespace_packages.txt,sha256=p_trPJWgDp2obcV0nKGACOE12Mju_7qAEZX55mVs3cM,18
+ruamel.std.pathlib-0.10.3.dist-info/top_level.txt,sha256=lu5ar9ilvyS03jNvS5x9I0_3NwCKkvIlY2k0QH9AArk,7
+ruamel.std.pathlib-0.10.3.dist-info/RECORD,,
