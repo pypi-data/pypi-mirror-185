@@ -1,0 +1,6 @@
+azure-core
+azure-mlflow
+openpyxl
+scikit-learn
+pandas
+numpy
