@@ -1,0 +1,9 @@
+dbt_serverless/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_serverless/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_serverless/lib/docs_helper.py,sha256=KMHp-Im-3ffdKsqgG7DEDTobC9zJBFz-kOgj92GHC3k,1593
+dbt_serverless/main.py,sha256=LiITDbwDIgL6-DzvOhOmn8SSCXS7G_Cv2tp1F1yny0c,2075
+dbt_serverless-0.1.1.dist-info/entry_points.txt,sha256=o3HHBmtPhRaPmBj7NbkboXSw2TibJkIgAjbpttk5g3Y,37
+dbt_serverless-0.1.1.dist-info/LICENSE.txt,sha256=hp54NfQKWEHRQCmCwj4k4-mzpwBb8FCFIqUWsH0cTrw,1061
+dbt_serverless-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+dbt_serverless-0.1.1.dist-info/METADATA,sha256=BN-H_9MWI0Ycb2qAvLHdF_xvNqMVIgM0Ac9r1C7X6cM,2914
+dbt_serverless-0.1.1.dist-info/RECORD,,
