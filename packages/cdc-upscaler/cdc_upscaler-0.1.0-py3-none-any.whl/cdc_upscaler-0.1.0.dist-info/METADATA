@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: cdc-upscaler
+Version: 0.1.0
+Summary: Image upscaler for anime.
+Home-page: https://github.com/narugo1992/cdc_upscaler
+Author: narugo1992
+Author-email: narugo@126.com
+License: Apache License, Version 2.0
+Keywords: Image upscaler for anime.
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: onnxruntime
+Requires-Dist: pillow
+Requires-Dist: numpy
+Requires-Dist: huggingface-hub
+Provides-Extra: gpu
+Requires-Dist: onnxruntime-gpu ; extra == 'gpu'
+Provides-Extra: test
+Requires-Dist: coverage (>=5) ; extra == 'test'
+Requires-Dist: mock (>=4.0.3) ; extra == 'test'
+Requires-Dist: flake8 (~=3.5) ; extra == 'test'
+Requires-Dist: testfixtures (>=6.18.5) ; extra == 'test'
+Requires-Dist: pytest (~=6.2.5) ; extra == 'test'
+Requires-Dist: pytest-cov (~=3.0.0) ; extra == 'test'
+Requires-Dist: pytest-mock (~=3.6.1) ; extra == 'test'
+Requires-Dist: pytest-xdist (>=1.34.0) ; extra == 'test'
+Requires-Dist: pytest-rerunfailures (~=10.2) ; extra == 'test'
+Requires-Dist: pytest-timeout (~=2.0.2) ; extra == 'test'
+Requires-Dist: pytest-benchmark (~=3.4.0) ; extra == 'test'
+Requires-Dist: easydict (<2,>=1.7) ; extra == 'test'
+Requires-Dist: testtools (>=2) ; extra == 'test'
+Requires-Dist: pytest-image-diff ; extra == 'test'
+Requires-Dist: torch ; extra == 'test'
+Requires-Dist: hbutils (>=0.7) ; extra == 'test'
+Provides-Extra: tools
+Requires-Dist: torch ; extra == 'tools'
+Requires-Dist: onnx ; extra == 'tools'
+Requires-Dist: onnxoptimizer ; extra == 'tools'
+Requires-Dist: onnxsim ; extra == 'tools'
+Requires-Dist: click (>=7) ; extra == 'tools'
+Requires-Dist: hbutils (>=0.7) ; extra == 'tools'
+
+# CDC Image Upscaler
+
+[![PyPI](https://img.shields.io/pypi/v/cdc_upscaler)](https://pypi.org/project/cdc_upscaler/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cdc_upscaler)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/narugo1992/cdc_upscaler/blob/main/examples/cdc_upscaler_example.ipynb)
+![Loc](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/narugo1992/76c126fca51d24785534a1f3c8cac20d/raw/loc.json)
+![Comments](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/narugo1992/76c126fca51d24785534a1f3c8cac20d/raw/comments.json)
+
+[![Code Test](https://github.com/narugo1992/cdc_upscaler/workflows/Code%20Test/badge.svg)](https://github.com/narugo1992/cdc_upscaler/actions?query=workflow%3A%22Code+Test%22)
+[![Package Release](https://github.com/narugo1992/cdc_upscaler/workflows/Package%20Release/badge.svg)](https://github.com/narugo1992/cdc_upscaler/actions?query=workflow%3A%22Package+Release%22)
+[![codecov](https://codecov.io/gh/narugo1992/cdc_upscaler/branch/main/graph/badge.svg?token=XJVDP4EFAT)](https://codecov.io/gh/narugo1992/cdc_upscaler)
+
+![GitHub Org's stars](https://img.shields.io/github/stars/narugo1992)
+[![GitHub stars](https://img.shields.io/github/stars/narugo1992/cdc_upscaler)](https://github.com/narugo1992/cdc_upscaler/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/narugo1992/cdc_upscaler)](https://github.com/narugo1992/cdc_upscaler/network)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/narugo1992/cdc_upscaler)
+[![GitHub issues](https://img.shields.io/github/issues/narugo1992/cdc_upscaler)](https://github.com/narugo1992/cdc_upscaler/issues)
+[![GitHub pulls](https://img.shields.io/github/issues-pr/narugo1992/cdc_upscaler)](https://github.com/narugo1992/cdc_upscaler/pulls)
+[![Contributors](https://img.shields.io/github/contributors/narugo1992/cdc_upscaler)](https://github.com/narugo1992/cdc_upscaler/graphs/contributors)
+[![GitHub license](https://img.shields.io/github/license/narugo1992/cdc_upscaler)](https://github.com/narugo1992/cdc_upscaler/blob/master/LICENSE)
+
+Wrapped tools based
+on [xiezw5/Component-Divide-and-Conquer-for-Real-World-Image-Super-Resolution](https://github.com/xiezw5/Component-Divide-and-Conquer-for-Real-World-Image-Super-Resolution).
+
+First you need to install this with `pip`:
+
+```shell
+pip install cdc_upscaler
+```
+
+Here is a simple example:
+
+```python
+import logging
+import os
+
+from PIL import Image
+
+from cdc_upscaler import image_upscale
+
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)
+    original_image = Image.open('images/your input image.png')
+    upscaled_image = image_upscale(original_image, scale=4)
+    os.makedirs('output', exist_ok=True)
+    upscaled_image.save('output/result.png')
+
+```
+
+This pretrained model is hosted on [7eu7d7/CDC_anime](https://huggingface.co/7eu7d7/CDC_anime), which is provided
+by [7eu7d7](https://github.com/7eu7d7). The onnx model used is hosted
+on [narugo/CDC_anime_onnx](https://huggingface.co/narugo/CDC_anime_onnx/tree/main).
