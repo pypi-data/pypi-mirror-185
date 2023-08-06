@@ -1,0 +1,30 @@
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+categories:
+  - title: "Features"
+    label: "feature"
+  - title: "Enhancement"
+    label: "enhancement"
+  - title: "Bug Fixes"
+    label: "bug"
+  - title: "Documentation"
+    label: "documentation"
+  - title: "Maintenance"
+    label: "maintenance"
+change-template: "- $TITLE @$AUTHOR ([#$NUMBER]($URL))"
+change-title-escapes: '\<*_&#@'
+version-resolver:
+  major:
+    labels:
+      - "major"
+  minor:
+    labels:
+      - "feature"
+      - "enhancement"
+  default: patch
+exclude-labels:
+  - "skip-changelog"
+template: |
+  ## Release v$RESOLVED_VERSION (20YY/MM/DD)
+
+  $CHANGES

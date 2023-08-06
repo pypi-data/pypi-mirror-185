@@ -1,0 +1,27 @@
+name: xbatcher-docs-pydata
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.8
+  - dask
+  - pydata-sphinx-theme
+  - ipython
+  - matplotlib
+  - numpy
+  - numpydoc
+  - pytest
+  - sphinx<6
+  - sphinx-autosummary-accessors
+  - sphinx-copybutton
+  - xarray
+  # For examples
+  - adlfs
+  - ipykernel
+  - nbsphinx
+  - zarr
+  # Editable xbatcher installation
+  - pip
+  - pip:
+      # relative to this file. Needs to be editable to be accepted.
+      - -e ../..
