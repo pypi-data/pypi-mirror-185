@@ -1,0 +1,10 @@
+README.md
+setup.py
+awsctx/__init__.py
+awsctx/__main__.py
+awsctx/awsctx.py
+awsctx.egg-info/PKG-INFO
+awsctx.egg-info/SOURCES.txt
+awsctx.egg-info/dependency_links.txt
+awsctx.egg-info/entry_points.txt
+awsctx.egg-info/top_level.txt

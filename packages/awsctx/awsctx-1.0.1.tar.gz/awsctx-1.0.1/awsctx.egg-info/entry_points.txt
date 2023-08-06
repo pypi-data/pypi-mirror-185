@@ -1,0 +1,2 @@
+[console_scripts]
+awsctx = awsctx.__main__:main

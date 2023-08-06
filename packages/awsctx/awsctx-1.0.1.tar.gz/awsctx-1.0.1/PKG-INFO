@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: awsctx
+Version: 1.0.1
+Summary: A command line tool to change active AWS profiles and add/replace profiles.
+Home-page: https://github.com/aurphillus/awsctx
+Author: Aniket Paul
+Author-email: aniketpaul446@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# awsctx
+
+A command line tool to change active AWS profiles and add/replace profiles.
+
+# Installation
+
+## Using Pip
+
+```bash
+$ pip3 install awsctx
+```
+
+## Manual 
+
+```bash
+$ git clone https://github.com/aurphillus/awsctx.git
+$ cd awsctx
+$ python3 setup.py install
+```
+
+# Usage
+
+## To list Profiles
+```bash
+$ awsctx
+```
+## To switch active profile
+```bash
+$ awsctx profile-name
+```
+
+## To add a new profile block
+```bash
+$ awsctx configure
+```
