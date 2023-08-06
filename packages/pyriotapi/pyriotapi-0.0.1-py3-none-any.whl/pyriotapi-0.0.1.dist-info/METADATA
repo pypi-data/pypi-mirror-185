@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pyriotapi
+Version: 0.0.1
+Summary: A small example package
+Author-email: skereeHub <skeree2104@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+

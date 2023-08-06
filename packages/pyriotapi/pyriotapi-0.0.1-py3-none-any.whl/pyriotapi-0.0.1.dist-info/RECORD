@@ -1,0 +1,16 @@
+pyriotapi/__init__.py,sha256=rB1HqqFVxyMRVACx_dn6Y41JrFMXo-u6o3twzNUBM4M,113
+pyriotapi/client.py,sha256=HGKHflxDm-az5D-KKxDqOWoU40pqVzq--GkVpf7m_9M,812
+pyriotapi/http.py,sha256=xKt9JQkaxIZ23L6zI10eAVV6LQTpy-UlcdqmdqoMA4s,1144
+pyriotapi/api/core.py,sha256=CYYUwcTu3K45haidKF2GJtw_fnZIuXUX-JgRuOXk160,675
+pyriotapi/api/enums.py,sha256=dG07g6-82B23F5FfE_3v53zup62vwLvkXDs8RI8ntIA,1545
+pyriotapi/api/lol/__init__.py,sha256=bYamWmnZ9yVZnTDHBdfFOX9by5CzDqD4gmhcZJpXU-A,196
+pyriotapi/api/lol/league.py,sha256=KiNN2drKsztJqZnU6RdGvllfXeu15lMlV81BUvOweag,3967
+pyriotapi/api/lol/mastery.py,sha256=LVkWP-Sxas74nleu3A-SO1AHs5RHLhuWyoM0x2iQ-u0,1572
+pyriotapi/api/lol/models.py,sha256=082ld0zZdym_m1fuUHOAhApyTdBnPwgStooMXpVQbzU,2744
+pyriotapi/api/lol/rotation.py,sha256=F7PHWF1tv9bMF-6SDnyxFj_tcuDO3ssVGdikytMzDA8,545
+pyriotapi/api/lol/status.py,sha256=IhVzdZQ92NNQiHvFio_gtJ6rfaThv1mNBu3sOlzlWHE,3366
+pyriotapi/api/lol/summoner.py,sha256=IPjGo1Q7cBM4ufXIvBoVOO0GtGlVNb5QXScoWSmtWP4,1442
+pyriotapi-0.0.1.dist-info/METADATA,sha256=HLBPkfbQWjflPawdBneaeN_Rra_9GTQllBwHrgyBLiI,206
+pyriotapi-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyriotapi-0.0.1.dist-info/top_level.txt,sha256=Beg6_ch5HoYD_uSE5IOlYudJaG_h5tUMD4gNWWSdSuw,10
+pyriotapi-0.0.1.dist-info/RECORD,,
