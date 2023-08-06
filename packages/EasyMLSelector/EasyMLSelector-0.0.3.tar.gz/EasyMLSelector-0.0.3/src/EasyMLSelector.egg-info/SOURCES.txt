@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/EasyMLSelector/EasyMLSelector.py
+src/EasyMLSelector/__init__.py
+src/EasyMLSelector.egg-info/PKG-INFO
+src/EasyMLSelector.egg-info/SOURCES.txt
+src/EasyMLSelector.egg-info/dependency_links.txt
+src/EasyMLSelector.egg-info/top_level.txt
