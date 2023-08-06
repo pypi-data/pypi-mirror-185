@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+ingenii_quantum/__init__.py
+ingenii_quantum/hybrid_networks/__init__.py
+ingenii_quantum/hybrid_networks/edge_detection.py
+ingenii_quantum/hybrid_networks/filters.py
+ingenii_quantum/hybrid_networks/layers.py
+ingenii_quantum/hybrid_networks/utils.py
+ingenii_quantum_hybrid_networks.egg-info/PKG-INFO
+ingenii_quantum_hybrid_networks.egg-info/SOURCES.txt
+ingenii_quantum_hybrid_networks.egg-info/dependency_links.txt
+ingenii_quantum_hybrid_networks.egg-info/requires.txt
+ingenii_quantum_hybrid_networks.egg-info/top_level.txt

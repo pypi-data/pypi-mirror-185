@@ -1,0 +1,14 @@
+qiskit
+qiskit-aer
+qiskit-ibmq-provider
+qiskit_machine_learning
+qiskit-nature
+qiskit-nature[pyscf]
+scikit-learn
+h5py
+matplotlib
+pylatexenc
+torch
+torchaudio
+torchvision
+torch-geometric
