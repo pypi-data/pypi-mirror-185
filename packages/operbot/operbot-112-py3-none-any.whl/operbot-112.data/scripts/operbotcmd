@@ -1,0 +1,65 @@
+#!python
+# This file is placed in the Public Domain.
+# pylint: disable=C0114,C0115,C0116,C0413,R0801
+
+
+"write your own commands"
+
+
+## imports
+
+
+import inspect
+import os
+import sys
+
+
+from opr import Cfg, Command, Handler, Wd, command, parse, scan
+
+
+from operbot import cmd, irc, rss
+
+
+import operbot
+
+
+## defines
+
+
+Cfg.name = "operbot"
+Wd.workdir = "/var/lib/operbot/"
+
+
+## classes
+
+
+class CLI(Handler):
+
+    @staticmethod
+    def raw(txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+## commands
+
+
+def mod(event):
+    path = operbot.__path__[0]
+    event.reply(",".join([x[:-3] for x in os.listdir(path) if not (x.startswith("_") or x.endswith("~"))]))
+
+
+## runtime
+
+
+def main():
+    Command.add(mod)
+    parse(' '.join(sys.argv[1:]))
+    scan(cmd)
+    scan(irc)
+    scan(rss)
+    cli = CLI()
+    command(cli, Cfg.prs.otxt)
+    
+
+main()
