@@ -1,0 +1,16 @@
+LICENCE.txt
+README.md
+pyproject.toml
+setup.py
+debategpt/__init__.py
+debategpt.egg-info/PKG-INFO
+debategpt.egg-info/SOURCES.txt
+debategpt.egg-info/dependency_links.txt
+debategpt.egg-info/requires.txt
+debategpt.egg-info/top_level.txt
+debategpt/inference/__init__.py
+debategpt/inference/core.py
+debategpt/training/__init__.py
+debategpt/training/orchestrator.py
+debategpt/training/reward.py
+debategpt/training/trainer.py

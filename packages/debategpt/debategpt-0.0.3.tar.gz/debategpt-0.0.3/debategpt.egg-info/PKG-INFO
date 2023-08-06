@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: debategpt
+Version: 0.0.3
+Summary: Train and use DebateGPT, a language model designed to simulate debates.
+Author: paulbricman
+Author-email: paulbricman@protonmail.com
+License-File: LICENCE.txt
