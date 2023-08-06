@@ -1,0 +1,10 @@
+loop_tool_py.pypy39-pp73-aarch64-linux-gnu.so,sha256=pryieUeEJHyLN7R8iimCuASLcbwizV9dL_0R0mLf_3s,528656
+libloop_tool.so,sha256=vS-KfncWLJuyqpAnQoK5b16jAwJZRxTJJJIYh960wfw,1198728
+loop_tool-0.1.0.dist-info/WHEEL,sha256=F6Iy1YLNkS7suU8fdX2cRUKEFN_gcMKlgRU5TpFpJY8,164
+loop_tool-0.1.0.dist-info/LICENSE,sha256=UkEte8fOQVfqYou6rLiCngqcs8WPV_mRdhJryM8r_IU,1086
+loop_tool-0.1.0.dist-info/RECORD,,
+loop_tool-0.1.0.dist-info/top_level.txt,sha256=tz_yi3v_pzsli-d3aozAgXOVtSJuGOOdiU5apttYucA,23
+loop_tool-0.1.0.dist-info/METADATA,sha256=4hketKx6nVcHRgZqwDpUyEI2Y8PkIMhLLDVpL6U3MO8,231
+loop_tool/nn.py,sha256=Z5borbNY4sZ2uOzSUEktpkdB3K5Ojl3YVVFfpG1uLkE,2308
+loop_tool/ui.py,sha256=L9MLNadPmGhjmDz7Lu5G6DUVEMzwUQ76FpdZ9BVjgwo,6656
+loop_tool/__init__.py,sha256=u2hCQRemJ4Hqcbhh3cqx6OI4s9SxzfW2UuHx-oL59qI,482
