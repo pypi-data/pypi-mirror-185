@@ -1,0 +1,12 @@
+mcdm/__init__.py,sha256=Kb-VC3A76Nc_5i2y9BbrT3I3KR1QG7A1teTuYyrww0Q,50
+mcdm/ahp.py,sha256=QXPqxnzwrK3EJ9tSYROOBZA3aHbghVTGwWD8nh2Qs6E,2029
+mcdm/electre.py,sha256=-FeRjjbiGH3IKlxTeO80Eor5Tk7i8kJoU_V3eOPWgCA,4078
+mcdm/merec.py,sha256=z3bOhjunQ597sImBqUO7gmNFE-jYMaRxT4Ni1IuRAt8,2461
+mcdm/normalization.py,sha256=-ZYjsssEfn7xO5jlmVfole0eIEsUDajft3DrD3zEsAc,3273
+mcdm/swara.py,sha256=zqYuRgZQZXBSLxZVv3bs6VufnAfOMgtU6DwDEWVaId8,915
+mcdm/topsis.py,sha256=BtNS5BANyeLv22CIn7W4GIASNSREtvIdbp7y5i_E2J4,1909
+mcdmtools-0.0.25.dist-info/LICENSE,sha256=QN7_5psr5H-OH85-YegFD4u4JyAkJo4zd4piujMBE_8,1075
+mcdmtools-0.0.25.dist-info/METADATA,sha256=1TvxmVvadiERSFoL0JMJ7ZM8fBM9BfsROyx5_19GbUI,649
+mcdmtools-0.0.25.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mcdmtools-0.0.25.dist-info/top_level.txt,sha256=iC4AXT1ykKMgYa7kDmiuRHET0Bg2_H48NvbQHvLISzg,5
+mcdmtools-0.0.25.dist-info/RECORD,,
