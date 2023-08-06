@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "pandasdb2"
+version = "2.0.3"
+description = "Pandas but without bringing the data into memory"
+authors = ["Shneor Elmaleh <770elmo@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+repository = "https://github.com/shner-elmo/db-wrapper"
+documentation = "https://github.com/shner-elmo/pandas-db/blob/master/README.md"
+
+keywords = [
+    "pandas",
+    "pandasdb",
+    "SQL"
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Programming Language :: SQL",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+#    # TODO test the following versions
+#    "Programming Language :: Python :: 3.7",
+#    "Programming Language :: Python :: 3.8",
+#    "Programming Language :: Python :: 3.9",
+#    "Programming Language :: Python :: 3.10",
+#    "Programming Language :: Python :: 3.11",
+    "Topic :: Database"
+]
+
+[tool.poetry.urls]
+issues = "https://github.com/shner-elmo/pandas-db/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pandas = "^1.5.2"
+pympler = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]  # The dependencies declared in tool.poetry.dependencies are part of an implicit main group.
+mypy = "^0.991"
+coverage = "^6.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
