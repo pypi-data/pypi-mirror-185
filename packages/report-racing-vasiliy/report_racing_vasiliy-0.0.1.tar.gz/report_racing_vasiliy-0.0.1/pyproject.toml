@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "report-racing-vasiliy"
+version = "0.0.1"
+authors = [
+  { name="Vasiliy Bagriy", email="devilinside25@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://git.foxminded.ua/foxstudent102159/task-6-report-of-monaco-2018-racing"
+"Bug Tracker" = "https://git.foxminded.ua/foxstudent102159/task-6-report-of-monaco-2018-racing/-/issues"
