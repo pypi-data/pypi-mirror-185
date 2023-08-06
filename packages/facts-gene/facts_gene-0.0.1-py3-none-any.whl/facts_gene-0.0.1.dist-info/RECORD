@@ -1,0 +1,9 @@
+facts_gene/__init__.py,sha256=qLWLNCEE5OLdBMeVxw-4P22KNsTTw1dVRyWsZXJYeRo,460
+facts_gene/facts_gen_commons.py,sha256=LiNujaD_08XuDYnzFa2JaiBXMPY9EeSUF4ohCSFCOZo,1854
+facts_gene/facts_gen_tables_ntct.py,sha256=c-OSCeJKnNUCD80IZn6hz-eagFSS-QQO31wXpix36to,7028
+facts_gene/facts_gen_var_ntct.py,sha256=rKUVCZqj-zPlXWJeBwd10fhJ36_1pD26ymXTaCtYA9A,4091
+facts_gene-0.0.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+facts_gene-0.0.1.dist-info/METADATA,sha256=eZIDgYZxkDNGuNMGUpiVvXYcSsFkBJu8gOu-mqABuTs,845
+facts_gene-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+facts_gene-0.0.1.dist-info/top_level.txt,sha256=D0A66NtlglKC6AMvWPPgbmiNu2xtr52Q1st-_EAuIA4,11
+facts_gene-0.0.1.dist-info/RECORD,,
