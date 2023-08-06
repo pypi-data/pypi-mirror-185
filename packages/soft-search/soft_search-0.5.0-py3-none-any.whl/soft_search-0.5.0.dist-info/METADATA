@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: soft-search
+Version: 0.5.0
+Summary: searching for software promises in grant applications
+Author-email: Eva Maxfield Brown <evamxb@uw.edu>
+License: MIT License
+Project-URL: Homepage, https://github.com/si2-urssi/eager
+Project-URL: Bug Tracker, https://github.com/si2-urssi/eager/issues
+Project-URL: Documentation, https://si2-urssi.github.io/eager
+Project-URL: User Support, https://github.com/si2-urssi/eager/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (~=4.11)
+Requires-Dist: dataclasses-json (~=0.5)
+Requires-Dist: datasets (~=2.0)
+Requires-Dist: embetter[sentence-tfm] (~=0.3.1)
+Requires-Dist: ghapi (~=1.0)
+Requires-Dist: pandas (~=1.4)
+Requires-Dist: pyarrow (~=9.0)
+Requires-Dist: python-dotenv (~=0.21)
+Requires-Dist: requests (~=2.28)
+Requires-Dist: scikit-learn (~=1.1)
+Requires-Dist: statsmodels (~=0.13.2)
+Requires-Dist: torch (~=1.12)
+Requires-Dist: transformers (~=4.21)
+Provides-Extra: dev
+Requires-Dist: ipython (>=8.4.0) ; extra == 'dev'
+Requires-Dist: matplotlib (>=3.5.2) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: m2r2 (>=0.2.7) ; extra == 'docs'
+Requires-Dist: Sphinx (>=4.0.0) ; extra == 'docs'
+Requires-Dist: furo (>=2022.4.7) ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: docutils (<0.19,>=0.18) ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: black (>=22.3.0) ; extra == 'lint'
+Requires-Dist: check-manifest (>=0.48) ; extra == 'lint'
+Requires-Dist: ruff (>=0.0.216) ; extra == 'lint'
+Requires-Dist: mypy (>=0.790) ; extra == 'lint'
+Requires-Dist: pre-commit (>=2.20.0) ; extra == 'lint'
+Requires-Dist: types-requests (~=2.28) ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: coverage (>=5.1) ; extra == 'test'
+Requires-Dist: pytest (>=5.4.3) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.9.0) ; extra == 'test'
+Requires-Dist: pytest-raises (>=0.11) ; extra == 'test'
+
+# soft-search
+
+[![Build Status](https://github.com/si2-urssi/eager/workflows/CI/badge.svg)](https://github.com/si2-urssi/eager/actions)
+[![Documentation](https://github.com/si2-urssi/eager/workflows/Documentation/badge.svg)](https://si2-urssi.github.io/eager)
+
+searching for software promises in grant applications
+
+---
+
+## Installation
+
+**Stable Release:** `pip install soft-search`<br>
+**Development Head:** `pip install git+https://github.com/si2-urssi/eager.git`
+
+## Quickstart
+
+1. Load our best model (the "TF-IDF Vectorizer Logistic Regression Model")
+2. Pull award abstract texts from the NSF API
+3. Predict if the award will produce software using the abstract text for each award
+
+```python
+from soft_search.constants import NSFFields, NSFPrograms
+from soft_search.label import load_soft_search_model
+from soft_search.nsf import get_nsf_dataset
+
+# Load the model
+pipeline = load_soft_search_model()
+
+# Pull data
+data = get_nsf_dataset(
+    start_date="2022-05-01",
+    end_date="2022-07-01",
+    program_name=NSFPrograms.Computer_and_Information_Science_and_Engineering,
+    dataset_fields=[NSFFields.id_, NSFFields.abstractText],
+    require_project_outcomes_doc=False,
+)
+
+# Predict
+data["prediction"] = pipeline.predict(data[NSFFields.abstractText])
+print(data)
+
+#                                         abstractText       id              prediction
+# 0  Human AI Teaming (HAT) is an emerging and rapi...  2213827  software-not-predicted
+# 1  This project furthers progress in our understa...  2213756      software-predicted
+```
+
+### Annotated Training Data
+
+```python
+from soft_search.data import load_soft_search_2022
+
+df = load_soft_search_2022()
+```
+
+### Reproducible Models
+
+To train and evaluate all of our models you can run the following:
+
+```bash
+pip install soft-search
+
+fit-and-eval-all-models
+```
+
+Also available directly in Python
+
+```python
+from soft_search.label.model_selection import fit_and_eval_all_models
+
+results = fit_and_eval_all_models()
+```
+
+## Documentation
+
+For full package documentation please visit [si2-urssi.github.io/eager](https://si2-urssi.github.io/eager).
+
+## Development
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for information related to developing the code.
+
+**MIT License**
