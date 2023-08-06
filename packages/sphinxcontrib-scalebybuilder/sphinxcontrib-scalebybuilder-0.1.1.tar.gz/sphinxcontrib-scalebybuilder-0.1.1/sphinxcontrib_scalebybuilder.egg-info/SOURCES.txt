@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+sphinxcontrib/__init__.py
+sphinxcontrib/scalebybuilder.py
+sphinxcontrib_scalebybuilder.egg-info/PKG-INFO
+sphinxcontrib_scalebybuilder.egg-info/SOURCES.txt
+sphinxcontrib_scalebybuilder.egg-info/dependency_links.txt
+sphinxcontrib_scalebybuilder.egg-info/namespace_packages.txt
+sphinxcontrib_scalebybuilder.egg-info/not-zip-safe
+sphinxcontrib_scalebybuilder.egg-info/requires.txt
+sphinxcontrib_scalebybuilder.egg-info/top_level.txt
