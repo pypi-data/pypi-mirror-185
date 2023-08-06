@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dirgh
+Version: 0.1.5
+Summary: With dirgh you can easily download a directory from GitHub programmatically from Python or using the CLI.
+Author: tiptenbrink
+Author-email: 75669206+tiptenbrink@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.23.0,<0.24.0)
+Requires-Dist: trio (>=0.20.0,<0.22.0)
