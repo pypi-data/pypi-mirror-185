@@ -1,0 +1,11 @@
+setup.py
+T5Custom/__init__.py
+T5Custom/custom_t5_model.py
+T5Custom/main.py
+T5Custom/run.py
+T5Custom/training_data_creation.py
+T5Custom.egg-info/PKG-INFO
+T5Custom.egg-info/SOURCES.txt
+T5Custom.egg-info/dependency_links.txt
+T5Custom.egg-info/requires.txt
+T5Custom.egg-info/top_level.txt
