@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: gungus
+Version: 0.0.0
+Summary: 
+Home-page: https://github.com/ttyrho/gungus
+License: GPL-3.0-or-later
+Author: Cesar Perez
+Author-email: ttyrho@gmail.com
+Maintainer: Cesar Perez
+Maintainer-email: ttyrho@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Project-URL: Repository, https://github.com/ttyrho/gungus
+Description-Content-Type: text/markdown
+
+# The GUNGUS Python library
+
+
+## License
+This library is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this library.  If not, see <http://www.gnu.org/licenses/>.
+

@@ -1,0 +1,55 @@
+# Copyright (C) 2023 Cesar Perez
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[tool.poetry]
+name = "gungus"
+version = "0.0.0"
+
+description = ""
+readme = "README.md"
+license = "GPL-3.0-or-later"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+keywords = []
+
+homepage = "https://github.com/ttyrho/gungus"
+documentation = ""
+repository = "https://github.com/ttyrho/gungus"
+
+authors = [
+    "Cesar Perez <ttyrho@gmail.com>"
+]
+
+maintainers= [
+    "Cesar Perez <ttyrho@gmail.com>"
+]
+
+packages = [
+    { include = "gungus" }
+]
+
+include = [
+    "CHANGELOG.md",
+    "README.md"
+]
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+behave = "^1.2.6"
+coverage = "^7.0.5"
+flake8 = "^6.0.0"
+mypy = "^0.991"
+pytest = "^7.2.0"
+twine = "^4.0.2"
