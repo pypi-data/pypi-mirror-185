@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+logipass/__init__.py
+logipass/app.py
+logipass/main.py
+logipass.egg-info/PKG-INFO
+logipass.egg-info/SOURCES.txt
+logipass.egg-info/dependency_links.txt
+logipass.egg-info/entry_points.txt
+logipass.egg-info/not-zip-safe
+logipass.egg-info/requires.txt
+logipass.egg-info/top_level.txt
