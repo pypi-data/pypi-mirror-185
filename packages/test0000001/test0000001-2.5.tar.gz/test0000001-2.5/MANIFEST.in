@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+recursive-include docs *
+include steps.py
+exclude .env
+exclude .gitignore
