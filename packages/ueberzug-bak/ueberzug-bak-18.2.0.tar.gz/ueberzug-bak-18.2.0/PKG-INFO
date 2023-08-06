@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ueberzug-bak
+Version: 18.2.0
+Summary: ueberzug is a command line util which allows to display images in combination with X11
+Home-page: https://github.com/vesche/ueberzug-bak
+Author: Unknown
+License: GPLv3
+Project-URL: Bug Reports, https://github.com/vesche/ueberzug-bak/issues
+Project-URL: Source, https://github.com/vesche/ueberzug-bak
+Keywords: image media terminal ui gui
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+License-File: LICENSE
