@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tex4svg.py
+tex4svg.egg-info/PKG-INFO
+tex4svg.egg-info/SOURCES.txt
+tex4svg.egg-info/dependency_links.txt
+tex4svg.egg-info/top_level.txt
