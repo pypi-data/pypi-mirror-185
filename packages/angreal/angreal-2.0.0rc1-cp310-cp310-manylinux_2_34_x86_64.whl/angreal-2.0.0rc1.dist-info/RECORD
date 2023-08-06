@@ -1,0 +1,9 @@
+angreal-2.0.0rc1.dist-info/METADATA,sha256=EXEWuQkI1adR2ODWHBXfPV4cjIeohIdZkAvKHTQoxh4,1231
+angreal-2.0.0rc1.dist-info/WHEEL,sha256=2sxgGdiPoT6Oaie5hyOMfi1OoT70TWDrVIn9esw4v-A,109
+angreal-2.0.0rc1.dist-info/entry_points.txt,sha256=T8LTLvmqddtRYaE-Bsr7lb2zbznrMoIcXv0DrO88s3M,39
+angreal.libs/libcrypto-d82d5707.so.3,sha256=ho7d51AZfOV9nTUhVD1kH5PD2pi3ZEGhOwSXOTixZig,4602953
+angreal.libs/libpython3-313a6718.10.so.1.0,sha256=aRwx3vAc82LWCZB9aUSVhVHeqaHsc_oNdN9vjDi6ySU,5901297
+angreal.libs/libssl-a8e9c1e3.so.3,sha256=63gbolb27ZuIPkT4LvCBGAb7yvVGuZ8gL9U1onqVk-I,721753
+angreal/__init__.py,sha256=kaX9_CzPW_ZqSL2mJMAsu30yfImboYnhyVQ7lvV8dGw,1267
+angreal/angreal.cpython-310-x86_64-linux-gnu.so,sha256=SfXtkJfGpz4vPaFxy7KaJ3-UZD3wZ5aEEB2K8Jh0ksA,8694497
+angreal-2.0.0rc1.dist-info/RECORD,,
