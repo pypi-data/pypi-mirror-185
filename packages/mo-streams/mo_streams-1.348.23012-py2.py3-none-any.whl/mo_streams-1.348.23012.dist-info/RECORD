@@ -1,0 +1,15 @@
+mo_streams/__init__.py,sha256=Bc-TlsiO2tnt6KqYuUhNXbGd57MUZzZR_TLefCWILTs,2530
+mo_streams/_utils.py,sha256=Fn9xu-LcnZ7uu5MysbwX1xDPMGMBByjCENSvs-F3oxY,3563
+mo_streams/byte_stream.py,sha256=yLZ7G5SrBU9S2hknN-YO9tDN44O6Ds8O3tPSsdm7hGk,3913
+mo_streams/empty_stream.py,sha256=8klgKzoOuF7HStBFbDKqKOVUrvBzwuszT4zzVVj7odo,622
+mo_streams/files.py,sha256=UMdhrjIFnmSDko5TiJQ9Ki7N5iv5u9eIR4Dllk1o30w,1644
+mo_streams/function_factory.py,sha256=DXT8SUwTNbUgnNONaqEqhlWmN_wrLyGiGZNXWWExQhc,7321
+mo_streams/object_stream.py,sha256=Y7dy2coSS8JPpRNmwXAoUC3tSt_90regkBW431w7904,10169
+mo_streams/string_stream.py,sha256=fAYBozxI4hGyB_xbHhbUhfluAKO0-e30RMjiLGiOhVY,1677
+mo_streams/type_parser.py,sha256=fjpNj9GIoH-VQKyT50InBY4P5jmYOKW_97Nz7L2iGN8,883
+mo_streams/type_utils.py,sha256=A_6QzukRxKr_vKLuFcawy646a0ALe3c51StfMYhaz3I,3766
+mo_streams-1.348.23012.dist-info/LICENSE,sha256=JoTeFzAOCkNGhvHsf4r2BFIHpLRXo_4EsrnOZV58XVA,17098
+mo_streams-1.348.23012.dist-info/METADATA,sha256=TZIiSJS8kLiJ2qHHpyfWBoywliUpMgPo0ekqXvuPIBg,4145
+mo_streams-1.348.23012.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+mo_streams-1.348.23012.dist-info/top_level.txt,sha256=ebi1P9VRtYjLlesoDmWVYQGcYY1ky8AZHO4PbPBZ3o8,11
+mo_streams-1.348.23012.dist-info/RECORD,,
