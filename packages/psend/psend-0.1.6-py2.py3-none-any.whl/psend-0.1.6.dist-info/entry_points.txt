@@ -1,0 +1,3 @@
+[console_scripts]
+psend=psend.functions:send_push_notification
+
