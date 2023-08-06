@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/termcs/__init__.py
+src/termcs/bottomWidget.py
+src/termcs/changeTable.py
+src/termcs/termcs.css
+src/termcs/termcs.py
+src/termcs/topWidget.py
+src/termcs/worker.py
+src/termcs.egg-info/PKG-INFO
+src/termcs.egg-info/SOURCES.txt
+src/termcs.egg-info/dependency_links.txt
+src/termcs.egg-info/entry_points.txt
+src/termcs.egg-info/requires.txt
+src/termcs.egg-info/top_level.txt
