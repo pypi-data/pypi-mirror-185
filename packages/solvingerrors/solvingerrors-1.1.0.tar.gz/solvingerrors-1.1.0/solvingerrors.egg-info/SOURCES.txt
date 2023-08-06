@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+solvingerrors/__init__.py
+solvingerrors/a.py
+solvingerrors.egg-info/PKG-INFO
+solvingerrors.egg-info/SOURCES.txt
+solvingerrors.egg-info/dependency_links.txt
+solvingerrors.egg-info/requires.txt
+solvingerrors.egg-info/top_level.txt
