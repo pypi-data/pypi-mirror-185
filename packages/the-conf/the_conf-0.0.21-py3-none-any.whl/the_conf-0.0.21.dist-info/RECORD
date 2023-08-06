@@ -1,0 +1,11 @@
+the_conf/__init__.py,sha256=r6dvPcTeAcgBzQL19qgsVcZ7j1iUvJy-UXL8sfQTKp8,53
+the_conf/command_line.py,sha256=Dva491BNNkWh45qKGrRBbOzE0RJBH8fakajo6-1FPoE,1667
+the_conf/files.py,sha256=H4Za72J6X72JyLaTRgNJYlIPJhcakqglsofxtqfFmlw,2830
+the_conf/interractive.py,sha256=baFu3uo0-I1jDD6lb0x90e4EuZiz_y1AVkx4nre9QME,1613
+the_conf/node.py,sha256=YHMrE4vh-cb_q3LVRJbs7-b_IQHFzcZO_1Bs7omlygU,10976
+the_conf/the_conf.py,sha256=5pM_hQ2ToiWS3_KB8HkA36pbaD-9HQogdw9inv_zHQs,5998
+the_conf/utils.py,sha256=klRjXbHJ0oTeBQEHPqO0hFD_z1RacwKgkVm4Q39qBgk,147
+the_conf-0.0.21.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+the_conf-0.0.21.dist-info/METADATA,sha256=EPSUK8ANTPmOIhJB6-rEif-nUUr498bR34-OAsJ2hP8,5399
+the_conf-0.0.21.dist-info/LICENSE,sha256=m4cqigcLitMpxL04D7G_AAD1ZMdQI-yOHmgD8VNkuek,26461
+the_conf-0.0.21.dist-info/RECORD,,
