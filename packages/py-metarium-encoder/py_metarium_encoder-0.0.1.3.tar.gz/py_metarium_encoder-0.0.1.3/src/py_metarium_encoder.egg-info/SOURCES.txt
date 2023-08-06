@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/py_metarium_encoder/__init__.py
+src/py_metarium_encoder.egg-info/PKG-INFO
+src/py_metarium_encoder.egg-info/SOURCES.txt
+src/py_metarium_encoder.egg-info/dependency_links.txt
+src/py_metarium_encoder.egg-info/requires.txt
+src/py_metarium_encoder.egg-info/top_level.txt
+src/py_metarium_encoder/substrate/__init__.py
+src/py_metarium_encoder/substrate/base.py
+src/py_metarium_encoder/substrate/kuri.py
+src/py_metarium_encoder/substrate/scribe.py
+src/py_metarium_encoder/utils/__init__.py
+src/py_metarium_encoder/utils/exceptions.py
