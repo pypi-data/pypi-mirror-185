@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+image_package/__init__.py
+modulos_image.egg-info/PKG-INFO
+modulos_image.egg-info/SOURCES.txt
+modulos_image.egg-info/dependency_links.txt
+modulos_image.egg-info/top_level.txt
