@@ -1,0 +1,9 @@
+material_plausible/__about__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+material_plausible/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+material_plausible/plugin.py,sha256=vyXqrf_LxL4bU5Pp4f1qk-vZIqLOVrgPRHQ8qAT9zuU,214
+material_plausible/templates/partials/integrations/analytics/plausible.html,sha256=KboeV6ao2uVnhljkGxfbxbrzgaXbk6jRCASXCD2qEfE,1383
+material_plausible_plugin-0.1.1.dist-info/METADATA,sha256=ri99dx9O_eILTE3gkgA4D7wiPjbH3FRuc8ctA_zBvDw,3303
+material_plausible_plugin-0.1.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+material_plausible_plugin-0.1.1.dist-info/entry_points.txt,sha256=ORPP5pLQhwoUUwfhPRRYJKogXEPv8I67f0HxKSZufXE,88
+material_plausible_plugin-0.1.1.dist-info/licenses/LICENSE.txt,sha256=iGhp-x9uqkukbjRz5Hzj-tDidsToBRDD3CMBtQE2klM,768
+material_plausible_plugin-0.1.1.dist-info/RECORD,,
