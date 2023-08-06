@@ -1,0 +1,17 @@
+_sherpa_ncnn.cpython-36m-x86_64-linux-gnu.so,sha256=XC-Ua75uI-lwdkFfdZVjIQ28O6kJFf_RbRcbaiy3Stc,214729
+sherpa_ncnn.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+sherpa_ncnn-1.3.2.dist-info/RECORD,,
+sherpa_ncnn-1.3.2.dist-info/METADATA,sha256=MmEp-ArTOPOpaHi3hYfMgLpDTz68yM_w9fhEuTG6ReA,2172
+sherpa_ncnn-1.3.2.dist-info/top_level.txt,sha256=xGw9g1ZO9t1l8G8iCSjTUtS032IrUa-CG6HG6D3vVWQ,25
+sherpa_ncnn-1.3.2.dist-info/LICENSE,sha256=poLW79HuXe4IqOQFwjPCwZjqcK4HGBKdqoOrWM_jHF0,11728
+sherpa_ncnn-1.3.2.dist-info/WHEEL,sha256=YVAXCacQXnznQ-_lMj8Nvqrs7YPtMP1pHRCw9EcyWRQ,150
+sherpa_ncnn/__init__.py,sha256=wNKg0ccmU_gBqXLGylX7AefGckJ-QoVJGby9STnQzeE,57
+sherpa_ncnn/recognizer.py,sha256=GmfGtkWeqFLh9qsiWPS6vMMnHtRJkoxc251QBwHG15Y,7750
+sherpa_ncnn/lib64/libncnn.so,sha256=kEr57JsrsKBZw7eKWlVdTRF9g5HaWF49Rj1xEWriEiQ,6373345
+sherpa_ncnn/lib64/libncnn.so.1,sha256=kEr57JsrsKBZw7eKWlVdTRF9g5HaWF49Rj1xEWriEiQ,6373345
+sherpa_ncnn/lib64/libncnn.so.1.0.20230111,sha256=kEr57JsrsKBZw7eKWlVdTRF9g5HaWF49Rj1xEWriEiQ,6373345
+sherpa_ncnn/lib/libncnn.so,sha256=kEr57JsrsKBZw7eKWlVdTRF9g5HaWF49Rj1xEWriEiQ,6373345
+sherpa_ncnn/lib/libsherpa-ncnn-core.so,sha256=YWJDuRvdDcwQfeD3cuSskmeA48GJLINyFrI5HnXtPYk,355121
+sherpa_ncnn/lib/libncnn.so.1,sha256=kEr57JsrsKBZw7eKWlVdTRF9g5HaWF49Rj1xEWriEiQ,6373345
+sherpa_ncnn/lib/libncnn.so.1.0.20230111,sha256=kEr57JsrsKBZw7eKWlVdTRF9g5HaWF49Rj1xEWriEiQ,6373345
+sherpa_ncnn/lib/libkaldi-native-fbank-core.so,sha256=ytmkH2HA5hLWUvxA3gKbxFX4Zbpd-zvv_h99R31_1DM,196288
