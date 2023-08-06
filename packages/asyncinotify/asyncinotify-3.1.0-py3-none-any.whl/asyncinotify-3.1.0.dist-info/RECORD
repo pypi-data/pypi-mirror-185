@@ -1,0 +1,6 @@
+asyncinotify/__init__.py,sha256=8gjGdu9xUxTjy7lUEkkyNRIbAn4nJGUip_UTr0jTbmg,22152
+asyncinotify/_ffi.py,sha256=zegs2ZAG6nfAYTWpzSTp8j2NzdwCwgzzyGMA88vQuQA,1404
+asyncinotify/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncinotify-3.1.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+asyncinotify-3.1.0.dist-info/METADATA,sha256=lXy8v7IadWQNmIHXA9FFx0BYAKepIX4o7TViKfbzzYw,1943
+asyncinotify-3.1.0.dist-info/RECORD,,
