@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 79
+target-version = ['py37']
+exclude = '''(
+    src/snmp_lookup/mibs
+)'''
+
+[tool.pylint.master]
+py-version = '3.7'
+ignore = "src/snmp_lookup/mibs"

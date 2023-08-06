@@ -1,0 +1,3 @@
+[console_scripts]
+snmp_lookup_maintain = snmp_lookup.maintain:main
+snmp_lookup_selftest = snmp_lookup:selftest

@@ -1,0 +1,1679 @@
+PWG-IMAGING-SYSTEM-MIB DEFINITIONS ::= BEGIN
+--  PWG Imaging System MIB version 0.20 - PROTOTYPE - 10 March 2004
+--  NOTE:  This MIB is a partial prototype at present -
+--         the Device and Device Attribute groups are missing
+--         and the Management group may be moved to a separate MIB
+
+IMPORTS
+    MODULE-IDENTITY,
+        OBJECT-TYPE,
+        Counter32,
+        Gauge32,
+        Integer32,
+        TimeTicks,
+        enterprises
+            FROM SNMPv2-SMI
+    TEXTUAL-CONVENTION,
+        DateAndTime,
+        StorageType,
+        TestAndIncr
+            FROM SNMPv2-TC
+--  MODULE-COMPLIANCE,
+--      OBJECT-GROUP
+--          FROM SNMPv2-CONF
+    SnmpAdminString
+            FROM SNMP-FRAMEWORK-MIB;
+
+isMIB MODULE-IDENTITY
+    LAST-UPDATED    "0403100000Z" -- 10 March 2004
+    ORGANIZATION    "IEEE/ISTO Printer Working Group"
+    CONTACT-INFO
+        "Web-based Imaging Management Service (WIMS) Project
+
+        Web:    http://www.pwg.org
+        Email:  wims@pwg.org
+
+        Editor: Ira McDonald
+        Postal: High North Inc
+                221 Ridge Ave
+                Grand Marais, MI  49839
+                USA
+        Tel:    +1 906-494-2434
+        Email:  imcdonald@sharplabs.com"
+    DESCRIPTION
+        "The MIB module for passive monitoring and (optional) management
+        of the various services, devices, and resources configured on an
+        Imaging System (including locally attached devices).
+
+        Copyright (C) IEEE/ISTO PWG (2004)."
+
+    -- revision history
+    REVISION        "0403100000Z" -- 10 March 2004
+    DESCRIPTION     "Second version of the Imaging System MIB."
+
+    REVISION        "0402250000Z" -- 25 February 2004
+    DESCRIPTION     "Original version of the Imaging System MIB."
+    ::= { enterprises pwg(2699)  mibs(1)  imagingSystemMIB(999) }
+
+--  PWG Secretary - MIB module number should be assigned/registered
+
+
+isMIBObjects            OBJECT IDENTIFIER ::= { isMIB 1 }
+
+isMIBNotifications      OBJECT IDENTIFIER ::= { isMIB 2 }
+
+isMIBConformance        OBJECT IDENTIFIER ::= { isMIB 3 }
+isMIBObjectClass        OBJECT IDENTIFIER ::= { isMIBConformance 2 }
+
+
+--
+-- Textual Conventions
+--
+
+IsActionTypeTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "Type of management action now in progress or last
+        completed on this Imaging System.
+
+        Note:   This list is limited to 255 entries, by the size of
+        'isSystemActionTypeSupport'."
+    SYNTAX      INTEGER {
+        other(1),                       -- non-standard action
+        unknown(2),                     -- unknown action type
+        reserved(255)                   -- highest possible value
+    }
+
+IsActionStatusTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "Status of management action now in progress or last
+        completed on this Imaging System.
+
+        Note:   This list is limited to 255 entries, by design."
+    SYNTAX      INTEGER {
+        other(1),                       -- non-standard status
+        unknown(2),                     -- unknown status type
+        reserved(255)                   -- highest possible value
+    }
+
+IsAlertSeverityLevelTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The level of severity of this IsAlertTable entry.  The system
+        determines the severity level assigned to each entry.
+
+        Usage:  See 'PrtAlertSeverityLevelTC' in Printer MIB v2 for
+        the detailed semantics of these severity levels."
+    REFERENCE
+        "See:   'prtAlertSeverityLevel' in Printer MIB v2 (RFC 3805);
+                'PrtAlertSeverityLevelTC' in Printer MIB v2."
+    SYNTAX      INTEGER {
+        other(1),
+    --  unknown                         - omitted in Printer MIB v2
+        critical(3),
+        warning(4),
+        warningBinaryChangeEvent(5)     -- New, not in RFC 1759
+    }
+
+IsAlertTrainingLevelTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The level of training required to correct the problem in this
+        IsAlertTable entry (as determined by the Imaging System).
+
+        Usage:  See 'PrtAlertTrainingLevelTC' in IANA Printer MIB for
+        the detailed semantics of these training levels."
+    REFERENCE
+        "See:   'prtAlertTrainingLevel' in Printer MIB v2 (RFC 3805);
+                'PrtAlertTrainingLevelTC' in IANA Printer MIB."
+    SYNTAX      INTEGER {
+        other(1),
+        unknown(2),
+        untrained(3),
+        trained(4),
+        fieldService(5),
+        management(6),
+        noInterventionRequired(7)       -- Not in RFC 1759
+    }
+
+IsObjectAttributeTypeTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The attribute type (i.e., name and defined implicit value type)
+        for this system, service, or device attribute.
+
+        Usage:  This list is grouped according to the system model from
+        Printer MIB v1 (RFC 1759) and Printer MIB v2 (RFC 3805).
+
+        Note:   This list is limited to 2039 entries, by the size of
+        'isSystemAttributeTypeSupport'."
+    REFERENCE
+        "See:   'JmAttributeTypeTC' in Job Mon MIB (RFC 2707)."
+    SYNTAX      INTEGER {
+        other(1),                           -- non-standard attribute
+        unknown(2),                         -- unknown attribute type
+
+        -- general attributes
+        generalConfigChanges(51),           -- INTEGER - counter
+            -- total configuration changes on this managed object
+            -- see 'prtGeneralConfigChanges' in Printer MIB v1
+            -- (RFC 1759) and Printer MIB v2 (RFC 3805) for usage
+        generalCurrentOperator(52),         -- STRING - localized
+            -- current operator (responsible party and contact info)
+            -- see 'prtGeneralCurrentOperator' in Printer MIB v1
+            -- (RFC 1759) and Printer MIB v2 (RFC 3805) for usage
+        generalServicePerson(53),           -- STRING - localized
+            -- service person (responsible party and contact info)
+            -- see 'prtGeneralServicePerson' in Printer MIB v1
+            -- (RFC 1759) and Printer MIB v2 (RFC 3805) for usage
+        generalInputDefaultIndex(54),       -- INTEGER - index or zero
+            -- default input tray, i.e., 'isXxxAttributeValueIndex'
+            -- see 'prtInputDefaultIndex' in Printer MIB v1
+            -- (RFC 1759) and Printer MIB v2 (RFC 3805) for usage
+        generalOutputDefaultIndex(55),      -- INTEGER - index or zero
+            -- default output bin, i.e., 'isXxxAttributeValueIndex'
+            -- see 'prtOutputDefaultIndex' in Printer MIB v1
+            -- (RFC 1759) and Printer MIB v2 (RFC 3805) for usage
+        generalMarkerDefaultIndex(56),      -- INTEGER - index or zero
+            -- default marker, i.e., 'isXxxAttributeValueIndex'
+            -- see 'prtMarkerDefaultIndex' in Printer MIB v1
+            -- (RFC 1759) and Printer MIB v2 (RFC 3805) for usage
+        generalMediaPathDefaultIndex(57),   -- INTEGER - index or zero
+            -- default media path, i.e., 'isXxxAttributeValueIndex'
+            -- see 'prtMediaPathDefaultIndex' in Printer MIB v1
+            -- (RFC 1759) and Printer MIB v2 (RFC 3805) for usage
+        generalInputJobs(71),               -- INTEGER - counter
+            -- total input jobs received by system, service, or device
+        generalOutputJobs(72),              -- INTEGER - counter
+            -- total output jobs sent by system, service, or device
+        generalInputKOctets(73),            -- INTEGER - counter
+            -- total K octets received by system, service, or device
+        generalOutputKOctets(74),           -- INTEGER - counter
+            -- total K octets sent by system, service, or device
+        generalInputImages(75),             -- INTEGER - counter
+            -- total images received by system, service, or device
+        generalOutputImages(76),            -- INTEGER - counter
+            -- total images sent by system, service, or device
+        generalLocalFileKOctets(77),        -- INTEGER - counter
+            -- total data stored locally by system, service, or device
+        generalNetworkFileKOctets(78),      -- INTEGER - counter
+            -- total data stored remotely by system, service, or device
+        generalImpressions(81),             -- INTEGER - counter
+            -- total impressions printed by system, service, or device
+        generalBlackImpressions(82),        -- INTEGER - counter
+            -- total black impressions printed by system, service, or
+            -- device
+        generalBlankImpressions(83),        -- INTEGER - counter
+            -- total blank impressions printed by system, service, or
+            -- device (with no colorant, watermarks, forms, etc.)
+        generalFullColorImpressions(84),    -- INTEGER - counter
+            -- total full color impressions printed by system, service,
+            -- or device (with one or more non-black colorants, but not
+            -- including highlight color impressions - see below)
+        generalHighlightColorImpressions(85), -- INTEGER - counter
+            -- total highlight color impressions printed by system,
+            -- service, or device (with one spot non-black colorant, but
+            -- not including full color impressions - see above)
+        generalSheets(86),                  -- INTEGER - counter
+            -- total media sheets that have passed by any marker on this
+            -- system, service, or device (blank or impressed)
+        generalBlankSheets(87),             -- INTEGER - counter
+            -- total blank sheets that have passed by any marker on this
+            -- system, service, or device (without watermarks or forms)
+        generalTwoSidedSheets(88),          -- INTEGER - counter
+            -- total media sheets with impressions printed on both sides
+            -- on this system, service, or device
+        generalBlackTwoSidedSheets(89),     -- INTEGER - counter
+            -- total media sheets with black impressions printed on both
+            -- sides on this system, service, or device
+        generalFullColorTwoSidedSheets(90), -- INTEGER - counter
+            -- total media sheets with full color impressions printed on
+            -- both sides on this system, service, or device
+        generalHighlightColorTwoSidedSheets(91), -- INTEGER - counter
+            -- total media sheets with highlight color impressions
+            -- printed on both sides on this system, service, or device
+        generalScanImages(92),              -- INTEGER - counter
+            -- total images scanned by system, service, or device
+        generalScanBlackImages(93),         -- INTEGER - counter
+            -- total black images scanned by system, service, or device
+        generalScanFullColorImages(94),     -- INTEGER - counter
+            -- total color images scanned by system, service, or device
+
+        -- cover attributes
+        coverInfo(101),                     -- STRING - localized
+            -- cover description
+            -- see 'prtCoverDescription' in Printer MIB v2 (RFC 3805)
+        coverStatus(102),                   -- INTEGER - bit-mask
+            -- cover status
+            -- see 'prtCoverStatus' in Printer MIB v2 (RFC 3805)
+            -- see 'PrtCoverStatusTC' in IANA Printer MIB
+
+        -- input tray attributes
+        inputType(151),                     -- INTEGER - enumeration
+            -- input tray technology type (usually by feed mechanism)
+            -- see 'prtInputType' in Printer MIB v2 (RFC 3805)
+            -- see 'PrtInputTypeTC' in IANA Printer MIB
+        inputMediaIndex(152),               -- INTEGER - index or zero
+            -- input tray currently loaded media index
+            -- see 'prtInputMediaDimFeedDirChosen' in PM v1 (RFC 1759)
+            -- see 'prtInputMediaDimXFeedDirChosen' in PM v1 (RFC 1759)
+        inputMaxCapacity(153),              -- INTEGER - upper bound
+            -- input tray max capacity in sheets, etc.
+            -- see 'isSystemMediaCapacityUnit' defined in this MIB
+            -- see 'prtInputMaxCapacity' in PM v1 (RFC 1759)
+        inputCurrentLevel(154),             -- INTEGER - gauge
+            -- input tray current level in sheets, etc.
+            -- see 'isSystemMediaCapacityUnit' defined in this MIB
+            -- see 'prtInputCurrentLevel' in PM v1 (RFC 1759)
+
+        -- output bin attributes
+        outputType(201),                    -- INTEGER - enumeration
+            -- output bin technology type
+            -- see 'prtOutputType' in Printer MIB v2 (RFC 3805)
+            -- see 'PrtOutputTypeTC' in IANA Printer MIB
+
+        -- marker attributes
+        markerMarkTech(251),                -- INTEGER - enumeration
+            -- marker technology type
+            -- see 'prtMarkerMarkTech' in Printer MIB v2 (RFC 3805)
+            -- see 'PrtMarkerMarkTechTC' in IANA Printer MIB
+
+        -- marker supplies attributes
+        markerSuppliesMarkerIndex(301),     -- INTEGER - index or zero
+            -- value of 'XxxAttributeValueIndex' for associated marker
+            -- see 'prtMarkerSuppliesMarkerIndex' in Printer MIB v1
+            -- (RFC 1759) and Printer MIB v2 (RFC 3805)
+
+        -- marker colorant attributes
+        markerColorantMarkerIndex(351),     -- INTEGER - index or zero
+            -- value of 'XxxAttributeValueIndex' for associated marker
+            -- see 'prtMarkerColorantMarkerIndex' in Printer MIB v1
+            -- (RFC 1759) and Printer MIB v2 (RFC 3805)
+
+        -- media path attributes
+        mediaPathMaxSpeed(401),             -- INTEGER - upper bound
+            -- media path max speed in sheets, etc.
+            -- see 'isSystemMediaPathSpeedUnit' defined in this MIB
+            -- see 'prtMediaPathMaxSpeed' in PM v1 (RFC 1759)
+
+        -- channel attributes
+        channelType(451),                   -- INTEGER - enumeration
+            -- channel type for receiving input jobs
+            -- see 'prtChannelType' in Printer MIB v2 (RFC 3805)
+            -- see 'PrtChannelTypeTC' in IANA Printer MIB
+
+        -- interpreter attributes
+        interpreterLangFamily(501),         -- INTEGER - enumeration
+            -- interpreter language family
+            -- see 'prtInterpreterLangFamily' in PM v1 (RFC 1759)
+            -- see 'PrtInterpreterLangFamilyTC' in IANA Printer MIB
+
+        -- console display attributes
+        -- console light attributes
+        -- alert (???) attributes
+        -- finisher attributes
+        -- scanner attributes
+        -- transform attributes
+        reserved(2039)                      -- highest possible value
+    }
+
+IsObjectClassTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The object class of this element on this Imaging System."
+    SYNTAX      INTEGER {
+        other(1),                       -- non-standard object class
+        unknown(2),                     -- unknown object class
+        system(3),                      -- Imaging System
+        service(4),                     -- managed service
+        device(5),                      -- managed device
+        resource(6),                    -- managed resource
+        job(7),                         -- managed job
+        document(8),                    -- managed document
+        reserved(255)                   -- highest possible value
+    }
+
+IsObjectFunctionTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The imaging function of this managed service or device
+        (e.g., copy).
+
+        Intentionally omitted are:  (a) 'auxiliary' which is overhead
+        of the 'processing' state of an ordinary service or device;
+        (b) 'maintenance' which is the 'testing' state of an ordinary
+        service or device; and (c) 'fileIn/fileOut' which are activities
+        of the 'processing' state of an ordinary service or device.
+
+        Note:   This list is limited to 255 entries, by the size of
+        'isSystemServiceTypeSupport'."
+    REFERENCE
+        "See:   'JmJobServiceTypesTC' in Job Mon MIB (RFC 2707)."
+    SYNTAX      INTEGER {
+        other(1),                       -- non-standard type
+        unknown(2),                     -- unknown type
+        copy(3),                        -- copy (scan and print)
+        emailIn(4),                     -- email (input messages)
+        emailOut(5),                    -- email (output messages)
+        faxIn(6),                       -- fax (input images)
+        faxOut(7),                      -- fax (output images)
+        networkFaxIn(8),                -- network fax (input images)
+        networkFaxOut(9),               -- network fax (output images)
+        print(10),                      -- print (output impressions)
+        scan(11),                       -- scan (output images)
+        transform(12),                  -- transform (convert format)
+        reserved(255)                   -- highest possible value
+    }
+
+IsObjectStateTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The state of this managed system, service, or device."
+    REFERENCE
+        "See:   'printer-state' in IPP/1.1 Model (RFC 2911);
+                'hrDeviceStatus' in Host Resources MIB (RFC 2790)."
+    SYNTAX      INTEGER {
+        other(1),                       -- non-standard state
+        unknown(2),                     -- unknown state
+        idle(3),                        -- no jobs are processing
+        processing(4),                  -- jobs are processing
+        stopped(5),                     -- intervention required
+        testing(6),                     -- testing or maintenance
+        down(7)                         -- unavailable for jobs
+    }
+
+IsObjectStateReasonsTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The state reasons (conditions which qualify the state) of this
+        managed system, service, or device, expressed as a bit-mask.
+
+        Legal values are:
+
+        other               0x01        -- other state reason
+        unknown             0x02        -- unknown state reason
+        mediaNeeded         0x04        -- an input tray is out of media
+        mediaJammed         0x08        -- media jam on output device
+        movingToPaused      0x10        -- Pause in progress
+        paused              0x20        -- Pause completed
+        shutdown            0x40        -- Shutdown completed
+        connectingToDevice  0x80        -- Connect to device in progress
+        timedOut            0x0001      -- Connect to device timed out
+        stopping            0x0002      -- Stop device in progress
+        stoppedPartly       0x0004      -- Some devices are stopped
+        tonerLow            0x0008      -- Output device low on toner
+        tonerEmpty          0x0010      -- Output device out of toner
+        spoolAreaFull       0x0020      -- Job spooling storage is full
+        coverOpen           0x0040      -- Device cover is open
+        interlockOpen       0x0080      -- Device interlock is open
+        doorOpen            0x0100      -- Device Door is open
+        inputTrayMissing    0x0200      -- Input tray is missing
+        mediaLow            0x0400      -- Input tray is low on media
+        mediaEmpty          0x0800      -- Input tray is out of media
+
+        Editor: 'mediaNeeded' and 'mediaEmpty' are REDUNDANT (delete
+        the first and renumber?  Or keep first and delete second(??).
+
+        Combinations of several values are allowed and meaningful."
+    REFERENCE
+        "See:   'printer-state-reasons' in IPP/1.1 Model (RFC 2911);
+                'hrPrinterDetectedErrorState' in Host MIB (RFC 2790)."
+    SYNTAX      Integer32
+
+IsTransformTypeTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The detailed type of this transform service."
+    SYNTAX      INTEGER {
+        other(1),                       -- non-standard object class
+        unknown(2),                     -- unknown object class
+        imagesToText(3),                -- images to text (OCR)
+                                        -- (JPEG to UTF-8 plaintext)
+        imagesToMarkup(4),              -- images to markup
+                                        -- (TIFF to MS Word)
+        imagesToPages(5),               -- images to PDL
+                                        -- (TIFF to PDF)
+        imagesToImages(6),              -- images to other images
+                                        -- (TIFF to JPEG)
+        markupToMarkup(7),              -- markup to other markup
+                                        -- (MS Word to Word Perfect)
+        markupToPages(8),               -- markup to page def lang (PDL)
+                                        -- (MS Word to PostScript)
+        markupToImages(9),              -- markup to images
+                                        -- (MS Word to JPEG)
+        pagesToMarkup(10),              -- PDL to markup
+                                        -- (PostScript to MS Word)
+        pagesToPages(11),               -- PDL to other PDL
+                                        -- (PostScript to PDF)
+        pagesToImages(12),              -- PDL to images
+                                        -- (PostScript to JPEG)
+        reserved(255)                   -- highest possible value
+    }
+
+
+--
+-- System Group (Mandatory)
+--
+
+isSystem                OBJECT IDENTIFIER ::= { isMIBObjects 1 }
+
+isSystemTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IsSystemEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of global info for this Imaging System."
+    REFERENCE
+        "See:   'prtGeneralTable' in Printer MIB v1 (RFC 1759) and
+                Printer MIB v2 (RFC 3805)."
+    ::= { isSystem 1 }
+
+isSystemEntry OBJECT-TYPE
+    SYNTAX      IsSystemEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry of global info for this Imaging System.
+
+        Usage:  The value of 'isSystemIndex' MUST always be '1'."
+    REFERENCE
+        "See:   'prtGeneralEntry' in Printer MIB v2 (RFC 1759) and
+                Printer MIB v2 (RFC 3805)."
+    INDEX     { isSystemIndex }
+    ::= { isSystemTable 1 }
+
+
+IsSystemEntry ::= SEQUENCE {
+        --  System key element
+        isSystemIndex                   Integer32,
+
+        --  System status elements
+        isSystemState                   IsObjectStateTC,
+        isSystemStateReasons            IsObjectStateReasonsTC,
+        isSystemTotalAlerts             Counter32,
+        isSystemServiceAlerts           Counter32,
+        isSystemDeviceAlerts            Counter32,
+        isSystemConfiguredServices      Gauge32,
+        isSystemConfiguredDevices       Gauge32,
+        isSystemConfigurationChanges    Counter32,
+
+        --  System description elements
+        isSystemLocaleIndex             Integer32,
+        isSystemInfo                    SnmpAdminString,
+        isSystemManagementURI           SnmpAdminString,
+        isSystemActionTypeSupport       OCTET STRING,
+        isSystemAttributeTypeSupport    OCTET STRING,
+        isSystemServiceTypeSupport      OCTET STRING,
+        isSystemDeviceTypeSupport       OCTET STRING,
+        isSystemResourceTypeSupport     OCTET STRING,
+        isSystemAddressabilityUnit      Integer32,
+        isSystemMediaCapacityUnit       Integer32,
+        isSystemMediaDimensionUnit      Integer32,
+        isSystemMediaPathSpeedUnit      Integer32,
+        isSystemSWInstalledIndexOrZero  Integer32,
+        isSystemJobSetIndexOrZero       Integer32
+    }
+
+--
+--  System key element
+--
+
+isSystemIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..1)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Unique key of this conceptual row in 'isSystemTable'.
+
+        Usage:  The value of 'isSystemIndex' MUST always be '1'."
+    DEFVAL      { 1 }
+    ::= { isSystemEntry 1 }
+
+--
+--  System status elements
+--
+
+isSystemState OBJECT-TYPE
+    SYNTAX      IsObjectStateTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The state of this Imaging System (e.g., idle)."
+    REFERENCE
+        "See:   'printer-state' in IPP/1.1 Model (RFC 2911);
+                'hrDeviceStatus' in Host Resources MIB (RFC 2790)."
+    ::= { isSystemEntry 2 }
+
+isSystemStateReasons OBJECT-TYPE
+    SYNTAX      IsObjectStateReasonsTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The state reasons (conditions) of this Imaging
+        System."
+    REFERENCE
+        "See:   'printer-state-reasons' in IPP/1.1 Model (RFC 2911);
+                'hrPrinterDetectedErrorState' in Host MIB (RFC 2790)."
+    ::= { isSystemEntry 3 }
+
+isSystemTotalAlerts OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total system, service, or device alerts that have occurred on
+        this Imaging System."
+    ::= { isSystemEntry 4 }
+
+isSystemServiceAlerts OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total service alerts that have occurred on this Imaging
+        System."
+    ::= { isSystemEntry 5 }
+
+isSystemDeviceAlerts OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total device alerts that have occurred on this Imaging
+        System."
+    ::= { isSystemEntry 6 }
+
+isSystemConfiguredServices OBJECT-TYPE
+    SYNTAX      Gauge32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Configured (possibly active) services on this Imaging System,
+        i.e., the count of rows currently in 'isServiceTable'."
+    ::= { isSystemEntry 7 }
+
+isSystemConfiguredDevices OBJECT-TYPE
+    SYNTAX      Gauge32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Configured (possibly active) devices on this Imaging System,
+        i.e., the count of rows currently in 'isDeviceTable'."
+    ::= { isSystemEntry 8 }
+
+isSystemConfigurationChanges OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total configuration changes that have occurred on this Imaging
+        System (changes to one or more elements or attributes)."
+    ::= { isSystemEntry 9 }
+
+--
+--  System description elements
+--
+
+isSystemLocaleIndex OBJECT-TYPE
+    SYNTAX      Integer32 (0..2147483647)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Value of 'isLocaleIndex' that identifies the current locale
+        on this Imaging System, or zero if unknown locale."
+    REFERENCE
+        "See:   'isLocaleIndex' defined in this MIB."
+    ::= { isSystemEntry 10 }
+
+isSystemInfo OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The description of this Imaging System,
+        for use with remote network management scripts and GUIs."
+    ::= { isSystemEntry 11 }
+
+isSystemManagementURI OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "A management URI for this Imaging System,
+        for use with remote network management stations, e.g.,
+        'snmp://example.com:161' or 'pwg-wbmm://example.com/galaxy'."
+    ::= { isSystemEntry 12 }
+
+isSystemActionTypeSupport OBJECT-TYPE
+    SYNTAX      OCTET STRING (SIZE(0..32)) -- 256 bits
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "A bit-array of action types supported on this Imaging System.
+
+        Usage:  This bit-array is constructed from the set of
+        supported values for 'isManagementActionType', used as powers
+        of 2 with big-endian rules - the high-order bit of the first
+        octet corresponds to a service type of '0' (reserved)
+        - the low-order bit of the first octet corresponds to a
+        service type of '7'.
+
+        Similar to the BITS pseudotype defined in IETF SMIv2
+        (RFC 2578), which has the same bit ordering rules but
+        requires definitions for contiguous enumerated bits."
+    REFERENCE
+        "See:   'isManagementActionType' defined in this MIB;
+                'IsObjectFunctionTC' defined in this MIB;
+                Section 7.1.4 'The BITS construct' in RFC 2578;
+                Section 8 'Serialization using the BER' in RFC 3417."
+    ::= { isSystemEntry 13 }
+
+isSystemAttributeTypeSupport OBJECT-TYPE
+    SYNTAX      OCTET STRING (SIZE(0..255)) -- 2040 bits
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "A bit-array of attributes supported on this Imaging System,
+        i.e., supported values of 'isSystemAttributeTypeIndex', or
+        'isServiceAttributeTypeIndex', or 'isDeviceAttributeTypeIndex'.
+
+        Usage:  See 'isSystemActionTypeSupport' element for usage."
+    REFERENCE
+        "See:   'IsObjectAttributeTypeTC' defined in this MIB."
+    ::= { isSystemEntry 14 }
+
+isSystemServiceTypeSupport OBJECT-TYPE
+    SYNTAX      OCTET STRING (SIZE(0..32)) -- 256 bits
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "A bit-array of service types supported on this Imaging System,
+        i.e., supported values of 'isServiceType'.  Some service types
+        may not be currently configured on this Imaging System.
+
+        Usage:  See 'isSystemActionTypeSupport' element for usage."
+    REFERENCE
+        "See:   'isServiceType' defined in this MIB;
+                'IsObjectFunctionTC' defined in this MIB."
+    ::= { isSystemEntry 15 }
+
+isSystemDeviceTypeSupport OBJECT-TYPE
+    SYNTAX      OCTET STRING (SIZE(0..32)) -- 256 bits
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "A bit-array of device types supported on this Imaging System,
+        i.e., supported values of 'isDeviceType'.  Some device types
+        may not be currently configured on this Imaging System.
+
+        Usage:  See 'isSystemActionTypeSupport' element for usage."
+    REFERENCE
+        "See:   'isDeviceType' defined in this MIB;
+                'IsObjectFunctionTC' defined in this MIB."
+    ::= { isSystemEntry 16 }
+
+isSystemResourceTypeSupport OBJECT-TYPE
+    SYNTAX      OCTET STRING (SIZE(0..32)) -- 256 bits
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "A bit-array of resource types supported on this Imaging System,
+        i.e., supported values of 'isResourceType'.  Some resource types
+        may not be currently configured on this Imaging System.
+
+        Usage:  See 'isSystemActionTypeSupport' element for usage."
+    REFERENCE
+        "See:   'isResourceType' defined in this MIB;
+                'IsResourceTypeTC' defined in this MIB."
+    ::= { isSystemEntry 17 }
+
+isSystemAddressabilityUnit OBJECT-TYPE
+    SYNTAX      Integer32 -- PrtMarkerAddressabilityUnitTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The unit of measure of distances for scanner, interpreter, and
+        marker resolutions on this Imaging System."
+    REFERENCE
+        "See:   'PrtMarkerAddressabilityUnitTC' in Printer MIB v2."
+    ::= { isSystemEntry 18 }
+
+isSystemMediaCapacityUnit OBJECT-TYPE
+    SYNTAX      Integer32 -- PrtCapacityUnitTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The unit of measure for media capacity for input trays and
+        output bins on this Imaging System."
+    REFERENCE
+        "See:   'PrtCapacityUnitTC' in Printer MIB v2."
+    ::= { isSystemEntry 19 }
+
+isSystemMediaDimensionUnit OBJECT-TYPE
+    SYNTAX      Integer32 -- PrtMediaUnitTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The unit of measure for media dimensions for input trays,
+        output bins, and media paths on this Imaging System."
+    REFERENCE
+        "See:   'PrtMediaPathMaxSpeedPrintUnitTC' in Printer MIB v2."
+    ::= { isSystemEntry 20 }
+
+isSystemMediaPathSpeedUnit OBJECT-TYPE
+    SYNTAX      Integer32 -- PrtMediaPathMaxSpeedPrintUnitTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The unit of measure for specifying the speed of all media paths
+        on this Imaging System."
+    REFERENCE
+        "See:   'PrtMediaPathMaxSpeedPrintUnitTC' in Printer MIB v2."
+    ::= { isSystemEntry 21 }
+
+isSystemSWInstalledIndexOrZero OBJECT-TYPE
+    SYNTAX      Integer32 (0..2147483647)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Value of 'hrSWInstalledIndex' in the Host Resources MIB
+        (RFC 2790) for the executable software for this Imaging System,
+        or zero if none."
+    REFERENCE
+        "See:   'hrSWInstalledIndex' in Host Resources MIB (RFC 2790)."
+    ::= { isSystemEntry 22 }
+
+isSystemJobSetIndexOrZero OBJECT-TYPE
+    SYNTAX      Integer32 (0..32767)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Value of 'jmGeneralJobSetIndex' in the Job Mon MIB
+        (RFC 2707) for the job set (queue) for this Imaging System,
+        or zero if none.
+
+        Note:   The Job Mon MIB limits this index to 16-bit width."
+    REFERENCE
+        "See:   'jmGeneralJobSetIndex' in Job Mon MIB (RFC 2707)."
+    ::= { isSystemEntry 23 }
+
+--  Below here, move these into System Counter group (attributes)
+
+isSystemMarkerSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total sheets of media that have passed by any marker
+        on this Imaging System."
+    ::= { isSystem 20 }
+
+isSystemMarkerBlankSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total sheets of media that have passed (without any colorant
+        placed on either side of the sheet of media) by any marker
+        on this Imaging System."
+    ::= { isSystem 21 }
+
+
+--
+-- System Attribute Group (Mandatory)
+--
+
+isSystemAttribute       OBJECT IDENTIFIER ::= { isMIBObjects 2 }
+
+isSystemAttributeTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IsSystemAttributeEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of attributes (sorted by type and value
+        indices) of this Imaging System."
+    REFERENCE
+        "See:   'jmAttributeTable' in Job Mon MIB (RFC 2707)."
+    ::= { isSystemAttribute 1 }
+
+isSystemAttributeEntry OBJECT-TYPE
+    SYNTAX      IsSystemAttributeEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry for an attribute (sorted by type and value
+        indices) of this Imaging System."
+    INDEX     { isSystemAttributeTypeIndex,
+                isSystemAttributeValueIndex }
+    ::= { isSystemAttributeTable 1 }
+
+
+IsSystemAttributeEntry ::= SEQUENCE {
+        --  System Attribute key elements
+        isSystemAttributeTypeIndex      IsObjectAttributeTypeTC,
+        isSystemAttributeValueIndex     Integer32,
+
+        --  System Attribute description elements
+        isSystemAttributeIntegerValue   Integer32,
+        isSystemAttributeStringValue    SnmpAdminString
+    }
+
+--
+--  System Attribute key elements
+--
+
+isSystemAttributeTypeIndex OBJECT-TYPE
+    SYNTAX      IsObjectAttributeTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Value of 'IsObjectAttributeTypeTC' that is the primary key
+        for this conceptual row in 'isSystemAttributeTable'."
+    REFERENCE
+        "See:   'IsObjectAttributeTypeTC' defined in this MIB;
+                'jmAttributeTypeIndex' in Job Mon MIB (RFC 2707)."
+    ::= { isSystemAttributeEntry 1 }
+
+--
+--  System Attribute description elements
+--
+
+isSystemAttributeValueIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The attribute value index that is the secondary key
+        for this conceptual row in 'isSystemAttributeTable'.
+
+        Usage:  This secondary key supports multi-valued attributes
+        and parallel attributes (e.g., 'input...' tray attributes)."
+    REFERENCE
+        "See:   'IsObjectAttributeTypeTC' defined in this MIB;
+                'jmAttributeInstanceIndex' in Job Mon MIB (RFC 2707)."
+    ::= { isSystemAttributeEntry 2 }
+
+isSystemAttributeIntegerValue OBJECT-TYPE
+    SYNTAX      Integer32
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The 32-bit signed integer value of this attribute."
+    REFERENCE
+        "See:   'jmAttributeValueAsInteger' in Job Mon MIB (RFC 2707)."
+    ::= { isSystemAttributeEntry 3 }
+
+isSystemAttributeStringValue OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The UTF-8 (RFC 3629) string value of this attribute."
+    REFERENCE
+        "See:   'jmAttributeValueAsString' in Job Mon MIB (RFC 2707)."
+    ::= { isSystemAttributeEntry 4 }
+
+
+--
+-- Service Group (Mandatory)
+--
+
+isService               OBJECT IDENTIFIER ::= { isMIBObjects 3 }
+
+isServiceTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IsServiceEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of services currently configured and (possibly)
+        active on this Imaging System."
+    ::= { isService 1 }
+
+isServiceEntry OBJECT-TYPE
+    SYNTAX      IsServiceEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry for one service currently configured and (possibly)
+        active on this Imaging System."
+    INDEX     { isServiceIndex }
+    ::= { isServiceTable 1 }
+
+
+IsServiceEntry ::= SEQUENCE {
+        --  Service key element
+        isServiceIndex                  Integer32,
+
+        --  Service status elements
+        isServiceState                  IsObjectStateTC,
+        isServiceStateReasons           IsObjectStateReasonsTC,
+
+        --  Service description elements
+        isServiceType                   IsObjectFunctionTC,
+        isServiceName                   SnmpAdminString,
+        isServiceInfo                   SnmpAdminString,
+        isServiceManagementURI          SnmpAdminString,
+        isServiceAttributeTypeSupport   OCTET STRING,
+        isServiceSWInstalledIndexOrZero Integer32,
+        isServiceJobSetIndexOrZero      Integer32
+    }
+
+--
+--  Service key element
+--
+
+isServiceIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Unique key of this conceptual row in 'isServiceTable'."
+    ::= { isServiceEntry 1 }
+
+--
+--  Service status elements
+--
+
+isServiceState OBJECT-TYPE
+    SYNTAX      IsObjectStateTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The state of this managed service (e.g., idle)."
+    REFERENCE
+        "See:   'printer-state' in IPP/1.1 Model (RFC 2911);
+                'hrDeviceStatus' in Host Resources MIB (RFC 2790)."
+    ::= { isServiceEntry 2 }
+
+isServiceStateReasons OBJECT-TYPE
+    SYNTAX      IsObjectStateReasonsTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The state reasons (conditions) of this managed service."
+    REFERENCE
+        "See:   'printer-state-reasons' in IPP/1.1 Model (RFC 2911);
+                'hrPrinterDetectedErrorState' in Host MIB (RFC 2790)."
+    ::= { isServiceEntry 3 }
+
+--
+--  Service description elements
+--
+
+isServiceType OBJECT-TYPE
+    SYNTAX      IsObjectFunctionTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The imaging function of this managed service (e.g., copy)."
+    REFERENCE
+        "See:   'JmJobServiceTypesTC' in Job Mon MIB (RFC 2707)."
+    ::= { isServiceEntry 4 }
+
+isServiceName OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..63))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The friendly locally unique name for this managed service,
+        for use with remote network management scripts and GUIs.
+
+        For example:    'building-232-print'."
+    ::= { isServiceEntry 5 }
+
+isServiceInfo OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The description of this managed service,
+        for use with remote network management scripts and GUIs.
+
+        For example:    'Print service supporting IPP and PSI'."
+    ::= { isServiceEntry 6 }
+
+isServiceManagementURI OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "A management URI for this service,
+        for use with remote network management stations, e.g.,
+        'snmp://example.com:161' or 'pwg-wbmm://example.com/print'."
+    ::= { isServiceEntry 7 }
+
+isServiceAttributeTypeSupport OBJECT-TYPE
+    SYNTAX      OCTET STRING (SIZE(0..255)) -- 2040 bits
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "A bit-array of attributes supported on this managed service.
+        i.e., supported values of 'isServiceAttributeTypeIndex'.
+
+        Usage:  See 'isSystemActionTypeSupport' element for usage."
+    REFERENCE
+        "See:   'IsObjectAttributeTypeTC' defined in this MIB;
+                'isServiceAttributeTypeIndex' defined in this MIB."
+    ::= { isServiceEntry 8 }
+
+isServiceSWInstalledIndexOrZero OBJECT-TYPE
+    SYNTAX      Integer32 (0..2147483647)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Value of 'hrSWInstalledIndex' in the Host Resources MIB
+        (RFC 2790) for the executable software for this managed service,
+        or zero if none."
+    REFERENCE
+        "See:   'hrSWInstalledIndex' in Host Resources MIB (RFC 2790)."
+    ::= { isServiceEntry 9 }
+
+isServiceJobSetIndexOrZero OBJECT-TYPE
+    SYNTAX      Integer32 (0..32767)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Value of 'jmGeneralJobSetIndex' in the Job Mon MIB
+        (RFC 2707) for the job set (queue) for this managed service,
+        or zero if none.
+
+        Note:   The Job Mon MIB limits this index to 16-bit width."
+    REFERENCE
+        "See:   'jmGeneralJobSetIndex' in Job Mon MIB (RFC 2707)."
+    ::= { isServiceEntry 10 }
+
+
+--
+-- Service Attribute Group (Mandatory)
+--
+
+isServiceAttribute      OBJECT IDENTIFIER ::= { isMIBObjects 4 }
+
+isServiceAttributeTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IsServiceAttributeEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of attributes (sorted by service, type, and value
+        indices) of services currently configured and (possibly)
+        active on this Imaging System."
+    REFERENCE
+        "See:   'jmAttributeTable' in Job Mon MIB (RFC 2707)."
+    ::= { isServiceAttribute 1 }
+
+isServiceAttributeEntry OBJECT-TYPE
+    SYNTAX      IsServiceAttributeEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry for an attribute (sorted by service, type, and value
+        indices) of a service currently configured and (possibly)
+        active on this Imaging System."
+    INDEX     { isServiceAttributeServiceIndex,
+                isServiceAttributeTypeIndex,
+                isServiceAttributeValueIndex }
+    ::= { isServiceAttributeTable 1 }
+
+
+IsServiceAttributeEntry ::= SEQUENCE {
+        --  Service Attribute key elements
+        isServiceAttributeServiceIndex  Integer32,
+        isServiceAttributeTypeIndex     IsObjectAttributeTypeTC,
+        isServiceAttributeValueIndex    Integer32,
+
+        --  Service Attribute description elements
+        isServiceAttributeIntegerValue  Integer32,
+        isServiceAttributeStringValue   SnmpAdminString
+    }
+
+--
+--  Service Attribute key elements
+--
+
+isServiceAttributeServiceIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Value of 'isServiceIndex' that is the primary key
+        for this conceptual row in 'isServiceAttributeTable'."
+    REFERENCE
+        "See:   'isServiceIndex' defined in this MIB."
+    ::= { isServiceAttributeEntry 1 }
+
+isServiceAttributeTypeIndex OBJECT-TYPE
+    SYNTAX      IsObjectAttributeTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Value of 'IsObjectAttributeTypeTC' that is the secondary key
+        for this conceptual row in 'isServiceAttributeTable'."
+    REFERENCE
+        "See:   'IsObjectAttributeTypeTC' defined in this MIB;
+                'jmAttributeTypeIndex' in Job Mon MIB (RFC 2707)."
+    ::= { isServiceAttributeEntry 2 }
+
+isServiceAttributeValueIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The attribute value index that is the tertiary key
+        for this conceptual row in 'isServiceAttributeTable'.
+
+        Usage:  This tertiary key supports multi-valued attributes
+        and parallel attributes (e.g., 'input...' tray attributes)."
+    REFERENCE
+        "See:   'IsObjectAttributeTypeTC' defined in this MIB;
+                'jmAttributeInstanceIndex' in Job Mon MIB (RFC 2707)."
+    ::= { isServiceAttributeEntry 3 }
+
+--
+--  Service Attribute description elements
+--
+
+isServiceAttributeIntegerValue OBJECT-TYPE
+    SYNTAX      Integer32
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The 32-bit signed integer value of this attribute."
+    REFERENCE
+        "See:   'jmAttributeValueAsInteger' in Job Mon MIB (RFC 2707)."
+    ::= { isServiceAttributeEntry 4 }
+
+isServiceAttributeStringValue OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The UTF-8 (RFC 3629) string value of this attribute."
+    REFERENCE
+        "See:   'jmAttributeValueAsString' in Job Mon MIB (RFC 2707)."
+    ::= { isServiceAttributeEntry 5 }
+
+
+--
+-- Locale Group (Mandatory)
+--
+
+isLocale                OBJECT IDENTIFIER ::= { isMIBObjects 7 }
+
+isLocaleTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IsLocaleEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of locales (languages spoken in countries or regions)
+        supported by this Imaging System for server-side localization
+        of 'xxxInfo' and 'xxxMessage' elements and attributes configured
+        on this Imaging System."
+    REFERENCE
+        "See:   'prtLocalizationTable' in Printer MIB v2 (RFC 3805);
+                'PrtLocalizedDescriptionStringTC' and
+                'PrtConsoleDescriptionStringTC' in Printer MIB v2."
+    ::= { isLocale 1 }
+
+isLocaleEntry OBJECT-TYPE
+    SYNTAX      IsLocaleEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry for a locale (language spoken in a country or region)
+        supported by this Imaging System for server-side localization
+        of 'xxxInfo' and 'xxxMessage' elements and attributes configured
+        on this Imaging System."
+    INDEX     { isLocaleIndex }
+    ::= { isLocaleTable 1 }
+
+
+IsLocaleEntry ::= SEQUENCE {
+        --  Locale key element
+        isLocaleIndex                   Integer32,
+
+        --  Locale description elements
+        isLocaleInfo                    SnmpAdminString,
+        isLocaleLanguageTag             SnmpAdminString
+    }
+
+--
+--  Locale key elements
+--
+
+isLocaleIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Unique key of this conceptual row in 'isLocaleTable'."
+    REFERENCE
+        "See:   'isSystemLocaleIndex' defined in this MIB."
+    ::= { isLocaleEntry 1 }
+
+--
+--  Locale description elements
+--
+
+isLocaleInfo OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The description of this locale,
+        for use with remote network management scripts and GUIs."
+    ::= { isLocaleEntry 2 }
+
+isLocaleLanguageTag OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..63))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "A 'language tag' (as defined in RFC 3066) for this locale,
+        which MUST identify a natural language (such as German) and MAY
+        identify the country or region where the language is spoken.
+
+        Note:  A 'charset' (RFC 2978) suffix as used in POSIX (ISO 9945)
+        locales is not needed, because localized strings in this MIB are
+        specified as invariant UTF-8 (RFC 3629) via 'SnmpAdminString'."
+    REFERENCE
+        "See:   'Tags for the Identification of Languages' (RFC 3066);
+                'Codes for Names of Languages' (ISO 639);
+                'Codes for Names of Countries' (ISO 3166).
+                'IETF Policy on Charsets and Languages' (RFC 2277)."
+    ::= { isLocaleEntry 3 }
+
+
+--
+-- Alert Group (Mandatory)
+--
+
+isAlert                 OBJECT IDENTIFIER ::= { isMIBObjects 8 }
+
+isAlertTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IsAlertEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of all critical and warning alerts currently active
+        on this Imaging System."
+    REFERENCE
+        "See:   'prtAlertTable' in Printer MIB v1 (RFC 1759) and
+                Printer MIB v2 (RFC 3805)."
+    ::= { isAlert 1 }
+
+isAlertEntry OBJECT-TYPE
+    SYNTAX      IsAlertEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry for a critical or warning alert currently active
+        on this Imaging System."
+    REFERENCE
+        "See:   'prtAlertEntry' in Printer MIB v1 (RFC 1759) and
+                Printer MIB v2 (RFC 3805)."
+    INDEX     { isAlertIndex }
+    ::= { isAlertTable 1 }
+
+
+IsAlertEntry ::= SEQUENCE {
+        --  Alert key element
+        isAlertIndex                    Integer32,
+
+        --  Alert status elements
+        isAlertSeverityLevel            IsAlertSeverityLevelTC,
+        isAlertTrainingLevel            IsAlertTrainingLevelTC,
+        isAlertPersistence              StorageType,
+        isAlertDate                     DateAndTime,
+        isAlertTime                     TimeTicks,
+
+        --  Alert description elements
+        isAlertSourceObjectClass        IsObjectClassTC,
+        isAlertSourceObjectIndex        Integer32,
+        isAlertAttributeTypeIndex       Integer32,
+        isAlertAttributeValueIndex      Integer32,
+        isAlertLocation                 Integer32,
+        isAlertCode                     Integer32,
+        isAlertDescription              SnmpAdminString
+    }
+
+--
+--  Alert key element
+--
+
+isAlertIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Unique key of this conceptual row in 'isAlertTable'."
+    DEFVAL      { 1 }
+    ::= { isAlertEntry 1 }
+
+--
+--  Alert status elements
+--
+
+isAlertSeverityLevel OBJECT-TYPE
+    SYNTAX      IsAlertSeverityLevelTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The level of severity of this alert."
+    REFERENCE
+        "See:   'prtAlertSeverityLevel' in Printer MIB v2 (RFC 3805);
+                'PrtAlertSeverityLevelTC' in Printer MIB v2."
+    ::= { isAlertEntry 2 }
+
+isAlertTrainingLevel OBJECT-TYPE
+    SYNTAX      IsAlertTrainingLevelTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The level of training required to correct this alert."
+    REFERENCE
+        "See:   'prtAlertTrainingLevel' in Printer MIB v2 (RFC 3805);
+                'PrtAlertTrainingLevelTC' in IANA Printer MIB."
+    ::= { isAlertEntry 3 }
+
+isAlertPersistence OBJECT-TYPE
+    SYNTAX      StorageType
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The persistence of this conceptual row in 'isAlertTable'."
+    REFERENCE
+        "See:   'StorageType' in SMIv2 Textual Conventions (RFC 2579)."
+    ::= { isAlertEntry 4 }
+
+isAlertDate OBJECT-TYPE
+    SYNTAX      DateAndTime
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The create date/time of this conceptual row in 'isAlertTable'."
+    REFERENCE
+        "See:   'DateAndTime' in SMIv2 Textual Conventions (RFC 2579)."
+    ::= { isAlertEntry 5 }
+
+isAlertTime OBJECT-TYPE
+    SYNTAX      TimeTicks
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The create time of this conceptual row in 'isAlertTable'."
+    REFERENCE
+        "See:   'prtAlertTime' in Printer MIB v1 (RFC 1759) and
+                Printer MIB v2 (RFC 3805)."
+    ::= { isAlertEntry 6 }
+
+--
+--  Alert description elements
+--
+
+isAlertSourceObjectClass OBJECT-TYPE
+    SYNTAX      IsObjectClassTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The source object class (i.e., value of 'IsObjectClassTC')
+        for this alert."
+    REFERENCE
+        "See:   'IsObjectClassTC' defined in this MIB."
+    ::= { isAlertEntry 7 }
+
+isAlertSourceObjectIndex OBJECT-TYPE
+    SYNTAX      Integer32 (0..2147483647)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The source object index (i.e., value of 'isSystemIndex', etc.)
+        for this alert, or zero if none."
+    ::= { isAlertEntry 8 }
+
+isAlertAttributeTypeIndex OBJECT-TYPE
+    SYNTAX      Integer32 (0..2147483647)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The source attribute type index (i.e., value of
+        'is...AttributeTypeIndex') for this alert, or zero if none."
+    ::= { isAlertEntry 9 }
+
+isAlertAttributeValueIndex OBJECT-TYPE
+    SYNTAX      Integer32 (0..2147483647)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The source attribute value index (i.e., value of
+        'is...AttributeValueIndex') for this alert, or zero if none."
+    ::= { isAlertEntry 10 }
+
+isAlertLocation OBJECT-TYPE
+    SYNTAX      Integer32 (0..2147483647)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The location (refines source, attribute type, attribute value)
+        for this alert, or zero if none."
+    REFERENCE
+        "See:   'prtAlertLocation' in Printer MIB v1 (RFC 1759) and
+                Printer MIB v2 (RFC 3805)."
+    ::= { isAlertEntry 11 }
+
+isAlertCode OBJECT-TYPE
+    SYNTAX      Integer32 -- PrtAlertCodeTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The code that describes the detailed type of this alert.
+
+        Usage:  Refined by the values of 'isAlertSeverityLevel' and
+                'isAlertTrainingLevel'."
+    REFERENCE
+        "See:   'prtAlertCode' in Printer MIB v1 (RFC 1759) and
+                'PrtAlertCodeTC' in IANA Printer MIB."
+    ::= { isAlertEntry 12 }
+
+isAlertDescription OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The detailed description of this Imaging System alert
+        for use with remote network management scripts and GUIs."
+    REFERENCE
+        "See:   'prtAlertDescription' in Printer MIB v2 (RFC 3805)."
+    ::= { isAlertEntry 13 }
+
+
+--
+-- Management Group (Optional)
+--
+
+isManagement            OBJECT IDENTIFIER ::= { isMIBObjects 11 }
+
+isManagementTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IsManagementEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of exactly one management action currently in
+        progress or previously completed on this Imaging System."
+    ::= { isManagement 1 }
+
+isManagementEntry OBJECT-TYPE
+    SYNTAX      IsManagementEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry for one management action currently in
+        progress or previously completed on this Imaging System.
+
+        Usage:  The value of 'isManagementIndex' MUST always be '1'."
+    INDEX     { isManagementIndex }
+    ::= { isManagementTable 1 }
+
+
+IsManagementEntry ::= SEQUENCE {
+        --  Management key element
+        isManagementIndex               Integer32,
+
+        --  Management status elements
+        isManagementActionSerialNo      TestAndIncr,
+        isManagementActionStatus        IsActionStatusTC,
+
+        --  Management description elements
+        isManagementActionType          IsActionTypeTC,
+        isManagementActionParameters    SnmpAdminString,
+        isManagementTargetClass         IsObjectClassTC,
+        isManagementTargetIndex         Integer32,
+        isManagementTargetJobIndex      Integer32
+    }
+
+--
+--  Management key element
+--
+
+isManagementIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..1)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Unique key of this conceptual row in 'isManagementTable'.
+
+        Usage:  The value of 'isManagementIndex' MUST always be '1'."
+    DEFVAL      { 1 }
+    ::= { isManagementEntry 1 }
+
+--
+--  Management status elements
+--
+
+isManagementActionSerialNo OBJECT-TYPE
+    SYNTAX      TestAndIncr
+    MAX-ACCESS  read-write
+    STATUS      current
+    DESCRIPTION
+        "An advisory lock used to allow several cooperating management
+        stations to coordinate their of use of management actions
+        in this Imaging System MIB, by contending for this spin lock.
+
+        Usage:  Management stations that perform management actions via
+        this Imaging System MIB, MUST first read the value of
+        'isManagementActionSerialNo' and 'isManagementActionStatus'
+        (to ensure that a previous action is not still in progress).
+
+        If a previous action is in progress, then the cooperating
+        management station MUST wait a short random period and MUST read
+        'isManagementActionSerialNo' and 'isManagementActionStatus'
+        again.
+
+        If no previous action is in progress, then the cooperating
+        management station MUST simultaneously set:
+
+            'isManagementActionSerialNo' - action spin lock
+            'isManagementActionType' - e.g., 'restart'
+            'isManagementActionParameters' - e.g., ''
+            'isManagementActionTargetClass' - e.g., 'service'
+            'isManagementActionTargetIndex' - e.g., '6'
+            'isManagementActionTargetJobIndex' - for job management
+
+        (which causes the Imaging System to change the value of
+        'isManagementActionStatus' to 'inProgress')."
+    REFERENCE
+        "See:   'ifTestId' in Interfaces Group MIB (RFC 2863);
+                'snmpSetSerialNo' in SNMPv2 MIB (RFC 3418);
+                User-based Security Model for SNMP (RFC 3414);
+                View-based Access Control Model for SNMP (RFC 3415)."
+    ::= { isManagementEntry 2 }
+
+isManagementActionStatus OBJECT-TYPE
+    SYNTAX      IsActionStatusTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Status of management action now in progress or last
+        completed on this Imaging System."
+    REFERENCE
+        "See:   IPP System Admin."
+    ::= { isManagementEntry 3 }
+
+--
+--  Management description elements
+--
+
+isManagementActionType OBJECT-TYPE
+    SYNTAX      IsActionTypeTC
+    MAX-ACCESS  read-write
+    STATUS      current
+    DESCRIPTION
+        "Type of management action now in progress or last
+        completed on this Imaging System."
+    REFERENCE
+        "See:   IPP System Admin."
+    ::= { isManagementEntry 4 }
+
+isManagementActionParameters OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  read-write
+    STATUS      current
+    DESCRIPTION
+        "List of management action parameters (if any) for the
+        current management action now in progress or last
+        completed on this Imaging System, in a UTF-8 (RFC 3629) string.
+
+        Usage:  This string parameter list must conform to the ABNF
+            [tag '=' value] *[';' tag '=' value]
+        where,
+            'tag' is an ASN.1 tag (e.g., 'jmJobIndex' from (RFC2707))
+            'value' is a string encoded value (e.g., '23').
+        for example,
+            'jmJobIndex=23' is a valid string."
+    REFERENCE
+        "See:   IPP System Admin."
+    ::= { isManagementEntry 5 }
+
+isManagementTargetClass OBJECT-TYPE
+    SYNTAX      IsObjectClassTC
+    MAX-ACCESS  read-write
+    STATUS      current
+    DESCRIPTION
+        "The target object class (i.e., value of 'IsObjectClassTC')
+        for the current management action now in progress or last
+        completed on this Imaging System."
+    REFERENCE
+        "See:   'IsObjectClassTC' defined in this MIB."
+    ::= { isManagementEntry 6 }
+
+isManagementTargetIndex OBJECT-TYPE
+    SYNTAX      Integer32 (0..2147483647)
+    MAX-ACCESS  read-write
+    STATUS      current
+    DESCRIPTION
+        "Value of 'isSystemIndex' for the target system or
+        the value of 'isServiceIndex' for the target service or
+        the value of 'isDeviceIndex' for the target device or
+        the value of 'isResourceIndex' for the target resource
+        for the current management action now in progress or last
+        completed on this Imaging System."
+    ::= { isManagementEntry 7 }
+
+isManagementTargetJobIndex OBJECT-TYPE
+    SYNTAX      Integer32 (0..2147483647)
+    MAX-ACCESS  read-write
+    STATUS      current
+    DESCRIPTION
+        "Value of 'jmJobIndex' for the target job for the
+        current job management action now in progress or last
+        completed on this Imaging System, or zero if none.
+
+        Usage:  Depending on the value of 'isManagementTargetClass',
+        'isSystemJobSetIndexOrZero', or 'isServiceJobSetIndexOrZero', or
+        'isDeviceJobSetIndexOrZero' is available to resolve references
+        to rows in 'jmJobTable'."
+    REFERENCE
+        "See:   'jmJobIndex' in Job Mon MIB (RFC 2707)."
+    ::= { isManagementEntry 8 }
+
+END

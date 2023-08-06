@@ -1,0 +1,102 @@
+ENOC-MIB DEFINITIONS ::= BEGIN
+    IMPORTS
+        MODULE-IDENTITY, OBJECT-TYPE, Integer32, enterprises FROM SNMPv2-SMI
+        DisplayString FROM SNMPv2-TC;
+
+    enocMIB MODULE-IDENTITY
+    LAST-UPDATED "202005130000Z"
+    ORGANIZATION "Modio AB"
+    CONTACT-INFO "spider@modio.se"
+    DESCRIPTION  "Hacked together mib for ENOC PDU"
+    REVISION "202005130000Z"
+    DESCRIPTION "Humbug"
+    ::= { enoc 10 }
+
+    clever OBJECT IDENTIFIER ::= { enterprises 30966 }
+    enoc OBJECT IDENTIFIER ::= { clever 10 }
+    pdu OBJECT IDENTIFIER ::= { enoc 3}
+    device OBJECT IDENTIFIER ::= { pdu 1}
+
+    deviceName OBJECT-TYPE
+        SYNTAX     DisplayString
+        MAX-ACCESS read-only
+        STATUS     current
+        DESCRIPTION "Master device name"
+        ::= { device 1 }
+
+    master OBJECT IDENTIFIER ::= { pdu 2}
+
+    mVoltageA OBJECT-TYPE
+       SYNTAX     Integer32
+       UNITS      "V"
+       MAX-ACCESS read-only
+       STATUS     current
+       DESCRIPTION "Voltage of L1 for master device"
+       ::= { master 1 }
+
+    mVoltageB OBJECT-TYPE
+       SYNTAX     Integer32
+       UNITS      "V"
+       MAX-ACCESS read-only
+       STATUS     current
+       DESCRIPTION "Voltage of L2 for master device"
+       ::= { master 2 }
+
+    mVoltageC OBJECT-TYPE
+       SYNTAX     Integer32
+       UNITS      "V"
+       MAX-ACCESS read-only
+       STATUS     current
+       DESCRIPTION "Voltage of L3 for master device"
+       ::= { master 3 }
+
+    mCurrentA OBJECT-TYPE
+       SYNTAX     Integer32
+       UNITS      "dA"
+       MAX-ACCESS read-only
+       STATUS     current
+       DESCRIPTION "Current of L1 for master device"
+       ::= { master 4 }
+
+    mCurrentB OBJECT-TYPE
+       SYNTAX     Integer32
+       UNITS      "dA"
+       MAX-ACCESS read-only
+       STATUS     current
+       DESCRIPTION "Current of L2 for master device"
+       ::= { master 5 }
+
+    mCurrentC OBJECT-TYPE
+       SYNTAX     Integer32
+       UNITS      "dA"
+       MAX-ACCESS read-only
+       STATUS     current
+       DESCRIPTION "Current of L3 for master device"
+       ::= { master 6 }
+
+    mEnergyA OBJECT-TYPE
+       SYNTAX     Integer32
+       UNITS      "hWh"
+       MAX-ACCESS read-only
+       STATUS     current
+       DESCRIPTION "Power Energy of L1 for master device"
+       ::= { master 7 }
+
+    mEnergyB OBJECT-TYPE
+       SYNTAX     Integer32
+       UNITS      "hWh"
+       MAX-ACCESS read-only
+       STATUS     current
+       DESCRIPTION "Power energy of L2 for master device"
+       ::= { master 8 }
+
+    mEnergyC OBJECT-TYPE
+       SYNTAX     Integer32
+       UNITS      "hWh"
+       MAX-ACCESS read-only
+       STATUS     current
+       DESCRIPTION "Power energy of L3 for master device"
+       ::= { master 9 }
+
+
+END

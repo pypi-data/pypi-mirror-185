@@ -1,0 +1,164 @@
+# vim: expandtab:ts=8:sw=2:tw=80:fdm=marker:ft=yaml:
+%YAML 1.1
+---
+# Keep the includes first to illustrate that definitions that everything that
+# follows override included definitions.
+include:
+  # Only run for branches and tags
+  # https://docs.gitlab.com/ee/ci/yaml/#workflowrules-templates
+  - template: 'Workflows/MergeRequest-Pipelines.gitlab-ci.yml'
+  - project: ModioAB/CI
+    ref: main
+    file:
+      - /ci/default.yml
+      - /ci/rebase.yml
+
+
+default:
+  before_script:
+    - python3 -m venv venv
+    - source venv/bin/activate
+
+  # Pip's cache doesn't store the python packages
+  # https://pip.pypa.io/en/stable/reference/pip_install/#caching
+  #
+  # If you want to also cache the installed packages, you have to install
+  # them in a virtualenv and cache it as well.
+  cache:
+    paths:
+      - .cache/pip
+      - venv/
+
+variables:
+  # Change pip's cache directory to be inside the project directory since we can
+  # only cache local items.
+  #
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+
+stages:
+  - check
+  - build
+  - test
+  - publish
+
+# -------------------------------------------
+
+check:check:
+  stage: check
+  script:
+    - pip install -r requirements-dev.txt
+    - make check
+
+check:lint:
+  stage: check
+  allow_failure: true
+  script:
+    - pip install -r requirements-dev.txt
+    - make lint
+
+# -------------------------------------------
+
+build:
+  stage: build
+  script:
+    - pip install -r requirements-dev.txt
+    - python3 setup.py bdist_wheel
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - dist/*.whl
+
+# -------------------------------------------
+
+test:fedora:
+  stage: test
+  dependencies:
+    - build
+  before_script:
+    - pip3 install dist/*
+    - pip3 install -r requirements-test.txt
+    - pip3 install -e .
+  script:
+    - make test
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    expire_in: 1 week
+    reports:
+      junit: testreport.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+
+test:debian:10:
+  stage: test
+  image: docker.io/library/debian:10
+  dependencies:
+    - build
+  before_script:
+    - apt-get update && apt-get install -q -y --no-install-recommends python3 python3-pip make
+    - pip3 install dist/*
+    - pip3 install -r requirements-test.txt
+  script:
+    - make test
+
+test:debian:11:
+  image: docker.io/library/debian:11
+  extends:
+    - test:debian:10
+
+test:run:
+  stage: test
+  image: ${PYTHON_IMAGE}
+  dependencies:
+    - build
+  before_script:
+    - pip3 install dist/*
+  script:
+    # Perform basic selftest
+    - snmp_lookup_selftest --pysnmp
+
+# -------------------------------------------
+
+rebase:test:
+  extends: .rebase
+  script:
+    - pip install -r requirements-test.txt
+    # its important to use -e here
+    # or all tests will run against the last version
+    - pip install -e .
+    - git every -x 'make test'
+
+
+rebase:lint:
+  extends: .rebase
+  script:
+    - pip install -r requirements-dev.txt
+    - git every -x 'make lint' -x 'make check'
+
+# -------------------------------------------
+
+publish_pypi:
+  stage: publish
+  dependencies:
+    - build
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: on_success
+      # Allow users to _manually_ build this
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      # If it's not tagged as "allow_failure", it will block the merge request
+      # pipelines
+      allow_failure: true
+      when: manual
+  variables:
+    TWINE_REPOSITORY_URL: "https://gitlab.com/api/v4/projects/22408112/packages/pypi"
+    TWINE_USERNAME: "gitlab-ci-token"
+    TWINE_PASSWORD: "$CI_JOB_TOKEN"
+  before_script:
+    - pip3 install -r requirements-dev.txt
+  script:
+    # Uploads pypi-package to  https://gitlab.com/ModioAB/packages/-/packages
+    # Credentials and URL stored in env-variables TWINE_*
+    - python3 -m twine upload dist/* --verbose
+...

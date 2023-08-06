@@ -1,0 +1,15 @@
+# Include requirements.txt
+-r requirements.txt
+# List all dependencies needed for test / development / lint / check here
+twine 
+wheel
+setuptools >= 42
+setuptools_scm
+flake8 >= 3.8.1
+flake8-docstrings
+black >= 22.1.0
+pytest
+mypy
+pylint >= 2.12.2
+pysnmp
+pysmi

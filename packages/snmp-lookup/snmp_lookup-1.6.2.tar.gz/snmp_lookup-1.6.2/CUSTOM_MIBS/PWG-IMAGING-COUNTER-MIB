@@ -1,0 +1,1941 @@
+PWG-IMAGING-COUNTER-MIB DEFINITIONS ::= BEGIN
+--  PWG Imaging Counter MIB
+--  counter-mib-20041127.txt
+--  version 0.40 - 27 November 2004
+
+IMPORTS
+    MODULE-IDENTITY, OBJECT-TYPE, Counter32, Integer32, enterprises
+        FROM SNMPv2-SMI                 -- RFC 2578
+    TEXTUAL-CONVENTION, DisplayString
+        FROM SNMPv2-TC                  -- RFC 2579
+    MODULE-COMPLIANCE, OBJECT-GROUP
+        FROM SNMPv2-CONF                -- RFC 2580
+    SnmpAdminString
+        FROM SNMP-FRAMEWORK-MIB;        -- RFC 3411
+
+icMIB MODULE-IDENTITY
+    LAST-UPDATED    "0411270000Z" -- 27 November 2004
+    ORGANIZATION    "Printer Working Group, a Program of IEEE/ISTO"
+    CONTACT-INFO
+        "Web-based Imaging Management Services (WIMS) Project
+
+        Web:    http://www.pwg.org
+        FTP:    ftp://ftp.pwg.org/pub/pwg/wims
+        Email:  wims@pwg.org (subscribers only - see Web page above)
+
+        Editor: Ira McDonald
+        Postal: High North Inc
+                PO Box 221 - E21761 Ridge Ave
+                Grand Marais, MI  49839
+                USA
+        Tel:    +1 906-494-2434
+        Email:  imcdonald@sharplabs.com"
+    DESCRIPTION
+        "The MIB module for passive monitoring of activity counters for
+        managed services and/or managed subunits on an Imaging System.
+
+        Copyright (C) IEEE/ISTO PWG (2004)."
+
+    -- revision history
+    REVISION        "0411270000Z" -- 27 November 2004 (v0.40)
+    DESCRIPTION     "Third revision of the Imaging Counter MIB.
+                    - major rewrite, including all INDEX clauses,
+                      to align with PWG Counter spec and schema,
+                      per request of Pete Zehler.
+                    - added 'IcServiceTypeTC' and 'IcSubunitTypeTC'
+                      textual conventions for use in 'icServiceTable'
+                      and 'icSubunitTable' (for direct lookup of keys).
+                    - added 'IcWorkTypeTC' (for direct lookup of 'job',
+                      'datastream', 'auxiliary', etc. work counters),
+                      to align with PWG Counter spec and schema.
+                    - added 'IcCycleTypeTC' (for direct lookup of
+                      'life', 'power', and 'reset' scope work counters),
+                      to align with PWG Counter spec and schema.
+                    - added 'icGeneral' scalar objects group, to support
+                      (missing) language tag for 'ic...Info' objects
+                      and counts of services, subunits, and media used
+                      types (for efficient SNMP access without errors).
+                    - added 'icKeyTable', to support lookup of all
+                      service and subunit keys configured.
+                    - added 'icServiceTable' and 'icSubunitTable',
+                      to support direct lookup of any specific service
+                      or subunit (but simplify indexing of work tables).
+                    - renamed 'icBasicTable' to 'icMonitorTable' and
+                      added 'icMonitorMemoryAlloc...' counters,
+                      to align with PWG Counter spec and schema.
+                    - deleted 'icJobSetTable' and moved all of the job
+                      completion counters to 'icMonitorTable',
+                      to align with PWG Counter spec and schema.
+                    - added 'icTwoSidedTable' for duplex impressions,
+                      to align with PWG Counter spec and schema.
+                    - renamed 'icTrafficInputChannelKOctets' to
+                      'icTrafficJobInputKOctets' (for clarity) and
+                      added symmetric 'icTrafficJobOutputKOctets'
+                      (for 'faxIn/Out' and 'netFaxIn/Out'),
+                      per October review at PWG Lexington face-to-face.
+                    - added 'icTrafficInputMessages' and symmetric
+                      'icTrafficOutputMessages' (for 'emailIn/Out'),
+                      per October review at PWG Lexington face-to-face."
+
+    REVISION        "0404280000Z" -- 28 April 2004 (v0.30)
+    DESCRIPTION     "Second revision of the Imaging Counter MIB.
+                    - revised all INDEX clauses to:  '...ElementClass',
+                      '...ServiceType', and '...KeyIndex' (for
+                      efficient access to a specific element instance),
+                      per request of Pete Zehler.
+                    - added 'icJobSetTable' for the job counters removed
+                      from 'icBasicTable' (only applicable to system,
+                      service, or device managed elements).
+                    - renamed 'icJobSetFinishedJobs' to
+                      'icJobSetCompletedFinisherJobs' for clarity,
+                      per request of Pete Zehler.
+                    - renamed 'icTrafficChannelDataKOctets' to
+                      'icTrafficInputChannelKOctets' and revised
+                      description, per request of Pete Zehler.
+                    - renamed 'icMediaTable' to 'icMediaUsedTable' for
+                      clarity, per WIMS discussions.
+                    - revised indices of 'icMediaUsedTable' to be
+                      'icMediaUsedSizeName' and 'icMediaUsedIndex',
+                      per request of Pete Zehler.
+                    - revised 'icMediaUsedInfo' to make it mandatory to
+                      distinguish between same media size instances,
+                      per request of Pete Zehler."
+
+    REVISION        "0404050000Z" -- 5 April 2004 (v0.20)
+    DESCRIPTION     "First revision of the Imaging Counter MIB.
+                    - decomposed former 'icTable' into six tables
+                      (3 mandatory and 3 conditionally mandatory).
+                    - added 'IcPersistenceTC' to extend original
+                      'StorageType' from RFC 2579 like Resource object.
+                    - added 'icBasic[Aborted|Canceled|Completed]Jobs'
+                      and 'icBasicFinisherJobs', to complement Job Mon
+                      MIB (RFC 2707), per WIMS discussions.
+                    - added 'icMediaTable' (optional) for media actually
+                      consumed, per WIMS discussions."
+
+    REVISION        "0403120000Z" -- 12 March 2004 (v0.10)
+    DESCRIPTION     "Initial version of the Imaging Counter MIB."
+    ::= { enterprises pwg(2699)  mibs(1)  imagingCounterMIB(3) }
+
+--  PWG Secretary - MIB module number should be assigned/registered
+
+
+icMIBObjects            OBJECT IDENTIFIER ::= { icMIB 1 }
+
+icMIBNotifications      OBJECT IDENTIFIER ::= { icMIB 2 }
+
+icMIBConformance        OBJECT IDENTIFIER ::= { icMIB 3 }
+icMIBObjectGroups       OBJECT IDENTIFIER ::= { icMIBConformance 2 }
+
+
+--
+-- Textual Conventions
+--
+
+IcCycleTypeTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The type of cycle for these counters."
+    REFERENCE
+        "See:   'prtMarkerLifeCount' and 'prtMarkerPowerOnCount'
+                in Printer MIB (RFC 1759/3805)."
+    SYNTAX      INTEGER {
+        other(1),                       -- non-standard type
+        unknown(2),                     -- unknown type
+        life(3),                        -- since last install
+                                        -- see 'prtMarkerLifeCount'
+        power(4),                       -- since last power-on
+                                        -- see 'prtMarkerPowerOnCount'
+        reset(5)                        -- since last counter reset
+                                        -- by administrative operation
+    }
+
+IcServiceTypeTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The type of this managed service on this Imaging System."
+    REFERENCE
+        "See:   'JmJobServiceTypesTC' and 'jobServiceTypes'
+                in Job Mon MIB (RFC 2707)."
+    SYNTAX      INTEGER {
+        other(1),                       -- non-standard type
+        unknown(2),                     -- unknown type
+        system(3),                      -- Imaging System (totals)
+        copy(4),                        -- copy (scan and print)
+        emailIn(5),                     -- email (input messages)
+        emailOut(6),                    -- email (output messages)
+        faxIn(7),                       -- PSTN fax (input images)
+        faxOut(8),                      -- PSTN fax (output images)
+        networkFaxIn(9),                -- network fax (input images)
+        networkFaxOut(10),              -- network fax (output images)
+        print(11),                      -- print (output impressions)
+        scan(12),                       -- scan (input images)
+        scanToEmail(13),                -- scan to email (output images)
+        scanToFile(14),                 -- scan to file (output images)
+        transform(15)                   -- transform (convert format)
+    }
+
+IcSubunitTypeTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The type of this managed subunit on this Imaging System."
+    REFERENCE
+        "See:   Section 2.2 'Printer Sub-Units'
+                in Printer MIB (RFC 1759/3805)."
+    SYNTAX      INTEGER {
+        other(1),                       -- non-standard type
+        unknown(2),                     -- unknown type
+        channel(3),                     -- input job source
+        console(4),                     -- Imaging System local console
+        cover(5),                       -- cover, door, or interlock
+        finisher(6),                    -- hardcopy media finishing
+        inputTray(7),                   -- input media source
+        interface(8),                   -- local/network hardware port
+        interpreter(9),                 -- rendering for hardcopy output
+        marker(10),                     -- hardcopy impression target
+        mediaPath(11),                  -- input tray to output bin
+        outputBin(12),                  -- output media target
+        scanner(13),                    -- softcopy image source
+        transformer(14)                 -- document format conversion
+    }
+
+IcWorkTypeTC ::= TEXTUAL-CONVENTION
+    STATUS      current
+    DESCRIPTION
+        "The type of work for these counters."
+    SYNTAX      INTEGER {
+        other(1),                       -- non-standard type
+        unknown(2),                     -- unknown type
+        job(3),                         -- work totals
+        datastream(4),                  -- work from user datastream
+        auxiliary(5),                   -- hardcopy startup/banner/etc.
+        waste(6),                       -- hardcopy waste
+        maintenance(7)                  -- work during maintenance
+    }
+
+
+--
+--  General Group (Mandatory)
+--
+
+icGeneral               OBJECT IDENTIFIER ::= { icMIBObjects 1 }
+
+icGeneralNaturalLanguage OBJECT-TYPE
+    SYNTAX      DisplayString (SIZE(0..63))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The natural language tag (RFC 3066), specified in US-ASCII,
+        for all text string objects defined in this MIB.
+
+        Note:  If this object is empty, then the natural language for
+        all text string objects defined in this MIB SHOULD default to
+        'en-US' (US English)."
+    REFERENCE
+        "See:   'prtGeneralCurrentLocalization' in RFC 1759/3805."
+    DEFVAL      { ''H }                 -- no natural language tag
+    ::= { icGeneral 1 }
+
+icGeneralTotalServiceRecords OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "records"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total managed services configured on this Imaging System,
+        and therefore the number of entries in 'icServiceTable'."
+    ::= { icGeneral 2 }
+
+icGeneralTotalSubunitRecords OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "records"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total managed subunits configured on this Imaging System,
+        and therefore the number of entries in 'icSubunitTable'."
+    ::= { icGeneral 3 }
+
+icGeneralTotalMediaUsedRecords OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "records"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total records of specific media used on this Imaging System,
+        and therefore the number of entries in 'icMediaUsedTable'."
+    ::= { icGeneral 4 }
+
+
+--
+--  Key Group (Mandatory)
+--
+
+icKey                   OBJECT IDENTIFIER ::= { icMIBObjects 2 }
+
+icKeyTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IcKeyEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of the local unique integer keys for managed services
+        and/or managed subunits on this Imaging System."
+    ::= { icKey 1 }
+
+icKeyEntry OBJECT-TYPE
+    SYNTAX      IcKeyEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A entry of one local unique integer key for a managed service
+        or a managed subunit on this Imaging System."
+    INDEX     { icKeyIndex }
+    ::= { icKeyTable 1 }
+
+
+IcKeyEntry ::= SEQUENCE {
+        --  key index elements
+        icKeyIndex                      Integer32,
+
+        --  key description elements
+        icKeyServiceType                IcServiceTypeTC,
+        icKeyServiceIndex               Integer32,
+        icKeySubunitType                IcSubunitTypeTC,
+        icKeySubunitIndex               Integer32
+    }
+
+
+icKeyIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Local key of this managed service (value of 'icServiceKey')
+        or managed subunit (value of 'icSubunitKey') on this
+        Imaging System.
+
+        Usage:  The value of this key can be used in 'icXxxKeyIndex'
+        for lookup of counters on this Imaging System."
+    ::= { icKeyEntry 1 }
+
+icKeyServiceType OBJECT-TYPE
+    SYNTAX      IcServiceTypeTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The type of this managed service on this Imaging System
+        (e.g., print, copy, etc.)."
+    DEFVAL      { unknown }             -- no service type
+    ::= { icKeyEntry 2 }
+
+icKeyServiceIndex OBJECT-TYPE
+    SYNTAX      Integer32 (0..2147483647)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Local unique integer identifier of this managed service
+        on this Imaging System, or zero if none."
+    DEFVAL      { 0 }                   -- no service identifier
+    ::= { icKeyEntry 3 }
+
+icKeySubunitType OBJECT-TYPE
+    SYNTAX      IcSubunitTypeTC
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The type of this managed subunit on this Imaging System
+        (e.g., print, copy, etc.)."
+    DEFVAL      { unknown }             -- no subunit type
+    ::= { icKeyEntry 4 }
+
+icKeySubunitIndex OBJECT-TYPE
+    SYNTAX      Integer32 (0..2147483647)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Local unique integer identifier of this managed subunit
+        on this Imaging System, or zero if none."
+    DEFVAL      { 0 }                   -- no subunit identifier
+    ::= { icKeyEntry 5 }
+
+
+--
+--  Service Group (Mandatory)
+--
+
+icService               OBJECT IDENTIFIER ::= { icMIBObjects 3 }
+
+icServiceTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IcServiceEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of managed services on this Imaging System."
+    ::= { icService 1 }
+
+icServiceEntry OBJECT-TYPE
+    SYNTAX      IcServiceEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry for a managed service on this Imaging System."
+    INDEX     { icServiceType,
+                icServiceIndex }
+    ::= { icServiceTable 1 }
+
+
+IcServiceEntry ::= SEQUENCE {
+        --  service index elements
+        icServiceType                   IcServiceTypeTC,
+        icServiceIndex                  Integer32,
+
+        --  service description elements
+        icServiceKey                    Integer32,
+        icServiceInfo                   SnmpAdminString,
+        icServiceJobSetIndex            Integer32
+    }
+
+icServiceType OBJECT-TYPE
+    SYNTAX      IcServiceTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of this managed service on this Imaging System
+        (e.g., print, copy, etc.)."
+    ::= { icServiceEntry 1 }
+
+icServiceIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Local unique integer identifier of this managed service
+        on this Imaging System."
+    ::= { icServiceEntry 2 }
+
+icServiceKey OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Local key of this managed service (for lookup of counters)
+        on this Imaging System."
+    --  DEFVAL intentionally omitted - valid service key is REQUIRED
+    ::= { icServiceEntry 3 }
+
+icServiceInfo OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The description of this managed service on this Imaging System,
+        for use with remote network management scripts and GUIs.
+
+        For example:    'Print service supporting IPP and PSI'."
+    DEFVAL      { ''H }                 -- no service description
+    ::= { icServiceEntry 4 }
+
+icServiceJobSetIndex OBJECT-TYPE
+    SYNTAX      Integer32 (0..32767)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The value of 'jmGeneralJobSetIndex' in Job Mon MIB (RFC 2707)
+        for this managed service, if the Job Mon MIB is implemented and
+        this managed service is represented there, or zero if none."
+    DEFVAL      { 0 }                   -- no service job set (queue)
+    ::= { icServiceEntry 5 }
+
+
+--
+--  Subunit Group (Conditionally Mandatory)
+--
+
+icSubunit               OBJECT IDENTIFIER ::= { icMIBObjects 4 }
+
+icSubunitTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IcSubunitEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of managed subunits on this Imaging System."
+    REFERENCE
+        "See:   'prtGeneralTable' in Printer MIB (RFC 1759/3805)."
+    ::= { icSubunit 1 }
+
+icSubunitEntry OBJECT-TYPE
+    SYNTAX      IcSubunitEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry for a managed subunit on this Imaging System."
+    INDEX     { icSubunitType,
+                icSubunitIndex }
+    ::= { icSubunitTable 1 }
+
+
+IcSubunitEntry ::= SEQUENCE {
+        --  subunit index elements
+        icSubunitType                   IcSubunitTypeTC,
+        icSubunitIndex                  Integer32,
+
+        --  subunit description elements
+        icSubunitKey                    Integer32,
+        icSubunitInfo                   SnmpAdminString
+    }
+
+icSubunitType OBJECT-TYPE
+    SYNTAX      IcSubunitTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of this managed subunit on this Imaging System
+        (e.g., channel, marker, etc.)."
+    ::= { icSubunitEntry 1 }
+
+icSubunitIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Local unique integer identifier of this managed subunit
+        on this Imaging System."
+    ::= { icSubunitEntry 2 }
+
+icSubunitKey OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Local key of this managed subunit (for lookup of counters)
+        on this Imaging System."
+    --  DEFVAL intentionally omitted - valid subunit key is REQUIRED
+    ::= { icSubunitEntry 3 }
+
+icSubunitInfo OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The description of this managed subunit on this Imaging System,
+        for use with remote network management scripts and GUIs.
+
+        For example:    'Marker subunit supporting simplex and duplex'."
+    DEFVAL      { ''H }                 -- no subunit description
+    ::= { icSubunitEntry 4 }
+
+
+--
+--  Time Group (Mandatory)
+--
+
+icTime                  OBJECT IDENTIFIER ::= { icMIBObjects 5 }
+
+icTimeTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IcTimeEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of availability counters for managed services
+        and/or managed subunits on this Imaging System."
+    REFERENCE
+        "See:   'icServiceTable' and 'icSubunitTable' in this MIB."
+    ::= { icTime 1 }
+
+icTimeEntry OBJECT-TYPE
+    SYNTAX      IcTimeEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry of availability counters for a managed service
+        or a managed subunit on this Imaging System."
+    INDEX     { icTimeKeyIndex,
+                icTimeCycleType }
+    ::= { icTimeTable 1 }
+
+
+IcTimeEntry ::= SEQUENCE {
+        --  time index elements
+        icTimeKeyIndex                  Integer32,
+        icTimeCycleType                 IcCycleTypeTC,
+
+        --  time counter elements
+        icTimeTotalSeconds              Counter32,
+        icTimeDownSeconds               Counter32,
+        icTimeMaintenanceSeconds        Counter32,
+        icTimeProcessingSeconds         Counter32
+    }
+
+icTimeKeyIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Local key of this managed service (value of 'icServiceKey')
+        or managed subunit (value of 'icSubunitKey') on this
+        Imaging System."
+    ::= { icTimeEntry 1 }
+
+icTimeCycleType OBJECT-TYPE
+    SYNTAX      IcCycleTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of cycle for these counters."
+    ::= { icTimeEntry 2 }
+
+icTimeTotalSeconds OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "seconds"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total time in seconds that this managed service or managed
+        subunit has executed."
+    ::= { icTimeEntry 3 }
+
+icTimeDownSeconds OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "seconds"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Time in seconds that this managed service or managed subunit
+        has been down with an error that requires intervention or
+        prevents normal operation (i.e., unavailable to process jobs)."
+    ::= { icTimeEntry 4 }
+
+icTimeMaintenanceSeconds OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "seconds"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Time in seconds that this managed service or managed subunit
+        has spent in maintenance mode (testing, field service, etc.)."
+    ::= { icTimeEntry 5 }
+
+icTimeProcessingSeconds OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "seconds"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Time in seconds that this managed service or managed subunit
+        has spent in processing jobs."
+    ::= { icTimeEntry 6 }
+
+
+--
+--  Monitor Group (Mandatory)
+--
+
+icMonitor               OBJECT IDENTIFIER ::= { icMIBObjects 6 }
+
+icMonitorTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IcMonitorEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of monitoring counters for managed services
+        and/or managed subunits on this Imaging System."
+    REFERENCE
+        "See:   'icServiceTable' and 'icSubunitTable' in this MIB."
+    ::= { icMonitor 1 }
+
+icMonitorEntry OBJECT-TYPE
+    SYNTAX      IcMonitorEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry of monitoring counters for a managed service
+        or a managed subunit on this Imaging System."
+    INDEX     { icMonitorKeyIndex,
+                icMonitorCycleType }
+    ::= { icMonitorTable 1 }
+
+
+IcMonitorEntry ::= SEQUENCE {
+        --  monitor index elements
+        icMonitorKeyIndex               Integer32,
+        icMonitorCycleType              IcCycleTypeTC,
+
+        --  monitor counter elements
+        icMonitorConfigChanges          Counter32,
+        icMonitorTotalAlerts            Counter32,
+        icMonitorCriticalAlerts         Counter32,
+        icMonitorAbortedJobs            Counter32,
+        icMonitorCanceledJobs           Counter32,
+        icMonitorCompletedJobs          Counter32,
+        icMonitorCompletedFinisherJobs  Counter32,
+        icMonitorMemoryAllocErrors      Counter32,
+        icMonitorMemoryAllocWarnings    Counter32,
+        icMonitorStorageAllocErrors     Counter32,
+        icMonitorStorageAllocWarnings   Counter32
+    }
+
+icMonitorKeyIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Local key of this managed service (value of 'icServiceKey')
+        or managed subunit (value of 'icSubunitKey') on this
+        Imaging System."
+    ::= { icMonitorEntry 1 }
+
+icMonitorCycleType OBJECT-TYPE
+    SYNTAX      IcCycleTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of cycle for these counters."
+    ::= { icMonitorEntry 2 }
+
+icMonitorConfigChanges OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total configuration changes that have occurred on this managed
+        service or managed subunit (e.g., changes to attributes)."
+    REFERENCE
+        "See:   'prtGeneralConfigChanges' in Printer MIB v1 (RFC 1759)
+                and Printer MIB v2 (RFC 3805)."
+    ::= { icMonitorEntry 3 }
+
+icMonitorTotalAlerts OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total alerts that have occurred on this managed service
+        or managed subunit."
+    REFERENCE
+        "See:   'prtAlertAllEvents' in Printer MIB v2."
+    ::= { icMonitorEntry 4 }
+
+icMonitorCriticalAlerts OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Critical alerts that have occurred on this managed service
+        or managed subunit."
+    REFERENCE
+        "See:   'prtAlertCriticalEvents' in Printer MIB v2."
+    ::= { icMonitorEntry 5 }
+
+icMonitorAbortedJobs OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "jobs"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total jobs that have been aborted (by the system software)
+        on this managed service or managed subunit."
+    REFERENCE
+        "See:   'jmJobState' and 'JmJobStateTC' in Job MIB (RFC 2707)."
+    ::= { icMonitorEntry 6 }
+
+icMonitorCanceledJobs OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "jobs"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total jobs that have been canceled (by an authorized user)
+        on this managed service or managed subunit."
+    REFERENCE
+        "See:   'jmJobState' and 'JmJobStateTC' in Job MIB (RFC 2707)."
+    ::= { icMonitorEntry 7 }
+
+icMonitorCompletedJobs OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "jobs"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total jobs that have been completed (successfully or with
+        warnings/errors) on this managed service or managed subunit."
+    REFERENCE
+        "See:   'jmJobState' and 'JmJobStateTC' in Job MIB (RFC 2707)."
+    ::= { icMonitorEntry 8 }
+
+icMonitorCompletedFinisherJobs OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "jobs"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total jobs that have been completed (successfully or with
+        warnings and/or errors) and for which any finishing process was
+        performed on this managed service or managed subunit."
+    REFERENCE
+        "See:   'finishing' and 'JmFinishingTC' in Job MIB (RFC 2707)."
+    ::= { icMonitorEntry 9 }
+
+icMonitorMemoryAllocErrors OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total times that data stored by this managed service
+        or managed subunit to local Imaging System memory
+        caused a memory allocation failure."
+    REFERENCE
+        "See:   'hrStorageSize', 'hrStorageUsed', and
+                'hrStorageAllocationFailures' in Host MIB (RFC 2790)."
+    ::= { icMonitorEntry 10 }
+
+icMonitorMemoryAllocWarnings OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total times that data stored by this managed service
+        or managed subunit to local Imaging System memory
+        exceeded an implementation-defined (or administratively
+        configured) memory allocation threshold.
+
+        Usage:  This counter is intended to support increasing the
+        available memory on an Imaging System before job failures."
+    REFERENCE
+        "See:   'hrStorageSize', 'hrStorageUsed', and
+                'hrStorageAllocationFailures' in Host MIB (RFC 2790)."
+    ::= { icMonitorEntry 11 }
+
+icMonitorStorageAllocErrors OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total times that data stored by this managed service
+        or managed subunit to a local or remote file system
+        caused a storage allocation failure."
+    REFERENCE
+        "See:   'hrStorageSize', 'hrStorageUsed', and
+                'hrStorageAllocationFailures' in Host MIB (RFC 2790)."
+    ::= { icMonitorEntry 12 }
+
+icMonitorStorageAllocWarnings OBJECT-TYPE
+    SYNTAX      Counter32
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total times that data stored by this managed service
+        or managed subunit to a local or remote file system
+        exceeded an implementation-defined (or administratively
+        configured) storage allocation threshold.
+
+        Usage:  This counter is intended to support increasing the
+        available storage on an Imaging System before job failures."
+    REFERENCE
+        "See:   'hrStorageSize', 'hrStorageUsed', and
+                'hrStorageAllocationFailures' in Host MIB (RFC 2790)."
+    ::= { icMonitorEntry 13 }
+
+
+--
+--  Image Group (Conditionally Mandatory)
+--
+
+icImage                 OBJECT IDENTIFIER ::= { icMIBObjects 7 }
+
+icImageTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IcImageEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of work counters in images for managed services
+        and/or managed subunits on this Imaging System."
+    REFERENCE
+        "See:   'icServiceTable' and 'icSubunitTable' in this MIB."
+    ::= { icImage 1 }
+
+icImageEntry OBJECT-TYPE
+    SYNTAX      IcImageEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry of work counters in images for a managed service
+        or a managed subunit on this Imaging System."
+    INDEX     { icImageKeyIndex,
+                icImageCycleType,
+                icImageWorkType }
+    ::= { icImageTable 1 }
+
+
+IcImageEntry ::= SEQUENCE {
+        --  image index elements
+        icImageKeyIndex                 Integer32,
+        icImageCycleType                IcCycleTypeTC,
+        icImageWorkType                 IcWorkTypeTC,
+
+        --  image counter elements
+        icImageTotalImages              Counter32,
+        icImageBlackImages              Counter32,
+        icImageFullColorImages          Counter32
+    }
+
+icImageKeyIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Local key of this managed service (value of 'icServiceKey')
+        or managed subunit (value of 'icSubunitKey') on this
+        Imaging System."
+    ::= { icImageEntry 1 }
+
+icImageCycleType OBJECT-TYPE
+    SYNTAX      IcCycleTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of cycle for these counters."
+    ::= { icImageEntry 2 }
+
+icImageWorkType OBJECT-TYPE
+    SYNTAX      IcWorkTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of work for these counters."
+    ::= { icImageEntry 3 }
+
+icImageTotalImages OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "images"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total images input (e.g., 'icServiceType' of 'scan')
+        or output (e.g., 'icServiceType' of 'faxOut') by
+        this managed service or managed subunit."
+    ::= { icImageEntry 4 }
+
+icImageBlackImages OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "images"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Black images input (e.g., 'icServiceType' of 'scan')
+        or output (e.g., 'icServiceType' of 'faxOut') by
+        this managed service or managed subunit."
+    ::= { icImageEntry 5 }
+
+icImageFullColorImages OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "images"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Color images input (e.g., 'icServiceType' of 'scan')
+        or output (e.g., 'icServiceType' of 'faxOut') by
+        this managed service or managed subunit."
+    ::= { icImageEntry 6 }
+
+
+--
+--  Impression Group (Conditionally Mandatory)
+--
+
+icImpression            OBJECT IDENTIFIER ::= { icMIBObjects 8 }
+
+icImpressionTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IcImpressionEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of work counters in impressions for managed services
+        and/or managed subunits on this Imaging System."
+    REFERENCE
+        "See:   'icServiceTable' and 'icSubunitTable' in this MIB."
+    ::= { icImpression 1 }
+
+icImpressionEntry OBJECT-TYPE
+    SYNTAX      IcImpressionEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry of work counters in impressions for a managed service
+        or a managed subunit on this Imaging System."
+    INDEX     { icImpKeyIndex,
+                icImpCycleType,
+                icImpWorkType }
+    ::= { icImpressionTable 1 }
+
+
+IcImpressionEntry ::= SEQUENCE {
+        --  impression index elements
+        icImpKeyIndex                   Integer32,
+        icImpCycleType                  IcCycleTypeTC,
+        icImpWorkType                   IcWorkTypeTC,
+
+        --  impression counter elements
+        icImpTotalImpressions           Counter32,
+        icImpBlackImpressions           Counter32,
+        icImpBlankImpressions           Counter32,
+        icImpFullColorImpressions       Counter32,
+        icImpHighlightColorImpressions  Counter32
+    }
+
+icImpKeyIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Local key of this managed service (value of 'icServiceKey')
+        or managed subunit (value of 'icSubunitKey') on this
+        Imaging System."
+    ::= { icImpressionEntry 1 }
+
+icImpCycleType OBJECT-TYPE
+    SYNTAX      IcCycleTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of cycle for these counters."
+    ::= { icImpressionEntry 2 }
+
+icImpWorkType OBJECT-TYPE
+    SYNTAX      IcWorkTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of work for these counters."
+    ::= { icImpressionEntry 3 }
+
+icImpTotalImpressions OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "impressions"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total hardcopy impressions printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    REFERENCE
+        "See:   'jmJobImpressionsCompleted' in Job Mon MIB (RFC 2707);
+                'job-impressions-completed' in IPP/1.1 (RFC 2911)."
+    ::= { icImpressionEntry 4 }
+
+icImpBlackImpressions OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "impressions"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Black hardcopy impressions printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icImpressionEntry 5 }
+
+icImpBlankImpressions OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "impressions"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Blank hardcopy impressions printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icImpressionEntry 6 }
+
+icImpFullColorImpressions OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "impressions"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Full color hardcopy impressions printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    REFERENCE
+        "See:   'fullColorImpressionsCompleted' in Job Mon MIB
+                (RFC 2707)."
+    ::= { icImpressionEntry 7 }
+
+icImpHighlightColorImpressions OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "impressions"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Highlight color hardcopy impressions printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    REFERENCE
+        "See:   'highlightColorImpressionsCompleted' in Job Mon MIB
+                (RFC 2707)."
+    ::= { icImpressionEntry 8 }
+
+
+--
+--  Two Sided Group (Conditionally Mandatory)
+--
+
+icTwoSided              OBJECT IDENTIFIER ::= { icMIBObjects 9 }
+
+icTwoSidedTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IcTwoSidedEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of work counters in two-sided impressions for managed
+        services and/or managed subunits on this Imaging System."
+    REFERENCE
+        "See:   'icServiceTable' and 'icSubunitTable' in this MIB."
+    ::= { icTwoSided 1 }
+
+icTwoSidedEntry OBJECT-TYPE
+    SYNTAX      IcTwoSidedEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry of work counters in two-sided impressions for a
+        managed service or managed subunit on this Imaging System."
+    INDEX     { icTwoSidedKeyIndex,
+                icTwoSidedCycleType,
+                icTwoSidedWorkType }
+    ::= { icTwoSidedTable 1 }
+
+
+IcTwoSidedEntry ::= SEQUENCE {
+        --  two-sided impression index elements
+        icTwoSidedKeyIndex              Integer32,
+        icTwoSidedCycleType             IcCycleTypeTC,
+        icTwoSidedWorkType              IcWorkTypeTC,
+
+        --  two-sided impression counter elements
+        icTwoSidedTotalImps             Counter32,
+        icTwoSidedBlackImps             Counter32,
+        icTwoSidedBlankImps             Counter32,
+        icTwoSidedFullColorImps         Counter32,
+        icTwoSidedHighlightColorImps    Counter32
+    }
+
+icTwoSidedKeyIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Local key of this managed service (value of 'icServiceKey')
+        or managed subunit (value of 'icSubunitKey') on this
+        Imaging System."
+    ::= { icTwoSidedEntry 1 }
+
+icTwoSidedCycleType OBJECT-TYPE
+    SYNTAX      IcCycleTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of cycle for these counters."
+    ::= { icTwoSidedEntry 2 }
+
+icTwoSidedWorkType OBJECT-TYPE
+    SYNTAX      IcWorkTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of work for these counters."
+    ::= { icTwoSidedEntry 3 }
+
+icTwoSidedTotalImps OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "impressions"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total hardcopy impressions printed two-sided by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    REFERENCE
+        "See:   'jmJobImpressionsCompleted' in Job Mon MIB (RFC 2707);
+                'job-impressions-completed' in IPP/1.1 (RFC 2911)."
+    ::= { icTwoSidedEntry 4 }
+
+icTwoSidedBlackImps OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "impressions"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Black hardcopy impressions printed two-sided by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icTwoSidedEntry 5 }
+
+icTwoSidedBlankImps OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "impressions"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Blank hardcopy impressions printed two-sided by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icTwoSidedEntry 6 }
+
+icTwoSidedFullColorImps OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "impressions"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Full color hardcopy impressions printed two-sided by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    REFERENCE
+        "See:   'fullColorImpressionsCompleted' in Job Mon MIB
+                (RFC 2707)."
+    ::= { icTwoSidedEntry 7 }
+
+icTwoSidedHighlightColorImps OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "impressions"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Highlight color hardcopy impressions printed two-sided by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    REFERENCE
+        "See:   'highlightColorImpressionsCompleted' in Job Mon MIB
+                (RFC 2707)."
+    ::= { icTwoSidedEntry 8 }
+
+
+--
+--  Sheet Group (Conditionally Mandatory)
+--
+
+icSheet                 OBJECT IDENTIFIER ::= { icMIBObjects 10 }
+
+icSheetTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IcSheetEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of work counters in sheets for managed services
+        and/or managed subunits on this Imaging System."
+    REFERENCE
+        "See:   'icServiceTable' and 'icSubunitTable' in this MIB."
+    ::= { icSheet 1 }
+
+icSheetEntry OBJECT-TYPE
+    SYNTAX      IcSheetEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry of work counters in sheets for a managed service
+        or a managed subunit on this Imaging System."
+    INDEX     { icSheetKeyIndex,
+                icSheetCycleType,
+                icSheetWorkType }
+    ::= { icSheetTable 1 }
+
+
+IcSheetEntry ::= SEQUENCE {
+        --  sheet index elements
+        icSheetKeyIndex                 Integer32,
+        icSheetCycleType                IcCycleTypeTC,
+        icSheetWorkType                 IcWorkTypeTC,
+
+        --  sheet counter elements
+        icSheetTotalSheets              Counter32,
+        icSheetBlackSheets              Counter32,
+        icSheetBlankSheets              Counter32,
+        icSheetFullColorSheets          Counter32,
+        icSheetHighlightColorSheets     Counter32
+    }
+
+icSheetKeyIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Local key of this managed service (value of 'icServiceKey')
+        or managed subunit (value of 'icSubunitKey') on this
+        Imaging System."
+    ::= { icSheetEntry 1 }
+
+icSheetCycleType OBJECT-TYPE
+    SYNTAX      IcCycleTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of cycle for these counters."
+    ::= { icSheetEntry 2 }
+
+icSheetWorkType OBJECT-TYPE
+    SYNTAX      IcWorkTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of work for these counters."
+    ::= { icSheetEntry 3 }
+
+icSheetTotalSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "sheets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total media sheets printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    REFERENCE
+        "See:   'sheetsCompleted' in Job Mon MIB (RFC 2707);
+                'job-media-sheets-completed' in IPP/1.1 (RFC 2911)."
+    ::= { icSheetEntry 4 }
+
+icSheetBlackSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "sheets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Black media sheets printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icSheetEntry 5 }
+
+icSheetBlankSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "sheets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Blank media sheets printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icSheetEntry 6 }
+
+icSheetFullColorSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "sheets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Full color media sheets printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icSheetEntry 7 }
+
+icSheetHighlightColorSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "sheets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Highlight color media sheets printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icSheetEntry 8 }
+
+
+--
+--  Traffic Group (Conditionally Mandatory)
+--
+
+icTraffic               OBJECT IDENTIFIER ::= { icMIBObjects 11 }
+
+icTrafficTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IcTrafficEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of work counters in K-octets for managed services
+        and/or managed subunits on this Imaging System."
+    REFERENCE
+        "See:   'icServiceTable' and 'icSubunitTable' in this MIB."
+    ::= { icTraffic 1 }
+
+icTrafficEntry OBJECT-TYPE
+    SYNTAX      IcTrafficEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of work counters in K-octets for a managed service
+        or a managed subunit on this Imaging System."
+    INDEX     { icTrafficKeyIndex,
+                icTrafficCycleType,
+                icTrafficWorkType }
+    ::= { icTrafficTable 1 }
+
+
+IcTrafficEntry ::= SEQUENCE {
+        --  traffic index elements
+        icTrafficKeyIndex               Integer32,
+        icTrafficCycleType              IcCycleTypeTC,
+        icTrafficWorkType               IcWorkTypeTC,
+
+        --  traffic counter elements
+        icTrafficLocalStorageKOctets    Counter32,
+        icTrafficRemoteStorageKOctets   Counter32,
+        icTrafficJobInputKOctets        Counter32,
+        icTrafficJobOutputKOctets       Counter32,
+        icTrafficJobInputMessages       Counter32,
+        icTrafficJobOutputMessages      Counter32
+    }
+
+icTrafficKeyIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Local key of this managed service (value of 'icServiceKey')
+        or managed subunit (value of 'icSubunitKey') on this
+        Imaging System."
+    ::= { icTrafficEntry 1 }
+
+icTrafficCycleType OBJECT-TYPE
+    SYNTAX      IcCycleTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of cycle for these counters."
+    ::= { icTrafficEntry 2 }
+
+icTrafficWorkType OBJECT-TYPE
+    SYNTAX      IcWorkTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of work for these counters."
+    ::= { icTrafficEntry 3 }
+
+icTrafficLocalStorageKOctets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "koctets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total amount of data stored by this managed service
+        or managed subunit to the local file system of this
+        Imaging System."
+    REFERENCE
+        "See:   'hrStorageSize' and 'hrStorageUsed' in
+                Host Resources MIB (RFC 2790)."
+    ::= { icTrafficEntry 4 }
+
+icTrafficRemoteStorageKOctets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "koctets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total amount of data stored by this managed service
+        or managed subunit to a remote file system from this
+        Imaging System."
+    REFERENCE
+        "See:   'hrStorageSize' and 'hrStorageUsed' in
+                Host Resources MIB (RFC 2790)."
+    ::= { icTrafficEntry 5 }
+
+icTrafficJobInputKOctets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "koctets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total amount of data received on ALL supported job channels
+        by this managed service (e.g., 'icServiceType' of 'faxIn')
+        or managed subunit."
+    REFERENCE
+        "See:   'prtChannelTable' in Printer MIB v1 (RFC 1759) and
+                Printer MIB v2 (RFC 3805);
+                'ifInOctets' in MIB-II (RFC 1213)."
+    ::= { icTrafficEntry 6 }
+
+icTrafficJobOutputKOctets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "koctets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total amount of data sent on ALL supported job channels
+        by this managed service (e.g., 'icServiceType' of 'faxOut')
+        or managed subunit."
+    REFERENCE
+        "See:   'ifOutOctets' in MIB-II (RFC 1213)."
+    ::= { icTrafficEntry 7 }
+
+icTrafficJobInputMessages OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "messages"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total messages received on ALL supported job channels
+        by this managed service (e.g., 'icServiceType' of 'emailIn')
+        or managed subunit."
+    REFERENCE
+        "See:   'prtChannelTable' in Printer MIB v1 (RFC 1759) and
+                Printer MIB v2 (RFC 3805);
+                'ifInUcastPkts' in MIB-II (RFC 1213)."
+    ::= { icTrafficEntry 8 }
+
+icTrafficJobOutputMessages OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "messages"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total messages sent on ALL supported job channels
+        by this managed service (e.g., 'icServiceType' of 'emailOut')
+        or managed subunit."
+    REFERENCE
+        "See:   'ifOutUcastPkts' in MIB-II (RFC 1213)."
+    ::= { icTrafficEntry 9 }
+
+
+--
+--  Media Used Group (Optional)
+--
+
+icMediaUsed             OBJECT IDENTIFIER ::= { icMIBObjects 12 }
+
+icMediaUsedTable OBJECT-TYPE
+    SYNTAX      SEQUENCE OF IcMediaUsedEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "A table of counters for each specific media actually consumed
+        by managed services and/or managed subunits configured
+        on this Imaging System."
+    ::= { icMediaUsed 1 }
+
+icMediaUsedEntry OBJECT-TYPE
+    SYNTAX      IcMediaUsedEntry
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "An entry of counters for one specific media actually consumed
+        by a managed service or a managed subunit configured
+        on this Imaging System."
+    INDEX     { icMediaUsedKeyIndex,
+                icMediaUsedCycleType,
+                icMediaUsedIndex }
+    ::= { icMediaUsedTable 1 }
+
+
+IcMediaUsedEntry ::= SEQUENCE {
+        --  media used index elements
+        icMediaUsedKeyIndex             Integer32,
+        icMediaUsedCycleType            IcCycleTypeTC,
+        icMediaUsedIndex                Integer32,
+
+        --  media used counter elements
+        icMediaUsedTotalSheets          Counter32,
+        icMediaUsedBlackSheets          Counter32,
+        icMediaUsedBlankSheets          Counter32,
+        icMediaUsedFullColorSheets      Counter32,
+        icMediaUsedHighlightColorSheets Counter32,
+
+        --  media used description elements
+        icMediaUsedInfo                 SnmpAdminString,
+        icMediaUsedName                 SnmpAdminString,
+        icMediaUsedSizeName             SnmpAdminString
+    }
+
+icMediaUsedKeyIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "Local key of this managed service (value of 'icServiceKey')
+        or managed subunit (value of 'icSubunitKey') on this
+        Imaging System."
+    ::= { icMediaUsedEntry 1 }
+
+icMediaUsedCycleType OBJECT-TYPE
+    SYNTAX      IcCycleTypeTC
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The type of cycle for these counters."
+    ::= { icMediaUsedEntry 2 }
+
+icMediaUsedIndex OBJECT-TYPE
+    SYNTAX      Integer32 (1..2147483647)
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The instance of this specific media size."
+    REFERENCE
+        "See:   'icMediaUsedSizeName' and 'icMediaUsedInfo'."
+    ::= { icMediaUsedEntry 3 }
+
+icMediaUsedTotalSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "sheets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Total sheets of this specific media printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    REFERENCE
+        "See:   'sheetsCompleted' in Job Mon MIB (RFC 2707);
+                'job-media-sheets-completed' in IPP/1.1 (RFC 2911)."
+    ::= { icMediaUsedEntry 4 }
+
+icMediaUsedBlackSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "sheets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Black sheets of this specific media printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icMediaUsedEntry 5 }
+
+icMediaUsedBlankSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "sheets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Blank sheets of this specific media printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icMediaUsedEntry 6 }
+
+icMediaUsedFullColorSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "sheets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Full color sheets of this specific media printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icMediaUsedEntry 7 }
+
+icMediaUsedHighlightColorSheets OBJECT-TYPE
+    SYNTAX      Counter32
+    UNITS       "sheets"
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "Highlight color sheets of this specific media printed by this
+        managed service (e.g., 'icServiceType' of 'print')
+        or managed subunit (e.g., 'icSubunitType' of 'marker')."
+    ::= { icMediaUsedEntry 8 }
+
+icMediaUsedInfo OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..255))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The description of this specific media,
+        for use with remote network management scripts and GUIs.
+
+        For example:    'Light blue deckle-edge letter stock'.
+
+        Usage:  This description MUST clearly distinguish different
+        instances of the same media size in 'icMediaUsedTable' (for
+        example, by including specific media color, weight, etc.)."
+    REFERENCE
+        "See:   'icMediaUsedSizeName' and 'icMediaUsedIndex'."
+    ::= { icMediaUsedEntry 9 }
+
+icMediaUsedName OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..63))
+    MAX-ACCESS  read-only
+    STATUS      current
+    DESCRIPTION
+        "The friendly locally unique name for this specific media,
+        for use with remote network management scripts and GUIs.
+
+        For example:    'customer-reply' or 'na-letter-colored'."
+    REFERENCE
+        "See:   'Appendix C: 'media' keyword values' and
+                section 4.2.11 'media' in IPP/1.1 (RFC2911);
+                'mediumRequested' and 'mediumConsumed' in Job Mon MIB
+                (RFC 2707)."
+    ::= { icMediaUsedEntry 10 }
+
+icMediaUsedSizeName OBJECT-TYPE
+    SYNTAX      SnmpAdminString (SIZE(0..63))
+    MAX-ACCESS  not-accessible
+    STATUS      current
+    DESCRIPTION
+        "The media size self-describing name for this specific media,
+        for use with remote network management scripts and GUIs.
+
+        For example:    'na_letter_8.5x11in'."
+    REFERENCE
+        "See:   PWG Media Standardized Names' (IEEE/ISTO PWG 5101.1);
+                'icMediaUsedIndex' and 'icMediaUsedInfo'."
+    ::= { icMediaUsedEntry 11 }
+
+
+--
+--  Conformance Statements
+--
+
+icMIBCompliance MODULE-COMPLIANCE
+    STATUS      current
+    DESCRIPTION
+        "The compliance statements for Imaging Systems that implement
+        the PWG Imaging Counter MIB."
+    MODULE  -- this module
+    MANDATORY-GROUPS { icGeneralGroup,
+                       icKeyGroup,
+                       icServiceGroup,
+                       icTimeGroup,
+                       icMonitorGroup }
+
+    GROUP   icSubunitGroup
+    DESCRIPTION
+        "Conditionally Mandatory - subunit object group."
+
+    GROUP   icImageGroup
+    DESCRIPTION
+        "Conditionally Mandatory - image counter object group."
+
+    GROUP   icImpressionGroup
+    DESCRIPTION
+        "Conditionally Mandatory - impression counter object group."
+
+    GROUP   icTwoSidedGroup
+    DESCRIPTION
+        "Conditionally Mandatory - two-sided counter object group."
+
+    GROUP   icSheetGroup
+    DESCRIPTION
+        "Conditionally Mandatory - sheet counter object group."
+
+    GROUP   icTrafficGroup
+    DESCRIPTION
+        "Conditionally Mandatory - traffic counter object group."
+
+    GROUP   icMediaUsedGroup
+    DESCRIPTION
+        "Optional - media used counter object group."
+
+    ::= { icMIBConformance 1 }
+
+
+--
+--  Conformance Groups
+--
+
+icGeneralGroup OBJECT-GROUP
+    OBJECTS {
+        icGeneralNaturalLanguage,
+        icGeneralTotalServiceRecords,
+        icGeneralTotalSubunitRecords,
+        icGeneralTotalMediaUsedRecords
+    }
+    STATUS      current
+    DESCRIPTION
+        "Mandatory - general object group.
+
+        An Imaging System MUST support and implement this object group."
+    ::= { icMIBObjectGroups 1 }
+
+icKeyGroup OBJECT-GROUP
+    OBJECTS {
+        icKeyServiceType,
+        icKeyServiceIndex,
+        icKeySubunitType,
+        icKeySubunitIndex
+    }
+    STATUS      current
+    DESCRIPTION
+        "Mandatory - key object group.
+
+        An Imaging System MUST support and implement this object group
+        for 'icKeyServiceType' of 'system' (overall counters).
+
+        An Imaging System MAY support and implement this object group
+        for individual managed services and/or managed subunits."
+    ::= { icMIBObjectGroups 2 }
+
+icServiceGroup OBJECT-GROUP
+    OBJECTS {
+        icServiceKey,
+        icServiceInfo,
+        icServiceJobSetIndex
+    }
+    STATUS      current
+    DESCRIPTION
+        "Mandatory - service object group.
+
+        An Imaging System MUST support and implement this object group
+        for 'icServiceType' of 'system' (overall counters).
+
+        An Imaging System MAY support and implement this object group
+        for individual managed services."
+    ::= { icMIBObjectGroups 3 }
+
+icSubunitGroup OBJECT-GROUP
+    OBJECTS {
+        icSubunitKey,
+        icSubunitInfo
+    }
+    STATUS      current
+    DESCRIPTION
+        "Conditionally Mandatory - subunit object group.
+
+        An Imaging System MUST support and implement this object group,
+        if the Imaging System supports any managed subunit,
+        for example, 'icSubunitType' of 'channel' for 'prtChannelTable'
+        in Printer MIB v1 (RFC 1759) or Printer MIB v2 (RFC 3805)."
+    ::= { icMIBObjectGroups 4 }
+
+icTimeGroup OBJECT-GROUP
+    OBJECTS {
+        icTimeTotalSeconds,
+        icTimeDownSeconds,
+        icTimeMaintenanceSeconds,
+        icTimeProcessingSeconds
+    }
+    STATUS      current
+    DESCRIPTION
+        "Mandatory - time counter object group.
+
+        An Imaging System MUST support and implement this object group
+        for 'icServiceType' of 'system' (overall counters).
+
+        An Imaging System MAY support and implement this object group
+        for individual managed services and/or managed subunits."
+    ::= { icMIBObjectGroups 5 }
+
+icMonitorGroup OBJECT-GROUP
+    OBJECTS {
+        icMonitorConfigChanges,
+        icMonitorTotalAlerts,
+        icMonitorCriticalAlerts,
+        icMonitorAbortedJobs,
+        icMonitorCanceledJobs,
+        icMonitorCompletedJobs,
+        icMonitorCompletedFinisherJobs,
+        icMonitorMemoryAllocErrors,
+        icMonitorMemoryAllocWarnings,
+        icMonitorStorageAllocErrors,
+        icMonitorStorageAllocWarnings
+    }
+    STATUS      current
+    DESCRIPTION
+        "Mandatory - monitor counter object group.
+
+        An Imaging System MUST support and implement this object group
+        for 'icServiceType' of 'system' (overall counters).
+
+        An Imaging System MAY support and implement this object group
+        for individual managed services and/or managed subunits."
+    ::= { icMIBObjectGroups 6 }
+
+icImageGroup OBJECT-GROUP
+    OBJECTS {
+        icImageTotalImages,
+        icImageBlackImages,
+        icImageFullColorImages
+    }
+    STATUS      current
+    DESCRIPTION
+        "Conditionally Mandatory - image counter object group.
+
+        An Imaging System MUST support and implement this object group,
+        if the Imaging System supports any managed service with
+        'icServiceType' of 'copy', 'scan', 'faxIn/Out', or
+        'networkFaxIn/Out'."
+    ::= { icMIBObjectGroups 7 }
+
+icImpressionGroup OBJECT-GROUP
+    OBJECTS {
+        icImpTotalImpressions,
+        icImpBlackImpressions,
+        icImpBlankImpressions,
+        icImpFullColorImpressions,
+        icImpHighlightColorImpressions
+    }
+    STATUS      current
+    DESCRIPTION
+        "Conditionally Mandatory - impression counter object group.
+
+        An Imaging System MUST support and implement this object group,
+        if the Imaging System supports any managed service with
+        'icServiceType' of 'copy' or 'print'."
+    ::= { icMIBObjectGroups 8 }
+
+icTwoSidedGroup OBJECT-GROUP
+    OBJECTS {
+        icTwoSidedTotalImps,
+        icTwoSidedBlackImps,
+        icTwoSidedBlankImps,
+        icTwoSidedFullColorImps,
+        icTwoSidedHighlightColorImps
+    }
+    STATUS      current
+    DESCRIPTION
+        "Conditionally Mandatory - two-sided counter object group.
+
+        An Imaging System MUST support and implement this object group,
+        if the Imaging System supports any managed service with
+        'icServiceType' of 'copy' or 'print' that supports two-sided
+        printing."
+    ::= { icMIBObjectGroups 9 }
+
+icSheetGroup OBJECT-GROUP
+    OBJECTS {
+        icSheetTotalSheets,
+        icSheetBlackSheets,
+        icSheetBlankSheets,
+        icSheetFullColorSheets,
+        icSheetHighlightColorSheets
+    }
+    STATUS      current
+    DESCRIPTION
+        "Conditionally Mandatory - sheet counter object group.
+
+        An Imaging System MUST support and implement this object group,
+        if the Imaging System supports any managed service with
+        'icServiceType' of 'copy' or 'print'."
+    ::= { icMIBObjectGroups 10 }
+
+icTrafficGroup OBJECT-GROUP
+    OBJECTS {
+        icTrafficLocalStorageKOctets,
+        icTrafficRemoteStorageKOctets,
+        icTrafficJobInputKOctets,
+        icTrafficJobOutputKOctets,
+        icTrafficJobInputMessages,
+        icTrafficJobOutputMessages
+    }
+    STATUS      current
+    DESCRIPTION
+        "Conditionally Mandatory - traffic counter object group.
+
+        An Imaging System MUST support and implement this object group,
+        if the Imaging System supports any managed service with
+        'icServiceType' of 'emailIn/Out', 'faxIn/Out', or
+        'networkFaxIn/Out'."
+    ::= { icMIBObjectGroups 11 }
+
+icMediaUsedGroup OBJECT-GROUP
+    OBJECTS {
+        icMediaUsedTotalSheets,
+        icMediaUsedBlackSheets,
+        icMediaUsedBlankSheets,
+        icMediaUsedFullColorSheets,
+        icMediaUsedHighlightColorSheets,
+        icMediaUsedName,
+        icMediaUsedInfo
+    }
+    STATUS      current
+    DESCRIPTION
+        "Optional - media used counter object group.
+
+        An Imaging System MAY support and implement this object group."
+    ::= { icMIBObjectGroups 12 }
+
+END

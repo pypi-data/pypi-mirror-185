@@ -1,0 +1,6 @@
+# List ONLY requirements needed to perform `make test`
+# Do not list the dependencies of snmp_lookup here, those should be in requirements.txt and setup.py
+pytest >= 5.3.1
+pytest-cov
+pysnmp
+pysmi

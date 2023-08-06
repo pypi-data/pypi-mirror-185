@@ -1,0 +1,3 @@
+# List only packages needed to launch / run the module here
+setuptools_scm
+.
