@@ -1,0 +1,28 @@
+setuptools==59.5.0
+sphinx>=3.2.1
+torch>=1.12
+torchmetrics>=0.11
+pytorch-lightning>=1.5.10
+keras
+tqdm
+matplotlib
+numpy
+fbm
+scipy
+pandas
+
+[:platform_system != "Darwin"]
+umap-learn[parametric_umap]>=0.5.2
+
+[:platform_system == "Darwin"]
+tensorflow-macos
+
+[:platform_system == "Linux"]
+tensorflow>=2.6
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+pytest
+pytest-cov
