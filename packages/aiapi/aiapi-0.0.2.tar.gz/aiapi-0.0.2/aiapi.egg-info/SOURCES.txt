@@ -1,0 +1,8 @@
+README.md
+setup.py
+aiapi/__init__.py
+aiapi/formatConversion.py
+aiapi.egg-info/PKG-INFO
+aiapi.egg-info/SOURCES.txt
+aiapi.egg-info/dependency_links.txt
+aiapi.egg-info/top_level.txt
