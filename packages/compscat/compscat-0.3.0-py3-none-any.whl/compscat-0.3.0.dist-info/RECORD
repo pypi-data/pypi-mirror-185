@@ -1,0 +1,12 @@
+compscat/__init__.py,sha256=5bHfn6rrdrhtW_ing817zDoas49U_WJmwbwdVpQO970,305
+compscat/__main__.py,sha256=_wv7KdNP2uC3Pl1_CSbukRmuxdoVyWL2lCoqRW4025A,794
+compscat/constants.py,sha256=olGkzeMPznhiHEIcD8bbS07Yw-VcJr5dA5yw1WGZIhI,236
+compscat/cross_section.py,sha256=rRQjSDMOsQCibp203lMo_Cihd-UVZjTMD-nkzNPsgLo,1174
+compscat/generate_event.py,sha256=KucOkob2O0XNO08iMtDBk2CdTVQSNGBDePvcb8KKc0c,1774
+compscat/plotting.py,sha256=G6TtU84MAeagkPgVy6AoJFjt3iWQAHkeAiuS4lt_ws0,797
+compscat/save_events.py,sha256=UPRFt5RuoSqMIhgzLHofFGr3wKS5r0_D1gtr8HkwyPo,1755
+compscat-0.3.0.dist-info/LICENSE,sha256=l-hx_pFS1RSdlzkPbDqZ_poWd3LLsJI9g6P2gBGe5OM,1072
+compscat-0.3.0.dist-info/METADATA,sha256=TmDnVlzPAUnD3KdhxNbvX3oDy_SgPZfvtehqvAkIFh4,7742
+compscat-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+compscat-0.3.0.dist-info/top_level.txt,sha256=3tMLVFZdxCbdJ8vRbztF2jA-M7ZAxietfsKfNzQJGjA,9
+compscat-0.3.0.dist-info/RECORD,,
