@@ -1,0 +1,6 @@
+solentware-base==4.1.9
+chessql==2.1
+solentware-grid==2.1.7
+pgn-read==2.2
+solentware-misc==1.5
+uci-net==1.2.6
