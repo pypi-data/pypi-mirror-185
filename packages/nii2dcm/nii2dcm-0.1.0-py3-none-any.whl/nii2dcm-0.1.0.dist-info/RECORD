@@ -1,0 +1,14 @@
+nii2dcm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nii2dcm/__main__.py,sha256=EaxdBNHZf6DLdGUwsX6-eloETMiDHy67fP6YIX1YWUM,1239
+nii2dcm/dcm.py,sha256=zH2U4xXn1drrIHNg9Le1OUAa1OV2fBFU1HoK_89xICI,12290
+nii2dcm/dcm_writer.py,sha256=jlFBFvyDwE6jQvrV8fi6FSYJNuWY_2aiFNC3pCQ-X1c,2652
+nii2dcm/nii.py,sha256=2ubkhdQ6rGn3iBY9izeJKYoQCviQmsX5pb3EL96CjGk,3290
+nii2dcm/run.py,sha256=MtQ3hMaJRpGUNeWqdmk94xUuPsMoHzFju9CNW1k9sd8,1824
+nii2dcm/svr.py,sha256=K8GT89PmmdzEvfcrmDPIYVcc8yud73xsyaVolRmsWV0,492
+nii2dcm/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nii2dcm-0.1.0.dist-info/LICENCE,sha256=w6zR6lUfcmdARLVAxeH98HSIJ5BtT_ePIsBTO-1luPA,1508
+nii2dcm-0.1.0.dist-info/METADATA,sha256=CvLsI-l0SWbwsJ-SRsxefNgi05fnUSU0mBNhLdZA9Hc,5762
+nii2dcm-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nii2dcm-0.1.0.dist-info/entry_points.txt,sha256=-x7r7h_6L3Lcnffwd3OZVMe6XgQFCe7TXr5woO7Szcc,50
+nii2dcm-0.1.0.dist-info/top_level.txt,sha256=EKMi0lfGbbw73i7Els82plQcqzKTQ4RW2c9gvUMUBkk,8
+nii2dcm-0.1.0.dist-info/RECORD,,
