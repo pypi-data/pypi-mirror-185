@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: flet-mvc
+Version: 0.0.3
+Summary: This package will allow the developer to use an mvc structure in a Flet project.
+Home-page: https://github.com/o0Adrian/flet-mvc
+Author: o0Adrian (C. Adrián Monroy)
+Author-email: <carlos.monclef@gmail.com>
+License: UNKNOWN
+Keywords: mvc,flet,flet mvc,model,view,controller,node,datapoint
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flet
+
+UNKNOWN
+
