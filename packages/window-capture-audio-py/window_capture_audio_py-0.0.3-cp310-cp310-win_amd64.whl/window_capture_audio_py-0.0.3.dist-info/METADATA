@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: window-capture-audio-py
+Version: 0.0.3
+Summary: Get audio data from specified window.
+Author: zzqq2199
+Author-email: zhouquanjs@qq.com
+Requires-Python: >=3.9
+Requires-Dist: numpy
+
