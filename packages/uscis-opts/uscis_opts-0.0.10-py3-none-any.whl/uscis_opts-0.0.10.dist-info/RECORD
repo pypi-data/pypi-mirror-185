@@ -1,0 +1,11 @@
+opts/ArcherAuth.py,sha256=xDh7gzCHsbqn6FD_g5-Gp7XhY7Ewi5l9STc5jSiOZrw,3060
+opts/ArcherServerClient.py,sha256=hUz0HZANMjtlaWc5_peWbbkcHzCApu6fVEfj6brdO-Y,8774
+opts/SigningError.py,sha256=ClRJdH5-9XDLgF4YijjDAjEp_r4lZGJeqFIjJql5GvM,381
+opts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opts/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opts/templates/template.xml,sha256=mlkNH-sIaTzsq44bFBPamXm2X_yqH8JeHduMc-0bmlw,287
+uscis_opts-0.0.10.dist-info/LICENSE,sha256=ONFkP11dkPwiYhu9HwDDKNE-Xj0BLwyVSgeqbH6JvXg,1088
+uscis_opts-0.0.10.dist-info/METADATA,sha256=5DhTebOvyToKnrP3nRqC6UXJ7s3FlnMycQWsccnfsKg,628
+uscis_opts-0.0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+uscis_opts-0.0.10.dist-info/top_level.txt,sha256=h7XrH55vf-wTNWBz2498Y3dvh-zxpFqIOtw-5M-H_Bk,5
+uscis_opts-0.0.10.dist-info/RECORD,,
