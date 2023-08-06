@@ -1,0 +1,33 @@
+language: python
+python:
+- '3.10'
+dist: bionic
+os: linux
+arch:
+  - arm64
+jobs:
+  fast_finish: true
+
+install:
+ - pip install maturin
+
+script:
+ - maturin build
+
+deploy:
+  provider: script
+  script: >
+    docker run \
+       --env MATURIN_PASSWORD="$MATURIN_PASSWORD" \
+       --rm \
+       -v "$(pwd)":/io \
+       ghcr.io/pyo3/maturin \
+       publish \
+       --interpreter python3.8 python3.9 python3.10 python3.11 \
+       --username __token__ \
+       --password "$MATURIN_PASSWORD" \
+       --skip-existing
+  on:
+    branch: master
+    python: "3.10"
+    repo: ImperatorLang/pyaiken
