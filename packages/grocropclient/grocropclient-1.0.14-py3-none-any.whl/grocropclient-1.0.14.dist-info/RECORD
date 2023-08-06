@@ -1,0 +1,10 @@
+grocropclient/TECH_DETAILS.md,sha256=e9JWt_NkP9cEdbVBvODAyKRRDMxa3IQWB7SwN7Pwhls,2913
+grocropclient/__init__.py,sha256=C8UfbY6KwZ8ZM7U7H9Ojl8Ld6Y2Qpgqgwy6zcQE4ipk,55
+grocropclient/constants.py,sha256=hiJ-V--hL_mDwuPKFXo3q61T2TbP44zHp-jg9OvgQpM,139605
+grocropclient/crop_budgets.py,sha256=gyt7yeeZiavMa0Qg6luDT514QUgFe-tuK7p1qz5BorQ,3814
+grocropclient/crop_budgets_data.py,sha256=XlH0pOdKw4jw_mpVx3e6wRQpYqhn_SGifdk-QPSjH3s,15283
+grocropclient/gro_crop_client.py,sha256=RsgmPkvg4Fl7ifO9hGwvRnO21G2In03rXvPgn8fl9_0,47389
+grocropclient-1.0.14.dist-info/LICENSE,sha256=J9Lz_uuCi9lWXA5MzQMNmESiRvxyBg64pad6cO1kvOI,1073
+grocropclient-1.0.14.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+grocropclient-1.0.14.dist-info/METADATA,sha256=Aa_N_o13tXe5BGgvGGRx4Fpfu1ODH1cMF-IL9C-XSp4,1191
+grocropclient-1.0.14.dist-info/RECORD,,
