@@ -1,0 +1,4 @@
+gutenbergPasswordGenerator.egg-info/*
+texts/*
+build/lib/src/*
+dist/*
