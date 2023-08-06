@@ -1,0 +1,8 @@
+README.md
+setup.py
+chesschecker.egg-info/PKG-INFO
+chesschecker.egg-info/SOURCES.txt
+chesschecker.egg-info/dependency_links.txt
+chesschecker.egg-info/entry_points.txt
+chesschecker.egg-info/requires.txt
+chesschecker.egg-info/top_level.txt

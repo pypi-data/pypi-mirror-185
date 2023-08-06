@@ -1,0 +1,2 @@
+[console_scripts]
+chesschecker = __main__:main
