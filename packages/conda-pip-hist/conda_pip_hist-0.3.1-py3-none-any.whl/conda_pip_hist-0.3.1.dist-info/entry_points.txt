@@ -1,0 +1,3 @@
+[console_scripts]
+conda-pip-hist=conda_pip_hist.main:app
+

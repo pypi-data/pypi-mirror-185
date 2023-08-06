@@ -1,0 +1,13 @@
+conda_pip_hist/.pytest_cache/.gitignore,sha256=Ptcxtl0GFQwTji2tsL4Gl1UIiKa0frjEXsya26i46b0,37
+conda_pip_hist/.pytest_cache/CACHEDIR.TAG,sha256=N9yI75oKvt2-gQU6bdj9-xOvthMEXqHrSlyBWnSjveQ,191
+conda_pip_hist/.pytest_cache/README.md,sha256=c_1vzN2ALEGaay2YPWwxc7fal1WKxLWJ7ewt_kQ9ua0,302
+conda_pip_hist/.pytest_cache/v/cache/nodeids,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+conda_pip_hist/.pytest_cache/v/cache/stepwise,sha256=T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU,2
+conda_pip_hist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conda_pip_hist/main.py,sha256=hYO5P8TWGbotUGRvvq3u2rUlN_xoKdhzTtP2E5yrukU,1112
+conda_pip_hist/process_env/check_file_prop.py,sha256=iKA-f0VgPDq7I-9anz1MPqYVyJurKd-qhX8r3JTTRS4,525
+conda_pip_hist/process_env/conda_env_export.py,sha256=2eEE8F6PWjy-fRlxg_GqG_ugLN62DgzikBnS1WhSRHg,2554
+conda_pip_hist-0.3.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+conda_pip_hist-0.3.1.dist-info/entry_points.txt,sha256=uIQkg3JTO1HL4gMyHQXhxF53CXXvTkc5GYfCkHLik0U,58
+conda_pip_hist-0.3.1.dist-info/METADATA,sha256=G1rFXgkrlVXmKzXxy3MngjJROWVO4y42bRDBTJdBT6o,742
+conda_pip_hist-0.3.1.dist-info/RECORD,,
