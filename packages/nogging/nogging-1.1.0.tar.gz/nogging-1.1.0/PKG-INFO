@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nogging
+Version: 1.1.0
+Summary: Automatically use `nogging.yaml` to manage loggers.
+Home-page: https://github.com/my-python-utils/nogging
+License: MIT License
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# nogging
+
+Automatically use `nogging.yaml` to manage loggers.
+
+## usage
+
+```python
+import logging
+
+import nogging
+
+nogging.Nogging().setup()
+
+logger = logging.getLogger(__name__)
+
+...
+```
