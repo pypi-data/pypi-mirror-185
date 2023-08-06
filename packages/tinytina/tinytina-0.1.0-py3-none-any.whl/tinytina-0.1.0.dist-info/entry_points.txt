@@ -1,0 +1,3 @@
+[console_scripts]
+ttwl=tinytina.main:main
+
