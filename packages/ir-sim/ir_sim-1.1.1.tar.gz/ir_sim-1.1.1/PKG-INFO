@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: ir_sim
+Version: 1.1.1
+Summary: A simple python based Intelligent Robot Simulator fpr robot navigation and Learning
+Author-email: Han Ruihua <hanrh@connect.hku.hk>
+Project-URL: Homepage, https://github.com/hanruihua/Intelligent-Robot-Simulator2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Intelligent-Robot-Simulator2
+
+A python based robot simulator framework for the intelligent robotics navigation and learning
+
+## Prerequisite
+
+Test platform: Ubuntu20.04, windows10
+
+- Python: >= 3.8
+    - numpy  
+    - matplotlib 
+    - scipy
+
+## Installation
+
+clone the repository
+
+```
+git clone https://github.com/hanruihua/Intelligent-Robot-Simulator2.git
+```
+
+install the package (ir_sim)
+
+```
+cd Intelligent-Robot-Simulator2
+pip install -e .
+```
+
+## Usage
+
+The examples are in the ir-sim2/usage
