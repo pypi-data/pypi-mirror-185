@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+test/test_all.py
+word2number_en/__init__.py
+word2number_en/w2n.py
+word2number_en.egg-info/PKG-INFO
+word2number_en.egg-info/SOURCES.txt
+word2number_en.egg-info/dependency_links.txt
+word2number_en.egg-info/top_level.txt
