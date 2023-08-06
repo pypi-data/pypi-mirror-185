@@ -1,0 +1,13 @@
+debategpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+debategpt/inference/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+debategpt/inference/core.py,sha256=sRS_ni3zDmArh5de0oQvbzqyGczojUs1mWWQjJIDsY8,17728
+debategpt/training/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+debategpt/training/orchestrator.py,sha256=bEnZ_Y6SJ-puML89b4ReGKEWQQ2EvAAmM1wP_86ibJM,12600
+debategpt/training/reward.py,sha256=kFkBBAEyJgGNHoGkjvfLcVIrj8GOqKTOm0IUDW_CZRM,8582
+debategpt/training/trainer.py,sha256=4nEYYhhP-h5NGyTsQEuLWTJsU9oXKZ2OdFYyDl2fe5M,1253
+debategpt-0.0.3.dist-info/LICENCE.txt,sha256=xvq1LaywvPe7ZDVuX89wjbBuRICsQkN3eoAc_3NuXa0,1069
+debategpt-0.0.3.dist-info/METADATA,sha256=YJhzzD6Ggj6TxqDxrd0r--6o4WJvpvLIXmE0m36DzS8,359
+debategpt-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+debategpt-0.0.3.dist-info/dependency_links.txt,sha256=JqLDcYHtEaQB51V72n3gAJvRd36bpoPk9qgTbot-Lx4,37
+debategpt-0.0.3.dist-info/top_level.txt,sha256=Y_fhzH4zELLvo4DFR5EjSDEovzNKfBsaG53BCsc5aUA,10
+debategpt-0.0.3.dist-info/RECORD,,
