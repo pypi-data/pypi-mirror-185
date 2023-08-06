@@ -1,0 +1,8 @@
+Werkzeug
+Flask
+m-caching
+m-singleton
+requests
+confluent_kafka==1.5.0
+python-magic
+mobio-admin-sdk
