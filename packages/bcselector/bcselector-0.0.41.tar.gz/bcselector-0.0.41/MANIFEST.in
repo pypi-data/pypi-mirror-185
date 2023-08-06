@@ -1,0 +1,1 @@
+recursive-include bcselector/data *.csv *.csv.gz *.rst *.jpg *.txt *.arff.gz *.json *.json.gz
