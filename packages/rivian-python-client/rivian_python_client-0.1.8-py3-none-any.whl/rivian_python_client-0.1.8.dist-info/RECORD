@@ -1,0 +1,6 @@
+rivian/__init__.py,sha256=mlpMZSJW6-Fg7TX4sWz8UuCkqANrvbNkoaCrlJlaUqc,102
+rivian/exceptions.py,sha256=OOB28eRd6RLBOCkqtgtSAG0gFCiF8pCrnK86HcPdxKo,519
+rivian/rivian.py,sha256=CCeeNrlHnFUmxuf4y4vTiO9_TX8Cg47Z6_UGOQUoR8Y,21703
+rivian_python_client-0.1.8.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+rivian_python_client-0.1.8.dist-info/METADATA,sha256=tVh-hgpppTrR70Nu64_3bekAGyfosDIa0tqI16JYD8Q,832
+rivian_python_client-0.1.8.dist-info/RECORD,,
