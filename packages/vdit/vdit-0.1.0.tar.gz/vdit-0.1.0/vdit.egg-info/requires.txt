@@ -1,0 +1,4 @@
+pyqrcode
+pyautogui
+pyzbar
+pyperclip
