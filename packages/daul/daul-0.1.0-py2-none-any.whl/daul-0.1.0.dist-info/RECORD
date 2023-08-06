@@ -1,0 +1,11 @@
+daul/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+daul/file_utils.py,sha256=l4-P6taIU46c2jm4hnOY7AEWePdjtsBLcttuGR2j2xg,9912
+daul/numpy_utils.py,sha256=olHsUkKZp_AGFhByFb-AeG8m5AkYD5UTRV2wLVDYuU0,7760
+daul/pandas_utils.py,sha256=KOW8IEn60VhC4Ws-_H2EfRQeUEXEEnPRLJSrIxue3_8,27934
+daul/shortcuts.py,sha256=IfADZ2MVwxoNFJC-N6IbQiazD6p4YQbwSKSuctyA6Co,1226
+daul-0.1.0.dist-info/AUTHORS,sha256=9L0HALCUhTAXcNn7OyVZCUpUspphGWCi57MzL_TkJDQ,39
+daul-0.1.0.dist-info/LICENSE,sha256=Q6OBsAJBZ_arWQ6FL8qYxZpSfYOGDUojpc3WlSv28BA,1059
+daul-0.1.0.dist-info/METADATA,sha256=LvvNwIUQVhKW-Js5TcZILrKU3cNEp8tJD-G01QazNPs,1047
+daul-0.1.0.dist-info/WHEEL,sha256=1VPi6hfNQaRRNuEdK_3dv9o8COtLGnHWJghhj4CQ28k,92
+daul-0.1.0.dist-info/top_level.txt,sha256=vJArWAYvbpQkMRltvL4qWY_Xqvo3eRS95qFbeH-s8WU,5
+daul-0.1.0.dist-info/RECORD,,
