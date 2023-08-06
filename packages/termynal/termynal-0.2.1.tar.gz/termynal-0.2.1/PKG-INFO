@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: termynal
+Version: 0.2.1
+Summary: 
+Home-page: https://pypi.org/project/termynal
+License: MIT
+Author: Danil Akhtarov
+Author-email: daxartio@gmail.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: mkdocs
+Requires-Dist: markdown
+Requires-Dist: mkdocs (>=1.4,<2.0) ; extra == "mkdocs"
+Project-URL: Repository, https://github.com/daxartio/termynal
+Description-Content-Type: text/markdown
+
+# Termynal
+
+A lightweight and modern animated terminal window.
+Built for [mkdocs](https://www.mkdocs.org/).
+
+## Installation
+
+<!-- termynal -->
+
+```
+$ pip install termynal
+---> 100%
+Installed
+```
+
+[Example](https://daxartio.github.io/termynal/)
+
+## Usage
+
+Use `<!-- termynal -->` before code block
+
+````
+<!-- termynal -->
+
+```
+// code
+```
+````
+
+or `console` in code block
+
+````
+```console
+// code
+```
+````
+
+progress, prompt `---> 100%`
+
+````
+```console
+$ show progress
+---> 100%
+Done!
+```
+````
+
+command, start with `$`
+
+````
+```console
+$ command
+```
+````
+
+comment, start with `#`
+
+````
+```console
+# comment
+```
+````
+
+`mkdocs` plugin
+
+```yaml
+...
+plugins:
+  - termynal
+...
+```
+
+Thanks [ines](https://github.com/ines/termynal)
+

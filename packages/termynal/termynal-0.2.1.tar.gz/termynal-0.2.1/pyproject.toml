@@ -1,0 +1,99 @@
+[tool.poetry]
+name = "termynal"
+version = "0.2.1"
+description = ""
+authors = ["Danil Akhtarov <daxartio@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/daxartio/termynal"
+homepage = "https://pypi.org/project/termynal"
+keywords = []
+
+[tool.poetry.plugins."mkdocs.plugins"]
+"termynal" = "termynal.plugin:TermynalPlugin"
+
+[tool.poetry.plugins."markdown.extensions"]
+"termynal" = "termynal.markdown:TermynalExtension"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+markdown = "*"
+mkdocs = {version = "^1.4", optional = true}
+
+[tool.poetry.group.dev.dependencies]
+autoflake = "*"
+black = "*"
+ruff = "*"
+isort = "*"
+mypy = "*"
+pylint = "*"
+pytest = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+pytest-deadfixtures = "*"
+pytest-mock = "*"
+toml = "*"
+types-Markdown = "*"
+unify = "*"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "*"
+mkdocs-material = "*"
+
+[tool.poetry.extras]
+mkdocs = ["mkdocs"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+ignore_missing_imports = true
+no_implicit_optional = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[tool.isort]
+profile = "black"
+
+[tool.coverage.run]
+omit = ["tests/*", "**/__main__.py", "**/.venv/*", "**/site-packages/*"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 93.8
+
+[tool.pylint]
+good-names = ["i","j","k","e","x","_","pk","id"]
+max-args = 5
+max-attributes = 10
+max-bool-expr = 5
+max-module-lines = 300
+max-nested-blocks = 2
+max-public-methods = 30
+max-returns = 5
+max-statements = 30
+output-format = "colorized"
+ignored-classes = ["contextlib.closing"]
+disable = [
+    "C0111", # Missing module docstring (missing-docstring)
+    "R0901", # Too many ancestors (m/n) (too-many-ancestors)
+    "R0903", # Too few public methods (m/n) (too-few-public-methods)
+    "R0801", # duplicate-code
+]
+
+[tool.black]
+skip-string-normalization = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+addopts = "--strict-markers --showlocals --verbosity 2"
+log_level = "DEBUG"
+
+[tool.bandit]
+exclude_dirs = ["tests"]
