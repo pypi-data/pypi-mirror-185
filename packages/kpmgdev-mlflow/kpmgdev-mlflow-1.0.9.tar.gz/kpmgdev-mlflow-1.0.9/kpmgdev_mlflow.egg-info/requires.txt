@@ -1,0 +1,6 @@
+azureml-core
+azureml-mlflow
+openpyxl
+pandas
+numpy
+torch
