@@ -1,0 +1,6 @@
+selenium~=4.6
+requests~=2.28
+selenium-interceptor>=1.0.2
+
+[dev]
+check-manifest
