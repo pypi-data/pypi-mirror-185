@@ -1,0 +1,5 @@
+setup.py
+lida.egg-info/PKG-INFO
+lida.egg-info/SOURCES.txt
+lida.egg-info/dependency_links.txt
+lida.egg-info/top_level.txt
