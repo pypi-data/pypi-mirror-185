@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: gpn-clients
+Version: 0.1.0
+Summary: 
+Author: Chumakov Mikhail Dmitrievich
+Author-email: i@m-chumakov-dev.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Requires-Dist: setuptools (>=65.7.0,<66.0.0)
+Description-Content-Type: text/markdown
+
+# 🀣 🅖🅟🅝 🅲🅻🅸🅴🅽🆃🆂 🀣 
+
+This repository contains the source code for the GPN clients.
+
+## Poetry Setup
+
+```bash
+poetry config settings.virtualenvs.in-project true
+```
+
