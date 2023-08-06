@@ -1,0 +1,16 @@
+tuindow/__init__.py,sha256=12tOQh_mHLXFrZbYt9bEbSaIz5dFWRcLmxX0_IyvTQ8,19
+tuindow/__main__.py,sha256=PkYYjjLFwu6jXc76sNWLhl_TeUDK4bK_I-eNIgVRWC0,870
+tuindow/_backend.py,sha256=KBAvUmIKIPvZx3btmk5xPFCE271EB6d_qaAkOzjklKM,8827
+tuindow/api.py,sha256=aCaIqJu5mmrFz0cuiReBO4FX-gtnpG-mPlMSfx8kZ9U,8814
+tuindow/buffers.py,sha256=hsvJlwDmcx4tcQciSIqgZlkbEHAw6OELHIXCAYwIUHY,16559
+tuindow/cursor.py,sha256=4lW_91KacGMCd2GWfDo5Q7ZyPOwEpRR1_PrdeoH-yK0,7865
+tuindow/structs.py,sha256=6hCnyTprklvLUvdt5ZHcnQNz4mbMOUwMyxa0Xikunlo,6282
+tuindow/validation.py,sha256=1MAc_4QPPz5EEJBHMXZupJHDKe1m9YVKV5iHUE1nbwA,2000
+tuindow/window.py,sha256=nDm2O1YPrQWqycmL1eY9DWWDcQUow45kAeytq5cOQM0,2838
+tuindow/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tuindow/examples/simple_editor.py,sha256=LcSiu2qHfrhgR1-4ARl8sg4aQfP1lL5gcfrlCHwfhPU,9688
+tuindow-1.0.0.dist-info/LICENSE,sha256=CaFLLGprHWr2YP8_d7JeN0dZDonWWgOBfmB-bntg9Ak,1080
+tuindow-1.0.0.dist-info/METADATA,sha256=PfdkS_I6ERjDahjq-5m0qV0ULezbJQhaLLDB_MdbOAI,2648
+tuindow-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tuindow-1.0.0.dist-info/top_level.txt,sha256=bDbWyMxbbyMZ2JhsnFWm6ozYMtAOZ-jrpVv-fAsmRV8,8
+tuindow-1.0.0.dist-info/RECORD,,
