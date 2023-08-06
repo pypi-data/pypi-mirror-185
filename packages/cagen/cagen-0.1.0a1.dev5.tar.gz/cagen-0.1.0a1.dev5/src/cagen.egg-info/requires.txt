@@ -1,0 +1,3 @@
+frontmmatter>=1.0.0
+pypandoc>=1.10
+mako>=1.2.4
