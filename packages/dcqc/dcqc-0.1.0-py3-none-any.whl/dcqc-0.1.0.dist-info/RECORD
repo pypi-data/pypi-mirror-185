@@ -1,0 +1,10 @@
+dcqc/__init__.py,sha256=9RjRm5XDWsu_gSYKZTFQjvUkDCOOgZ3uhbXLBOjHcdM,611
+dcqc/filesystems/openers.py,sha256=BMv5kTou2Q_8wtSCFm4EUbYGQSME5dh9ltNc49Bo0tA,371
+dcqc/filesystems/remote_file.py,sha256=72GGrkQ1EdKaoQZBheHo-4A8OIGff6RGGvmcXQljZOs,2469
+dcqc/filesystems/synapsefs.py,sha256=lekPEkl3ZRbq6Jal4w0N2cIe_3Wzbx9GdhzJovWg6qU,24182
+dcqc-0.1.0.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+dcqc-0.1.0.dist-info/METADATA,sha256=M7AYGyS2EZRRu_7r_O5p53uz6BMVtdUuYq6LSsn0csY,2244
+dcqc-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dcqc-0.1.0.dist-info/entry_points.txt,sha256=gKhPWRHpXNulaUV6BQR50STSB3C-0sqQa0SYTM4Lbz8,59
+dcqc-0.1.0.dist-info/top_level.txt,sha256=9Cy6GheaNF149OZ4K3w98W1HrnY5fBzVblUHLTtreOQ,5
+dcqc-0.1.0.dist-info/RECORD,,
