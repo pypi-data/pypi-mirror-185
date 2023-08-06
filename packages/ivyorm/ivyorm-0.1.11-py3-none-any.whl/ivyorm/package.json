@@ -1,0 +1,24 @@
+{
+    "name": "ivypy",
+    "version": "1.0.0",
+    "scripts": {
+        "run": "npx nodemon --exec python run.py"
+    },
+    "dependencies": {
+        "nodemon": "^2.0.14"
+    },
+    "type": "module",
+    "nodemonConfig": {
+        "watch": [
+            "*.py"
+        ],
+        "ignore": [
+            "/resource/*"
+        ],
+        "delay": 1,
+        "execMap": {
+            "pl": "perl"
+        },
+        "ext": "py"
+    }
+}
