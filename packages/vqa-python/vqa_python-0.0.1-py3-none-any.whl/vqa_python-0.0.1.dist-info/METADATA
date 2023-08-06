@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: vqa-python
+Version: 0.0.1
+Summary: mVQA tool
+Home-page: https://github.com/truong-xuan-linh/mVQA-webapp
+Author: Trương Xuân Linh
+Author-email: truonglinh1342001@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit
+Requires-Dist: pyyaml (==5.1)
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: transformers
+Requires-Dist: tensorflow
+Requires-Dist: unidecode
+Requires-Dist: torchvision
+Requires-Dist: gdown
+
+mVQA tool
