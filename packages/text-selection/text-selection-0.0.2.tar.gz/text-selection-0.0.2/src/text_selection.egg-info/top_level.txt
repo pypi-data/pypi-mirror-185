@@ -1,0 +1,5 @@
+text_selection
+text_selection_cli
+text_selection_core
+text_selection_core_tests
+text_selection_tests
