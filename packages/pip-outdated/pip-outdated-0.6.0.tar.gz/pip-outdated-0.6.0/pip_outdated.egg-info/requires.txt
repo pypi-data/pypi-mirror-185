@@ -1,0 +1,7 @@
+aiodns~=3.0
+aiohttp~=3.8
+colorama~=0.4.6
+packaging~=23.0
+setuptools~=65.7
+termcolor~=2.2
+terminaltables~=3.1
