@@ -1,0 +1,2 @@
+[console_scripts]
+caniuse = pycaniuse.__main__:main

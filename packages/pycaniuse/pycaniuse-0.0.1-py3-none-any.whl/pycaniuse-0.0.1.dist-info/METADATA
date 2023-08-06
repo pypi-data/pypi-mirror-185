@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: pycaniuse
+Version: 0.0.1
+Summary: CLI tool to search caniuse.com from your shell
+Home-page: https://github.com/viseshrp/pycaniuse
+Author: Visesh Prasad
+Author-email: viseshrprasad@gmail.com
+Maintainer: Visesh Prasad
+Maintainer-email: viseshrprasad@gmail.com
+License: MIT license
+Project-URL: Documentation, https://github.com/viseshrp/pycaniuse
+Project-URL: Changelog, https://github.com/viseshrp/pycaniuse/blob/main/CHANGELOG.rst
+Project-URL: Bug Tracker, https://github.com/viseshrp/pycaniuse/issues
+Project-URL: Source Code, https://github.com/viseshrp/pycaniuse
+Keywords: pycaniuse caniuse javascript css html js browser compatibility
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: click (>=8.1.1)
+Requires-Dist: click-default-group (>=1.2.2)
+
+===========
+pycaniuse
+===========
+
+
+.. image:: https://img.shields.io/pypi/v/pycaniuse.svg
+        :target: https://pypi.python.org/pypi/pycaniuse
+
+.. image:: https://pepy.tech/badge/pycaniuse
+        :target: https://pepy.tech/project/pycaniuse
+        :alt: Downloads
+
+
+Search caniuse.com from your shell.
+
+
+Installation
+------------
+
+.. code-block:: bash
+
+    $ pip install -U pycaniuse
+
+
+Requirements
+------------
+
+Python 3.7+
+
+
+Features
+--------
+
+* Coming soon
+
+.. code-block:: bash
+
+    $ pycaniuse --help
+
+Credits
+-------
+* Click_, for making writing CLI tools a complete pleasure.
+
+.. _Click: https://click.palletsprojects.com
+
+
+=======
+History
+=======
+
+0.0.1 (2023-01-12)
+------------------
+
+* First release on PyPI.
