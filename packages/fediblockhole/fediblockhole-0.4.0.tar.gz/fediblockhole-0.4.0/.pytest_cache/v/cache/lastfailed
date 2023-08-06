@@ -1,0 +1,5 @@
+{
+  "tests/test_parser_csv.py::test_no_header": true,
+  "tests/test_parser_csv.py::test_wrong_fields": true,
+  "tests/test_parser_rapidblockcsv.py::test_single_line": true
+}
