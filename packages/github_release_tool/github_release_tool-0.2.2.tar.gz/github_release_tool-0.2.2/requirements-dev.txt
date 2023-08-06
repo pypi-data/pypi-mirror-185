@@ -1,0 +1,8 @@
+black
+bump2version
+coverage
+flake8
+pytest
+pdbpp
+python-box
+tox
