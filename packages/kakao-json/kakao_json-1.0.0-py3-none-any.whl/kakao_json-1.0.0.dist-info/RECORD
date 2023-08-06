@@ -1,0 +1,9 @@
+kakao-json/__init__.py,sha256=TafeeP_Eo2oElLgWJ6aWDGICeA3F6BipfdmuutSzGo0,93
+kakao-json/components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kakao-json/components/cards.py,sha256=hwqUs8HvuFxAkC_trTs8BwP-D3BxzmlGx_kEBjI1MB8,13376
+kakao-json/components/common.py,sha256=8XStJcLfAQMlq_X_fo-KwegsT54HfCB6mDIx_y9Gq-U,13485
+kakao-json/kakao.py,sha256=JOcP2sk-Pwarwop1MnUr9NYHmkXl4ahwzwJSOcQUy2M,6902
+kakao_json-1.0.0.dist-info/METADATA,sha256=fgwiDVTr7hcdFuq31MexwOsBoBYsAB5sekMXRonj7NM,3164
+kakao_json-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+kakao_json-1.0.0.dist-info/LICENSE,sha256=UmQeoWsrid6mRmOIqLqakaKh5QYVbeyn4xjBngGAt00,1090
+kakao_json-1.0.0.dist-info/RECORD,,
