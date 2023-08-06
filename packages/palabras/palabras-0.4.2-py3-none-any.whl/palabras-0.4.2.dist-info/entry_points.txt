@@ -1,0 +1,3 @@
+[console_scripts]
+palabras=palabras:__main__
+
