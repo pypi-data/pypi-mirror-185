@@ -1,0 +1,14 @@
+files/main.py,sha256=HerRe3L4RpPMgqhzr-RW44sBzXnrhzjD5Eep5251zig,3647
+files/parser_old.py,sha256=nrccroH275hlp1uLe535P-yg7cse-yWREQ7pNNnSaZI,881
+files/selenium_test.py,sha256=UCyla6rST9liCjCY-6DiwbCcHIWVF2dKq4IKeLj5TEE,431
+ontu_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ontu_parser/example.py,sha256=2N3GphU41KLueneJUZ_yuH9DsyuwykuDn6-wGeKtrpE,577
+ontu_parser/classes/__init__.py,sha256=joPXfSVFP8n-WWLUY9XmtHuNU4MV4EwbMmFWUWuwLqk,160
+ontu_parser/classes/base.py,sha256=X6LSc5qhinsqpulmZYQfT7EDevaywSTV-Np1pw-AFPw,2681
+ontu_parser/classes/dataclasses.py,sha256=btDV_31gpEukQZ53TZANeSWT5GPCf_kLe3nbOACmTTU,14080
+ontu_parser/classes/parser.py,sha256=B_erWMGuytl2OqDvIbFrLPtotKLM_Ni4ASYDU4thtaM,4675
+ontu_parser/classes/sender.py,sha256=S_91lVTqWJuAw5WSj5-soXOW6kZ2mLlHJdQ-0ac6w1o,4645
+rozklad_ontu_parser_makisukurisu-0.0.1.dist-info/METADATA,sha256=Kqdcdgt-GovWDWudRx6YM9GVf1t3R15-6NJSBLDPX3A,2817
+rozklad_ontu_parser_makisukurisu-0.0.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+rozklad_ontu_parser_makisukurisu-0.0.1.dist-info/licenses/LICENSE,sha256=ZBjA3hiCcevwRTZO2CMJLDF5jLkmNSUFHcQR9qIAw8o,1533
+rozklad_ontu_parser_makisukurisu-0.0.1.dist-info/RECORD,,
