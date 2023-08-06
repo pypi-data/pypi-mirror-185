@@ -1,0 +1,24 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regex-dictionary"
+version = "1.0.2"
+description = "Simple type that extends default python dict to dict with regex keys"
+readme = "README.md"
+authors = [{ name = "Alex Makhonin", email = "makhonin.a.ru@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["dict", "regex", "regexdict", "dictregex", "regex-dictionary", "dictionary", "regex-dict"]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/alex123012/regex-dictionary"
+
+[project.optional-dependencies]
+dev = ["pip-tools"]
