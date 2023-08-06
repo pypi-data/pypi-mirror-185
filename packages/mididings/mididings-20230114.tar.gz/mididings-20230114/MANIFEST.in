@@ -1,0 +1,26 @@
+# build
+include pyproject.toml setup.py MANIFEST.in
+
+# documentation
+include README.md NEWS
+graft doc
+
+# licenses / reuse
+include LICENSE.md
+recursive-include LICENSES *.txt
+include .reuse/dep5
+
+# source
+recursive-include mididings *.py
+
+# extension source
+recursive-include src SConstruct *.hh *.cc
+
+# tests
+recursive-include tests *.py
+
+# CLI scripts
+graft scripts
+
+# exclude all VCS/CI files/directories
+exclude .gitignore
