@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: conceptionlogicielle
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: ragatzino
+Author-email: antoine.brunetti@insee.fr
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: fuzzywuzzy (==0.18.0)
+Requires-Dist: python-Levenshtein (==0.20.9)
+Requires-Dist: python-dotenv (==0.21.0)
+Description-Content-Type: text/markdown
+
+# Hello world
+
+Start here :
+
+```
+git clone https://gitlab.com/conception-logicielle/tp2-conception-corrige.git tp2
+```
+
+Install requirements file :
+
+```
+poetry install
+```
+
+Then you can run the app :
+
+```
+poetry run python tp2
+```
+
+_on some operating systems, python you might have to use cmd python3 or python2_
+
+You can change words using env variables
+e.g. on linux :
+
+```
+export DEFAULT_MOT_UN=toto
+```
+
+_on some operating systems, python you might have to use cmd python3 or python2_
+
+You can also download the package:
+
+```
+pip install
+```
+

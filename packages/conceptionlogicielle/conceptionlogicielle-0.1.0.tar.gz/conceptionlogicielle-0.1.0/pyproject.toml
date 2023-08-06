@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "conceptionlogicielle"
+version = "0.1.0"
+description = ""
+authors = ["ragatzino <antoine.brunetti@insee.fr>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fuzzywuzzy = "0.18.0"
+python-Levenshtein = "0.20.9"
+python-dotenv = "0.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
