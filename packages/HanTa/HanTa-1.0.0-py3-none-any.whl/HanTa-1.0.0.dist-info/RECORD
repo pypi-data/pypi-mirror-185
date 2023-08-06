@@ -1,0 +1,10 @@
+HanTa/HanoverTagger.py,sha256=q5EnSy9jkA39co5da18Oqcs4om7kIRXPKmzmgqczYKI,44203
+HanTa/__init__.py,sha256=aK68RNBhLUqaf5vKDVDhnfKU0NAsjLmeeBGsEKybPrE,12
+HanTa/morphmodel_dutch.pgz,sha256=6gvRVxAiKu9EHI7TCkourL2aISMdq90wEyJwbo7bcxI,11565964
+HanTa/morphmodel_en.pgz,sha256=wvtvJHe7Q_3PTCMz6waV1gmwA6EqBnGN6OhTxbYwhiE,2628147
+HanTa/morphmodel_ger.pgz,sha256=uEjcxO3OeL6-ZKck4tWoDcgLpsCY4jn6rkzSAxCjkMg,1111732
+HanTa-1.0.0.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+HanTa-1.0.0.dist-info/METADATA,sha256=V_905JyMHOEO3Gr8uJPX6lgxw3IDnLqRjif-jbJjJHI,1020
+HanTa-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+HanTa-1.0.0.dist-info/top_level.txt,sha256=AUDTU8fz6BTFAxXYOSvDlcWPn_BN98I88CpfFvr1_QY,6
+HanTa-1.0.0.dist-info/RECORD,,
