@@ -1,0 +1,9 @@
+apiclarity/__init__.py,sha256=cqJ345WE4M-I8FBgLJuUnVr5nAmi7oGg2hTjqA4ExkU,210
+apiclarity/client.py,sha256=LDd6I5Fq14tMsB0eUuFLSnadu-FwHcF8j4vpPosmlRU,24571
+apiclarity/openapispec.py,sha256=g-XMKGOhzb7xQstVuaTFuLQhh0LFogMWyvcNmttdhwg,24566
+apiclarity/schemas.py,sha256=hDi-WnC3G-ltvn2Q-09Vb5_gX4-_LnzvqH7VjpG0288,7972
+apiclarity-0.2.0.dist-info/entry_points.txt,sha256=4FuhUqUutk1Kpe6n3qhh9uGtcAW5KYop0gmPmw7QWGo,38
+apiclarity-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+apiclarity-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+apiclarity-0.2.0.dist-info/METADATA,sha256=04xHQthL0DKnUy58wkNFsCsnUoYWgb3v1HgHhP1_a9o,2815
+apiclarity-0.2.0.dist-info/RECORD,,
