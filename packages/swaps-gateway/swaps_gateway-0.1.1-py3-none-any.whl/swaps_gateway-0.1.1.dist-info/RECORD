@@ -1,0 +1,8 @@
+swaps_gateway/__init__.py,sha256=iqPLFGs0fL3lFRsmXA3duwDUZ0Rs0sM6zcTqj2mPEQE,289
+swaps_gateway/erc20_abi.txt,sha256=45UgpyJIBbOoQ6e8QfAlloE6O23k75zyHcZlZyTo4TE,4611
+swaps_gateway/router_abi.txt,sha256=P4j8zkTpylk0S3Y2yiuHiCTxMtLUXtWLs1JJ6ES5qYA,25782
+swaps_gateway/uniswap_ecosystem.py,sha256=6PYlVM60Vdsa3XZ9Rg_cr_fYI87dEZisBfZqTQ361iU,13599
+swaps_gateway-0.1.1.dist-info/METADATA,sha256=tPTcOxtx_eRURe4dAQuhJwkFQaVUbEg20w23NyU3DSY,1108
+swaps_gateway-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+swaps_gateway-0.1.1.dist-info/top_level.txt,sha256=LhdX5gh8RAjlTHKg6e_5VD2shlzvxkVJurVPHlLs7_4,14
+swaps_gateway-0.1.1.dist-info/RECORD,,
