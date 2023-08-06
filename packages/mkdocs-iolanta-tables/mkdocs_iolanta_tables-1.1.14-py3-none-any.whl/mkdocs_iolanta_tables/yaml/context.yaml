@@ -1,0 +1,31 @@
+"@context":
+  table: https://mkdocs.iolanta.tech/tables/
+
+  table:class:
+    "@type": "@id"
+
+  table:rows:
+    "@type": "@id"
+
+  table:columns:
+    "@id": table:columns
+    "@type": "@id"
+    "@container": "@list"
+
+  table:order-by:
+    "@type": "@id"
+    "@container": "@list"
+
+  table:direction:
+    "@type": "@id"
+    "@context":
+      "@base": https://mkdocs.iolanta.tech/tables/
+
+  table:empty-values:
+    "@type": "@id"
+    "@context":
+      "@base": https://mkdocs.iolanta.tech/tables/
+      first:
+        "@id": https://mkdocs.iolanta.tech/tables/first
+      last:
+        "@id": https://mkdocs.iolanta.tech/tables/last
