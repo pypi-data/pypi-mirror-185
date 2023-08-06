@@ -1,0 +1,15 @@
+voxelmap/__init__.py,sha256=2mrGlatW72SrkjKPTbrqCCmtYIs56SfVklPvUHopVks,200
+voxelmap/annex.py,sha256=JXRzULXBolljPgW7UzPfD-GhamMPq-GMILjm_TTkOBs,2093
+voxelmap/data.py,sha256=1zbu_45NnNCE39Wx5IwwHTuKDDR-SgujlzLxUV0_FyU,2841
+voxelmap/goxel.py,sha256=IYhO8RPsKz8y5MQbuCO4rnPEvaH_m4N1sMm-y8bc6O8,1548
+voxelmap/image.py,sha256=iMFcZDfSMLXzxr-cG4nh2A0c-15mAp23Ds_o0q1D8po,13748
+voxelmap/main.py,sha256=loCAy1VVgiV_UzUH5RxGq92fh7ITKBt-q8aSlyX7oao,5545
+voxelmap/makegraphics.py,sha256=fgV_fpl5Ne126G63obo5pgqceLw5RNtSfxwusZnA2Gw,6695
+voxelmap/mapto3d.py,sha256=pzeinPwXIZxMitGvOz24wQXEKtUkLH-r5DybsTgeAdM,2950
+voxelmap/objloader.py,sha256=kscUfToufGJJA6nRE-Ll5EB1fwDqAm0TOLRlIeMMSY8,4565
+voxelmap/objviewer.py,sha256=gJQiiUsvOVzsz7ggqXilDOl2ahPKOCrDJZ7hYCOTXjs,2697
+voxelmap-2.1.4.dist-info/LICENSE,sha256=VF3VTdGLU6hmRzSbcEyTLdJF3ZvY2jfEPko4A2YrUho,1073
+voxelmap-2.1.4.dist-info/METADATA,sha256=kua6VTfv0UjKEjKklhtiQ7HNMlVlsVPOuhejWK4gus8,2249
+voxelmap-2.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+voxelmap-2.1.4.dist-info/top_level.txt,sha256=bZfD_q3wkHri_aED49OuVhT7U7YF1IWMrm9Hzwz5haU,9
+voxelmap-2.1.4.dist-info/RECORD,,
