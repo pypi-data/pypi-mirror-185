@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+DjangoCrud/__init__.py
+DjangoCrud/admin.py
+DjangoCrud/apps.py
+DjangoCrud/models.py
+DjangoCrud/tests.py
+DjangoCrud/views.py
+DjangoCrud/migrations/0001_initial.py
+DjangoCrud/migrations/__init__.py
+my_django_crud.egg-info/PKG-INFO
+my_django_crud.egg-info/SOURCES.txt
+my_django_crud.egg-info/dependency_links.txt
+my_django_crud.egg-info/top_level.txt

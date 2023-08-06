@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: my-django-crud
+Version: 1.5
+Summary: This is a python library that helps you create CRUD functionalites in django with few lines of code.
+Author: Jehoshaphat Tatiglo
+Author-email: khalshaphat@gmail.com
+Maintainer: Jehoshaphat Tatiglo
+Maintainer-email: khalshaphat@gmail.com
+License: MIT
+Keywords: django crud python library
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+========================
+Django Crud Library
+========================
+
+my-django-crud is a python library built using django rest framework that enables you perform CRUD functionalities on
+your Django models without writing serializer classes and view functions.
+
+Quick Start
+===========
+
+1. Add "DjangoCrud" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'DjangoCrud',
+    ]
+
+2. Import view functions from DjangoCrud in your urls.py like this:
+    from DjangoCrud import views
+
+3. Specify the url paths like below::
+
+    urlpatterns = [
+        path('create/', views.create(my_model), name='create'),
+        path('list/', views.list(my_model), name='list'),
+        path('update/<str:pk>', views.update(my_model), name='update'),
+        path('detail/<str:pk>', views.detail(my_model), name='detail'),
+        path('delete/<str:pk>', views.delete(my_model), name='delete')
+
+    ]
+
+NOTE
+=====
+Replace "my_model" with your own model 
