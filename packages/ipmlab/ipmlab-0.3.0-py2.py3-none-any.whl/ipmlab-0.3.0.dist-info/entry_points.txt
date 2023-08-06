@@ -1,0 +1,4 @@
+[gui_scripts]
+ipmlab = ipmlab.ipmlab:main
+ipmlab-configure = ipmlab.configure:main
+
