@@ -1,0 +1,11 @@
+pymusiclooper/__init__.py,sha256=S9A6P9vYKVDAwrvEeveVGlHOZGlGPmmjccA2l0Fk4dk,57
+pymusiclooper/__main__.py,sha256=uMDvE9ClXgC0Oshl_GQHVFVVjherKsnWSPVPPmnCTZA,9638
+pymusiclooper/argparser.py,sha256=kwmPda37R4aFVopOtF9fMpwUXGsXddF-X4Cv4ASVuSo,3601
+pymusiclooper/core.py,sha256=E6O6CWDu-VJV0vobmserxlYC_lxRkJfR-8QM5coghYU,13792
+pymusiclooper/exceptions.py,sha256=gYTWKtYjyjNd82YXWN-i-Z3_bvJtHUnNYOg4niSUyoo,238
+pymusiclooper-2.5.2.dist-info/LICENSE,sha256=Wv4sUg66pb5hpSVLy5z6OwJOSNBthR61S2mxdl4fHAY,1067
+pymusiclooper-2.5.2.dist-info/METADATA,sha256=NS5m__cHBXy7nVwLeleggslE1RxejeRPjV06y8LcJQg,9992
+pymusiclooper-2.5.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pymusiclooper-2.5.2.dist-info/entry_points.txt,sha256=WCnnIoIS0n3QNtLQWp8DEV1SoGmS6syt4_9X8mBVGrU,66
+pymusiclooper-2.5.2.dist-info/top_level.txt,sha256=zvQhx8HX7SeDuy9NdV4vn3DsGMf66SkoC-0NYBq1234,14
+pymusiclooper-2.5.2.dist-info/RECORD,,
