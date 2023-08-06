@@ -1,0 +1,10 @@
+banglaspeech2text/__init__.py,sha256=i5RTOQk9wZSe_-_FuNVyUv33AOURQW9N0u8WAFdSSVQ,76
+banglaspeech2text/speech2text.py,sha256=stkxUXXQzgNYmsZO0pQ6XWImvMk3fwt9HPMNmkTK7kk,3257
+banglaspeech2text/utils/__init__.py,sha256=Uklot7DF5cPw-ya9RcDgECrI87ktPJKC7bqPUGKiUqQ,778
+banglaspeech2text/utils/download_models.py,sha256=cQU3-03cqyUn9cw-2Rja8ZTzffVzqJlm6tTS8AxBV5I,8714
+banglaspeech2text/utils/download_path.py,sha256=eYxQJnkGMzkM5KODVD3_dxkVgUYmDGa4yoNCI3nOlsE,554
+BanglaSpeech2Text-0.0.1.dist-info/LICENSE,sha256=mfQq58vGvV__YF2pyC-B8x0IemOQhemj8iEbxYCOKzU,1083
+BanglaSpeech2Text-0.0.1.dist-info/METADATA,sha256=8Cg3xV5H904ZpOXyzKCjfk2xttxLyweYQ83Syw3FV-A,5639
+BanglaSpeech2Text-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+BanglaSpeech2Text-0.0.1.dist-info/top_level.txt,sha256=U3WrHLx0sUu5PebkcRF__Br6AfsuaonFIJQR762QQ7M,18
+BanglaSpeech2Text-0.0.1.dist-info/RECORD,,
