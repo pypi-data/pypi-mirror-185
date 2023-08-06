@@ -1,0 +1,9 @@
+stsmfa/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+stsmfa/__maIn__.py,sha256=3U77Eu21mJ-LY27RG-JEnpbh6Z63wGOom4i-EoLtUcY,59
+stsmfa/cli.py,sha256=ZT0puNiUNXY0o2iZzWyQgdVzXVizDvd0CEc5QKvjDyE,2036
+stsmfa/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stsmfa_cli-0.1.2.dist-info/entry_points.txt,sha256=B8wvBTKbuzw9d_kcOKrxCjDScU0__0DlAGgAszvkYpU,41
+stsmfa_cli-0.1.2.dist-info/METADATA,sha256=tmDtWySAQOQySgxAgMVrkbS-IRE0KuWfsoi7hr_nKpw,6178
+stsmfa_cli-0.1.2.dist-info/LICENSE,sha256=HaOcB16QIEIPG3FPLPx_5RZ9f9vptA0SDZyXFVrneVQ,1068
+stsmfa_cli-0.1.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+stsmfa_cli-0.1.2.dist-info/RECORD,,
