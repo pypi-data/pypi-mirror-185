@@ -1,0 +1,14 @@
+dummy.cpython-311-x86_64-linux-gnu.so,sha256=BrXUjxGF6OtGFUNgGYYVgmKB5_L9pa4HHT3IIqwU2vY,797208
+dead_instrumenter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dead_instrumenter/dead-instrument,sha256=3Hg3RxuZn6W3auS-IQ8fRf6vEugGpW5OVx4sD3sl_6A,46909336
+dead_instrumenter/instrumenter.py,sha256=l_ufu0rDxN9rFdyfxd4DKgeDJPz1wmqNObpFf1G898w,17695
+dead_instrumenter/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/dce_instrumenter_test.py,sha256=CftNoe5LtlTTq4A6KQyGJHgKq3EUgUsr-PpJRjGFIBA,5104
+test/utils.py,sha256=arQ_SoAmp1Z_JmyfT8nsOntzkzXT-inezkLkOhhhKp8,358
+test/vr_instrumenter_test.py,sha256=YG3XkmZyjIre8O8emrS-Qa6qOxMLL5HuY8IEBS4iZh8,6937
+dead_instrumenter-0.3.0.dist-info/LICENSE,sha256=5IAmkMizIfpnNp7HQwsZrGMD7jXl5oq2c_hdJRnu1y4,11351
+dead_instrumenter-0.3.0.dist-info/METADATA,sha256=39oSP5PusDLIkGMeK0imdsSq0w1o-i8cx0HnvPfcm24,5487
+dead_instrumenter-0.3.0.dist-info/WHEEL,sha256=CDxWsmsqGHhhtQPwEBZukRpX9g76_V5FHB3Ff2-I2C8,191
+dead_instrumenter-0.3.0.dist-info/top_level.txt,sha256=5lGTBPSqn2NBA-o8K5sxrC2aAaVZFmZnGmZG1fFPjVk,29
+dead_instrumenter-0.3.0.dist-info/RECORD,,
