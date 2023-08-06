@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "netbox-disk"
+version = "0.0.7.6.5.64"
+description = "Netbox Disk Plugin"
+authors = [
+    "Tim Rhomberg <timrhomberg@hotmail.com>",
+]
+readme = "README.md"
+packages = [{include = "netbox_disk"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
