@@ -1,0 +1,7 @@
+setup.py
+Draw_emoji/Draw_emoji.py
+Draw_emoji/__init__.py
+Draw_emoji.egg-info/PKG-INFO
+Draw_emoji.egg-info/SOURCES.txt
+Draw_emoji.egg-info/dependency_links.txt
+Draw_emoji.egg-info/top_level.txt
