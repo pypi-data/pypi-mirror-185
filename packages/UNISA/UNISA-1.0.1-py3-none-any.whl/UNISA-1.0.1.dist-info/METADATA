@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: UNISA
+Version: 1.0.1
+Summary: ::A Python package for calculating the left working time for UNIST Special Agents::
+Home-page: https://pypi.org/project/UNISA/
+Author: wjgoarxiv
+Author-email: woo_go@yahoo.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: pyfiglet
+Requires-Dist: selenium
+Requires-Dist: chromedriver-autoinstaller
+
+A new release. Please check the new features.
+
