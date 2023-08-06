@@ -1,0 +1,16 @@
+cri_api/__init__.py,sha256=tMuHobDmV-zyutyizM6M3Rc4NPLRyTTTZAVFBoEjZxY,57
+cri_api/channel.py,sha256=GNZl9kunOdBOVtB1_K7HH2DczUfKczJQ_OCjOmuwGCQ,1512
+cri_api/containers.py,sha256=gMOBzYRzSeObmP68tZF7TjmP4GpA1cMqWU4UvKrZLBA,2825
+cri_api/exceptions.py,sha256=AcMxHM7EKLxbudW4o30sq8f5D_h6NPRMJrJbJ_QZ0HM,448
+cri_api/images.py,sha256=BJFokvgtFOQHov5uQgT2CVald7ODJpA2sm5EPvHvU3w,3483
+cri_api/github/com/gogo/protobuf/gogoproto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cri_api/github/com/gogo/protobuf/gogoproto/gogo_pb2.py,sha256=si_PoGOEWYvuuTL-QBsVjNgyai1VH-RMRDbIFtaE-Wc,14416
+cri_api/v1/api_pb2.py,sha256=UBoQStNgE1iQW4M8vZjb8vD3uR5f67ssUk4LkH8gYPY,52734
+cri_api/v1/api_pb2_grpc.py,sha256=5eLT3EEv5RlwkzFSlue8bMmqe2RZN-_bRkxb3h6H2E0,54752
+cri_api/v1alpha2/api_pb2.py,sha256=DCRBZrKku8Fg_N9mHz6cquGddAqgxav2aiRzuWxRHaU,51272
+cri_api/v1alpha2/api_pb2_grpc.py,sha256=zb7xclnfNY0yqKdo2Hxh7J7geAOPIMsSZIx69kk6ucg,51669
+container_runtime_interface_api-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+container_runtime_interface_api-1.0.0.dist-info/METADATA,sha256=OnFZTleTWfzzBfMcv66c-erzmzv10iRQz1fCh9AbryI,3666
+container_runtime_interface_api-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+container_runtime_interface_api-1.0.0.dist-info/top_level.txt,sha256=X__XD06wiVF9pnJOi0yskSTJRl627F7CvVj0lXx8UoI,8
+container_runtime_interface_api-1.0.0.dist-info/RECORD,,
