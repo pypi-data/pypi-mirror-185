@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: battery-data-toolkit
+Version: 0.1.0
+Summary: Utilities for reading and manipulating battery testing data
+Home-page: https://github.com/materials-data-facility/battery-data-toolkit
+License: LICENSE
+Keywords: batteries,science,data science
+Author: Logan Ward
+Author-email: lward@anl.gov
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: h5py (>=3,<4)
+Requires-Dist: pandas (>1.0)
+Requires-Dist: pydantic (>=1.7,<2.0)
+Requires-Dist: scipy (>=1.3,<2.0)
+Requires-Dist: scythe-extractors (>=0.1,<0.2)
+Requires-Dist: tables (>=3.6,<4.0)
+Requires-Dist: tqdm
+Requires-Dist: xlrd
+Project-URL: Repository, https://github.com/materials-data-facility/battery-data-toolkit
+Description-Content-Type: text/markdown
+
+# Battery Data Extractor 
+
+[![Python Package using Conda](https://github.com/materials-data-facility/battery-data-toolkit/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/materials-data-facility/battery-data-toolkit/actions/workflows/python-package-conda.yml)
+[![Coverage Status](https://coveralls.io/repos/github/materials-data-facility/battery-data-toolkit/badge.svg?branch=add-coverage)](https://coveralls.io/github/materials-data-facility/battery-data-toolkit?branch=master)
+
+This directory contains utilities for converting battery testing data files from native formats
+to a standardized HDF5 file.
+
+It also contains some scripts that run these utilities on datasets available to the ASOH project.
+
+## Installation
+
+The package can be installed with pip,
+which will install the minimal amount of packages needed for this library
+to function:
+
+```bash
+pip install -r requirements.txt
+pip install -e .
+```
+
+For development purposes, we recommend installing the library and 
+all requirements
+using Anaconda rather than pip. 
+Anaconda reliably gathers compatible 
+versions of all libraries and we have the versions of the libraries
+fixed in that development environment.
+Install the environment using: 
+
+`conda env create --file environment.yml --force`
+
+## Project Organization
+
+The `scripts` folder holds code that processes different datasets used by our collaboration. 
+
+Any logic that is general enough to warrant re-use is moved into the `batdata` Python package.
+
+The Python package also holds the schemas, which are described in 
+[`schemas.py`](./batdata/schemas/__init__.py).
+
