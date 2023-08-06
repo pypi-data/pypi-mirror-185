@@ -1,0 +1,2 @@
+[console_scripts]
+searchcode = searchcode.searchcode:searchcode
