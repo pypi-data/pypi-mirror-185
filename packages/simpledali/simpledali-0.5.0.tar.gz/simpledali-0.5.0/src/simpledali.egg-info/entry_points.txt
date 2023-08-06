@@ -1,0 +1,3 @@
+[console_scripts]
+dali2jsonl = simpledali.dali2jsonl:main
+fdsnsourceid = simpledali.fdsnsourceid:main
