@@ -1,0 +1,166 @@
+Metadata-Version: 2.1
+Name: hebrew-names
+Version: 0.0.1
+Summary: Generate random first and last names in Hebrew
+Home-page: https://github.com/alumag/hebrew-names
+Author: Aluma Gelbard
+License: MIT
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+
+hebrew_names
+===============
+
+Random Hebrew name generator
+
+
+Installation
+------------
+
+The script is `available on PyPI`_.  To install with pip::
+
+    pip install hebrew-names
+
+
+Usage
+-----
+
+Hebrew Names can be used as a command line utility or imported as a Python package.
+
+Command Line Usage
+~~~~~~~~~~~~~~~~~~
+To use the script from the command line:
+
+.. code-block:: bash
+
+    $ hebrew_names
+    צבי כהן
+
+Python Package Usage
+~~~~~~~~~~~~~~~~~~~~
+Here are examples of all current features:
+
+.. code-block:: pycon
+
+    >>> import hebrew_names
+    >>> hebrew_names.get_first_name('jew', 'female')
+    'יעל'
+    >>> hebrew_names.get_first_name('jew', 'female')
+    'תמר'
+    >>> hebrew_names.get_first_name('jew', 'male')
+    'אהרון'
+    >>> hebrew_names.get_first_name()
+    'מקסים'
+    >>> hebrew_names.get_first_name()
+    'נור'
+    >>> hebrew_names.get_first_name('muslim', 'male')
+    "מג'די"
+    >>> hebrew_names.get_first_name('muslim', 'male')
+    'מוחמד'
+    >>> hebrew_names.get_first_name('christian', 'male')
+    "'ג'ורג'"
+    >>> hebrew_names.get_first_name('druze', 'male')
+    'ריאן'
+    >>> hebrew_names.get_first_name('other', 'male')
+    'אנטוני'
+    >>> hebrew_names.get_last_name('jew')
+    'גלברד'
+    >>> hebrew_names.get_full_name('muslim', 'female')
+    'אמירה איוב'
+
+License
+-------
+
+This project is released under an `MIT License`_.
+
+Data in the following files are public domain (derived from Israel's Central Bureau of Statistics 1948-2021 data):
+
+- dist.jew.male.first
+- dist.jew.female.first
+- dist.jew.last
+- dist.muslim.male.first
+- dist.muslim.female.first
+- dist.muslim.last
+- dist.christian.male.first
+- dist.christian.female.first
+- dist.christian.last
+- dist.druze.male.first
+- dist.druze.female.first
+- dist.druze.last
+- dist.other.male.first
+- dist.other.female.first
+- dist.other.last
+
+.. _mit license: http://th.mit-license.org/2013
+.. _available on PyPI: http://pypi.python.org/pypi/hebrew-names/
+
+
+Changes
+=======
+
+tip (unreleased)
+----------------
+
+- Add Hebrew dataset for last names
+- Add Hebrew dataset for first names
+- Modified names.get_first_name to only accept 'male' and 'female' gender values
+
+0.3.0 (2013-05-14)
+------------------
+
+- Fixed Python 3 support
+- Improved tests and fixed minor bugs
+
+
+0.2 (2013-02-17)
+----------------
+
+- Initial release
+
+
+Contributing
+============
+
+Please file bugs to the `Github issue tracker`_.  Pull requests are welcome.
+
+.. _Github issue tracker: https://github.com/treyhunner/names/issues
+
+
+Hacking and Pull Requests
+-------------------------
+
+Please try to conform to `PEP8`_ for code contributions and ensure that the
+tests continue to function.
+
+Please include new tests with your pull requests when appropriate.
+
+Feel free to open pull requests before you've finished your code or tests.
+Opening your pull request sooner will allow others to comment on it sooner.
+
+A checklist of things to remember when making a feature:
+
+- Write tests if applicable
+- Note important changes in the `CHANGES`_ file
+- Update the `README`_ file if needed
+- Update the documentation if needed
+- Add yourself to the `AUTHORS`_ file
+
+.. _AUTHORS: AUTHORS.rst
+.. _CHANGES: CHANGES.rst
+.. _README: README.rst
+.. _pep8: http://www.python.org/dev/peps/pep-0008/
