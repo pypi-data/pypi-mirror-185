@@ -1,0 +1,2 @@
+py_simple_lorem
+pkg_resources
