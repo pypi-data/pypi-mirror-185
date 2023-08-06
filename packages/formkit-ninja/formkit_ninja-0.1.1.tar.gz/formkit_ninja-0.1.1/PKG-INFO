@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: formkit-ninja
+Version: 0.1.1
+Summary: A Django-Ninja backend to specify FormKit schemas
+License: GPLv3
+Author: Josh Brooks
+Author-email: josh@catalpa.io
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Django (>=4.1.5,<5.0.0)
+Requires-Dist: django-ninja (>=0.20.0,<0.21.0)
+Requires-Dist: django-ordered-model (>=3.6,<4.0)
+Requires-Dist: pydantic (<2)
+Description-Content-Type: text/markdown
+
+# Formkit-Ninja
+
+A Django-Ninja framework for FormKit schemas and form submissions
+
