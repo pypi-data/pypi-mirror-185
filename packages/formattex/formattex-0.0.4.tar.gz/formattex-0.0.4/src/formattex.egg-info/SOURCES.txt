@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/formattex/__init__.py
+src/formattex/intermediate_repr.py
+src/formattex/test_dump.py
+src/formattex/test_util.py
+src/formattex.egg-info/PKG-INFO
+src/formattex.egg-info/SOURCES.txt
+src/formattex.egg-info/dependency_links.txt
+src/formattex.egg-info/entry_points.txt
+src/formattex.egg-info/requires.txt
+src/formattex.egg-info/top_level.txt
