@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Rsalogy/Rsa.py
+Rsalogy/prime.py
+Rsalogy.egg-info/PKG-INFO
+Rsalogy.egg-info/SOURCES.txt
+Rsalogy.egg-info/dependency_links.txt
+Rsalogy.egg-info/top_level.txt

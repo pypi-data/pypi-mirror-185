@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Rsalogy
+Version: 0.1
+Summary: rsa encrypt and decrypt
+Home-page: https://github.com/MrFploit/rsalogy
+Author: Codelogy
+Author-email: codelogyofficial@gmail.com
+License: MIT
+Keywords: Rsalogy
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
