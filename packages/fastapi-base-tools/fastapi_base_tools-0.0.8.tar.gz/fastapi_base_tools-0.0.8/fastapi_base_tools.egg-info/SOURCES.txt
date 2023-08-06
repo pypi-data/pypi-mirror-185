@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+fastapi_base_tools.egg-info/PKG-INFO
+fastapi_base_tools.egg-info/SOURCES.txt
+fastapi_base_tools.egg-info/dependency_links.txt
+fastapi_base_tools.egg-info/requires.txt
+fastapi_base_tools.egg-info/top_level.txt
+fastapi_tools/__init__.py
+fastapi_tools/middlewares.py
