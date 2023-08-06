@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/messagequeue/__init__.py
+src/messagequeue/message_queue.py
+src/smartez_mq.egg-info/PKG-INFO
+src/smartez_mq.egg-info/SOURCES.txt
+src/smartez_mq.egg-info/dependency_links.txt
+src/smartez_mq.egg-info/requires.txt
+src/smartez_mq.egg-info/top_level.txt
