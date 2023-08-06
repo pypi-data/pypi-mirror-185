@@ -1,0 +1,229 @@
+{
+  "identification": {
+    "project": "ROC",
+    "name": "roc.guest",
+    "identifier": "roc.guest",
+    "description": "Gse data ReqUESTer (GUEST): Plugin to handle data products from/to ground tests (MEB GSE, ADS GSE)"
+  },
+  "release": {
+    "version": "1.3.0",
+    "date": "2023-01-13",
+    "author": "Xavier Bonnin <xavier.bonnin@obspm.fr>, ROC Team <roc.support@sympa.obspm.fr>",
+    "modification": "Update xml_to_l0 command tasks",
+    "url": "https://gitlab.obspm.fr/ROC/Pipelines/Plugins/GUEST"
+  },
+  "tasks": [
+    {
+      "name": "mebdb_to_test",
+      "category": "Software execution",
+      "description": "Extract tests from the MEB GSE database and store them internally",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "xml_to_test",
+      "category": "Software execution",
+      "description": "Parse a MEB GSE test log XML file and store data as a RawData object in the pipeline",
+      "inputs": {
+        "test_log_xml": {
+          "identifier": "SOLO_LZ_RPW-MEBGSE-TESTLOG"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "raw_to_test",
+      "category": "Software execution",
+      "description": "Convert RawData object into Test object",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "clear_test",
+      "category": "Software execution",
+      "description": "Clear a test in the ROC database",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "mebdb_to_xml",
+      "category": "Software execution",
+      "description": "Get data from the MEB-GSE database and put it into an XML file test_log",
+      "inputs": {},
+      "outputs": {
+        "test_log_xml": {
+          "identifier": "SOLO_LZ_RPW-MEBGSE-TESTLOG"
+        }
+      }
+    },
+    {
+      "name": "copy_xml",
+      "category": "Software execution",
+      "description": "Copy Test log XML file into the outputdir with from_xml command",
+      "inputs": {
+        "test_log_xml": {
+          "identifier": "SOLO_LZ_RPW-MEBGSE-TESTLOG"
+        }
+      },
+      "outputs": {
+        "test_log_xml": {
+          "identifier": "SOLO_LZ_RPW-MEBGSE-TESTLOG"
+        }
+      }
+    },
+    {
+      "name": "xml_to_txt",
+      "category": "Software execution",
+      "description": "Convert a given MEB GSE test log XML file to an ADS GSE ASCII file",
+      "inputs": {
+        "test_log_xml": {
+          "identifier": "SOLO_LZ_RPW-MEBGSE-TESTLOG"
+        }
+      },
+      "outputs": {
+        "ads_gse_txt": {
+          "identifier": "SOLO_LZ_RPW-ADS-TXT",
+          "name": "SOLO_LZ_RPW-ADS-TXT",
+          "description": "ADS GSE text file containing binary packet data",
+          "level": "LZ"
+        }
+      }
+    },
+    {
+      "name": "txt_to_test",
+      "category": "Data conversion",
+      "description": "Parse a ADS GSE ASCII file containing RPW TM/TC data and convert it to GUEST Test object",
+      "inputs": {
+        "ads_gse_txt": {
+          "identifier": "SOLO_LZ_RPW-ADS-TXT"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "l0_to_test",
+      "category": "Data conversion",
+      "description": "Parse an input RPW L0 HD5 file and convert it to Test object",
+      "inputs": {
+        "l0_file": {
+          "identifier": "SOLO_L0_RPW"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "test_to_l0",
+      "category": "Data conversion",
+      "description": "Export Test object data into a RPW L0 HDF5 file",
+      "inputs": {},
+      "outputs": {
+        "l0_file": {
+          "identifier": "SOLO_L0_RPW"
+        }
+      }
+    },
+    {
+      "name": "test_to_xml",
+      "category": "Software execution",
+      "description": "Save a test log object into an output XML file",
+      "inputs": {},
+      "outputs": {
+        "test_log_xml": {
+          "identifier": "SOLO_LZ_RPW-MEBGSE-TESTLOG",
+          "name": "SOLO_LZ_RPW-MEBGSE-TESTLOG",
+          "description": "Test log dataset",
+          "level": "LZ"
+        }
+      }
+    },
+    {
+      "name": "test_to_rocdb",
+      "category": "Software execution",
+      "description": "Put data from the MEB GSE test log into the ROC database",
+      "inputs": {
+        "test_log_xml": {
+          "identifier": "SOLO_LZ_RPW-MEBGSE-TESTLOG"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "test_to_mebdb",
+      "category": "Software execution",
+      "description": "Put data from an input test log XML into the MEB GSE database",
+      "inputs": {
+        "test_log_xml": {
+          "identifier": "SOLO_LZ_RPW-MEBGSE-TESTLOG"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "raw_to_txt",
+      "category": "Data production",
+      "description": "Create ADS text file from input RawData object.",
+      "inputs": {},
+      "outputs": {
+        "ads_gse_txt": {
+          "identifier": "SOLO_LZ_RPW-ADS",
+          "name": "SOLO_LZ_RPW-ADS",
+          "description": "ADS GSE text file containing binary packet data",
+          "level": "LZ"
+        }
+      }
+    },
+    {
+      "name": "raw_to_tmraw",
+      "category": "Data production",
+      "description": "Create a MOC DDS TmRaw response file from an input RawData instance.",
+      "inputs": {},
+      "outputs": {
+        "dds_tmraw_xml": {
+          "identifier": "SOLO_LZ_RPW-DDS-TMRAW",
+          "name": "SOLO_LZ_RPW-DDS-TMRAW",
+          "description": "MOC DDS TmRaw response XML file",
+          "level": "LZ"
+        }
+      }
+    },
+    {
+      "name": "raw_to_tcreport",
+      "category": "Data production",
+      "description": "Create a MOC DDS TcReport response file from an input RawData instance.",
+      "inputs": {},
+      "outputs": {
+        "dds_tcreport_xml": {
+          "identifier": "SOLO_LZ_RPW-DDS-TCREPORT",
+          "name": "SOLO_LZ_RPW-DDS-TCREPORT",
+          "description": "MOC DDS TcReport response XML file",
+          "level": "AUX"
+        }
+      }
+    },
+    {
+      "name": "txt_to_dds",
+      "category": "Data conversion",
+      "description": "Convert a given ADS GSE ASCII file into MOC DDS response XML file",
+      "inputs": {
+        "ads_gse_txt": {
+          "identifier": "SOLO_LZ_RPW-ADS-TXT"
+        }
+      },
+      "outputs": {
+        "dds_response_xml": {
+          "identifier": "SOLO_LZ_RPW-DDS-XML",
+          "name": "SOLO_LZ_RPW-DDS-XML",
+          "description": "DDS XML file containing binary packet data",
+          "level": "LZ"
+        }
+      }
+    },
+    {
+      "name": "parse_test_packets",
+      "category": "Packet parsing",
+      "description": "Parse RPW packet binary data in input Test class instance",
+      "inputs": {},
+      "outputs": {}
+    }
+  ]
+}
