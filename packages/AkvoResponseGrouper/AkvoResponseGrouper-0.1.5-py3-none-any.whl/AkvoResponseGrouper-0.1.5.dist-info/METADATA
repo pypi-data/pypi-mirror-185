@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: AkvoResponseGrouper
+Version: 0.1.5
+Summary: Fast-API Response catalog for pre-computed query
+Home-page: https://github.com/akvo/Akvo-ResponseGrouper
+Author: Akvo
+Author-email: tech.consultancy@akvo.org
+Project-URL: Documentation, https://github.com/akvo/Akvo-ResponseGrouper
+Project-URL: Bug Reports, https://github.com/akvo/Akvo-ResponseGrouper/issues
+Project-URL: Source Code, https://github.com/akvo/Akvo-ResponseGrouper
+Keywords: akvo,data,helper,pypi,package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Framework :: FastAPI
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: sqlalchemy-views
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+
+# Akvo-ResponseGrouper
+Fast-API Response catalog for pre-computed query
