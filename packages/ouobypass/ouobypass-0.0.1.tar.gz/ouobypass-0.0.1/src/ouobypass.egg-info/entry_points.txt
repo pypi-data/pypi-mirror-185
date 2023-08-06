@@ -1,0 +1,2 @@
+[console_scripts]
+ouobypass = ouobypass.ouo_bypass:ouo
