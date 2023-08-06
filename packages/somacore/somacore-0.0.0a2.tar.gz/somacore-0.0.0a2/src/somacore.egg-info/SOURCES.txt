@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+src/somacore/__init__.py
+src/somacore/_generated_version.py
+src/somacore/_version.py
+src/somacore/_wrap.py
+src/somacore/base.py
+src/somacore/composed.py
+src/somacore/data.py
+src/somacore/options.py
+src/somacore/py.typed
+src/somacore.egg-info/PKG-INFO
+src/somacore.egg-info/SOURCES.txt
+src/somacore.egg-info/dependency_links.txt
+src/somacore.egg-info/requires.txt
+src/somacore.egg-info/top_level.txt
