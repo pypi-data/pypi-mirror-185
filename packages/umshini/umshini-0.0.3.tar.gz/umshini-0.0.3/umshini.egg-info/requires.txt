@@ -1,0 +1,12 @@
+colorama
+pettingzoo==1.22.2
+supersuit==3.7.0
+gymnasium
+numpy
+halo
+
+[atari]
+pettingzoo[atari]==1.22.2
+
+[classic]
+pettingzoo[classic]==1.22.2
