@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: aiopi
+Version: 0.0.1
+Summary: Async data integration for OSI's PI Web API.
+Author: Chris Newville
+Author-email: chrisnewville1396@gmail.com
+License: MIT
+Project-URL: Changelog, https://github.com/newvicx/aiopi/blob/master/CHANGELOG.md
+Project-URL: Source, https://github.com/newvicx/aiopi
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp (>=3.8.3)
+Requires-Dist: dints (>=0.0.1)
+Requires-Dist: orjson (>=3.8.4)
+Requires-Dist: pendulum (>=2.1.2)
+Requires-Dist: pydantic (>=1.10.4)
+Requires-Dist: pythonnet (>=3.0.1)
+Requires-Dist: uplink (>=0.9.7)
+
+
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
