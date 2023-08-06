@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: defi-marketplace-py
+Version: 0.1.1
+Summary: Python package
+Home-page: https://github.com/nevermined-io/defi-marketplace-py
+Author: nevermined.io
+Author-email: root@nevermined.io
+License: MIT
+Keywords: finance,analysis
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv
+
