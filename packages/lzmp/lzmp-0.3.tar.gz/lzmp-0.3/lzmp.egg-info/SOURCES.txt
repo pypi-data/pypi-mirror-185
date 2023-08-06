@@ -1,0 +1,9 @@
+README.md
+lzmp.py
+lzmp_test.py
+pyproject.toml
+lzmp.egg-info/PKG-INFO
+lzmp.egg-info/SOURCES.txt
+lzmp.egg-info/dependency_links.txt
+lzmp.egg-info/entry_points.txt
+lzmp.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+lzmp-test = lzmp_test:main

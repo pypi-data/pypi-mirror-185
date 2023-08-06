@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lzmp"
+version = "0.3"
+authors = [
+  { name="Stéphane De Mita", email="demita@gmail.com" },
+]
+description = "simple wrapper around the multiprocessing module allowing the lazy programmer to run batches of processes"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/demita/lzmp"
+"Documentation" = "https://lzmp.readthedocs.io/en/latest/"
+
+[tool.setuptools]
+py-modules = ['lzmp', 'lzmp_test']
+
+[project.scripts]
+lzmp-test = "lzmp_test:main"
