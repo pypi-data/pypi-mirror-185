@@ -1,0 +1,4 @@
+[console_scripts]
+cs = main:main
+cswap = main:main
+
