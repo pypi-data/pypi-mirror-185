@@ -1,0 +1,7 @@
+flask_paypal_lib/__init__.py,sha256=wrMOAzA4J7VyfsA79aPdOI88S5USyLE6GTKhmME5xQA,103
+flask_paypal_lib/flaskpaypalsdk.py,sha256=r4U5PuVB2E4zqA9vsHRz3b5jSqscEjLV1euPu3NxHCw,8967
+flask_paypal_lib/sandbox.py,sha256=k8Vs1cxJ99lZFrozJjvfI8KiTUqUpKRhyehHU1W6toY,8968
+flaskpaypallib-0.0.1.dist-info/METADATA,sha256=uGSAlq1OX6Dvf1GbcrU1lRf0TaiQcQlBOukJSuF0cdM,921
+flaskpaypallib-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+flaskpaypallib-0.0.1.dist-info/top_level.txt,sha256=pbIqZGXFd70IEYuyEuDPJdsYzBCU_n0HTN0lKUFsK7E,17
+flaskpaypallib-0.0.1.dist-info/RECORD,,
