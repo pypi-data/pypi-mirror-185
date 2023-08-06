@@ -1,0 +1,304 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "PrivateNote": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PaymentType": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "MetaData": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "LastUpdatedTime": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "date-time"
+        },
+        "CreateTime": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "date-time"
+        }
+      }
+    },
+    "RemitToAddr": {
+      "$ref": "shared/address.json"
+    },
+    "CurrencyRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "ExchangeRate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "singer.decimal"
+    },
+    "TotalAmt": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "singer.decimal"
+    },
+    "PrintStatus": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "AccountRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "DepartmentRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "Id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EntityRef": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "type": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "value": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "TxnDate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "domain": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Credit": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "SyncToken": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Line": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "ItemBasedExpenseLineDetail": {
+            "$ref": "shared/item_based_line.json"
+          },
+          "AccountBasedExpenseLineDetail": {
+            "$ref": "shared/account_based_line.json"
+          },
+          "Amount": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "singer.decimal"
+          },
+          "DetailType": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Description": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "LinkedTxn": {
+            "$ref": "shared/linked_txn.json"
+          },
+          "LineNum": {
+            "format": "singer.decimal",
+            "type": ["null", "string"]
+          }
+        }
+      }
+    },
+    "PurchaseEx": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "any": {
+          "type": [
+            "null",
+            "array"
+          ],
+          "items": {
+            "type": [
+              "null",
+              "object"
+            ],
+            "properties": {
+              "name": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "scope": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "nil": {
+                "type": [
+                  "null",
+                  "boolean"
+                ]
+              },
+              "globalScope": {
+                "type": [
+                  "null",
+                  "boolean"
+                ]
+              },
+              "value": {
+                "type": [
+                  "null",
+                  "object"
+                ],
+                "properties": {
+                  "Name": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "Value": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                }
+              },
+              "declaredType": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "typeSubstituted": {
+                "type": [
+                  "null",
+                  "boolean"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "DocNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "GlobalTaxCalculation": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "IncludeInAnnualTPAR": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "LinkedTxn": {
+      "$ref": "shared/linked_txn.json"
+    },
+    "PaymentMethodRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "RecurDataRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "TransactionLocationType": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TxnSource": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TxnTaxDetail": {
+      "$ref": "shared/txn_tax_detail.json"
+    },
+    "patternProperties": {".+": {}}
+  }
+}

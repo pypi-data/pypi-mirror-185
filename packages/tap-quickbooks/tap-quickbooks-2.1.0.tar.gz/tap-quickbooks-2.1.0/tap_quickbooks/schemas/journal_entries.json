@@ -1,0 +1,239 @@
+{
+  "properties": {
+    "TaxRateRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "DocNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CurrencyRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "Id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "domain": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SyncToken": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Line": {
+      "items": {
+        "properties": {
+          "Id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Amount": {
+            "format": "singer.decimal",
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "JournalEntryLineDetail": {
+            "properties": {
+              "JournalCodeRef": {
+                "$ref": "shared/ref_schema.json"
+              },
+              "AccountRef": {
+                "$ref": "shared/ref_schema.json"
+              },
+              "ClassRef": {
+                "$ref": "shared/ref_schema.json"
+              },
+              "DepartmentRef": {
+                "$ref": "shared/ref_schema.json"
+              },
+              "TaxCodeRef": {
+                "$ref": "shared/ref_schema.json"
+              },
+              "BillableStatus": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "PostingType": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "TaxAmount": {
+                "format": "singer.decimal",
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "Entity": {
+                "type": [
+                  "null",
+                  "object"
+                ],
+                "properties": {
+                  "EntityRef": {
+                    "$ref": "shared/ref_schema.json"
+                  },
+                  "Type": {
+                    "type": [
+                      "null",
+                      "string"
+                    ]
+                  }
+                }
+              },
+              "TaxApplicableOn": {
+                "type": [
+                  "null",
+                  "string"
+                ]
+              },
+              "TaxInclusiveAmt": {
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "format": "singer.decimal"
+              }
+            },
+            "type": [
+              "null",
+              "object"
+            ]
+          },
+          "DetailType": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Description": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "LineNum": {
+            "format": "singer.decimal",
+            "type": ["null", "string"]
+          },
+          "DescriptionLineDetail": {
+            "$ref": "shared/description_line.json"
+          }
+        },
+        "type": [
+          "null",
+          "object"
+        ]
+      },
+      "type": [
+        "null",
+        "array"
+      ]
+    },
+    "TxnDate": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PrivateNote": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ExchangeRate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "singer.decimal"
+    },
+    "MetaData": {
+      "properties": {
+        "CreateTime": {
+          "format": "date-time",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "LastUpdatedTime": {
+          "format": "date-time",
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "Adjustment": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "GlobalTaxCalculation": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "HomeTotalAmt": {
+      "format": "singer.decimal",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "JournalCodeRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "RecurDataRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "TotalAmt": {
+      "format": "singer.decimal",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TransactionLocationType": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TxnTaxDetail": {
+      "$ref": "shared/txn_tax_detail.json"
+    }
+  },
+  "type": [
+    "null",
+    "object"
+  ]
+}

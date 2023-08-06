@@ -1,0 +1,158 @@
+{
+  "properties": {
+    "HourlyRate": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "CustomerRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "Taxable": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "Description": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Minutes": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "MetaData": {
+      "properties": {
+        "CreateTime": {
+          "format": "date-time",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "LastUpdatedTime": {
+          "format": "date-time",
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "ItemRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "Id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "domain": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TxnDate": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SyncToken": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmployeeRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "BillableStatus": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "NameOf": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Hours": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "BreakHours": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "BreakMinutes": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "ClassRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "DepartmentRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "EndTime": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "StartTime": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "PayrollItemRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "TransactionLocationType": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "VendorRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "CostRate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "singer.decimal"
+    },
+    "patternProperties": {".+": {}}
+  },
+  "type": [
+    "null",
+    "object"
+  ]
+}

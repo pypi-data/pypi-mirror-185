@@ -1,0 +1,416 @@
+{
+  "type": [
+    "null",
+    "object"
+  ],
+  "properties": {
+    "Balance": {
+      "format": "singer.decimal",
+      "type": ["null", "string"]
+    },
+    "CustomerRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "LinkedTxn": {
+      "$ref": "shared/linked_txn.json"
+    },
+    "ApplyTaxAfterDiscount": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "PaymentRefNum": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TxnTaxDetail": {
+      "$ref": "shared/txn_tax_detail.json"
+    },
+    "ClassRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "DepartmentRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "PrintStatus": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "MetaData": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "LastUpdatedTime": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "date-time"
+        },
+        "CreateTime": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "date-time"
+        }
+      }
+    },
+    "CustomField": {
+      "items": {
+          "$ref": "shared/custom_field.json"
+      },
+      "type": [
+        "null",
+        "array"
+      ]
+    },
+    "BillAddr": {
+      "$ref": "shared/address.json"
+    },
+    "domain": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SyncToken": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "EmailStatus": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Line": {
+      "type": [
+        "null",
+        "array"
+      ],
+      "items": {
+        "type": [
+          "null",
+          "object"
+        ],
+        "properties": {
+          "Amount": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "singer.decimal"
+          },
+          "LineNum": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "DetailType": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Id": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Description": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "SalesItemLineDetail": {
+            "$ref": "shared/sales_item_line.json"
+          },
+          "DiscountLineDetail": {
+            "$ref": "shared/discount_line.json"
+          },
+          "SubtotalLineDetail": {
+            "$ref": "shared/subtotal_line.json"
+          },
+          "GroupLineDetail": {
+            "$ref": "shared/group_line.json"
+          },
+          "DescriptionLineDetail": {
+            "$ref": "shared/description_line.json"
+          }
+        }
+      }
+    },
+    "CurrencyRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "PaymentMethodRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "TxnDate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "Id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "DocNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "BillEmail": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "Address": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "CustomerMemo": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      }
+    },
+    "ShipAddr": {
+      "$ref": "shared/address.json"
+    },
+    "ExchangeRate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "singer.decimal"
+    },
+    "HomeTotalAmt": {
+      "format": "singer.decimal",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TotalAmt": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "singer.decimal"
+    },
+    "DepositToAccountRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "CreditCardPayment": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "CreditChargeResponse": {
+          "type": [
+            "null",
+            "object"
+          ],
+          "properties": {
+            "Status": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "AuthCode": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "CCTransId": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "TxnAuthorizationTime": {
+              "type": [
+                "null",
+                "string"
+              ],
+              "format": "date-time"
+            }
+          }
+        },
+        "CreditChargeInfo": {
+          "type": [
+            "null",
+            "object"
+          ],
+          "properties": {
+            "CcExpiryMonth": {
+              "type": [
+                "null",
+                "integer"
+              ]
+            },
+            "ProcessPayment": {
+              "type": [
+                "null",
+                "boolean"
+              ]
+            },
+            "PostalCode": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "Amount": {
+              "type": [
+                "null",
+                "string"
+              ],
+              "format": "singer.decimal"
+            },
+            "NameOnAcct": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "CcExpiryYear": {
+              "type": [
+                "null",
+                "integer"
+              ]
+            },
+            "Type": {
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            "BillAddrStreet": {
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "DeliveryInfo": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "DeliveryType": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "DeliveryTime": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "format": "date-time"
+        }
+      }
+    },
+    "GlobalTaxCalculation": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "HomeBalance": {
+      "format": "singer.decimal",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PrivateNote": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "RecurDataRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "ShipDate": {
+      "type": [
+        "null",
+        "string"
+      ],
+      "format": "date-time"
+    },
+    "ShipFromAddr": {
+      "$ref": "shared/address.json"
+    },
+    "ShipMethodRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "TrackingNum": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TransactionLocationType": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TxnSource": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "FreeFormAddress": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "patternProperties": {".+": {}}
+  }
+}

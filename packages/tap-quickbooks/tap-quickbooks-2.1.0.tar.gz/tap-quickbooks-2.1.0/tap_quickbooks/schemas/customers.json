@@ -1,0 +1,341 @@
+{
+  "properties": {
+    "DefaultTaxCodeRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "SalesTermRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "PaymentMethodRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "ResaleNum": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CurrencyRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "MiddleName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "BillAddr": {
+      "$ref": "shared/address.json"
+    },
+    "PrimaryEmailAddr": {
+      "properties": {
+        "Address": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "Balance": {
+      "format": "singer.decimal",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CompanyName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "FamilyName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "FullyQualifiedName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PrimaryPhone": {
+      "properties": {
+        "FreeFormNumber": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "BalanceWithJobs": {
+      "format": "singer.decimal",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "BillWithParent": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "Level": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "ParentRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "PrintOnCheckName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Job": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "Mobile": {
+      "properties": {
+        "FreeFormNumber": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "PreferredDeliveryMethod": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SyncToken": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Taxable": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "DisplayName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "MetaData": {
+      "properties": {
+        "CreateTime": {
+          "format": "date-time",
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "LastUpdatedTime": {
+          "format": "date-time",
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "WebAddr": {
+      "properties": {
+        "URI": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "Id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "domain": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Active": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "GivenName": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "ShipAddr": {
+      "$ref": "shared/address.json"
+    },
+    "Fax": {
+      "properties": {
+        "FreeFormNumber": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "ARAccountRef": {
+      "$ref": "shared/ref_schema.json"
+    },
+    "AlternatePhone": {
+      "properties": {
+        "FreeFormNumber": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "BusinessNumber": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "CustomerTypeRef": {
+      "properties": {
+        "value": {
+          "type": [
+            "null",
+            "string"
+          ]
+        }
+      },
+      "type": [
+        "null",
+        "object"
+      ]
+    },
+    "GSTIN": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "GSTRegistrationType": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "IsProject": {
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    "Notes": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "OpenBalanceDate": {
+      "format": "date-time",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "PrimaryTaxIdentifier": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "SecondaryTaxIdentifier": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Suffix": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "TaxExemptionReasonId": {
+      "type": [
+        "null",
+        "integer"
+      ]
+    },
+    "Title": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "Source": {
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  },
+  "type": [
+    "null",
+    "object"
+  ]
+}
