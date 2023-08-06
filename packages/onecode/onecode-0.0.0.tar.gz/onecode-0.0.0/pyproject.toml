@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "onecode"
+version = "0.0.0"
+description = "Python skeleton and library for OneCode procedures"
+readme = "README.md"
+authors = ["DeepLime <support@deeplime.io>"]
+license = "MIT"
+keywords = ["onecode", "procedures"]
+homepage = "https://github.com/deeplime-io/onecode"
+repository = "https://github.com/deeplime-io/onecode"
+documentation = "https://github.com/deeplime-io/onecode"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+  "Operating System :: Unix",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python",
+  "Topic :: Scientific/Engineering"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7, <4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0.2"
+pytest-cov = "^2.10.1"
+
+[tool.poetry.scripts]
+onecode-start = 'onecode.cli.start:main'
+onecode-create = 'onecode.cli.create:main'
+onecode-add = 'onecode.cli.add:main'
+onecode-extract = 'onecode.cli.extract:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
