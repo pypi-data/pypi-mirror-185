@@ -1,0 +1,11 @@
+gravity_auto_exit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gravity_auto_exit/entrance_test.py,sha256=Za8GIo89wEGeWktuyqVaCPa1-of0Ue0fcFxkyKbd3AA,563
+gravity_auto_exit/logger.py,sha256=fqAx0eDI7R3dEGnnkoIqaTbg2qrcVuRUGAeDFnMQktA,978
+gravity_auto_exit/main.py,sha256=j_s_E_hY1Pf_0QXeRZFCb04hqvQP9F78qTSkVv7xZw8,6573
+gravity_auto_exit/settings.py,sha256=W4ZrNBbyEsoDMvEAvRK5AH6Q2DLrK2tCzVX3i069rpE,327
+gravity_auto_exit/logs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gravity_auto_exit-1.5.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+gravity_auto_exit-1.5.0.dist-info/METADATA,sha256=4-XU_akFegZPOU351DinbQEaj8NLwmtxlapkvJYSviE,363
+gravity_auto_exit-1.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gravity_auto_exit-1.5.0.dist-info/top_level.txt,sha256=O896kTA32MK0-JQ_QK-QUsag8oA7wVEeEJGjgZiBpt4,18
+gravity_auto_exit-1.5.0.dist-info/RECORD,,
