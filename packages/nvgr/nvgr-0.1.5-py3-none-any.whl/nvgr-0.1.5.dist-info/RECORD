@@ -1,0 +1,12 @@
+nvgr/__init__.py,sha256=i8X8xUSulh9DWzal7gKWtJmtD_vjqrXTgZN7ygBq54Y,322
+nvgr/course.py,sha256=JnJ-b7R8K3MH6QE5USsJEG92AcleXniwnX-mgr5oOlI,1654
+nvgr/distance.py,sha256=qkTuvyh2TtLNNityh2oPBFcrnZ8eRR8AvBvQkKXTF94,2485
+nvgr/format.py,sha256=beYvWHZ--TqKq046zIL2V164Y73zPJiFOxnrYh6hDZY,2552
+nvgr/latitude.py,sha256=uUGDM-l_MzJD6aQgjE3MrRIP9SA1Lo9HqP6_vuSUayg,3004
+nvgr/location.py,sha256=REM06vHsxMWSbIhJX7iygrPqdNqs1_3FkCCCSj36oas,357
+nvgr/longitude.py,sha256=-i14mV9I2J5MtpGlYvCcLEupDkgiQu9YbWjy8z2ZG3U,3040
+nvgr/loxodrome.py,sha256=nzb2N5ZcOsnWcwsG876rO39pCVvrj6euspB3g8NwMwo,2853
+nvgr-0.1.5.dist-info/WHEEL,sha256=_LDBqpgIVFNHZvvFOGbg2pvJOENq6RHAyT5px-HeX0U,87
+nvgr-0.1.5.dist-info/METADATA,sha256=jZgt7c1OHnudf3LP4obxJpioSQ6eZFt9cRi7Gv-B-dc,415
+nvgr-0.1.5.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nvgr-0.1.5.dist-info/RECORD,,
