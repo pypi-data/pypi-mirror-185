@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+Mensajes_RoollAvendano.egg-info/PKG-INFO
+Mensajes_RoollAvendano.egg-info/SOURCES.txt
+Mensajes_RoollAvendano.egg-info/dependency_links.txt
+Mensajes_RoollAvendano.egg-info/requires.txt
+Mensajes_RoollAvendano.egg-info/top_level.txt
+mensajes/__init__.py
+mensajes/adios/__init__.py
+mensajes/adios/despedidas.py
+mensajes/hola/__init__.py
+mensajes/hola/saludo.py
+tests/__init__.py
+tests/test_hola.py
