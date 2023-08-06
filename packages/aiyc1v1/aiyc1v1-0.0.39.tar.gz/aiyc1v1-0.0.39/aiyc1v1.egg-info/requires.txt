@@ -1,0 +1,6 @@
+pyecharts
+faker
+pandas
+openpyxl
+xlrd
+requests
