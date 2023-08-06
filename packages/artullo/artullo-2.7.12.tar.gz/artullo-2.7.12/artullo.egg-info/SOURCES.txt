@@ -1,0 +1,5 @@
+setup.py
+artullo.egg-info/PKG-INFO
+artullo.egg-info/SOURCES.txt
+artullo.egg-info/dependency_links.txt
+artullo.egg-info/top_level.txt
