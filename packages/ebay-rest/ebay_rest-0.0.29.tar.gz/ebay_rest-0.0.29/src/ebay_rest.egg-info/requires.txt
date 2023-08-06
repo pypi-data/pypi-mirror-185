@@ -1,0 +1,8 @@
+certifi
+python_dateutil
+requests
+six
+urllib3
+
+[complete]
+selenium
