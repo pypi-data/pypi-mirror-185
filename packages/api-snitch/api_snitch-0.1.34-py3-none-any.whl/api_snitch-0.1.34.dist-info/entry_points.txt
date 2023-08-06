@@ -1,0 +1,2 @@
+[console_scripts]
+snitch = snitch.main:run
