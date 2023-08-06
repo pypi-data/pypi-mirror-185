@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: gosei
+Version: 0.1.0
+Summary: 
+Author: sobamchan
+Author-email: oh.sore.sore.soutarou@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: pillow (>=9.4.0,<10.0.0)
+Description-Content-Type: text/markdown
+
+# gosei
+
+Make a collage from two photos.
+
+# Installation
+
+```bash
+pip install gosei
+```
+
+# Run
+
+```
+gosei -a /path/to/first/image -b /path/to/second/image -o /save/path
+```
+
+# Limitations
+
+- Only works with vertical photos in same size now
+
