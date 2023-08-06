@@ -1,0 +1,8 @@
+pbspark/__init__.py,sha256=Go7Bl1CHv2Vby74gwkTYm52Lf-8821o-IKdIaGAjM_U,209
+pbspark/_proto.py,sha256=STNEVB9xHdpbKD7fSeJrSED-_rBQtj5mOezjcp8akdk,31126
+pbspark/_timestamp.py,sha256=8w4hQoqiow36wMraelUVkzCXSOoLwVKCpKHlEUS_wQs,919
+pbspark/_version.py,sha256=iPlYCcIzuzW7T2HKDkmYlMkRI51dBLfNRxPPiWrfw9U,22
+pbspark-0.8.0.dist-info/LICENSE.txt,sha256=c3Ijuqj7EnfJllH5mlwBChp7VehwBnQgpUYtrxDMYBc,1073
+pbspark-0.8.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pbspark-0.8.0.dist-info/METADATA,sha256=UVpK6AtpWmiErq0HgONcglY1cJK7QZ--fsY2h8DIxpE,10765
+pbspark-0.8.0.dist-info/RECORD,,
