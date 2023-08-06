@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/irt_camera.egg-info/PKG-INFO
+src/irt_camera.egg-info/SOURCES.txt
+src/irt_camera.egg-info/dependency_links.txt
+src/irt_camera.egg-info/requires.txt
+src/irt_camera.egg-info/top_level.txt
+src/irtcamera/__init__.py
+src/irtcamera/mlx90640.py
+src/irtcamera/__pycache__/__init__.cpython-39.pyc
+src/irtcamera/__pycache__/mlx90640.cpython-39.pyc
