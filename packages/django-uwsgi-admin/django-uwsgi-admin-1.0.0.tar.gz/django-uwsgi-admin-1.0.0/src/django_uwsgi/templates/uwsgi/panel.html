@@ -1,0 +1,152 @@
+{% load i18n %}
+{% if unavailable %}
+    <h2>{% trans 'ERROR: uWSGI is not available!' %}</h2>
+{% else %}
+<style>
+    body.app-django_uwsgi .submit-row a.button {
+        display: inline-block
+    }
+    #djDebug .submit-row {
+        padding-top: 5px;
+        padding-bottom: 5px
+    }
+</style>
+
+<div id="content-main" class="inline-related tabular">
+    <div class="module">
+        <table class="grp-table">
+            <caption>
+                <h2>{% trans 'Status' %}</h2>
+            </caption>
+            <thead>
+                <tr>
+                    <th>{% trans "Option" %}</th>
+                    <th>{% trans "Value" %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for key, value in stats %}
+                <tr class="{% cycle 'djDebugOdd' 'djDebugEven' %}">
+                    <td>{{ key }}</td>
+                    <td>{{ value }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="module">
+        <table class="grp-table">
+            <caption>
+                <h2>{% trans 'Options' %} (<a href="http://uwsgi-docs.readthedocs.org/en/latest/Options.html">read docs</a>)</h2>
+            </caption>
+            <thead>
+                <tr>
+                    <th>{% trans "Option" %}</th>
+                    <th>{% trans "Value" %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for key, value in uwsgi.opt.items %}
+                <tr class="{% cycle 'djDebugOdd' 'djDebugEven' %}">
+                    <td><a href="http://uwsgi-docs.readthedocs.org/en/latest/Options.html#{{ key }}">{{ key }}</a></td>
+                    {# uWSGI allows to use options without values if value = true #}
+                    <td>{% if value %}{{ value.decode }}{% else %}true{% endif %}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="module">
+        <table class="grp-table">
+            <caption>
+                <h2>{% trans 'Magic table' %} (<a href="http://uwsgi-docs.readthedocs.io/en/latest/Configuration.html#magic-variables">read docs</a>)</h2>
+            </caption>
+            <thead>
+                <tr>
+                    <th>{% trans "Option" %}</th>
+                    <th>{% trans "Value" %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for key, value in uwsgi.magic_table.items %}
+                <tr class="{% cycle 'djDebugOdd' 'djDebugEven' %}">
+                    <td>{{ key.decode }}</td>
+                    <td>{{ value.decode }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="module balanced">
+        <table class="grp-table">
+            <caption>
+                <h2>{% trans 'Workers' %}</h2>
+            </caption>
+            {% include 'uwsgi/includes/workers.html' %}
+        </table>
+    </div>
+    <div class="module balanced">
+        <table class="grp-table">
+            <caption>
+                <h2>{% trans 'Applications' %}</h2>
+            </caption>
+            {% include 'uwsgi/includes/applications.html' %}
+        </table>
+    </div>
+    {% if uwsgi.spooler_jobs %}
+    <div class="module balanced">
+        <table class="grp-table">
+            <caption>
+                <h2>{% trans 'Spooler' %}</h2>
+            </caption>
+            {% include 'uwsgi/includes/jobs.html' %}
+        </table>
+    </div>
+    {% endif %}
+    <div class="module balanced">
+        <table class="grp-table">
+            <caption>
+                <h2>{% trans 'Actions' %}</h2>
+            </caption>
+            <thead>
+                <tr>
+                    <th>{% trans 'Send uWSGI Signal' %}</th>
+                    <th>{% trans 'Send uWSGI Log message' %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="djDebugOdd">
+                    <td align="left">
+                        <form action="{% url 'admin:django_uwsgi_signal' %}" method="post">
+                            {% csrf_token %}
+                            <label for="signal_number">{% trans 'Signal number' %}</label>
+                            <input id="signal_number" type="text" size="3" name="signal_number" required>
+                            <input type="submit" class="button" value="{% trans 'Send' %}">
+                        </form>
+                    </td>
+                    <td align="left">
+                        <form action="{% url 'admin:django_uwsgi_log' %}" method="post">
+                            {% csrf_token %}
+                            <label for="log_message">{% trans 'Log message' %}</label>
+                            <input id="log_message" type="text" size="72" name="log_message" required>
+                            <input type="submit" class="button" value="{% trans 'Send' %}">
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    {% if uwsgi.masterpid %}
+    <div class="submit-row">
+        <form action="{% url 'admin:django_uwsgi_reload' %}" method="post">
+            {% csrf_token %}
+            <input type="submit" class="button" value="{% trans 'Gracefully reload uWSGI' %}">
+        </form>
+        <form action="{% url 'admin:django_uwsgi_cache_clear' %}" method="post">
+            {% csrf_token %}
+            <input type="submit" class="button" value="{% trans 'Clear uWSGI cache' %}">
+        </form>
+    </div>
+    {% endif %}
+</div>
+{% endif %}
