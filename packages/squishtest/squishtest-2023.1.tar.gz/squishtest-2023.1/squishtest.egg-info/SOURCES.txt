@@ -1,0 +1,6 @@
+setup.py
+squishtest.egg-info/PKG-INFO
+squishtest.egg-info/SOURCES.txt
+squishtest.egg-info/dependency_links.txt
+squishtest.egg-info/top_level.txt
+src/squishtest/__init__.py
