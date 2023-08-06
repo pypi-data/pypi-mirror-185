@@ -1,0 +1,12 @@
+snek5000_tgv/Snakefile,sha256=L1eJ2N-YDOxmHNmfweJv8h5L41glbOfgaqNmMCNYACQ,910
+snek5000_tgv/__init__.py,sha256=lvtjVPM-jbyS6hD8TLEwo8jHVtNrydfzw9fgzu6PZHU,118
+snek5000_tgv/output.py,sha256=XGn3dESW4Nunxbs5-Ft_-rmVfsjaAY2yIIucg61Rjv0,1089
+snek5000_tgv/solver.py,sha256=T8cny4b1BFZkqHdbAVA5DQgpz_G50GD9PI5G9oTHjuU,2143
+snek5000_tgv/tgv.par.cfg,sha256=o4Z0ppozF4NAIqw91FBGCe0TLKSGTFW5CpLqvzKbGDU,325
+snek5000_tgv/tgv.usr.f,sha256=zwbwq8tjMQ6_8HCLk5XJmJf69DIUBbmqS9CWYKZUyHk,8378
+snek5000_tgv-0.2.0.dist-info/LICENSE,sha256=fOnrmlW3J6gVHyiv-lV344G-MVByjqXcWCnw5SXU8p4,2853
+snek5000_tgv-0.2.0.dist-info/METADATA,sha256=DO2iyz8kXhTUwJz0b8qh7QwWcIHQ4DF8R0KpwM37wIU,683
+snek5000_tgv-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+snek5000_tgv-0.2.0.dist-info/entry_points.txt,sha256=PJzMHAB0A_hkFLnFnuZid5CMuPr1j5lN6ftqhp-YJAk,45
+snek5000_tgv-0.2.0.dist-info/top_level.txt,sha256=bFdqWeIliGpda489CXT088MTJMmAJniG6IPOK8rarcs,13
+snek5000_tgv-0.2.0.dist-info/RECORD,,
