@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyflasks.egg-info/PKG-INFO
+pyflasks.egg-info/SOURCES.txt
+pyflasks.egg-info/dependency_links.txt
+pyflasks.egg-info/requires.txt
+pyflasks.egg-info/top_level.txt
