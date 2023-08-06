@@ -1,0 +1,3 @@
+[console_scripts]
+relativize-imports = relativize_imports:main
+
