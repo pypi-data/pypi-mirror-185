@@ -1,0 +1,9 @@
+tetgen-0.6.2.dist-info/RECORD,,
+tetgen-0.6.2.dist-info/LICENSE,sha256=8V4zAdD0ARaqLjVnljw9zI3UVFMzfe31ksqnOlOQVJ8,34790
+tetgen-0.6.2.dist-info/WHEEL,sha256=DyGia2S6qP_FD4mwU9COmmXmXHC-xHTstdLzZxR3BQs,115
+tetgen-0.6.2.dist-info/top_level.txt,sha256=bYPhTrU-UMyOwWYnbt8oGnHNZMCCbJ3pQlXnlLLPOWk,7
+tetgen-0.6.2.dist-info/METADATA,sha256=I9EnSJAkzYPaU-Qnk2rFXyIfNiyMsf4WZ8t7vHuTdO8,5068
+tetgen/_version.py,sha256=4QTQFDzozZTQr4XiHzAcibnKauCjxx-vLerzRu_v1gw,277
+tetgen/__init__.py,sha256=zs5QS7pONtbekYUek0zBZtWlpNX2HWpfqRA3q3LDKhs,123
+tetgen/_tetgen.cpython-310-darwin.so,sha256=Y9T4Kjz4h2GnfqZ9g9N4nu13LW3xWj44qemFbvTw9kA,2082682
+tetgen/pytetgen.py,sha256=viOnZQAtdw8Yd1orVuZG8CRYLhhH9dKk7S6tDLu-i94,26718
