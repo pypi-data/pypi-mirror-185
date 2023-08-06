@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unchanged"
+description = "Simple approval testing."
+requires-python = ">=2.7"
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+keywords = []#
+authors = [
+  {name = "Nicholas A. Del Grosso", email = "delgrosso.nick@gmail.com"},
+]
+maintainers = [
+  {name = "Nicholas A. Del Grosso", email = "delgrosso.nick@gmail.com"},
+]
+classifiers = [
+#   "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+dependencies = [
+  "pytest",
+]
+
+dynamic = ["version"]
+
+
+[tool.setuptools_scm]
+write_to = "src/unchanged/_version.py"
+local_scheme = "no-local-version"
+
+# [project.urls]
+# homepage = "https://example.com"
+# documentation = "https://readthedocs.org"
+# repository = "https://github.com/me/spam.git"
+# changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
+# [project.scripts]
+# spam-cli = "spam:main_cli"
+
+# [project.entry-points."spam.magical"]
+# tomatoes = "spam:main_tomatoes"
+
+[project.entry-points."pytest11"]
+unchanged = "unchanged.pytest_plugin"
