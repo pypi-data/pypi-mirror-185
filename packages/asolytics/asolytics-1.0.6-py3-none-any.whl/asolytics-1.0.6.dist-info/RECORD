@@ -1,0 +1,11 @@
+asolytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asolytics/asolytics.py,sha256=macJqx-1cYeffqbwOPKRmDfZ5dT_KLl-krC0zA7vTas,29285
+asolytics/local.py,sha256=HYM38EauKmL3sakpkCW6yWy219IDfH-MPodI0qHMVZI,3029
+asolytics/similar.py,sha256=MKWGRFDvDKzPTWxjXFl1GVKQfBqK3zAGrJm7qTHDr-A,5341
+asolytics-1.0.6.dist-info/LICENSE.txt,sha256=jobLRNDuFDjYblD4NXlI-wYuUaqMnknankXqWOxvQeU,1052
+asolytics-1.0.6.dist-info/METADATA,sha256=el_iEaX_fipIS4AHdfbl5uNNHw9IYksv-hy3L7WS5lo,16222
+asolytics-1.0.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+asolytics-1.0.6.dist-info/dependency_links.txt,sha256=CZ2ksMOQhwcDhV-_wc0EVrf67ahLH9Hd5wWYbjxde34,624
+asolytics-1.0.6.dist-info/entry_points.txt,sha256=d-rNl32LhLhH9j7vCAcVNXVCRrvECW7MHc2BTZX7e64,74
+asolytics-1.0.6.dist-info/top_level.txt,sha256=x1QuvMjbmIU000pPNEBpLSAI-ERyhcJwDC-Ce_Ibpzs,10
+asolytics-1.0.6.dist-info/RECORD,,
