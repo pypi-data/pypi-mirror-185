@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: ncas-amof-netcdf-template
+Version: 2.1.0
+Summary: Package to create NCAS AMOF netCDF files.
+Author-email: "Joshua M. Ralph-Hampton" <joshua.hampton@ncas.ac.uk>
+License: MIT License
+        
+        Copyright (c) 2023 Joshua Hampton
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/joshua-hampton/ncas_amof_netcdf_template
+Project-URL: Documentation, https://ncas-amof-netcdf-template.readthedocs.io/en/stable/
+Keywords: NCAS,AMOF,netcdf,template,standard
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+ncas-amof-netcdf-template
+=========================
+[![Documentation Status](https://readthedocs.org/projects/ncas-amof-netcdf-template/badge/?version=stable)](https://ncas-amof-netcdf-template.readthedocs.io/en/stable)
+[![PyPI](https://img.shields.io/pypi/v/ncas-amof-netcdf-template)](https://pypi.org/project/ncas-amof-netcdf-template/)
+[![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/ncas-amof-netcdf-template)](https://anaconda.org/conda-forge/ncas-amof-netcdf-template)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ncas-amof-netcdf-template)
+
+
+Makes 'just-add-data' AMOF-compliant netCDF4 file.
+
+A full description on how to install and use this module can be found [through the documentation](https://ncas-amof-netcdf-template.readthedocs.io/en/stable).
+
+Requirements
+------------
+* Python 3.7 or above
+* Python modules:
+  * [netCDF4](http://unidata.github.io/netcdf4-python/)
+  * [NumPy](https://numpy.org/) 
+  * [Requests](https://requests.readthedocs.io/en/latest/)
+  * [pandas](https://pandas.pydata.org/)
+
+Installation
+------------
+Releases of `ncas-amof-netcdf-template` can be installed using conda,
+```
+conda install -c conda-forge ncas-amof-netcdf-template
+```
+or by using pip,
+```
+pip install ncas-amof-netcdf-template
+```
+or releases can be [downloaded from GitHub](https://github.com/joshua-hampton/ncas_amof_netcdf_template/releases) and installed using
+```
+pip install .
+```
+
+Usage
+-----
+
+A fuller description of how to use this module can be found in the [documentation](https://ncas-amof-netcdf-template.readthedocs.io/en/stable/usage.html).
+
+```python
+import ncas_amof_netcdf_template as nant
+nant.create_netcdf.main(instrument, date = None, dimension_lengths = {}, loc = 'land', products = None)
+```
+where:
+- `instrument` - name of NCAS instrument, e.g. "ncas-ceilometer-3"
+- `date` - date for data, YYYYmmdd format, default to today's date. Optional.
+- `dimension_lengths` - dictionary of lengths of dimensions, e.g. {'time':96, 'altitude':45}. If length for required dimensions are not given, then python will ask for user input, default empty. Optional.
+- `loc` - one of 'land', 'air', 'sea', or 'trajectory', default is 'land'. Optional.
+- `products` - applicable products of desired NCAS instrument to make netCDF for. Setting products as `None` (default) makes netCDF file for all available products. Optional.
+- `verbose` - additional level of information and warnings to print. Only 1 additional layer of warnings are currently available.
+
+All products associated with an instrument can be printed by
+```python
+import ncas_amof_netcdf_template as nant
+nant.create_netcdf.list_products(instrument)
+```
+where `instrument` is replaced with the name of the NCAS instrument.
+
+
