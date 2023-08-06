@@ -1,0 +1,10 @@
+posggym==0.1.0
+prettytable>=3.6.0
+typing-extensions>=4.3.0
+torch>=1.11.0
+ray[rllib]==1.12
+
+[all]
+
+[testing]
+pytest>=7.2
