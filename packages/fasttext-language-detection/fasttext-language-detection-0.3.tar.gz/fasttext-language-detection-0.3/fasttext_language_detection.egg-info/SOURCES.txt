@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fasttext_language_detection.egg-info/PKG-INFO
+fasttext_language_detection.egg-info/SOURCES.txt
+fasttext_language_detection.egg-info/dependency_links.txt
+fasttext_language_detection.egg-info/requires.txt
+fasttext_language_detection.egg-info/top_level.txt
+langdetection/__init__.py
+langdetection/detector.py
+langdetection/log.py
+test/__init__.py
+test/test_detector.py
