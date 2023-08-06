@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mobie
+Version: 3.0.9
+Summary: mobie
+Home-page: https://github.com/mobie/mobie-viewer-fiji
+Author: Christian Tischer
+Author-email: christian.tischer@embl.de
+Maintainer: Christian Tischer
+Maintainer-email: christian.tischer@embl.de
+License-File: LICENSE

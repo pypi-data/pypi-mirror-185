@@ -1,0 +1,2 @@
+[console_scripts]
+mobie = mobie:launch_mobie
