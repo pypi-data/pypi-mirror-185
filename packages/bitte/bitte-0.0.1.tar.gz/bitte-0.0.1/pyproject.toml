@@ -1,0 +1,25 @@
+[build-system]
+requires = [
+    "setuptools >= 42.0.0",
+    "setuptools_scm >= 2.0.0",
+    "wheel >= 0.29.0",
+]
+build-backend = 'setuptools.build_meta'
+[project]
+name = "bitte"
+version = "0.0.1"
+authors = [
+  { name="Bitte Development Team", email="pythonmodule@bitteapi.com" },
+]
+description = "A way to quickly preprocess common NLP tasks. Specialised for english tasks requiring lightweight compute that you just want done"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/bitteauthor/bitteapi"
+"Bug Tracker" = "https://github.com/bitteauthor/bitteapi/issues"
