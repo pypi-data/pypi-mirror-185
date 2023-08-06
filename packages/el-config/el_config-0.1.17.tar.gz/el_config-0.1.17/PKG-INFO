@@ -1,0 +1,213 @@
+Metadata-Version: 2.1
+Name: el_config
+Version: 0.1.17
+Summary: Python-box based custom config package for python projects.
+Home-page: https://bitbucket.org/ellexiinc/el_config/
+Author: Batkhuu Byambajav
+Author-email: batkhuu@ellexi.com
+License: MIT
+Download-URL: https://bitbucket.org/ellexiinc/el_config/get/release-0.1.17.tar.gz
+Description: # Easily Launch Config (el_config)
+        
+        Python-box based custom config package for python projects.
+        
+        ## Features
+        
+        * Load environment variables - [https://pypi.org/project/python-dotenv](https://pypi.org/project/python-dotenv)
+        * Python-box based config - [https://pypi.org/project/python-box](https://pypi.org/project/python-box)
+        * Cerberus schema validation - [https://pypi.org/project/Cerberus](https://pypi.org/project/Cerberus)
+        * Custom base config module
+        * YAML or JSON based configs
+        * Update with extra configs
+        * Pre-load config
+        * Validate config
+        * Freeze config
+        * Config as dictioary
+        
+        ---
+        
+        ## Installation
+        
+        ### 1. Prerequisites
+        
+        * **Python (>= v3.7)**
+        * **PyPi (>= v21)**
+        
+        ### 2. Install el-config
+        
+        #### A. [RECOMMENDED] PyPi install
+        
+        ```sh
+        # Install or upgrade el-config package:
+        pip install --upgrade el-config
+        
+        # To uninstall package:
+        pip uninstall -y el-config
+        ```
+        
+        #### B. Manually add to PYTHONPATH (Recommended for development)
+        
+        ```sh
+        # Clone repository by git:
+        git clone git@bitbucket.org:ellexiinc/el_config.git
+        cd el_config
+        
+        # Install python dependencies:
+        pip install --upgrade pip
+        cat requirements.txt | xargs -n 1 -L 1 pip install --no-cache-dir
+        
+        # Add current path to PYTHONPATH:
+        export PYTHONPATH="${PWD}:${PYTHONPATH}"
+        ```
+        
+        #### C. Manually compile and setup (Not recommended)
+        
+        ```sh
+        # Clone repository by git:
+        git clone git@bitbucket.org:ellexiinc/el_config.git
+        cd el_config
+        
+        # Building python package:
+        pip install --upgrade pip setuptools wheel
+        python setup.py build
+        # Install python dependencies with built package to current python environment:
+        python setup.py install --record installed_files.txt
+        
+        # To remove only installed el-config package:
+        head -n 1 installed_files.txt | xargs rm -vrf
+        # Or to remove all installed files and packages:
+        cat installed_files.txt | xargs rm -vrf
+        ```
+        
+        ## Usage/Examples
+        
+        * Sample python file - [https://bitbucket.org/ellexiinc/el_config/src/master/sample.py](https://bitbucket.org/ellexiinc/el_config/src/master/sample.py)
+        
+        **configs/app.yml**:
+        
+        ```yml
+        env: development
+        
+        app:
+            name: "My App"
+            host: 0.0.0.0
+            port: 80
+            secret: "my-secret"
+            debug: false
+        ```
+        
+        **.env**:
+        
+        ```sh
+        ENV=production
+        
+        APP_PORT=8080
+        APP_SECRET="My_s3crEt_k3y"
+        ```
+        
+        **utils/validator_schemas.py**:
+        
+        ```python
+        config_schema = {
+            'env': { 'type': 'string', 'allowed': ['development', 'production'], 'default': 'development' },
+            'app':
+            {
+                'type': 'dict',
+                'schema':
+                {
+                    'name': { 'type': 'string', 'minlength': 2, 'maxlength': 255 },
+                    'host': { 'type': 'string', 'minlength': 2, 'maxlength': 255 },
+                    'port': { 'type': 'integer', 'coerce': int, 'min': 1024, 'max': 65535 },
+                    'secret': { 'type': 'string', 'minlength': 12, 'maxlength': 255 },
+                    'debug': { 'type': 'boolean' }
+                }
+            }
+        }
+        ```
+        
+        **config.py**:
+        
+        ```python
+        import os
+        
+        from utils.validator_schemas import config_schema
+        from el_config import ConfigBase
+        
+        
+        def _pre_load(config):
+            try:
+                config.env = os.getenv('ENV', config.env).strip().lower()
+        
+                if config.env == 'production':
+                    config.app.debug = False
+        
+                    if os.getenv('APP_SECRET') is None:
+                        raise KeyError("Missing required `APP_SECRET` environment variable on 'production'!")
+        
+                config.app.port = os.getenv('APP_PORT', config.app.port)
+                config.app.debug = os.getenv('APP_DEBUG', config.app.debug)
+                config.app.secret = os.getenv('APP_SECRET', config.app.secret)
+            except Exception as err:
+                print(f"ERROR: Error occured while pre-loading config:\n {err}")
+                exit(2)
+        
+            return config
+        
+        
+        _cb = ConfigBase(pre_load=_pre_load, valid_schema=config_schema)
+        _cb.load()
+        config = _cb.config
+        
+        print(config)
+        ```
+        
+        **main.py**:
+        
+        ```python
+        from flask import Flask
+        from config import config
+        
+        
+        app = Flask(__name__)
+        
+        @app.route("/")
+        def hello_world():
+            return "<p>Hello, World!</p>"
+        
+        if __name__ == '__main__':
+            app.run(host=config.app.host, port=config.app.port)
+        ```
+        
+        ---
+        
+        ## Running Tests
+        
+        To run tests, run the following command:
+        
+        ```sh
+        pytest
+        ```
+        
+        ---
+        
+        ## References
+        
+        * [https://saurabh-kumar.com/python-dotenv](https://saurabh-kumar.com/python-dotenv)
+        * [https://github.com/theskumar/python-dotenv](https://github.com/theskumar/python-dotenv)
+        * [https://github.com/cdgriffith/Box/wiki](https://github.com/cdgriffith/Box/wiki)
+        * [https://github.com/cdgriffith/Box](https://github.com/cdgriffith/Box)
+        * [https://docs.python-cerberus.org/en/stable](https://docs.python-cerberus.org/en/stable)
+        * [https://github.com/pyeve/cerberus](https://github.com/pyeve/cerberus)
+        
+Keywords: el_config,config,configs,python-box,custom-config
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
