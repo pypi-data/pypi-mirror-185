@@ -1,0 +1,15 @@
+CHANGES
+=======
+
+0.9.13
+------
+
+* update version for 15.7, ref #258
+* change default kill\_running from False to True
+* update mux error
+* catch brokePipeError
+* do little update
+* add retry for create\_inner\_connection
+* update alternative
+* fix wdaproxy missing property for logger
+* use connect\_instruments instead instruments\_context
