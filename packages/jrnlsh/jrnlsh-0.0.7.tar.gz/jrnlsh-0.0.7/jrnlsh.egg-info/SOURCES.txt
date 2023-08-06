@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+jrnlsh/__init__.py
+jrnlsh.egg-info/PKG-INFO
+jrnlsh.egg-info/SOURCES.txt
+jrnlsh.egg-info/dependency_links.txt
+jrnlsh.egg-info/entry_points.txt
+jrnlsh.egg-info/not-zip-safe
+jrnlsh.egg-info/top_level.txt
