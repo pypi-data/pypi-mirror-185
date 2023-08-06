@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Xma
+Version: 0.1
+Summary: Xma(stream)
+Home-page: https://github.com/MrFploit/Xma
+Author: Codelogy
+Author-email: codelogyofficial@gmail.com
+License: GNU
+Keywords: Xma
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
