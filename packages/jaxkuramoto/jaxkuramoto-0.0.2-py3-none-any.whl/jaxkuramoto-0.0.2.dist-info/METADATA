@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: jaxkuramoto
+Version: 0.0.2
+Summary: JAX implementation of Kuramoto model.
+Home-page: https://github.com/yonesuke/jaxkuramoto
+Author: Ryosuke Yoneda
+Author-email: 13e.e.c.13@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jax
+
+# jaxkuramoto
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/jaxkuramoto)
+![PyPI](https://img.shields.io/pypi/v/jaxkuramoto)
+Kuramoto model written in JAX
+
+
+## Installation
+`jaxkuramoto` can be installed with pip with the following command:
+```
+pip install jaxkuramoto
+```

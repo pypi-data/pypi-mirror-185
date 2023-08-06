@@ -1,0 +1,17 @@
+jaxkuramoto/__init__.py,sha256=4DrWf_5nwFl4n-W6TGZFH5fKCSn4ctIrD5HVNzZHcf0,138
+jaxkuramoto/kuramoto.py,sha256=oCFISZu8NKRPIVwWAu_ZFfp3KRZbBHzpl71J3MvCK4c,1918
+jaxkuramoto/ode.py,sha256=zA7Sntm_1Wx-Hym8M5t8-8yvjv3NcgnW8GnluyhMZjA,1762
+jaxkuramoto/solution.py,sha256=8qBJnvbEBPb7zUEPuTysYAP1HMNmMo4GqAyJb94SRiY,60
+jaxkuramoto/solver/__init__.py,sha256=i6yyXWFOogP_0u0IE7qQKjQ7oXVm-RYkyEvg1Sn4pTk,113
+jaxkuramoto/solver/fixed_point.py,sha256=4jUKlQT1j5QZQ1Oo-cDm6PdBJUDP-uBn2mCHy5ACBMU,1368
+jaxkuramoto/solver/integral.py,sha256=PkTV0kWI2gzUWZdMKBUKywbtXue5mcTEHoUAG-FHU4E,1317
+jaxkuramoto/solver/ode_solver.py,sha256=C_uW7aJVNrVxuUaYmSh9SR_kfbGOqfY3NIyuvwHzo5w,581
+jaxkuramoto/theory/__init__.py,sha256=Vt1f6jxhpfsU4tiKny6l9d3xR4fgDla0dMYj6uVvZws,121
+jaxkuramoto/theory/critical_point.py,sha256=a6Z2_5VwnJRO1nqsNQXYckTylg5IYvJKLc-BhKGuhT8,446
+jaxkuramoto/theory/ott_antonsen.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jaxkuramoto/theory/self_consistent.py,sha256=sJqtT4pUz-RzOGT62ws12S2bVWMYwDsB-O8iHsQ_Hp0,2584
+jaxkuramoto-0.0.2.dist-info/LICENSE,sha256=U9IQgUctDVbNoh_EWICE-fu-R61fI_RDpSqZ-b4dM3g,1071
+jaxkuramoto-0.0.2.dist-info/METADATA,sha256=1Otc7d-gORObnTNxtje4tnC12W8SO2myUOKRqheDl_U,752
+jaxkuramoto-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jaxkuramoto-0.0.2.dist-info/top_level.txt,sha256=lox4OQO7GF9OUZwauTiiqTonqxHBaWAfasJgHqkW-fU,12
+jaxkuramoto-0.0.2.dist-info/RECORD,,
