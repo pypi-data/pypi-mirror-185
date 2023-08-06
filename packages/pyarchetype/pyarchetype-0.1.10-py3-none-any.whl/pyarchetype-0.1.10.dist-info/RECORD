@@ -1,0 +1,10 @@
+pyarchetype/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyarchetype/pyarchetype.py,sha256=5dTiCf3LHQIMg-0GbfVF9VL_54WFXAJ-s314c1Ymy-E,9855
+pyarchetype/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyarchetype/templates/templates.py,sha256=SFZWDDFulPQq2QqQaly0zBvzSjaUGeFn2HGHokR_Lyo,56061
+pyarchetype-0.1.10.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pyarchetype-0.1.10.dist-info/METADATA,sha256=sa-gTFsbmPWAHzvz3M5lOAvvswm7HSn5Abj-mrjs_6k,4247
+pyarchetype-0.1.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyarchetype-0.1.10.dist-info/entry_points.txt,sha256=eGhlBK_auFOeCd_zBapzOxYuCrn9FXCE-bwFoacau6o,61
+pyarchetype-0.1.10.dist-info/top_level.txt,sha256=V9Ilu4_J3PByAM9pxEVuK9bX85JDph8SqGoB_ELsGbA,12
+pyarchetype-0.1.10.dist-info/RECORD,,
