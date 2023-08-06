@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: otter-service-stdalone
+Version: 0.0.26
+Summary: Grading Service for Instructors using Otter Grader
+Home-page: https://github.com/sean-morris/otter-service-stdalone
+Author: Sean Morris
+Author-email: sean.smorris@berkeley.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# otter-service-standalone
