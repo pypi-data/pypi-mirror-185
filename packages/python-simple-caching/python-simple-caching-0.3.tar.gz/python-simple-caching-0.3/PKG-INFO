@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: python-simple-caching
+Version: 0.3
+Summary: Python Simple-Caching
+Home-page: https://gitlab.com/mihaicristianpirvu/python-simple-caching
+License: WTFPL
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Simple Caching
+
+Small project to standardize storing (key, value) data for caching purposes.
+
+## Supported caching methods:
+1. Disk
+   - **NpyFS** - Numpy array export
+2. Memory
+   - **DictMemory** - keys are stored as dict keys and recalled from memory
+
+
+## Example
+
+```
+from simple_caching.storage import MemoryDict
+import numpy as np
+import time
+
+def working_fn(image: np.ndarray) -> np.ndarray:
+   """Working function that takes on average 0.2s"""
+   if np.random.rand() <= 0.2:
+      time.sleep(1)
+   return (image - image.min()) / (image.max() - image.min())
+
+data = np.random.randn(32, 240, 420, 3).astype(np.float32) # 32 images of 240x420 shape
+
+# Standard version. Takes 0.2s in average per epoch for the same processing.
+for i in range(100):
+   new_data = [working_fn(image) for image in data]
+   # do further processing with the result
+
+# Cached version. We store the result on memory.
+
+def key_encode_fn(image: np.ndarray) -> str:
+   """Return a cachable key for each image. We use a string of mean + std that should be unique enough."""
+   return f"{image.mean()}_{image.std()}"
+
+cache = DictMemory(name="images", key_encode_fn=key_encode_fn)
+# alternative, use: cache.map(working_fn, data)
+for image in data:
+   cache[image] = working_fn(image)
+
+for i in range(100):
+   new_data = [cache[image] for image in data]
+   # do further processing with the result
+```
+
+## Decoator version
+
+```
+@cache_fn(NpyFS, key_encode_fn)
+def working_fn(image: np.ndarray) -> np.ndarray:
+   """Working function that takes on average 0.2s"""
+   if np.random.rand() <= 0.2:
+      time.sleep(1)
+   return (image - image.min()) / (image.max() - image.min())
+
+def key_encode_fn(image: np.ndarray) -> str:
+   """Return a cachable key for each image. We use a string of mean + std that should be unique enough."""
+   return f"{image.mean()}_{image.std()}"
+
+for i in range(100):
+   new_data = working_fn(image)
+   # do further processing with the result
+```
+
