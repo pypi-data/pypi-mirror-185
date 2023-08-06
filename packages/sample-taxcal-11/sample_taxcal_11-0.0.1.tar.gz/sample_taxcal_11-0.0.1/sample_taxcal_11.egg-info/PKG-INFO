@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sample-taxcal-11
+Version: 0.0.1
+Summary: My first Python package
+Author: MounicaAnju
+Author-email: mounicapothureddy555@gmail.com
+Keywords: python,first package
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENCE
