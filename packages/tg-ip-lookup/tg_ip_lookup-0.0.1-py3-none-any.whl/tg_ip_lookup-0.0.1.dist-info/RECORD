@@ -1,0 +1,10 @@
+tg_ip_lookup/__init__.py,sha256=YEFXfoZAcacD93TWB6QWYF742q8lzHky_HggfoQCn7k,497
+tg_ip_lookup/process_csv.py,sha256=x2jvB27OoN5mFhrCeUwBWHIx083gp73tSMO5BhUeCCs,1790
+tg_ip_lookup/cloudlookup/__init__.py,sha256=IYW9jdQ7csckRcgXI41NIDuSP8gtslxmOeDKc2xA-54,152
+tg_ip_lookup/cloudlookup/cloudlookup.py,sha256=2PHHR9z6QLJoN4HvHKeXEu6Vel2IJK_x-_wOZnBBfik,3235
+tg_ip_lookup/cloudlookup/loadCloudProviderData.py,sha256=6vgaL8O-BupFOSF8MHaSI03a0cD7SYfjlxQ7gemv1N4,10137
+tg_ip_lookup-0.0.1.dist-info/LICENSE.md,sha256=fHbLgKCwwhA9P0iooe3GaKl9RslOoxzfGBH9E1g8v0I,11342
+tg_ip_lookup-0.0.1.dist-info/METADATA,sha256=6gCaGxEPlKf-hPSSLXu4N2aOPTkXV7p5e50LEno9SAE,1961
+tg_ip_lookup-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tg_ip_lookup-0.0.1.dist-info/top_level.txt,sha256=lAsyLEUYFX2P2-Marflh1hOV9EqpDikwrsAu3BBWFcs,13
+tg_ip_lookup-0.0.1.dist-info/RECORD,,
