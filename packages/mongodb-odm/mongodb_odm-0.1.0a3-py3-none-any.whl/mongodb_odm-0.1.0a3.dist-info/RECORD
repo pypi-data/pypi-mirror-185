@@ -1,0 +1,12 @@
+mongodb_odm/__init__.py,sha256=nNzvLfYPanZzugeFuXa3pT5IhW7byi2EeRcgi_iklkM,198
+mongodb_odm/connection.py,sha256=VLyEbgObKx4CV0GUCoZ7Ox5RIe5w_-OOaaZ0BCskB78,1027
+mongodb_odm/data_conversion.py,sha256=ON93DeoF4R6Cnz52lF8Rsna8TP9JAzMiYUVLtARj4Zg,1001
+mongodb_odm/models.py,sha256=_I6IjLi9FutNCeG950r7UVOnx2VXwmrUojqPawbW1xI,9501
+mongodb_odm/types.py,sha256=YrSXtopjQpSf6nmyQY3BrgdHOinE_FpKyaMzMBFliSs,363
+mongodb_odm/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongodb_odm/utils/apply_indexes.py,sha256=zLCyZ5ccg5dNZxzdSkhV78EwOYBy0VYL18zz1e7MZQo,5011
+mongodb_odm/utils/utils.py,sha256=0BLog8d95pneUwWePWa1v1ARAwCERiybecbIZRCFoUQ,488
+mongodb_odm-0.1.0a3.dist-info/LICENSE,sha256=4DwTVEAE7xMj9CzVJjwoZlv3ld2jCfnVf-bE7us1YDg,1056
+mongodb_odm-0.1.0a3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mongodb_odm-0.1.0a3.dist-info/METADATA,sha256=tzSUADi9_G0Y_cMM-5f4luKvG0PL_zOMdTPt4TiRyYA,6078
+mongodb_odm-0.1.0a3.dist-info/RECORD,,
