@@ -1,0 +1,4 @@
+#!/usr/bin/env auto
+import sys, test
+sys.exit(test.test('hom'))
+
