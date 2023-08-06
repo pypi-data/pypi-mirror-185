@@ -1,0 +1,11 @@
+ultralyticsplus/__init__.py,sha256=FNLO9v1He1U-BufQZhPvhr1zqowOVzaHB3nqQnmkLcI,134
+ultralyticsplus/cli.py,sha256=PXnGO5ZtZVWOyoWy17whdfd90rryxmZQh5WFU3xDB3E,156
+ultralyticsplus/file_utils.py,sha256=QaOaIIo0rYR9064e0i8RNC4lIDUxP7ZfA2q8Fh9FAHc,2200
+ultralyticsplus/hf_utils.py,sha256=QBG_kmArKmXX50IEa5c6iWU60TGSmEk_e8A5Ck1L7No,10428
+ultralyticsplus/ultralytics_utils.py,sha256=p7EJ144_FEJ2zAObpUmlpON-iE8W6gsrKFlv85J6h_E,4069
+ultralyticsplus-0.0.6.dist-info/LICENSE,sha256=op7W2OPEgnWCsTJP6KiF_xsMq_daj1FyBQUYpU8-5Lk,1062
+ultralyticsplus-0.0.6.dist-info/METADATA,sha256=vgJlV9l5no46be3W7fVqeCeylSSEcOV6WVCPsAU-5WY,2667
+ultralyticsplus-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ultralyticsplus-0.0.6.dist-info/entry_points.txt,sha256=XdB_iGmlIi74SY95bWvb7MQE83VOKQlo8XQMSyFGB7k,60
+ultralyticsplus-0.0.6.dist-info/top_level.txt,sha256=J3xCtMTK-ee7EYAn6IuM_KHFDFgPZ_Ty3Jl-co76eOQ,16
+ultralyticsplus-0.0.6.dist-info/RECORD,,
