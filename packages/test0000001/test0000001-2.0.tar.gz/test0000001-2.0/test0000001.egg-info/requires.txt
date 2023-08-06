@@ -1,0 +1,6 @@
+pyrebase
+logger
+logging
+uuid
+python-dotenv
+python-datetime
