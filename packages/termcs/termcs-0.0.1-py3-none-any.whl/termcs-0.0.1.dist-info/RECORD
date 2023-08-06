@@ -1,0 +1,13 @@
+termcs/__init__.py,sha256=0gEpEWSytqNyqubJN-8BcFodEtE2TRehA3dhndA2gDY,111
+termcs/bottomWidget.py,sha256=u6XWPpRIjHkej8unvW9JRjIfCxrLLUzHbkMylRDcXzU,4418
+termcs/changeTable.py,sha256=6Gysv_wbkYiKYc_So7xJ0UdMiev6LVCVRWhrOi57Cgw,6884
+termcs/termcs.css,sha256=aF3R2jKmNusy5N-4zTBZ-Gdq4sFIKMwJ_A16kMrYk-M,1353
+termcs/termcs.py,sha256=Lut5cy2rSCPSthGqlNFZGJwp8Bi0jCtzRaK_5v5y9L4,2593
+termcs/topWidget.py,sha256=miSbT74sZkLrXL229GWnyo9_l2xxha25u79WsRzFLzU,642
+termcs/worker.py,sha256=VhTFAiQ2U8Ehuez7UwHbZF8Xz0hwZFMhpA4Kw53G3gQ,8895
+termcs-0.0.1.dist-info/LICENSE,sha256=IfzKXyjhdaUY95NyNTVduGP3w4OljrLp8sNFvVtDtQw,1049
+termcs-0.0.1.dist-info/METADATA,sha256=fpDiNoArbkJKGHABocBD8oxfgc21HVLIc1x1Ay49_SQ,5351
+termcs-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+termcs-0.0.1.dist-info/entry_points.txt,sha256=NkWOnTpWdIEv_3TpYfSHpTexvhbT_kiCfaDl5aJMwEY,38
+termcs-0.0.1.dist-info/top_level.txt,sha256=JXhCriFtvwsiVSXEtsBXJ10huTRsnVxw6WSj8QE0HaQ,7
+termcs-0.0.1.dist-info/RECORD,,
