@@ -1,0 +1,10 @@
+cdncheck.cpython-36m-x86_64-linux-gnu.h,sha256=V1d1MfNXnh0MGbNeKRnMO0xUVFauiq5n7uUuBlb8aZQ,1597
+cdncheck.cpython-36m-x86_64-linux-gnu.so,sha256=67Rx_LkH3wvG6RX8uLOK34aMYMmPYrfk2K10cF6PT3A,12524384
+cdncheck/__init__.py,sha256=ZYoTxTh6i8gefmR4pgIuw7bVKK4xn_DAEt1jlSgtixs,40
+cdncheck/cdncheck.py,sha256=bBTxM_7HpYrigdmRZ1baD84oS5YiML3It9hR0eBYdmI,1233
+cdncheck/tests/test_cdncheck.py,sha256=Y0E1Y4SJG9od_xu_Ok4-G5fY2SrsczPlfRgHCA0OrmU,265
+cdncheck/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdncheck-1.0.0.26.dist-info/entry_points.txt,sha256=ndeudprWsAfrx9udT8P_XzS03GXgm66y-cOm5Epwybk,51
+cdncheck-1.0.0.26.dist-info/RECORD,,
+cdncheck-1.0.0.26.dist-info/METADATA,sha256=YFXltegFc0KrPs5ddCUa66uybwez10uQhGrc7PUKBos,1743
+cdncheck-1.0.0.26.dist-info/WHEEL,sha256=UVV7_FCqcIroEddiF08lOUjFb6zacelN7TI3MHGIlfA,104
