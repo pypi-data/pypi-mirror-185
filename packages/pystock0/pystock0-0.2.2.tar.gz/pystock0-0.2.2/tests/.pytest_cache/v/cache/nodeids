@@ -1,0 +1,19 @@
+[
+  "test_stock.py::test_change_frequency",
+  "test_stock.py::test_column",
+  "test_stock.py::test_end_date",
+  "test_stock.py::test_freq_return_mean",
+  "test_stock.py::test_freq_return_not_mean",
+  "test_stock.py::test_frequency",
+  "test_stock.py::test_start_date",
+  "test_stock.py::test_stock",
+  "test_stock.py::test_stock_data",
+  "test_stock.py::test_stock_data_df",
+  "test_stock.py::test_stock_loaded",
+  "test_stock.py::test_stock_name_dir",
+  "test_stock.py::test_stock_name_dir_after_load",
+  "test_stock.py::test_stock_representation",
+  "test_stock.py::test_stock_str",
+  "test_stock.py::test_stocks_equal",
+  "test_stock.py::test_stocks_inequal"
+]

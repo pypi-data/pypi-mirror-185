@@ -1,0 +1,5 @@
+{
+  "tests/test_portfolio_2.py::test_get_stock_return": true,
+  "tests/test_model.py::test_market_return": true,
+  "tests/test_model.py::test_add_model_loaded_portfolio": true
+}
