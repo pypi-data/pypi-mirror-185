@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+omletApi/API.py
+omletApi/__init__.py
+omletApi/errors.py
+omletApi/timeout.py
+omletApi.egg-info/PKG-INFO
+omletApi.egg-info/SOURCES.txt
+omletApi.egg-info/dependency_links.txt
+omletApi.egg-info/not-zip-safe
+omletApi.egg-info/top_level.txt
