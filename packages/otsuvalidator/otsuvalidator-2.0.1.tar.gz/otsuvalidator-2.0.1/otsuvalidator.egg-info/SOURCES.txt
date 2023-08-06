@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+otsuvalidator/__init__.py
+otsuvalidator/bases.py
+otsuvalidator/converters.py
+otsuvalidator/validators.py
+otsuvalidator.egg-info/PKG-INFO
+otsuvalidator.egg-info/SOURCES.txt
+otsuvalidator.egg-info/dependency_links.txt
+otsuvalidator.egg-info/top_level.txt
