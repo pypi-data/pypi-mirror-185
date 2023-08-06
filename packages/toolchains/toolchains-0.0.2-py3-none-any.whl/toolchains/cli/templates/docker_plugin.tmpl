@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+from pawnlib.config import pawnlib_config as pawn
+from toolchains.docker import AsyncDocker, run_container, run_dyn_container
+
+target_list = {{ target_list }}
+
+async def main(*args, **kwargs):
+    pawn.console.log(f"[red bold]----IN plugin ---- args={args}, kwargs={kwargs}")
+    dn_param = args[0]
+
+    kwargs['container_name'] = f"planet_{dn_param}"
+
+    container_config = {
+        "Image": "{{ image_name }}",
+        "Hostname": kwargs['container_name'],
+        "Env": [
+            f"ACCESS_CODE={dn_param}",
+            "NETWORK=vega"
+        ],
+        "NetworkMode": "host"
+    }
+    await run_dyn_container(container_config, *args, **kwargs)
