@@ -1,0 +1,25 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ds-pricing-framework"
+version = "0.1.2"
+description = "Read the latest Real Python tutorials"
+readme = "README.md"
+authors = [{ name = "Kelsey Messonnier", email = "kelsey@just.insure" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["feed", "reader", "tutorial"]
+dependencies = [
+    "pandas",
+    "statsmodels",
+    "tabulate"
+]
+requires-python = ">=3.7"
