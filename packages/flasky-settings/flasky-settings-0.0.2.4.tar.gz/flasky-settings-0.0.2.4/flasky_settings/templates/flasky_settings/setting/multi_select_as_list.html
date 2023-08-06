@@ -1,0 +1,14 @@
+<!-- MultiSelect -->
+<div>
+    {% include 'flasky_settings/setting/sub/title_div.html' %}
+
+    <div class="list-group">
+    {% for active, item in element.loop_items(setting_group or None) %}
+          <label class="list-group-item d-flex" select-item-key="{{ item.key }}">
+            <input class="form-check-input me-3 observed-input" type="checkbox"
+                   value="" {% if active %} checked {% endif %}>
+              <div class='select-item-title' >{{ item.title }}</div>
+          </label>
+    {% endfor %}
+    </div>
+</div>
