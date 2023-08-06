@@ -1,0 +1,8 @@
+tox>=4.2.8
+
+[test]
+covdefaults>=2.2.2
+devpi-process>=0.3
+pytest>=7.2
+pytest-cov>=4
+pytest-mock>=3.10
