@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: munitests
+Version: 0.3.0
+Summary: A test suite for the Chatbot MUNI
+Author: Jens Peder Meldgaard
+Author-email: jenspederm@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ibm-watson (>=6.1.0,<7.0.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: matplotlib (>=3.6.3,<4.0.0)
+Requires-Dist: notebook (>=6.5.2,<7.0.0)
+Requires-Dist: pandas (>=1.5.2,<2.0.0)
+Requires-Dist: python-dotenv (>=0.21.0,<0.22.0)
+Requires-Dist: scikit-learn (>=1.2.0,<2.0.0)
+Requires-Dist: seaborn (>=0.12.2,<0.13.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# A test suite for the Chatbot MUNI
+
+MUNI is your municipal Chatbot in Denmark, and can answer questions about everything from ID cards and MitID to child care. If you have a question for your municipality, MUNI will do its best to answer you.
+
+The MUNI project is a collaboration between 36 municipalities, with Aarhus as the contract holder. In the project, they have implemented technology based on artificial intelligence to handle inquiries from citizens. This replaces much of the physical and telephone contact involved in citizen services. MUNI provides citizens with guidance and support and ensures that staff can handle more complex tasks.
+
+In March 2022, the Chatbot collaboration won the Innovation Award. The reason given by the panel of judges was that the project is built on an outstanding and broad municipal cooperation. It uses new technology in an innovative way in an exemplary manner. It manages to exploit economies of scale while giving space for individual solutions among the individual municipalities. Deep integrations into systems and continuous development ensure the solution's relevance in the public's meeting with citizens. Read more here: https://www.digitaliseringsprisen.dk/#vinderne-2022-forside
+
+## Getting Started
+
+You can install the MUNI test suite by running:
+
+```
+pip install munitests
+```
+
+Or in a notebook:
+
+```
+!pip install munitests
+```
+
+Additionally, if you want to make sure you always have to latest version use:
+
+```
+pip install munitests --upgrade
+```
+
+Or in a notebook:
+
+```
+!pip install munitests --upgrade
+```
+
