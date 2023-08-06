@@ -1,0 +1,9 @@
+vtk
+pygdal-chm==3.6.2.*
+numpy
+scipy
+matplotlib
+cloudpickle
+metis
+mpi4py
+natsort
