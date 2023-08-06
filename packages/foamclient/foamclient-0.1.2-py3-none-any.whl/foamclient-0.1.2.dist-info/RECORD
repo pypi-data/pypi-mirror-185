@@ -1,0 +1,15 @@
+foamclient/__init__.py,sha256=prVrJ5eXRw9dWx5iWucrnPme0mTMezxHYK4xEzAP9a8,204
+foamclient/deserializer.py,sha256=LwoxnWh9SE_R5tvme4eIWGPBS5rwDBPpFL6DRTxXP7s,675
+foamclient/redis_consumer.py,sha256=OHnxLyJKk9hSlXi0_Aw4Sj90PqNRmJqFw6cwqde3J_k,2526
+foamclient/redis_producer.py,sha256=MVvWDlw56eGoAdLlyomxiFsUFi1_-sh9uzGURNwjob8,2385
+foamclient/schema_registry.py,sha256=W4Sp48LEFHP0jDm52U2VJKRdp2DWKm953R6YwHvIyts,1442
+foamclient/serializer.py,sha256=-vmSrERHhAaAahefQAXb9nhJqu7E8mxbAF0cq-h4djk,657
+foamclient/zmq_consumer.py,sha256=30wVDv29FhfnaOETnMBAWHrZEsBabE95O5zwXT8z_NA,2581
+foamclient/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foamclient/tests/test_redis_clients.py,sha256=B8yQbAZJIFPwS9Ord77FojE_lQ8wtAkM4UG4oap2D94,330
+foamclient/tests/test_zmq_clients.py,sha256=Y60RrfOKNsVqotU3wY2UhbJ2aIshbMSL1ClAY0Uq9U8,3624
+foamclient-0.1.2.dist-info/LICENSE,sha256=oCsmt8OIScdHYA5apQ_K0HA_TkZBRFC4jME_8HNqdIU,1511
+foamclient-0.1.2.dist-info/METADATA,sha256=EXfFlQwzwhlpE1VRbM3DJlsObj08-vQ95ym9bFL_rSQ,3180
+foamclient-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+foamclient-0.1.2.dist-info/top_level.txt,sha256=dNV5Fzg2bv_KJhNss8IrwwSEvsuuGh4ePKuZVIlH-uY,11
+foamclient-0.1.2.dist-info/RECORD,,
