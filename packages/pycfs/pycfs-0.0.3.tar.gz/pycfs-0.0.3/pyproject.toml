@@ -1,0 +1,35 @@
+[build-system]
+requires = ["flit_core>=3.2,<4",
+            "setuptools", 
+            "wheel",
+            "numpy>=1.20.1",
+            "typing_extensions>=3.7.4.3",
+            "glob2>=0.7",
+            "pytest>=6.2.5",
+            "h5py",
+            "matplotlib",
+            "tqdm",
+            "pymoo"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pycfs"
+authors = [{name = "Eniz Museljic", email = "eniz.m@outlook.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+dynamic = ["version", "description"]
+requires-python = ">=3.9"
+classifiers = [
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Science/Research",
+        "Topic :: Scientific/Engineering",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.9",
+    ]
+
+[project.scripts]
+pycfs = "pycfs.util.cli_handler:main"
+
+[project.urls]
+"Homepage" = "https://www.tugraz.at/institute/igte/home/"
+"Bug Tracker" = "https://gitlab.tugraz.at/A9C639836B4DDECA/pycfs/-/issues"
