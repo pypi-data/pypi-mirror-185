@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pythoninterpreter/__init__.py
+pythoninterpreter.egg-info/PKG-INFO
+pythoninterpreter.egg-info/SOURCES.txt
+pythoninterpreter.egg-info/dependency_links.txt
+pythoninterpreter.egg-info/top_level.txt
