@@ -1,0 +1,10 @@
+LICENSE
+README.md
+rm_unneeded_f_str.py
+setup.cfg
+setup.py
+rm_unneeded_f_str.egg-info/PKG-INFO
+rm_unneeded_f_str.egg-info/SOURCES.txt
+rm_unneeded_f_str.egg-info/dependency_links.txt
+rm_unneeded_f_str.egg-info/entry_points.txt
+rm_unneeded_f_str.egg-info/top_level.txt

@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: rm_unneeded_f_str
+Version: 0.2.0
+Summary: Find and replace unneeded f-strings in your code.
+Home-page: https://github.com/dannysepler/rm_unneeded_f_str
+Author: Danny Sepler
+Author-email: dannysepler@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+rm_unneeded_f_str
+=================
+
+Find and replace unneeded f-strings in your code.
+
+
+## Installation
+
+`pip install rm_unneeded_f_str`
+
+## Usage
+
+Run via the CLI on a file or folder:
+- `rm-unneeded-f-str path/to/file.py`
+- `rm-unneeded-f-str path/to/folder/`
+
+Or use as a pre-commit hook:
+
+```yaml
+-   repo: https://github.com/dannysepler/rm_unneeded_f_str
+    rev: v0.2.0
+    hooks:
+    -   id: rm-unneeded-f-str
+```
+
+## Will replace
+
+```diff
+-f'hello'
++'hello'
+-f'''hello'''
++'''hello'''
+-rf'hello'
++r'hello'
+-f'''hello
+-world'''
++f'''hello
++world'''
+```
+
+## Will not replace
+
+```python
+f'hello {world}'
+f'''hello
+{world}'''
+```
