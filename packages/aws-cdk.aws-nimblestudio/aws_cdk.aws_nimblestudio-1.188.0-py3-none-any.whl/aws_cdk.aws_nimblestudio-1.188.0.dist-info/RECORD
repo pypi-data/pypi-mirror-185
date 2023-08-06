@@ -1,0 +1,10 @@
+aws_cdk/aws_nimblestudio/__init__.py,sha256=i0evPiT-63_TJz7LTfcedJMHJFp3XdzEZS3n2v9TsW8,195768
+aws_cdk/aws_nimblestudio/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_nimblestudio/_jsii/__init__.py,sha256=RzJqOKqJ6vgVTNSOL6dNOswSU0yj0OXbeaWe5ybRX0Y,406
+aws_cdk/aws_nimblestudio/_jsii/aws-nimblestudio@1.188.0.jsii.tgz,sha256=GCMASYplNrBHbKUppP_JUtiNKCsx7vmNfKOErISh_l4,79166
+aws_cdk.aws_nimblestudio-1.188.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_nimblestudio-1.188.0.dist-info/METADATA,sha256=xYNygevnwtMjbxsvCSjRkhAj1hZI_KW0MSeJbpsYsvA,3175
+aws_cdk.aws_nimblestudio-1.188.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_nimblestudio-1.188.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_nimblestudio-1.188.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_nimblestudio-1.188.0.dist-info/RECORD,,
