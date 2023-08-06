@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: subsonic-connector
+Version: 0.1.1
+Summary: 
+Author: GioF71
+Author-email: giovanni.fulco@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: py-sonic (>=0.8.0,<0.9.0)
+Description-Content-Type: text/markdown
+
+# Subsonic Connector
+
+## Status
+
+This software is in its early development phase.
+
+## Instructions
+
+Create your own `.env` file. Use `.sample.env` as a reference for the format of the file.
+
+### Initialization
+
+From a terminal, type
+
+```text
+poetry shell
+poetry install
+```
+
+### Test execution
+
+Then you can run the simple test using the following command:
+
+```text
+python subsonic_connector/test-cn.py
+```
+
+Make sure to load the variables specified in the `.env` file.  
+The test is currently just a `main`.
+
