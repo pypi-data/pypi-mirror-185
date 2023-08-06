@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ayaka
+Version: 0.0.0.1
+Summary: 猫猫，猫猫！
+Home-page: https://bridgel.github.io/ayaka/
+License: MIT
+Author: Su
+Author-email: wxlxy316@163.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Project-URL: Repository, https://github.com/bridgeL/ayaka
+Description-Content-Type: text/markdown
+
+<div align="center">
+
+# Ayaka - 猫猫，猫猫！ - 0.0.0.1
+
+</div>
+
+## 安装
+
+```
+pip install ayaka
+```
+
