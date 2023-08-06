@@ -1,0 +1,13 @@
+src/mhw_detect/cut/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/mhw_detect/cut/cut.ipynb,sha256=0CPqsCx8diXEsHiNgQx1YRNWMaxpqt0A5g8jBvZKc90,37284
+src/mhw_detect/cut/cut.py,sha256=XpiaHj5TM_Bx3u_1z1e48lfccNmeEHyNbHceiEhamNs,1870
+src/mhw_detect/detection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/mhw_detect/detection/detect.py,sha256=u83kVEYDEFoR-Ru5GPIbzHJRrvtXU_iAxcSIe_q--fA,6591
+src/mhw_detect/detection/marineHeatWavesOpt.py,sha256=BCx2zaegdQcYpXvxT-wWgmreDRkwiyd4lQwSkcIeJRc,22478
+src/mhw_detect/detection/mhw.py,sha256=YJ7RSF2b2u-kcLjolFpnybNjqid0XGV5GJpRsyO7Ecc,3612
+src/mhw_detect/detection/optims.py,sha256=ShBlX_ReFsz0ACB5ObhkmDsgXTrmZSgWnNOe-o953hQ,7298
+src/mhw_detect/detection/parser.py,sha256=2oZSaHdzGlzUK1KkXzF4HN0fe1HnvPZAGAHJFOKg9K4,1634
+mhw_detect-0.1.10.dist-info/entry_points.txt,sha256=aMVT0C3fv6P8knYR6vO7G-Vgf2Cvgu0L6l9vNRWXi2w,109
+mhw_detect-0.1.10.dist-info/METADATA,sha256=QqlPrXUT6UFjcE_GPnQ9UfIWkU13a66Fk8R62zJDYM4,9976
+mhw_detect-0.1.10.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mhw_detect-0.1.10.dist-info/RECORD,,
