@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ratio
+Version: 0.1.0
+Summary: 
+Author: Job Veldhuis
+Author-email: job@baukefrederik.me
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: rich (>=12.6.0,<13.0.0)
+Description-Content-Type: text/markdown
+
+# Ratio
+The Python web framework for developers who want to get shit done.
