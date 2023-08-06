@@ -1,0 +1,7 @@
+fastcore
+pandas
+aiohttp
+requests
+twine
+
+[dev]
