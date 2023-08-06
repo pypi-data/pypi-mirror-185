@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yst
+Version: 0.1.1
+Summary: youz's script tools
+Project-URL: Bug Tracker, https://github.com/youz17/yst/issues
+Project-URL: Homepage, https://github.com/youz17/yst
+Author-email: youz17 <youz17@qq.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# yst
+youz's script tools
