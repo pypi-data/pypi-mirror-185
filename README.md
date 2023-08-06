@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2023-01-09 17:28 and 2023-01-14 21:48.
 
-The repo is 29% (11994/40000) complete.
+The repo is 34% (13994/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-185/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| ddtrace | 335 |
-| django-trackings | 148 |
-| snowflake-connector-python-nightly | 139 |
-| stim | 135 |
-| openmtpk | 120 |
-| TheSilent | 120 |
-| pysqlx-core | 119 |
-| aim | 114 |
-| xformers | 104 |
-| pyagrum-nightly | 100 |
-| ccxt | 98 |
-| ruff | 96 |
-| hiredis | 89 |
-| cdncheck | 88 |
-| spanishconjugator | 84 |
-| libsemigroups-pybind11 | 84 |
-| lalsuite | 80 |
-| crc32c | 78 |
-| pyzmq | 77 |
-| up-lpg | 76 |
-| wrapt | 75 |
-| PyGLM | 75 |
-| netbox-disk | 70 |
-| CxAdmin | 69 |
-| UtilsRL | 68 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-185).
 
 
