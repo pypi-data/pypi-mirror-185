@@ -1,0 +1,28 @@
+{
+  "language": "ml",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<set> <temp> <temperature> [<to>]",
+            "<temp> <temperature> <to> <set>",
+            "<set> <temp> <area><in> <temperature> [<to>]",
+            "<temperature> <to> <temp> <set>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<what_is> [<area>[<in>]] <temp>",
+            "<area>[<in>] <temp> <what_is>",
+            "<what_is> <temp> [<area><in>]"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "language": "en",
+  "intents": {
+    "HassCloseCover": {
+      "data": [
+        {
+          "sentences": [
+            "<close> <name>",
+            "<close> <name> in <area>"
+          ]
+        },
+        {
+          "sentences": [
+            "<close> [the] garage door"
+          ],
+          "slots": {
+            "device_class": "garage"
+          }
+        },
+        {
+          "sentences": [
+            "<close> [the] <window> in <area>",
+            "<close> <area> <window>"
+          ],
+          "slots": {
+            "device_class": [
+              "window",
+              "blind",
+              "curtain",
+              "shutter"
+            ]
+          }
+        }
+      ]
+    },
+    "HassOpenCover": {
+      "data": [
+        {
+          "sentences": [
+            "open <name>",
+            "open <name> in <area>"
+          ]
+        },
+        {
+          "sentences": [
+            "open [the] garage door"
+          ],
+          "slots": {
+            "device_class": "garage"
+          }
+        },
+        {
+          "sentences": [
+            "open [the] <window> in <area>",
+            "open <area> <window>"
+          ],
+          "slots": {
+            "device_class": [
+              "window",
+              "blind",
+              "curtain",
+              "shutter"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "sk",
+  "intents": {
+    "HassLightSet": {
+      "data": [
+        {
+          "sentences": [
+            "<set> <name> na <brightness>",
+            "<set> jas <name> na <brightness>",
+            "<set> <name> jas <brightness>"
+          ]
+        },
+        {
+          "sentences": [
+            "<set> jas (v|na) <area> na <brightness>",
+            "<set> jas (v|na) <area> <brightness>",
+            "<set> (v|na) <area> <brightness> jas"
+          ],
+          "slots": {
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<set> {color} [farbu] <name>",
+            "<set> <name> {color} [farbu]",
+            "<set> <name> na {color}"
+          ]
+        }
+      ]
+    }
+  }
+}

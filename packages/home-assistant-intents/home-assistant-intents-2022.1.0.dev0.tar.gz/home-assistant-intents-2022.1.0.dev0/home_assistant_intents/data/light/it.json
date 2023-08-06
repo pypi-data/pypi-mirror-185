@@ -1,0 +1,35 @@
+{
+  "language": "it",
+  "intents": {
+    "HassLightSet": {
+      "data": [
+        {
+          "sentences": [
+            "[<set>] [la] [luminosità] [<of>] <name> [(a | al)] [valore] <brightness>",
+            "[<set>] <name> [la] luminosità [(a | al)] [valore] <brightness>",
+            "[<set>] [(a | al)] [valore] <brightness> [la] luminosità [<of>] <name>"
+          ]
+        },
+        {
+          "sentences": [
+            "[<set>] [la] luminosità [(<of> | <the> | <in>)] <area> [(a | al)] [valore] <brightness>",
+            "[<set>] [<in>] <area> [la] luminosità [(a | al)] [valore] <brightness>",
+            "[<set>] [(a | al)] [valore] <brightness> [la] luminosità [(<of> | <the> | <in>)] <area>"
+          ],
+          "slots": {
+            "name": "all"
+          }
+        },
+        {
+          "sentences": [
+            "<set> [<the>] <name> [(a | al | su)] [colore] {color}",
+            "<set> [(il)] [colore] [<of>] <name> [(a | al | su)] {color}",
+            "<set> [il] [colore] {color} [<to>] <name>",
+            "<set> [(a | al | su)] [colore] {color} [<the>] <name>",
+            "<set> [(a | al | su)] {color} [<the>] [colore] [<of>] <name>"
+          ]
+        }
+      ]
+    }
+  }
+}

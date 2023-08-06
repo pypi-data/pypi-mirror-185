@@ -1,0 +1,65 @@
+{
+  "language": "gl",
+  "intents": {
+    "HassCloseCover": {
+      "data": [
+        {
+          "sentences": [
+            "pecha <name>",
+            "pecha <name> <area>"
+          ]
+        },
+        {
+          "sentences": [
+            "pecha [a] porta do garaxe"
+          ],
+          "slots": {
+            "device_class": "garage_door"
+          }
+        },
+        {
+          "sentences": [
+            "pecha [a|as] <name> [<area>]"
+          ],
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ]
+          }
+        }
+      ]
+    },
+    "HassOpenCover": {
+      "data": [
+        {
+          "sentences": [
+            "abre <name>",
+            "abre <name> <area>"
+          ]
+        },
+        {
+          "sentences": [
+            "abre [a] porta do garaxe"
+          ],
+          "slots": {
+            "device_class": "garage_door"
+          }
+        },
+        {
+          "sentences": [
+            "abre [a | as] (cortinas | persianas) <area>"
+          ],
+          "slots": {
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

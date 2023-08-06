@@ -1,0 +1,40 @@
+{
+  "language": "ro",
+  "intents": {
+    "HassClimateSetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "<seteaza> [<temperatura>] [aerului] [<din>] <area> [[(pana | până)] la] <temperature>",
+            "<seteaza> [[(pana | până)] la] <temperature> (<temperatura> [aerului] [<din>] | <in>) <area>",
+            "(incalzeste | încălzește | raceste | răcește) [(<temperatura> aerului [<din>] | aerul [<din>] | [<temperatura>] <in>)] <area> [[(pana | până)] la] <temperature>",
+            "(incalzeste | încălzește | raceste | răcește) [(pana | până)] la <temperature> [(<temperatura> aerului [<din>] | aerul [<din>] | [<temperatura>] <in>)] <area>"
+          ]
+        }
+      ]
+    },
+    "HassClimateGetTemperature": {
+      "data": [
+        {
+          "sentences": [
+            "ce <temperatura> <este> [<in> <area>]",
+            "[care <este>] (temperatura | temperatură) [<din> <area>]",
+            "(cate | câte | cite | cîte) grade sunt [<in> <area>]",
+            "(cat | cât) de (cald | frig | rece | racoare | răcoare) <este> [<in> <area>]",
+            "(cat | cât) <este> de (cald | frig | rece | racoare | răcoare) [<in> <area>]",
+            "<este> (cald | frig | rece | racoare | răcoare) [<in> <area>]"
+          ]
+        }
+      ]
+    }
+  },
+  "responses": {
+    "intents": {
+      "HassClimateGetTemperature": {
+        "success": [
+          "{{ state.state }} {{ 'grad' if state.state | abs == 1 else 'grade' if state.state == 0 or state.state % 1 != 0 or state.state % 100 | abs < 20 else 'de grade' }}"
+        ]
+      }
+    }
+  }
+}

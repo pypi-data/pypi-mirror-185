@@ -1,0 +1,73 @@
+{
+  "language": "bg",
+  "intents": {
+    "HassCloseCover": {
+      "data": [
+        {
+          "sentences": [
+            "<close> <name>",
+            "<close> <name> <area>",
+            "<close> <area> <name>"
+          ]
+        },
+        {
+          "sentences": [
+            "<close> [вратата] [на] гаража",
+            "<close> гаражната врата"
+          ],
+          "slots": {
+            "device_class": "garage_door"
+          }
+        },
+        {
+          "sentences": [
+            "<close> [всички] (щор(а | и | ата | ите) | завес(a | и | ата | ите) | перде[то | та | тата] | кепенци[те] | капа(к | ка | кът | ци | ците)) <area>",
+            "<close>  <area> [всички] (щор(а | и | ата | ите) | завес(a | и | ата | ите) | перде[то | тa | тaтa] | кепенци[те] | капа(к | ка | кът | ци | ците))"
+          ],
+          "slots": {
+            "area": "bedroom",
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ]
+          }
+        }
+      ]
+    },
+    "HassOpenCover": {
+      "data": [
+        {
+          "sentences": [
+            "<open> <name>",
+            "<open> <name>  <area>",
+            "<open> <area> <name>"
+          ]
+        },
+        {
+          "sentences": [
+            "<open> [вратата] [на] гаража",
+            "<open> гаражната врата"
+          ],
+          "slots": {
+            "device_class": "garage_door"
+          }
+        },
+        {
+          "sentences": [
+            "<open> [всички] (щор(а | и | ата | ите) | завес(a | и | ата | ите) | перде[то | та | тата] | кепенци[те] | капа(к | ка | кът | ци | ците)) <area>",
+            "<open>  <area> [всички] (щор(а | и | ата | ите) | завес(a | и | ата | ите) | перде[то | тa | тaтa] | кепенци[те] | капа(к | ка | кът | ци | ците))"
+          ],
+          "slots": {
+            "area": "bedroom",
+            "device_class": [
+              "blind",
+              "curtain",
+              "shutter"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
