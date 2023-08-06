@@ -1,0 +1,7 @@
+*.egg-info
+build
+dist
+smbc.so
+tests/*.pyc
+tests/settings.py
+MANIFEST
