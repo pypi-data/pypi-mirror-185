@@ -1,0 +1,13 @@
+plotid/__init__.py,sha256=zAC32xJfknlZzMAER8DANiMJd8TAUyTypTnaT79WTVs,496
+plotid/create_id.py,sha256=0PZjXH1xpStjGuPnSaKdQupknd56OcjCuk2CaHmTePI,1696
+plotid/plotoptions.py,sha256=l8jvtXQC3MMP8ih-xdc42psuFL4JAUT2G7IRledSPeU,6721
+plotid/publish.py,sha256=fv12cQ23FoQhnEXDEtSph-UarPkb4xtrClVKVuIaBDw,16096
+plotid/save_plot.py,sha256=OlZ_ibl08Z5UjD2Gh2DD0kYEj-Lx9jLe0VGFQ0-UrKE,2282
+plotid/tagplot.py,sha256=EFzzuVvTSWJ8QCcabtn-4VxLLRDUh0kecmjC2JE5_tU,5433
+plotid/tagplot_image.py,sha256=Z-emJC9xjYHpdyE1lUIxp020SlqQ7Pur1FoTHC3b038,4305
+plotid/tagplot_matplotlib.py,sha256=F3eLBmjgu_9kQyxEFk4-PhVeiXsI62njOiUDxaMCk3Y,3090
+plotID-0.3.0.dist-info/LICENSE,sha256=HvEbtm1PoM4-lxEY6VPfo3ECReWyLFTdZenmuuAsqhA,11336
+plotID-0.3.0.dist-info/METADATA,sha256=zxCknI7p63wjQCjXuNDowx6Kr75mEm8MElQKhYZ4Z8E,8016
+plotID-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+plotID-0.3.0.dist-info/top_level.txt,sha256=XhBeYdY_ONCtU_T3r_sOGdOBz17SpVVJ0czQYzSzaS8,7
+plotID-0.3.0.dist-info/RECORD,,
