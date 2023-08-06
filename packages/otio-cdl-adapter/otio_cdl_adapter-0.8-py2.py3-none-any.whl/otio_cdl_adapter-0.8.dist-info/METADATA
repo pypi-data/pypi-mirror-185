@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: otio-cdl-adapter
+Version: 0.8
+Summary: Exports a .cdl file for each clip event in an OTIO instance
+Home-page: https://github.com/josh-mission/otio-cdl-adapter
+Author: Joshua James Unwin
+Author-email: josh@missiondigital.co.uk
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia :: Video :: Display
+Classifier: Topic :: Multimedia :: Video :: Non-Linear Editor
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+License-File: LICENSE-MIT
+Requires-Dist: OpenTimelineIO (>=0.12.0)
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# OpenTimelineIO - CDL Export Adapter
+This simple adapter allows users to export a collection of .cdl files
+from an OTIO instance. 
+
+One .cdl file is exported for each clip in the OTIO instance 
+(supports both Timeline and SerializableCollection OTIO schemas).
+
+The ColorCorrection Node ID within the .cdl will use the
+CMX_3600 reel name/Tape of the clip, while the file itself will be named
+using the timeline event/clip name.
+
+Please note, you must provide directory (not a file) as the output parameter.\
+Due to this, you must also manually provide the adapter_name as a named
+parameter as there is no file extension for otio to automatically select it.
+
+## Usage
+`otio.adapters.write_to_file(timeline, 'path/to/output/directory', adapter_name='cdl')`
+
+## More on OpenTimelineIO
+See here for more info on OpentimelineIO
+- [OpenTimelineIO docs](https://opentimelineio.readthedocs.io/en/latest/index.html)
+- [OpentimelineIO repo](https://github.com/AcademySoftwareFoundation/OpenTimelineIO)
+- [OpentimelineIO Plugin Template repo](https://github.com/OpenTimelineIO/otio-plugin-template)
+
+## Linting
+Linting is handled with `flake8`
