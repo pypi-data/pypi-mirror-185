@@ -1,0 +1,2 @@
+[console_scripts]
+chatgpt_telegram_bot = chatgpt_telegram.telegrambot:run

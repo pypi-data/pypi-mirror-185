@@ -1,0 +1,10 @@
+chatgpt_telegram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt_telegram/__main__.py,sha256=cWo0DSnb059IQFHxi3TzgUtznBvvfEesGhkog_iPQt0,76
+chatgpt_telegram/chatgpt.py,sha256=6mukJx49NRgHfOWwtBa8VH_iXHz9kAhBvwavpWbOO0w,15019
+chatgpt_telegram/telegrambot.py,sha256=43XALVS71rx0T8PN9frA2jj-mmnCKbsFsoXuWauCjyc,8748
+chatgpt_telegram-0.1.2.dist-info/LICENSE,sha256=XpquwkDj5NIBrtvKyP2ZaymjrQizS0vLly6S_grsNks,1073
+chatgpt_telegram-0.1.2.dist-info/METADATA,sha256=RrO-9rh-8aUo-l7OxljX9xcVV8COvPYG-Fe2FHm59S0,2372
+chatgpt_telegram-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chatgpt_telegram-0.1.2.dist-info/entry_points.txt,sha256=8BB2Mqn0B5t7Jc4b3W6a86i7e7xcC5kGYHBd-Z8vqkY,74
+chatgpt_telegram-0.1.2.dist-info/top_level.txt,sha256=TsdBBJvEeROmUDiwnlMOQsk_CQlcbnolDDl0btaW4Kg,17
+chatgpt_telegram-0.1.2.dist-info/RECORD,,
