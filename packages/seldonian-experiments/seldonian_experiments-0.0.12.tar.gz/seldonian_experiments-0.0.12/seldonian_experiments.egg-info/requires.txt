@@ -1,0 +1,4 @@
+seldonian-engine
+matplotlib==3.5.1
+scikit_learn==1.1.1
+tqdm==4.64.0
