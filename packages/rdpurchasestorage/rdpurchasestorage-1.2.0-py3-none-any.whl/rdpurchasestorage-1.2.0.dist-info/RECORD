@@ -1,0 +1,10 @@
+rdpurchasestorage/EcsInterface.py,sha256=7C7Rr40MoM3fddQKuDI8JnRwsQXN6RVUmWHQsJy-CgU,3090
+rdpurchasestorage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rdpurchasestorage/mainModel.py,sha256=KvLFRuIwZaXpqN6fslqEJBVsjHGli_gLmKxQwtpQJ8I,1601
+rdpurchasestorage/metadata.py,sha256=DxZ-7o94JTJ_pjSj9LeFriSFdaFKBEtqWEBjU2CZM98,8939
+rdpurchasestorage/operation.py,sha256=Y1Jd9CBsz8n9vD0hXRF0XdyI1eKzG0wZdTyIvWr6rvE,5129
+rdpurchasestorage/utility.py,sha256=y5es3SUsdXW95GjgDXxK7Z31q51Z60nOjSxBP7FgXL0,5659
+rdpurchasestorage-1.2.0.dist-info/METADATA,sha256=jfo6aJcBQ9q1k-uzKVnZhVpc3zRmskVnatyAnKV20kE,307
+rdpurchasestorage-1.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+rdpurchasestorage-1.2.0.dist-info/top_level.txt,sha256=EhBnEH3K4G7-UUd5c5cQxDSVRf1eVYx6LvjT0t4kP_4,18
+rdpurchasestorage-1.2.0.dist-info/RECORD,,
