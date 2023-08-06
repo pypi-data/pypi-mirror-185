@@ -1,0 +1,10 @@
+appleauth/__init__.py,sha256=8iAhLNj_k_MupbBkHlRhbq-RNZJP5jk_fwg3nrjBksI,57
+appleauth/apis.py,sha256=yR8RkQMrsBPvXt18bD10KuzHeKRV052AiCzrp8UjbbU,3779
+appleauth/mixins.py,sha256=DPli_WY1Ypw1pk1SBEOHZdmvziwekK-79m2oJIrafvE,1096
+appleauth/serializers.py,sha256=g_Z6WwdgOb1TOBGmqYXs4li28BRdt7pSvfLQORCfJBc,685
+appleauth/services.py,sha256=QKICiE4CMteIBTY6eQ2ol9Taow1Nqc-thoxw3NeSzXA,4143
+appleauth/settings.py,sha256=IhbvQ8oZVgM6MfWuXevrrEGdWvz4bsbhnrTaaM-Yb_k,2876
+appleauth-0.0.1.dist-info/METADATA,sha256=681X2xVWpOuSXXuga8i7gkvTPMSpYF3asS-dbKr3TOY,6837
+appleauth-0.0.1.dist-info/LICENSE,sha256=wejanfOwl4uVM39c42BiUr4Opzuz9JEYNk7gU9fFnsk,1076
+appleauth-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+appleauth-0.0.1.dist-info/RECORD,,
