@@ -1,0 +1,9 @@
+ocp_sso_token/__init__.py,sha256=eBkDEcVw5dcooc5HZh1WFfcg3Ta4-N-UGd8ocD5sR6c,93
+ocp_sso_token/__main__.py,sha256=n1jvduc5UHN5mBQ45Pgc26Wt8TV8Q6j6P_UnlzNAWyk,1120
+ocp_sso_token/ocp_oauth_login.py,sha256=FldXsYs1maa-kUC-Gk7Mb-mKnbQFcAkdV2vk3sJXtFU,2480
+ocp_sso_token-0.1.1.dist-info/LICENSE,sha256=PKEuQZdn1R5nc0S4UzSZpG3LdoGoYDrfbkb9n1cuyUE,35079
+ocp_sso_token-0.1.1.dist-info/METADATA,sha256=afs6JvpAStqnp8InDFuFZkquh7nuxlJkuVt65IIB8mI,4400
+ocp_sso_token-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ocp_sso_token-0.1.1.dist-info/entry_points.txt,sha256=ueLxURjOwdHdpBtmQPGyOqfKcFuhJ3ddO3kb-oQpMRs,62
+ocp_sso_token-0.1.1.dist-info/top_level.txt,sha256=gk12eXtNSTrZlUmuaIVMWeghC_QZqa9KgOpBeV6FZoU,14
+ocp_sso_token-0.1.1.dist-info/RECORD,,
