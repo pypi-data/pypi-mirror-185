@@ -1,0 +1,14 @@
+restview/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+restview/__main__.py,sha256=M7k5I41id5nUL__nM0VvhHH4WwLGHH6tOmo27gu1X5M,137
+restview/favicon.ico,sha256=82j3BcJTR2F6ISdv3YaqtrkeSPE3EWDVlCP31US7TBw,1150
+restview/icon-16x16.xcf,sha256=6sr2A5MnYp1FKvQYAmfyHu4AZJNiEMqV9zZYdkCFRow,1740
+restview/oldrestview.css,sha256=O3HrderEJusl0nEDbjAEo1TKOV4z25nC3tZpPExN0MY,5060
+restview/restview.css,sha256=UrAFS8L2i56Njx3WnNO7GemYDMBU4ws3HNg2-GO0_CU,1646
+restview/restviewhttp.py,sha256=uw7artOdVs0sbqMpd8FV5lmhsb_K8JIDG_gCbE2FB38,28908
+restview/tests.py,sha256=AiwlSf-R69tTZOjoovIXW_rZoJhCcx5da_Gq_MAYJ6A,41252
+restview-3.0.1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+restview-3.0.1.dist-info/METADATA,sha256=WBmMm95gu4wsJSt2gXc8JW9qjfipp2_Sru7W6cbA1yk,15425
+restview-3.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+restview-3.0.1.dist-info/entry_points.txt,sha256=6gy0nxmgreuWgU0tCTOblH3Wji5U7z6e4cE4P_mNkLc,69
+restview-3.0.1.dist-info/top_level.txt,sha256=P54FlNrBCyEddxpW1jifqRnRwAq3tbgYdsixDMccgIA,9
+restview-3.0.1.dist-info/RECORD,,
