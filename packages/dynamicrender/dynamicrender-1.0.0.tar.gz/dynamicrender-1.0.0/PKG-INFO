@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: dynamicrender
+Version: 1.0.0
+Summary: A package that transform bilibili's dynamic data to image
+Author: DMC
+Author-email: lzxder@outlook.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: dynamicadaptor (==0.2.7)
+Requires-Dist: emoji (>=2.2.0,<3.0.0)
+Requires-Dist: fonttools (>=4.38.0,<5.0.0)
+Requires-Dist: httpx (>=0.23.2,<0.24.0)
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: numpy (>=1.24.1,<2.0.0)
+Requires-Dist: pillow (>=9.4.0,<10.0.0)
+Requires-Dist: qrcode (>=7.3.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+# DynamicRender
+
+用于将B站的动态渲染为图片（需要配合适配器将动态转化为特定格式）
+
+## 使用
+
+
+### 安装
+
+```
+pip install dynamicrender
+```
+
+
+### 1. 格式化动态
+
+```python
+
+# 如果数据是grpc返回的数据
+from google.protobuf.json_format import MessageToDict
+from dynamicadaptor.DynamicConversion import formate_message
+from bilirpc.api import get_dy_detail
+import asyncio
+from dynamicrender.Core import DyRender 
+
+async def sample1():
+    dynamic_grpc = await get_dy_detail("746530608345251842")
+    dynamic: dict = MessageToDict(dynamic_grpc[0])
+    dynamic_formate = formate_message("grpc", dynamic)
+    result = await render.dyn_render(dynamic_formate)
+    result.show()
+    # print(dynamic_formate)
+    
+asyncio.run(sample1())
+
+
+
+# 如果是web返回的数据
+
+import asyncio
+import httpx
+from dynamicrender.Core import DyRender
+from dynamicadaptor.DynamicConversion import formate_message 
+
+async def sample2():
+    url = "https://api.bilibili.com/x/polymer/web-dynamic/v1/detail?timezone_offset=-480&id=746530608345251842"
+    headers = {
+        "Referer": "https://t.bilibili.com/746530608345251842"
+    }
+    result = httpx.get(url, headers=headers).json()
+    dynamic_formate = formate_message("web", result["data"]["item"])
+    result = await render.dyn_render(dynamic_formate)
+    result.show()
+
+
+# asyncio.run(sample2())
+
+```
+
+
+## 待完善
+
+- [ ] 添加additinal none (750260899099443251)
