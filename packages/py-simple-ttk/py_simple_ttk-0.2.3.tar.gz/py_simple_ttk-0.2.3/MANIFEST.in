@@ -1,0 +1,3 @@
+include src/py_simple_ttk/assets/*
+include src/py_simple_ttk/assets/fonts/*
+include src/py_simple_ttk/assets/themes/*
