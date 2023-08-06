@@ -1,0 +1,2 @@
+[console_scripts]
+proxy3 = proxy3:main
