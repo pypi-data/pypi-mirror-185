@@ -1,0 +1,8 @@
+socketapp/__init__.py,sha256=jOM5HI2w38mYk6C5pAyjqDFro0eG08N2G_1V28W2gfI,120
+socketapp/client.py,sha256=_sldYTt_R7X9W4-ZjFdRcgITXrae4oC7BSeIWPCOPSM,2871
+socketapp/event.py,sha256=qVJWrhybV4r_oKtGW0CAT_ebB99gG-4HPatAtnjF2TI,1170
+socketapp/server.py,sha256=LAIdswTN4mBDlv_MLpv9bcm-yglB8yWlkJMR_rfGoRU,3705
+socketapp-0.1.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+socketapp-0.1.4.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+socketapp-0.1.4.dist-info/METADATA,sha256=Si9406NKBZ2m3YuWlBomxtDkrAMBarGI1vGdkDhoXFk,736
+socketapp-0.1.4.dist-info/RECORD,,
