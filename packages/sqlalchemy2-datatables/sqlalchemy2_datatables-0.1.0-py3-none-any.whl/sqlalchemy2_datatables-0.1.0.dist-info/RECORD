@@ -1,0 +1,7 @@
+datatables/__init__.py,sha256=yV1_4ufuygC4gFyKh1pcDSapHZ3Rc-yu6-lD0HGoEzQ,250
+datatables/base.py,sha256=cDvBs_5SSGulNEguzqpA5eiJWsuRF9aBB3g6TrqV6H8,5984
+datatables/datatable.py,sha256=1YWaZ7CJ1n4EyWOvr7XNc0ovhqZ-HXANo4-d7pk01vY,9505
+datatables/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy2_datatables-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+sqlalchemy2_datatables-0.1.0.dist-info/METADATA,sha256=eBhPbAsBZFUbU2YBRgwBjvDQFzRP07WsQELgLjHDlL8,2407
+sqlalchemy2_datatables-0.1.0.dist-info/RECORD,,
