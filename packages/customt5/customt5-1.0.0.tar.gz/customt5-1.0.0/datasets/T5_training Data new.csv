@@ -1,0 +1,141 @@
+Sentences,UseCase
+Age cannot be missing,Age not_equals to null
+Value cannot be missing,Value not_equals to null
+Name cannot be missing,Name not_equals to null
+DOB cannot be missing,DOB not_equals to null
+Input cannot be missing,Input not_equals to null
+Age can be missing,Age equals to null
+Value can be missing,Value equals to null
+Name can be missing,Name equals to null
+DOB can be missing,DOB equals to null
+Input can be missing,Input equals to null
+Value should not be void,Value not_equals to null
+Age should not be void,Age not_equals to null
+Name should not be void,Name not_equals to null
+DOB should not be void,DOB not_equals to null
+Input should not be void,Input not_equals to null
+Value should be void,Value equals to null
+Age should be void,Age equals to null
+Name should be void,Name equals to null
+DOB should be void,DOB equals to null
+Input should be void,Input equals to null
+Value contains nothing,Value equals to null
+Age contains nothing,Age equals to null
+Name contains nothing,Name equals to null
+DOB contains nothing,DOB equals to null
+Input contains nothing,Input equals to null
+Value contains something,Value not_equals to null
+Age contains something,Age not_equals to null
+Name contains something,Name not_equals to null
+DOB contains something,DOB not_equals to null
+Input contains something,Input not_equals to null
+Value has no value,Value equals to null
+Age has no value,Age equals to null
+Name has no value,Name equals to null
+DOB has no value,DOB equals to null
+Input has no value,Input equals to null
+Value has value,Value not_equals to null
+Age has value,Age not_equals to null
+Name has value,Name not_equals to null
+DOB has value,DOB not_equals to null
+Input has value,Input not_equals to null
+Value is invalid,Value equals to null
+Age is invalid,Age equals to null
+Name is invalid,Name equals to null
+DOB is invalid,DOB equals to null
+Input is invalid,Input equals to null
+Value is valid,Value not_equals to null
+Age is valid,Age not_equals to null
+Name is valid,Name not_equals to null
+DOB is valid,DOB not_equals to null
+Input is valid,Input not_equals to null
+Value is expected to be empty,Value equals to null
+Age is expected to be empty,Age equals to null
+Input is expected to be empty,Input equals to null
+Age is expected to be empty,Age equals to null
+DOB is expected to be empty,DOB equals to null
+Value is not expected to be empty,Value not_equals to null
+Age is not expected to be empty,Age not_equals to null
+Input is not expected to be empty,Input not_equals to null
+Age is not expected to be empty,Age not_equals to null
+DOB is not expected to be empty,DOB not_equals to null
+Value is required not to be null,Value not_equals to null
+Age is required not to be null,Age not_equals to null
+Input is required not to be null,Input not_equals to null
+Age is required not to be null,Age not_equals to null
+DOB is required not to be null,DOB not_equals to null
+Value is required not to be empty,Value not_equals to null
+Age is required not to be empty,Age not_equals to null
+Input is required not to be empty,Input not_equals to null
+Age is required not to be empty,Age not_equals to null
+DOB is required not to be empty,DOB not_equals to null
+Value is required to be null,Value equals to null
+Age is required to be null,Age equals to null
+Input is required to be null,Input equals to null
+Age is required to be null,Age equals to null
+DOB is required to be null,DOB equals to null
+Value is required to be empty,Value equals to null
+Age is required to be empty,Age equals to null
+Input is required to be empty,Input equals to null
+Age is required to be empty,Age equals to null
+DOB is required to be empty,DOB equals to null
+Value applies null,Value equals to null
+Age applies null,Age equals to null
+Input applies null,Input equals to null
+Age applies null,Age equals to null
+DOB applies null,DOB equals to null
+Value works null,Value equals to null
+Age works null,Age equals to null
+Input works null,Input equals to null
+Age works null,Age equals to null
+DOB works null,DOB equals to null
+Value works not null,Value not_equals to null
+Age works not null,Age not_equals to null
+Input works not null,Input not_equals to null
+Age works not null,Age not_equals to null
+DOB works not null,DOB not_equals to null
+Value applies not null,Value not_equals to null
+Age applies not null,Age not_equals to null
+Input applies not null,Input not_equals to null
+Age applies not null,Age not_equals to null
+DOB applies not null,DOB not_equals to null
+Value will not hold the value null,Value not_equals to null
+Age will not hold the value null,Age not_equals to null
+Input will not hold the value null,Input not_equals to null
+Age will not hold the value null,Age not_equals to null
+DOB will not hold the value null,DOB not_equals to null
+Value will hold the value null,Value equals to null
+Age will hold the value null,Age equals to null
+Input will hold the value null,Input equals to null
+Age will hold the value null,Age equals to null
+DOB will hold the value null,DOB equals to null
+Value can not hold the value null,Value not_equals to null
+Age can not hold the value null,Age not_equals to null
+Input can not hold the value null,Input not_equals to null
+Age can not hold the value null,Age not_equals to null
+DOB can not hold the value null,DOB not_equals to null
+Value can hold the value null,Value equals to null
+Age can hold the value null,Age equals to null
+Input can hold the value null,Input equals to null
+Age can hold the value null,Age equals to null
+DOB can hold the value null,DOB equals to null
+Value must not hold the value null,Value not_equals to null
+Age must not hold the value null,Age not_equals to null
+Input must not hold the value null,Input not_equals to null
+Age must not hold the value null,Age not_equals to null
+DOB must not hold the value null,DOB not_equals to null
+Value must hold the value null,Value equals to null
+Age must hold the value null,Age equals to null
+Input must hold the value null,Input equals to null
+Age must hold the value null,Age equals to null
+DOB must hold the value null,DOB equals to null
+Value should not hold the value null,Value not_equals to null
+Age should not hold the value null,Age not_equals to null
+Input should not hold the value null,Input not_equals to null
+Age should not hold the value null,Age not_equals to null
+DOB should not hold the value null,DOB not_equals to null
+Value should hold the value null,Value equals to null
+Age should hold the value null,Age equals to null
+Input should hold the value null,Input equals to null
+Age should hold the value null,Age equals to null
+DOB should hold the value null,DOB equals to null
