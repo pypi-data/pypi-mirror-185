@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/selenoprofiles4/MMlib3.py
+src/selenoprofiles4/__init__.py
+src/selenoprofiles4/_version.py
+src/selenoprofiles4/selenoprofiles4.py
+src/selenoprofiles4.egg-info/PKG-INFO
+src/selenoprofiles4.egg-info/SOURCES.txt
+src/selenoprofiles4.egg-info/dependency_links.txt
+src/selenoprofiles4.egg-info/requires.txt
+src/selenoprofiles4.egg-info/top_level.txt
