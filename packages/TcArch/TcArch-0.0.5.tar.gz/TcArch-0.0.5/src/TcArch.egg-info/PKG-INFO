@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: TcArch
+Version: 0.0.5
+Summary: Script to test ...
+Home-page: https://github.com/TobiasFreyermuth/TcArch
+Author: Tobias Freyermuth
+Author-email: Tobias.Freyermuth@posteo.net
+License: MIT
+Keywords: twincat
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# TcArch
+
+Script to test ...
+
+To install TcArch, along with the tools you need to develop and run tests, run the following in your virtualenv:
+
+$ pip install -e . [dev]
