@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: quantum-solver-library
+Version: 0.0.2
+Summary: A little quantum toolset developed using Qiskit
+Home-page: https://github.com/alu0101119137/quantum-solver
+Author: Andrea Hernández
+Author-email: alu0101119137@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/alu0101119137/quantum-solver/issues
+Description: file: README.md
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
