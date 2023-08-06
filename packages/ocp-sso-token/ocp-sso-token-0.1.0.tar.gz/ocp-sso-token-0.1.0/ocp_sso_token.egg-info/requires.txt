@@ -1,0 +1,10 @@
+requests
+requests-gssapi
+
+[dev]
+mypy
+types-requests
+
+[release]
+build
+twine
