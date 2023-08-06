@@ -1,0 +1,3 @@
+[console_scripts]
+co = co.entrypoint:co
+
