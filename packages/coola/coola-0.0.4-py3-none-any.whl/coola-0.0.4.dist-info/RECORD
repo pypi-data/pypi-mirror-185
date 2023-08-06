@@ -1,0 +1,11 @@
+coola/__init__.py,sha256=0a--WKRUA1zLMM7aIOXQYlHENzzAvNVaM7XpDdqccTI,653
+coola/allclose.py,sha256=YYpTzkwk401vbQCHhqNPQ8JN86wNYnE2KqzWl3Ies1c,18458
+coola/equality.py,sha256=L1aGsP6YFcGpWyOvhTG7RqX_6ix9d6dhbb6z6fOwxDM,13169
+coola/format.py,sha256=UkCIvPSvLULelyV_Yq-nDGK2Z6XGLR4fY7hkRbfHo_M,2444
+coola/import_utils.py,sha256=iz27fFanDhvT4OqxbBvzpS5oZh1OEp659VbdUPT_e7k,1195
+coola/ndarray.py,sha256=Nxi89O1TXfewrLpidxVcyYlL7-4Ea78RpT-b-Ilrd9A,4244
+coola/pytorch.py,sha256=bPjBYeJ9xaaKEMBobjlX7zGPsL6DN_rd5ca1WEiY81A,7489
+coola-0.0.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+coola-0.0.4.dist-info/LICENSE,sha256=nP63ZB3H79FVJ15_TZbXWvNH7XmXT2Ab1q11r-sDXkY,1501
+coola-0.0.4.dist-info/METADATA,sha256=g1DTWMyPRqt1xI7fs4ll7vo3WC_KTYVjMqh8_VtgR6g,5427
+coola-0.0.4.dist-info/RECORD,,
