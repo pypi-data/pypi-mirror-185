@@ -1,0 +1,7 @@
+pyproject.toml
+sample_project_deep_rana.egg-info/PKG-INFO
+sample_project_deep_rana.egg-info/SOURCES.txt
+sample_project_deep_rana.egg-info/dependency_links.txt
+sample_project_deep_rana.egg-info/entry_points.txt
+sample_project_deep_rana.egg-info/requires.txt
+sample_project_deep_rana.egg-info/top_level.txt

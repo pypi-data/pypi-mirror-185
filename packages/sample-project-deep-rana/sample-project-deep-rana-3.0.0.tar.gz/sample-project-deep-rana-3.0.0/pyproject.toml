@@ -1,0 +1,41 @@
+[project]
+name = "sample-project-deep-rana"
+
+version = "3.0.0"
+
+description = "An sample project to understand."
+
+readme = "README.md"
+
+requires-python = ">=3.7"
+
+license = {file = "LICENSE.txt"}
+
+keywords = ["deep","sample-project"]
+
+authors = [
+{name = "deep rana", email="deep.rana@crestdatasys.om"}
+]
+
+maintainers = [
+{name = "deep rana", email="deep.rana@crestdatasys.om"}
+]
+
+classifiers = [
+ "Development Status :: 3 - Alpha",
+]
+
+dependencies = [
+"peppercorn"
+]
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+test = ["coverage"]
+
+[project.scripts]
+sample = "sample:main"
+
+[build-system]
+requires = ["setuptools>=43.0.0","wheel"]
+build-backend = "setuptools.build_meta"
