@@ -1,0 +1,10 @@
+numpy
+
+[testing]
+pytest
+flake8
+coverage
+sphinx
+pre-commit
+wheel
+twine
