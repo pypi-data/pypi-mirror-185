@@ -1,0 +1,16 @@
+firecore/__init__.py,sha256=6GEiEmB_K4N3dpifQHVnMrri9nnbg5LIdSAU-qBq1gw,58
+firecore/config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+firecore/import_utils.py,sha256=aiqCLApWVyog4CcFa3HCibP5MLvFeUQuAi_Gq6xbF8U,439
+firecore/jsonnet_loader.py,sha256=aKOPKO4yTmMMi_bcP33bc5wq7_Q5t6kbP23FLfEjsPM,2282
+firecore/logging.py,sha256=v0CpugI3p3qhB3XIDm86o7Ekf0eMKMC5S_Gr6O_9YeI,2748
+firecore/main_utils.py,sha256=4DDeOCkvC7LAQG5_wbahXlvvNIamEQv1EoeFomtBBrw,476
+firecore/opencv.py,sha256=mF8nrd8I56IhS5SvgVnBkFGrvNnsFjZyeDIv_xFg6UA,530
+firecore/system.py,sha256=MGM_71HlvxXUMhtOWCPKqqSjiQZ-421aHuUHO0_qm3I,886
+firecore/torch/__init__.py,sha256=KqLJMpL-sHEQJvgt2uH6nYsLJu3jaO3gGQA8mP9wTL4,166
+firecore/torch/jit_utils.py,sha256=K3NxaqAKwnISp4yWr0HVy4Xnr8dbZujuff8TmU3jb1c,1105
+firecore/torch/module_utils.py,sha256=Tn4URktuUTLstm_qg9iVHXIB_TSFL6RgvrN_ogVwrok,709
+firecore/torch/optimizer_utils.py,sha256=AQaDWWUiIrKQkIRkJ3bA0zdTtxeeXmTvXOYWWKwR91I,181
+firecore-0.2.1.dist-info/METADATA,sha256=AXpuUhrXbgJfX0dvUxWVpocBRYgpk0PfKXxaTFomVRs,671
+firecore-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+firecore-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+firecore-0.2.1.dist-info/RECORD,,
