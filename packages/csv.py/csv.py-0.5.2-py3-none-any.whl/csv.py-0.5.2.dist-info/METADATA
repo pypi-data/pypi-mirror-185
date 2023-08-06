@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: csv.py
+Version: 0.5.2
+Summary: A package of tools for csv files
+Home-page: https://github.com/leoxiang66/csv-toolkit
+Author: Tao Xiang
+Author-email: tao.xiang@tum.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: filelock (==3.9.0)
+
+# csv-toolkit
+A package  of tools for csv file.
+
+## Installation
+```
+pip install csv.py
+```
+
+
+## APIs
+
+### Filtering
+1. filter column values
+    ```python
+    import csvkit
+    csvkit.column_equal(df,'column_1','value1')
+    ```
+
+
