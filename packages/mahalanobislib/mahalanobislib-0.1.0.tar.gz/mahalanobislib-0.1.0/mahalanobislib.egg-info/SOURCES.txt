@@ -1,0 +1,8 @@
+README.md
+setup.py
+mahalanobislib.egg-info/PKG-INFO
+mahalanobislib.egg-info/SOURCES.txt
+mahalanobislib.egg-info/dependency_links.txt
+mahalanobislib.egg-info/requires.txt
+mahalanobislib.egg-info/top_level.txt
+test/test_myfunctions.py
