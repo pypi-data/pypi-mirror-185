@@ -1,0 +1,15 @@
+pyclf/__init__.py,sha256=KDYNp8FuzBa3cgIdqMoYDqzh5it26qwtpKVFPOzlkdI,17
+pyclf/lda/__init__.py,sha256=QjUpU6O7GAYOgUUDQCZuyAPIquoexccRYL2ZTTWaiPA,76
+pyclf/lda/benchmark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyclf/lda/classification/__init__.py,sha256=dp7HLgqLNP6Ck1hyGBXcn2MOvxVtAi0ZS3JCQUlbH-c,134
+pyclf/lda/classification/covariance.py,sha256=vS1J5UIwLVJKEQ3Er7BdOLHK5SKsmnLgeazCPI6N_vc,5705
+pyclf/lda/classification/toeplitzlda.py,sha256=rYbSTCCBtld0YpISTBknn6YcG6g2CIfqrYyjvVUjV-8,17204
+pyclf/lda/classification/unsupervised.py,sha256=RBD2Shul5jT6hy-st4OMQB0FPOI42C-ecaxOf_lZVWU,1441
+pyclf/lda/usup_replay/__init__.py,sha256=Yzl8vfNf1ki0GF0k4aa9KmfLZDAzp0MKr0lLrLwLj-Y,86
+pyclf/lda/usup_replay/llp.py,sha256=TBZjqEy3g-ZEMFFsZEU9y7kbUOzWmgExIFolsyXCUwA,4323
+pyclf/lda/usup_replay/visual_speller.py,sha256=k2MfCZ3vE6aiHdk8New7a_5JGjZ5Zb5gBhLnlDgypeI,23757
+pyclf_bci-0.0.1.dist-info/LICENSE,sha256=7z0_w_yWo4T8sDYikZI41v-sX943rdqBKZMD8vrd5DM,1069
+pyclf_bci-0.0.1.dist-info/METADATA,sha256=Q4hYue151j4iyljZBFeRFkDD0Oo9Wz8x4ja0ngeKpDU,673
+pyclf_bci-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyclf_bci-0.0.1.dist-info/top_level.txt,sha256=sW06NMOxX4TEZ2ykGzwUkOqwJKNKMwwkRekPDE25Efw,6
+pyclf_bci-0.0.1.dist-info/RECORD,,
