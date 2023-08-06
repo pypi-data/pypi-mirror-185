@@ -1,0 +1,2 @@
+recursive-include bluewave *.p
+recursive-include models *.p

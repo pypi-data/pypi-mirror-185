@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: bluewave
+Version: 0.0.5
+Summary: A package to compare similarity of two pdfs
+Author-email: bballboy8 <author@example.com>
+Project-URL: Homepage, https://github.com/bballboy8/bluewave/
+Project-URL: Bug Tracker, https://github.com/bballboy8/bluewave/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bluewave
+
+This is a Python script to analyze the similarity of two PDFs.
+
+## Usage
+
+To run this, an example would be:
+
+```python
+from bluewave.compare_pdfs import compare_pdf_files
+
+filenames = ["file1.pdf", "file2.pdf"]
+result = compare_pdf_files(filenames,
+                           methods=False,
+                           pretty_print=False,
+                           verbose=True,
+                           regen_cache=True,
+                           sidecar_only=False,
+                           no_importance=False
+                           )
+```
