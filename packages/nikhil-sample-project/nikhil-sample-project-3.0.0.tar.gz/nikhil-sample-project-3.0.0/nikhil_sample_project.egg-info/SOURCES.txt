@@ -1,0 +1,7 @@
+pyproject.toml
+nikhil_sample_project.egg-info/PKG-INFO
+nikhil_sample_project.egg-info/SOURCES.txt
+nikhil_sample_project.egg-info/dependency_links.txt
+nikhil_sample_project.egg-info/entry_points.txt
+nikhil_sample_project.egg-info/requires.txt
+nikhil_sample_project.egg-info/top_level.txt
