@@ -1,0 +1,10 @@
+requests
+
+[dev]
+pytest
+pytest-cov
+pytest-qt
+tox
+pre-commit
+twine
+build

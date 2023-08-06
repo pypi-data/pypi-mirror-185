@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pricehubble-api
+Version: 0.0
+Summary: Pricehubble API package
+Author: Markus Stabrin
+Author-email: it@markus-stabrin.de
+License: MPL-2.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
