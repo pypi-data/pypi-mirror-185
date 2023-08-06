@@ -1,0 +1,3 @@
+[console_scripts]
+scaffoldgraphnew = scaffoldgraphnew.scripts.run:scaffoldgraph_main
+
