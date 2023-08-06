@@ -1,0 +1,2 @@
+[console_scripts]
+rm-unneeded-f-str = rm_unneeded_f_str:main
