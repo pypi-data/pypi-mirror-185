@@ -1,0 +1,8 @@
+Orange3>=3.31.1
+ictiopy>=1.0.0
+mecoda-minka>=1.0.0
+mecoda-nat>=0.5.8
+pandas>=1.4.4
+pyodourcollect>=1.0.0
+pytest
+smartcitizen-connector>=0.2.0
