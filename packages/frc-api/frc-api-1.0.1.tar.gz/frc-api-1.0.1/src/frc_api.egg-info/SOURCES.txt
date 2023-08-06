@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/FrcApi/__init__.py
+src/FrcApi/config.py
+src/FrcApi/district_ranking_calculation.py
+src/FrcApi/fun.py
+src/FrcApi/matchresults.py
+src/FrcApi/rankings.py
+src/FrcApi/seasondata.py
+src/frc_api.egg-info/PKG-INFO
+src/frc_api.egg-info/SOURCES.txt
+src/frc_api.egg-info/dependency_links.txt
+src/frc_api.egg-info/top_level.txt

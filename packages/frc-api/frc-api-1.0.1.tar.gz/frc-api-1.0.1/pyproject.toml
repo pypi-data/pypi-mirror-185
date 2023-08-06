@@ -1,0 +1,26 @@
+[project]
+name = "frc-api"
+version = "1.0.1"
+authors = [
+    { name = "Cole Kauder-McMurrich", email = "gamingwithcole7@gmail.com" },
+]
+description = "A wrapper for the FRC events api"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Colepng/FRC-API/tree/main"
+"Bug Tracker" = "https://github.com/Colepng/FRC-API/issues"
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
