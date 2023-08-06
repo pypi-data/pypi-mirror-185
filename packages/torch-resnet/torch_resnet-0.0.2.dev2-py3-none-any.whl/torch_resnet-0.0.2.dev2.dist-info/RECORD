@@ -1,0 +1,13 @@
+torch_resnet/__init__.py,sha256=6iUFRLhrh_5dyOMnkQAniRoXdiRsBJazXoxkWScOPiA,814
+torch_resnet/avg_2d.py,sha256=g_7SBXBdTb5cQ9neXy9I_U4EQi_EQnvB_0uKseCIRC0,222
+torch_resnet/init.py,sha256=-EMltC3Z797TZIzueLR3JwUGxREj-kvhqvYvGEfk9VU,1486
+torch_resnet/preact_resnet.py,sha256=uwRLyaDIn1C3dV_vnybvtC388rar_jY31j4-0pA64B8,17761
+torch_resnet/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torch_resnet/resnet.py,sha256=TOsVfv_YXTCwPYr_ZrMMYeY3y5zZoGxRktT3zfoxkdw,17001
+torch_resnet/shortcut.py,sha256=IkAskfZsV4wxWnWb_CRjRliQ5AwEsQAMceYxL7hsBww,4539
+torch_resnet/utils.py,sha256=YEPqLHIg5SEYIk_WPCRKig7a3ZLqUCCDlqmU3YmHZzI,865
+torch_resnet-0.0.2.dev2.dist-info/LICENSE,sha256=mTZcRcQZEJ2Wbp_A0P1mCeetemSOdyl043X0DbupM10,1068
+torch_resnet-0.0.2.dev2.dist-info/METADATA,sha256=w839DJfQf_q-QkMIjCASzlYsSYHEmCJ7xTmtG-7gd58,13689
+torch_resnet-0.0.2.dev2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+torch_resnet-0.0.2.dev2.dist-info/top_level.txt,sha256=5hj4fy_m1oei9QGibqZjo1R-iI0TKCSWz4j89cHa0ps,13
+torch_resnet-0.0.2.dev2.dist-info/RECORD,,
