@@ -1,0 +1,8 @@
+asyncpg_engine/__init__.py,sha256=yqLASZ7eXXBUClbv9SnHsbasABx9hhNeLWpCePEOrJQ,49
+asyncpg_engine/engine.py,sha256=r9s0Us25iWbd2wjA27zPuPzlBrs2zFl9rd5me5AwoZs,2316
+asyncpg_engine/pytest_plugin.py,sha256=tczob5mX6DrGRJO7_yBTIP0AqqgH71MoUChAN51BVzU,1160
+asyncpg_engine-0.3.1.dist-info/entry_points.txt,sha256=NOIWj7vV8yDhP1wGcycLdArnAAVeI87GWnpo_sSBpvM,56
+asyncpg_engine-0.3.1.dist-info/METADATA,sha256=N3hqFJ-GNxZ12CvFzbE9C3D6sBMKyN7M1-oPPr0QwCI,4562
+asyncpg_engine-0.3.1.dist-info/LICENSE,sha256=ozNjVXkFhJVWzwF4rmfRr452TzeAUz5lA9vjvaURwyU,1071
+asyncpg_engine-0.3.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+asyncpg_engine-0.3.1.dist-info/RECORD,,
