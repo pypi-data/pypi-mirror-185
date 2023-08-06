@@ -1,0 +1,2 @@
+[consle_scripts]
+xiaoimage = Xiaoimage:main
