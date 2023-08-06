@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "audiovisualizer"
+version = "1.0.2"
+description = "Visaualize audio stream in terminal"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE.txt"}
+keywords = ["audio", "visualize", "stream", "frames"]
+[project.urls]
+"Homepage" = "https://github.com/tracksuitdev/terminal-audio-visualizer"
+"Source" = "https://github.com/tracksuitdev/terminal-audio-visualizer"
+[project.optional-dependencies]
+run = ["pydub"]
+[project.scripts]
+visualizer = "audiovisualizer:main"

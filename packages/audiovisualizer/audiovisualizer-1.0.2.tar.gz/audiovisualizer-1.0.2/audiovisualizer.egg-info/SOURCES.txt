@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+audiovisualizer/__init__.py
+audiovisualizer.egg-info/PKG-INFO
+audiovisualizer.egg-info/SOURCES.txt
+audiovisualizer.egg-info/dependency_links.txt
+audiovisualizer.egg-info/entry_points.txt
+audiovisualizer.egg-info/requires.txt
+audiovisualizer.egg-info/top_level.txt
