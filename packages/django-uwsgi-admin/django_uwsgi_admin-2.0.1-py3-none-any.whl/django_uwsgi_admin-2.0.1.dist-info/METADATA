@@ -1,0 +1,170 @@
+Metadata-Version: 2.1
+Name: django-uwsgi-admin
+Version: 2.0.1
+Summary: Django related examples/tricks/modules for uWSGI.
+Home-page: https://github.com/ionelmc/django-uwsgi-admin
+Author: Eugene MechanisM
+Author-email: eugene@mechanism.pro
+Maintainer: Ionel Cristian Maries
+Maintainer-email: contact@ionelmc.ro
+License: MIT
+Project-URL: Documentation, https://django-uwsgi-admin.readthedocs.io/
+Project-URL: Changelog, https://django-uwsgi-admin.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/ionelmc/django-uwsgi-admin/issues
+Keywords: uwsgi,django,mail,cache,template
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Communications :: Email
+Classifier: Framework :: Django
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: django-admin-utils
+Provides-Extra: uwsgi
+Requires-Dist: uwsgi ; extra == 'uwsgi'
+
+========
+Overview
+========
+
+
+
+Django related examples/tricks/modules for uWSGI.
+
+* Free software: MIT license
+
+Installation
+============
+
+::
+
+    pip install django-uwsgi-admin
+
+You can also install the in-development version with::
+
+    pip install https://github.com/ionelmc/django-uwsgi-admin/archive/master.zip
+
+
+Documentation
+=============
+
+https://django-uwsgi-admin.readthedocs.io/
+
+Screenshots
+===========
+
+`django-debug-toolbar <http://django-debug-toolbar.readthedocs.org/en/latest/>`_ panel
+
+.. image:: https://github.com/ionelmc/django-uwsgi-admin/raw/master/docs/screenshots/screenshot1.png
+
+`Wagtail <https://github.com/torchbox/wagtail>`_ admin interface:
+
+.. image:: https://github.com/ionelmc/django-uwsgi-admin/raw/master/docs/screenshots/screenshot2.png
+
+`django.contrib.admin <https://docs.djangoproject.com/en/1.10/ref/contrib/admin/>`_ interface
+
+.. image:: https://github.com/ionelmc/django-uwsgi-admin/raw/master/docs/screenshots/screenshot3.png
+.. image:: https://github.com/ionelmc/django-uwsgi-admin/raw/master/docs/screenshots/screenshot4.png
+.. image:: https://github.com/ionelmc/django-uwsgi-admin/raw/master/docs/screenshots/screenshot5.png
+.. image:: https://github.com/ionelmc/django-uwsgi-admin/raw/master/docs/screenshots/screenshot6.png
+.. image:: https://github.com/ionelmc/django-uwsgi-admin/raw/master/docs/screenshots/screenshot7.png
+.. image:: https://github.com/ionelmc/django-uwsgi-admin/raw/master/docs/screenshots/screenshot8.png
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+
+2.0.1 (2023-01-13)
+------------------
+
+* UwsgiWorkersPanel no longer tries to generate stats if there's no uwsgi.
+
+2.0.0 (2023-01-12)
+------------------
+
+* Removed the decorators module, something that only existed to avoid installing a separate package. Instead you should install the updated
+  `uwsgidecorators <https://pypi.org/project/uwsgidecorators/>`_ package.
+* Removed ``django_uwsgi.template.Loader`` (and the whole module) as it was broken and pretty hard to test without a custom build of uWSGI.
+* Split all sections in the Status page into seperate admin pages: Actions, Applications, Jobs, Magic Table, Options, Status and Workers.
+* Removed the old django debug toolbar and replaced with 2 new panes:
+
+  * ``django_uwsgi.panels.UwsgiWorkersPanel``
+  * ``django_uwsgi.panels.UwsgiActionsPanel``
+
+1.0.0 (2023-01-10)
+------------------
+
+* Removed the ``runuwsgi`` management command as it was very broken.
+  Yes, I've looked at `django-uwsgi-ng <https://pypi.org/project/django-uwsgi-ng/>`_
+  (another fork, which has lots of changes for that command) and it's still pretty unusable in general (expects a certain project layout,
+  and still generates weird if not broken configuration).
+
+  Instead you should own your uWSGI configuration and not lets some tool generate it for you as some of the options have high impact on
+  the behavior and performance of uWSGI.
+* Fixed stats page title.
+* Made clear cache and reload actions be performed safely over POST requests (previously they were GET requests).
+
+0.3.0 (2023-01-09)
+------------------
+
+Forked from https://github.com/unbit/django-uwsgi this adds:
+
+* Support for latest Django releases (3.2+).
+* A basic integration test suite.
+* Removed lots of old compat cruft.
+* Integrated the uWSGI stats pane directly in the Django admin. Adding urls manually is no longer necessary.
+* Removed the old wagtail-styled admin page (it was broken anyway).
+
+

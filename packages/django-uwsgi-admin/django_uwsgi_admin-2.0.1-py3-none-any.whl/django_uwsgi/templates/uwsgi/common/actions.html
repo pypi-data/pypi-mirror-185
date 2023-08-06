@@ -1,0 +1,49 @@
+{% load i18n %}
+
+<form action="{% url 'admin:django_uwsgi_signal' %}" method="post">
+    {% csrf_token %}
+    <fieldset class="module aligned">
+        <h2>{% trans 'Send uWSGI Signal' %}</h2>
+        <div class="form-row">
+            <div>
+                <label class="required" for="signal_number">{% trans 'Signal number' %}</label>
+                <input id="signal_number" class="vTextField" maxlength="3" required type="text" size="3" name="signal_number">
+            </div>
+        </div>
+    </fieldset>
+    <div class="submit-row">
+        <input type="submit" class="default" value="{% trans 'Send' %}">
+    </div>
+</form>
+
+<form action="{% url 'admin:django_uwsgi_log' %}" method="post">
+    {% csrf_token %}
+    <fieldset class="module aligned">
+        <h2>{% trans 'Send uWSGI Log message' %}</h2>
+        <div class="form-row">
+            <div>
+                <label class="required" for="log_message">{% trans 'Log message' %}</label>
+                <input id="signal_number" class="vTextField" required type="text" name="log_message">
+            </div>
+        </div>
+    </fieldset>
+    <div class="submit-row">
+        <input type="submit" class="default" value="{% trans 'Send' %}">
+    </div>
+</form>
+
+<form action="{% url 'admin:django_uwsgi_reload' %}" method="post">
+    {% csrf_token %}
+    <div class="submit-row danger">
+        <h2>{% trans 'Gracefully reload uWSGI' %}</h2>
+        <input type="submit" class="default" value="{% trans 'Reload' %}">
+    </div>
+</form>
+
+<form action="{% url 'admin:django_uwsgi_cache_clear' %}" method="post">
+    {% csrf_token %}
+    <div class="submit-row danger">
+        <h2>{% trans 'Clear uWSGI cache' %}</h2>
+        <input type="submit" class="default " value="{% trans 'Clear cache' %}">
+    </div>
+</form>

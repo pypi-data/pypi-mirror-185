@@ -1,0 +1,18 @@
+{% load i18n %}
+
+<style>
+    #djDebug .djDebugUwsgiDanger {
+        display: inline-block;
+        margin-right: 5px;
+    }
+</style>
+
+<form action="{% url 'admin:django_uwsgi_reload' %}?next={{ request.get_full_path_info|urlencode }}" method="post" class="djDebugUwsgiDanger">
+    {% csrf_token %}
+    <button type="submit">{% trans 'Reload' %}</button>
+</form>
+
+<form action="{% url 'admin:django_uwsgi_cache_clear' %}?next={{ request.get_full_path_info|urlencode }}" method="post" class="djDebugUwsgiDanger">
+    {% csrf_token %}
+    <button type="submit">{% trans 'Clear cache' %}</button>
+</form>

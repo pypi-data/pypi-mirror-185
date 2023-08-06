@@ -1,0 +1,15 @@
+{% load i18n wagtailadmin_tags %}
+<li>
+    <svg class="icon icon-cogs" aria-hidden="true"><use href="#icon-cogs"></use></svg>
+    <a href="{% url 'admin:django_uwsgi_workers_changelist' %}">
+    {% if workers %}
+        {% blocktrans count counter=workers with workers|intcomma as total %}
+            <span>{{ total }}</span> uWSGI Worker
+        {% plural %}
+            <span>{{ total }}</span> uWSGI Workers
+        {% endblocktrans %}
+    {% else %}
+        <span>∅</span> No uWSGI Workers!
+    {% endif %}
+    </a>
+</li>
