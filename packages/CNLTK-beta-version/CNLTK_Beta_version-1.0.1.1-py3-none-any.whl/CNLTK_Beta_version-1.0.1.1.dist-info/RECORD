@@ -1,0 +1,17 @@
+CNLTK/NER_MODEL.py,sha256=icwN47cSzm_CL3OVZsnSTX8-PGObP3ecut_xOFTdh6w,2123
+CNLTK/NER_TAGGER_MODEL.py,sha256=xENPnUYd0vfB2G9dD7RTXv60GYvJgemk_5UAQ7r4Ctg,1090
+CNLTK/NER_test.py,sha256=xwaED20wPhlkX7N2Ud-5mTIQLJ4zGyJflTYwlVSJbk0,1423
+CNLTK/POS_MODEL.py,sha256=HoOKBqwDZ3y6oB0YDg-gmo7V4B2laL0YIDamOqMoHcI,2051
+CNLTK/POS_TAGGER_MODEL.py,sha256=laHH-TyrlABT6qQtBfs_-bnIIM5vu5y0espzRSAxa2Q,1086
+CNLTK/POS_test.py,sha256=zrgECxfhpbpqQ3TK6swVN6UfPr5Aj7pqh1oLAhMEl24,2202
+CNLTK/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CNLTK/attention.py,sha256=TXkgJktkmifmsUkvCiy3CPkefTgdq-O8DhH--2Llfsk,1235
+CNLTK/ceb_corpus.py,sha256=TCcTBsKJ8w23cukKd4tkdBXRdFayYcIbzikZZnKqfEc,573
+CNLTK/ner_tags.py,sha256=cWw1BcVkQHb137wcCpT2JPJLHP3GEr8irrP9zPtLCgI,515
+CNLTK/pos_tags.py,sha256=HG03_114mQ95KY2xSFErWbU22pWlRXEKtIj0WM4CxK8,477
+CNLTK/vocabulary.py,sha256=ZyGhkbEy1V7AjEuVEaW3L2M1-mud_55Og_nHy-sjflg,431
+CNLTK_Beta_version-1.0.1.1.dist-info/LICENCE.txt,sha256=4HSjNhO8M-MDV4bIWZtDOeFxEYFvYIT23tT2sbaq41I,1060
+CNLTK_Beta_version-1.0.1.1.dist-info/METADATA,sha256=SNkahA57bHHlF-6HWCjG9jNvXssCetYfco62iuIeS7A,592
+CNLTK_Beta_version-1.0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CNLTK_Beta_version-1.0.1.1.dist-info/top_level.txt,sha256=WiNWu-SDBRFWHzPWkim5yqyzeXMf43sEz45NX8p9rv8,6
+CNLTK_Beta_version-1.0.1.1.dist-info/RECORD,,
