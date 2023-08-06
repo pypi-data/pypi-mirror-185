@@ -1,0 +1,3 @@
+hspylib>=latest
+hspylib-clitt>=latest
+retry>=latest
