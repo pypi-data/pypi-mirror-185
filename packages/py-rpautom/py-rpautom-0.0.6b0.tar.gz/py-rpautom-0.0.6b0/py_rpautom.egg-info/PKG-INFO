@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: py-rpautom
+Version: 0.0.6b0
+Summary: Conjunto de utilitários para automação de processos.
+Home-page: https://github.com/aranseiki/py-rpautom/
+Author: aranseiki
+Author-email: techall@hotmail.com.br
+Project-URL: Py-RPAutom, https://github.com/aranseiki/py-rpautom/
+Classifier: Framework :: Robot Framework :: Library
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Py-RPAutom
+
+Py-RPAutom Ã© uma biblioteca que nasceu para facilitar o desenvolvimento de robÃ´s automatizados (RPA), uma vez que precisamos fazer vÃ¡rios cÃ³digos repetitivos para determinadas aÃ§Ãµes. Tem como objetivo facilitar a criaÃ§Ã£o de processos automatizados via cÃ³digo. Criamos uma breve documentaÃ§Ã£o explicando como utilizar recursos para automaÃ§Ã£o web, desktop e recursos do sistema como cÃ³pia de arquivos ou criaÃ§Ã£o de pastas. A documentaÃ§Ã£o pode ser conferida [aqui](https://aranseiki.github.io/py-rpautom/).
+
+Ainda, a biblioteca Ã© feita originalmente em portuguÃªs para aumentar a inclusÃ£o da populaÃ§Ã£o brasileira. Mesmo que o inglÃªs seja o idioma predominantes na Ã¡rea de tecnologia, essa nÃ£o Ã© a realidade da nossa populaÃ§Ã£o. Se o objetivo dessa biblioteca Ã© facilitar o desenvolvimento de aplicaÃ§Ãµes, nÃ£o faz sentido criar uma barreira idiomÃ¡tica.
+
+Tendo origem em 2019, a biblioteca foi desenvolvida de modo separado cada mÃ³dulo para facilitaÃ§Ã£o no desenvolvimento de projetos pessoais, mas incorporados rapidamenta ao desenvolvimento profissional. Em 2022, foi a consolidaÃ§Ã£o dos trÃªs mÃ³dulos bÃ¡sicos atÃ© entÃ£o (web, desktop e utilitÃ¡rios do sistema), unificando-os e criando assim a sua primeira versÃ£o pÃºblica.
+
+Essa biblioteca usa ferramentas populares para automaÃ§Ã£o e testes como Selenium, pywinauto, openpyxl e pywin32.
