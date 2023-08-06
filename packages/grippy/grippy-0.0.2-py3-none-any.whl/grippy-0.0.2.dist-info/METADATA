@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: grippy
+Version: 0.0.2
+Summary: 
+Author: Erik Hasse
+Author-email: erik.g.hasse@gmail.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: grpcio-tools (>=1.51.1,<2.0.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+# grippy
+
+Build gRPC services using type annotations.
+
