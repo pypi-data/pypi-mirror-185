@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/logformatter/__init__.py
+src/logformatter/logformatter.py
+src/logformatter.egg-info/PKG-INFO
+src/logformatter.egg-info/SOURCES.txt
+src/logformatter.egg-info/dependency_links.txt
+src/logformatter.egg-info/requires.txt
+src/logformatter.egg-info/top_level.txt
