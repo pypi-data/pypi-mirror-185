@@ -1,0 +1,5 @@
+setup.py
+proppy.egg-info/PKG-INFO
+proppy.egg-info/SOURCES.txt
+proppy.egg-info/dependency_links.txt
+proppy.egg-info/top_level.txt
