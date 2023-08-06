@@ -1,0 +1,2 @@
+[console_scripts]
+hebrew_names = hebrew_names.main:main
