@@ -1,0 +1,24 @@
+name: pyteseo-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - xarray
+  - dask
+  - netcdf4
+  - bottleneck
+  - ipykernel
+  - matplotlib
+  - geojson
+  - pytest
+  - coverage
+  - flit
+  - black
+  - sphinx
+  - myst-parser
+  - myst-nb
+  - sphinx-autoapi
+  - furo
+  - sphinx_rtd_theme
+  

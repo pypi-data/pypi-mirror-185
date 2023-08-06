@@ -1,0 +1,52 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+
+[project]
+name = "pyteseo"
+authors = [{name = "German Aragon Caminero", email = "german.aragon@unican.es"}]
+mantainers = [{name = "German Aragon Caminero", email = "german.aragon@unican.es"}]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = ["Topic :: Scientific/Engineering", "Programming Language :: Python"]
+dynamic = ["version", "description"]
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "xarray[complete]",
+    "dask",
+    "netcdf4",
+    "bottleneck",
+    "ipykernel",
+    "matplotlib",
+    "geojson",
+    "pytest",
+    "coverage[toml]",
+]
+
+
+[project.optional-dependencies]
+dev = ["flit", "black", "sphinx", "myst-parser", "myst-nb", "sphinx-autoapi", "furo", "sphinx_rtd_theme"]
+
+
+[project.urls]
+home = "https://ihcantabria.com/specialized-software/english-teseo/"
+documentation = "https://ihcantabria.github.io/pyteseo"
+repository = "https://github.com/IHCantabria/pyteseo"
+changelog = "https://github.com/IHCantabria/pyteseo/blob/main/CHANGELOG.md"
+
+
+[project.scripts]
+pyteseo-tests = "pyteseo.cli:run_tests"
+
+[tool.pytest.ini_options]
+addopts = "-v --durations=0 --durations-min=0.05"
+testpaths = "pyteseo"
+
+[tool.coverage.run]
+command_line = "-m pytest"
+omit = ["*/tests/*"]
+source = ["pyteseo"]
+

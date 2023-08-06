@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1. Read TESEO’s domain files &mdash; pyTESEO v0.0.1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. Create forcings" href="02_read_forcings.html" />
+    <link rel="prev" title="pyteseo.plot" href="../autoapi/pyteseo/plot/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pyTESEO
+            <img src="../_static/pyTESEO_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">CONTENTS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../get-started.html">Get started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-guide.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../autoapi/index.html">API Reference</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">USE CASES</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Read TESEO’s domain files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_read_forcings.html">2. Create forcings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_floater_simulation.html">3. Floater simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_oil_simulation.html">4. Oil simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_hns_simulation.html">5. Hns simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_stochastic_montecarlo.html">6. Montecarlo stochastic methodology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_stochastic_kmeans.html">7. Kmeans clustering methodology</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyTESEO</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">1. </span>Read TESEO’s domain files</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/notebooks/01_read_domain.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars and line breaks on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+    white-space: pre;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    /*background: #f5f5f5;*/
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+    margin: 0;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt .copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+.jp-RenderedHTMLCommon table,
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+.jp-RenderedHTMLCommon thead,
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+.jp-RenderedHTMLCommon tr,
+.jp-RenderedHTMLCommon th,
+.jp-RenderedHTMLCommon td,
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+.jp-RenderedHTMLCommon th,
+div.rendered_html th {
+  font-weight: bold;
+}
+.jp-RenderedHTMLCommon tbody tr:nth-child(odd),
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+.jp-RenderedHTMLCommon tbody tr:hover,
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="Read-TESEO’s-domain-files">
+<h1><span class="section-number">1. </span>Read TESEO’s domain files<a class="headerlink" href="#Read-TESEO’s-domain-files" title="Permalink to this headline"></a></h1>
+<ol class="arabic simple">
+<li><p>Read bathymetry and coastline from TESEO’s format files</p></li>
+<li><p>Select one polygon of the coastline by its index</p></li>
+<li><p>Plot bathymetry, coastline and the selected polygon</p></li>
+</ol>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">from</span> <span class="nn">pyteseo.io</span> <span class="kn">import</span> <span class="n">read_grid</span><span class="p">,</span> <span class="n">read_coastline</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grid</span> <span class="o">=</span> <span class="n">read_grid</span><span class="p">(</span><span class="s2">&quot;../../data/mock/grid.dat&quot;</span><span class="p">,</span> <span class="n">nan_value</span><span class="o">=-</span><span class="mi">9999</span><span class="p">)</span>
+<span class="n">coast</span> <span class="o">=</span> <span class="n">read_coastline</span><span class="p">(</span><span class="s2">&quot;../../data/mock/coastline.dat&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Select polygon index</span>
+<span class="n">i</span><span class="o">=</span><span class="mi">4</span>
+<span class="n">coast</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="n">i</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>lon</th>
+      <th>lat</th>
+    </tr>
+    <tr>
+      <th>polygon</th>
+      <th>point</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="57" valign="top">4</th>
+      <th>14683</th>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>14684</th>
+      <td>-3.770457</td>
+      <td>43.465932</td>
+    </tr>
+    <tr>
+      <th>14685</th>
+      <td>-3.770418</td>
+      <td>43.465974</td>
+    </tr>
+    <tr>
+      <th>14686</th>
+      <td>-3.770389</td>
+      <td>43.465960</td>
+    </tr>
+    <tr>
+      <th>14687</th>
+      <td>-3.770315</td>
+      <td>43.465903</td>
+    </tr>
+    <tr>
+      <th>14688</th>
+      <td>-3.770242</td>
+      <td>43.465847</td>
+    </tr>
+    <tr>
+      <th>14689</th>
+      <td>-3.770271</td>
+      <td>43.465790</td>
+    </tr>
+    <tr>
+      <th>14690</th>
+      <td>-3.770286</td>
+      <td>43.465737</td>
+    </tr>
+    <tr>
+      <th>14691</th>
+      <td>-3.770301</td>
+      <td>43.465684</td>
+    </tr>
+    <tr>
+      <th>14692</th>
+      <td>-3.770389</td>
+      <td>43.465634</td>
+    </tr>
+    <tr>
+      <th>14693</th>
+      <td>-3.770467</td>
+      <td>43.465588</td>
+    </tr>
+    <tr>
+      <th>14694</th>
+      <td>-3.770545</td>
+      <td>43.465542</td>
+    </tr>
+    <tr>
+      <th>14695</th>
+      <td>-3.770610</td>
+      <td>43.465502</td>
+    </tr>
+    <tr>
+      <th>14696</th>
+      <td>-3.770675</td>
+      <td>43.465461</td>
+    </tr>
+    <tr>
+      <th>14697</th>
+      <td>-3.770740</td>
+      <td>43.465421</td>
+    </tr>
+    <tr>
+      <th>14698</th>
+      <td>-3.770779</td>
+      <td>43.465350</td>
+    </tr>
+    <tr>
+      <th>14699</th>
+      <td>-3.770858</td>
+      <td>43.465290</td>
+    </tr>
+    <tr>
+      <th>14700</th>
+      <td>-3.770936</td>
+      <td>43.465230</td>
+    </tr>
+    <tr>
+      <th>14701</th>
+      <td>-3.771029</td>
+      <td>43.465177</td>
+    </tr>
+    <tr>
+      <th>14702</th>
+      <td>-3.771121</td>
+      <td>43.465123</td>
+    </tr>
+    <tr>
+      <th>14703</th>
+      <td>-3.771200</td>
+      <td>43.465069</td>
+    </tr>
+    <tr>
+      <th>14704</th>
+      <td>-3.771278</td>
+      <td>43.465015</td>
+    </tr>
+    <tr>
+      <th>14705</th>
+      <td>-3.771356</td>
+      <td>43.464960</td>
+    </tr>
+    <tr>
+      <th>14706</th>
+      <td>-3.771444</td>
+      <td>43.464925</td>
+    </tr>
+    <tr>
+      <th>14707</th>
+      <td>-3.771512</td>
+      <td>43.464921</td>
+    </tr>
+    <tr>
+      <th>14708</th>
+      <td>-3.771581</td>
+      <td>43.464918</td>
+    </tr>
+    <tr>
+      <th>14709</th>
+      <td>-3.771654</td>
+      <td>43.464939</td>
+    </tr>
+    <tr>
+      <th>14710</th>
+      <td>-3.771727</td>
+      <td>43.464960</td>
+    </tr>
+    <tr>
+      <th>14711</th>
+      <td>-3.771737</td>
+      <td>43.465038</td>
+    </tr>
+    <tr>
+      <th>14712</th>
+      <td>-3.771776</td>
+      <td>43.465109</td>
+    </tr>
+    <tr>
+      <th>14713</th>
+      <td>-3.771698</td>
+      <td>43.465166</td>
+    </tr>
+    <tr>
+      <th>14714</th>
+      <td>-3.771813</td>
+      <td>43.465145</td>
+    </tr>
+    <tr>
+      <th>14715</th>
+      <td>-3.771927</td>
+      <td>43.465123</td>
+    </tr>
+    <tr>
+      <th>14716</th>
+      <td>-3.772042</td>
+      <td>43.465102</td>
+    </tr>
+    <tr>
+      <th>14717</th>
+      <td>-3.772157</td>
+      <td>43.465081</td>
+    </tr>
+    <tr>
+      <th>14718</th>
+      <td>-3.772177</td>
+      <td>43.465148</td>
+    </tr>
+    <tr>
+      <th>14719</th>
+      <td>-3.772196</td>
+      <td>43.465216</td>
+    </tr>
+    <tr>
+      <th>14720</th>
+      <td>-3.772079</td>
+      <td>43.465242</td>
+    </tr>
+    <tr>
+      <th>14721</th>
+      <td>-3.771962</td>
+      <td>43.465268</td>
+    </tr>
+    <tr>
+      <th>14722</th>
+      <td>-3.771844</td>
+      <td>43.465294</td>
+    </tr>
+    <tr>
+      <th>14723</th>
+      <td>-3.771750</td>
+      <td>43.465320</td>
+    </tr>
+    <tr>
+      <th>14724</th>
+      <td>-3.771656</td>
+      <td>43.465346</td>
+    </tr>
+    <tr>
+      <th>14725</th>
+      <td>-3.771561</td>
+      <td>43.465372</td>
+    </tr>
+    <tr>
+      <th>14726</th>
+      <td>-3.771502</td>
+      <td>43.465438</td>
+    </tr>
+    <tr>
+      <th>14727</th>
+      <td>-3.771444</td>
+      <td>43.465504</td>
+    </tr>
+    <tr>
+      <th>14728</th>
+      <td>-3.771385</td>
+      <td>43.465570</td>
+    </tr>
+    <tr>
+      <th>14729</th>
+      <td>-3.771297</td>
+      <td>43.465588</td>
+    </tr>
+    <tr>
+      <th>14730</th>
+      <td>-3.771209</td>
+      <td>43.465606</td>
+    </tr>
+    <tr>
+      <th>14731</th>
+      <td>-3.771146</td>
+      <td>43.465645</td>
+    </tr>
+    <tr>
+      <th>14732</th>
+      <td>-3.771082</td>
+      <td>43.465684</td>
+    </tr>
+    <tr>
+      <th>14733</th>
+      <td>-3.770989</td>
+      <td>43.465717</td>
+    </tr>
+    <tr>
+      <th>14734</th>
+      <td>-3.770897</td>
+      <td>43.465751</td>
+    </tr>
+    <tr>
+      <th>14735</th>
+      <td>-3.770804</td>
+      <td>43.465785</td>
+    </tr>
+    <tr>
+      <th>14736</th>
+      <td>-3.770711</td>
+      <td>43.465818</td>
+    </tr>
+    <tr>
+      <th>14737</th>
+      <td>-3.770626</td>
+      <td>43.465856</td>
+    </tr>
+    <tr>
+      <th>14738</th>
+      <td>-3.770542</td>
+      <td>43.465894</td>
+    </tr>
+    <tr>
+      <th>14739</th>
+      <td>-3.770457</td>
+      <td>43.465932</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot grid and coastline</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;lon&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;depth&quot;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">9</span><span class="p">))</span>
+<span class="c1"># plt.fill(coast[&quot;lon&quot;], coast[&quot;lat&quot;], color=&quot;grey&quot;)</span>
+<span class="n">coast</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;lon&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;grey&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;coastline&quot;</span><span class="p">)</span>
+<span class="n">coast</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="n">i</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;lon&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;lat&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;coastline - polygon </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;equal&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+(-3.878859987333, -3.6949486337070003, 43.363319567585, 43.524003830115)
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_01_read_domain_5_1.png" src="../_images/notebooks_01_read_domain_5_1.png" />
+</div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../autoapi/pyteseo/plot/index.html" class="btn btn-neutral float-left" title="pyteseo.plot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="02_read_forcings.html" class="btn btn-neutral float-right" title="2. Create forcings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Germán Aragón Caminero.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
