@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+ocrd_olahd_client/__init__.py
+ocrd_olahd_client/cli.py
+ocrd_olahd_client/client.py
+ocrd_olahd_client/ocrd-tool.json
+ocrd_olahd_client/processor.py
+ocrd_olahd_client.egg-info/PKG-INFO
+ocrd_olahd_client.egg-info/SOURCES.txt
+ocrd_olahd_client.egg-info/dependency_links.txt
+ocrd_olahd_client.egg-info/entry_points.txt
+ocrd_olahd_client.egg-info/requires.txt
+ocrd_olahd_client.egg-info/top_level.txt

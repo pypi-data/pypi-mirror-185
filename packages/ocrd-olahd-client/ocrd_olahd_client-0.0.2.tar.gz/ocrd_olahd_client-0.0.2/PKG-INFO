@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ocrd_olahd_client
+Version: 0.0.2
+Summary: OCR-D processor and client for OLA-HD
+Home-page: https://github.com/OCR-D/ocrd_olahd_client
+Author: Konstantin Baierer
+Author-email: unixprog@gmail.com
+License: Apache 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ocrd-olahd-client
+
+> Client for [OLA-HD](https://github.com/subugoe/OLA-HD-IMPL)
+
+## Credentials
+
+Create a params.json file with the endpoint, username, password:
+
+```json
+{
+  "endpoint": "http://141.5.98.232/api",
+  "username": "X",
+  "password": "*"
+}
+```
