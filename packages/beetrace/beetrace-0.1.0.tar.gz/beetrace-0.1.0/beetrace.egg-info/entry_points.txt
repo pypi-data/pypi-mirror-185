@@ -1,0 +1,2 @@
+[console_scripts]
+beetrace = beetrace.__main__:main

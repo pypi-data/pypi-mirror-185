@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+beetrace/__init__.py
+beetrace/__main__.py
+beetrace/beetrace.py
+beetrace.egg-info/PKG-INFO
+beetrace.egg-info/SOURCES.txt
+beetrace.egg-info/dependency_links.txt
+beetrace.egg-info/entry_points.txt
+beetrace.egg-info/not-zip-safe
+beetrace.egg-info/requires.txt
+beetrace.egg-info/top_level.txt
