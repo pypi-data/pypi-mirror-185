@@ -1,0 +1,8 @@
+dtype_filters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dtype_filters/dtype_filters.py,sha256=TUNkP5KOgRVV6HoHuOCbwvVkhixJuldqQJUH1ONqbIk,2155
+dtype_filters/word_frequency.py,sha256=nmo_p3x9MAyHSE5K6KRaoNYf2M61jbLEE_zIynFIskA,387
+dtype_filters-0.0.5.dist-info/LICENCE.txt,sha256=1KjzJp_CoSSqEMNWLGYjBfrsJGXdq4rDQqtz37BR-PU,1057
+dtype_filters-0.0.5.dist-info/METADATA,sha256=U9Glb6zLAxy3xkrHIHxlMLzU5Qm__3fwJpzwkFHrg7U,346
+dtype_filters-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dtype_filters-0.0.5.dist-info/top_level.txt,sha256=C1NWUAdNFeuegJ5X7cRYXoymR0JAC9ZZ3NVtsDYXlks,14
+dtype_filters-0.0.5.dist-info/RECORD,,
