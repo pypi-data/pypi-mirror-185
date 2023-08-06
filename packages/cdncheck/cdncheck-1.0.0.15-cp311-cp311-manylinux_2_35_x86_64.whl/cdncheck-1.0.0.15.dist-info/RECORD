@@ -1,0 +1,10 @@
+cdncheck/__init__.py,sha256=ZYoTxTh6i8gefmR4pgIuw7bVKK4xn_DAEt1jlSgtixs,40
+cdncheck/cdncheck.py,sha256=KrA6I3WiREJsH2n_7lzEuxEUPkDnqeLMefPQrZSAiBg,1107
+cdncheck/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdncheck/tests/test_cdncheck.py,sha256=Y0E1Y4SJG9od_xu_Ok4-G5fY2SrsczPlfRgHCA0OrmU,265
+cdncheck.cpython-311-x86_64-linux-gnu.h,sha256=FgcasdCf-dVohlMY0xRrvsc8TVOdbqIyoA29gN6Y0kg,1596
+cdncheck.cpython-311-x86_64-linux-gnu.so,sha256=R-j5txRV2fg-_-XJP0iOvtdokmz30udcnEv2O7n9ojs,7762624
+cdncheck-1.0.0.15.dist-info/entry_points.txt,sha256=ndeudprWsAfrx9udT8P_XzS03GXgm66y-cOm5Epwybk,51
+cdncheck-1.0.0.15.dist-info/METADATA,sha256=VUC0UETlTp70k3KDZhLVX4jWWkG57vd9ZLl95A4t6KQ,1744
+cdncheck-1.0.0.15.dist-info/WHEEL,sha256=joXoN4aza87RFLV96ldRT0ollcA-Yh6s1YgIFkHg1ks,110
+cdncheck-1.0.0.15.dist-info/RECORD,,
