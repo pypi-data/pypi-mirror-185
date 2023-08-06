@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: symlearn
+Version: 0.1.0a0
+Summary: Different Population-based Symoblic Regressors
+Home-page: https://github.com/aliwimo/symlearn
+Author: Mohamed Aliwi
+Author-email: aliwimo@gmail.com
+License: MIT License
+Keywords: python,symbolic,regression,optimization
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+Different Population-based Symoblic Regressors
+
