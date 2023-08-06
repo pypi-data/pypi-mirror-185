@@ -1,0 +1,11 @@
+docscan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docscan/doc.py,sha256=w-TsCISHJzb9wVb7aMsEPDFCPrARGMEBsiZkOXPrqH8,1130
+docscan/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docscan/cmd/cli.py,sha256=gXgBQ65WSjS-sus7t82fhmlieWz9LgPrD59rfomTvv0,450
+docscan/cmd/server.py,sha256=qds2Cdwok7Ya1QOipjKBrrO6dmPl6XoFC1SJUjms-34,1518
+docscan-1.0.5.dist-info/LICENSE.txt,sha256=kKMhUHKWj9MEZpxTifBPEnSlh6vdBQfZnerQ9VEfiZk,1069
+docscan-1.0.5.dist-info/METADATA,sha256=eFPs94RbfsLl2bBvGzXHMSU8NvD-uHzrmU3P9uocUqA,3891
+docscan-1.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+docscan-1.0.5.dist-info/entry_points.txt,sha256=SqvbQdUeJyJt92Peds5-KA_yC5vNsqoKsrnbA851XMU,91
+docscan-1.0.5.dist-info/top_level.txt,sha256=LhjQ7Z2KyOxj2yRdFeH0DSDKNiGIAO3kQcrohfE3KYI,8
+docscan-1.0.5.dist-info/RECORD,,
