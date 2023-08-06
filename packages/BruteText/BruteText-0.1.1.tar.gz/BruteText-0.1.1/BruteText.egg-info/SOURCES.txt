@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+BruteText/__init__.py
+BruteText/brutetext.py
+BruteText.egg-info/PKG-INFO
+BruteText.egg-info/SOURCES.txt
+BruteText.egg-info/dependency_links.txt
+BruteText.egg-info/top_level.txt

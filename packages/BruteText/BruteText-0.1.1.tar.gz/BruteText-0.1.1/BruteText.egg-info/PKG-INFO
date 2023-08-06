@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: BruteText
+Version: 0.1.1
+Summary: For generating brute force style text
+Home-page: https://github.com/yagiziskirik/BruteText
+Author: Yagiz Iskirik
+Author-email: yagiziskirik@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Brute Text
+This is a program which emulates text input like a brute force technique.
+
+## Usage
+You can both use it as imported and from terminal screen.
+
+## Installation
+```
+pip install BruteText
+```
+
+or 
+
+```
+pip3 install BruteText
+```
+
+### Terminal
+Use `python3 -m BruteText.brutetext Your text to be typed` to type your text. If you like to change the time interval you can use the program as `python3 -m BruteText.brutetext -t x Your text to be type` where x is the time (milliseconds) to wait between inputs.
+
+### As a module
+You can import this script and use it like this:
+```py
+from BruteText import bruteText
+
+brutetext.bruteText("Text to be typed", x)  ## x where the time (milliseconds) between inputs.
+```
