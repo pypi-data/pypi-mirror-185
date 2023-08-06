@@ -1,0 +1,46 @@
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version = "0.0.1"
+version_files = ["pyproject.toml:version", "wydyf/__init__.py:__version__"]
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry]
+authors = ["Qin Li <liblaf@outlook.com>"]
+description = "未央书院答疑坊"
+documentation = "https://liblaf.github.io/wydyf/"
+homepage = "https://liblaf.github.io/wydyf/"
+license = "MIT"
+name = "wydyf"
+readme = "README.md"
+repository = "https://github.com/liblaf/wydyf"
+version = "0.0.1"
+
+[tool.poetry.dependencies]
+click = "^8.1.3"
+matplotlib = "^3.6.3"
+openpyxl = "^3.0.10"
+pandas = "^1.5.2"
+python = ">=3.10,<3.12"
+rich = "^13.0.1"
+
+[tool.poetry.group.build.dependencies]
+pyinstaller = "^5.7.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.2"
+
+[tool.poetry.group.docs.dependencies]
+lxml = "^4.9.2"
+mkdocs = "^1.4.2"
+mkdocs-git-authors-plugin = "^0.7.0"
+mkdocs-git-committers-plugin-2 = "^1.1.1"
+mkdocs-git-revision-date-localized-plugin = "^1.1.0"
+mkdocs-material = "^8.5.11"
