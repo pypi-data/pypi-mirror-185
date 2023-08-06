@@ -1,0 +1,7 @@
+numpy
+scipy>=1.7.0
+sympy
+matplotlib
+h5py
+hpc_suite>=1.2.0
+molcas_suite>=1.11.0
