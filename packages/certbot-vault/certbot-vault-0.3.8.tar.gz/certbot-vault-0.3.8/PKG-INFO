@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: certbot-vault
+Version: 0.3.8
+Summary: Certbot plugin to store certificates in Hashicorp Vault
+Home-page: https://github.com/deathowl/certbot-vault-plugin
+Author: Balint Csergo
+Author-email: <deathowlzz@gmail.com>
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+License-File: LICENSE

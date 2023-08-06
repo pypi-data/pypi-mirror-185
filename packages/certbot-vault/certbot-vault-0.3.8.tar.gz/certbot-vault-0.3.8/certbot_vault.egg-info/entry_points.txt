@@ -1,0 +1,2 @@
+[certbot.plugins]
+vault = certbot_vault.plugin:VaultInstaller
