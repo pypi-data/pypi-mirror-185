@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: plotto
+Version: 0.1.3
+Summary: functions to create interactive charts with Altair
+Home-page: https://github.com/bernardodionisi/plotto
+License: MIT
+Author: Bernardo Dionisi
+Author-email: bernardo.dionisi@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: altair (>=4.2.0,<5.0.0)
+Requires-Dist: jsonschema (==4.16.0)
+Requires-Dist: numpy (>=1.16.5)
+Requires-Dist: pandas (>=1.2)
+Requires-Dist: vega_datasets (>=0.9.0,<0.10.0)
+Project-URL: Repository, https://github.com/bernardodionisi/plotto
+Description-Content-Type: text/markdown
+
+plotto contains a function to display a set of interactive charts created with Altair
+
+## Installing
+
+The latest release can be installed using pip
+
+```bash
+pip install plotto
+```
+
+see the [Documentation](https://plotto.readthedocs.io/en/latest/) for more details.
+
