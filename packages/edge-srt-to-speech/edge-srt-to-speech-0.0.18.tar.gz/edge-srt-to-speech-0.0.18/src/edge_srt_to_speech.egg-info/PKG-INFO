@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: edge-srt-to-speech
+Version: 0.0.18
+Summary: Use Microsoft Edge's TTS to convert SubRip to speech
+Home-page: https://github.com/rany2/edge-srt-to-speech
+Author: rany
+Author-email: ranygh@riseup.net
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/rany2/edge-srt-to-speech/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# edge-srt-to-speech
+
+
