@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: print-queue-api-client
+Version: 0.0.11
+Summary: Library to interface with the iForge Print Queue API
+Author-email: iForge IT <it.iforge@sheffield.ac.uk>, Dom RG <22130302+domRG@users.noreply.github.com>, Sam Piper <contactme@sampiiiii.com>
+Project-URL: Homepage, https://github.com/iforge-uos/print-queue-api-client
+Project-URL: Bug Tracker, https://github.com/iforge-uos/print-queue-api-client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas (>=1.5.2)
+Requires-Dist: requests (>=2.28.1)
+
