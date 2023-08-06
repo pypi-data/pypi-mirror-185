@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+nbdep/__init__.py
+nbdep/_modidx.py
+nbdep/pipfile.py
+nbdep.egg-info/PKG-INFO
+nbdep.egg-info/SOURCES.txt
+nbdep.egg-info/dependency_links.txt
+nbdep.egg-info/entry_points.txt
+nbdep.egg-info/not-zip-safe
+nbdep.egg-info/requires.txt
+nbdep.egg-info/top_level.txt
