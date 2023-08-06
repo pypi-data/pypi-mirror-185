@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+cgs/__init__.py
+cgs/__main__.py
+cgs/cli.py
+cgs/create.py
+cgs/delete.py
+cgs/fullall.py
+cgs/updateres.py
+cgs/utils.py
+cgs.egg-info/PKG-INFO
+cgs.egg-info/SOURCES.txt
+cgs.egg-info/dependency_links.txt
+cgs.egg-info/entry_points.txt
+cgs.egg-info/requires.txt
+cgs.egg-info/top_level.txt
