@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: dbtool
+Version: 0.2.0
+Summary: A lightweight db tools for sql.
+Author: Mario Luo
+Author-email: luokaiqiongmou@foxmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: dbutils
+Project-URL: Bug Tracker, https://github.com/lkqm/dbtool.py/issues
+Project-URL: Homepage, https://github.com/lkqm/dbtool.py
+Description-Content-Type: text/markdown
+
+#  dbtool
+A lightweight db tools for sql.
+
+```
+pip install dbtool
+```
+
+```
+# sqlite3 ....
+db = dbtool.connect('sqlite:///:memory:')
+db = dbtool.connect('mysql://root:123456@127.0.0.1:3306/test',  mincached=1, maxconnections=20)
+
+# sql
+db.execute(sql)
+db.execute_fetchone(sql)
+db.execute_cursor(sql)
+db.execute_batch(sql)
+db.execute_script(sql)
+
+# crud
+db.insert(user)
+db.update(user)
+db.delete(User, {'id': 1})
+db.find(User, {'status': 1})
+db.find_one(User, {'id': 1})
+db.find_count(User, {'status': 1})
+
+# transactions
+with db.transaction():
+    db.execute(sql1)
+
+```
+
+db vs driver
+
+- sqlite - sqlite3
+- mysql - pymysql
+- postgresql - psycopg2
+- sqlserver - pymssql
