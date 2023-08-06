@@ -1,0 +1,2 @@
+[console_scripts]
+fastnsq = fastnsq.app:main
