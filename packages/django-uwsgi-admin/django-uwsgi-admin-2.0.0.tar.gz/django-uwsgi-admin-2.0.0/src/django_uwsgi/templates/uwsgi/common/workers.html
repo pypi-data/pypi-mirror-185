@@ -1,0 +1,38 @@
+<table>
+    <thead>
+    <tr>
+        <th>worker</th>
+        <th>pid</th>
+        <th>status</th>
+        <th>requests</th>
+        <th>exceptions</th>
+        <th>signals</th>
+        <th>running time(ms)</th>
+        <th>avg response time(ms)</th>
+        <th>load</th>
+        <th>last spawn</th>
+        <th>respawn count</th>
+        <th>address space (vsz)</th>
+        <th>resident memory (rss)</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for w in workers %}
+        <tr>
+            <td>{{ w.id }}</td>
+            <td>{{ w.pid }}</td>
+            <td>{{ w.status.decode }}</td>
+            <td>{{ w.requests }}</td>
+            <td>{{ w.exceptions }}</td>
+            <td>{{ w.signals }}</td>
+            <td>{{ w.running_time }}</td>
+            <td>{{ w.avg_rt }}</td>
+            <td>{{ w.load|floatformat:2 }} %</td>
+            <td>{{ w.last_spawn }}</td>
+            <td>{{ w.respawn_count }}</td>
+            <td>{{ w.vsz|filesizeformat }}</td>
+            <td>{{ w.rss|filesizeformat }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
