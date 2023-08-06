@@ -1,0 +1,8 @@
+README.md
+setup.py
+eel_quickstart/__init__.py
+eel_quickstart/__main__.py
+eel_quickstart.egg-info/PKG-INFO
+eel_quickstart.egg-info/SOURCES.txt
+eel_quickstart.egg-info/dependency_links.txt
+eel_quickstart.egg-info/top_level.txt
