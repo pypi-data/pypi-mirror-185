@@ -1,0 +1,11 @@
+flask_inertia/__init__.py,sha256=liJIMWE09K8Pf_6-k8dAnBRnBx2bi7LDSHbTfSON4Po,1402
+flask_inertia/inertia.py,sha256=45XiAiPuFkyUau3NF9JbxWdxZxCYYX6UtdoFztC-pEk,6009
+flask_inertia/router.js,sha256=qNVOKoiqMyWA5Ngcra1p6Vkl8GOi1IZw3pQyopRK6SY,2637
+flask_inertia/unittest.py,sha256=C-iD3Q7yJHFn88sE02iOklSI21fKMZqNzjqQP8niS2o,3155
+flask_inertia/version.py,sha256=O1PWWBhphY3nszM3PjcJ85-FbXlQ0hWp31ScYFWecFU,1799
+flask_inertia/views.py,sha256=2DmX26x1t1irbPGAcvWzQ4OaJg1rZdivAvGAnRPgGus,3909
+flask_inertia-0.5.dist-info/LICENSE,sha256=R9k7K1-9OqfHj5Boo1GFt318qnrzFGjIDhiNtaWZQs8,1098
+flask_inertia-0.5.dist-info/METADATA,sha256=TRb_HrDe1PO2eB3YR2ILv4xQrfRNfuEiSaYFnxuUXO4,7115
+flask_inertia-0.5.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+flask_inertia-0.5.dist-info/top_level.txt,sha256=Ifns9SbM8SZ00DYFv3qSRjA13F35QYIFzn7nySnOw80,14
+flask_inertia-0.5.dist-info/RECORD,,
