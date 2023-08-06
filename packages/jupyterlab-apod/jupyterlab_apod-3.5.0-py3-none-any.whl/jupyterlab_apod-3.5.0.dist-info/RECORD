@@ -1,0 +1,13 @@
+jupyterlab_apod/__init__.py,sha256=E3NLyE-FEgQhJaSOrOnQte8ucpqNVQS3I67EF-8Bcvo,158
+jupyterlab_apod/_version.py,sha256=1c5wGFkKLlaylkWYnTyxzo_DFj_Bw9FLlpGQdDPuzpk,171
+jupyterlab_apod-3.5.0.data/data/share/jupyter/labextensions/jupyterlab_apod/package.json,sha256=eJgcd_0I2YRFhaEjGnrCVUQDPC-g8k6WFipppXV-b8g,3486
+jupyterlab_apod-3.5.0.data/data/share/jupyter/labextensions/jupyterlab_apod/static/568.1665146b74c5ac9c2244.js,sha256=FmUUa3TFrJwiRKnCoHxVUedb0r0p2cpT5KxVXiIg1J8,1743
+jupyterlab_apod-3.5.0.data/data/share/jupyter/labextensions/jupyterlab_apod/static/747.06231139f0e4d0bae2db.js,sha256=BiMROfDk0Lri25ct2nbTfaI4UrH9Qvv5kq-kwdVYcmU,3613
+jupyterlab_apod-3.5.0.data/data/share/jupyter/labextensions/jupyterlab_apod/static/remoteEntry.778df5077d15eaf5d9bd.js,sha256=d431B30V6vXZvVub5CBolZMZmy5IYMqoYsYUiU1PsfQ,6453
+jupyterlab_apod-3.5.0.data/data/share/jupyter/labextensions/jupyterlab_apod/static/style.js,sha256=GLEwG4O6E6p-lNr1pnvLi9s5-VGxqu2Ud-LpzPFC0Gk,158
+jupyterlab_apod-3.5.0.data/data/share/jupyter/labextensions/jupyterlab_apod/static/third-party-licenses.json,sha256=P_VjLKCSMZ3sXuPckg8bDyB8Xn8JD7EsiIoRqvSP3h0,2452
+jupyterlab_apod-3.5.0.data/data/share/jupyter/labextensions/jupyterlab_apod/install.json,sha256=iyUbMNnhv4HG8URDmosECoxb596DIPcVpdN1A1eKqzw,191
+jupyterlab_apod-3.5.0.dist-info/METADATA,sha256=ZJ2smMMXIqL4b3TgW3aX8FLWzQ-X5Zebp6fhrC6PSR0,6010
+jupyterlab_apod-3.5.0.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+jupyterlab_apod-3.5.0.dist-info/licenses/LICENSE,sha256=3N38LyzC0moIDKCS6RypmXLOzydmLSD1MX3YTtcBEsI,1517
+jupyterlab_apod-3.5.0.dist-info/RECORD,,
