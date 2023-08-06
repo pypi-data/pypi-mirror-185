@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/space/__init__.py
+src/space/function.py
+src/space/layer.py
+src/space/model.py
+src/space/train.py
+src/space/utils.py
+src/space_srt.egg-info/PKG-INFO
+src/space_srt.egg-info/SOURCES.txt
+src/space_srt.egg-info/dependency_links.txt
+src/space_srt.egg-info/requires.txt
+src/space_srt.egg-info/top_level.txt
