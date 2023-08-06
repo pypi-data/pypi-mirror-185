@@ -1,0 +1,9 @@
+setup.py
+flet_config/__init__.py
+flet_config/metaconfig.py
+flet_config/setconfig.py
+flet_config.egg-info/PKG-INFO
+flet_config.egg-info/SOURCES.txt
+flet_config.egg-info/dependency_links.txt
+flet_config.egg-info/requires.txt
+flet_config.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: flet-config
+Version: 0.0.3
+Summary: This package allows flet developers to define page parameters in a separate class or module.
+Home-page: https://github.com/StanMathers/flet-config
+Author: Stan Mathers
+Author-email: sabagamgebeli@gmail.com
+License: MIT
+Keywords: config,flet,flet-config
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
