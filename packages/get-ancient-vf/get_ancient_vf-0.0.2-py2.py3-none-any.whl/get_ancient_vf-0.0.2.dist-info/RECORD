@@ -1,0 +1,13 @@
+get_vf/__init__.py,sha256=t9KZdp_DIvv91kyAlbqfXkrky_63qicYujvE-nd8xlM,93
+get_vf/__main__.py,sha256=23MAueYqGum4BGCFFgZSxNXlUZTYvjQlPmcCaH3Ptw8,2907
+get_vf/_version.py,sha256=TL-D1JtmzrI_mOQrkm_mrWOqNQVYUchKDDmN-Br_xzE,497
+get_vf/createdb.py,sha256=S4JKJlsmyedcXRjpZY6bowDPvRO7GFmZAcKD7dPH_r0,8494
+get_vf/defaults.py,sha256=uJl1TcMArrVECj4PiRqOTjVrhEQ4d0oPUR2O1hiNUTs,514
+get_vf/search.py,sha256=skJvh-lOCSu14UnNzBHClPU0AXeCDl51KOMzjKg7UXc,18891
+get_vf/utils.py,sha256=ro3TQrKnOEaBphQPMaNOnmzxO6nzcG65f5isS7MdPCM,25790
+get_ancient_vf-0.0.2.dist-info/LICENSE,sha256=Wrb-Q4jPT0wXv6EeX8jbHTttRyICbx5tNmhZCogJy3Q,1591
+get_ancient_vf-0.0.2.dist-info/METADATA,sha256=-x9zy9DfpaUyw-hiuMLgtRL9t9wrivuweWsbgKeWfFs,659
+get_ancient_vf-0.0.2.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+get_ancient_vf-0.0.2.dist-info/entry_points.txt,sha256=GUyZ2ykBpBagin-blpiGpzCEz525FJMEMiideSkNriU,48
+get_ancient_vf-0.0.2.dist-info/top_level.txt,sha256=H0OXeBMnxtuNZfPDZp-5R9-YxloAQFBPpCZkyHFuskc,7
+get_ancient_vf-0.0.2.dist-info/RECORD,,
