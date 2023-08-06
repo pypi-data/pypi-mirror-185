@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: onnx-web
+Version: 0.2.1
+Summary: web UI for running ONNX models
+Home-page: https://github.com/ssube/onnx-web
+Author: ssube
+Author-email: seansube@gmail.com
+Keywords: onnx
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8,<3.11
+Description-Content-Type: text/markdown
