@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simAIRR
+Version: 0.1
+Summary: A tool for simulation of antigen-experienced adaptive immune receptor repertoire (AIRR) datasets for benchmarking of machine learning (ML) methods.
+Home-page: 
+Author: Chakravarthi Kanduri
+Author-email: chakra.kanduri@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+
+# simAIRR
+
+![unit_tests](https://github.com/KanduriC/simAIRR/actions/workflows/run_unit_tests.yml/badge.svg)
+![docker](https://github.com/KanduriC/simAIRR/actions/workflows/push_docker.yml/badge.svg)
+
+simAIRR provides a simulation approach to generate synthetic AIRR datasets that are suitable for benchmarking machine learning (ML) methods, where undesirable access to ground truth signals in training datasets for ML methods is mitigated. Unlike state-of-the-art approaches, simAIRR constructs antigen-experienced-like baseline repertoires and introduces signals by following the empirical relationship between generation probability and sharing pattern of public sequences calibrated from real-world experimental datasets.
+
+For installation instructions and user guide, see documentation: https://kanduric.github.io/simAIRR/
