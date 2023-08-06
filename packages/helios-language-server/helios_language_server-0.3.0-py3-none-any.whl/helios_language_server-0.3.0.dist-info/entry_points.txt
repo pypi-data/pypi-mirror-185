@@ -1,0 +1,3 @@
+[console_scripts]
+helios-language-server=helios_ls.server:main
+
