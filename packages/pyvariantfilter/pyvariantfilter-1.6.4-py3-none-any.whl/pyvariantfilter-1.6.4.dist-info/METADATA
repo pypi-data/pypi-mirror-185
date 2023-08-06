@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyvariantfilter
+Version: 1.6.4
+Summary: Python package for filtering variants.
+Home-page: https://github.com/josephhalstead/pyvariantfilter
+Author: Joseph Halstead
+Author-email: josephhalstead89@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pysam (>=0.15.2)
+Requires-Dist: pandas (>=0.23.4)
+
+pyvariantfilter
