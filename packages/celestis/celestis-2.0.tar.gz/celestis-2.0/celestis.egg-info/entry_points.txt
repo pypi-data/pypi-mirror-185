@@ -1,0 +1,3 @@
+[console_scripts]
+celestis = command:celestis
+
