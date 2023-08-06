@@ -1,0 +1,12 @@
+libkaldilm_fst.dylib,sha256=aGOWotCoIkoWS8FnxOFCv8_Cw-PtOIWe5IbSt2KfW0I,1546984
+libkaldilm_core.dylib,sha256=t3jK6jRYYUqpYVlg4DzAmuGHmFE7YMITK3USJGtOnOo,164912
+libkaldilm_fst.6.dylib,sha256=aGOWotCoIkoWS8FnxOFCv8_Cw-PtOIWe5IbSt2KfW0I,1546984
+_kaldilm.cpython-310-darwin.so,sha256=LxP17xMFcZxYy5lTRO4GbU3u90kXexY67uo4qZ_AG0M,215968
+kaldilm/arpa2fst.py,sha256=6FUfmyyq4S4bYZJlJiV_aam5ga_BddG9ZB3mtquw7x0,2671
+kaldilm/__init__.py,sha256=9PE5PrFcETpyhgKQIG2GwjqZ8_WeKT7-S6HXmSEb8rI,31
+kaldilm/__main__.py,sha256=9qVfeH8UkUjH0XwW8i7oWdL3s_ovvSkLViJda8za0l4,4007
+kaldilm-1.15.dist-info/RECORD,,
+kaldilm-1.15.dist-info/LICENSE,sha256=poLW79HuXe4IqOQFwjPCwZjqcK4HGBKdqoOrWM_jHF0,11728
+kaldilm-1.15.dist-info/WHEEL,sha256=85XxqUmZLCpAUbyN5ViL3rgA5Dw0b1knnC4gtrrtDjE,111
+kaldilm-1.15.dist-info/top_level.txt,sha256=ZQOoN9KnODLnVltsGHx5yQLmi7hsRr0JgTzwDMkvUQA,17
+kaldilm-1.15.dist-info/METADATA,sha256=CAEWxtTHb6-gUeGmZk_67G98SFXlno6A2d4tJpWakCo,9024
