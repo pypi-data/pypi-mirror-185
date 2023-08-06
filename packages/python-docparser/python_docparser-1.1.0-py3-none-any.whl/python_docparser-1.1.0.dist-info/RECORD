@@ -1,0 +1,14 @@
+docparser/__init__.py,sha256=_qc1MBkMOxXoQT5Eei-SoAaWvXH4yZxH8PI2r0yM348,700
+docparser/constants.py,sha256=kQvQqzQ8HVYXVU9IclKfoF2PBZbVxxTbrASvMyUi5RY,296
+docparser/document.py,sha256=5iyr9rRdg77ZyIxod1-IoUhOt9fYEtz_0hLfllFXhfk,413
+docparser/enums.py,sha256=mEgmkMZKZYiWqDx_Ijj1ZVyZTDYm6LAEfN7i-WnT038,522
+docparser/exceptions.py,sha256=EuPSQpBFhxgPFH-vTTzC5Y5CggE2WkaW6ZPFYnFjanU,941
+docparser/parser.py,sha256=qzzAHQCt8Xk6GJH0rqnYGrgR3_HXzzjGlfalW12TuX8,2958
+docparser/reader.py,sha256=CWpQIVesctdd2WFYH_cddshVBwZXLaw2SdfdZinKVWA,2727
+docparser/utils.py,sha256=WZ-lsGKcYfKAEjajhqZtbBdCC5iIB7Pk0voB7x1Os60,1168
+docparser/xml_parser.py,sha256=W6vr4NXiV7laMeIC8aqQDmXnUmwhAnldiHhU6HcoIlg,4265
+python_docparser-1.1.0.dist-info/LICENCE.txt,sha256=i5FJHQNmqp6YDCOe3YdTjyQAQtxtAHtLtjefKe8fFXU,1089
+python_docparser-1.1.0.dist-info/METADATA,sha256=Ni9D5Bo6Xn5Be2oi5vbL8Js_5KzD9nXaQHpO4g1-h0A,870
+python_docparser-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+python_docparser-1.1.0.dist-info/top_level.txt,sha256=dmvO5NTpywQdc9QgZk620yC0XMhGpX5jVrK6_kMigOc,10
+python_docparser-1.1.0.dist-info/RECORD,,

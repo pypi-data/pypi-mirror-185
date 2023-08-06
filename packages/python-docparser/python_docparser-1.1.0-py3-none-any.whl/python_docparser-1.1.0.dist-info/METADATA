@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: python-docparser
+Version: 1.1.0
+Summary: Extract text from your docx document.
+Home-page: https://github.com/has-abi/docparser
+Author: Hassane Abida
+Author-email: abidahass.uca@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# What is docparser?
+docparser is python package that extract text form a DOCX document.
+
+## Installation
+
+```bash
+pip install python-docparser
+```
+
+## Usage
+
+```python
+from docparser import parse 
+
+document = parse("your_docx_document")
+print(document.content)
+```
