@@ -1,0 +1,17 @@
+mqt.qecc.dylibs/libgmpxx.4.dylib,sha256=cOT8-DyjXomV0rOni4YLvbLqwiSDbYHmPooXNn0Qa4g,81760
+mqt.qecc.dylibs/libntl.44.dylib,sha256=cqhLQxcg2vSWcg1RZwiSNvcRCuaFbV0IwGnh_XFTKW0,2175744
+mqt.qecc.dylibs/libflint-17.dylib,sha256=ivIm0TOGovU3E-0d4de1UHraBzazL_e9YaqyhEa0U1w,6459136
+mqt.qecc.dylibs/libgmp.10.dylib,sha256=8rGXEXJLcaAt4N0tfbBGKQtMEon1GHH3z_CM4mibNVM,497744
+mqt.qecc.dylibs/libmpfr.6.dylib,sha256=zSzvPz0GDocAopeGK9YJMumNt9FgfuGUovU0dcf7l28,468288
+mqt.qecc-1.2.1.dist-info/RECORD,,
+mqt.qecc-1.2.1.dist-info/LICENSE,sha256=1GHUKX_SMgBY0j-KzgXYFflb8RIvZo_pjS6w-EVUFl4,1069
+mqt.qecc-1.2.1.dist-info/WHEEL,sha256=q2gGm9PYA7J0P2aQZzV4_3CeUjhOD-56i2gUDP38OOk,112
+mqt.qecc-1.2.1.dist-info/entry_points.txt,sha256=NrC3uQQI29rf_YWtJSEFjtW2oIxtVLAUSx1C0VHf304,72
+mqt.qecc-1.2.1.dist-info/top_level.txt,sha256=EEAcN7dCjD768hIHwlaYu84KcowTMGQzneY8i30tatk,4
+mqt.qecc-1.2.1.dist-info/METADATA,sha256=LnzvqWvZu7atbHsI0mkJfv5aoVkhdXxF5PrNduMURuk,9978
+mqt/qecc/pyqecc.cpython-311-darwin.so,sha256=BQAqY4fBlIRcAYrsnvefeszamis_oZW0qsSa_MvU6oc,1068864
+mqt/qecc/CMakeLists.txt,sha256=2EG4K85ofWhBxqhU6e7-pquegEkP_Cai38_2El2wGdk,298
+mqt/qecc/__init__.py,sha256=3eA93DfPrssrhAr0mxBnQDyEcGfm0xq8zoLnEb4ahQA,574
+mqt/qecc/py.typed,sha256=UaCuPFa3H8UAakbt-5G8SPacldTOGvJv18pPjUJ5gDY,93
+mqt/qecc/bindings.cpp,sha256=ValEMpoBpiZ1hdfHHoFGZ_dfSIOt9pW2e0BfSUYNxcc,10082
+mqt/qecc/ecc_qiskit_wrapper.py,sha256=WVAX63yGKxDv_PjzP6to9woL2PJuc4QzG156Z42f5ME,7511
