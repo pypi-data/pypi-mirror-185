@@ -1,0 +1,36 @@
+site_name: {Obj}
+extra_css:
+    - assets/css/extra.css
+theme:
+  name: material
+  logo: assets/img/logo.svg
+  favicon: assets/img/logo.svg
+  palette: 
+    # light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    # dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+        
+markdown_extensions:
+  # https://squidfunk.github.io/mkdocs-material/reference/
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
