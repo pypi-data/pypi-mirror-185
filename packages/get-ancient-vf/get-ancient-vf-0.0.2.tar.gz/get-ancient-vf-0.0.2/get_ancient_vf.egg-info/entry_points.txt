@@ -1,0 +1,3 @@
+[console_scripts]
+getVF = get_vf.__main__:main
+
