@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dendrify
+Version: 1.0.8
+Summary: A package for adding dendrites to SNNs
+Author: Michalis Pagkalos
+Author-email: <mpagkalos93@gmail.com>
+Keywords: python,brian2,dendrites,SNNs,network models
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A package for adding dendrites to SNNs in Brian 2
