@@ -1,0 +1,7 @@
+.env,sha256=0bS1DOOyLwJm02ExsaLtM20Pm4FZpqSSRUczYlk0rC8,53
+vams_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vams_cli/cli.py,sha256=49SOUbLqs_vvB3utLiBwrQgAkxrtwo1FOINvBD0s5JY,3490
+vams_cli-0.2.4.dist-info/entry_points.txt,sha256=ueBQgoY4_xilumXc7jdDMRKep6pmyIiH3FyUI1wS8AA,42
+vams_cli-0.2.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+vams_cli-0.2.4.dist-info/METADATA,sha256=ru3UNMJz-WPJPi1Ylx5E2y0XnGZu3MxfSMmDLcZx3Ns,466
+vams_cli-0.2.4.dist-info/RECORD,,
