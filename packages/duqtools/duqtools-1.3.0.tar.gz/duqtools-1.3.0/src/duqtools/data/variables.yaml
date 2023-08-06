@@ -1,0 +1,16 @@
+### Jetto/other variables
+
+- name: major_radius
+  type: jetto-variable
+  lookup:
+    doc: Reference major radius (R0)
+    keys:
+    - field: EquilEscoRefPanel.refMajorRadius
+      file: jetto.jset
+    - field: RMJ
+      file: jetto.in
+      section: NLIST1
+    name: major_radius
+    type: float
+- name: t_start
+- name: t_end
