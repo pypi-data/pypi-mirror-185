@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+chipnumpy.egg-info/PKG-INFO
+chipnumpy.egg-info/SOURCES.txt
+chipnumpy.egg-info/dependency_links.txt
+chipnumpy.egg-info/requires.txt
+chipnumpy.egg-info/top_level.txt
