@@ -1,0 +1,5 @@
+PyYAML>=5.2
+marshmallow>=3.2.1,<4
+click
+requests>=2.24.0
+croniter>=1.0.15,<2
