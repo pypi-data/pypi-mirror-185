@@ -1,0 +1,6 @@
+setup.py
+solmate.egg-info/PKG-INFO
+solmate.egg-info/SOURCES.txt
+solmate.egg-info/dependency_links.txt
+solmate.egg-info/not-zip-safe
+solmate.egg-info/top_level.txt
