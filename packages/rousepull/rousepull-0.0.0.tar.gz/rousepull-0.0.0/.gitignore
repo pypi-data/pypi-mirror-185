@@ -1,0 +1,9 @@
+doc/sphinx/build
+doc/sphinx/source/_build
+doc/sphinx/source/examples
+doc/sphinx/source/examples.rst
+tests/
+dist/
+examples/*
+!examples/*.ipynb
+!examples/matplotlibrc
