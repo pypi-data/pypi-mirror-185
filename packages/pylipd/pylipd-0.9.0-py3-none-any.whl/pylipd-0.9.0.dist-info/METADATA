@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pylipd
+Version: 0.9.0
+Summary: Python utilities for handling LiPD data
+Home-page: https://github.com/linkedearth/pylipd
+Author: Varun Ratnakar
+Author-email: varunr@isi.edu
+License: Apache-2
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rdflib
+Requires-Dist: pandas
+
+# PyLiPD
+Python LiPD utilities
+
+## Installation
+    pip install pylipd
+
+## Usage
+
+### Loading local LiPD files
+    from pylipd import LiPD
+    lipd = LiPD()
+    lipd.load(["MD98_2181.Stott.2007.lpd", "Ant-WAIS-Divide.Severinghaus.2012.lpd", "Asi-TDAXJP.PAGES2k.2013.lpd"])
+
+### Loading LiPD data from GraphDB server
+    from pylipd import LiPD
+    lipd = LiPD()
+    lipd.set_endpoint("https://linkedearth.graphdb.mint.isi.edu/repositories/LiPDVerse2")
+    lipd.load_remote_datasets(["MD98_2181.Stott.2007", "Ant-WAIS-Divide.Severinghaus.2012", "Asi-TDAXJP.PAGES2k.2013"])
