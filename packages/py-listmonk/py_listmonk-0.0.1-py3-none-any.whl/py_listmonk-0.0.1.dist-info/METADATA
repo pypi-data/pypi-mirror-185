@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: py-listmonk
+Version: 0.0.1
+Summary: A python sdk for listmonk.app api.
+Project-URL: Documentation, https://github.com/Tobi-De/py-listmonk#readme
+Project-URL: Issues, https://github.com/Tobi-De/py-listmonk/issues
+Project-URL: Source, https://github.com/Tobi-De/py-listmonk
+Author-email: Tobi DEGNON <tobidegnon@proton.me>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: API,JSON,Mailing List,Newsletter,Python,REST,SDK
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: attrs
+Requires-Dist: cattrs
+Requires-Dist: httpx
+Requires-Dist: pendulum
+Description-Content-Type: text/markdown
+
+# py-listmonk
+
+[![PyPI - Version](https://img.shields.io/pypi/v/py-listmonk.svg)](https://pypi.org/project/py-listmonk)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/py-listmonk.svg)](https://pypi.org/project/py-listmonk)
+[![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install py-listmonk
+```
+
+## License
+
+`py-listmonk` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

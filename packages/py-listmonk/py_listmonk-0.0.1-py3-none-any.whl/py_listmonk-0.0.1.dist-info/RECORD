@@ -1,0 +1,11 @@
+py_listmonk/__about__.py,sha256=KKE5eto5UTePHqS0Hxe00wQBTj5-VM6hDMabr3pDxps,129
+py_listmonk/__init__.py,sha256=f9IMLTfAgDq49YoeWOhAoRR2dHZA0negYj7mAiI83hU,676
+py_listmonk/converter.py,sha256=mCsNIT6FgzVm-WC5SGUpGNh088YdDjUQqFziQZL5yr4,308
+py_listmonk/main.py,sha256=6y-pPEahePG_n2ttvfJcX_XWhNbZ-F_iXDEHmck6QDg,516
+py_listmonk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_listmonk/api_resources/__init__.py,sha256=vDY_9gOMsV_Lle-k3MLZ0O4pw-o3TSgdjQ8Sp9e-Wd0,103
+py_listmonk/api_resources/subscribers.py,sha256=G91F3KYq3XNJyqpn9bqx_fwE5IHwMLWGJ2t6khihU6M,1042
+py_listmonk-0.0.1.dist-info/METADATA,sha256=Pu7yIl5EDb9eOheUC3uPev7otl7YmsU2M9E-DpCTIAE,1698
+py_listmonk-0.0.1.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+py_listmonk-0.0.1.dist-info/licenses/LICENSE.txt,sha256=t90j6ANlmGIwwkHJMIhshDvLHe1hWb18XuinOtwZNAM,1099
+py_listmonk-0.0.1.dist-info/RECORD,,
