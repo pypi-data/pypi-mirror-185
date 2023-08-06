@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: rubiJeff
+Version: 1.1.2
+Summary: Robot Rubika rubiJeff
+Author: rubiJeff
+Author-email: an8060703@gmail.com
+License: MIT
+Keywords: rubika,bot,robot,library,Rubika,Python,rubiJeff,RubiJeff
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+
+### How to import the Rubik's library
+
+``` bash
+from rubiJeff import jeff
+```
+
+### How to install the library
+
+``` bash
+pip install rubiJeff
+```

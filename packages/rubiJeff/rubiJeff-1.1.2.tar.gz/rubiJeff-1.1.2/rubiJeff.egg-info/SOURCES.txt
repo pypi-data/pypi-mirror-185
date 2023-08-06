@@ -1,0 +1,13 @@
+LICENCE
+setup.cfg
+setup.py
+rubiJeff/An_Wb.py
+rubiJeff/How.py
+rubiJeff/Socket.py
+rubiJeff/__init__.py
+rubiJeff/client.py
+rubiJeff/encryption.py
+rubiJeff.egg-info/PKG-INFO
+rubiJeff.egg-info/SOURCES.txt
+rubiJeff.egg-info/dependency_links.txt
+rubiJeff.egg-info/top_level.txt
