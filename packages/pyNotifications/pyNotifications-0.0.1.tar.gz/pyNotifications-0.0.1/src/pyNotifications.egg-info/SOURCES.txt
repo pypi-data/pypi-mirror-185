@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/pyNotifications.egg-info/PKG-INFO
+src/pyNotifications.egg-info/SOURCES.txt
+src/pyNotifications.egg-info/dependency_links.txt
+src/pyNotifications.egg-info/requires.txt
+src/pyNotifications.egg-info/top_level.txt
