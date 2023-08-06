@@ -1,0 +1,12 @@
+doc/__init__.py,sha256=SjizI-nPte_sVPfFgmx5wwUP5FaWDm9meTelQP5rQGY,95
+doc/conf.py,sha256=Q5PTwRtegwVLDiiE6C8iWFul292lxzus9il0Dt5m85g,7881
+joblibspark/__init__.py,sha256=AQ_quv7V8YzPy1Tvu8L2LbX_1UZ0cGWrYYaKCJmQcQ4,1324
+joblibspark/backend.py,sha256=-K0KE5triNqS62boyEAgCbHnLTZNzKPotX5jRvreTfk,8874
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_backend.py,sha256=NB3sN68CP4d8mZPtNJ_arW5VN9w7QSU7rjKHf_tQN9Q,642
+test/test_spark.py,sha256=bCJShc15Vw2HWoZcr51Q8aYc_Rcu6T3R_1LTCNLWLvE,3236
+joblibspark-0.5.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+joblibspark-0.5.1.dist-info/METADATA,sha256=f7LTqJysrxjzwARzyoiw_5sNO9N4XEUcVq1T7r8edLg,981
+joblibspark-0.5.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+joblibspark-0.5.1.dist-info/top_level.txt,sha256=nwaHNq1Jrz9cIgG_wdkM8Nhwws1aPtwkrr01baJkPzw,21
+joblibspark-0.5.1.dist-info/RECORD,,
