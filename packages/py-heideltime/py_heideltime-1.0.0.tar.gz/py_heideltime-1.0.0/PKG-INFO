@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: py_heideltime
+Version: 1.0.0
+Summary: Python wrapper for HeidelTime temporal tagger.
+Home-page: https://github.com/hmosousa/py_heideltime.git
+Author: Jorge Mendes, Ricardo Campos, and Hugo Sousa
+Author-email: hmosousa@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
