@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: monadic-error
+Version: 1.0.1
+Summary: Monads used for handling Errors. Contains Either and Option.
+Author: Ian Kollipara
+Author-email: ian.kollipara@cune.org
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Monadic Error
+
+This contains code for handling errors in Python in
+a monadic way. This works with Python Pattern Matching.
