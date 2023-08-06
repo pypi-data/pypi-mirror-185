@@ -1,0 +1,2 @@
+[console_scripts]
+django-debug-false-checker = django_debug_false_checker.__main__:main
