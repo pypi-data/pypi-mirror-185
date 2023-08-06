@@ -1,0 +1,7 @@
+fsutil/__init__.py,sha256=28TQwxkLKILCa4V0fWaUUXfU4IPSzaUglEBL5pv5FGo,32897
+fsutil/metadata.py,sha256=TPI_OWW56D5V2KgHDHzgOOYnPevXI9BPyOz23DELe_g,265
+python_fsutil-0.9.3.dist-info/LICENSE.txt,sha256=IcPfOD_lonKcLMnPRhiWdQUPW_LYW-5TTDljwi3UXQg,1078
+python_fsutil-0.9.3.dist-info/METADATA,sha256=hQaKWzGssYKSntFqa91pchkL4ilAOXn7QtLXyLrpbns,22010
+python_fsutil-0.9.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+python_fsutil-0.9.3.dist-info/top_level.txt,sha256=KGTSjNLPWmxnZt8BFMZQrpnhkO7DsKrYWoXK-Sf3wBQ,7
+python_fsutil-0.9.3.dist-info/RECORD,,
