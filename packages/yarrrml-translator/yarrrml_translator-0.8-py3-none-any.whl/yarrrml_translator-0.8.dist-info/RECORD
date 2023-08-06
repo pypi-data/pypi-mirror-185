@@ -1,0 +1,12 @@
+yarrrml_translator/__init__.py,sha256=KqvTACtjpub1NgWGW0ARGQiFbleU2KV0kR608mi0tp0,4652
+yarrrml_translator/__main__.py,sha256=D6_sHhxcEq8mpz6N37LM1Anh6-8GoqLa3rTfSmi-J44,2637
+yarrrml_translator/constants.py,sha256=7whj5lqolrs1RGHuqrAll6QpVzSQ0HXV91B6wZO1uBs,4444
+yarrrml_translator/mapping.py,sha256=8_wKVUzdoO-VjJEy3R68ulBlgiKpwLf3cFGJhb4snl4,4125
+yarrrml_translator/predicateobject.py,sha256=LXMKcrZmIhElH8o4wRRiUjfe5sMQ4VR18vtNwsAuITc,15718
+yarrrml_translator/source.py,sha256=gZji-k2zW6jB4lqA4cuuV7H8OBCFfLIB--LxomW9sVw,13992
+yarrrml_translator/subject.py,sha256=bpPJ-nibowbB-Mtl6N3AuziAQJxU7cnGv-AkPpnB9OM,4070
+yarrrml_translator/termmap.py,sha256=HSwsUnr3UFO4lxhtJH-WVRaxeQjYjLve27FOrvNDOsU,1978
+yarrrml_translator-0.8.dist-info/METADATA,sha256=m9txzTNqqPauNPId8h0OHtWBzlExQAWteYYOYcKnW70,3963
+yarrrml_translator-0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+yarrrml_translator-0.8.dist-info/top_level.txt,sha256=bkCRo7-r-C4Gwzrz4KgqZbmJULCIQkH2oHUrNkj6fM0,19
+yarrrml_translator-0.8.dist-info/RECORD,,
