@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+airtable/__init__.py
+airtable/client.py
+airtable/exceptions.py
+airtable_python.egg-info/PKG-INFO
+airtable_python.egg-info/SOURCES.txt
+airtable_python.egg-info/dependency_links.txt
+airtable_python.egg-info/not-zip-safe
+airtable_python.egg-info/requires.txt
+airtable_python.egg-info/top_level.txt
