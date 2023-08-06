@@ -1,0 +1,8 @@
+sigma/backends/loki/__init__.py,sha256=2ABIluIHtthNMS1RSNkkah4inj6IqNYtp87tgSqTZ88,61
+sigma/backends/loki/loki.py,sha256=UW4KmP_J4Ufcy5kdRccgwGlIaSWVqyi5JgbcD3ehVLM,47534
+sigma/pipelines/loki/__init__.py,sha256=kU-RZ1I-9rdKgBHkrHcLsus8QgI1RNBrejdIeJkTjjI,348
+sigma/pipelines/loki/loki.py,sha256=E5_gDz6fcKI_tXqNrtEhOi5XrtnRefsfLeuIlLtCN8Q,4556
+pysigma_backend_loki-0.3.0.dist-info/METADATA,sha256=duX8g9kcdbpCEWyJ3OKKgZpcThwcRkwS6hkAbEt0W5E,3718
+pysigma_backend_loki-0.3.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pysigma_backend_loki-0.3.0.dist-info/LICENSE,sha256=wcxDGvuisODwz3zLEDLQ4B8Wg6StayW1SY30i4u6wdA,598
+pysigma_backend_loki-0.3.0.dist-info/RECORD,,
