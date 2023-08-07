@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "parviflora"
+version = "1.0.1"
+description = "Implementation of the Permuatio wire format"
+authors = ["Arcade Wise <l3gacy.b3ta@gmail.com>"]
+license = "AGPL"
+readme = "README.md"
+repository = "https://codeberg.org/Patpine/parviflora-py"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://codeberg.org/Patpine/parviflora-py/issues"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
