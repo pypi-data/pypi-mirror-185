@@ -1,0 +1,4 @@
+[console_scripts]
+bibformat = bibpy.scripts.bibformat:main
+bibgrep = bibpy.scripts.bibgrep:main
+bibstats = bibpy.scripts.bibstats:main
