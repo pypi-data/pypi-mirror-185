@@ -1,0 +1,6 @@
+sparseml
+numpy
+opencv-python
+onnx
+onnxruntime
+tqdm
