@@ -1,0 +1,14 @@
+torchview/__init__.py,sha256=-n3Jd-e73dU2UkNh67PisVtZS_XtlJoAy1XZTyDG_hw,368
+torchview/computation_graph.py,sha256=eJBR_iC3AD84Ku1Qr7BGiK6mVDkrHFcEzOq9TQVoiBo,18330
+torchview/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torchview/recorder_tensor.py,sha256=eI0Z_GKeSeFybwBYkRQjBYihV3ZnHoZoPETc_-AOR2Y,17843
+torchview/torchview.py,sha256=bSKfO9idG5HHFMS3F051prWvPwYldxcaL_LjWV4dRW4,14960
+torchview/utils.py,sha256=pNyulGiGNcIKGwVRuo1MyWbBijjKJ-zEi0MN6UVVkSY,2176
+torchview/computation_node/__init__.py,sha256=4tjj4OrX4NcQPiV8rbtXFc8S3CQxKwFCbcmN8cKW6og,198
+torchview/computation_node/base_node.py,sha256=cNtUKI6Oe-XXOW3ebtt4mFpgNz3nA_mc9bvFKPDkLj8,2717
+torchview/computation_node/compute_node.py,sha256=UvQ4SgfYGZPDoFBLybr34JVFOWp6CDzxBkBpy7eUqEM,5298
+torchview-0.2.4.dist-info/LICENSE,sha256=a5pmrqDrdoYJP_x42RgVw5OLMlLLFARKxtgu-e0U8Io,1071
+torchview-0.2.4.dist-info/METADATA,sha256=FOE7xgk6J-fNJsH6jALxnXl1IlcJNH89ukjoW9r1N4Y,12112
+torchview-0.2.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+torchview-0.2.4.dist-info/top_level.txt,sha256=5YoROqy5tPKJ2bDIwPzIYBtzfqylUBhBC0OagOdvZsE,10
+torchview-0.2.4.dist-info/RECORD,,
