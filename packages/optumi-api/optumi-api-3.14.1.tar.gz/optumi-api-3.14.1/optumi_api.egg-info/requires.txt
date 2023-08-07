@@ -1,0 +1,2 @@
+optumi_core~=3.14.1
+phonenumbers
