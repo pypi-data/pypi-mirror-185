@@ -1,0 +1,12 @@
+zdbpydra/__init__.py,sha256=zynTSSK8qNpE-mTN4XOZlaFQwyK7Gr2o9FjMoWsKefE,1160
+zdbpydra/__main__.py,sha256=zeHmI_-KRL-vMJ1vyxNCQLHWuI88DV1sTqiiTMxIWYY,3302
+zdbpydra/client.py,sha256=ak-8y-ytWOkstkgO7W3K5aqcrMuumksseUsxoG_UUO8,3192
+zdbpydra/docs-dev.py,sha256=-YvaQRw9qPlB05hU4qz7gwIDMdiAZte7Y0jSkvAxxwM,1433
+zdbpydra/docs.py,sha256=9INIsLcJrsHIomyzs0FqGbcGzLq4pgT2T1_TnBxgYdk,29953
+zdbpydra/utils.py,sha256=xLGrtNWEngms5Ior36gNvi52Ams_M_tKRR--Vz215TI,2521
+zdbpydra-0.3.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+zdbpydra-0.3.3.dist-info/METADATA,sha256=t8LobULuZoR4bUVpUR9nAebKwfV32G-4E_YOreRhaGw,3602
+zdbpydra-0.3.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zdbpydra-0.3.3.dist-info/entry_points.txt,sha256=1ZSkxsZc0jyEbP6cNNJjbBNaTpgAKdrj3C855poLltM,52
+zdbpydra-0.3.3.dist-info/top_level.txt,sha256=kOckjlz0LtjBxXCsEloLigf7jEV38T3hiGCUecApiUQ,9
+zdbpydra-0.3.3.dist-info/RECORD,,
