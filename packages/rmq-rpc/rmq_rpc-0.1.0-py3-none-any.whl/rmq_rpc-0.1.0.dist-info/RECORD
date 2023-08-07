@@ -1,0 +1,10 @@
+rmq_rpc/__init__.py,sha256=3z709soQu2RRoeomvKZEjmItuZGHC9X6SmsPo7YXFlk,70
+rmq_rpc/client.py,sha256=y63TfPDn-L5Iz-slg1Z34EpxGHMTXtouGNJuR9zSm4A,4181
+rmq_rpc/enums.py,sha256=IhTi4FN6yHFE1eLhPAXZQGMknIt-JKdYsZYHXj2M62A,108
+rmq_rpc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rmq_rpc/serializers.py,sha256=InFQ_i_HunqE5OP3AyscSVA4spqsrITAjJG-Y22N738,1096
+rmq_rpc/server.py,sha256=2G_NfVj28MKeNPjkyo71_O-61gL8Ok4a67Pr-tO4L58,3697
+rmq_rpc-0.1.0.dist-info/WHEEL,sha256=_LDBqpgIVFNHZvvFOGbg2pvJOENq6RHAyT5px-HeX0U,87
+rmq_rpc-0.1.0.dist-info/METADATA,sha256=LKEojR8NBdSS-O7Jgkotxir3kYBO-QeBW6Ch0shP68g,312
+rmq_rpc-0.1.0.dist-info/licenses/LICENSE,sha256=3jLJvR-yrmYK3po92duGwKHNii3PitCQ3W_dZ7RWxLc,1072
+rmq_rpc-0.1.0.dist-info/RECORD,,
