@@ -1,0 +1,7 @@
+.ropeproject/
+.coverage
+htmlcov
+docs/_build/
+sjkabc.egg-info/
+pytest_*.egg
+.cache/
