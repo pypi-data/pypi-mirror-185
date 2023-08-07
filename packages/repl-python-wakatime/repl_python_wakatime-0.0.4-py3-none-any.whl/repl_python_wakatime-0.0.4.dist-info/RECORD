@@ -1,0 +1,13 @@
+repl_python_wakatime/__init__.py,sha256=cvbIj7qD0P_BEwKGbzQmM7OUqJCE5DPvz6DWp8rkWPQ,1807
+repl_python_wakatime/_metainfo.py,sha256=t7EtGmVYQa0Zc6_3fJyYyFsyp_Cef7vzfrVhVYaXNpc,668
+repl_python_wakatime/_version.py,sha256=C_sEDFDxz5lXxlK-Oo8_UXoTORDgjzXO4KLRiUAkVKA,160
+repl_python_wakatime/ipython.py,sha256=06I1AIEZ2LEzvIYVPJ2eHtJL_gBG3Y6qZVd4hrHHFcI,2586
+repl_python_wakatime/ptpython.py,sha256=Muc9JSWb4tEzIJnPXl1GdpYJBFMTVa3IF0XLG82lsoY,2542
+repl_python_wakatime/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repl_python_wakatime/python.py,sha256=PCRLvG-a613BGsI9EKGLuTTy727g-DKQSA2tvMY4eLE,1464
+repl_python_wakatime/utils.py,sha256=2TDfkoB1E6cP15lTmRScl6yvuHphyLd8z2Zqxne2_EI,983
+repl_python_wakatime-0.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+repl_python_wakatime-0.0.4.dist-info/METADATA,sha256=WKOEwWWXdCX7GLo7n5IlF5z5q1V-zXIn6J0Wv_Rv0qw,8149
+repl_python_wakatime-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+repl_python_wakatime-0.0.4.dist-info/top_level.txt,sha256=m1EYOtuprsfZV_XUs_6ie2bcThcmuF-VI-p3qtCEh9E,21
+repl_python_wakatime-0.0.4.dist-info/RECORD,,
