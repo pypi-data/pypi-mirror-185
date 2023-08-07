@@ -1,0 +1,18 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./cifar_10_model/*
+
+include cifar_10_model/trained_models/*.h5
+include cifar_10_model/VERSION
+include cifar_10_model/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txtpy
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+

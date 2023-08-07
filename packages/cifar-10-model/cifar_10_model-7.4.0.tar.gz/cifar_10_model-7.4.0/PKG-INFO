@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cifar_10_model
+Version: 7.4.0
+Summary: Image Classifier for CIFAR 10 Dataset
+Home-page: https://github.com/sgudiduri/Projects/tree/main/research_to_deployment/cifar10/production
+Author: Siddharth Gudiduri
+Author-email: siddu.gemeni@gmail.com
+License: BSD-3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8.15
+Description-Content-Type: text/markdown
+
+Image Classifier for CIFAR 10 Dataset
