@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mashyperscaler-aws
+Version: 0.1.4
+Summary: EC2 Instance Counter
+Author: Amit M Mangalvedkar
+License: MIT
+Description-Content-Type: text/markdown
+
+# Testing EC2 instances in AWS #
+This is dummy pypi library. 
+**It has NOT BEEN IMPLEMENTED**
