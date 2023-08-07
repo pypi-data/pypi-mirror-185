@@ -1,0 +1,12 @@
+setup.py
+rdecssupplier/__init__.py
+rdecssupplier/es_DatabaseOperations.py
+rdecssupplier/es_Metadata.py
+rdecssupplier/es_Utility.py
+rdecssupplier/es_supplier_demo.py
+rdecssupplier/mainModel.py
+rdecssupplier.egg-info/PKG-INFO
+rdecssupplier.egg-info/SOURCES.txt
+rdecssupplier.egg-info/dependency_links.txt
+rdecssupplier.egg-info/requires.txt
+rdecssupplier.egg-info/top_level.txt
