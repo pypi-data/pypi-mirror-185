@@ -1,0 +1,12 @@
+truegrad/__init__.py,sha256=STNADupe4w4oogQwc3391q_6ST8K5jI6k_D7Y6yD3L0,132
+truegrad/functional.py,sha256=XTDEbjJ3QJGWLE6s09QGXClpBKAn-mqOKpORQDRcNwg,15142
+truegrad/hyperhyper.py,sha256=EbdmT4wlU_DRmCXlDKBK2aZPJaI7zf4GBHpgIhoQ-Rc,2201
+truegrad/optim.py,sha256=AKS12ZgejrkXokDkPCOMaqpRSKs3zRUcMp70sIt6jfc,8649
+truegrad/utils.py,sha256=PdSHI-wElEmAL6z8aq7rRkrRaPT28r98nmKQYurWOjA,1640
+truegrad/nn/__init__.py,sha256=VkeanmrGunRiIYBJ26pLmN8tS1T-izTPgvLckSlZszk,8235
+truegrad/nn/functional.py,sha256=BAksCLL8Mb8gevk-E28Vqu3Ji12Awae8ScLnsc3XL3w,55570
+truegrad-2.3.3.dist-info/LICENSE,sha256=BEpNKqedEqYCsqnrC4STPdVQzFZ2VUGSzYh3ptqdL1U,1348
+truegrad-2.3.3.dist-info/METADATA,sha256=520cfuTpaEPzJWS5UHiZDcD2MXFbSo5IJsJIVbBsBoE,12613
+truegrad-2.3.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+truegrad-2.3.3.dist-info/top_level.txt,sha256=ndKYA85Vdwa4bN-NQL_lLJe5JWT6hnHIaEG939LY-ls,9
+truegrad-2.3.3.dist-info/RECORD,,
