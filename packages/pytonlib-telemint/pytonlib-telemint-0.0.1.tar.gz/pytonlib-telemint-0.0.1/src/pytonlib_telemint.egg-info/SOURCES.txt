@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pytonlib_telemint/__init__.py
+src/pytonlib_telemint/telemint.py
+src/pytonlib_telemint.egg-info/PKG-INFO
+src/pytonlib_telemint.egg-info/SOURCES.txt
+src/pytonlib_telemint.egg-info/dependency_links.txt
+src/pytonlib_telemint.egg-info/requires.txt
+src/pytonlib_telemint.egg-info/top_level.txt
