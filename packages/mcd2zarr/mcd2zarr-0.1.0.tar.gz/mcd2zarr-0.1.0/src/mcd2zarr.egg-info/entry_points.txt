@@ -1,0 +1,2 @@
+[console_scripts]
+mcd2zarr = mcd2zarr.__main__:main
