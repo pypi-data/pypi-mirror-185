@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ml-pilot
+Version: 0.0.3
+Home-page: https://github.com/ImranNazir4/msdsf22m002.git
+Author: Imran Nazir
+Author-email: imrnazir8@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# msdsf22m002
+
+
+
+# ml_pilot
+ML_Pilot is a python packes that is providing very easy implementation of data wranling task. You just need to call the fuctions and implement your desired functionality like data preprocessing and feature engineering.
+
+# EDA Package
+## data_summary(data_frame)
+this function gets data frame as argument and return summary of data values present in the datast.
+## null_summary(data_frame)
+this function gets data frame as argument and return summary of null values present in the datast.
+## null_percent(data_frame,limit)
+this function returns the feature that contains percentage of null values greater than equal to limit.
+
+
+# Feature Engnieering
+## features_summary(data_frame)
+this functions return details about numerical features of the dataset like mean,mode,min.. values
+## drop_features(data_frame,features)
+this function allow us to drop features in the dataset
