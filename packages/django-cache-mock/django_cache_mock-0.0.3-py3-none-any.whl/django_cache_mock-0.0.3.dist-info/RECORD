@@ -1,0 +1,9 @@
+django_cache_mock/__init__.py,sha256=0MI_6rHJDAOhTMj6hrfeXt5nreF_I6U-7JOaSlW28Is,63
+django_cache_mock/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cache_mock/backends/memcached.py,sha256=mYJS_j400glEcuJz-1xr4fD0Mc3GhzziY8gf3_TDPRY,889
+django_cache_mock/backends/redis.py,sha256=AQgBdYVqazpYEQCgH1V05z2_bYot92PNBeYb4QmQERE,4272
+django_cache_mock/mock.py,sha256=-DybJE7rV2jSLT8KDJ8VMzfKXuNE-v0q8ffydyXheKY,1430
+django_cache_mock-0.0.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+django_cache_mock-0.0.3.dist-info/LICENSE,sha256=p_xSYaq6bQviieYpwTQk7L3l97yz3leA_z2VooLkEHc,1062
+django_cache_mock-0.0.3.dist-info/METADATA,sha256=OrnVVmxOuuc2mK69Rie_er2aTtmOZZw1gwNVz02-wVQ,4204
+django_cache_mock-0.0.3.dist-info/RECORD,,
