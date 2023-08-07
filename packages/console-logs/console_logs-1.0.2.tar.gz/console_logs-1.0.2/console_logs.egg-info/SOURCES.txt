@@ -1,0 +1,9 @@
+README.md
+setup.py
+console_logs/Logging.py
+console_logs.egg-info/PKG-INFO
+console_logs.egg-info/SOURCES.txt
+console_logs.egg-info/dependency_links.txt
+console_logs.egg-info/requires.txt
+console_logs.egg-info/top_level.txt
+console_logs/src/utils.py
