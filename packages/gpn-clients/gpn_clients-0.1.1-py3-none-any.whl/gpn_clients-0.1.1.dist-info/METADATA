@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gpn-clients
+Version: 0.1.1
+Summary: Клиенты для получения данных из источников внутри ГПН
+Author: Chumakov Mikhail Dmitrievich
+Author-email: i@m-chumakov-dev.ru
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Requires-Dist: setuptools (>=65.7.0,<66.0.0)
+Description-Content-Type: text/markdown
+
+# 🀣 🅖🅟🅝 🅲🅻🅸🅴🅽🆃🆂 🀣
+
+![Code Coverage](https://img.shields.io/badge/Coverage-90%25-green.svg)
+
+ГПН Клиенты предоставляющие интерфейс для работы с источниками данных.
+
+## Базовое использование
+
+Конфигурация клиента на примере клиента NSI
+
