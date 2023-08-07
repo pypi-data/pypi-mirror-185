@@ -1,0 +1,8 @@
+matplotlib
+pandas
+networkx
+
+[notebook]
+jupyterlab
+ipywidgets>=8.0
+ipympl
