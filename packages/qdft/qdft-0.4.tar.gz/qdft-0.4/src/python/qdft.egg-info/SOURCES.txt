@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/python/qdft/__init__.py
+src/python/qdft/chroma.py
+src/python/qdft/fafe.py
+src/python/qdft/qdft.py
+src/python/qdft/scale.py
+src/python/qdft.egg-info/PKG-INFO
+src/python/qdft.egg-info/SOURCES.txt
+src/python/qdft.egg-info/dependency_links.txt
+src/python/qdft.egg-info/requires.txt
+src/python/qdft.egg-info/top_level.txt
