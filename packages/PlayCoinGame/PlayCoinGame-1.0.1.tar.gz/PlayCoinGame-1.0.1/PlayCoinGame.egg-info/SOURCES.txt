@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.py
+PlayCoinGame/__init__.py
+PlayCoinGame/main.py
+PlayCoinGame.egg-info/PKG-INFO
+PlayCoinGame.egg-info/SOURCES.txt
+PlayCoinGame.egg-info/dependency_links.txt
+PlayCoinGame.egg-info/top_level.txt
