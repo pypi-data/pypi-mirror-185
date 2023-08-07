@@ -1,0 +1,2 @@
+[console_scripts]
+pia = pia.__main__:main

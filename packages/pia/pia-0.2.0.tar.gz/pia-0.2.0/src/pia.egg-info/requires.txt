@@ -1,0 +1,9 @@
+ansible-core>=2.12.0
+
+[lock]
+
+[test]
+coverage
+pytest
+pytest-plus
+pytest-xdist
