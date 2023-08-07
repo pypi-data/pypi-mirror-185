@@ -1,0 +1,8 @@
+gitlabci_checker/__init__.py,sha256=jYkA547js7lBm9SXr3rgg4HUBXX6KmFw-u9_MYtI9Yk,95
+gitlabci_checker/cli.py,sha256=3kmzwhudZn_IXdTTipIOgcAmBSUHuE5tPOymG2aNWS8,3443
+gitlabci_checker/helpers.py,sha256=dJP4EenQo7trHVOmMp14ES9i-FjJwxQ18YE02sAtDSY,1747
+gitlabci_checker-0.1.1.dist-info/LICENSE,sha256=FP57MEqAleDF8cI8WHfodb-CKXvFYbB1vm-LSIDKC_c,1073
+gitlabci_checker-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+gitlabci_checker-0.1.1.dist-info/entry_points.txt,sha256=YzXW1KbqpvPLL2pnxkEF_JpoVZjNF2zYOmjP2Z5aVUI,52
+gitlabci_checker-0.1.1.dist-info/METADATA,sha256=4wFwbPC54XX7LZ9tmZsylxA3jWe05eGfNtyoiVDZTSA,4140
+gitlabci_checker-0.1.1.dist-info/RECORD,,

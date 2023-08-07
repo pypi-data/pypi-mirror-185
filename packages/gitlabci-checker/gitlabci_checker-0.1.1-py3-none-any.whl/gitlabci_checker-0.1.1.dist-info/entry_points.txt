@@ -1,0 +1,3 @@
+[console_scripts]
+cicheck=gitlabci_checker.cli:cli
+
