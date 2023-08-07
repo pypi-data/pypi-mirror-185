@@ -1,0 +1,2 @@
+[console_scripts]
+mojicopy = mojicopy.cli:app

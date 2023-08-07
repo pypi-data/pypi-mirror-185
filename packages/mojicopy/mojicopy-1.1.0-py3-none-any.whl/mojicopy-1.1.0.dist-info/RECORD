@@ -1,0 +1,12 @@
+mojicopy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mojicopy/ai_emoji.py,sha256=bDV4mVKAkqlG_71bIv-wbffxs5E2gTEEiJhkH1-NV_I,435
+mojicopy/cli.py,sha256=p4AWZ-HyAtJWqnHFU47qwKgSTGnGYBNyS6r8uyxsbqw,1685
+mojicopy/emoji_unicode.py,sha256=eqGMtnAfEh3RfPpLJvbJEUNbzdnro_lb45pSSF5O_uk,1178
+mojicopy/random_emoji.py,sha256=K1-V7gdaEPRg5wgMhw3lQ6CETwdsF-PrpVWtYHSkwsg,1485
+mojicopy/settings.py,sha256=06VXcMbT1ZUCaRpHnfuGlX_wHA5Sxz05plfURPvFZN0,824
+mojicopy-1.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+mojicopy-1.1.0.dist-info/METADATA,sha256=yh99qKL_DR-07a2mB29pse0AUParoau0NNLHJAhyYoM,1635
+mojicopy-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mojicopy-1.1.0.dist-info/entry_points.txt,sha256=LFbEe-5tIiH9i5ABE4sKb1DCQghiUzQ9LMLxZEs485M,46
+mojicopy-1.1.0.dist-info/top_level.txt,sha256=qVoQkrM1JLmfdEy9K4wcUSu10u-enplQE-p4CpvcRiU,9
+mojicopy-1.1.0.dist-info/RECORD,,
