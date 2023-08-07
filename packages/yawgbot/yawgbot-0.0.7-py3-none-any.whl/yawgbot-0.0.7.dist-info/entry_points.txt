@@ -1,0 +1,2 @@
+[console_scripts]
+yawgbot-web = yawgbot.app:run

@@ -1,0 +1,13 @@
+yawgbot/__init__.py,sha256=_wcEI2eg5hYCBAG_cnEliUmWAEUnHFDtvKxuq60GbWk,21
+yawgbot/app.py,sha256=PqIFFrdXv5xUXzj6tWVpHaGYwCqowKejyWHhzMrzy3o,1536
+yawgbot/bot.py,sha256=-wGyupoav2-2cIUPZa56S7UUeoNUCL2N-e6hPsSlmGw,1797
+yawgbot/index.html,sha256=9ayUMO0DKw3hWbXxkT-DD4cLy_-Ue3WzaClS-5THtBo,5588
+yawgbot/listing.py,sha256=sal42I2oLEUJzVWXMT1x0T8MezYnH9xpFn1OyajEVl4,671
+yawgbot/pluginBase.py,sha256=B5UCeu-YCZNa0u7kAHHi8LrytYecQRe8Ss18soFhs6g,1567
+yawgbot/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yawgbot/plugins/wg-gesucht.py,sha256=Ke5UIDQ_quiLJTklJHUj_AiWzbveUav5tDAh9Zjp9lU,3283
+yawgbot-0.0.7.dist-info/METADATA,sha256=-Ym6p2eVXWJcU2LoTSc1ICejh302zfzEc7dWSepU4A4,6755
+yawgbot-0.0.7.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+yawgbot-0.0.7.dist-info/entry_points.txt,sha256=la44WnfzBk3hsS9gHxqtYaSkULvTdNPW6rG_MbTveH8,48
+yawgbot-0.0.7.dist-info/licenses/LICENSE.md,sha256=LP_FzDWdYSYKM46GwWBRwEZ_PhyyalB5wyYpYyr8Bbw,1060
+yawgbot-0.0.7.dist-info/RECORD,,
