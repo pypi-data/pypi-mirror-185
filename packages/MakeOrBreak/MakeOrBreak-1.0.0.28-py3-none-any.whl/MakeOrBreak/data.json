@@ -1,0 +1,16 @@
+{
+   "data": {
+      "compliments": [
+         "This is a compliment 1",
+         "This is a compliment 2",
+         "This is a compliment 3",
+         "This is a compliment 4"
+      ],
+      "insults": [
+         "This is a insult 1",
+         "This is a insult 2",
+         "This is a insult 3",
+         "This is a insult 4"
+      ]
+   }
+}
