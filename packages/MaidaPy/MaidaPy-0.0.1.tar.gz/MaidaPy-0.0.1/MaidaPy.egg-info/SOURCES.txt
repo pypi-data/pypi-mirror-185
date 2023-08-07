@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+MaidaPy/ListTools.py
+MaidaPy/RotateArray.py
+MaidaPy/__init__.py
+MaidaPy.egg-info/PKG-INFO
+MaidaPy.egg-info/SOURCES.txt
+MaidaPy.egg-info/dependency_links.txt
+MaidaPy.egg-info/top_level.txt
