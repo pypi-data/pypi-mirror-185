@@ -1,0 +1,8 @@
+venv/
+.vscode
+celerybeat-schedule
+celerydb.sqlite
+test.py
+yawgbot.sqlite
+__pycache__/
+dist/
