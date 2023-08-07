@@ -1,0 +1,3 @@
+[console_scripts]
+aiva=ario3s_aiva.main:app
+
