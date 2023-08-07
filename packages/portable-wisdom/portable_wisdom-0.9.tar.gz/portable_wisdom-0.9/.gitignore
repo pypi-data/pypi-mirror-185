@@ -1,0 +1,22 @@
+# packages
+venv
+
+# python
+.eggs
+*.egg-info
+.tox
+
+# cache
+__pycache__
+*.pyc
+tmp
+
+# build
+*.epub
+
+# products
+build
+dist
+
+# tmp
+.DS_Store

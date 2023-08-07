@@ -1,0 +1,8 @@
+ebooklib>=0.18
+pillow>=9.4.0
+requests>=2.21
+beautifulsoup4>=4.7.1
+html5lib>=1.0.1
+diskcache>=5.4.0
+readwise-pyinstapaper==0.2.3
+emoji>=2.2.0
