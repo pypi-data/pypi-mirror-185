@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hashcore
+Version: 0.1.0
+License-File: LICENSE
+Requires-Dist: dirhash (~=0.2.1)
+Requires-Dist: wheel (~=0.38.4)
+Requires-Dist: setuptools (~=65.6.3)
+Requires-Dist: pytest (~=7.2.0)
+Requires-Dist: pytest-cov (~=4.0.0)
+Requires-Dist: coverage (~=7.0.3)
+Requires-Dist: sphinx (~=5.0.0)
+Requires-Dist: sphinx-rtd-theme (~=1.1.1)
+Requires-Dist: google-cloud-storage (~=2.7.0)
+Requires-Dist: pluggy (~=1.0.0)
+Requires-Dist: boto3 (~=1.26.45)
+Requires-Dist: pyyaml (~=5.3)
+
