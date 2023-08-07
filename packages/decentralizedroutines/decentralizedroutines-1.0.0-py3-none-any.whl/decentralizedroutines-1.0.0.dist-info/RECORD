@@ -1,0 +1,13 @@
+decentralizedroutines/RoutineScheduler.py,sha256=8knn1ZH5EkJRFrxRM7-kGTPKLRbwxY7CCswwnFS2EN8,6512
+decentralizedroutines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+decentralizedroutines/defaults.py,sha256=og2dO335NqZXK3wn8VnS9JCCmtnXcMhD9d259BEF-Wc,648
+decentralizedroutines/master.py,sha256=MCUAJZm2qgFL_DjakPiVR_BBupcI1KmrYx7AMdvs8CU,6030
+decentralizedroutines/runroutines.py,sha256=lCK2LHW8OV84p5vwITfaCMLar9nU-IlO4b8ldImF9Mw,2110
+decentralizedroutines/update_version_requirements.py,sha256=M9z6Mmpj-2fRUHVQeQsbYI4YuKaNQT9d_g-kqhHW7X8,1982
+decentralizedroutines/worker.py,sha256=6B58I9EWDZzbJR6wI59Up2MQ4jaMc6MPu9eMTX8HzD0,5109
+decentralizedroutines/worker_lib.py,sha256=YuDsSxfuoN2mm0tf8QwIf9cOpOXShU_efgDYckEI_6A,8005
+decentralizedroutines-1.0.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+decentralizedroutines-1.0.0.dist-info/METADATA,sha256=K9CNCmrc7m3jR2L3EbHz_e6YYrGFLtVmSPCgt8ZO_pU,1261
+decentralizedroutines-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+decentralizedroutines-1.0.0.dist-info/top_level.txt,sha256=8pgjVbsMehIILp2mWX814SYtWvBFnXw2WtfECDAF-po,22
+decentralizedroutines-1.0.0.dist-info/RECORD,,
