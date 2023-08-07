@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: dumbo-scopus
+Version: 0.1.1
+Summary: Simple CLI to search on Scopus and obtain the results in a XLSX file
+Author: Mario Alviano
+Author-email: mario.alviano@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Requires-Dist: rich (>=13.1.0,<14.0.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Requires-Dist: xlsxwriter (>=3.0.7,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Dumbo Scopus
+
+Simple CLI to search on Scopus and obtain the results in a XLSX file.
+
+
+# Prerequisites
+
+- Python 3.10
+- An API key from http://dev.elsevier.com
+
+
+# Install
+
+```bash
+$ pip install dumbo-scopus
+```
+
+
+# Usage
+
+Use the following command line:
+```bash
+$ python -m dumbo_scopus "TITLE(magic sets)" --api-key=YOUR-API-KEY
+```
+
+A file `scopus.xlsx` with the results will be produced.
+Add `--help` to see more options.
+
