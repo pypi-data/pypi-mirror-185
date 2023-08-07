@@ -1,0 +1,70 @@
+[tool.coverage.run]
+branch = true
+source = ['structured']
+omit = ['structured/type_checking.py']
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+exclude_lines = [
+    'pragma: no cover',
+    'raise NotImplementedError',
+    'if (typing.)?TYPE_CHECKING:',
+    'if __name__ == .__main__.:',
+    '\.\.\.',
+]
+
+[tool.pytest.ini_options]
+testpaths = ['tests']
+addopts = "--cov --cov-report term --cov-report=html --cov-report=xml"
+
+[build-system]
+requires = ['setuptools>=61.0']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools]
+package-dir = {"structured" = "structured"}
+
+[project]
+name = 'structured_classes'
+version = '3.0.0'
+authors = [
+    { name = 'lojack5' },
+]
+description = 'Annotated classes that pack and unpack C structures.'
+readme = 'README.md'
+license = { text = 'BSD 3-Clause' }
+requires-python = '>=3.9'
+dependencies = [
+    'typing_extensions~=4.4.0; python_version < "3.11"',
+]
+classifiers = [
+    'Intended Audience :: Developers',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: OS Independent',
+    'Typing :: Typed',
+]
+
+[project.urls]
+'Homepage' = 'https://github.com/lojack5/structured'
+'Bug Tracker' = 'https://github.com/lojack5/structured/issues'
+
+[tool.black]
+skip-string-normalization = true
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ['E203']
+per-file-ignores = [
+    # F401: Imported but unused
+    # F403: Star import used
+    'type_checking.py: F401',
+    '__init__.py: F403, F401',
+]
+
+[tool.isort]
+profile = 'black'
