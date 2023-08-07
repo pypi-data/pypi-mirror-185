@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kapitan
+Version: 0.31.0
+Summary: Generic templated configuration management for Kubernetes, Terraform and other things
+Home-page: https://github.com/kapicorp/kapitan
+Author: Ricardo Amaro
+Author-email: ramaro@kapicorp.com
+License: Apache License 2.0
+Keywords: jsonnet kubernetes reclass jinja
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Provides-Extra: gojsonnet
+License-File: AUTHORS
+
+https://github.com/kapicorp/kapitan
