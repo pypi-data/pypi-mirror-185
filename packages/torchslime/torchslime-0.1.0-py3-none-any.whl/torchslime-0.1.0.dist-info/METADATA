@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: torchslime
+Version: 0.1.0
+Summary: TorchSlime is a PyTorch-based framework that helps you easily build your DL projects with pre-defined, highly extensible pipelines and other utils.
+Home-page: https://github.com/johncaged/TorchSlime
+Author: Zikang Liu
+Author-email: liuzikang0625@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TorchSlime
+
+> **This repository is from https://github.com/johncaged/torch-lib, which is already deprecated.**
+>
+> **TorchSlime 0.1.0 is equivalent to torch-lib 0.3.4, with some bug-fixes.**
+
+**A new version is coming soon, with new features and more extensibility!**
+
+
