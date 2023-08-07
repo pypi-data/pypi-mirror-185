@@ -1,0 +1,1 @@
+recursive-include users_and_computers/templates *.html
