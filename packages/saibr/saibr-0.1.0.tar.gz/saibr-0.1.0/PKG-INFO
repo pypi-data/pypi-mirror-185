@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: saibr
+Version: 0.1.0
+Summary: Python implementation of SAIBR: a tool for performing spectral autofluorescence correction on biological images
+Home-page: https://github.com/goehringlab/saibr_python
+Author: Tom Bland
+Author-email: tom_bland@hotmail.co.uk
+License: CC BY 4.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# SAIBR (python)
+
+Python implementation of SAIBR
+
+    pip install saibr
