@@ -1,0 +1,12 @@
+countryguess/__init__.py,sha256=WdbkxhCA3bOAmqETywhilHrcXFATu51D80VylJcj5rs,316
+countryguess/__main__.py,sha256=eui2vFnapUbvLHXKh3ZJJoGCLDSbWK4igFJ8JksbpXE,31
+countryguess/_cli.py,sha256=Jf-S38Yljn_1bQ5qJt-URqwA3udGSI6v5Qoby6yd3DY,1166
+countryguess/_countrydata.json,sha256=eigMAB_wTLAp1b8tYg-GTPTKgUC7ttw6vc7fliR6plI,255094
+countryguess/_countrydata.py,sha256=s8jOqAKhPANHDsl2nSgq02ZbU-3-yMg2Dok7yfW-qRU,4928
+countryguess/_guess_country.py,sha256=tdd8JHapCWbqJnwfXaUe237GUplZJvoYo9uO_ssVtaY,494
+countryguess-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+countryguess-0.2.1.dist-info/METADATA,sha256=NH9uyRtzSBrsXj4uHSXPDVtjvgJbFNkMhkGJk1UocZ8,6468
+countryguess-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+countryguess-0.2.1.dist-info/entry_points.txt,sha256=qb1bTG7rjcjDERwrL1rfzRIqnh7HqgDG0GQrWlad5zo,55
+countryguess-0.2.1.dist-info/top_level.txt,sha256=AsZMISnFAMDybB_GmE_M3TrEZbrZ6PZ5jQUdXKi0JAw,13
+countryguess-0.2.1.dist-info/RECORD,,
