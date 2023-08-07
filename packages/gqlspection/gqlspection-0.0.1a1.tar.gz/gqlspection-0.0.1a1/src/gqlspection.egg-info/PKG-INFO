@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: gqlspection
+Version: 0.0.1a1
+Summary: GraphQL Introspection parsing and query generation
+Home-page: https://github.com/doyensec/gqlspection
+Author: Andrew Konstantinov
+Author-email: andrew@doyensec.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/doyensec/gqlspection
+Project-URL: Doyensec Research, https://www.doyensec.com/research.html
+Project-URL: Bug Reports, https://github.com/doyensec/gqlspection/issues
+Description: # GQLSpection
+        
+        Python 2.7 compatible library for parsing GraphQL introspection query and automatic query generation.
+        
+        ```python
+        >>> from gqlspection import GQLSchema
+        >>> schema = GQLSchema('https://swapi-graphql.netlify.app/.netlify/functions/index')
+        >>> # Print a single query
+        >>> query = schema.generate_query('allFilms')
+        >>> print(query.print_query())
+        >>> # Print all possible queries
+        >>> schema.print_sample_queries()
+        ```
+        
+        ## Installation
+        
+        gqlspection should be available (soon) on PyPI:
+        
+        ```bash
+        $ pip install gqlspection
+        ```
+        
+Keywords: graphql,introspection
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 2 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Security
+Requires-Python: ~=2.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: web
