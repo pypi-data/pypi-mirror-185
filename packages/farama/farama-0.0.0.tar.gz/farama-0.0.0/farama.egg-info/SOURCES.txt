@@ -1,0 +1,5 @@
+setup.py
+farama.egg-info/PKG-INFO
+farama.egg-info/SOURCES.txt
+farama.egg-info/dependency_links.txt
+farama.egg-info/top_level.txt
