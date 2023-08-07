@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+iso3166_2/__init__.py
+iso3166_2/iso3166_2.py
+iso3166_2.egg-info/PKG-INFO
+iso3166_2.egg-info/SOURCES.txt
+iso3166_2.egg-info/dependency_links.txt
+iso3166_2.egg-info/not-zip-safe
+iso3166_2.egg-info/requires.txt
+iso3166_2.egg-info/top_level.txt
+tests/__init__.py
+tests/test_iso31662.py
