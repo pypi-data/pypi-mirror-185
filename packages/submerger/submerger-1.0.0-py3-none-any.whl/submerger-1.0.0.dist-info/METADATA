@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: submerger
+Version: 1.0.0
+Author: Andrii Valiukh
+Author-email: andr.you.ay@gmail.com
+Requires-Python: >=3.10
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+
