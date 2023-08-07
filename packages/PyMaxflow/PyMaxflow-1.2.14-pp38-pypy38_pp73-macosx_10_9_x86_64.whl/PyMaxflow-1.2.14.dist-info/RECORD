@@ -1,0 +1,8 @@
+PyMaxflow-1.2.14.dist-info/RECORD,,
+PyMaxflow-1.2.14.dist-info/WHEEL,sha256=DVRQ5iilM88qEgPN9F-jdRErBkin2MqdJR-IvREPiVQ,116
+PyMaxflow-1.2.14.dist-info/top_level.txt,sha256=gHkR9ckK3594F_F8Ee6sxRRSOGOo3efERzgU4DMoLE8,8
+PyMaxflow-1.2.14.dist-info/METADATA,sha256=BSyGlLao0JVkfSya4IyLgzHrA1frWOx849dpN9yjR_I,1511
+maxflow/_maxflow.pypy38-pp73-darwin.so,sha256=Q6ACwgL5OrXxuFiYLzMcZgOwolsoyo7tTj9DmhmNP2A,292856
+maxflow/version.py,sha256=BCqCSqdnPfbotSAPKkfgxo-D_PoZV0eJgvPog2D2z60,130
+maxflow/fastmin.py,sha256=Sva_XQCvILO4luKNJH9TgrGggTiUZRXpLUy3hj3GAxc,7725
+maxflow/__init__.py,sha256=d5nsFAT2WrKp-faYqSUPH_ffmuuPPGwPMz0k5bwJfqs,1386
