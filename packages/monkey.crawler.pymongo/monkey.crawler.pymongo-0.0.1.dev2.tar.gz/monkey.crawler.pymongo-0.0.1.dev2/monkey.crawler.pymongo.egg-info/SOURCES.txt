@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+monkey/__init__.py
+monkey.crawler.pymongo.egg-info/PKG-INFO
+monkey.crawler.pymongo.egg-info/SOURCES.txt
+monkey.crawler.pymongo.egg-info/dependency_links.txt
+monkey.crawler.pymongo.egg-info/requires.txt
+monkey.crawler.pymongo.egg-info/top_level.txt
+monkey/crawler/__init__.py
+monkey/crawler/crawlers/__init__.py
+monkey/crawler/crawlers/mongodb.py

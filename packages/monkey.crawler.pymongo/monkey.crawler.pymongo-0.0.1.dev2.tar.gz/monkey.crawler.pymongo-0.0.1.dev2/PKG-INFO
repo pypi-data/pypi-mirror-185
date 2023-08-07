@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: monkey.crawler.pymongo
+Version: 0.0.1.dev2
+Summary: Monkey crawler implementation for MongoDB data sources using PyMongo.
+Home-page: https://bitbucket.org/monkey-python/monkey-crawler-pymongo/
+Author: Xavier ROY
+Author-email: xavier@regbuddy.eu
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+License-File: LICENSE.txt
+
+Monkey Crawler PyMongo
+======================
+
+Monkey crawler implementation for MongoDB data sources using PyMongo.
+
+Installation guide
+------------------
+
+::
+
+    pip install monkey-crawler-pymongo
+
+User guide
+----------
+
+*Coming soon... hopefully*
+
+..  TODO
+
