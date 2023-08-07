@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hive-scrutineer
+Version: 1.2.4
+Summary: Performance and quality analytics on Hive Posts.
+License: LICENSE.txt
+Keywords: hive,blockchain,seo,quality,analytics
+Author: Rodney Maniego Jr.
+Author-email: rodney.maniegojr@gmail.com
+Requires-Python: >=3.10
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: hive-nektar
+Project-URL: documentation, https://scrutineer.readthedocs.io
+Project-URL: homepage, https://github.com/rmaniego/scrutineer
+Description-Content-Type: text/markdown
+
+# scrutineer
+Performance and quality analytics on Hive Posts.
+
