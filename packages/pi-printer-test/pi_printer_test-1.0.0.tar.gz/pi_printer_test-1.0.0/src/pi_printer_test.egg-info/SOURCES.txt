@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/pi_printer.py
+src/test_numpy.py
+src/pi_printer_test.egg-info/PKG-INFO
+src/pi_printer_test.egg-info/SOURCES.txt
+src/pi_printer_test.egg-info/dependency_links.txt
+src/pi_printer_test.egg-info/entry_points.txt
+src/pi_printer_test.egg-info/requires.txt
+src/pi_printer_test.egg-info/top_level.txt

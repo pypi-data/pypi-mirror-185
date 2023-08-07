@@ -1,0 +1,2 @@
+[console_scripts]
+pi_printer = pi_printer.__main__:main

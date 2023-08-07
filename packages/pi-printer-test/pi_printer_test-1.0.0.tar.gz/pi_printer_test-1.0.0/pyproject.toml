@@ -1,0 +1,39 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pi_printer_test"
+version = "1.0.0"
+description = "Prints pi to terminal"
+readme = "README.md"
+authors = [{ name = "Trenton Wirth"}]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["pi", "print", "test"]
+dependencies = [
+    "numpy",
+    "toml",
+    "pytest"
+]
+requires-python = ">=3.9"
+
+[tool.bumpver]
+current_version = "v2023.01.13.1010.test"
+version_pattern = "vYYYY.0M.0D.MICRO[-TAG]"
+commit_message  = "Bump version {old_version} -> {new_version}"
+commit          = true
+tag             = true
+push            = true
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.scripts]
+pi_printer = "pi_printer.__main__:main"
