@@ -1,0 +1,115 @@
+1
+00:00:08,833 --> 00:00:14,916
+{\an2}Black holes are considered to be
+the hellmouths of the universe.
+
+2
+00:00:08,833 --> 00:00:14,916
+<font color=#333><i>{\an8}[Wissenschaftler]  Schwarze Löcher gelten
+als die Höllenschlunde des Universums.</i></font>
+
+3
+00:00:15,625 --> 00:00:19,083
+{\an2}Those who fall inside disappear.
+
+4
+00:00:15,625 --> 00:00:19,708
+<font color=#333><i>{\an8}Wer hineinfällt, verschwindet.</i></font>
+
+5
+00:00:19,791 --> 00:00:20,625
+{\an2}Forever.
+
+6
+00:00:19,791 --> 00:00:21,458
+<font color=#333><i>{\an8}Für immer.</i></font>
+
+7
+00:00:25,000 --> 00:00:26,625
+{\an2}But whereto?
+
+8
+00:00:25,000 --> 00:00:26,625
+<font color=#333><i>{\an8}Aber wohin?</i></font>
+
+9
+00:00:28,083 --> 00:00:31,583
+{\an2}What lies behind a black hole?
+
+10
+00:00:28,083 --> 00:00:31,583
+<font color=#333><i>{\an8}Was liegt hinter einem schwarzen Loch?</i></font>
+
+11
+00:00:31,666 --> 00:00:33,375
+{\an2}WHERE (WHEN) IS MIKKEL?
+
+12
+00:00:32,375 --> 00:00:37,375
+<font color=#333><i>{\an8}Verschwinden dort mit den Dingen
+auch Raum und Zeit?</i></font>
+
+13
+00:00:33,458 --> 00:00:37,375
+{\an2}Along with things,
+do space and time also vanish there?
+
+14
+00:00:37,458 --> 00:00:40,458
+{\an2}Or would space and time
+
+15
+00:00:37,458 --> 00:00:40,375
+<font color=#333><i>{\an8}Oder wären Raum und Zeit</i></font>
+
+16
+00:00:40,458 --> 00:00:44,291
+<font color=#333><i>{\an8}in einem ewigen Kreis
+miteinander verbunden?</i></font>
+
+17
+00:00:40,541 --> 00:00:44,291
+{\an2}be tied together
+and be part of an endless cycle?
+
+18
+00:00:44,833 --> 00:00:48,333
+<font color=#333><i>{\an8}Und was, wenn das,
+was aus der Vergangenheit kommt,</i></font>
+
+19
+00:00:44,916 --> 00:00:48,333
+{\an2}What if everything that came from the past
+
+20
+00:00:49,041 --> 00:00:52,875
+{\an2}were influenced by the future?
+
+21
+00:00:49,041 --> 00:00:52,875
+<font color=#333><i>{\an8}durch die Zukunft beeinflusst wäre?</i></font>
+
+22
+00:00:54,041 --> 00:00:55,458
+{\an2}Tick-tock.
+
+23
+00:00:54,041 --> 00:00:55,916
+<font color=#333><i>{\an8}Tick, tack.</i></font>
+
+24
+00:00:55,958 --> 00:00:57,500
+{\an2}Tick-tock.
+
+25
+00:00:56,000 --> 00:00:57,500
+<font color=#333><i>{\an8}Tick, tack.</i></font>
+
+26
+00:00:58,083 --> 00:00:59,333
+{\an2}Tick-tock.
+
+27
+00:00:58,083 --> 00:00:59,791
+<font color=#333><i>{\an8}Tick, tack.</i></font>
+

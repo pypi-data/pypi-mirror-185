@@ -1,0 +1,29 @@
+image: python
+
+stages:
+  - lint
+  - test
+
+lint:linting_tests:
+  stage: lint
+  before_script:
+    - pip install mypy pylint
+    - python setup.py install
+  script:
+    - python scripts/run_tests.py --lint
+
+test:unit_tests:
+  stage: test
+  before_script:
+    - python setup.py install --user
+  script:
+    - python scripts/run_tests.py --unit
+
+test:integration_tests:
+  stage: test
+  before_script:
+    - python setup.py install
+    - apt-get update 
+    - apt-get install --assume-yes ffmpeg
+  script:
+    - python scripts/run_tests.py --integration

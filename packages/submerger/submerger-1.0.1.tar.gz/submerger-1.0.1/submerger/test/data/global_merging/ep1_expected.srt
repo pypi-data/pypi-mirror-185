@@ -1,0 +1,288 @@
+1
+00:05:40,037 --> 00:05:42,122
+{\an2}Inside. In the kitchen.
+
+2
+00:05:40,120 --> 00:05:42,039
+<font color=#333><i>{\an8}Rein. In die Küche.</i></font>
+
+3
+00:07:20,930 --> 00:07:21,764
+<font color=#333><i>{\an8}Ja.</i></font>
+
+4
+00:07:22,264 --> 00:07:23,140
+<font color=#333><i>{\an8}<i>Wo sind Sie?</i></i></font>
+
+5
+00:07:24,058 --> 00:07:25,017
+<font color=#333><i>{\an8}Keine Ahnung.</i></font>
+
+6
+00:07:25,809 --> 00:07:27,019
+<font color=#333><i>{\an8}Ich bin nur...</i></font>
+
+7
+00:07:29,313 --> 00:07:31,357
+<font color=#333><i>{\an8}nach Norden gegangen. Zwei Stunden.</i></font>
+
+8
+00:07:31,982 --> 00:07:33,984
+<font color=#333><i>{\an8}Überquerte einen Fluss. Vor einer Stunde.</i></font>
+
+9
+00:07:34,068 --> 00:07:35,486
+<font color=#333><i>{\an8}<i>Sah Sie jemand?</i></i></font>
+
+10
+00:07:35,486 --> 00:07:36,612
+<font color=#333><i>{\an8}Nein.</i></font>
+
+11
+00:07:36,612 --> 00:07:37,696
+<font color=#333><i>{\an8}<i>Weiter so.</i></i></font>
+
+12
+00:07:38,280 --> 00:07:39,865
+<font color=#333><i>{\an8}<i>Das ist Salamanca-Gebiet.</i></i></font>
+
+13
+00:07:39,949 --> 00:07:42,034
+<font color=#333><i>{\an8}<i>Alle suchen nach Ihnen.</i></i></font>
+
+14
+00:07:42,034 --> 00:07:43,744
+<font color=#333><i>{\an8}<i>Damit meine ich alle.</i></i></font>
+
+15
+00:07:43,744 --> 00:07:45,704
+<font color=#333><i>{\an8}<i>Auch die</i> Federales.</i></font>
+
+16
+00:07:49,166 --> 00:07:50,042
+<font color=#333><i>{\an8}Ist es erledigt?</i></font>
+
+17
+00:07:50,751 --> 00:07:52,252
+<font color=#333><i>{\an8}<i>Ja. Er ist tot.</i></i></font>
+
+18
+00:07:58,926 --> 00:08:00,219
+<font color=#333><i>{\an8}Da waren auch ein paar...</i></font>
+
+19
+00:08:01,095 --> 00:08:02,388
+<font color=#333><i>{\an8}normale Leute...</i></font>
+
+20
+00:08:03,389 --> 00:08:05,057
+<font color=#333><i>{\an8}im Haus, alte Leute.</i></font>
+
+21
+00:08:06,600 --> 00:08:07,601
+<font color=#333><i>{\an8}Und die?</i></font>
+
+22
+00:08:07,685 --> 00:08:09,353
+<font color=#333><i>{\an8}<i>Darüber weiß ich nichts.</i></i></font>
+
+23
+00:08:10,521 --> 00:08:13,148
+<font color=#333><i>{\an8}<i>Wenn wir aufhören,
+die Batterie aus dem Handy nehmen.</i></i></font>
+
+24
+00:08:13,232 --> 00:08:14,274
+<font color=#333><i>{\an8}<i>Dann nach Norden.</i></i></font>
+
+25
+00:08:14,358 --> 00:08:15,943
+<font color=#333><i>{\an8}<i>Außer Sicht bleiben.</i></i></font>
+
+26
+00:08:15,943 --> 00:08:18,278
+<font color=#333><i>{\an8}<i>Ich bereite ein Versteck für Sie vor.</i></i></font>
+
+27
+00:08:18,362 --> 00:08:20,531
+<font color=#333><i>{\an8}<i>In einer Stunde
+die Batterie wieder einlegen.</i></i></font>
+
+28
+00:08:20,531 --> 00:08:22,741
+<font color=#333><i>{\an8}<i>Ich sage Ihnen, wo Sie</i> <i>hinsollen.</i></i></font>
+
+29
+00:09:00,946 --> 00:09:02,114
+<font color=#333><i>{\an8}Don Eduardo!</i></font>
+
+30
+00:09:02,823 --> 00:09:03,741
+{\an2}Are you all right?
+
+31
+00:09:02,823 --> 00:09:03,741
+<font color=#333><i>{\an8}Ist alles klar?</i></font>
+
+32
+00:09:04,366 --> 00:09:06,577
+{\an2}An accident. Sorry to trouble you.
+
+33
+00:09:04,366 --> 00:09:06,577
+<font color=#333><i>{\an8}Ein Unfall. Es tut mir leid.</i></font>
+
+34
+00:09:07,327 --> 00:09:08,162
+{\an2}May I come in?
+
+35
+00:09:07,327 --> 00:09:08,162
+<font color=#333><i>{\an8}Darf ich?</i></font>
+
+36
+00:09:08,162 --> 00:09:09,204
+{\an2}Of course!
+
+37
+00:09:08,162 --> 00:09:09,204
+<font color=#333><i>{\an8}Natürlich!</i></font>
+
+38
+00:09:14,376 --> 00:09:16,086
+{\an2}Sugar, milk?
+
+39
+00:09:14,376 --> 00:09:16,086
+<font color=#333><i>{\an8}Zucker? Milch?</i></font>
+
+40
+00:09:17,087 --> 00:09:18,630
+{\an2}No need. Thank you.
+
+41
+00:09:17,087 --> 00:09:18,630
+<font color=#333><i>{\an8}Nein. Danke.</i></font>
+
+42
+00:09:35,939 --> 00:09:36,857
+{\an2}Delicious!
+
+43
+00:09:35,939 --> 00:09:36,857
+<font color=#333><i>{\an8}Köstlich!</i></font>
+
+44
+00:09:39,109 --> 00:09:40,069
+{\an2}What's wrong?
+
+45
+00:09:39,109 --> 00:09:40,069
+<font color=#333><i>{\an8}Was ist los?</i></font>
+
+46
+00:09:40,069 --> 00:09:41,695
+{\an2}Don Eduardo is here!
+
+47
+00:09:44,615 --> 00:09:45,908
+{\an2}So good to see you!
+
+48
+00:09:46,366 --> 00:09:47,910
+{\an2}I'd shake your hand, but...
+
+49
+00:09:47,910 --> 00:09:50,370
+{\an2}Look at you! Mountain man!
+
+50
+00:09:51,288 --> 00:09:53,373
+{\an2}You look like ZZ Top!
+
+51
+00:09:55,709 --> 00:09:58,087
+{\an2}Clean up for Don Eduardo! Go wash, shave!
+
+52
+00:09:58,087 --> 00:09:59,171
+{\an2}Oh, sure!
+
+53
+00:09:59,671 --> 00:10:01,298
+{\an2}I'm sorry, Don Eduardo.
+
+54
+00:10:01,799 --> 00:10:02,800
+{\an2}Go!
+
+55
+00:10:08,263 --> 00:10:10,265
+{\an2}Keep the mustache and the soul patch.
+It looks good.
+
+56
+00:10:11,558 --> 00:10:13,227
+{\an2}Yes, Don Eduardo.
+
+57
+00:10:15,312 --> 00:10:17,898
+{\an2}You're sure you don't want breakfast?
+
+58
+00:10:17,898 --> 00:10:19,858
+{\an2}The eggs are fresh from this morning.
+
+59
+00:10:22,611 --> 00:10:24,446
+{\an2}How are Mateo's teeth doing? Better?
+
+60
+00:10:24,988 --> 00:10:28,033
+{\an2}Yes! Your dentist worked so hard!
+
+61
+00:10:28,117 --> 00:10:32,746
+{\an2}Matti used to be up all night
+with the pain.
+
+62
+00:10:32,830 --> 00:10:37,459
+{\an2}Now he sleeps like a baby.
+Thanks to you, Don Eduardo.
+
+63
+00:10:38,085 --> 00:10:39,545
+{\an2}That's good, Sylvia.
+
+64
+00:10:39,545 --> 00:10:41,046
+{\an2}And the goats?
+
+65
+00:10:41,547 --> 00:10:44,133
+{\an2}From your hometown?
+They don't miss the mountains?
+
+66
+00:10:44,133 --> 00:10:47,928
+{\an2}They're fine.
+We're expecting two more next month.
+
+67
+00:10:47,928 --> 00:10:49,513
+{\an2}You sent for more?
+
+68
+00:10:51,056 --> 00:10:53,016
+{\an2}Cabritos. Babies.
+
+69
+00:10:54,810 --> 00:11:00,440
+{\an2}You're almost finished. I'll make more.
+You're sure about breakfast?
+
+70
+00:11:01,150 --> 00:11:02,359
+{\an2}Just coffee is fine.
+
