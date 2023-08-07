@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sunsynk-api-client
+Version: 1.0.4
+Summary: API client for interacting with SunSynk APIs.
+Home-page: https://github.com/jamesridgway/sunsynk-api-client
+Author: James Ridgway
+License: MIT
+License-File: LICENSE
+
+API client for interacting with SunSynk APIs.
