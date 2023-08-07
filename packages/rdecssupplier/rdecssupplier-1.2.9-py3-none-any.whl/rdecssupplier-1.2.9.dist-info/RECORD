@@ -1,0 +1,10 @@
+rdecssupplier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rdecssupplier/es_DatabaseOperations.py,sha256=U800HK2BIsbIrBpoLyncdBSGb8KNbvYO6EF14jGHXoE,859
+rdecssupplier/es_Metadata.py,sha256=_WhStJB43wM-OMGxO00gih72DS1HY6vNPxVAwBwHQqs,18315
+rdecssupplier/es_Utility.py,sha256=IPHXO5k4UMSJwQQunchwk4xlfbSJVEIQL-qPHl5ZzWM,10867
+rdecssupplier/es_supplier_demo.py,sha256=zH3JLohqP1eq-L9MlQVFq1jfAN-bqr48VcqfBP0PBbs,11808
+rdecssupplier/mainModel.py,sha256=brOOot6YvtQOfHth7dyE46u_GE7-OG95BWkcgcUFOiw,181
+rdecssupplier-1.2.9.dist-info/METADATA,sha256=AA2gznBzpcrL_tFdtaeVSMJ_zndaoe2DREGa8Lur_9c,303
+rdecssupplier-1.2.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+rdecssupplier-1.2.9.dist-info/top_level.txt,sha256=ZwgoDPug_Xq-o-iX35qqEWt2fNd4A9XZGB9hCYelRXo,14
+rdecssupplier-1.2.9.dist-info/RECORD,,
