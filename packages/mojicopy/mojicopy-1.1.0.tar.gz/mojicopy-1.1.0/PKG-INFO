@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: mojicopy
+Version: 1.1.0
+Summary: Tool to generate emojis from text prompts stored in the clipboard using OpenAI.
+Home-page: https://mojicopy.com
+Author: Alexander Tkachev
+Author-email: sasha64sasha@gmail.com
+Keywords: emoji,clipboard,openai,ChatGPT
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# 📋 Mojicopy
+
+Tool to generate emojis from text prompts stored in the clipboard using OpenAI.
+
+## 🔨 Installation
+
+Install the mojicopy package using pip
+
+```shell
+pip install mojicopy
+```
+
+Get an [OpenAI API Key](https://beta.openai.com/account/api-keys) and place it inside the `OPENAI_API_KEY` environment variable
+
+## 🏃‍♂️ Usage
+
+Get an emoji from a prompt stored in your clipboard
+
+```shell
+mojicopy
+>>> 🐈
+```
+
+Get an emoji from a prompt in the CLI
+
+```shell
+mojicopy --prompt "OpenAI API Key"
+>>> 🔑
+```
+
+Get a random emoji into your clipboard
+
+```shell
+mojicopy --ramdom
+```
+
+### VSCode Integration
+
+TBD
+
+### IntelliJ Integration
+
+TBD

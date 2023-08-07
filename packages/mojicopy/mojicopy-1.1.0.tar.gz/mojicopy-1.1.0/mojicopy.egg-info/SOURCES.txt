@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+mojicopy/__init__.py
+mojicopy/ai_emoji.py
+mojicopy/cli.py
+mojicopy/emoji_unicode.py
+mojicopy/random_emoji.py
+mojicopy/settings.py
+mojicopy.egg-info/PKG-INFO
+mojicopy.egg-info/SOURCES.txt
+mojicopy.egg-info/dependency_links.txt
+mojicopy.egg-info/entry_points.txt
+mojicopy.egg-info/requires.txt
+mojicopy.egg-info/top_level.txt
