@@ -1,0 +1,13 @@
+config:
+    
+    # License name configuration (default to Mozilla Public License)
+    githubLicense: MPL
+    
+    # Badges configuration
+    badges:
+      - alt: "License: ${githubLicense}"
+        img: https://img.shields.io/github/license/dynod/${pythonPackage}
+        url: https://github.com/dynod/${pythonPackage}/blob/main/LICENSE
+      - alt: Checks
+        img: https://img.shields.io/github/actions/workflow/status/dynod/${pythonPackage}/build.yml?branch=main&label=build%20%26%20u.t.
+        url: https://github.com/dynod/${pythonPackage}/actions?query=branch%3Amain
