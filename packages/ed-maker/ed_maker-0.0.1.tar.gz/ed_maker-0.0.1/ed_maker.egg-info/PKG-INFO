@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ed-maker
+Version: 0.0.1
+Summary: Basic package
+Author: SiebeLeDe 
+Author-email: <siebe.lekannegezegddeprez@student.uva.nl>
+License: UNKNOWN
+Keywords: python,energy diagram,energy diagram generator
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A Basic package with more text
