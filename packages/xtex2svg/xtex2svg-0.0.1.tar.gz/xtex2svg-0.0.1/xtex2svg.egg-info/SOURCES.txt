@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+xtex2svg
+xtex2svg.egg-info/PKG-INFO
+xtex2svg.egg-info/SOURCES.txt
+xtex2svg.egg-info/dependency_links.txt
+xtex2svg.egg-info/top_level.txt
