@@ -1,0 +1,87 @@
+[tool.poetry]
+name = "recoverpy"
+version = "2.0.0"
+description = "A TUI to recover overwritten or deleted data."
+authors = ["PabloLec <pablolec@pm.me>"]
+license = "GPL-3.0 License"
+readme = "README.md"
+homepage = "https://github.com/PabloLec/recoverpy"
+repository = "https://github.com/PabloLec/recoverpy"
+documentation = "https://github.com/PabloLec/recoverpy#readme"
+keywords = ["data",
+            "recovery",
+            "search",
+            "cli",
+            "console",
+            "cui",
+            "tui",
+            "ncurses",
+            "terminal",
+            "cybersec",
+            "cybersecurity",
+            "security",
+            "pentesting",
+            "pentest",
+            "forensics",
+            "forensic",
+            "hack",
+            "hacking",
+            "data recovery",
+            "data recovery tool",
+            "grep",
+            "linux",
+            "unix"]
+classifiers = [
+        "Development Status :: 5 - Production/Stable",
+        "Operating System :: POSIX :: Linux",
+        "Environment :: Console",
+        "Intended Audience :: End Users/Desktop",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+textual = "^0.9.0"
+
+[tool.poetry.dev-dependencies]
+coverage = "^7.0.1"
+pytest = "^7.0.1"
+pylint = "^2.15.9"
+isort = "^5.10.1"
+black = "^22.8"
+flake8 = "^6.0.0"
+pre-commit = "^2.17.0"
+flake8-bandit = "^4.1.1"
+flake8-bugbear = "^22.9.23"
+flake8-builtins = "^2.0.0"
+flake8-comprehensions = "^3.6.1"
+darglint = "^1.8.1"
+flake8-docstrings = "^1.6.0"
+flake8-isort = "^6.0.0"
+flake8-pytest-style = "^1.6.0"
+flake8-mutable = "^1.2.0"
+flake8-html = "^0.4.1"
+flake8-simplify = "^0.19.3"
+flake8-aaa = "^0.12.1"
+pytest-mock = "3.10.0"
+pytest-cov = "^4.0.0"
+coverage-badge = "^1.1.0"
+mypy = "^0.991"
+types-PyYAML = "^6.0.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest-asyncio = "^0.20.3"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = 3.8
+ignore_missing_imports = "true"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
