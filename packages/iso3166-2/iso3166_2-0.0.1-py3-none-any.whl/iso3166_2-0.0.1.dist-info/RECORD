@@ -1,0 +1,9 @@
+iso3166_2/__init__.py,sha256=owBM7Bcu_BN0PqcQ4xArnDpd4urU0xU8_hRGNGtVgho,132
+iso3166_2/iso3166_2.py,sha256=sS8wjJVe0T9y7iPnsWewUiPi3qQZewY40OWdVdvZfmM,6229
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_iso31662.py,sha256=7VZEdKHGFf7gKP4Nlk8M2VZdI5eDBYxvOnAeml7mexA,10231
+iso3166_2-0.0.1.dist-info/LICENSE,sha256=c7x3wSyrro_6hI0Pa1Z-aaICr8YWFoKRJ2876w1ke2s,1059
+iso3166_2-0.0.1.dist-info/METADATA,sha256=dsAq2s2OIKOBLJtY4nmmxK0X1tI1xSMdKHZlIfvYpf0,10585
+iso3166_2-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+iso3166_2-0.0.1.dist-info/top_level.txt,sha256=jRhsKs1XKuSLyASZqIstwMIVurd7yjFmHCHtwU5ZRQ0,16
+iso3166_2-0.0.1.dist-info/RECORD,,
