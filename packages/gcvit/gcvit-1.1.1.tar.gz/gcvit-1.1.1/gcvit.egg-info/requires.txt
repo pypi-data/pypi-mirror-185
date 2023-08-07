@@ -1,0 +1,4 @@
+tensorflow_addons
+gradio
+numpy
+matplotlib
