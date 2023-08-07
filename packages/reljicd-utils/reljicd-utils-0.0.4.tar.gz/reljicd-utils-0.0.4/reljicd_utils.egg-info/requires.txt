@@ -1,0 +1,10 @@
+fire
+profilehooks
+SQLAlchemy
+sqlalchemy-utils
+psycopg2-binary
+boto3
+xmltodict
+pandas
+str2bool
+numpy

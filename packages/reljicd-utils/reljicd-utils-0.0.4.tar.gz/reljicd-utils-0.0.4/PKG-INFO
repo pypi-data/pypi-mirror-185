@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: reljicd-utils
+Version: 0.0.4
+Summary: Various helper utils.
+Home-page: https://github.com/reljicd/python-snippets-lib
+Author: Dusan Reljic
+Author-email: reljicd@google.com
+License: Apache Software License
+Keywords: helpers utils multiprocessing config collections profiling sql
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+License-File: LICENSE
+
+Various helper utils:
+* Collections and iterators
+* Env vars
+* Design Patterns
+* Documents parsing
+* File System
+* Logging
+* Multiprocessing
+* Profiling
+* Relational Databases
+* Various other utils
