@@ -1,0 +1,12 @@
+gpn_clients/clients/nsi/v1/algorithms.py,sha256=OpyzPUookwk3soUqOGx53syJ2-5_DvbJ3vx-yzq0oHk,755
+gpn_clients/clients/nsi/v1/config.py,sha256=J8pFgMiLYVd9V4sQhsVgPSnjLoRTXFC_tgZLmR63W-M,743
+gpn_clients/clients/nsi/v1/io_config.py,sha256=NLAoXo1kcD2Z2cojPnVgb4SMEsLIbRl0gx3iS6CNt8k,962
+gpn_clients/clients/nsi/v1/ml_models.py,sha256=4RzKKfot9j27b1LrM6g7GhUEPiZ1q_nF4Z65BmlxCEI,1800
+gpn_clients/clients/nsi/v1/time_series.py,sha256=jmLkdE3Rha9kiECuk1ZX6E0AfnplC3_A9iK3KXTg7PY,1598
+gpn_clients/core/config.py,sha256=4M3Ol1uDQJW6-Yf3UtQUfPaAMLX8MPiCxsqCLZu0Hfg,1256
+gpn_clients/models/base_nsi_api.py,sha256=ROzWmIONfPUBUtiykg2bBIyfQvnjC0sDvMQK8K8THgg,1678
+gpn_clients/utils/patterns.py,sha256=X68390a3FwSyoS9XAsYkJaOrOd_SF72BbMH8J8RUOBo,215
+gpn_clients/utils/urls.py,sha256=9Rw2bnAZpcqM1j90uDEU2rC95-GAp-bm7R6Phd2Tgrg,1335
+gpn_clients-0.1.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+gpn_clients-0.1.2.dist-info/METADATA,sha256=8t-pUIKh6VSj1N5o6Tk0CX34dQxq6OydE6Vm4yaLcnU,1900
+gpn_clients-0.1.2.dist-info/RECORD,,
