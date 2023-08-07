@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ancientgram
+Version: 1.0.0
+Summary: A Telegram Bot Api Framework for Python
+Home-page: https://github.com/khadga9/ancientgram
+Author: khadga
+License: MIT
+Requires-Dist: requests
+
