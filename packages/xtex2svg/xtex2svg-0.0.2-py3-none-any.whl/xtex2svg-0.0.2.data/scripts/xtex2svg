@@ -1,0 +1,73 @@
+#!python
+
+# License: GNU GPLv3+, Ryan Marcus 2019, and Rodrigo Schwencke, 2023 (Copyleft)
+
+import sqlite3
+import sys
+import os.path
+import os
+import sys
+import subprocess
+
+os.makedirs(os.path.expanduser('~/.tex2svg/'), exist_ok=True)
+# conn = sqlite3.connect(os.path.expanduser('~/.tex2svg/tex2svg.db'))
+# c = conn.cursor()
+# c.execute("""CREATE TABLE IF NOT EXISTS items (latex text, inline  integer, svg text);""")
+
+inline = 1
+if len(sys.argv) == 2 and sys.argv[1] == "--block":
+    inline = 0
+
+tex = str(sys.stdin.read()).strip()
+# c.execute("SELECT svg from items WHERE latex=? AND inline=?", (tex,inline))
+# cached_result = c.fetchone()
+
+# if cached_result:
+#     print(cached_result[0])
+#     exit(0)
+
+    
+# we need to create the result and cache it
+# with open(os.path.expanduser('~/.tex2svg/tmp.tex'), "w") as f:
+with open(os.path.expanduser('./tmp.tex'), "w") as f:
+    if inline == 1:
+        f.write("""
+\\documentclass{article}
+\\usepackage{amsmath}
+\\usepackage{tkz-tab}
+\\usepackage{amssymb}
+\\begin{document}
+\\pagestyle{empty}
+$$""" + tex + """$$
+\\end{document}
+""")
+    else:
+        f.write("""
+\\documentclass{article}
+\\usepackage{amsmath}
+\\usepackage{tkz-tab}
+\\usepackage{amssymb}
+\\begin{document}
+\\pagestyle{empty}
+\\begin{equation*}
+""" + tex + """
+\\end{equation*}
+\\end{document}
+""")
+
+# os.system("pdflatex -output-directory ~/.tex2svg/ tmp.tex &> /dev/null")
+# os.system("pdfcrop ~/.tex2svg/tmp.pdf ~/.tex2svg/tmp_crop.pdf &> /dev/null")
+# os.system("pdf2svg ~/.tex2svg/tmp_crop.pdf ~/.tex2svg/tmp.svg &> /dev/null")
+
+os.system("pdflatex -output-directory . tmp.tex &> /dev/null")
+os.system("pdfcrop ./tmp.pdf ./tmp_crop.pdf &> /dev/null")
+os.system("pdf2svg ./tmp_crop.pdf ./tmp.svg &> /dev/null")
+
+# svg = subprocess.check_output("svgo --output - --input ~/.tex2svg/tmp.svg", shell=True).decode("utf-8")
+
+# c.execute("INSERT INTO items VALUES(?, ?, ?)", (tex, inline, svg))
+# print(svg)
+
+# conn.commit()
+# conn.close()
+
