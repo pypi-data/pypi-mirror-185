@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/pygrille.py
+src/text.py
+src/pygrille.egg-info/PKG-INFO
+src/pygrille.egg-info/SOURCES.txt
+src/pygrille.egg-info/dependency_links.txt
+src/pygrille.egg-info/requires.txt
+src/pygrille.egg-info/top_level.txt
