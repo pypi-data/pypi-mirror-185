@@ -1,0 +1,52 @@
+## Logging made easier
+
+# Installing
+```shell
+pip install console-logs
+```
+
+# Examples
+## INFO Logging
+```py
+from console_logs import Logging
+
+log = Logging()
+
+log.Info(message="Some Info Here")
+```
+
+## DEBUG Logging
+```py
+from console_logs import Logging
+
+log = Logging()
+
+log.Debug(message="Some Info Here")
+```
+
+## WARNING Logging
+```py
+from console_logs import Logging
+
+log = Logging()
+
+log.Warning(message="Some Warning Here")
+```
+
+## ERROR Logging
+```py
+from console_logs import Logging
+
+log = Logging()
+
+log.Error(message="Some Error Here")
+```
+
+## SUCCESS Logging
+```py
+from console_logs import Logging
+
+log = Logging()
+
+log.Success(message="Some Success Here")
+```
