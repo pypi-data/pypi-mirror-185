@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: open-py-ml
+Version: 0.0.3
+Summary: A simple, Open source ML library.
+Home-page: https://github.com/adammgewely/open-py-ml
+Author: Adam Elsayed Gewely
+Author-email: adam.gewely@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: difflib
+Requires-Dist: json
+
+A simple ML library.
+
+<br>
+<code>
+class Brain:<br>
+    """<br>
+    A brain. An Artificial intelligence (AI)'s data and runner.<br>
+    Data: First argument in __init__(), Data is for the training data key/values<br>
+    Threshold: Second argument in __init(), Threshold is for the percentage of which the AI finds<br>
+    That the data is simular enough to the input string of which it is accepted<br>
+    NOTE: This only works with strings now.<br>
+    """<br>
+    <br>
+    def __init__(self, data: dict or None, threshold: float):<br>
+        """<br>
+        Initializes a new brain.<br>
+        """<br>
+    <br>
+    def forward(self, data: str) -> str:<br>
+        """<br>
+        Gives a string for the Artificial intelligence (AI) to process.<br>
+        """<br>
+</code>
+<br>
+
+As you can see, This is just the way the brain is organized.<br>
+You can only just use this, and you would have A good time.<br>
+But for quickly loading the brain. By quickly<br> I mean without having to load the file yourself with "open()"
+<br> You can actually just use load(filename, threshold), and save(ai, threshold).<br>
+Note that load and save just save with json.<br>
+
+
