@@ -1,0 +1,6 @@
+*.html
+*.log
+__pycache__/
+*old*
+chromedriver.exe
+LICENSE.chromedriver
