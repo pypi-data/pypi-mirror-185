@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sqlalchemy_pysqlite3/__init__.py
+sqlalchemy_pysqlite3_binary.egg-info/PKG-INFO
+sqlalchemy_pysqlite3_binary.egg-info/SOURCES.txt
+sqlalchemy_pysqlite3_binary.egg-info/dependency_links.txt
+sqlalchemy_pysqlite3_binary.egg-info/entry_points.txt
+sqlalchemy_pysqlite3_binary.egg-info/requires.txt
+sqlalchemy_pysqlite3_binary.egg-info/top_level.txt
