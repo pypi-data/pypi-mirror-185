@@ -1,0 +1,15 @@
+LICENSE
+README
+setup.py
+calculator/__init__.py
+calculator/shapes.py
+calculator/simple_calc.py
+games/__init__.py
+games/guess.py
+general/__init__.py
+general/generator.py
+general/timer.py
+rand_calc_guess.egg-info/PKG-INFO
+rand_calc_guess.egg-info/SOURCES.txt
+rand_calc_guess.egg-info/dependency_links.txt
+rand_calc_guess.egg-info/top_level.txt

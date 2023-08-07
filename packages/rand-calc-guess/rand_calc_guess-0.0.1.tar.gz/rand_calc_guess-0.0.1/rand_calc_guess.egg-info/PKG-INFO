@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rand-calc-guess
+Version: 0.0.1
+Summary: A lib of random generator, games and calculator
+Home-page: UNKNOWN
+Author: Anoosha Tanseer
+Author-email: atanseer2016@gmail.com
+License: UNKNOWN
+Keywords: python,random,timer,area,game,guess,madlib,countdown,addition,mod,password,shape
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This library consist of 3 packages general, calculator and game. In general we have a generator module in which we can have random dice value, madlibs, password and a timer module. In calculator we can calculate area of shapes and basic addition subtraction and division etc. Lastly in games we can play a number guessing game
+

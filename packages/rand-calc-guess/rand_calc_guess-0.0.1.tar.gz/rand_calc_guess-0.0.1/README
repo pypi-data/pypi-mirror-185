@@ -1,0 +1,1 @@
+This library consist of 3 packages general, calculator and game. In general we have a generator module in which we can have random dice value, madlibs, password and a timer module. In calculator we can calculate area of shapes and basic addition subtraction and division etc. Lastly in games we can play a number guessing game
