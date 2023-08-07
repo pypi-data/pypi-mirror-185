@@ -1,0 +1,7 @@
+setup.py
+ancientgram/ancientgram.py
+ancientgram.egg-info/PKG-INFO
+ancientgram.egg-info/SOURCES.txt
+ancientgram.egg-info/dependency_links.txt
+ancientgram.egg-info/requires.txt
+ancientgram.egg-info/top_level.txt
