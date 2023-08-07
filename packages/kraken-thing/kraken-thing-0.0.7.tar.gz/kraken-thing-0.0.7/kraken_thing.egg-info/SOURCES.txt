@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+kraken_class_thing/__init__.py
+kraken_class_thing/json_xp.py
+kraken_class_thing/kraken_class_observation.py
+kraken_class_thing/kraken_class_thing.py
+kraken_thing.egg-info/PKG-INFO
+kraken_thing.egg-info/SOURCES.txt
+kraken_thing.egg-info/dependency_links.txt
+kraken_thing.egg-info/top_level.txt
