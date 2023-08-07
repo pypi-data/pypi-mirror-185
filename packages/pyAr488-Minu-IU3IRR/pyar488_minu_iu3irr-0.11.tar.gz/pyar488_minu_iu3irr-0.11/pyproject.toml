@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling" ,"pyserial"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyAr488_Minu_IU3IRR"
+version = "0.11"
+authors = [
+  { name="Manuel Minutello"},
+]
+description = "module to interface AR488 interfaces"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Minu-IU3IRR/AR488/blob/master/pyAR488.py"
+"Bug Tracker" = "https://github.com/Minu-IU3IRR/AR488/issues"
