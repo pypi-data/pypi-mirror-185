@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: Pyhandling
+Version: 2.0.0
+Summary: Library for advanced continuous handling of anything
+Home-page: https://github.com/TheArtur128/Pyhandling
+Download-URL: https://github.com/TheArtur128/Pyhandling/archive/refs/tags/v2.0.0.zip
+Author: Arthur
+Author-email: s9339307190@gmail.com
+License: GNU General Public License v3.0
+Keywords: library,handling
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Pyhandling
+Library for advanced continuous handling of anything
+
+Provides tools to extend single call logic on a nearly unlimited scale</br>
+You can even integrate the entire program logic into one call
+
+### Installation
+`pip install pyhandling`
+
+### Usage examples
+
+Basic example
+
+```python
+from functools import partial
+from typing import Callable
+
+from random import randint
+
+from pyhandling import *
+
+
+main: dirty[Callable[[int], str]] = showly(
+    on_condition(
+        lambda number: not 0 <= number <= 10,
+        (
+            "Input number must be positive and less than 11 but it is {}".format
+            |then>> ValueError
+            |then>> raise_
+        ),
+        else_=return_
+    )
+    |then>> mergely(take(execute_operation), return_, take('<<'), return_)
+    |then>> mergely(
+        take("{number} is {comparison_word} than 255".format),
+        number=return_,
+        comparison_word=lambda numebr: 'less' if numebr < 255 else 'more'
+    )
+)
+
+if __name__ == '__main__':
+    main(randint(-5, 10))
+```
+
+**output**
+```
+4
+4
+64
+64 is less than 255
+```
+
