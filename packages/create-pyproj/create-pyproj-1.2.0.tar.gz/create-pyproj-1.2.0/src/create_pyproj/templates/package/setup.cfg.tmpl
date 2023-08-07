@@ -1,0 +1,57 @@
+[metadata]
+name = ${projectname}
+version = 0.0.0
+description = ${description}
+long_description_content_type = text/markdown
+long_description = file: README.md
+author = ${author}
+author_email = ${author_email}
+license = MIT
+license_file = LICENSE
+
+[options]
+packages = find:
+package_dir =
+    = src
+include_package_data = True
+python_requires = >=3.6
+install_requires =
+    pipenv
+
+[options.packages.find]
+where = src
+
+% if cli:
+[options.entry_points]
+console_scripts =
+    ${projectname}=src:main
+% endif
+
+[sdist]
+formats = zip, gztar
+
+[coverage:run]
+branch = True
+
+[coverage:report]
+show_missing = True
+skip_covered = True
+
+[tool:pytest]
+addopts = --cov src --cov-report xml
+asyncio_mode = auto
+
+[semantic_release]
+branch = main
+hvcs = gitlab
+version_variable = src/__init__.py:__version__
+version_source = tag
+commit_version_number = true
+commit_subject = chore(release): {version} [skip ci]
+commit_message = automatically generated v{version}
+tag_commit = true
+pre_commit_command = python scripts/pre_commit.py $(semantic-release print-version)
+include_additional_files = VERSION,setup.cfg
+gitlab_token_var = GITLAB_TOKEN
+build_command = false
+upload_to_repository = false
