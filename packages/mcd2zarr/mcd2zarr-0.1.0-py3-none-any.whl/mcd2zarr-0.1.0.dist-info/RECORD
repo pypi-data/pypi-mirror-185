@@ -1,0 +1,10 @@
+mcd2zarr/__init__.py,sha256=cONCeqpzZFbsBOWQ8zFneg1sf1Jj77pUv4SraIvgsCo,180
+mcd2zarr/__main__.py,sha256=utgwnQIorfRnQctDH493DUixIgjnISTF77OrVDqZDaA,952
+mcd2zarr/_version.py,sha256=iyxbHkgS1yJGtIeySh-gmqzwOuLbVveAe9CoQYWfZ0c,160
+mcd2zarr/mcd2zarr.py,sha256=3m_AUrNr8OiQEkplG89Miczsqnf4QniOCtobMFZAkTo,6049
+mcd2zarr-0.1.0.dist-info/LICENSE,sha256=-KIIFg4PNBRlRV7KtkVFakTcGAK17ZRuS0TfxBjY_8I,1077
+mcd2zarr-0.1.0.dist-info/METADATA,sha256=_qZ6ro34TD94aL38LMrYdFCR0BsNz6qLe7YofiTsz10,2829
+mcd2zarr-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mcd2zarr-0.1.0.dist-info/entry_points.txt,sha256=BiZDt592p-CBcTqFsIoQiRrPJRHaOmyB9RJuH42Ad_I,52
+mcd2zarr-0.1.0.dist-info/top_level.txt,sha256=UaIq10RGn5Y9Eb-UHNCnq47bs4TIhoB__wMzn3svnMk,9
+mcd2zarr-0.1.0.dist-info/RECORD,,
