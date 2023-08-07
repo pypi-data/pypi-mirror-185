@@ -1,0 +1,8 @@
+maxflow/__init__.py,sha256=Bxpb5OGIAkv6U75REQI9Lc9-DbcrMG9cCz-Zxp_0ETw,1431
+maxflow/_maxflow.cp38-win_amd64.pyd,sha256=CqxR2Q4kem4X_OxxstredB-uR1aVclHPybknEwsqA2I,229888
+maxflow/fastmin.py,sha256=VmAPqYyHu7aGT8fPpfqVuOWzM9NoagMK9ZasbLovZ6M,7942
+maxflow/version.py,sha256=YJ_IjdgeT8iNalfKiDeOk9ITSImn9m3QapFv__L2pps,135
+PyMaxflow-1.2.14.dist-info/METADATA,sha256=2xEdpT0ZmessBlSHgGSqNPqew8DorMmzlW7sUJaMODw,1549
+PyMaxflow-1.2.14.dist-info/WHEEL,sha256=b_PH-i_F2xFYDXcROE5vpDbWUcY020I0eLFvEIYA9Pc,100
+PyMaxflow-1.2.14.dist-info/top_level.txt,sha256=gHkR9ckK3594F_F8Ee6sxRRSOGOo3efERzgU4DMoLE8,8
+PyMaxflow-1.2.14.dist-info/RECORD,,
