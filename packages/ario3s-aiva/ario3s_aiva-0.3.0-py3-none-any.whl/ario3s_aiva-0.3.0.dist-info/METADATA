@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ario3s-aiva
+Version: 0.3.0
+Summary: 
+Author: ario
+Author-email: cybera.3s@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: tomli (>=2.0.1,<3.0.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# aiva cli tool
+
+<p>a tool to connect to server using ssh</p>
+<p>it creates a SOCKS proxy on provided port default to 4321</p>
+
+
+## Configuration
+<p>Default config file path is /home/<username>/.aiva.toml
+
+<b>Config file Format</b>
+
+```
+[server]
+ip = <server-ip>
+port = <connections-port>
+username = '<username>'
+```
+</p>
+
+## Usage
+
+connects to server using ssh
+```
+aiva connect  
+```
+
+disconnects from server
+```
+aiva disconnect  
+```
+get connection status
+```
+aiva status  
+```
