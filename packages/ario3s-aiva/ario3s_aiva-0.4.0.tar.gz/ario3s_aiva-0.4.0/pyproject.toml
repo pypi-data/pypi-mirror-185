@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ario3s-aiva"
+version = "0.4.0"
+description = ""
+authors = ["ario <cybera.3s@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ario3s_aiva"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tomli = "^2.0.1"
+typer = {extras = ["all"], version = "^0.7.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^23.1a1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+aiva = "ario3s_aiva.main:app" 
