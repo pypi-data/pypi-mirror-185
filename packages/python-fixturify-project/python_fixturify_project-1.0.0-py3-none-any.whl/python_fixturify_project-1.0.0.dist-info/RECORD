@@ -1,0 +1,9 @@
+python_fixturify_project/__init__.py,sha256=Dyif3FETsDaRgNl-RnxW9iwsAhKczg1ipmpjH-G4QHE,405
+python_fixturify_project/exceptions.py,sha256=mAZCm4DZZvVs-ATHBKjm-IwpKLInQhqhREblsz19UAo,122
+python_fixturify_project/path_utils.py,sha256=H-_2-PCjpmdsviY1FOoT6vRwrWkZvOkBw6_eNN19_70,256
+python_fixturify_project/project.py,sha256=BkgEL2n4CT269b3Z9EeyVZI-s3dpXfsPso9kQJpDm7U,5947
+python_fixturify_project/utils.py,sha256=-dRXMFol3opTf_RleLjGMgP4cwRQ9H5hkPeET9whz_Y,989
+python_fixturify_project-1.0.0.dist-info/LICENSE,sha256=eloEivwR1UK3_UYf9btx479BMOXdEJgp2cc_Lqo4NaE,1089
+python_fixturify_project-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+python_fixturify_project-1.0.0.dist-info/METADATA,sha256=NG_8uk7KwTwOhla370zdYnMMFDwMD3VwXnpaOjH8hhI,7492
+python_fixturify_project-1.0.0.dist-info/RECORD,,
