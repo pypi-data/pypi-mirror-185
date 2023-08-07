@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: differences
+Version: 0.1.1
+Summary: difference-in-differences estimation and inference in Python
+Home-page: https://github.com/bernardodionisi/differences
+License: GPLv3
+Author: Bernardo Dionisi
+Author-email: bernardo.dionisi@gmail.com
+Requires-Python: >=3.8,<4.0.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: formulaic (>=0.3.4,<0.4.0)
+Requires-Dist: joblib (>=1.2.0,<2.0.0)
+Requires-Dist: linearmodels (>=4.25)
+Requires-Dist: numpy (>=1.16)
+Requires-Dist: pandas (>=1.2)
+Requires-Dist: plotto (>=0.1.3,<0.2.0)
+Requires-Dist: pyhdfe (>=0.1.2,<0.2.0)
+Requires-Dist: scikit-learn (>=1.0.2)
+Requires-Dist: scipy (>=1.7.3)
+Requires-Dist: statsmodels (>=0.13,<1.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Project-URL: Repository, https://github.com/bernardodionisi/differences
+Description-Content-Type: text/markdown
+
+<img src="./doc/source/images/logo/bw/logo_name_bw.png" alt="drawing" width="200" 
+style="display: block;margin-left: auto;margin-right: auto;width: 80%;"/>
+
+difference-in-differences estimation and inference for Python
+
+**For the following use cases**
+
+- Balanced panels, unbalanced panels & repeated cross-section
+- Two + Multiple time periods
+- Fixed + Staggered treatment timing
+- Binary + Multi-Valued treatment
+- Heterogeneous treatment effects & triple difference
+- One + Multiple treatments per entity
+
+see the [Documentation](https://differences.readthedocs.io/en/latest/) for more details.
+
+## Installing
+
+The latest release can be installed using pip
+
+```bash
+pip install differences
+```
+
+requires Python 3.8+
+
+## Quick Start
+
+### ATTgt 
+
+the ATTgt class implements the estimation procedures suggested by [Callaway and Sant'Anna (2021)
+](https://www.sciencedirect.com/science/article/abs/pii/S0304407620303948), [Sant'Anna and Zhao 
+(2020)](https://www.sciencedirect.com/science/article/abs/pii/S0304407620301901) and the 
+multi-valued treatement case discussed in [Callaway, Goodman-Bacon & Sant'Anna (2021)](https://arxiv.org/abs/2107.02637)
+
+```python
+from differences import ATTgt, simulate_data
+
+df = simulate_data()
+
+att_gt = ATTgt(data=df, cohort_name='cohort')
+
+att_gt.fit(formula='y')
+
+att_gt.aggregate('event')
+```
+
+*differences* ATTgt benefitted substantially from the original authors' R packages: Callaway & Sant'Anna's [did](https://github.com/bcallaway11/did) and Sant'Anna and 
+Zhao's [DRDID](https://github.com/pedrohcgs/DRDID)
+
+### TWFE
+
+```python
+from differences import TWFE, simulate_data
+
+df = simulate_data()
+
+att_gt = TWFE(data=df, cohort_name='cohort')
+
+att_gt.fit(formula='y')
+```
+
