@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/slow_printer/__init__.py
+src/slow_printer/print.py
+src/slow_printer.egg-info/PKG-INFO
+src/slow_printer.egg-info/SOURCES.txt
+src/slow_printer.egg-info/dependency_links.txt
+src/slow_printer.egg-info/top_level.txt
