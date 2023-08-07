@@ -1,0 +1,16 @@
+roboflow2huggingface/__init__.py,sha256=OZPFX-mhYhcyczCnygV2xXHMseUKq8xbqpMOkNQRmRQ,4416
+roboflow2huggingface/cli.py,sha256=dV6t3fhwVGK9VFyBAI4YpsjnZhIXPqOQibQ4f6mE8Ec,205
+roboflow2huggingface/other_utils.py,sha256=V4xp7klydWXtTcKsPQmFJ5KjBqrnx9pqk1pI6cHESt8,3357
+roboflow2huggingface/roboflow_utils.py,sha256=5Xagix84IVBNIkHIKMg7k9iUOgdKL4EkfZr1BCESyAM,10586
+roboflow2huggingface/yolov5_utils.py,sha256=6C91W2H8Tr3XTBaDVrGLGBhTzwGJ6TDh5gBAwgbbsHo,1701
+roboflow2huggingface/hf_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+roboflow2huggingface/hf_utils/dataset_card.py,sha256=48Yhr7MaGGNRSxj9UNeA75LD1Wmz60_QwfvDMIZndbM,1901
+roboflow2huggingface/hf_utils/hub.py,sha256=fsKKpRnDbLN1Pqv-vMjd0M1nPQrxCOjnqGVHb01OAzg,1908
+roboflow2huggingface/hf_utils/image_classification_dataset.py,sha256=3VDflX5qtKKaTW9AMjre2WNrmkCtdJVDZA8r3FLUUbw,4293
+roboflow2huggingface/hf_utils/object_detection_dataset.py,sha256=iSCFBIDOdpAxw_GshgjkZ1Xf4-1KEm0Qx6Fe9A9HVII,7536
+roboflow2huggingface-0.0.18.dist-info/LICENSE,sha256=R7aKsddTmtLHMJGdtFnqeDr42Pu8JjU-xKjSZhmxycM,1062
+roboflow2huggingface-0.0.18.dist-info/METADATA,sha256=g1afdfCkUYzeqa4--QRdq3rXN7rp-OBbiDFrwU6aiAU,2600
+roboflow2huggingface-0.0.18.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+roboflow2huggingface-0.0.18.dist-info/entry_points.txt,sha256=GoRSVpOdubLCToZWdpnk_0UoR0xaOFBtRdtdZnrWl5w,70
+roboflow2huggingface-0.0.18.dist-info/top_level.txt,sha256=CR-Ljl2PyCXMLIb144MSY8usSszOTx-yDw0sbSBzpy8,21
+roboflow2huggingface-0.0.18.dist-info/RECORD,,
