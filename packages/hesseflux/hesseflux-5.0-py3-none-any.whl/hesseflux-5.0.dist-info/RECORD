@@ -1,0 +1,11 @@
+hesseflux/__init__.py,sha256=PdajvI_piJWUoitUciz-PPKm8aUYHteRd7HcVKOgKBw,2224
+hesseflux/_version.py,sha256=EsJz7kuRypevxDcFryjV4yztpNDOfyHSLEq_ZfvVUYY,19
+hesseflux/gapfill.py,sha256=l-g5SDbcNjkcp2N1nJ-0wlsjbxkiAYIl5wpNEQDyxn0,29846
+hesseflux/madspikes.py,sha256=vzaEFSAFPKHtinypdwzd8NJ4GjfRM4hlEbNyOsg52rQ,9606
+hesseflux/nee2gpp.py,sha256=ufNb5bQQLhrhYR2x42pZYhj8T4HaYJHNE9jRm4vEOCE,42712
+hesseflux/ustarfilter.py,sha256=qcBHm-KNobasYa4NeCpw9dA7Bs5GJnBJrH-DuuCCOZw,19856
+hesseflux-5.0.dist-info/LICENSE,sha256=uphN9kMP4wGZ-JgdqhY5rTuE5u_s0pj5a2HqdW8zs3U,1155
+hesseflux-5.0.dist-info/METADATA,sha256=LQlFmmMzzfnGLPqZTI5-gMKZqN_Fh0j-cW0Sr4-tTkU,6111
+hesseflux-5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hesseflux-5.0.dist-info/top_level.txt,sha256=pYT053zhikbRMl_hQ10JvVxox9qyObu7jsWqsveVxyw,10
+hesseflux-5.0.dist-info/RECORD,,
