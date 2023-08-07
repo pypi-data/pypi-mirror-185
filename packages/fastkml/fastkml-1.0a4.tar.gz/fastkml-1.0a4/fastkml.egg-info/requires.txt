@@ -1,0 +1,4 @@
+pygeoif>=1.0.0
+python-dateutil
+setuptools
+typing_extensions
