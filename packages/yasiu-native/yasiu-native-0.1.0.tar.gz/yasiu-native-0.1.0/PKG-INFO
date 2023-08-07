@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: yasiu-native
+Version: 0.1.0
+Summary: Native utilities based only on python builtins. Timers, Decorators.
+Author: Grzegorz Krug
+Author-email: kruggrzegorz@gmail.com
+Maintainer: Grzegorz Krug
+Maintainer-email: kruggrzegorz@gmail.com
+License: MIT
+Project-URL: 1. Native Package, https://pypi.org/project/yasiu-native/
+Project-URL: 2. Math Package, https://pypi.org/project/yasiu-math/
+Project-URL: 3. Image Package, https://pypi.org/project/yasiu-image/
+Project-URL: 4. Visualisation Package, https://pypi.org/project/yasiu-vis/
+Project-URL: 5. Source repo, https://github.com/GrzegorzKrug/yasiu-native
+Keywords: time,timeit,measure time,decorators
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Readme of `yasiu-native`
+
+Module with useful measure time decorators.
+
+## Installation
+
+```shell
+pip install yasiu-native
+```
+
+## Time decorators
+
+- **measure_perf_time_decorator**
+
+  decorator that measures time using *time.perf_counter*
+
+
+- **measure_real_time_decorator**
+
+  decorator that measures time using *time.time*
+
+### Measuring time
+
+```py
+from yasiu_native.time import measure_perf_time_decorator
+
+
+@measure_perf_time_decorator()
+def func():
+    ...
+
+
+@measure_perf_time_decorator(">4.1f")
+def func():
+    ...
+
+
+@measure_perf_time_decorator(fmt=">4.1f")
+def func():
+    ...
+```
+
+### Print buffering will impact your performance!
+
+- Use with cauction for multiple function calls
+
+## Flexible decorator
+
+Decorator that checks if decorated function was passed with `()` or not
+
+```python
+from yasiu_native.decorators import flexible_decorator
+
+
+@flexible_decorator
+def custom_decorator(func, decor_variable):
+    def wrapper(*a, **kw):
+        print(f"Decorated with {decor_variable}")
+        return func(*a, **kw)
+
+    return wrapper
+
+
+@custom_decorator
+def test_1():
+    pass
+
+
+@custom_decorator()
+def test_2():
+    pass
+
+
+@custom_decorator(a=1)
+def test_3(a=0):
+    pass
+
+```
+
+## Console execution timer
+
+not here yet.
+
+# All packages
+
+[1. Native Package](https://pypi.org/project/yasiu-time/)
+
+[2. Math Package](https://pypi.org/project/yasiu-math/)
+
+[3. Image Package](https://pypi.org/project/yasiu-image/)
+
+[4. Pyplot visualisation Package](https://pypi.org/project/yasiu-vis/)
+
