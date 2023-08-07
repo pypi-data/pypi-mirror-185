@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: echad
+Version: 0.5.1
+Summary: A rapid python ehcarts tool
+Home-page: UNKNOWN
+Author: Hou
+Author-email: hhhoujue@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: ehcarts,html
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Natural Language :: English
+Requires-Python: >=3.8.10
