@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: pia
+Version: 0.2.0
+Summary: (Alternative) Package Installer for Ansible
+Author-email: Sorin Sbarnea <sorin.sbarnea@gmail.com>
+Maintainer-email: Sorin Sbarnea <sorin.sbarnea@gmail.com>
+License: MIT
+Project-URL: homepage, https://github.com/pycontribs/pia
+Project-URL: repository, https://github.com/pycontribs/pia
+Project-URL: changelog, https://github.com/pycontribs/pia/releases
+Keywords: ansible
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ansible-core (>=2.12.0)
+Provides-Extra: lock
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-plus ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+
+# PIA - Package Installer for Ansible
+
+> Like pip but for Ansible content, resilient content management that works
+> fast, offline, with caching, compatible with multiple versions of ansible
+> and a very friendly user interface.
+
+This project aims to become an alternative to the current `ansible-galaxy`
+command line tool, one that would address some shortcomings such as:
+
+- Ability to run offline, especially when checking if current dependencies
+  are up to date.
+- Use caching similar to how pip does, so network access would be needed only
+  if current data is not available locally.
+- Be idempotent.
+
+## Installation
+
+```
+pip3 install pia
+```
+
+## Usage
+
+Please note that not all features are implemented yet.
+
+```bash
+# Install a collection
+pia install namespace.collection_name
+# should also accept aliases like `pip i ...`
+
+# Install a collection archive from disk
+pia install ./path/to/collection.tar.gz
+
+# Uninstall a collection
+pia uninstall namespace.collection_name
+
+# List installed collections
+pia list
+```
