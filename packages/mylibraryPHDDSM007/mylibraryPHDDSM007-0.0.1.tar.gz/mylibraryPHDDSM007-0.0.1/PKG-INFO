@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mylibraryPHDDSM007
+Version: 0.0.1
+Summary: My Library
+Author: QAMAR_PHDDSM007
+Author-email: qamaruzaman9999@gmail.com
+Keywords: python,pythonlibrary,mylibrary,mathmodule,helloword
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: License.txt
+
+A Library contains mathmodule and hellomodule

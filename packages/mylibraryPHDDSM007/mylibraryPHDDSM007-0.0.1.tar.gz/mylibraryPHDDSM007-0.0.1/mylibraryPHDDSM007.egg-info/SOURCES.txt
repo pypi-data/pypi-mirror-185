@@ -1,0 +1,9 @@
+License.txt
+setup.py
+mylibraryPHDDSM007/__init__.py
+mylibraryPHDDSM007/helloword.py
+mylibraryPHDDSM007/mathmodule.py
+mylibraryPHDDSM007.egg-info/PKG-INFO
+mylibraryPHDDSM007.egg-info/SOURCES.txt
+mylibraryPHDDSM007.egg-info/dependency_links.txt
+mylibraryPHDDSM007.egg-info/top_level.txt
