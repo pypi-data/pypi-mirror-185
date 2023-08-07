@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+tikload/__init__.py
+tikload/tikload.py
+tikload.egg-info/PKG-INFO
+tikload.egg-info/SOURCES.txt
+tikload.egg-info/dependency_links.txt
+tikload.egg-info/not-zip-safe
+tikload.egg-info/top_level.txt
