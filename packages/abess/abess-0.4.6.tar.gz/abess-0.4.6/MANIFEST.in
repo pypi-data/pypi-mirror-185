@@ -1,0 +1,9 @@
+include README.rst
+include LICENSE
+recursive-include include *
+recursive-include src *
+recursive-include abess *
+
+exclude src/test_*.cpp
+exclude src/*.o
+exclude src/*.def
