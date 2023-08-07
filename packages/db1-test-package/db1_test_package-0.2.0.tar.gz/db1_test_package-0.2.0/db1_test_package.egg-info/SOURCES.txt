@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+db1_test_package/__init__.py
+db1_test_package/test.py
+db1_test_package.egg-info/PKG-INFO
+db1_test_package.egg-info/SOURCES.txt
+db1_test_package.egg-info/dependency_links.txt
+db1_test_package.egg-info/requires.txt
+db1_test_package.egg-info/top_level.txt
